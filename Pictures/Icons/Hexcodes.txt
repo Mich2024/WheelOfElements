@@ -1,0 +1,23 @@
+Hexcodes
+
+Wood    663300
+Fire    ff8e57
+Earth   b0a384
+Metal   88878b
+Water   0e87cc
+
+Attack          ff0000
+Movement        0000ff
+Heal/Special    00ff00
+
+
+
+Ideen
+Earth ändern zu 663300
+Wood wird dukel grün
+Metal dunkler
+
+
+Schwarze Umrandung
+Farbübergänge/-verläufe
+AddWood Grün und oder heller

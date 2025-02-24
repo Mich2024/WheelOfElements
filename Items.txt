@@ -1,0 +1,171 @@
+################################################################
+ShopLevel:Unique
+
+Name: Reinforced Gloves Cost:50 Quantity:2 Slot:Gloves Text: "You may give attacks R:-2X A:+X (R:0 targets self, and R:-1 targets nothing)"
+
+Name: Sharded Bones Cost:50 Quantity:2 Slot:Chest Leather:2 Text: "Your allied summons perform S:2 R:0 at the start of their turns"
+
+Name: Wand of repeating runes Cost:50 Quantity:2 Slot:OneHanded Exhaust Text: "Exhaust: The last non-Exhaust ability you played this turn is reapeated at no additional cost. Exhaust that ability"
+
+Name: Lich´s Staff Cost:50 Quantity:2 Slot:TwoHanded Exhaust Pips:2 Text: "Move a Pip: Summon a Skeleton"
+
+Name: Black Lotus Cost:50 Quantity:2 Slot:Consumable Text: "Remove Black Lotus from your possesion and the shop, Add 3 Mana of any color"
+Name: Trackers Whistle Cost:50 Quantity:2 Slot:Consumable Exhaust Text: "Move one of your summons next to you"
+Name: Horrid Stench Cost:50 Quantity:2 Slot:Consumable Exhaust Text: "Push:2 R:1, Target all other units in range"
+Name: Holy Water Cost:50 Quantity:2 Slot:Consumable Exhaust Text: "H:10 Bless:2 Self"
+Name: Azraels Favor Cost:50 Quantity:2 Slot:Consumable Exhaust Text: "Put one modifer from your discard on top of your deck"
+
+################################################################
+ShopLevel:Base
+
+Name: Studded Leather Cost:30 Quantity:2 Slot:Chest Leather:3 Text: " "
+
+Name: Small Healing Potion Cost:10 Quantity:4 Slot:Consumable Exhaust Text: "H:10 R:0"
+Name: Saving Grace Cost:10 Quantity:4 Slot:Consumable Exhaust Text: "If you would die, instead exhaust saving grace and set your life to 1"
+Name: Cleansing Potion Cost:10 Quantity:4 Slot:Consumable Exhaust Text: "Remove any number of one type of status effect from an ally in R:0"
+Name: Invisibility Potion Quantity:2 Cost:20 Slot:Consumable Exhaust Text: "Invisibility R:0"
+Name: Mana Potion Cost:10 Quantity:2 Slot:Consumable Exhaust Text: "Add one mana of any element"
+
+################################################################
+ShopLevel:Level 1
+
+Name: Comfy Treads Cost:20 Quantity:2 Slot:Boots Text: "Tap: Add M:+2 to your current movement"
+Name: Chicken Boots Cost:20 Quantity:2 Slot:Boots Text: "Tap: Add Jump to your current movement"
+Name: Girthy Boots Cost:30 Quantity:2 Slot:Boots Text: "Increase your maximum Life by 6. You are immune to Cripple"
+
+Name: Elvish Helmet Cost:10 Quantity:2 Slot:Helmet Text: "*2 modifiers count as +0 against you"
+Name: Girthy Helmet Cost:30 Quantity:2 Slot:Helmet Text: "Increase your maximum Life by 6. You are immune to Silence"
+Name: Halo Cost:30 Quantity:2 Slot:Helmet Text: "When you heal, you may add T:+1 and halve the healing, rounded up"
+
+Name: Girthy Gauntlets Cost:30 Quantity:2 Slot:Gloves Text: "Increase your maximum Life by 6. You are immune to Disarm"
+Name: Hidden Dagger Cost:10 Quantity:2 Slot:Gloves Text: "When you loose invisibility, gain an advantage"
+Name: Briar Gauntlets Cost:30 Quantity:2 Slot:Gloves Text: "At the start of your turn, Vendetta:2 R:0"
+
+Name: Chainmail Cost:40 Quantity:2 Slot:Chest Metal:3 Text: " " ArmourNegative
+Name: Girthy Chestplate Cost:30 Quantity:2 Slot:Chest Leather:2 Text: "Increase your maximum Life by 6. You are immune to Stun"
+Name: Barbarians Straps Cost:50 Quantity:2 Slot:Chest Cloth:3 Exhaust Text: "If you would die, instead move a cloth pip and set your life to 1"
+
+Name: Longsword Cost:20 Quantity:2 Slot:OneHanded Pips:2 Text: "Pip: Add A:+2 to your next attack instance"
+Name: Cudgel Cost:20 Quantity:2 Slot:OneHanded Text: "Tap: Add Stun to your next attack instance"
+Name: Broadsword Cost:10 Quantity:2 Slot:OneHanded Exhaust Text: "Tap: Powerful:1 R:0"
+Name: Battle Harp Cost:30 Quantity:2 Slot:OneHanded Text: "Tap: Bless R:2"
+
+################################################################
+ShopLevel:Level 4
+
+Name: Boisterous Greaves Cost:30 Quantity:2 Slot:Boots Text: "When you kill an enemy, immediately pick up their morale token"
+Name: Lightning Greaves Cost:70 Quantity:2 Slot:Boots Text: "Whenever you play a card with energy cost X, you may increase X by 1"
+Name: Skittish Boots Cost:80 Quantity:2 Slot:Boots Text: "Add M:+1 to every movement"
+
+Name: Mask of the Virtuoso Cost:44 Quantity:4 Slot:Helmet Text: "Increase your maximum Life by 4. Add a +4 to your modifier deck"
+#Rules explanation for this one
+Name: Parfumers Hood Cost:20 Quantity:2 Slot:Helmet Text: "Apply the effects of equipped potions to adjacent allies as well"
+Name: Recovery Helmet Cost:10 Quantity:2 Slot:Helmet Text: "Your Regeneration also triggers at the end of your turn"
+Name: Templar Helmet Cost:20 Quantity:2 Slot:Helmet Text: "Whenever Shield is removed, H:X R:0 where X is the amount of shield removed"
+Name: Planning Cap Cost:20 Quantity:2 Slot:Helmet Text: "Maximum Energy:+1"
+Name: Metallic Blood Cost:30 Quantity:2 Slot:Helmet Text: "When you take damage: AMetal:1 and loose one more life"
+
+Name: Gloves of Punching Cost:20 Quantity:2 Slot:Gloves Text: "When playing an action card, you may choose to perfom A:X instead of M:X"
+Name: Hookshot Bracers Cost:10 Quantity:2 Slot:Gloves Text: "Ranged attacks gain: Pull:1"
+Name: Steel Bracers Cost:40 Quantity:2 Slot:Gloves Text: "Your attacks get Pierce:2"
+Name: Artisanal Bracers Cost:20 Quantity:2 Slot:Gloves Text: "When you use a consumable: Bless R:0"
+Name: Flowing Gloves Cost:50 Quantity:2 Slot:Gloves Pips:3 Exhaust Text: "Pip: Gain E:1"
+
+Name: Allerleirau Cost:40 Quantity:2 Slot:Chest Metal:2 Leather:2 Cloth:2 Text: " " ArmourNegative
+Name: Regenerative Robes Cost:30 Quantity:2 Slot:Chest Cloth:2 Text: "Whenever you loose life, Regenerate:1 R:0"
+Name: Templars Plate Cost:30 Quantity:2 Slot:Chest Metal:2 Text: "Your attack instances get A:-1. Whenever you play an attack card Regenerate:2 R:0" ArmourNegative
+
+Name: Hatchet Cost:30 Quantity:2 Slot:OneHanded Exhaust Text: "Exhaust: Change the AOE of your next melee attack to Aoe:CleaveTwo"
+Name: Slingshot Cost:30 Quantity:2 Slot:OneHanded Text: "Tap: Add R:+1 to one effect with a range"
+Name: Wand of Sparking Cost:10 Quantity:2 Slot:OneHanded Text: "Tap: RFire:X A:X R:4"
+Name: Wand of Concussions Cost:10 Quantity:2 Slot:OneHanded Text: "Tap: REarth:X A:1 Push:2*X"
+Name: Wand of Protection Cost:10 Quantity:2 Slot:OneHanded Text: "Tap: RMetal:X S:X"
+Name: Wand of Tides Cost:10 Quantity:2 Slot:OneHanded Text: "Tap: RWater:X A:1 Pull:2*X R:3*X"
+Name: Wand of Growth Cost:10 Quantity:2 Slot:OneHanded Text: "Tap: RWood:X H:1 Regeneration:X R:2"
+
+Name: Piercing Bow Cost:30 Quantity:2 Slot:TwoHanded Exhaust Text: "Exhaust: When you deal damage, also deal that damge to an enemy behind your target"
+Name: Shortspear Cost:30 Quantity:2 Slot:TwoHanded Text: "Tap: Change the AOE of your next melee attack to Aoe:SpearTwo"
+Name: Heavy Crossbow Cost:30 Quantity:2 Slot:TwoHanded Exhaust Text: "Exhaust: A:6 P:4 R:4. You may untap this item during a long rest if you pay E:3"
+Name: Nodachi Cost:30 Quantity:2 Slot:TwoHanded Text: "Tap: Gain Advantage"
+Name: Rakshasa's Katana Cost:20 Quantity:2 Slot:TwoHanded Text: "Tap: The next attack card you play costs life instead of energy. You cannot pay more life than your maximum energy"
+Name: Lance Cost:40 Quantity:2 Slot:TwoHanded Text: "Tap: A:X Where X is the amount you moved this turn"
+
+Name: Pepper Pouch Cost:10 Quantity:2 Slot:Consumable Exhaust Text: "Add Disarm to your next attack"
+Name: Shuriken Cost:20 Quantity:2 Slot:Consumable Exhaust Text: "Target Enemy in Range R:3 loses 4 Life"
+Name: Luring Potion Cost:20 Quantity:2 Slot:Consumable Exhaust Text: "Enemies target you this turn"
+Name: Warhorn Cost:20 Quantity:2 Slot:Consumable Exhaust Text: "Pick up all morale tokens in range R:2"
+
+
+End Of File
+################################################################
+ShopLevel:Level 7
+
+Name: Seven League Steps Cost:70 Quantity:2 Slot:Boots Text: "Instead of your normal basic movement action, you may perform E:2 M:7"
+Name: Hummingbird Boots Cost:50 Quant:2 Slot:Boots Pips:3 Exhaust Text: "Exhaust: When you move, you may add M:+3 and Jump"
+Name: Grafted Wings Cost:50 Quantity:2 Slot:Boots Text: "Add Jump to all of your movements. Traps, dangerous and difficult terrain don't affect you"
+
+Name: Dwarven Helmet Cost:10 Quantity:2 Slot:Helmet Text: "Enemy modifiers cannot inflict banes on you"
+Name: Drinking Funnel Cost:70 Quantity:2 Slot:Helmet Text: "Apply the effects of equipped potions twice"
+Name: Mana Funnel Cost 50 Quantity:2 Slot:Helmet Text: "Whenever you play an Attack you may create an Element of your choice before paying costs"
+
+Name: Grasp of Violence Cost:30 Quantity:2 Slot:Gloves Text: "Enemies in Range R:2 take 1 extra damage for all sources"
+Name: Convening Gloves Cost:90 Quantity:2 Slot:Gloves Text: "Allied summons may skip their turn to give you Powerful:1"
+Name: Elektrum Plektrum Cost:60 Quantity:2 Slot:Gloves Text: "Whenever you play an Attack card, an ally in R:3 gains Powerful"
+
+Name: Crystalline Armour Cost:50 Quantity:2 Slot:Chest Cloth:5 Exhaust Text: "When you loose life, gain S:2 and move a pip"
+Name: Platemail Cost:50 Quantity:2 Slot:Chest Metal:7 Exhaust Text: " " 
+Name: Summoners Fate Cost:50 Quantity:2 Slot:Chest Cloth:3 Text: "You may redistribute life loss between you and your summons"
+
+Name: Flamberge Cost:90 Quantity:2 Slot:TwoHanded Exhaust Pips:2 Text: "Pip: Apply your current modidfier thread twice"
+Name: Zweihänder Cost:70 Quantity:2 Slot:TwoHanded Exhaust Text: "Exhaust: Your next attack gets a 2x damage multiplier"
+Name: Partisan Cost:70 Quantity:2 Slot:TwoHanded Text: "Whenever an enemy moves or is moved into exactly distance 2 to you, you attack them with A:1"
+Name: Battlehammer Cost:70 Quantity:2 Slot:TwoHanded Exhaust Text: "Exhaust: Change the AOE of your next melee attack to Aoe:WavesTwo"
+Name: Silver Blade Cost:60 Quantity:2 Slot:TwoHanded Exhaust Pips:4 Text: "Pip: add A:+4 to your next attack instance. Activate once per attack instance."
+Name: Incandescent Staff Cost:70 Quantity:2 Slot:TwoHanded Text: "Tap, RFire:2: All enemies in range R:5 take 3 damage"
+
+Name: Flail Cost:50 Quantity:2 Slot:OneHanded Text: "Instead of your normal basic attack action, you may perform E:2 A:7"
+Name: Dagger Cost:50 Quantity:2 Slot:OneHanded Exhaust Text: "Exhaust: The next attack deals double damage if it targets an enemy that currently targets another ally on the oppsite side of you"
+Name: Rapier Cost:30 Quantity:2 Slot:OneHanded Text: "Tap: Add draw to the first modifier card in each thread for the next attack card"
+
+Name: Holy Handgrenade Cost:50 Quantity:2 Slot:Consumable Text: "Remove Holy Handgrenade from your possesion: AOE:TriangleTwo A:6 R:3"
+Name: Panicked Potion Cost:40 Quantity:2 Slot:Consumable Exhaust Pips:2 Text: "M:3"
+Name: Fishing Poition Cost:40 Quantity:2 Slot:Consumable Exhaust Text: "Exhaust: Look at the top 5 cards of your modifier deck, put any number on the bottom of your deck and the rest on top in any order"
+
+
+
+
+################################################################
+ShopLevel:Legendary
+
+Defensive Instinct E:3 Text: "At the beginning of the turn: Stun an enemy in R:1" Perpetual Special
+
+################################################################
+End Of File
+
+#Poison is borderline removed anyways. Should we remove these?
+Name: Poisonous Veins E:1 Perpetual Pips:4 Text: "Summons fill a pip when they Attack. When all are full: The Next Summons Attack Adds Poison:4 and resets this card"
+Name: Amplified Venoms Cost:20 Quantity:2 Slot:OneHanded Text: "Tap: Add Poison:+1 to one of our poisons"
+
+#Not gonna lie, these summoner items all feel like copies of just normal items?
+#Especially the ones for golems because they feel like they are intended single target
+Name: Runes E:0 Perpetual Text: "the Golem gains Powerful"
+
+
+#Lame Stuff goes here:
+Name: Steel Bracers Cost:10 Quantity:2 Slot:Gloves Text: "Tap: Add Push:2 to your next melee attack"
+Name: Spiked Shield Cost:60 Quantity:2 Slot:OneHanded Text: "Whenever you gain Shield, also gain that much of Vendetta"
+Name: Bastard Sword Cost:30 Quantity:2 Slot:OneHanded Exhaust Text: "Exhaust: Your next attack gets a 1.5x damage multiplier. If your other hand is exhausted or empty the attack also gains advantage"
+Name: Serrated Dagger Cost:20 Quantity:2 Slot:OneHanded Pips:3 Text: "Pip: Add Trauma to your next attack instance"
+Name: Potion of Certainty Cost:20 Quantity:2 Slot:Consumable Text: "Treat an enemy or ally modifier thread currently in use as +0"
+Name: Fleshtosser Cost:20 Quantity:2 Slot:OneHanded Text: "Tap: A summon gains R:+2 on every action for this turn" 
+Name: Parrying Gloves Cost:50 Quantity:2 Slot:Gloves Text: "Tap: Disarm R:1"
+Name: Summoners Fate Alt Cost:50 Quantity:2 Cloth:3 Text: "Your minions cannot die. You take all damage your minions would take"
+
+Name: Thunderous Greaves Cost:30 Quantity:2 Slot:Boots Pips:3 Exhaust Text: "Whenever you play a card with energy cost X, you may increase X by 1"
+Name: Claymore Cost:70 Quantity:2 Slot:TwoHanded Exhaust Text: "Exhaust: A:2*X Where X is your opponents Shield value"
+Name: Battle Bass 
+Name: Longspear Cost:70 Quantity:2 Slot:TwoHanded Exhaust Text: "Exhaust: Change the AOE of your next melee attack to Aoe:SpearThree"
+Name: Axe Cost:50 Quantity:2 Slot:OneHanded Exhaust Text: "Exhaust: Change the AOE of your next melee attack to Aoe:CleaveThree"
+
+Name: Elixir of Rage Cost:60 Quantity:2 Slot:Consumable Exhaust Text: "Only use this while an ally is dead. Exhaust: Your next attack deals double damage"
+Name: Parrying Dagger Cost:30 Quantity:2 Slot:OneHanded Text: "Tap: Reveal one modifier from your deck. Prevent X damage from an incoming attack, where X is the absolute number on that modifier"

@@ -1,0 +1,643 @@
+#Todays Print
+
+
+###########################################################################################
+Name:Kobold Wolfrider
+
+Stats Normal
+LifeNormal:5
+PassiveNormal: Attach to a Direwolf. When dismounted, M:1 starting each turn.
+
+Stats Elite
+LifeElite:10
+PassiveElite: Attach to a Direwolf. When dismounted, M:3 starting each turn.
+
+Normal AI
+Rolls:1,2 A:1 R:2 
+Rolls:3,4 A:2
+Rolls:5 H:2
+Rolls:6 A:1 Discard 1
+
+Hard AI
+Rolls:1,2 M:3 A:3 R:2
+Rolls:3,4 A:2 T:2 R:3
+Rolls:5,6 A:4 Pierce:1 R:3
+
+###########################################################################################
+Name:Mantikor
+
+Stats Normal
+LifeNormal:20
+
+Stats Elite
+LifeElite:40
+AttackElite:+2
+
+Normal AI
+Rolls:1 M:3 A:5 Poison:3 R:2
+Rolls:3,4 M:5 A:10
+Rolls:4,5 M:5 A:5 Vendetta:3
+Rolls:6 M:2 A:4 R:3 T:2 Debilitate:1
+
+Hard AI
+Rolls:1,2 M:3 A:3 R:2
+Rolls:3,4 A:2 T:2 R:3
+Rolls:5,6 A:4 Pierce:1 R:3
+
+###########################################################################################
+Name:Direwolf
+
+Stats Normal
+LifeNormal:8
+
+Stats Elite
+LifeElite:12
+
+Normal AI
+Rolls:1 M:3 Text: "A:2 for each monster adjacent to target"
+Rolls:2,3 M:4 A:3 Cripple
+Rolls:4,5 M:4 A:3 Vendetta:2
+Rolls:6 M:4 A:4 Text: "Target by reverse Initiative"
+
+Hard AI
+Rolls:1,2 M:3 A:3 R:2
+Rolls:3,4 A:2 T:2 R:3
+Rolls:5,6 A:4 Pierce:1 R:3
+
+End Of File
+
+#Humanoids
+
+
+
+
+###########################################################################################
+Name:Bandit Bowman
+
+Stats Normal
+LifeNormal:4
+
+Stats Elite
+LifeElite:6
+RangeElite:+1
+
+Normal AI
+Rolls:1,2 M:3 A:3 R:2
+Rolls:3,4 A:2 T:2 R:3
+Rolls:5,6 A:4 Pierce:1 R:3
+
+Hard AI
+Rolls:1,2 M:3 A:3 R:2
+Rolls:3,4 A:2 T:2 R:3
+Rolls:5,6 A:4 Pierce:1 R:3
+
+###########################################################################################
+Name:Bandit Ambusher
+
+Stats Normal
+LifeNormal:6
+
+Stats Elite
+LifeElite:10
+AttackElite:+1
+
+Normal AI
+Rolls:1,2 A:3 S:1
+Rolls:3,4 M:2 A:2 Cripple
+Rolls:5,6 M:3 A:3
+
+Hard AI
+Rolls:1,2 A:3 S:2
+Rolls:3,4 M:2 A:2 Cripple
+Rolls:5,6 M:3 A:3
+
+
+
+###########################################################################################
+Name:Kobold Wolfrider
+
+Stats Normal
+LifeNormal:10
+PassiveNormal: Attach to a Direwolf. When dismounted, M:1 starting each turn.
+
+Stats Elite
+LifeElite:20
+PassiveElite: Attach to a Direwolf. When dismounted, M:3 starting each turn.
+
+Normal AI
+Rolls:1,2 A:3 R:2 
+Rolls:3,4 A:4
+Rolls:5 H:4
+Rolls:6 A:1 Discard 1
+
+Hard AI
+Rolls:1,2 M:3 A:3 R:2
+Rolls:3,4 A:2 T:2 R:3
+Rolls:5,6 A:4 Pierce:1 R:3
+
+
+###########################################################################################
+Name:Dryad
+
+Stats Normal
+LifeNormal:30
+
+Stats Elite
+LifeElite:60
+PassiveElite: All attacks gain Poison:1 and T:+1
+
+Normal AI
+Rolls:1,2: M:1 A:3 R:4 T:2 AWood:1
+Rolls:3,4: M:1 A:6 R:4 Silence AWood:1
+Rolls:5: A:3 Poison:2 R:5 T:2 AWood:1
+Rolls:6: M:1 H:3 R:3 RWood:X T:X+1
+
+#TODO
+Hard AI
+Rolls:1,2: M:1 A:3 R:4 T:2
+Rolls:3,4: M:1 A:6 R:4 Cripple
+Rolls:5: A:3 Poison:2 R:5 T:2
+Rolls:6: M:1 H:3 R:3 T:3
+
+
+
+
+###########################################################################################
+Name:Orc Bowman
+
+Stats Normal
+LifeNormal:10
+
+Stats Elite
+LifeElite:15
+AttackElite:+4
+MovementElite:+1
+
+Normal AI
+Rolls:1,2,3 M:3 A:6 R:3
+Rolls:4 A:4 T:2 R:3
+Rolls:5 A:6 R:5 Cripple
+Rolls:6 M:5 H:5 Text: "If in melee, create distance"
+
+Hard AI
+Rolls:1,2 M:3 A:6 R:3
+Rolls:3 A:4 T:2 R:3
+Rolls:4,5 A:6 R:5 Cripple
+Rolls:6 M:5 H:5 Text: "If in melee, create distance"
+
+
+
+###########################################################################################
+Name:Orc Raider
+
+Stats Normal
+LifeNormal:20
+
+Stats Elite
+LifeElite:25
+MovementElite:+2
+PassiveElite: Vendetta:2
+
+Normal AI
+Rolls:1: M:2 A:4 H:4 R:0 
+Rolls:2 A:5 R:3 Cripple
+Rolls:3,4 M:3 A:6 
+Rolls:5,6 Text: "Repeat Twice:" M:2 A:3 Push:2
+
+Hard AI
+Rolls:1,2 M:2 A:4 H:4 R:1
+Rolls:3 A:5 R:3 Cripple
+Rolls:4 M:3 A:4 A:4
+Rolls:5,6 Text: "Repeat Twice:" M:2 A:3 Push:2
+
+###########################################################################################
+Name:Orc War Boss
+
+
+Stats Normal
+LifeNormal:60
+ImmunitiesNormal: Stun Cripple
+
+Stats Elite
+LifeElite:100
+AttackElite:+5
+ImmunitiesElite: Stun Cripple
+PassiveElite: Shield:2
+
+Normal AI
+Rolls:1,2 M:3 A:8 H:16
+Rolls:3,4 M:3 A:6 Push:2 M:3 A:6 Push:2
+Rolls:5,6 M:5 A:6 Text: "AOE:SlamTwo "
+
+Hard AI
+Rolls:1,2 M:3 A:8 H:10 R:1 Text: "Target all allies in range"
+Rolls:3,4 Text: "Repeat Twice:" M:3 A:6 Push:3
+Rolls:5 M:5 A:6 Text: "AOE:SlamTwo "
+Rolls:6 M:3 A:10 Text: "AOE:FeralScream "
+
+
+###########################################################################################
+Name:Orc Shaman
+
+Stats Normal
+LifeNormal:40
+
+Stats Elite
+LifeElite:60
+RangeElite:+5
+PassiveElite: At the start of the turn, H:2 R:7
+
+Normal AI
+Rolls:1,2 M:3 H:6 Bless R:2
+Rolls:3,4 M:2 A:8 R:3
+Rolls:5,6 M:3 H:3 Advantage R:2 T:2
+
+Hard AI
+Rolls:1,2 M:3 H:10 Bless R:2
+Rolls:3 M:2 A:8 R:3
+Rolls:4 M:3 H:3 Advantage Powerful R:2 T:2
+Rolls:5,6 A:4 R:5 Stun
+
+
+
+#Monsters
+
+###########################################################################################
+Name:Chimera
+
+Stats Normal
+LifeNormal:Players*100
+ImmunitiesNormal: Stun
+PassiveNormal: Chimera acts every monster turn. Reroll the AI after each turn
+
+Stats Elite
+LifeElite:Players*130
+AttackElite: A:+2
+ImmunitiesElite: Stun
+PassiveElite: Chimera acts every monster turn. Reroll the AI after each turn
+
+Normal AI
+Rolls:1,2 M:4 A:6 Push:3 Text: "AOE:CleaveFive "
+Rolls:3,4 M:3 Advantage R:0 A:10
+Rolls:5 M:2 A:4 R:3 T:4 Silence Trauma
+Rolls:6 M:1 Curse R:6 T:4
+
+
+Hard AI
+Rolls:1,2 M:4 A:8 Push:3 Text: "AOE:CleaveFive "
+Rolls:3 M:3 Advantage R:0 A:10
+Rolls:4,5 M:2 A:4 R:3 T:4 Silence Trauma
+Rolls:6 M:1 Poison:2 Curse R:6 T:4
+
+###########################################################################################
+Name:Mantikor
+
+Stats Normal
+LifeNormal:50
+
+Stats Elite
+LifeElite:80
+AttackElite:+2
+
+Normal AI
+Rolls:1 M:3 A:5 Poison:3 R:2
+Rolls:3,4 M:5 A:10
+Rolls:4,5 M:5 A:5 Vendetta:3
+Rolls:6 M:2 A:4 R:3 T:2 Debilitate:1
+
+Hard AI
+Rolls:1,2 M:3 A:3 R:2
+Rolls:3,4 A:2 T:2 R:3
+Rolls:5,6 A:4 Pierce:1 R:3
+
+###########################################################################################
+Name:Direwolf
+
+Stats Normal
+LifeNormal:10
+
+Stats Elite
+LifeElite:15
+
+Normal AI
+Rolls:1 M:3 A:2 Text: "A:2 for each other monster adjacent to the target"
+Rolls:2,3 M:4 A:3 Cripple
+Rolls:4,5 M:4 A:3 Vendetta:2
+Rolls:6 M:4 A:4 Text: "Target by reverse Initiative"
+
+Hard AI
+Rolls:1,2 M:3 A:3 R:2
+Rolls:3,4 A:2 T:2 R:3
+Rolls:5,6 A:4 Pierce:1 R:3
+
+###########################################################################################
+Name:Hinterwald Horror
+
+Stats Normal
+LifeNormal:200
+ImmunitiesNormal: All Banes
+
+Stats Elite
+LifeElite:350
+AttackElite: A:+5
+ImmunitiesElite: All Banes
+
+Normal AI
+Rolls:1,2 M:3 Jump A:6 R:5 T:2 Pull:3 Panic:1 Cripple Text: "Target by reverse initiative"
+Rolls:3,4 M:3 Jump A:6 Curse A:6 Curse
+Rolls:5,6 M:3 Jump A:12 Poison:5 Trauma
+
+
+Hard AI
+Rolls:1 M:2 Jump A:10 Pull:3 Cripple R:5 Text: "Target the furthest enemy"
+Rolls:2 M:2 Jump A:10 Stun Curse
+Rolls:3 M:2 Jump A:10 Poison:5 Trauma
+Rolls:4,5,6 M:2 Jump A:10 Disarm R:5 T:2 
+
+#Spectral
+
+###########################################################################################
+Name:Wood Elemental
+
+Stats Normal
+LifeNormal:80
+PassiveNormal: Players can't move in Range 2. Stop movement through these tiles
+
+Stats Elite
+LifeElite:150
+PassiveElite: Players can't move in Range 2. Stop movement through these tiles
+
+Normal AI
+Rolls:A;1,2,3 AWood:1 A:10 Pull:4 R:5 Text: "Target by reverse initiative"
+Rolls:B;1,2,3 RWood:X H:X*5 Vendetta:5
+Rolls:A;4,5,6 AWood:3 A:4 R:4 Cripple Text: "Target all enemies in range" 
+Rolls:B;4,5,6 M:2 A:5 Text: "RWood:1 AOE:Cleave3"
+
+#TODO Add poison here
+Hard AI
+Rolls:A;1,2,3 AWood:1 M:1 A:10 Pull:4 R:5 Text: "Target by reverse initiative"
+Rolls:A;4,5,6 AWood:3 M:1 A:4 R:4 Cripple Text: "Target all enemies in range" 
+Rolls:B;1,2,3 RWood:X H:X*5 Vendetta:5
+Rolls:B;4,5,6 M:2 A:5 Text: "RWood:1 AOE:Cleave3"
+
+###########################################################################################
+Name:Water Elemental
+
+Stats Normal
+LifeNormal:100
+ImmunitiesNormal: Silence Stun
+PassiveNormal: At the start of turn M:2
+
+Stats Elite
+LifeElite:150
+ImmunitiesElite: Silence Stun
+PassiveElite: At the start of turn M:2
+
+Normal AI
+Rolls:A;1,2,3 AWater:1 A:6 Push:3 Cripple Text: "AOE:Cleave3 "
+Rolls:B;1,2,3 A:10 Push:2 RWater:X Discard:X
+Rolls:A;4,5,6 AWater:2 A:4 R:4 Pull:3 Silence Text: "Target all enemies in range"
+Rolls:B;4,5,6 A:5 T:2 R:3 RWater:2 Disarm
+
+#TODO Add poison here
+Hard AI
+Rolls:A;1,2,3 M:2 AWater:1 A:6 Push:3 Cripple Text: "AOE:Cleave3 "
+Rolls:A;4,5,6 M:2 AWater:2 A:4 R:4 Pull:3 Silence Text: "Target all enemies in range"
+Rolls:B;1,2,3 M:2 A:10 Push:2 RWater:X Discard:X
+Rolls:B;4,5,6 M:2 A:5 T:2 R:3 RWater:2 Disarm
+
+
+End Of File
+
+End Of File
+
+###########################################################################################
+Name:Troll
+
+Stats Normal
+LifeNormal:Players*30
+ImmunitiesNormal: Silence Cripple Disarm Stun
+PassiveNormal: At the beginning of the turn, H:Players*3
+
+Stats Elite
+LifeElite:Players*50
+AttackElite:+3
+ImmunitiesElite: Silence Cripple Disarm Stun
+PassiveElite: At the beginning of the turn, H:Players*5
+
+Normal AI
+1: A:5 R:4 Text: "AOE:CircleTwo "
+2: M:4 A:8 Push:3 M:2
+3: M:3 A:8 Text: "Place the target of the attack adjacent and on the other side of the monster"
+4: M:3 A:5 H:Players*10 S:2
+5: M:4 A:5 Push:4 Cripple
+6: M:3 A:8 A:8
+
+#TODO Add posion here
+Hard AI
+1: M:2 A:10 H:15 Text: "Target all allies in Range"
+2: M:4 A:10 Push:2 M:2 A:10 Push:2 M:2 A:10
+3: A:15 R:5 Pull:4 Cripple
+4: M:4 A:10 Text: "AOE:SlamThree "
+5: M:3 A:12 Text: "AOE:ConeThree "
+6: M:2 A:15 Text: "AOE:WavesTwo "
+
+###########################################################################################
+Name:Direwolf
+
+Stats Normal
+LifeNormal:10
+
+Stats Elite
+LifeElite:15
+MovementElite:+2
+AttackElite:+1
+PassiveElite: At the beginning of the turn, Vendetta:1 R:0
+
+Normal AI
+1: A:3 A:3
+2: M:3 A:2 Text: "A:2 for each other monster adjacent to the target"
+3: M:4 A:3 Cripple
+4: M:4 A:4
+5: M:3 A:5
+6: M:4 Vendetta:2 R:2
+
+Hard AI
+1: A:4 A:4
+2: M:3 A:3 Text: "A:3 for each monster adjacent to the target. All Direwolves target the same unit"
+3: M:4 A:5
+4: M:4 A:3 Cipple Text: "Target an uncrippled unit if possible"
+5: M:5 A:3 Text: "Target the furthest unit instead"
+6: M:4 Vendetta:2 H:2
+
+Name:Direwolf 2
+
+Stats Normal
+LifeNormal:10
+
+Stats Elite
+LifeElite:15
+MovementElite:+2
+AttackElite:+1
+PassiveElite: At the beginning of the turn, Vendetta:1 R:0
+
+Normal AI
+1,2,3: M:3 A:2 Text: "A:2 for each other monster adjacent to the target"
+4: M:4 A:3 Cripple
+5,6: M:4 A:5 Vendetta:2
+
+
+
+
+
+#Undead
+
+###########################################################################################
+Name:Zombie
+
+Stats Normal
+LifeNormal:25
+
+Stats Elite
+LifeElite:40
+AttackElite:+5
+
+Normal AI
+1: M:1 A:8 Text: "Zombie looses 2 Life"
+2: M:2 S:2
+3: M:1 A:6
+4: Poison:4
+5: A:5 AOE:CleaveThree
+6: A:10
+#TODO
+Hard AI
+1: M:1 A:8 Text: "Zombie looses 2 Life"
+2: M:2 S:2
+3: M:1 A:6
+4: Poison:4
+5: A:5 AOE:CleaveThree
+6: A:10
+
+Name:Zombie 2
+
+Stats Normal
+LifeNormal:25
+
+Stats Elite
+LifeElite:40
+AttackElite:+5
+
+Normal AI
+1,2,3: M:1 A:8 Text: "Zombie looses 4 Life"
+4: A:5 AOE:CleaveThree
+5: M:2 S:2
+6: Poison:4
+
+###########################################################################################
+Name:Skeleton
+
+Stats Normal
+LifeNormal:10
+
+Stats Elite
+LifeElite:15
+AttackElite:+3
+
+Normal AI
+1: M:6 A:3 Text: "The movement is executed in a straight line"
+2: A:5 Disarm
+3: M:2 A:4 T:2
+4: M:3 A:4 Trauma
+5: M:3 A:4 S:2
+6: M:4 Jump A:4
+#TODO
+Hard AI
+1: M:6 A:3 Text: "The movement is executed in a straight line"
+2: A:5 Disarm
+3: M:2 A:4 T:2
+4: M:3 A:4 Trauma
+5: M:3 A:4 S:2
+6: M:4 Jump A:4
+
+Name:Skeleton 2
+
+Stats Normal
+LifeNormal:10
+
+Stats Elite
+LifeElite:15
+AttackElite:+3
+
+Normal AI
+1,2: M:6 A:3 Text: "The movement is executed in a straight line"
+3,4: M:2 A:4 T:2
+5,6: A:5 S:2
+
+###########################################################################################
+Name:Wraith
+
+Stats Normal
+LifeNormal:8
+
+Stats Elite
+LifeElite:12
+AttackElite:+1
+RangeElite:+2
+PassiveElite: Apply modifiers twice
+
+Normal AI
+1: Curse R:6
+2: M:2 A:3 R:4 Silence
+3: M:1 A:3 R:4 Cripple
+4: M:1 A:4 R:5
+5: A:3 T:2 R:4 Push:2
+6: A:2 T:2 R:6 Pull:2 "Target the furthest unit instead"
+#TODO
+Hard AI
+1: Curse R:6
+2: M:2 A:3 R:4 Silence
+3: M:1 A:3 R:4 Cripple
+4: M:1 A:5 R:5
+5: A:3 T:2 R:4 Push:2
+6: A:2 T:2 R:6 Pull:2 "Target the furthest unit instead"
+
+
+Name:Wraith 2
+
+Stats Normal
+LifeNormal:8
+
+Stats Elite
+LifeElite:12
+AttackElite:+1
+RangeElite:+2
+PassiveElite: Apply modifiers twice
+
+Normal AI
+1,2: A:3 R:4 Push:2 Curse
+3: A:2 T:2 R:6 Pull:2 "Target the furthest unit instead"
+4,5,6: M:1 A:4 R:5 Silence
+
+
+
+
+
+
+#TODO
+Name:Fire Elemental
+AB
+1: A:-1 A:-1
+2: M:+1 A:-1 Text: "A:-2 for each monster adjacent to the target"
+3: M:+1 A:-1 Cripple
+4: M:+0 A:+0
+5: M:-1 A:+1
+6: M:+1 Vendetta:2
+Hardmode
+AB
+1: A:-1 A:-1
+2: M:+1 A:-1 Text: "A+1 for each monster adjacent to the target. All Direwolves target the same unit"
+3: M:+0 A:+0
+4: M:+1 A:-1 Cipple Text: "Target an uncrippled unit if possible"
+5: M:+3 A:-1 Text: "Target the furthest unit instead"
+6: M:+1 Vendetta:2 H:2
+

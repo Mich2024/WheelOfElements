@@ -1,0 +1,31 @@
+Stats
+
+Maximum Energy: 3
+Energy Regeneration: 3
+Life: 12
+Stamina: 6
+Skill:Engineering
+
+Passive
+At the beginning of each turn, remove one bane from your character. You may remove curses from your discard pile with this passive.
+
+#Test comment
+Modifiers
+
+3x Add 1 +0 Draw Regain Pip
+2x Remove 1 +1 Add 1 +2 AEarth:1
+
+Explanation:Shield
+
+Base Cards
+
+Name: Chop Chop E:2 ManaCost:Opt ManaCost:REarth_1 A:2 A:2 Text: "--- Opt cost paid ---" Push:4 Attack
+Name: Crossbow E:3 A:4 P:2 R:4 Attack
+Name: Bash E:2 A:3 Stun Attack
+
+Name: Careful Advance E:2 ManaCost:Opt ManaCost:REarth_1 M:1 S:2 Text: "--- Opt cost paid ---" S:+1 Movement
+
+Name: Earthen Heart E:1 ManaCost:Opt ManaCost:REarth_1 S:2 R:0 Text: "--- Opt cost paid ---" H:4 R:0
+Name: Polish E:1 Special Text: "Untap one of your tapped items"
+Name: Expert Use E:1 ManaCost:Opt ManaCost:REarth_4 Exhaust Special Text: "Apply the effect of the next item you use this turn twice" Text: "--- Opt cost paid ---" Text: " Apply the affect a third time"
+

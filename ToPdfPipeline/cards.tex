@@ -1,0 +1,45 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{amssymb} % needed for math
+\usepackage{amsmath} % needed for math
+\usepackage[utf8]{inputenc} % this is needed for german umlauts
+\usepackage[T1]{fontenc}    % this is needed for correct output of umlauts in pdf
+\usepackage[margin=1cm]{geometry} %layout
+\usepackage{ulem}
+\usepackage{verbatim}
+\usepackage{xargs}
+\usepackage{hyphenat}
+
+\usepackage{graphicx} 
+\graphicspath{ {./images/} }
+
+\usepackage{lmodern}
+\usepackage{environ}% http://ctan.org/pkg/environ
+
+%\setlength{\parskip}{0em}
+\setlength{\parindent}{0em}
+
+\usepackage{venturisold}
+
+
+
+\pagenumbering{gobble}
+
+\input{cardtacticsutil.tex}
+
+\begin{document}
+	%\fontfamily{pbsi}\selectfont
+	%\fontfamily{frc}\selectfont%
+	
+	\title{Cards}
+	\author{Alexander M}
+	\date{\today}
+	%\include{toPrintItems} %contains all the items
+	\newpage
+	%\include{toPrint} %contains all cards needed for races and classes
+	\newpage
+	\include{toPrintMonAI} %contains all the moster AI cards
+	
+	
+	
+\end{document}

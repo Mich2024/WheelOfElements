@@ -1,0 +1,60 @@
+Stats
+
+Life: 6
+Stamina: 2
+Skill:Strength
+Skill:Charisma
+
+Passive
+At the beginning of your round, AFire:1
+
+Modifiers
+
+2x Add 1 +0 E:1
+2x Add 1 +0 Draw AFire:1
+1x Remove 2 +1 Add 2 +2
+1x Add 1 +5 Add 1 -5
+
+Explanation:Vulnerable
+
+Base Cards
+
+#ManaCost:Opt ManaCost:RFire_1
+Name: Fiery arrival E:1 ManaCost:Opt ManaCost:RFire_1 M:3 Jump Text: "--- Opt cost paid ---" A:1 Text: "Target all adjacent enemies" Movement
+
+Name: Spontaneous Combustion E:0 ManaCost:RFire_X Vulnerable R:3 Text: "If the target has less than X life, the target dies and all adjacent enemies take 2*X damage." Attack
+Name: Fire Breathing E:2 AFire:1 A:2 Attack Aoe:FumeOne
+Name: Fireball E:2 ManaCost:RFire_X ManaCost:RWood_Y A:1+X+Y R:4 Text: "All units adjacent to the target take the same damage as the target" Attack
+Name: Spark E:0 A:1 R:3 Attack
+
+Name: Consuming Fire E:0 ManaCost:RWood_X AFire:X+1 Special
+
+Level Cards
+
+l2
+Name: Melt E:1 ManaCost:RMetal_X AFire:2 Special
+Name: Wall of Flame E:1 AFire:1 Perpetual Text: "Place a marker in Range 3. Characters that enter this Hex take 3 damage. This hex counts as dangerous terrain." Special
+
+l4
+Name: Cauterize E:0 AFire:1 Text: "Deal one damage to an ally within range 3. Remove all negative status effects from that ally" Special
+Name: Fire Nova E:0 ManaCost:RFire_X ManaCost:RWood_Y A:X R:1+Y Text: "Target all enemies in range"  Attack
+
+l5
+Name: Summon Flame Spitter E:3 Exhaust Perpetual AFire:1 Text: "Summon, Life:6 A:2 R:3 M:2" Special
+Name: Flare E:2 A:2 Aoe:ConeTwo Disadvantage Attack
+
+l7
+Name: Melt Armor E:2 A:X*3 R:2 Text: "X is the amount of armour the target has" Attack
+Name: Hotfooted E:1 ManaCost:RFire_1 M:6 Movement
+
+l8
+Name: Sun's Embrace E:3 ManaCost:RFire_X ManaCost:RWood_Y A:X*Y Attack
+Name: Eruption E:3 ManaCost:RFire_4 A:5 Text: "Target all enemies, regardless of distance" Attack
+
+# Old ideas:
+# Name: Mantle of Flames E:2 RFire:2 V:5 R:3 Exhaust
+# Name: Flaming Strikes E:3 Exhaust Perpetual Text: "Whenever you make a melee attack action, RFire:1 Add A:1"
+# Name: Searing Touch E:1 A:6 Attack
+# Name: Jet Dodge E:0 RFire:X M:X Movement
+# Name: Shroud of Flames E:3 RFire:3 V:7 R:3 Exhaust
+# Name: Spark E:0 A:2 Disadvantage Special
