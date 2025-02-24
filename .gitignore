@@ -1,6 +1,7 @@
 # ignore the ever changing cardlist
 toPrint.tex
 toPrintMonAI.tex
+toPrintItems.tex
 #Ignore all outputs
 *.pdf
 *.pyc
