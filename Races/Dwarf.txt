@@ -16,16 +16,19 @@ Modifiers
 2x Remove 1 +1 Add 1 +2 AEarth:1
 
 Explanation:Shield
+Explanation:Pull
 
 Base Cards
 
-Name: Chop Chop E:2 ManaCost:Opt ManaCost:REarth_1 A:2 A:2 Text: "--- Opt cost paid ---" Push:4 Attack
-Name: Crossbow E:3 A:4 P:2 R:4 Attack
+Name: Chop Chop E:2 ManaCost:Opt ManaCost:REarth_1 A:2 A:2 Text: "--- Opt cost paid ---" Push Attack
+Name: Crossbow E:3 R:4 P:2 Attack
 Name: Bash E:2 A:3 Stun Attack
+Name: Immovable Wall E:2 A:4 Text: "Cripple all of your enemies" Attack
 
-Name: Careful Advance E:2 ManaCost:Opt ManaCost:REarth_1 M:1 S:2 Text: "--- Opt cost paid ---" S:+1 Movement
+Name: Earthen Heart E:1 ManaCost:Opt ManaCost:REarth_1 S:2 Text: "--- Opt cost paid ---" H:4 Special
+Name: Taunt E:1 Pull Cripple Special
 
-Name: Earthen Heart E:1 ManaCost:Opt ManaCost:REarth_1 S:2 R:0 Text: "--- Opt cost paid ---" H:4 R:0
 Name: Polish E:1 Special Text: "Untap one of your tapped items"
 Name: Expert Use E:1 ManaCost:Opt ManaCost:REarth_4 Exhaust Special Text: "Apply the effect of the next item you use this turn twice" Text: "--- Opt cost paid ---" Text: " Apply the affect a third time"
+Name: Imbued Steel E:1 Text: "Trigger all of your triggered items and double the effect of your passive items this round"
 
