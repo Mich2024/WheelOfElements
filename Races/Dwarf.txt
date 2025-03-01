@@ -31,4 +31,3 @@ Name: Taunt E:1 Pull Cripple Special
 Name: Polish E:1 Special Text: "Untap one of your tapped items"
 Name: Expert Use E:1 ManaCost:Opt ManaCost:REarth_4 Exhaust Special Text: "Apply the effect of the next item you use this turn twice" Text: "--- Opt cost paid ---" Text: " Apply the affect a third time"
 Name: Imbued Steel E:1 Text: "Trigger all of your triggered items and double the effect of your passive items this round"
-
