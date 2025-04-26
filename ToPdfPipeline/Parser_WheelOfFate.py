@@ -75,6 +75,35 @@ def truncateFile(lines):
             res.append(line)
     return res
 
+def startsWith(line, word):
+    res = False
+    if(len(line) > len(word)):
+        if line[:len(word)] == word:
+            res = True
+    return res
+
+# input -> list of words
+# returns -> tuple of ("Text as one string", ["list","with","rest","of","words"])
+def parseTextFromWords(words: list):
+    text = ""
+    #print(words)
+    quotationMarks = 0
+    i = 1
+    #print(i)
+    while quotationMarks < 2:
+        
+        quotationMarks += len(words[i].split(r'"')) - 1 #effectively counts the number of quotation amrks in string
+        #print(words[i])
+        tmp = words[i].split(r'"')
+        if (tmp[0] == ""):
+            tmp = tmp[1:]
+        text += " " + tmp[0]
+        i += 1
+    text = text[1:]
+    words = words[i:] #remove entries that we just parsed
+
+    return (text, words)
+
 
 #returns a dict with stats, passive, modifiers, base cards, leveling cards
 def sliceClassToCardTypes(lines):
@@ -158,48 +187,51 @@ def parseActionCardFromLine(line, in_classname):
             words = words[i:] #remove entries that we just parsed
     return actCard        
 
-#returns takes a line of modifiers, outputs a 
-def parseModifierCardFromLine(line, in_classname):
-    if len(line) > 12:
-        if line[0:11] == "Explanation":
-            return []
+# input: all lines before cards 
+# output: cards
+def parseStatLinesToCards(lines, in_classname):
 
-    modifierCards = []
-    count1 = line.split("x")[0]
-    words = line.split(" ")
-    indexesFull = []
-    indexesAdd = []
-    for i in range(0, len(words)):
-        if(words[i]) == "Add":
-            indexesAdd.append(i)
-            indexesFull.append(i)
-        if(words[i]) == "Remove":
-            indexesFull.append(i)
+    name = in_classname[:-1]
+    rank = in_classname[:-1]
 
-    slicesToAdd = []
-    for ind in indexesAdd:
-        start = ind
-        end = len(words)
-        if(indexesFull.index(ind) != len(indexesFull)-1): #if not at end of indexes, set end to next entry
-            end = indexesFull[indexesFull.index(ind)+1]
+    parts = sliceStatsToCards(lines)
+    Var1 = parts[0]
+    Var2 = parts[1]
+    TypeExplanation = parts[2][1:]
+    elements = []
+    explanations = []
 
-        slicesToAdd.append(words[start+1:end])
+    for line in TypeExplanation:
+        if startsWith(line, "Element"):
+            elements.append(line)
+        if startsWith(line, "Explanation"):
+            explanations.append(line)
 
+    variants = [Var1, Var2]
+    for var in variants:
+        card = statCard()
+        card.Explanations = explanations
+        card.name = name
+        card.rank = rank
+        card.Type = elements
 
-    for modWords in slicesToAdd:
-        startIndex = 0
-        count2 = modWords[startIndex]
-        modCard = modifierCard()
-        modCard.classname = in_classname
-        modCard.modifier = modWords[startIndex+1]
-        if(len(modWords) > startIndex+2):
-            for word in modWords[startIndex+2:]:
-                modCard.specials.append(word)
-        for i in range(int(count1)*int(count2)):
-            modifierCards.append(modCard)
-    return modifierCards
+        mode = ""
+        for line in var:
+            if line == "Passive":
+                mode = "Passive"
+                continue
+            if line == "Modifiers":
+                mode = "Modifiers"
+                continue
+            if startsWith(line, "Life:"):
+                card.assignmentDict[line.split(":")[0]](line.split(":")[1])
+                continue
 
+            if mode == "Passive":
+                card.passive += line + " \\ "
 
+            if mode == "Modifiers":
+                card.modifierUpgrades += line + " \\ "
 
 
 
