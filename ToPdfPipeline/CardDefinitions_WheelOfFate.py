@@ -451,8 +451,8 @@ class statCard:
 
     def __init__(self):
 
-        self.name = ""
-        self.tier = "No Init"
+        self.name = "No Init"
+        self.rank = "No Init"
         self.life = "No Init"
         self.passive = "No Init"
         self.modifierUpgrades = "No Init"
@@ -461,31 +461,9 @@ class statCard:
 
     def setLife(self, l):
         self.life = l
-    def setMaxEnergy(self, e):
-        self.maxEnergy = e
-    def setEnergyRegen(self, e):
-        self.energyRegen = e
-    def setStamina(self, s):
-        self.stamina = s
-    def setSkill(self, s):
-        self.skills += " " + s + " +1"
     
     assignmentDict = {
         "Life":setLife, #stat cards start here
-        "Stamina":setStamina,
-        "Maximum Energy":setMaxEnergy,
-        "Energy Regeneration":setEnergyRegen,
-        "Strength":setSkill,
-        "Toughness":setSkill,
-        "Acrobatics":setSkill,
-        "Stealth":setSkill,
-        "Arcana":setSkill,
-        "Engineering":setSkill,
-        "History":setSkill,
-        "Nature":setSkill,
-        "Charisma":setSkill,
-        "Etiquette":setSkill,
-        "Skill":setSkill,
     }
     #%Input: name, tier, stats, passive, skills
     def serializeToLatex(self):
