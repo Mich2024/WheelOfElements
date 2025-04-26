@@ -452,14 +452,12 @@ class statCard:
     def __init__(self):
 
         self.name = ""
-        self.tier = "0"
-        self.life = "0"
-        self.maxEnergy = "0"
-        self.energyRegen = "0"
-        self.stamina = "0" # deprecated
-        self.skills = ""
-        self.passive = ""
-        self.modifierUpgrades = ""
+        self.tier = "No Init"
+        self.life = "No Init"
+        self.passive = "No Init"
+        self.modifierUpgrades = "No Init"
+        self.Type = "No Init"
+        self.Explanations = []
 
     def setLife(self, l):
         self.life = l

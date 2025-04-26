@@ -1,6 +1,6 @@
 import os
 import re
-from card import *
+from CardDefinitions_WheelOfFate import *
 import copy
 
 maxLevelToPrint = 8
@@ -77,33 +77,25 @@ def truncateFile(lines):
 
 
 #returns a dict with stats, passive, modifiers, base cards, leveling cards
-def sliceToCardtypes(lines, tier):
-    statsBegin = lines.index("Stats")
-    passiveBegin = lines.index("Passive")
-    modifierBegin = lines.index("Modifiers")
-    baseCardsBegin = lines.index("Base Cards")
-    if(tier == 1):
-        levelCardsBegin = lines.index("Level Cards")
+def sliceClassToCardTypes(lines):
 
-        semantics = {statsBegin:"Stats", passiveBegin:"Passive", modifierBegin:"Modifiers", baseCardsBegin:"Base Cards", levelCardsBegin:"Level Cards"}
-        order = [statsBegin,passiveBegin,baseCardsBegin,modifierBegin,levelCardsBegin]
-    else:
-        semantics = {statsBegin:"Stats", passiveBegin:"Passive", modifierBegin:"Modifiers", baseCardsBegin:"Base Cards"}
-        order = [statsBegin,passiveBegin,baseCardsBegin,modifierBegin]
+    CardsBegin = lines.index("Tier1")
+    return (lines[:CardsBegin],lines[CardsBegin:])
+
+def sliceStatsToCards(lines):
+    var1Begin = lines.index("Variant:1")
+    var2Begin = lines.index("Variant:2")
+    typeBegin = lines.index("Type")
+    semantics = {var1Begin:"Variant:1", var2Begin:"Variant:2", typeBegin:"Type"}
+    order = [var1Begin,var2Begin,typeBegin]
     
     order.sort()
 
     res = {}
 
-    #print(semantics)
-    #print(order)
-    #print(len(lines))
-
     for key, value in semantics.items():
         startIndex = order.index(key)
         start = order[startIndex]
-        #print(startIndex)
-        #print(len(order))
         if startIndex == (len(order)-1): #if we have found the last entry, take everything left
             end = len(lines)
         else:
