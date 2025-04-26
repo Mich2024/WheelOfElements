@@ -1,0 +1,37 @@
+Stats
+
+Skill:Toughness
+Skill:Arcana
+
+Variant1
+
+Passive
+At the start of your turn A:1
+Life: 10
+1x Add 2 +0 AEarth:2
+
+Variant2
+
+Passive
+At the start of your turn A:1
+Life: 10
+2x Remove 2 +1 Add 2 +3
+
+Element: Fire
+Element: Earth
+Explanation:Monk
+Explanation:Obstacles
+
+Tier1 (2)
+
+Name: endure H:3
+Name: sear wound H:2 Fire:1
+
+Tier2 (2)
+
+Name: kick through ManaCost:REarth_2 A:7 Push
+Name: double punch ManaCost:REarth_1 Advantage A:3 A:3
+
+Tier3 (1)
+
+Name: open the ground Push AFire:1 Text: "Create Obstacle" Exhaust

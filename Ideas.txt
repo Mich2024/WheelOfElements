@@ -10,7 +10,22 @@ Zoning alt:
 1 Spieler- und zwischenzone pro spieler
 Snowballing idea for the future: Players can play another card from hand on kill
 
+
 a/b choices for modifiers?
 Possible base included
 
 schrödinger storyline
+
+
+Zum Rassen Brett
+auf dem Rassenbrett stehen effekte drauf die passieren wenn sie überdeckt werden
+
+idee
+-> auf dem rassenbrett sind sachen nur aktiv wenn sie offen sind.
+    ->Halbelf hätte bei Rank 3 zumn Beispiel stehen entferne eine *0. Sobald diese Überdeckt wird wird die mal null wieder hinzugefügt
+-> Klassen haben drei Varianten von Plättchen bsp:Koloss 1
+    -> passive + remove 1 -1 + +10 Max life
+    -> passive + remove 3 -1
+    -> +30 Max life
+-> Idee Rassenbrett Elf. Elf hat +0 Max life
+    ->Rank 1 linkeste beide haben +5 Max life stehen
