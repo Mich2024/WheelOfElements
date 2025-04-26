@@ -1,0 +1,45 @@
+Stats
+
+Skill:Toughness
+Skill:Charisma
+
+Variant:1
+Passive
+You may pay up to 2 life to add up to +2 Attack
+Life: 14
+
+Modifiers
+Remove 2 +0
+Add 1 +2
+
+Variant:2
+Passive
+You may pay up to 2 life to add up to +2 Attack
+Life: 7
+
+Modifiers
+Remove 1 +0
+Add 2 +1 H:2 R:0 Draw
+Add 1 +2
+
+Type
+Element: Fire
+Explanation:Shield
+#Explanation:
+
+Tier1
+#(2)
+
+Name: "Fire starter" H:2 AFire:1
+Name: "Fiery Shield" S:1 AFire:1
+
+Tier2
+#(2)
+
+Name: "Reckless Slash" A:7 AFire:1 Text: "lose 3 life"
+Name: "Take a Bite" ManaCost:Opt;Fire;2 A:4 Text: "--- Opt cost paid ---" Text: "Heal equal to your damage dealt"
+
+Tier3
+#(1)
+
+Name: Wrath A:X Text: "X is your missing life. X cant be more than 16" Exhaust

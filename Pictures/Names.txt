@@ -1,0 +1,16 @@
+Aoe:FrontLeftDot
+Aoe:
+Aoe:
+Aoe:
+
+Aoe:Front
+Aoe:Back
+Aoe:Left
+Aoe:Right
+
+Aoe:FrontLeftL
+Aoe:
+Aoe:
+Aoe:
+
+Aoe:Full

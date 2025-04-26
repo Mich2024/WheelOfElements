@@ -1,0 +1,42 @@
+Stats
+
+Skill:Toughness
+Skill:Charisma
+
+Variant:1
+Passive
+Heal equal to damage dealt by your first card each Round
+Life: 14
+
+Modifiers
+Remove 3 -1
+Remove 3 +1
+Add 1 +7
+
+Variant:2
+Passive
+Heal equal to damage dealt by your first card each Round
+Life: 7
+
+Modifiers
+Remove 1 -1
+Remove 1 +1
+Add 5 +1 H:2 R:0 Draw
+
+Type
+Element: Fire
+Explanation: Push
+Explanation: Shield
+
+Tier1
+#(3)
+
+Name: "Uno" Push H:1
+Name: "Dos" S:2 Text: "Lose 2 life"
+Name: "Tres" H:3
+
+Tier2
+#(1)
+
+Name: "Channel" Text: "Choose 1: A:4 or AFire_4."
+Name: "Toast" A:10 Text: "Lose 10 life. If this was your second card Repeat this card."
