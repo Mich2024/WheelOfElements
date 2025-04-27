@@ -42,4 +42,4 @@ Name: "Take a Bite" ManaCost:Opt;Fire;2 A:4 Text: "--- Opt cost paid ---" Text: 
 Tier3
 #(1)
 
-Name: Wrath A:X Text: "X is your missing life. X cant be more than 16" Exhaust
+Name: Wrath A:X Text: "X is your missing life. X cant be more than 12" Exhaust

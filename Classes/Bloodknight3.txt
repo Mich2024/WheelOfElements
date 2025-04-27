@@ -39,4 +39,4 @@ Tier2
 #(1)
 
 Name: "Channel" Text: "Choose 1: A:4 or AFire_4."
-Name: "Toast" A:10 Text: "Lose 10 life. If this was your second card Repeat this card."
+Name: "Flay" A:10 Text: "Lose 10 life. If this was your second card Repeat this card."

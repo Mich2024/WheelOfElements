@@ -8,7 +8,7 @@ Aoe:Back
 Aoe:Left
 Aoe:Right
 
-Aoe:FrontLeftL
+Aoe:FrontLeft
 Aoe:
 Aoe:
 Aoe:

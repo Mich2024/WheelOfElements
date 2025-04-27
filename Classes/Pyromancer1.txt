@@ -1,15 +1,28 @@
-Stats
-
-Life: 6
-Stamina: 2
+Variant:1
 
 Passive
 At the beginning of your round, AFire:1
 
-Modifiers
+Life: 6
 
+Modifiers
 Add 2 +0 Draw AWood:2
 Add 2 +5 Add 1 -5
+
+Variant:2
+
+Passive
+At the beginning of your round, AFire:1
+
+Life: 6
+
+Modifiers
+Add 2 +0 Draw AWood:2
+Add 2 +5 Add 1 -5
+
+Type
+Element: Wood
+Element: Fire
 
 Explanation:Vulnerable
 
@@ -21,11 +34,11 @@ Base Cards
 
 #3
 Name: Regenerate Regenerate:3 AWood:1 Special
-Name: Fireball ManaCost:RFire_X ManaCost:RWood_Y A:X+Y Aoe:Wedge Attack
+Name: Fireball ManaCost:Fire;X ManaCost:Wood;Y A:X+Y Aoe:Wedge Attack
 
 #5
-Name: Fire Breathing ManaCost:RFire_2 A:5 Aoe:Front Attack
+Name: Fire Breathing ManaCost:Fire;2 A:5 Aoe:Front Attack
 Name: Tinder H:3 AWood:2 Special
 
 #8
-Name: Eruption ManaCost:RFire_4 Ranged A:3 Text: "Target all enemies in range" Attack Exhaust
+Name: Eruption ManaCost:Fire;4 Ranged A:3 Text: "Target all enemies in range" Attack Exhaust

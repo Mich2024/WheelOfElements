@@ -5,6 +5,7 @@ Skill:Charisma
 
 Variant:1
 Passive
+#Disengage all enemies
 If you would die, instead set your life total to one and Stun all enemies. This happens only once each Fight
 Life: 14
 
@@ -14,7 +15,7 @@ Add 2 +4
 
 Variant:2
 Passive
-If you would die, instead set your life total to one and Disengage all enemies. This happens only once each Fight
+If you would die, instead set your life total to one and Stun all enemies. This happens only once each Fight
 Life: 7
 
 Modifiers
@@ -24,7 +25,7 @@ Add 3 +1 H:2 R:0 Draw
 Type
 Element: Fire
 Explanation:Vendetta
-Explanation:Disengage
+#Explanation:Disengage
 
 Tier1
 #(3)

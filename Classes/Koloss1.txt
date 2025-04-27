@@ -1,7 +1,7 @@
 Variant:1
 
 Passive
-At the beginning of each round, gain S:1.
+Immunity to Banes
 
 Life: 4
 
@@ -12,7 +12,7 @@ Ignore Armor Negatives
 Variant:2
 
 Passive
-At the beginning of each round, gain S:1.
+Immunity to Banes
 
 Life: 0
 
@@ -24,23 +24,22 @@ Type
 Element: Earth
 
 Explanation:Shield
-Explanation:Push
+Explanation:Taunt
 
 Tier1 
 #(2)
 
-Name: "Straight Punch" A:3
-Name: "Cross Slash" ManaCost:REarth_X A:X+1 A:X+1
+Name: "Guarded Punch" ManaCost:Opt;Earth;2 S:1 Text: "--- Opt cost paid ---" S:X Text: "X is equal to your shield"
+Name: "Cross Slash" ManaCost:Opt;Earth;X A:X+1 A:X+1
 
 Tier2 
 #(2)
 
+Name: "Gargantuan" S:1 A:3
 Name: "Armor Up" S:1 Text: "Choose: A:2 or Earth:2"
-Name: "Gargantuan" ManaCost:Opt;Earth;2 S:2 Text: "--- Opt cost paid ---" S:X Text: "X is equal to your shield"
-#Forced mana cost -> ManaCost:Earth;2
 
 Tier3
 #(1)
 
-Name: "Guardian" Push Text: "Split 3 Shield between you and adjacent Allies" Exhaust
+Name: "Guardian" Taunt Taunt S:2 Exhaust
 
