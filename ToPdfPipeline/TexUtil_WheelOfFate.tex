@@ -112,19 +112,18 @@
 
 
 
-%Input: name, tier, stats, passive, skills
+%Input: name, tier, life, passive, modifiers & explaantion
 \newcommand{\statusCard}[5]{%
 	\resizebox{6.2cm}{!}{\framebox{\makebox(6.2cm,8.8cm)[tl]{\parbox{6.2cm}{%
 				
-				\makebox(6.1cm,8cm)[tl]{\parbox{6.1cm}{%
-						\textbf{\LARGE#1} \hfill Tier:#2
+				\makebox(6.1cm,6cm)[tl]{\parbox{6.1cm}{%
+						\textbf{\LARGE#1} \hfill Rank:#2
 						\normalsize
 						
 						\vspace{0.5cm}
 						
 						\raggedright
 						
-						Stats:\\
 						#3
 						\vspace{0.5cm}
 						
@@ -132,10 +131,10 @@
 						
 					}
 				}
-				\vfill
+				\vfil
 				\makebox(6.1cm,0.7cm)[tl]{\parbox{6.1cm}{%
 						%class level metamods
-						Skills:\\
+						Modifiers:\\
 						#5 
 						
 					}
@@ -158,36 +157,34 @@
 }%t
 
 
-%Input: tier/level ,name, classname , Type, Energy Cost, Text, Metamods
-\newcommand{\basicCard}[7]{%\label{key}
+%Input: name, classname , Type, Cost, Text, Metamods
+\newcommand{\basicCard}[6]{%\label{key}
 	\resizebox{6.2cm}{!}{\framebox{\makebox(6.2cm,8.8cm)[tl]{\parbox{6.2cm}{%
 					
 					\makebox(6.1cm,0.7cm)[tl]{% tier
 						%, Name, Type
-						\large\shrinktofit{4cm}{\textbf{#2}}\hfill#4
+						\large\shrinktofit{4cm}{\textbf{#1}}\hfill#3
 						
 					}%
 				
 					\shrinktofit{6.1cm}{\makebox(6.1cm,2.0cm)[tl]{\parbox{6.1cm}{%
 						\raggedright
-						%\large \shrinktofit{5cm}{\textbf{#2}} \\
-						% #4 \\
 						
-						\large #5
+						\large #4
 						
 						
 					}}}
 				
 			\makebox(6.1cm,5cm)[tl]{\parbox{6.1cm}{%
 				\large
-				\raggedright #6 %actions go here
+				\raggedright #5 %actions go here
 				
 			}
 		}
 		\vfill
 		\makebox(6.1cm,0.7cm)[tl]{\parbox{6.1cm}{%
 				%class level metamods
-				 #3 Level #1 \hfill  #7 %Metamods go here
+				 #2 \hfill  #6 %Metamods go here
 				
 			}
 		}
