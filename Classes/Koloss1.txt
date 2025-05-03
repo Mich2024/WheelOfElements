@@ -26,20 +26,20 @@ Element: Earth
 Explanation:Shield
 Explanation:Taunt
 
-Tier1 
+Tier1
 #(2)
 
-Name: "Guarded Punch" ManaCost:Opt;Earth;2 S:1 Text: "--- Opt cost paid ---" S:X Text: "X is equal to your shield"
-Name: "Cross Slash" ManaCost:Opt;Earth;X A:X+1 A:X+1
+Name: "Guarded Punch" ManaCost:Opt;Earth;2 S:1 Text: "--- Opt cost paid ---" S:X Text: "X is equal to your shield" Type:Special
+Name: "Cross Slash" ManaCost:Opt;Earth;X A:X+1 A:X+1 Type:Attack
 
 Tier2 
 #(2)
 
-Name: "Gargantuan" S:1 A:3
-Name: "Armor Up" S:1 Text: "Choose: A:2 or Earth:2"
+Name: "Gargantuan" S:1 A:3 Type:Attack
+Name: "Armor Up" S:1 Text: "Choose: A:2 or Earth:2" Type:Attack
 
 Tier3
 #(1)
 
-Name: "Guardian" Taunt Taunt S:2 Exhaust
+Name: "Guardian" Taunt Taunt S:2 Exhaust Type:Special
 

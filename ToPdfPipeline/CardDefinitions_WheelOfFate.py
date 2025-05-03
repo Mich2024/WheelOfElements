@@ -41,18 +41,11 @@ symbolDict = {
     "Pips":r"\symPips",
 
     #Elements 
-    "AFire":r"\symAddFire",
-    "AEarth":r"\symAddEarth",
-    "AMetal":r"\symAddMetal",
-    "AWater":r"\symAddWater",
-    "AWood":r"\symAddWood",
-
-    #reworked to never use removes
-    "RFire":r"\symAddFire",
-    "REarth":r"\symAddEarth",
-    "RMetal":r"\symAddMetal",
-    "RWater":r"\symAddWater",
-    "RWood":r"\symAddWood",
+    "Fire":r"\symAddFire",
+    "Earth":r"\symAddEarth",
+    "Metal":r"\symAddMetal",
+    "Water":r"\symAddWater",
+    "Wood":r"\symAddWood",
 
     # Attack effects
     "Pull":r"\symPull",
@@ -176,6 +169,7 @@ dictExplanation = {
     # Esoteric
     "Obstacle":r"Obstacles can only be placed on tiles without units. They cannot be placed in such a way as to make hex without an obstacle unreachable by standard movement. They can be placed on difficult and dangerous terrain.",
     "Obstacles":r"Obstacles can only be placed on tiles without units. They cannot be placed in such a way as to make hex without an obstacle unreachable by standard movement. They can be placed on difficult and dangerous terrain.",
+    "Taunt":r"Move the rightmost enemy from the left player, or the leftmost enemy from the right player to your enemy pool.",
 
 }
 
@@ -213,7 +207,7 @@ def serializeActionToTex(inputActions):
             #TODO check for elemental removes?
 
                 parts = action.split(":")
-                if (parts[0] == "A" or parts[0] == "H" or parts[0] == "M" or ( parts[0] in attackModifiers and flagAttackChainStarted == False) ):
+                if (parts[0] == "A" or parts[0] == "H" or ( parts[0] in attackModifiers and flagAttackChainStarted == False) ):
                     if not flagFirstLinebreak:
                         res += r"\\ "
                     else:
@@ -241,65 +235,56 @@ class actionCard:
     cardModifiers = []
     actions = []
     level = "0"
-    flagAoe = False
     aoe = ""
-    flagPips = False
-    pips = ""
     tier = "0"'''
 
     def __init__(self):
 
         self.energyCost = "0"
-        #format in here is: [RFire_5, RWood_5] etc
-        self.manaCost = []
-        self.cardType = "Special" #Should be Attack, Movement or Special
+        #format in here is: [Opt;Earth;X, Wood;2] etc
+        self.manaCost = ""
+        self.cardType = "Special" #Should be Attack or Special
         self.cardName = ""
         self.classname = "Class designation missing"
         self.cardModifiers = []
         self.actions = []
-        self.level = "0"
-        self.flagAoe = False
+        self.rank = "0"
         self.aoe = ""
-        self.flagPips = False
-        self.pips = ""
         self.tier = "0"
     
 
     def setLevel(self, x):
-        self.level = x
+        self.rank = x
     def setType(self, x):
         self.cardType = x
     def setEnergyCost(self, x):
         self.energyCost = x
     def appendManaCost(self, x):
-        app = x.split(":")[1]
-        self.manaCost.append(app)
+        self.manaCost = x.split(":")[1]
     def appendAction(self, x):
         self.actions.append(x)
     def appendModifier(self, x):
         self.cardModifiers.append(x)
     def appendAoe(self, x):
         self.aoe = x
-        self.flagAoe = True
-    def appendPips(self, x):
-        self.pips = r"\symPip{" + str(x) + "}"
-        self.flagPips = True
+    def appendText(self, x):
+        self.actions.append(["Text: ", x])
 
 
     assignmentDict = {
         "Type":setType,
         "Attack":setType,
-        "Movement":setType,
         "Special":setType,
         "L":setLevel,
         "E":setEnergyCost,
         "ManaCost":appendManaCost,
+        "Text":appendText,
 
         "A":appendAction,
         "R":appendAction,
         "T":appendAction,
         "Targets":appendAction,
-        "Tartget":appendAction,
+        "Target":appendAction,
         "AOE":appendAoe,
         "Aoe":appendAoe,
 
@@ -325,35 +310,27 @@ class actionCard:
         "Cripple":appendAction,
         "Disarm":appendAction,
         "Confuse":appendAction,
-        "Muddle":appendAction,
         "Poison":appendAction,
         "Wound":appendAction,
-        #"Scorch":appendAction, Renamed to Trauma
         "Disadvantage":appendAction,
         "Trauma":appendAction,
         "Vulnerable":appendAction,
         "Stun":appendAction,
         "Curse":appendAction,
         "V":appendAction,
-        #Vengeance":appendAction, rename to vendetta
         "Vendetta":appendAction,
         "Panic":appendAction,
+        "Taunt":appendAction,
+        "Disengage":appendAction,
 
         "Exhaust":appendModifier,
         "Unrecoverable":appendModifier,
-        "Perpetual":appendModifier,
-        "Pips":appendPips,
 
-        "AFire":appendAction,
-        "RFire":appendAction,
-        "AEarth":appendAction,
-        "REarth":appendAction,
-        "AMetal":appendAction,
-        "RMetal":appendAction,
-        "AWater":appendAction,
-        "RWater":appendAction,
-        "AWood":appendAction,
-        "RWood":appendAction,
+        "Fire":appendAction,
+        "Earth":appendAction,
+        "Metal":appendAction,
+        "Water":appendAction,
+        "Wood":appendAction,
         
     }
 
@@ -362,39 +339,31 @@ class actionCard:
         #print(self.actions)
         res = ""
         
-        if(self.flagPips == True):
-            #%Input: tier/level, name, Type, Energy Cost, Text, pips
-            res += r"\pipCard"
-        elif(self.flagAoe == True):
+        if(self.aoe != ""):
             #%Input: tier/level, name, Type, Energy Cost, Text, aoesym
             res += r"\aoeCard"
         else:
             #%Input: tier/level, name, Type, Energy Cost, Text
             res += r"\basicCard"
-        res += "{" + str(self.level) + "}"
         res += "{" + self.cardName + "}"
         res += "{" + self.classname + "}"
         res += "{" + self.cardType + "}"
 
-        res += "{" + symbolDict["Energy"] + " " + self.energyCost 
+        #Costs
+        res += "{" 
 
         if("Exhaust" in self.cardModifiers):
             res += " " + symbolDict["Exhaust"] + " "
 
-
-        res += r" \\ "
-
-        for mana in self.manaCost:
-            c = mana.split("_")
-            sym = " "
-            if(c[0] in symbolDict):
-                sym += symbolDict[c[0]]
-
-            res +=  sym
-            if  len(c) == 2: #mana symbols
-                res += ": " + c[1]
+        cost = self.manaCost.split(";")
+        for c in cost:
+            sym = ""
+            if(c in symbolDict):
+                sym += symbolDict[c]
+                res += sym + " "
             else:
-                res += c[0] #Optional
+                res += c + " "
+            
 
         res += r"}" 
         
@@ -413,10 +382,8 @@ class actionCard:
 
         res += "}"
 
-        if(self.flagPips == True):
-            res += "{" + removeColons(self.pips) + "}"
 
-        if(self.flagAoe == True):
+        if(self.aoe != ""):
             res += "{" + r"\symAoe{" + removeColons(self.aoe) + "} }"
         res += "\n"
         #\symCardTier
@@ -447,6 +414,8 @@ class modifierCard:
         res += "\n"
         return res
     
+
+
 class statCard:
 
     def __init__(self):
@@ -454,10 +423,10 @@ class statCard:
         self.name = "No Init"
         self.rank = "No Init"
         self.life = "No Init"
-        self.passive = "No Init"
-        self.modifierUpgrades = "No Init"
-        self.Type = "No Init"
-        self.Explanations = []
+        self.passive = ""
+        self.modifierUpgrades = ""
+        self.elements = []
+        self.explanations = []
 
     def setLife(self, l):
         self.life = l
@@ -469,22 +438,16 @@ class statCard:
     def serializeToLatex(self):
         res = r"\statusCard"
         res += "{" + self.name + "}"
-        res += "{" + str(self.tier) + "}"
+        res += "{" + str(self.rank) + "}"
         res += "{" 
         res += symbolDict["Life"] + r"\hspace{0.0cm} Life: " + str(self.life) + r"\\ "
-        res += symbolDict["Maximum Energy"] + r"\hspace{0.01cm} Maximum Energy: " + str(self.maxEnergy) + r"\\ "
-        res += symbolDict["Energy Regeneration"] + r"\hspace{0.01cm} Energy Regeneration: " + str(self.energyRegen) + r"\\ "
         res += "}"
         res += "{" + self.passive + "}"
-        res += "{" + self.skills + "}"
-        res += "\n"
-        res += r"\modifierListCard"
-        res += "{" + self.name + "}"
-        res += "{"
-        for line in self.modifierUpgrades:
-            if "Explanation" in line:
-                line = r"~\\ "  + dictExplanation[line.split(":")[1]]
-            res += line + r" \\" 
+        res += "{" + self.modifierUpgrades + r" \\ "
+        #for line in self.explanations:
+        #    res += line + r" \\ "  + dictExplanation[line.split(":")[1]] + r" \\" 
+        for line in self.elements:
+            res += line
         res += r"} \\"
         res += "\n"
         return res

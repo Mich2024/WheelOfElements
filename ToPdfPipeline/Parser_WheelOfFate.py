@@ -3,7 +3,7 @@ import re
 from CardDefinitions_WheelOfFate import *
 import copy
 
-maxLevelToPrint = 8
+maxRankToPrint = 8
 flagPrintHardAI = False
 
 def removeLinebreaks(lines):
@@ -88,18 +88,19 @@ def parseTextFromWords(words: list):
     text = ""
     #print(words)
     quotationMarks = 0
-    i = 1
+    i = 0
     #print(i)
     while quotationMarks < 2:
-        
-        quotationMarks += len(words[i].split(r'"')) - 1 #effectively counts the number of quotation amrks in string
+        #print(words[i])
+        #print(len(words[i].split(r'"')) - 1)
+        quotationMarks += len(words[i].split(r'"')) - 1 #effectively counts the number of quotation marks in string
         #print(words[i])
         tmp = words[i].split(r'"')
         if (tmp[0] == ""):
             tmp = tmp[1:]
         text += " " + tmp[0]
         i += 1
-    text = text[1:]
+    text = text[1:] #remove leading space
     words = words[i:] #remove entries that we just parsed
 
     return (text, words)
@@ -112,6 +113,7 @@ def sliceClassToCardTypes(lines):
     return (lines[:CardsBegin],lines[CardsBegin:])
 
 def sliceStatsToCards(lines):
+    #print(lines)
     var1Begin = lines.index("Variant:1")
     var2Begin = lines.index("Variant:2")
     typeBegin = lines.index("Type")
@@ -135,29 +137,25 @@ def sliceStatsToCards(lines):
     return res
 
 #returns an entire action card, without associated level
-def parseActionCardFromLine(line, in_classname):
+def parseActionCardFromLine(line, nameClass, rank, tier):
+
+    #Name: "Guarded Punch" ManaCost:Opt;Earth;2 S:1 Text: "--- Opt cost paid ---" S:X Text: "X is equal to your shield" Type:Special
+
+
     actCard = actionCard()
-    actCard.classname = in_classname
+    actCard.classname = nameClass
+    actCard.rank = rank
+    actCard.tier = tier
+    
     words = line.split(" ")
-    err = False
-    while err == False:
-        try:
-            words.remove("")
-        except:
-             err = True
+    words = [i for i in words if i != ""]  #remove leftovers from double spaces
 
     #print(words[0])
     if(words[0] == "Name:"): #stores name and deletes entries from words
-        nameWordcount = 1
-        for word in words[1:]:
-            if not ":" in word:
-                actCard.cardName += word
-                nameWordcount += 1
-                actCard.cardName += " " 
-            else:
-                actCard.cardName = actCard.cardName[0:]
-                words = words[nameWordcount:]
-                break
+        name, words = parseTextFromWords(words[1:])
+        #print(name)
+        actCard.cardName = name
+
     else:
         print("Error parsing cardName")
 
@@ -167,41 +165,33 @@ def parseActionCardFromLine(line, in_classname):
             parts = words[0].split(":")
             actCard.assignmentDict[parts[0]](actCard,words[0])
             words = words[1:] #remove entry that we just parsed
+
         else: #Text comes here and needs special treatment
-            #print(words)
-            quotationMarks = 0
-            i = 1
-            result = ""
-            #print(i)
-            while quotationMarks < 2:
-                if '"' in words[i]:
-                    quotationMarks += 1
-                #print(words[i])
-                tmp = words[i].split(r'"')
-                if (tmp[0] == ""):
-                    tmp = tmp[1:]
-                result += " " + tmp[0]
-                i += 1
-            #result = removeDoubleQuotes(result)
-            actCard.actions.append(["Text: ", result])
-            words = words[i:] #remove entries that we just parsed
+            parts = words[0].split(":")
+            text, words = parseTextFromWords(words[1:])
+            actCard.assignmentDict[parts[0]](actCard,text)
+            
+
     return actCard        
 
 # input: all lines before cards 
 # output: cards
 def parseStatLinesToCards(lines, in_classname):
 
+    res = []
+
     name = in_classname[:-1]
-    rank = in_classname[:-1]
+    rank = in_classname[-1:]
 
     parts = sliceStatsToCards(lines)
-    Var1 = parts[0]
-    Var2 = parts[1]
-    TypeExplanation = parts[2][1:]
+    Var1 = parts["Variant:1"]
+    Var2 = parts["Variant:2"]
+    TypeExplanation = parts["Type"]
     elements = []
     explanations = []
 
     for line in TypeExplanation:
+        print(line)
         if startsWith(line, "Element"):
             elements.append(line)
         if startsWith(line, "Explanation"):
@@ -210,10 +200,10 @@ def parseStatLinesToCards(lines, in_classname):
     variants = [Var1, Var2]
     for var in variants:
         card = statCard()
-        card.Explanations = explanations
+        card.explanations = explanations
         card.name = name
         card.rank = rank
-        card.Type = elements
+        card.elements = elements
 
         mode = ""
         for line in var:
@@ -224,14 +214,17 @@ def parseStatLinesToCards(lines, in_classname):
                 mode = "Modifiers"
                 continue
             if startsWith(line, "Life:"):
-                card.assignmentDict[line.split(":")[0]](line.split(":")[1])
+                card.assignmentDict[line.split(":")[0]](card,line.split(":")[1])
                 continue
 
             if mode == "Passive":
-                card.passive += line + " \\ "
+                card.passive += line + r" \\ "
 
             if mode == "Modifiers":
-                card.modifierUpgrades += line + " \\ "
+                #print(line)
+                card.modifierUpgrades += line + r" \\ "
+        res.append(copy.deepcopy(card))
+    return res
 
 
 
@@ -491,9 +484,12 @@ def parseRacesAndClasses(files_Input):
         print("handling file: " + filelong )
         file = filelong.split("\\")[2] # Drops the prefix from the card
         if("Classes" in filelong):
-            tier = int(file.split(".")[0][-1]) # classes have tier 1 to 3
+            rank = int(file.split(".")[0][-1]) # classes have tier 1 to 3
         else:
-            tier = 0 #signifies race
+            rank = 0 #signifies race
+
+        if rank > maxRankToPrint:
+            continue
 
         #open and sanitize file
         fileToParse = open(filelong,"r")
@@ -503,70 +499,25 @@ def parseRacesAndClasses(files_Input):
         lines = removeLinebreaks(lines)
         lines = removeEmptyLines(lines)
         lines = truncateFile(lines)
-        lines = addSpacesBetweenEmptyText(lines)
         lines = addSpacesAfterText(lines)
         print("completed sanitization")
 
-        linesByCardType = sliceToCardtypes(lines, tier)
-        #print(linesByCardType)
-        linesStats = linesByCardType["Stats"]
-        linesPassive = linesByCardType["Passive"]
-        linesModifiers = linesByCardType["Modifiers"]
-        linesBaseCards = linesByCardType["Base Cards"]
-        if(tier == 1):
-            linesLevelCards = linesByCardType["Level Cards"]
+        linesStats, linesActions = linesByCardType = sliceClassToCardTypes(lines)
 
-
-        statusCard = statCard() ###############################################
-        statusCard.name = file.split(".")[0]
-        statusCard.tier = tier
-        if(len(linesPassive)==1):
-            statusCard.passive = linesPassive[0]
-        else:
-            print("parsing the passive failed")
-        for line in linesStats:
-            statusCard.assignmentDict[line.split(":")[0]](statusCard,line.split(":")[1].replace(" ", ""))
-        statusCard.modifierUpgrades = linesModifiers
-        statusCards.append(statusCard)
+        name = file.split(".")[0]
         
-        #print(statusCard.name)
-        #print(statusCard.passive)
-
-
-        for line in linesModifiers:##########################################
-            modifierCards.extend(parseModifierCardFromLine(line, file.split(".")[0]))
-            #modifierCards.append(modCard) Happens as part of the parse, since one line caould have multiple varying modifier cards i.e. fire mage +5 -5
-        print("parsed modifiers")
-
-        currLevel = (tier - 1) * 3  
-        currLevel = max(currLevel, 1) # cap lowest level at 1
-        for line in linesBaseCards: #######################################
-            #print(line)
-            if(currLevel > maxLevelToPrint):
-                    break
+        statusCards.extend(parseStatLinesToCards(linesStats, name))
+        tier = "1"
+        for line in linesActions: #######################################
+            if startsWith(line, "Tier"):
+                tier = line[4]
+            else:
                 
-            
-            newActCard = parseActionCardFromLine(line, file.split(".")[0])
+            #def parseActionCardFromLine(line, nameClass, rank, tier):
+                newActCard = parseActionCardFromLine(line, name, rank, tier)
 
-            newActCard.level = currLevel
-            actionCards.append(newActCard)
+                actionCards.append(copy.deepcopy(newActCard))
 
-        if(tier == 1):
-            currLevel = 2
-            for line in linesLevelCards: #######################################
-                
-                
-
-                if (line[0:2] == "lv" or line[0:2] == "Lv" or line[0:2] == "LV"):
-                    currLevel = int(line[2])
-                elif (line[0:1] == "l" or line[0:1] == "L"):
-                    currLevel = int(line[1])
-                else:
-                    if(currLevel > maxLevelToPrint):
-                        break
-                    actCard = parseActionCardFromLine(line, file.split(".")[0])
-                    actCard.level = currLevel
-                    actionCards.append(actCard)
         print("parsed action cards")
         
 
@@ -574,7 +525,7 @@ def parseRacesAndClasses(files_Input):
 
     texStatCards = ""
     for statusCard in statusCards:
-        print(statusCard.name)
+        #print(statusCard.name)
         texStatCards += statusCard.serializeToLatex()
 
 
@@ -605,19 +556,19 @@ if __name__ == "__main__":
     #files_Input.append(r"..\Races\Dragonblood.txt")
     #files_Input.append(r"..\Races\Dwarf.txt")
     #files_Input.append(r"..\Races\Elf.txt")
-    files_Input.append(r"..\Races\Fae.txt")
-    files_Input.append(r"..\Races\HalfElf.txt")
+    #files_Input.append(r"..\Races\Fae.txt")
+    #files_Input.append(r"..\Races\HalfElf.txt")
     #files_Input.append(r"..\Races\Human.txt")
-    files_Input.append(r"..\Races\Merman.txt")
+    #files_Input.append(r"..\Races\Merman.txt")
     #files_Input.append(r"..\Races\Silverkin.txt")
-    files_Input.append(r"..\Races\Thyger.txt")
+    #files_Input.append(r"..\Races\Thyger.txt")
     
     #files_Input.append(r"..\Classes\Alchemist1.txt")
     #files_Input.append(r"..\Classes\Alchemist2.txt")
     #files_Input.append(r"..\Classes\Alchemist3.txt")
 
-    files_Input.append(r"..\Classes\BladeDancer1.txt")
-    files_Input.append(r"..\Classes\BladeDancer2.txt")
+    #files_Input.append(r"..\Classes\BladeDancer1.txt")
+    #files_Input.append(r"..\Classes\BladeDancer2.txt")
     #files_Input.append(r"..\Classes\BladeDancer3.txt")
 
     #files_Input.append(r"..\Classes\Bloodknight1.txt")
@@ -632,7 +583,7 @@ if __name__ == "__main__":
     #files_Input.append(r"..\Classes\Huntsman2.txt")
     #files_Input.append(r"..\Classes\Huntsman3.txt")
 
-    #files_Input.append(r"..\Classes\Koloss1.txt")
+    files_Input.append(r"..\Classes\Koloss1.txt")
     #files_Input.append(r"..\Classes\Koloss2.txt")
     #files_Input.append(r"..\Classes\Koloss3.txt")
 
@@ -640,7 +591,7 @@ if __name__ == "__main__":
     #files_Input.append(r"..\Classes\Metallurge2.txt")
     #files_Input.append(r"..\Classes\Metallurge3.txt")
 
-    files_Input.append(r"..\Classes\Monk1.txt")
+    #files_Input.append(r"..\Classes\Monk1.txt")
     #files_Input.append(r"..\Classes\Monk2.txt")
     #files_Input.append(r"..\Classes\Monk3.txt")
 
@@ -648,16 +599,16 @@ if __name__ == "__main__":
     #files_Input.append(r"..\Classes\Priest2.txt")
     #files_Input.append(r"..\Classes\Priest3.txt")
 
-    files_Input.append(r"..\Classes\Pyromancer1.txt")
-    files_Input.append(r"..\Classes\Pyromancer2.txt")
+    #files_Input.append(r"..\Classes\Pyromancer1.txt")
+    #files_Input.append(r"..\Classes\Pyromancer2.txt")
     #files_Input.append(r"..\Classes\Pyromancer3.txt")
 
-    files_Input.append(r"..\Classes\Ranger1.txt")
+    #files_Input.append(r"..\Classes\Ranger1.txt")
     #files_Input.append(r"..\Classes\Ranger2.txt")
     #files_Input.append(r"..\Classes\Ranger3.txt")
 
-    files_Input.append(r"..\Classes\Strategist1.txt")
-    files_Input.append(r"..\Classes\Strategist2.txt")
+    #files_Input.append(r"..\Classes\Strategist1.txt")
+    #files_Input.append(r"..\Classes\Strategist2.txt")
     #files_Input.append(r"..\Classes\Strategist3.txt")
 
     
@@ -665,10 +616,10 @@ if __name__ == "__main__":
     
 
     
-    maxLevelToPrint = 5
+    maxRankToPrint = 5
     flagPrintHardAI = False
-    #parseRacesAndClasses(files_Input)
-    parseMonsterAI()
+    parseRacesAndClasses(files_Input)
+    #parseMonsterAI()
     #parseItems()
 
     #### Deprecated Classes:
