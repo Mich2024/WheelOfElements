@@ -241,65 +241,56 @@ class actionCard:
     cardModifiers = []
     actions = []
     level = "0"
-    flagAoe = False
     aoe = ""
-    flagPips = False
-    pips = ""
     tier = "0"'''
 
     def __init__(self):
 
         self.energyCost = "0"
-        #format in here is: [RFire_5, RWood_5] etc
-        self.manaCost = []
-        self.cardType = "Special" #Should be Attack, Movement or Special
+        #format in here is: [Opt;Earth;X, Wood;2] etc
+        self.manaCost = ""
+        self.cardType = "Special" #Should be Attack or Special
         self.cardName = ""
         self.classname = "Class designation missing"
         self.cardModifiers = []
         self.actions = []
-        self.level = "0"
-        self.flagAoe = False
+        self.rank = "0"
         self.aoe = ""
-        self.flagPips = False
-        self.pips = ""
         self.tier = "0"
     
 
     def setLevel(self, x):
-        self.level = x
+        self.rank = x
     def setType(self, x):
         self.cardType = x
     def setEnergyCost(self, x):
         self.energyCost = x
     def appendManaCost(self, x):
-        app = x.split(":")[1]
-        self.manaCost.append(app)
+        self.manaCost = x.split(":")[1]
     def appendAction(self, x):
         self.actions.append(x)
     def appendModifier(self, x):
         self.cardModifiers.append(x)
     def appendAoe(self, x):
         self.aoe = x
-        self.flagAoe = True
-    def appendPips(self, x):
-        self.pips = r"\symPip{" + str(x) + "}"
-        self.flagPips = True
+    def appendText(self, x):
+        self.actions.append(["Text: ", x])
 
 
     assignmentDict = {
         "Type":setType,
         "Attack":setType,
-        "Movement":setType,
         "Special":setType,
         "L":setLevel,
         "E":setEnergyCost,
         "ManaCost":appendManaCost,
+        "Text":appendText,
 
         "A":appendAction,
         "R":appendAction,
         "T":appendAction,
         "Targets":appendAction,
-        "Tartget":appendAction,
+        "Target":appendAction,
         "AOE":appendAoe,
         "Aoe":appendAoe,
 
@@ -325,35 +316,26 @@ class actionCard:
         "Cripple":appendAction,
         "Disarm":appendAction,
         "Confuse":appendAction,
-        "Muddle":appendAction,
         "Poison":appendAction,
         "Wound":appendAction,
-        #"Scorch":appendAction, Renamed to Trauma
         "Disadvantage":appendAction,
         "Trauma":appendAction,
         "Vulnerable":appendAction,
         "Stun":appendAction,
         "Curse":appendAction,
         "V":appendAction,
-        #Vengeance":appendAction, rename to vendetta
         "Vendetta":appendAction,
         "Panic":appendAction,
+        "Taunt":appendAction,
 
         "Exhaust":appendModifier,
         "Unrecoverable":appendModifier,
-        "Perpetual":appendModifier,
-        "Pips":appendPips,
 
-        "AFire":appendAction,
-        "RFire":appendAction,
-        "AEarth":appendAction,
-        "REarth":appendAction,
-        "AMetal":appendAction,
-        "RMetal":appendAction,
-        "AWater":appendAction,
-        "RWater":appendAction,
-        "AWood":appendAction,
-        "RWood":appendAction,
+        "Fire":appendAction,
+        "Earth":appendAction,
+        "Metal":appendAction,
+        "Water":appendAction,
+        "Wood":appendAction,
         
     }
 
@@ -456,8 +438,8 @@ class statCard:
         self.life = "No Init"
         self.passive = "No Init"
         self.modifierUpgrades = "No Init"
-        self.Type = "No Init"
-        self.Explanations = []
+        self.elements = []
+        self.explanations = []
 
     def setLife(self, l):
         self.life = l
