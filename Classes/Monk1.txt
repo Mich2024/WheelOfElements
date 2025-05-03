@@ -8,7 +8,7 @@ Variant1
 Passive
 At the start of your turn A:1
 Life: 10
-1x Add 2 +0 AEarth:2
+1x Add 2 +0 Earth:2
 
 Variant2
 
@@ -19,19 +19,21 @@ Life: 10
 
 Element: Fire
 Element: Earth
-Explanation:Monk
+
+Explanation:Disengage
 Explanation:Obstacles
+#Currently: Power:5 Obstacles are a permanent Boon. whenever a enemy enters A:1 that enemy
 
-Tier1 (2)
+Tier1
 
-Name: endure H:3
-Name: sear wound H:2 Fire:1
+Name: "endure" S:1 Fire:1
+Name: "sear" wound H:2 Fire:1
 
-Tier2 (2)
+Tier2
 
-Name: kick through ManaCost:REarth_2 A:7 Push
-Name: double punch ManaCost:REarth_1 Advantage A:3 A:3
+Name: "kick away" ManaCost:Earth;2 A:7 Disengage
+Name: "double punch" ManaCost:Earth;1 Advantage A:3 A:3
 
-Tier3 (1)
+Tier3
 
-Name: open the ground Push AFire:1 Text: "Create Obstacle" Exhaust
+Name: "open the ground" Disengage AFire:1 Text: "Create Obstacle" Exhaust

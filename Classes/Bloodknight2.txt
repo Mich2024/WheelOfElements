@@ -24,20 +24,21 @@ Add 3 +1 H:2 R:0 Draw
 
 Type
 Element: Fire
+
 Explanation:Vendetta
 #Explanation:Disengage
 
 Tier1
 #(3)
 
-Name: "Renewed" H:2 Text: "Remove a bane"
+Name: "eye for an eye" A:1 Vendetta:1
 Name: "Inner Fire" H:1 AFire:2
 
 Tier2
 #(1)
 
 Name: "Brutal Strike" A:4 Text: "Choose 1: Penetrate X or AFire_X. Lose X life where X is your Opponents shield." Attack
-Name: "double-edged sword" Vendetta:2 Text: "Lose 1 Life"
+Name: "double-edged sword" A:1 Vendetta:2
 
 Tier3
 #(1)

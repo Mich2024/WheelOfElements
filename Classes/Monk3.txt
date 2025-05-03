@@ -1,0 +1,36 @@
+Stats
+
+Skill:Toughness
+Skill:Arcana
+
+Variant1
+
+Passive
+At the start of your turn, gain Powerful
+Life: 10
+#1x Add 2 +0 Earth:2
+
+Variant2
+
+Passive
+At the start of your turn, gain Powerful
+Life: 10
+#2x Remove 2 +1 Add 2 +3
+
+Element: Fire
+Element: Earth
+
+#Explanation:
+#Explanation:
+#Currently: Power:5 Obstacles are a permanent Boon. whenever a enemy enters A:1 that enemy
+
+Tier1
+
+Name: "Dodge" Disengage Fire:1
+Name: "sear wound" H:2 Fire:1
+Name: "Guard" S:1 H:1
+
+Tier2
+
+Name: "Create Obstacle" Text: "Create an Obstacle"
+Name: "Bash" A:3 Powerful

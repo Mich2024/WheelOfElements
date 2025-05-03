@@ -24,13 +24,14 @@ Add 1 +2
 
 Type
 Element: Fire
+
 Explanation:Shield
 #Explanation:
 
 Tier1
 #(2)
 
-Name: "Fire starter" H:2 AFire:1
+Name: "sear Wound" H:2 AFire:1
 Name: "Fiery Shield" S:1 AFire:1
 
 Tier2

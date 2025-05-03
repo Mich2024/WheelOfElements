@@ -1,2 +1,41 @@
- 
-Name: triple punch ManaCost:REarth_2 A:3 A:3 A:3
+Stats
+
+Skill:Toughness
+Skill:Arcana
+
+Variant1
+
+Passive
+At the start of your turn A:1
+Life: 10
+1x Add 2 +0 Earth:2
+
+Variant2
+
+Passive
+At the start of your turn A:1
+Life: 10
+2x Remove 2 +1 Add 2 +3
+
+Element: Fire
+Element: Earth
+
+Explanation:Powerful
+Explanation:Shield
+#Currently: Power:5 Obstacles are a permanent Boon. whenever a enemy enters A:1 that enemy
+
+Tier1
+
+Name: "Channel Energy" Text: "Choose 1: S:1 or Fire:2"
+Name: "Rough Earth" ManaCost:Earth;1 Text: "Create an Obstacle"
+
+Tier2
+
+Name: Triple punch ManaCost:Earth_2 A:3 A:3 A:3
+Name: "100 push-ups" Powerful Text: "You do not lose powerful this turn as the turn ends"
+
+Tier3
+
+Name: "Barrage" Text: "Create an Obstacle or choose 4 times: A:1 or Fire:1"
+
+

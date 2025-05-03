@@ -21,18 +21,18 @@ Modifiers
 Type
 Element: Earth
 
-Explanation:Shield
-Explanation:Taunt
+#Explanation:Root
+#Explanation:Taunt
 
 Tier1 
 #(3)
 
-Name: "Shield Up" S:1 H:1
-Name: "Shield Up" S:1 H:1
-Name: "Shield Up" S:1 H:1
+Name: "Patch Up" Text: "Choose: H:2 or Earth:2"
+Name: "Earthen Heal" H:2 Earth:1
+Name: "Guard" S:1 H:1
 
 Tier2 
 #(2)
 
-Name: "Mock" Taunt Taunt A:1
-Name: "Mock" Taunt Taunt A:1
+Name: "Ensnare" Root Taunt A:1
+Name: "Mock" Root Taunt ManaCost:Opt;Earth;2 Text: "--- Opt cost paid ---" Taunt Taunt

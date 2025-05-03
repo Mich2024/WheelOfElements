@@ -25,18 +25,19 @@ Add 5 +1 H:2 R:0 Draw
 
 Type
 Element: Fire
-Explanation: Push
-Explanation: Shield
+
+Explanation: Disengage
+#Explanation:
 
 Tier1
 #(3)
 
-Name: "Uno" Push H:1
+Name: "Uno" Disengage H:1
 Name: "Dos" S:2 Text: "Lose 2 life"
-Name: "Tres" H:3
+Name: "Fire starter" H:2 AFire:1
 
 Tier2
 #(1)
 
-Name: "Channel" Text: "Choose 1: A:4 or AFire_4."
+Name: "Channel" Text: "Choose 1: A:4 or Fire:4."
 Name: "Flay" A:10 Text: "Lose 10 life. If this was your second card Repeat this card."
