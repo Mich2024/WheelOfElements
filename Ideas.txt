@@ -29,3 +29,7 @@ idee
     -> +30 Max life
 -> Idee Rassenbrett Elf. Elf hat +0 Max life
     ->Rank 1 linkeste beide haben +5 Max life stehen
+
+
+Stun -> Hard CC
+Explanation -> Cursive
