@@ -5,7 +5,7 @@ Skill:Charisma
 
 Variant:1
 Passive
-Heal equal to damage dealt by your first card each Round
+At the start of your turn, gain Advantage
 Life: 14
 
 Modifiers
@@ -15,7 +15,7 @@ Add 1 +7
 
 Variant:2
 Passive
-Heal equal to damage dealt by your first card each Round
+At the start of your turn, gain Advantage
 Life: 7
 
 Modifiers
@@ -24,20 +24,19 @@ Remove 1 +1
 Add 5 +1 H:2 R:0 Draw
 
 Type
-Element: Fire
+Element: Metal
 
-Explanation: Disengage
-#Explanation:
+Explanation:Advantage
+Explanation:Shield
+Explanation:Disarm
 
 Tier1
 #(3)
+Name: "Shield" S:1
+Name: "Inner Metal" H:2 Metal:1
+Name: "Disarm" Disarm
 
-Name: "Uno" Disengage H:1
-Name: "Dos" S:2 Text: "Lose 2 life"
-Name: "Fire starter" H:2 AFire:1
-
-Tier2
+Tier3
 #(2)
-
-Name: "Channel" Text: "Choose 1: A:4 or Fire:4."
-Name: "Flay" A:10 Text: "Lose 10 life. If this was your second card Repeat this card."
+Name: "Sword and Dagger"  A:X A:X Stun Text: "X is Metal Mana in the Wheel" Attack
+Name: "Wrath" A:X Text: "X is your missing life. X cant be more than 12"

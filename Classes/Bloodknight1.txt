@@ -23,24 +23,28 @@ Add 2 +1 H:2 R:0 Draw
 Add 1 +2
 
 Type
-Element: Fire
+Element: Metal
 
+#1
+Explanation:Advantage
+#3
 Explanation:Shield
-#Explanation:
+#3
+Explanation:Disarm
 
 Tier1
 #(2)
 
-Name: "sear Wound" H:2 AFire:1
-Name: "Fiery Shield" S:1 AFire:1
+Name: "Inner Metal" H:2 Metal:1
+Name: "Prayer" Advantage Metal:1 H:1
 
 Tier2
 #(2)
+Name: "Dutybound" Advantage Text: "Choose: Disarm or S:1"
+Name: "Reckless Slash" A:7 Metal:1 Text: "lose 3 life"
 
-Name: "Reckless Slash" A:7 AFire:1 Text: "lose 3 life"
-Name: "Take a Bite" ManaCost:Opt;Fire;2 A:4 Text: "--- Opt cost paid ---" Text: "Heal equal to your damage dealt"
 
 Tier3
 #(1)
+Name: "Take a Bite" ManaCost:Opt;Metal;2 A:6 Text: "--- Opt cost paid ---" Text: "Heal equal to your damage dealt"
 
-Name: Wrath A:X Text: "X is your missing life. X cant be more than 12" Exhaust

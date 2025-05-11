@@ -20,19 +20,22 @@ Modifiers
 
 Type
 Element: Earth
+Element: Metal
 
-#Explanation:Root
-#Explanation:Taunt
-
-Tier1 
-#(3)
-
-Name: "Patch Up" Text: "Choose: H:2 or Earth:2"
-Name: "Earthen Heal" H:2 Earth:1
-Name: "Guard" S:1 H:1
-
-Tier2 
+Tier1
 #(2)
+Name: "Earthen Heart" H:1 Earth:2
+Name: "Sword and Shield" ManaCost:Metal;2 Advantage S:1 A:4
 
-Name: "Ensnare" Root Taunt A:1
-Name: "Mock" Root Taunt ManaCost:Opt;Earth;2 Text: "--- Opt cost paid ---" Taunt Taunt
+Tier2
+#(1)
+Name: "Taunt" ManaCost:Metal;2 Taunt Advantage A:6
+
+Tier3
+#(2)
+Name: "Guardian" S:3
+Name: "Roar" Taunt A:2 Aoe:Full
+
+
+
+

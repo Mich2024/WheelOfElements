@@ -22,24 +22,25 @@ Ignore Armor Negatives
 
 Type
 Element: Earth
-
+Element: Metal
+#3
 Explanation:Shield
+#3
 Explanation:Taunt
+#1
+Explanation:Advantage
 
 Tier1
 #(2)
-
-Name: "Guarded Punch" ManaCost:Opt;Earth;2 S:1 Text: "--- Opt cost paid ---" S:X Text: "X is equal to your shield" Type:Special
-Name: "Cross Slash" ManaCost:Opt;Earth;X A:X+1 A:X+1 Type:Attack
+Name: "Earthen Heart" H:1 Earth:2
+Name: "Slash" ManaCost:Metal;2 Advantage A:6 Type:Attack
 
 Tier2 
 #(2)
-
-Name: "Gargantuan" S:1 A:3 Type:Attack
-Name: "Armor Up" S:1 Text: "Choose: A:2 or Earth:2" Type:Attack
+Name: "Shield Slam" S:1 A:X Text: "X is equal to your shield"
+Name: "Gargantuan" ManaCost:Metal;2 Taunt A:6 Type:Attack
 
 Tier3
 #(1)
-
-Name: "Guardian" Taunt Taunt S:2 Exhaust Type:Special
+Name: "Guardian" S:3 Type:Special
 

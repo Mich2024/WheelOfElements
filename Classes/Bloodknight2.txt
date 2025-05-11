@@ -5,8 +5,7 @@ Skill:Charisma
 
 Variant:1
 Passive
-#Disengage all enemies
-If you would die, instead set your life total to one and Stun all enemies. This happens only once each Fight
+Heal equal to damage dealt by your first card each turn
 Life: 14
 
 Modifiers
@@ -15,7 +14,7 @@ Add 2 +4
 
 Variant:2
 Passive
-If you would die, instead set your life total to one and Stun all enemies. This happens only once each Fight
+Heal equal to damage dealt by your first card each turn
 Life: 7
 
 Modifiers
@@ -23,24 +22,21 @@ Remove 1 +0
 Add 3 +1 H:2 R:0 Draw
 
 Type
-Element: Fire
+Element: Metal
 
-Explanation:Vendetta
-#Explanation:Disengage
+Explanation:Advantage
+Explanation:Shield
+Explanation:Disarm
 
 Tier1
 #(3)
 
-Name: "eye for an eye" A:1 Vendetta:1
-Name: "Inner Fire" H:1 AFire:2
+Name: "Uno" Disarm
+Name: "Dos" S:1
+Name: "Inner Metal" H:2 Metal:1
 
 Tier2
-#(1)
+#(2)
 
-Name: "Brutal Strike" A:4 Text: "Choose 1: Penetrate X or AFire_X. Lose X life where X is your Opponents shield." Attack
-Name: "double-edged sword" A:1 Vendetta:2
-
-Tier3
-#(1)
-
-Name: "Sword and Dagger"  A:X A:X Stun Text: "X is Fire Mana in the Wheel" Attack
+Name: "Channel" Text: "Choose 1: A:4 or Metal:4."
+Name: "Flay" A:10 Text: "Lose 10 life. If this was your second card Repeat this card."
