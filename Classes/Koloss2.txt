@@ -1,7 +1,7 @@
 Variant:1
 
 Passive
-At the beginning of each round, H:2.
+At the beginning of each round, gain S:1.
 
 Life: 4
 
@@ -11,7 +11,7 @@ Modifiers
 Variant:2
 
 Passive
-At the beginning of each round, H:2.
+At the beginning of each round, gain S:1.
 
 Life: 0
 
