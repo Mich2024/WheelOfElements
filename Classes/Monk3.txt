@@ -6,31 +6,35 @@ Skill:Arcana
 Variant1
 
 Passive
-At the start of your turn, gain Powerful
+At the end of your turn A:1
 Life: 10
 #1x Add 2 +0 Earth:2
 
 Variant2
 
 Passive
-At the start of your turn, gain Powerful
+At the end of your turn A:1
 Life: 10
 #2x Remove 2 +1 Add 2 +3
 
 Element: Fire
 Element: Earth
 
-#Explanation:
-#Explanation:
-#Currently: Power:5 Obstacles are a permanent Boon. whenever a enemy enters A:1 that enemy
+Explanation:Powerful
+Explanation:Vulnerable
+Explanation:Taunt
 
 Tier1
 
-Name: "Dodge" Disengage Fire:1
+Name: "Taunt" Taunt
 Name: "sear wound" H:2 Fire:1
-Name: "Guard" S:1 H:1
+Name: "Charge" Vulnerable Powerful
 
 Tier2
 
-Name: "Create Obstacle" Text: "Create an Obstacle"
-Name: "Bash" A:3 Powerful
+Name: "Bash" Powerful A:3
+
+Tier3
+
+Name: "Barrage" Text: "choose 4 times: A:1 or Fire:1"
+Name: "Bash" A:2 A:2 A:2 Powerful

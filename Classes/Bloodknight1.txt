@@ -25,22 +25,18 @@ Add 1 +2
 Type
 Element: Metal
 
-#1
 Explanation:Advantage
-#3
-Explanation:Shield
-#3
 Explanation:Disarm
 
 Tier1
 #(2)
 
 Name: "Inner Metal" H:2 Metal:1
-Name: "Prayer" Advantage Metal:1 H:1
+Name: "Parry" Disarm
 
 Tier2
 #(2)
-Name: "Dutybound" Advantage Text: "Choose: Disarm or S:1"
+Name: "Dutybound" Advantage H:4
 Name: "Reckless Slash" A:7 Metal:1 Text: "lose 3 life"
 
 

@@ -23,11 +23,8 @@ Ignore Armor Negatives
 Type
 Element: Earth
 Element: Metal
-#3
+
 Explanation:Shield
-#3
-Explanation:Taunt
-#1
 Explanation:Advantage
 
 Tier1
@@ -38,7 +35,7 @@ Name: "Slash" ManaCost:Metal;2 Advantage A:6 Type:Attack
 Tier2 
 #(2)
 Name: "Shield Slam" S:1 A:X Text: "X is equal to your shield"
-Name: "Gargantuan" ManaCost:Metal;2 Taunt A:6 Type:Attack
+Name: "Gargantuan" ManaCost:Metal;2 A:9 Type:Attack
 
 Tier3
 #(1)

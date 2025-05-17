@@ -22,6 +22,10 @@ Type
 Element: Earth
 Element: Metal
 
+Explanation:Shield
+Explanation:Disarm
+Explanation:Advantage
+
 Tier1
 #(2)
 Name: "Earthen Heart" H:1 Earth:2

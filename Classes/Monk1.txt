@@ -6,34 +6,33 @@ Skill:Arcana
 Variant1
 
 Passive
-At the start of your turn A:1
+At the end of your turn A:1
 Life: 10
 1x Add 2 +0 Earth:2
 
 Variant2
 
 Passive
-At the start of your turn A:1
+At the end of your turn A:1
 Life: 10
 2x Remove 2 +1 Add 2 +3
 
 Element: Fire
 Element: Earth
 
-Explanation:Disengage
-Explanation:Obstacles
-#Currently: Power:5 Obstacles are a permanent Boon. whenever a enemy enters A:1 that enemy
+Explanation:Powerful
+Explanation:Taunt
 
 Tier1
 
-Name: "endure" S:1 Fire:1
-Name: "sear" wound H:2 Fire:1
+Name: "endure" ManaCost:Earth;1 H:2 Taunt
+Name: "sear wound" H:2 Fire:1
 
 Tier2
 
-Name: "kick away" ManaCost:Earth;2 A:7 Disengage
-Name: "double punch" ManaCost:Earth;1 Advantage A:3 A:3
+Name: "break a leg" Powerful Fire:2 A:1
+Name: "double punch" ManaCost:Earth;1 Powerful A:2 A:2
 
 Tier3
 
-Name: "open the ground" Disengage AFire:1 Text: "Create Obstacle" Exhaust
+Name: "open the ground" Fire:3 A:1 A:1 A:1

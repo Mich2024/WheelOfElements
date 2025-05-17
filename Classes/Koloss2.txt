@@ -22,14 +22,17 @@ Type
 Element: Earth
 Element: Metal
 
+Explanation:Shield
+Explanation:Taunt
+
 Tier1
 #(3)
 Name: "Earthen Heart" H:1 Earth:2
 Name: "Guard" S:1
-Name: "Indomitable" ManaCost:Metal;2 S:1 S:X Text: "X is equal to your shield" Type:Special
+Name: "Indomitable" ManaCost:Metal;2 S:1 Text: "Double your shield" Type:Special
 
 Tier2
 #(2)
-Name: "Mastery" Advantage Text: "Choose: Taunt or S:1" Type:Attack
+Name: "Mastery" A:5
 Name: "Mock" S:1 Taunt
 

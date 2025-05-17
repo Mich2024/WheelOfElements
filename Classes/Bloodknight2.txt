@@ -26,17 +26,16 @@ Element: Metal
 
 Explanation:Advantage
 Explanation:Shield
-Explanation:Disarm
 
 Tier1
 #(3)
 
-Name: "Uno" Disarm
-Name: "Dos" S:1
+Name: "Heal" H:3
+Name: "Shield" S:1
 Name: "Inner Metal" H:2 Metal:1
 
 Tier2
 #(2)
 
 Name: "Channel" Text: "Choose 1: A:4 or Metal:4."
-Name: "Flay" A:10 Text: "Lose 10 life. If this was your second card Repeat this card."
+Name: "Flay" A:10 Text: "Lose 10 life. If this was your second card, repeat this card."
