@@ -1,0 +1,40 @@
+Stats
+
+Skill:
+Skill:
+
+Variant:1
+Passive
+Double damage against enemies with Disarm
+Life: 14
+
+Modifiers
+Remove 2 +2
+Add 2 +4
+
+Variant:2
+Passive
+Double damage against enemies with Disarm
+Life: 7
+
+Modifiers
+Remove 1 +0
+Add 3 +1 H:2 R:0 Draw
+
+Type
+Element: Metal
+Element: Water
+
+Explanation:Disarm
+Explanation:Advantage
+
+Tier1
+#(3)
+
+Name:
+
+Tier2
+#(2)
+
+Name:
+

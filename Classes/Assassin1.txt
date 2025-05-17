@@ -1,0 +1,42 @@
+Stats
+
+Skill:
+Skill:
+
+Variant:1
+Passive
+#-3 to maximum decksize (has exhsaust synergy since you need less playable cards)
+#you may pay 2 metal instead of exhausting the card
+#at the end of combat return an exhausted card to your cardpool
+#whenever you discard a non-exhaust card, you may play it, if you do exhaust it
+Life: 14
+
+Modifiers
+Remove 2 +2
+Add 2 +4
+
+Variant:2
+Passive
+
+Life: 7
+
+Modifiers
+Remove 1 +0
+Add 3 +1 H:2 R:0 Draw
+
+Type
+Element: Metal
+Element: Water
+
+Explanation:Disarm
+Explanation:Poison
+
+Tier1
+#(3)
+
+Name:
+
+Tier2
+#(2)
+
+Name:
