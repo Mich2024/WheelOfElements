@@ -69,6 +69,7 @@ symbolDict = {
     "Invisibility":r"\symInvisibility",
     "Invisibile":r"\symInvisibility",
     "Powerful":r"\symPowerful",
+    "Disengage":r"\symDisengage",
 
     # Banes
     "Curse":r"\symCurse",
@@ -346,7 +347,7 @@ class actionCard:
             #%Input: tier/level, name, Type, Energy Cost, Text
             res += r"\basicCard"
         res += "{" + self.cardName + "}"
-        res += "{" + self.classname + "}"
+        res += "{" + self.classname + str(self.rank) + "}"
         res += "{" + self.cardType + "}"
 
         #Costs
@@ -448,7 +449,7 @@ class statCard:
         #    res += line + r" \\ "  + dictExplanation[line.split(":")[1]] + r" \\" 
         for line in self.elements:
             res += line
-        res += r"} \\"
+        res += r"} "
         res += "\n"
         return res
     

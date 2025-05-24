@@ -9,17 +9,6 @@ Remove 3 -1
 Remove 3 +1
 Add 1 +7
 
-Variant:2
-
-Passive
-Ignore any damage above X+2 from incoming attack instances, where X is the amount of classes you have. Double the threshold against bosses.
-Life: 8
-
-Modifiers
-Remove 3 -1
-Remove 3 +1
-Add 1 +7
-
 Type
 Element: Metal
 

@@ -113,12 +113,19 @@ def sliceClassToCardTypes(lines):
     return (lines[:CardsBegin],lines[CardsBegin:])
 
 def sliceStatsToCards(lines):
+    
     #print(lines)
-    var1Begin = lines.index("Variant:1")
-    var2Begin = lines.index("Variant:2")
+    var1Begin = lines.index("Variant:1")        
     typeBegin = lines.index("Type")
-    semantics = {var1Begin:"Variant:1", var2Begin:"Variant:2", typeBegin:"Type"}
-    order = [var1Begin,var2Begin,typeBegin]
+
+    if("Variant:2" in lines):
+        var2Begin = lines.index("Variant:2")
+        semantics = {var1Begin:"Variant:1", var2Begin:"Variant:2", typeBegin:"Type"}
+        order = [var1Begin,var2Begin,typeBegin]
+    else: #Race
+        semantics = {var1Begin:"Variant:1", typeBegin:"Type"}
+        order = [var1Begin,typeBegin]
+
     
     order.sort()
 
@@ -176,16 +183,17 @@ def parseActionCardFromLine(line, nameClass, rank, tier):
 
 # input: all lines before cards 
 # output: cards
-def parseStatLinesToCards(lines, in_classname):
+def parseStatLinesToCards(lines, name, rank):
 
     res = []
 
-    name = in_classname[:-1]
-    rank = in_classname[-1:]
-
     parts = sliceStatsToCards(lines)
     Var1 = parts["Variant:1"]
-    Var2 = parts["Variant:2"]
+    if("Variant:2" in parts):
+        Var2 = parts["Variant:2"]
+        variants = [Var1, Var2]
+    else: #Race
+        variants = [Var1]
     TypeExplanation = parts["Type"]
     elements = []
     explanations = []
@@ -197,7 +205,7 @@ def parseStatLinesToCards(lines, in_classname):
         if startsWith(line, "Explanation"):
             explanations.append(line)
 
-    variants = [Var1, Var2]
+    
     for var in variants:
         card = statCard()
         card.explanations = explanations
@@ -485,8 +493,11 @@ def parseRacesAndClasses(files_Input):
         file = filelong.split("\\")[2] # Drops the prefix from the card
         if("Classes" in filelong):
             rank = int(file.split(".")[0][-1]) # classes have tier 1 to 3
+            name = file.split(".")[0]
+            name = name[:-1] #drop rank
         else:
             rank = 0 #signifies race
+            name = file.split(".")[0]
 
         if rank > maxRankToPrint:
             continue
@@ -504,9 +515,9 @@ def parseRacesAndClasses(files_Input):
 
         linesStats, linesActions = linesByCardType = sliceClassToCardTypes(lines)
 
-        name = file.split(".")[0]
         
-        statusCards.extend(parseStatLinesToCards(linesStats, name))
+        
+        statusCards.extend(parseStatLinesToCards(linesStats, name, rank))
         tier = "1"
         for line in linesActions: #######################################
             if startsWith(line, "Tier"):
