@@ -458,14 +458,9 @@ class monsterAICard:
     def __init__(self):
 
         self.name = ""
-        self.LifeNormal = ""
-        self.LifeElite = ""
-        #self.ModifiersNormal = []
-        self.ModifiersElite = []
-        self.ImmunitiesNormal = ""
-        self.ImmunitiesElite = ""
-        self.PassiveNormal = ""
-        self.PassiveElite = ""
+        self.life = ""
+        self.passive = ""
+        self.count = 0
         self.actions = []
         self.tempAction = []
         self.flagAB = False

@@ -253,16 +253,14 @@ def sliceToEnemies(linesInput):
     print("monsterAIs read")
     return res
 
-#returns a dict with Stats Normal, Stats Elite, Normal AI, Hard AI
+#returns a dict with Normal, Hard
 def sliceMonsterToSemantics(lines):
     #print(lines)
-    statsNormal = lines.index("Stats Normal")
-    statsElite = lines.index("Stats Elite")
-    aiNormal = lines.index("Normal AI")
-    aiHard = lines.index("Hard AI")
+    Normal = lines.index("Normal")
+    Hard = lines.index("Hard")
 
-    semantics = {statsNormal:"Stats Normal", statsElite:"Stats Elite", aiNormal:"Normal AI", aiHard:"Hard AI"}
-    order = [statsNormal,statsElite,aiNormal,aiHard]
+    semantics = {Normal:"Normal", Hard:"Hard"}
+    order = [Normal,Hard]
     
     order.sort()
 
@@ -312,31 +310,40 @@ def parseMonsterAI():
         sectionsMonster = sliceMonsterToSemantics(linesMonster) #returns a dict with Stats Normal, Stats Elite, Normal AI, Hard AI
 
         #print(linesMonster)
-        monAICardNormal = monsterAICard()
-        monAICardNormal.setName(linesMonster[0].split(":")[1])
-        monAICardNormal.setHardmode(False)
-
-
-        monAICardHardmode = monsterAICard()
-        monAICardHardmode.setName(linesMonster[0].split(":")[1])
-        monAICardHardmode.setHardmode(True)
         
-        cards = [monAICardNormal, monAICardHardmode]
 
-        for index, card in enumerate(cards):
-            #print(sectionsMonster)
-            for line in sectionsMonster["Stats Normal"]:
-                card.assignmentDict[line.split(":")[0]](card,line)
-
-            for line in sectionsMonster["Stats Elite"]:
-                card.assignmentDict[line.split(":")[0]](card,line)
+        for key, lines in sectionsMonster.items():
+            monCard = monsterAICard()
+            monCard.setName(linesMonster[0].split(":")[1])
+            if(key == "Normal"):
+                monCard.setHardmode(False)
+            if(key == "Hard"):
+                monCard.setHardmode(True)
         
-            if index == 0: #get proper AI for this card
-                linesAI = sectionsMonster["Normal AI"]
-            else:
-                linesAI = sectionsMonster["Hard AI"]
+            for line in lines:
+                if(startsWith(line,"Life")):
+                    monCard.life = line.split(":")[1]
+                if(startsWith(line,"Count")):
+                    monCard.count = int(line.split(":")[1])
+                if(startsWith(line,"Passive")):
+                    monCard.passive = line.split(":")[1]
 
-            for words in linesAI:
+                if(startsWith(line,"Rolls")):
+                    words = line.split(" ")
+                    words = [i for i in words if i != ""]  #remove leftovers from double spaces
+                    assignmentFunction = monCard.assignmentDict[words[0].split(":")[0]]
+                    while len(words) > 0:
+                        if not words[0] == "Text:":
+                            #print(words)
+                            assignmentFunction(monCard,words[0])
+                            words = words[1:] #remove entry that we just parsed
+
+                        else: #Text comes here and needs special treatment
+                            text, words = parseTextFromWords(words[1:])
+                            assignmentFunction(monCard, ["Text: ", text])
+
+                '''
+                            for words in linesAI:
                 words = words.split(" ")
                 #print(words[0].split(":")[0])
                 assignmentFunction = card.assignmentDict[words[0].split(":")[0]]
@@ -363,10 +370,13 @@ def parseMonsterAI():
                             i += 1
                         #result = removeDoubleQuotes(result)
                         assignmentFunction(card, ["Text: ", result])
-                        words = words[i:] #remove entries that we just parsed
+                        words = words[i:] #remove entries that we just parsed'''
+            
 
-                    
-            monsterAICards.append(card)
+            #parseTextFromWords
+            monsterAICards.append(monCard)
+
+            
 
     print("completed parsing MonsterAI")
     
@@ -630,8 +640,8 @@ if __name__ == "__main__":
     
     maxRankToPrint = 5
     flagPrintHardAI = False
-    parseRacesAndClasses(files_Input)
-    #parseMonsterAI()
+    #parseRacesAndClasses(files_Input)
+    parseMonsterAI()
     #parseItems()
 
     #### Deprecated Classes:
