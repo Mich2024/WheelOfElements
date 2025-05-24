@@ -1,0 +1,42 @@
+Variant:1
+
+Passive
+Vulnerable can Stack (everywhere)
+
+Life: 6
+
+Modifiers
+Add 2 +0 Draw Fire:2
+
+Variant:2
+
+Passive
+Vulnerable can Stack (everywhere)
+
+Life: 6
+
+Modifiers
+Add 2 +5 Add 1 -5
+
+Type
+Element: Fire
+
+Explanation:Disengage
+
+Base Cards
+
+#Power Levels : 3,3,3,5,5
+
+#ManaCost:Opt;Fire;1
+
+Tier1
+#3
+Name: "Disengage" Disengage Special
+Name: "Warmth" Fire:1 H:2 Special
+Name: "Roast" ManaCost:Fire;1 A:3 Vulnerable Attack
+
+Tier2 
+#5
+Name: "Flame Jet" ManaCost:Fire;3 Vulnerable Vulnerable A:1 Aoe:Right;2 Attack
+Name: "Blazing Dash" Fire:2 Disengage Special
+Tier3

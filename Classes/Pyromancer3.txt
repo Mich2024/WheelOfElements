@@ -1,0 +1,39 @@
+Variant:1
+
+Passive
+When an enemy moves to your zone, it gets vulnerable
+
+Life: 6
+
+Modifiers
+Add 2 +0 Draw Fire:2
+
+Variant:2
+
+Passive
+When an enemy moves to your zone, it gets vulnerable
+
+Life: 6
+
+Modifiers
+Add 2 +5 Add 1 -5
+
+Type
+Element: Fire
+
+Base Cards
+
+#Power Levels : 3,3,3,8,8
+
+#ManaCost:Opt;Fire;1
+
+Tier1
+#3
+Name: "Warmth" Fire:1 H:2 Special
+Name: "Carbonize" A:4 Text: "If this attack kills, Fire:2" Attack Exhaust
+Name: "Hype" Powerful H:1 Special
+
+Tier3
+#8
+Name: "Mortal Flame" ManaCost:Opt;Fire;4 A:8 Text: "--- Opt cost paid: ---" Text: "This attack deals double damage" Attack
+Name: "Mutilate" Text: "All enemies everywhere get vulnerable" Exhaust Attack

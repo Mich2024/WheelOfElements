@@ -561,7 +561,8 @@ if __name__ == "__main__":
     #files_Input.append(r"..\Races\Human.txt")
     #files_Input.append(r"..\Races\Merman.txt")
     #files_Input.append(r"..\Races\Silverkin.txt")
-    #files_Input.append(r"..\Races\Thyger.txt")
+    files_Input.append(r"..\Races\Thyger.txt")
+    files_Input.append(r"..\Races\Wyrmkin.txt")
     
     #files_Input.append(r"..\Classes\Alchemist1.txt")
     #files_Input.append(r"..\Classes\Alchemist2.txt")
@@ -571,9 +572,9 @@ if __name__ == "__main__":
     #files_Input.append(r"..\Classes\BladeDancer2.txt")
     #files_Input.append(r"..\Classes\BladeDancer3.txt")
 
-    #files_Input.append(r"..\Classes\Bloodknight1.txt")
-    #files_Input.append(r"..\Classes\Bloodknight2.txt")
-    #files_Input.append(r"..\Classes\Bloodknight3.txt")
+    files_Input.append(r"..\Classes\Bloodknight1.txt")
+    files_Input.append(r"..\Classes\Bloodknight2.txt")
+    files_Input.append(r"..\Classes\Bloodknight3.txt")
 
     #files_Input.append(r"..\Classes\Druid1.txt")
     #files_Input.append(r"..\Classes\Druid2.txt")
@@ -599,11 +600,11 @@ if __name__ == "__main__":
     #files_Input.append(r"..\Classes\Priest2.txt")
     #files_Input.append(r"..\Classes\Priest3.txt")
 
-    #files_Input.append(r"..\Classes\Pyromancer1.txt")
-    #files_Input.append(r"..\Classes\Pyromancer2.txt")
-    #files_Input.append(r"..\Classes\Pyromancer3.txt")
+    files_Input.append(r"..\Classes\Pyromancer1.txt")
+    files_Input.append(r"..\Classes\Pyromancer2.txt")
+    files_Input.append(r"..\Classes\Pyromancer3.txt")
 
-    #files_Input.append(r"..\Classes\Ranger1.txt")
+    files_Input.append(r"..\Classes\Ranger1.txt")
     #files_Input.append(r"..\Classes\Ranger2.txt")
     #files_Input.append(r"..\Classes\Ranger3.txt")
 

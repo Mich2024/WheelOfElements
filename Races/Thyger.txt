@@ -1,0 +1,42 @@
+Variant:1
+
+Passive
+You decide who disengages at the end of your turn
+
+Life: 6
+
+Modifiers
+Remove 2 +0
+
+Variant:2
+
+Passive
+Add A:+1 to your attacks if you have one or less enemies in your zone
+
+Life: 6
+
+Modifiers
+Remove 2 +0
+
+Type
+
+Explanation:Disengage
+
+Base Cards
+
+#Power Levels : 3,3,5,5,8
+
+#ManaCost:Opt;Fire;1
+
+Tier1
+#3
+Name: "Lick wounds" H:3 Special
+Name: "Disengage" Disengage Special
+
+Tier2 
+#5
+Name: "Claw" A:2 A:2 Attack
+Name: "Stalk" Disengage H:2 Special
+
+#8
+Name: "Prey upon" A:6 Text: "If this attack kills, H:6" Attack

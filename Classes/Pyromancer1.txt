@@ -1,44 +1,45 @@
 Variant:1
 
 Passive
-At the beginning of your round, AFire:1
+At the beginning of your round, Fire:1
 
 Life: 6
 
 Modifiers
-Add 2 +0 Draw AWood:2
-Add 2 +5 Add 1 -5
+Add 2 +0 Draw Fire:2
 
 Variant:2
 
 Passive
-At the beginning of your round, AFire:1
+At the beginning of your round, Fire:1
 
 Life: 6
 
 Modifiers
-Add 2 +0 Draw AWood:2
 Add 2 +5 Add 1 -5
 
 Type
-Element: Wood
 Element: Fire
 
 Explanation:Vulnerable
+Explanation:Powerful
 
-Base Cards
 
-#Power Levels : 3,3,5,5, 8+Exhaust
 
-#ManaCost:Opt ManaCost:RFire_1
+#Power Levels : 3,3,5,5,8
 
+#ManaCost:Opt;Fire;1
+
+Tier1
 #3
-Name: Regenerate Regenerate:3 AWood:1 Special
-Name: Fireball ManaCost:Fire;X ManaCost:Wood;Y A:X+Y Aoe:Wedge Attack
+Name: "Fireball" ManaCost:Opt;Fire;X A:X Aoe:Cleave;3 Attack
+Name: "Warmth" Fire:1 H:2 Special
 
+Tier2
 #5
-Name: Fire Breathing ManaCost:Fire;2 A:5 Aoe:Front Attack
-Name: Tinder H:3 AWood:2 Special
+Name: "Fire Breathing" ManaCost:Fire;1 A:2 Vulnerable Aoe:Cleave;2 Attack
+Name: "Fire up" Fire:1 Powerful H:2 Special
 
+Tier3
 #8
-Name: Eruption ManaCost:Fire;4 Ranged A:3 Text: "Target all enemies in range" Attack Exhaust
+Name: "Eruption" ManaCost:Fire;3 A:4 Aoe:All Text: "Target all enemies in range" Attack
