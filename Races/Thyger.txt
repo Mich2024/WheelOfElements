@@ -8,16 +8,6 @@ Life: 6
 Modifiers
 Remove 2 +0
 
-Variant:2
-
-Passive
-Add A:+1 to your attacks if you have one or less enemies in your zone
-
-Life: 6
-
-Modifiers
-Remove 2 +0
-
 Type
 
 Explanation:Disengage
