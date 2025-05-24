@@ -24,15 +24,12 @@ Explanation:Powerful
 Explanation:Taunt
 
 Tier1
-
-Name: "endure" ManaCost:Earth;1 H:2 Taunt
-Name: "sear wound" H:2 Fire:1
+Name: "endure" ManaCost:Earth;1 H:2 Taunt                               Type:Special
+Name: "sear wound" H:2 Fire:1                                           Type:Special
 
 Tier2
-
-Name: "break a leg" Powerful Fire:2 A:1
-Name: "double punch" ManaCost:Earth;1 Powerful A:2 A:2
+Name: "Bash" Powerful A:3                                               Type:Attack
+Name: "double punch" ManaCost:Earth;1 Powerful A:2 A:2                  Type:Attack
 
 Tier3
-
-Name: "open the ground" Fire:3 A:1 A:1 A:1
+Name: "open the ground" Fire:3 A:1 A:1 A:1                              Type:Attack

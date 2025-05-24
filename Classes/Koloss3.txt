@@ -27,18 +27,13 @@ Explanation:Disarm
 Explanation:Advantage
 
 Tier1
-#(2)
-Name: "Earthen Heart" H:1 Earth:2
-Name: "Sword and Shield" ManaCost:Metal;2 Advantage S:1 A:4
-
-Tier2
-#(1)
-Name: "Taunt" ManaCost:Metal;2 Taunt Advantage A:6
+Name: "Earthen Heart" H:1 Earth:2                                               Type:Special
+Name: "Sword and Shield" ManaCost:Metal;2 Advantage S:1 A:4                     Type:Special
+Name: "Taunt" ManaCost:Metal;2 Taunt Advantage A:4                              Type:Attack
 
 Tier3
-#(2)
-Name: "Guardian" S:3
-Name: "Roar" Taunt A:2 Aoe:Full
+Name: "Guardian" S:3                                                            Type:Special
+Name: "Roar" Taunt A:2 Aoe:Full                                                 Type:Attack
 
 
 

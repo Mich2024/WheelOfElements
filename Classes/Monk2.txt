@@ -24,15 +24,13 @@ Explanation:Powerful
 Explanation:Vulnerable
 
 Tier1
-
-Name: "Lunge" Vulnerable A:1
-Name: "sear wound" H:2 Fire:1
-Name: "Rough Earth" ManaCost:Earth;1 Text: "Create an Obstacle"
+Name: "Lunge" Vulnerable A:1                                                                    Type:Attack
+Name: "sear wound" H:2 Fire:1                                                                   Type:Special
+Name: "Weave" A:2 H:1                                                                           Type:Attack
 
 Tier2
-
-Name: Triple punch ManaCost:Earth_2 A:3 A:3 A:3
-Name: "100 push-ups" Powerful Text: "You do not lose powerful this turn as the turn ends"
+Name: Triple punch ManaCost:Earth_2 A:3 A:3 A:3                                                 Type:Attack
+Name: "100 push-ups" Powerful Text: "You do not lose powerful this turn as the turn ends"       Type:Special
 
 
 

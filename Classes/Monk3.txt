@@ -25,16 +25,12 @@ Explanation:Vulnerable
 Explanation:Taunt
 
 Tier1
-
-Name: "Taunt" Taunt
-Name: "sear wound" H:2 Fire:1
-Name: "Charge" Vulnerable Powerful
+Name: "Taunt" Taunt                                                             Type:Special
+Name: "sear wound" H:2 Fire:1                                                   Type:Special
+Name: "Charge" Vulnerable Powerful                                              Type:Special
 
 Tier2
 
-Name: "Bash" Powerful A:3
-
 Tier3
-
-Name: "Barrage" Text: "choose 4 times: A:1 or Fire:1"
-Name: "Bash" A:2 A:2 A:2 Powerful
+Name: "Barrage" Text: "choose 4 times: A:1 or Fire:1"                           Type:Attack
+Name: "Bash" A:2 A:2 A:2 Powerful                                               Type:Attack

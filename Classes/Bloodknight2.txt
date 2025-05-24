@@ -28,14 +28,10 @@ Explanation:Advantage
 Explanation:Shield
 
 Tier1
-#(3)
-
-Name: "Heal" H:3
-Name: "Shield" S:1
-Name: "Inner Metal" H:2 Metal:1
+Name: "Heal" H:2 Advantage                                                                  Type:Special
+Name: "Guard" S:1                                                                           Type:Special
+Name: "Inner Metal" H:2 Metal:1                                                             Type:Special
 
 Tier2
-#(2)
-
-Name: "Channel" Text: "Choose 1: A:4 or Metal:4."
-Name: "Flay" A:10 Text: "Lose 10 life. If this was your second card, repeat this card."
+Name: "Opportunity" Advantage Text: "--- Opt cost paid ---" Text: A:8                       Type:Attack
+Name: "Flay" A:10 Text: "Lose 10 life. If this was your second card, repeat this card."     Type:Attack

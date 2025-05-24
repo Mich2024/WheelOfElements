@@ -28,16 +28,13 @@ Explanation:Shield
 Explanation:Advantage
 
 Tier1
-#(2)
-Name: "Earthen Heart" H:1 Earth:2
-Name: "Slash" ManaCost:Metal;2 Advantage A:6 Type:Attack
+Name: "Earthen Heart" H:1 Earth:2                                   Type:Special
+Name: "Slash" ManaCost:Metal;2 Advantage A:6 Type:Attack            Type:Special
 
-Tier2 
-#(2)
-Name: "Shield Slam" S:1 A:X Text: "X is equal to your shield"
-Name: "Gargantuan" ManaCost:Metal;2 A:9 Type:Attack
+Tier2
+Name: "Shield Slam" S:1 A:X Text: "X is equal to your shield"       Type:Attack
+Name: "Gargantuan" ManaCost:Metal;2 A:9                             Type:Attack
 
 Tier3
-#(1)
-Name: "Guardian" S:3 Type:Special
+Name: "Guardian" S:3                                                Type:Special
 

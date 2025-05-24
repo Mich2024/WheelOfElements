@@ -31,12 +31,10 @@ Explanation:Shield
 Explanation:Disarm
 
 Tier1
-#(3)
-Name: "Shield" S:1
-Name: "Inner Metal" H:2 Metal:1
-Name: "Disarm" Disarm
+Name: "Charged Shield" ManaCost:Opt;Metal;1 Metal:2 Text: "--- Opt cost paid ---" S:1               Type:Special
+Name: "Inner Metal" H:2 Metal:1                                                                     Type:Special
+Name: "Charged Disarm" ManaCost:Opt;Metal;1 Metal:2 Text: "--- Opt cost paid ---" Disarm            Type:Special
 
 Tier3
-#(2)
-Name: "Sword and Dagger"  A:X A:X Stun Text: "X is Metal Mana in the Wheel" Attack
-Name: "Wrath" A:X Text: "X is your missing life. X cant be more than 12"
+Name: "Sword and Dagger"  A:X A:X Stun Text: "X is Metal Mana in the Wheel"                         Type:Attack
+Name: "Wrath" A:X Text: "X is your missing life. X cant be more than 12"                            Type:Attack
