@@ -51,7 +51,7 @@ Name:Orc Warrior
 Normal
 
 Life:20
-Count:5
+Count:6
 Passive: -
 
 Rolls:1,2 A:2 H:2
