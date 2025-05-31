@@ -64,12 +64,11 @@ Normal
 
 Life:5
 Count:4
-Passive: Disengange after damage
+Passive: Disengange when damaged
 
-Rolls:1,2 A:1 R:2
-Rolls:3,4 A:2
-Rolls:5 H:2
-Rolls:6 A:1 Discard 1
+Rolls:1,2 A:2 A:2
+Rolls:3,4 A:4
+Rolls:5,6 H:3
 
 Hard
 
