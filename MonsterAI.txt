@@ -6,11 +6,17 @@ Level:1
 Orc: Warrior Shaman Warrior Raider
 Orc: Warrior Warrior Warrior Raider
 Orc: Warboss Warrior
+Orc: Archer Warrior Warrior
 Level:2
+Orc: Warrior Shaman Warrior Raider Raider
+Orc: Warrior Warrior Warrior Raider Raider
 Orc: Warboss Warrior Raider
+Orc: Archer Warrior Warrior Raider
 Level:3
-#
-#
+Orc: Warrior Shaman Warrior Raider Warrior Raider
+Orc: Warrior Warrior Warrior Raider Archer Raider
+Orc: Shaman Warboss Warrior Raider
+Orc: Archer Warrior Shaman Warrior Raider
 
 
 
@@ -22,7 +28,7 @@ Name:Orc Raider
 Normal
 
 Life:10
-Count:1
+Count:4
 Passive: Disengange after action
 
 Rolls:1,2 A:1 A:1
@@ -45,7 +51,7 @@ Name:Orc Warrior
 Normal
 
 Life:20
-Count:4
+Count:5
 Passive: -
 
 Rolls:1,2 A:2 H:2
@@ -67,7 +73,7 @@ Name:Orc Archer
 Normal
 
 Life:5
-Count:4
+Count:2
 Passive: Disengange when damaged
 
 Rolls:1,2 A:2 A:2
@@ -111,10 +117,10 @@ Name:Orc Shaman
 Normal
 
 Life:5
-Count:4
+Count:2
 Passive: Disengange after damage
 
-Rolls:1,2,3 Give Powerful to all enemies to the right and self
+Rolls:1,2,3 Powerful to all enemies to the right and self
 Rolls:4 Powerful A:1 A:1
 Rolls:5,6 A:3
 
