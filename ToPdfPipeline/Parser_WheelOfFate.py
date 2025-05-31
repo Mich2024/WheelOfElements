@@ -256,6 +256,7 @@ def sliceToEnemies(linesInput):
 #returns a dict with Normal, Hard
 def sliceMonsterToSemantics(lines):
     #print(lines)
+    #print(lines)
     Normal = lines.index("Normal")
     Hard = lines.index("Hard")
 
@@ -298,7 +299,7 @@ def parseMonsterAI():
     lines = removeComments(lines)
     lines = removeLinebreaks(lines)
     lines = removeEmptyLines(lines)
-    #lines = removeMonAIAnnotation(lines) used now
+    lines = removeTrailingSpaces(lines)
     lines = truncateFile(lines)
     
     #print(lines)
@@ -374,7 +375,7 @@ def parseMonsterAI():
             
 
             #parseTextFromWords
-            monsterAICards.append(monCard)
+            monsterAICards.append(copy.deepcopy(monCard))
 
             
 

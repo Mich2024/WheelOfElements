@@ -469,40 +469,14 @@ class monsterAICard:
     def setName(self,n):
         self.name = n
 
-    def setLifeNormal(self,n):
+    def setLife(self,n):
         numString = n.split(":")[1]
-        self.LifeNormal = numString
-    def setLifeElite(self,n):
-        numString = n.split(":")[1]
-        self.LifeElite = numString
+        self.life = numString
 
-    def setAttackElite(self,n):
-        numString = n.split(":")[1]
-        self.ModifiersElite.append("A:" + numString)
-
-    def setMovementElite(self,n):
-        numString = n.split(":")[1]
-        self.ModifiersElite.append("M:" + numString)
-
-    def setRangeElite(self,n):
-        numString = n.split(":")[1]
-        self.ModifiersElite.append("R:" + numString)
-
-    def setImmunitiesNormal(self,n):
-        immunities = n.split(":")[1]
-        self.ImmunitiesNormal = immunities
-    def setImmunitiesElite(self,n):
-        immunities = n.split(":")[1]
-        self.ImmunitiesElite = immunities
-
-    def setPassiveNormal(self,n):
+    def setPassive(self,n):
         passive = n.split(":")
         passive = ' '.join(passive[1:])
-        self.PassiveNormal = passive
-    def setPassiveElite(self,n):
-        passive = n.split(":")
-        passive = ' '.join(passive[1:])
-        self.PassiveElite = passive
+        self.passive = passive
 
     def appendAction(self,n):
         if("Rolls" in n):
@@ -524,16 +498,8 @@ class monsterAICard:
         "Rolls":appendAction,
         "AB":setAB,
 
-        "LifeNormal":setLifeNormal,
-        "ImmunitiesNormal":setImmunitiesNormal,
-        "PassiveNormal":setPassiveNormal,
-
-        "LifeElite":setLifeElite,
-        "AttackElite":setAttackElite,
-        "RangeElite":setRangeElite,
-        "MovementElite":setMovementElite,
-        "ImmunitiesElite":setImmunitiesElite,
-        "PassiveElite":setPassiveElite,
+        "Life":setLife,
+        "Passive":setPassive,
 
     }
     #%Input: name, tier, stats, passive, skills
@@ -559,62 +525,33 @@ class monsterAICard:
 							#8
 
 
-        res += "{ Life: "+self.LifeNormal
+        res += "{ Life: "+ self.life
         
-        if self.ImmunitiesNormal != "":
-            res += r" \\"
-            res += " Immunities: "
-            res += self.ImmunitiesNormal
-            
-        if self.PassiveNormal != "":
+        if self.passive != "":
             res += r" \\"
             res += " Passive: "
-            res += self.PassiveNormal
+            res += self.passive
         res += "}"
 
-
-        res += "{ Life: "+self.LifeElite
-        for mod in self.ModifiersElite:
-            res += " " + mod
-        
-        if self.ImmunitiesElite != "":
-            res += r" \\"
-            res += " Immunities: "
-            res += self.ImmunitiesElite
-        
-        if self.PassiveElite != "":
-            res += r" \\"
-            res += " Passive: "
-            res += self.PassiveElite
-        
-        res += "}{"
+        res += "{"
         #make actions into nice boxes
-        heightActions = 5.2
-        columns = len(self.actions)
-        if(columns % 2 == 1):
-            columns += 1
-        columns = columns/2
-        heightBox = heightActions / columns
-        widthBox = 4.4
         #print(self.actions)
         #print(self.actions)
         for index, action in enumerate(self.actions):
-            res += r"\framebox{\makebox(" + str(widthBox) + r"cm," + "{:.1f}".format(heightBox) + r"cm)[tl]{\parbox{" + "{:.1f}".format(widthBox-0.1) + r"cm}{\raggedright "
             #print(action[0])
             rolls = action[0].split(":")[1]
-            res += rolls + r": \\"
+            res += rolls + r" "
             action = action[1:]
             res += serializeActionToTex(action)
-            res += r"}}}"
-            if(index % 2 == 1):
-                res += r"\\"
+            res += r"\\"
                 
             
         res += "}"
         
-        res += "\n\n"
+        res += "\n"
 
         res = texifyMultSign(res)
+        res = self.count*res
         return res
 
 class ItemCard:

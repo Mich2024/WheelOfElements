@@ -236,24 +236,22 @@
 
 %Input: 1 name monster
 % 2 Normal: Life, Immunities, Passive
-% 3  Elite: Life, Immunities, Passive, Modifiers,
 % 4,5,6,7,8,9 Ability 1, Ability 2, ...., Ability 6
-\newcommandx{\monsterAICard}[5]{%
-	\resizebox{9.5cm}{!}{\framebox{\makebox(9.5cm,9cm)[tl]{\parbox{9.5cm}{%
-					\makebox(9cm,0.6cm)[t]{% tier
+\newcommandx{\monsterAICard}[3]{%
+	\resizebox{6.2cm}{!}{\framebox{\makebox(6.2cm,8.8cm)[tl]{\parbox{9.5cm}{%
+					\makebox(6.2cm,0.6cm)[t]{% tier
 						\centering\textbf{#1}
 					}%
 					\\ % Normal
-					\makebox(4.4cm,2.6cm)[tl]{\parbox[t]{4.3cm}{
+					\makebox(6.2cm,2.6cm)[tl]{\parbox[t]{6.1cm}{
 							\raggedright
 							#2
 					}}
-					% Elite
-					\makebox(4.4cm,2.6cm)[tl]{\parbox[t]{4.3cm}{
-							\raggedright
+				\makebox(6.2cm,2.6cm)[tl]{\parbox[t]{6.1cm}{
+						\raggedright
 							#3
-					}}
-					#4
+				}}
+				
 					
 					
 				}

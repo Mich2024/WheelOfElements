@@ -1,10 +1,14 @@
 #Todays Print
 
 
-#Setup
-#Orc: Warrior Shaman Warrior Raider
-#Orc: Warrior Warrior Warrior Raider
-#Orc: Warboss Warrior
+Setups
+Level:1
+Orc: Warrior Shaman Warrior Raider
+Orc: Warrior Warrior Warrior Raider
+Orc: Warboss Warrior
+Level:2
+Orc: Warboss Warrior Raider
+Level:3
 #
 #
 
@@ -123,3 +127,5 @@ Passive: Disengange after damage
 Rolls:1,2 M:3 A:3 R:2
 Rolls:3,4 A:2 T:2 R:3
 Rolls:5,6 A:4 Pierce:1 R:3
+
+End Of File
