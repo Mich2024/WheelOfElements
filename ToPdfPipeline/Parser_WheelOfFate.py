@@ -641,7 +641,7 @@ if __name__ == "__main__":
     
     maxRankToPrint = 5
     flagPrintHardAI = False
-    #parseRacesAndClasses(files_Input)
+    parseRacesAndClasses(files_Input)
     parseMonsterAI()
     #parseItems()
 

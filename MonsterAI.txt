@@ -1,23 +1,6 @@
 #Todays Print
 
 
-Setups
-Level:1
-Orc: Warrior Shaman Warrior Raider
-Orc: Warrior Warrior Warrior Raider
-Orc: Warboss Warrior
-Orc: Archer Warrior Warrior
-Level:2
-Orc: Warrior Shaman Warrior Raider Raider
-Orc: Warrior Warrior Warrior Raider Raider
-Orc: Warboss Warrior Raider
-Orc: Archer Warrior Warrior Raider
-Level:3
-Orc: Warrior Shaman Warrior Raider Warrior Raider
-Orc: Warrior Warrior Warrior Raider Archer Raider
-Orc: Shaman Warboss Warrior Raider
-Orc: Archer Warrior Shaman Warrior Raider
-
 
 
 
@@ -134,3 +117,21 @@ Rolls:3,4 A:2 T:2 R:3
 Rolls:5,6 A:4 Pierce:1 R:3
 
 End Of File
+
+
+Setups
+Level:1
+Orc: Warrior Shaman Warrior Raider
+Orc: Warrior Warrior Warrior Raider
+Orc: Warboss Warrior
+Orc: Archer Warrior Warrior
+Level:2
+Orc: Warrior Shaman Warrior Raider Raider
+Orc: Warrior Warrior Warrior Raider Raider
+Orc: Warboss Warrior Raider
+Orc: Archer Warrior Warrior Raider
+Level:3
+Orc: Warrior Shaman Warrior Raider Warrior Raider
+Orc: Warrior Warrior Warrior Raider Archer Raider
+Orc: Shaman Warboss Warrior Raider
+Orc: Archer Warrior Shaman Warrior Raider
