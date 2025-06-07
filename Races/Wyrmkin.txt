@@ -1,13 +1,11 @@
 Variant:1
 
 Passive
-Life +10
-Life: 8
+-
+Life: 18
 
 Modifiers
-Remove 3 -1
-Remove 3 +1
-Add 1 +7
+Remove 2 +0
 
 Type
 #Element:
@@ -15,6 +13,7 @@ Type
 Explanation:Shield
 
 Tier1
+Name: "Guard" Shield                                                                        Type:Special
 Name: "Guard" Shield                                                                        Type:Special
 Name: "Pumping Blood" H:3                                                                   Type:Special
 

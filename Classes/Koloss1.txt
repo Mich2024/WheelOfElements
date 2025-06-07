@@ -3,10 +3,10 @@ Variant:1
 Passive
 Immunity to Banes
 
-Life: 4
+Life: 10
 
 Modifiers
-Remove 1 -1
+Remove 2 -1
 Ignore Armor Negatives
 
 Variant:2
@@ -17,7 +17,7 @@ Immunity to Banes
 Life: 0
 
 Modifiers
-Remove 3 -1
+Remove 4 -1
 Ignore Armor Negatives
 
 Type

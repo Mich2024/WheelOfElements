@@ -6,10 +6,9 @@ Skill:Charisma
 Variant:1
 Passive
 You may pay up to 2 life to add up to +2 Attack
-Life: 14
+Life: 10
 
 Modifiers
-Remove 2 +0
 Add 1 +2
 
 Variant:2

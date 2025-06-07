@@ -6,11 +6,11 @@ Skill:Charisma
 Variant:1
 Passive
 Heal equal to damage dealt by your first card each turn
-Life: 14
+Life: 10
 
 Modifiers
 Remove 2 +2
-Add 2 +4
+Add 1 +4
 
 Variant:2
 Passive
