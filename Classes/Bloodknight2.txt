@@ -33,5 +33,5 @@ Name: "Guard" S:1                                                               
 Name: "Inner Metal" H:2 Metal:1                                                             Type:Special
 
 Tier2
-Name: "Opportunity" Advantage Text: "--- Opt cost paid ---" Text: A:8                       Type:Attack
+Name: "Opportunity" ManaCost:Opt;Metal;2 Advantage Text: "--- Opt cost paid ---" Text: "A:8"                       Type:Attack
 Name: "Flay" A:10 Text: "Lose 10 life. If this was your second card, repeat this card."     Type:Attack
