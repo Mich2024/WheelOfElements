@@ -24,12 +24,12 @@ Explanation:Powerful
 Explanation:Taunt
 
 Tier1
-Name: "endure" ManaCost:Earth;1 H:2 Taunt                               Type:Special
-Name: "sear wound" H:2 Fire:1                                           Type:Special
+Name: "Pummel" ManaCost:Earth;1 Taunt A:4 Aoe:MostRight                         Type:Attack
+Name: "Fire Heart" Fire:2 H:1                                                   Type:Special
 
 Tier2
-Name: "Bash" Powerful A:3                                               Type:Attack
-Name: "double punch" ManaCost:Earth;1 Powerful A:2 A:2                  Type:Attack
+Name: "Bash" Powerful A:3                                                       Type:Attack
+Name: "Triple punch" ManaCost:Earth_2 A:3 A:3 A:3                               Type:Attack
 
 Tier3
-Name: "open the ground" Fire:3 A:1 A:1 A:1                              Type:Attack
+Name: "Open the ground" Fire:1 A:X A:X Text: "X is Fire Mana in the Pool"       Type:Attack

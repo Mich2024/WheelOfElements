@@ -1,0 +1,9 @@
+Stats
+
+Variant:1
+Passive
+You have Advantage against disarmed enemies
+Life: 7
+
+Modifiers
+Add 2 +1

@@ -26,7 +26,7 @@ Explanation:Taunt
 
 Tier1
 Name: "Taunt" Taunt                                                             Type:Special
-Name: "sear wound" H:2 Fire:1                                                   Type:Special
+Name: "Fire Heart" Fire:2 H:1                                                   Type:Special
 Name: "Charge" Vulnerable Powerful                                              Type:Special
 
 Tier2

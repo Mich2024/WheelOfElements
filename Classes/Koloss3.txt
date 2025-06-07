@@ -3,9 +3,10 @@ Variant:1
 Passive
 At the beginning of each round, H:2.
 
-Life: 4
+Life: 10
 
 Modifiers
+Remove 2 +0
 
 
 Variant:2
@@ -16,6 +17,7 @@ At the beginning of each round, H:2.
 Life: 0
 
 Modifiers
+Add 2 +2
 
 
 Type
@@ -32,7 +34,7 @@ Name: "Sword and Shield" ManaCost:Metal;2 Advantage S:1 A:4                     
 Name: "Taunt" ManaCost:Metal;2 Taunt Advantage A:4                              Type:Attack
 
 Tier3
-Name: "Guardian" S:3                                                            Type:Special
+Name: "Cleave" A:2 Disarm Aoe:Cleave;2                                          Type:Attack
 Name: "Roar" Taunt A:2 Aoe:Full                                                 Type:Attack
 
 

@@ -3,19 +3,18 @@ Variant:1
 Passive
 At the beginning of each round, gain S:1.
 
-Life: 4
+Life: 0
 
 Modifiers
-
+Add 1 +1
 
 Variant:2
 
 Passive
-At the beginning of each round, gain S:1.
-
-Life: 0
+Life: 20
 
 Modifiers
+Add 2 +2
 
 
 Type
@@ -31,6 +30,6 @@ Name: "Guard" S:1                                                       Type:Spe
 Name: "Indomitable" ManaCost:Metal;2 S:1 Text: "Double your shield"     Type:Special
 
 Tier2
-Name: "Mastery" A:5                                                     Type:Attack
+Name: "Bash" A:5                                                        Type:Attack
 Name: "Mock" S:1 Taunt                                                  Type:Special
 

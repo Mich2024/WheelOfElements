@@ -1,16 +1,12 @@
 Stats
 
-Skill:
-Skill:
-
 Variant:1
 Passive
 Double damage against enemies with Disarm
-Life: 14
+Life: 7
 
 Modifiers
-Remove 2 +2
-Add 2 +4
+Add 2 +1
 
 Variant:2
 Passive
@@ -19,7 +15,6 @@ Life: 7
 
 Modifiers
 Remove 1 +0
-Add 3 +1 H:2 R:0 Draw
 
 Type
 Element: Metal
@@ -29,12 +24,11 @@ Explanation:Disarm
 Explanation:Advantage
 
 Tier1
-#(3)
-
+Name: "Metal Heart" Metal:2 H:1                                                         Type:Special
+Name:
 Name:
 
 Tier2
-#(2)
-
+Name:
 Name:
 

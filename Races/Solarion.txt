@@ -1,0 +1,25 @@
+Variant:1
+
+Passive
+Whenever you reduce an Opponents life below half apply vulnerable.
+Life: 7
+
+Modifiers
+Add 1 +3
+
+Type
+Element: Fire
+
+Explanation: Vulnerable
+
+Tier1
+Name: "Sun's Embrace" ManaCost:Opt;Fire;1 H:3 Text: "--- Opt cost paid ---" H:2                                 Type:Special
+Name: "Sun's Kiss" ManaCost:Opt;Fire;2 Fire:1 Vulnerable Text: "--- Opt cost paid ---" A:3                      Type:Attack
+Name: "Fire Heart" Fire:2 H:1                                                                                   Type:Special
+
+Tier2
+Name: "Light Barrage" A:1 A:1 H:3                                                                               Type:Attack
+Name: "Halation" ManaCost:Opt;Fire;2 A:1 Aoe:Cleave;3 Text: "--- Opt cost paid ---" A:2 Aoe:Cleave;3            Type:Attack
+
+Tier3
+Name: "Supreme Thunder" Fire:3 Text: "A:1 for each fire in the pool"                                            Type:Attack
