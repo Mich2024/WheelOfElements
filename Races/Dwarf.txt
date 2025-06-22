@@ -1,33 +1,35 @@
-Stats
-
-Maximum Energy: 3
-Energy Regeneration: 3
-Life: 12
-Stamina: 6
-Skill:Engineering
+Variant:1
 
 Passive
-At the beginning of each turn, remove one bane from your character. You may remove curses from your discard pile with this passive.
+When you remove a bane from yourself, H:2
 
-#Test comment
+Life: 10
+
 Modifiers
+Remove 1 +2
+Add 1 +6
 
-3x Add 1 +0 Draw Regain Pip
-2x Remove 1 +1 Add 1 +2 AEarth:1
+Type
+Element:Earth
 
-Explanation:Shield
-Explanation:Pull
+Explanation:Taunt
 
 Base Cards
 
-Name: Chop Chop E:2 ManaCost:Opt ManaCost:REarth_1 A:2 A:2 Text: "--- Opt cost paid ---" Push Attack
-Name: Crossbow E:3 R:4 P:2 Attack
-Name: Bash E:2 A:3 Stun Attack
-Name: Immovable Wall E:2 A:4 Text: "Cripple all of your enemies" Attack
+#Power Levels : 3,3,5,5,8
 
-Name: Earthen Heart E:1 ManaCost:Opt ManaCost:REarth_1 S:2 Text: "--- Opt cost paid ---" H:4 Special
-Name: Taunt E:1 Pull Cripple Special
+#ManaCost:Opt;Fire;1
 
-Name: Polish E:1 Special Text: "Untap one of your tapped items"
-Name: Expert Use E:1 ManaCost:Opt ManaCost:REarth_4 Exhaust Special Text: "Apply the effect of the next item you use this turn twice" Text: "--- Opt cost paid ---" Text: " Apply the affect a third time"
-Name: Imbued Steel E:1 Text: "Trigger all of your triggered items and double the effect of your passive items this round"
+Tier1
+#3
+Name: "Slur" Taunt Earth:2 Special
+Name: "Resilience" Earth:1 H:2 Special
+Name: "Bonk" A:3 Atack
+
+Tier2 
+#5
+Name: "Girth" Taunt A:3 Attack
+Name: "Tough it out" ManaCost:Opt;Earth;1 H:5 Text: "--- Opt cost paid ---" Taunt Special
+
+#8
+Name: "Alcoholism" ManaCost:Opt;Earth;2 A:2 A:2 H:4 Text: "--- Opt cost paid ---" H:4 Attack

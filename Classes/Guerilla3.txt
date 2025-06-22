@@ -1,0 +1,44 @@
+Variant:1
+
+Passive
+When you disengage an enemy, give it Vulnerable
+
+Life: 6
+
+Modifiers
+Add 2 +2 Draw
+
+Variant:2
+
+Passive
+When you disengage an enemy, give it Vulnerable
+
+Life: 6
+
+Modifiers
+Add 2 +5
+Remove 2 +3
+
+Type
+Element: Fire
+Element: Wood
+
+Explanation:Ranged
+
+Base Cards
+
+#Power Levels : 3,3,3,8,8
+
+#ManaCost:Opt;Fire;1
+
+Tier1
+#3
+Name: "Mercy Kill" ManaCost:Fire;2 A:4 Text: "If the target is lower than half life, deal double damage" Attack
+Name: "Sense Weakness" Vulnerable Ranged Special
+Name: "Hide on Bush" Disengage Ranged Special
+
+Tier3 
+#5
+Name: "Coordinated Takedown" ManaCost:Fire;2 A:4 A:4 A:4 Ranged Text: "Cannot target your own enemies" Attack
+Name: "Pass off" A:6 Disengage Text: "Both effects must taget the same enemy" Special
+

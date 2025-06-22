@@ -590,9 +590,9 @@ if __name__ == "__main__":
     #files_Input.append(r"..\Classes\Alchemist2.txt")
     #files_Input.append(r"..\Classes\Alchemist3.txt")
 
-    #files_Input.append(r"..\Classes\BladeDancer1.txt")
-    #files_Input.append(r"..\Classes\BladeDancer2.txt")
-    #files_Input.append(r"..\Classes\BladeDancer3.txt")
+    #files_Input.append(r"..\Classes\Assassin1.txt")
+    #files_Input.append(r"..\Classes\Assassin2.txt")
+    #files_Input.append(r"..\Classes\Assassin3.txt")
 
     files_Input.append(r"..\Classes\Bloodknight1.txt")
     files_Input.append(r"..\Classes\Bloodknight2.txt")
@@ -602,25 +602,21 @@ if __name__ == "__main__":
     #files_Input.append(r"..\Classes\Druid2.txt")
     #files_Input.append(r"..\Classes\Druid3.txt")
 
-    #files_Input.append(r"..\Classes\Huntsman1.txt")
-    #files_Input.append(r"..\Classes\Huntsman2.txt")
-    #files_Input.append(r"..\Classes\Huntsman3.txt")
-
     files_Input.append(r"..\Classes\Koloss1.txt")
     #files_Input.append(r"..\Classes\Koloss2.txt")
     #files_Input.append(r"..\Classes\Koloss3.txt")
 
-    #files_Input.append(r"..\Classes\Metallurge1.txt")
-    #files_Input.append(r"..\Classes\Metallurge2.txt")
-    #files_Input.append(r"..\Classes\Metallurge3.txt")
+    #files_Input.append(r"..\Classes\Artisan1.txt")
+    #files_Input.append(r"..\Classes\Artisan2.txt")
+    #files_Input.append(r"..\Classes\Artisan3.txt")
 
     #files_Input.append(r"..\Classes\Monk1.txt")
     #files_Input.append(r"..\Classes\Monk2.txt")
     #files_Input.append(r"..\Classes\Monk3.txt")
 
-    #files_Input.append(r"..\Classes\Priest1.txt")
-    #files_Input.append(r"..\Classes\Priest2.txt")
-    #files_Input.append(r"..\Classes\Priest3.txt")
+    #files_Input.append(r"..\Classes\Cultist1.txt")
+    #files_Input.append(r"..\Classes\Cultist2.txt")
+    #files_Input.append(r"..\Classes\Cultist3.txt")
 
     files_Input.append(r"..\Classes\Pyromancer1.txt")
     files_Input.append(r"..\Classes\Pyromancer2.txt")
@@ -629,10 +625,6 @@ if __name__ == "__main__":
     files_Input.append(r"..\Classes\Ranger1.txt")
     #files_Input.append(r"..\Classes\Ranger2.txt")
     #files_Input.append(r"..\Classes\Ranger3.txt")
-
-    #files_Input.append(r"..\Classes\Strategist1.txt")
-    #files_Input.append(r"..\Classes\Strategist2.txt")
-    #files_Input.append(r"..\Classes\Strategist3.txt")
 
     
 

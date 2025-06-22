@@ -1,0 +1,36 @@
+Variant:1
+
+Passive
+Look at them mods
+
+Life: 6
+
+Modifiers
+Remove 2 +0
+Remove 2 -1
+Remove 1 -2
+Remove 1 *0
+
+Type
+
+Explanation:Disarm
+
+Base Cards
+
+#Power Levels : 3,3,3,5,5,8
+
+#ManaCost:Opt;Fire;1
+
+Tier1
+#3
+Name: "Disarm" Disarm Special
+Name: "Heal" H:3 Special
+Name: "Flase Edge" A:2 A:1 Atack
+
+Tier2 
+#5
+Name: "Remise" Disarm H:2 Attack
+Name: "Feint" A:2 Disarm Special
+
+#8
+Name: "Riposte" A:5 Text: "Deals double damage against disarmed units" Attack
