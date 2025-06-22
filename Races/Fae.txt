@@ -18,18 +18,20 @@ Base Cards
 
 #Power Levels : 3,3,5,5,8
 
-#ManaCost:Opt;Fire;1
+#ManaCost:Opt;Wood;1
 
 Tier1
 #3
-Name: "Slur" Taunt Earth:2 Special
-Name: "Resilience" Earth:1 H:2 Special
-Name: "Bonk" A:3 Atack
+Name: "Woodland Rite" Wood:3 Special
+Name: "Pocket Wood" A:2 Wood:1 Special
+Name: "Slash" A:3 Atack
 
 Tier2 
 #5
-Name: "Girth" Taunt A:3 Attack
-Name: "Tough it out" ManaCost:Opt;Earth;1 H:5 Text: "--- Opt cost paid ---" Taunt Special
+Name: "Fly away" H:5 Special
+Name: "Healing Dust" Wood:2 H:3 Special
 
 #8
-Name: "Alcoholism" ManaCost:Opt;Earth;2 A:2 A:2 H:4 Text: "--- Opt cost paid ---" H:4 Attack
+Name: "Black Dust" ManaCost:Opt;Wood;3 Ranged A:6 "--- Opt cost paid ---" A:6 Attack
+
+#Name: "Radiance" H:3 Text: "Also Target the players next to you" Attack
