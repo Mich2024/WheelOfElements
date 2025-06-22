@@ -1,0 +1,33 @@
+Variant:1
+
+Passive
+Healing is modified by the modifier deck
+
+Life: 8
+
+Modifiers
+
+Variant:2
+
+Passive
+Healing is modified by the modifier deck
+
+Life: 8
+
+Modifiers
+
+Type
+Element: Water
+Element: Wood
+
+Explanation:Poison
+
+#Power Levels : 3,3,3,5,5
+
+#ManaCost:Opt;Fire;X
+
+Tier1
+#3
+
+Tier2
+#5

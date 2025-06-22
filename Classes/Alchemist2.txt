@@ -1,0 +1,47 @@
+Variant:1
+
+Passive
+Poison is modified by the modifier deck
+
+Life: 6
+
+Modifiers
+Add 2 +0 Poison Pot
+#Poison:2
+Add 2 +0 Prismatic Pot
+#Any Element:1
+Remove 2 -1
+
+Variant:2
+
+Passive
+Poison is modified by the modifier deck
+
+Life: 6
+
+Modifiers
+Add 2 +0 Molotov Pot
+#A:1 AOE Cleave:2
+Add 2 +0 Regen Pot
+#Regen 2
+Remove 2 -1
+
+Type
+Element: Water
+
+Explanation:Disarm
+
+#Power Levels : 3,3,3,5,5
+
+#ManaCost:Opt;Fire;X
+
+Tier1
+#3
+Name: "Healing Salve"  Water:1 H:2 Special
+Name: "Sickening Wave" Water:1 Poison:1 Aoe:Cleave;2 Attack
+Name: "Disarm" Disarm Special
+
+Tier2
+#5
+Name: "Prolonged Suffering" ManaCost:Opt;Water;1 Poison:4 Text: "--- Opt cost paid ---" Disarm Attack
+Name: "Toxic Shock" A:2*X Text: "X is the amount of poison on the target" Exhaust Attack

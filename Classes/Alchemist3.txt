@@ -1,0 +1,46 @@
+Variant:1
+
+Passive
+When you use a potion, you may pay Water:1 to double the numeric effects
+
+Life: 6
+
+Modifiers
+Add 2 +0 Gas Pot
+#Poison:1 AOE:Cleave;2
+Add 2 +0 Water Pot
+#Water:2
+Remove 2 +1
+
+Variant:2
+
+Passive
+When you use a potion, you may pay Water:1 to double the numeric effects
+
+Life: 6
+
+Modifiers
+Add 2 +0 Explosive Pot
+#A:4
+Add 2 +0 Blinding Pot
+#Disarm
+Remove 2 +1
+
+Type
+Element: Water
+
+
+#Power Levels : 3,3,3,8,8
+
+#ManaCost:Opt;Fire;X
+
+Tier1
+#3
+Name: "Drink up"  Water:1 Regenerate:2 Special
+Name: "Leeching Tinctures" Water:3 Text: "Remove any amount of poison from your enemies. Gain that much regenration" Special Exhaust
+Name: "Poison the well" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3 Attack
+
+Tier3
+#8
+Name: "Anaphylactic Shock" Text: "Disarm all Poisoned targets" AOE:All Special
+Name: "Drown in poison" ManaCost:Opt;Water;4 Poison:8 Text: "--- Opt cost paid ---" A:X Text: "X is the amount of poison on the target" Exhaust Attack

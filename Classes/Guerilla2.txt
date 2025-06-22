@@ -1,0 +1,44 @@
+Variant:1
+
+Passive
+You may play an additional card each turn
+
+Life: 6
+
+Modifiers
+-
+
+Variant:2
+
+Passive
+You may play an additional card each turn
+
+Life: 0
+
+Modifiers
+Add 2 +3
+Remove 2 +1
+
+Type
+Element: Fire
+Element: Wood
+
+Explanation:Ranged
+
+Base Cards
+
+#Power Levels : 3,3,3,5,5
+
+#ManaCost:Opt;Fire;1
+
+Tier1
+#3
+Name: "Sense Weakness" Vulnerable Ranged Special
+Name: "Recover" H:2 Wood:1 Special
+Name: "Opening Strike" ManaCost:Fire;2 A:4 Ranged Text: "If the target is on full life, deal double damage" Attack
+
+Tier2 
+#5
+Name: "Ambush Strike" ManaCost:Fire;2 A:8 Ranged Attack
+Name: "Vanish" Disengage Wood:2 Special
+

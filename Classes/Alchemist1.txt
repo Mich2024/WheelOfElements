@@ -1,0 +1,51 @@
+Variant:1
+
+Passive
+When you draw a potion add it to your items. Discard them on use like a modifier.
+
+Life: 6
+
+Modifiers
+Add 2 +0 Poison Pot
+#Poison:2
+Add 2 +0 Water Pot
+#Water:2
+Remove 4 +0
+
+Variant:2
+
+Passive
+When you draw a potion add it to your items. Discard them on use like a modifier.
+
+Life: 6
+
+Modifiers
+Add 2 +0 Molotov Pot
+#A:1 AOE Cleave:2
+Add 2 +0 Heal Pot
+#Heal 3
+Remove 4 +0
+
+Type
+Element: Water
+
+Explanation:Poison
+Explanation:Regeneration
+
+#Power Levels : 3,3,5,5,8
+
+#ManaCost:Opt;Fire;X
+
+Tier1
+#3
+Name: "Drink up"  Water:1 Regenerate:2 Special
+Name: "Flashpowder" A:1 Aoe:Cleave;3 Attack
+
+Tier2
+#5
+Name: "Toxic Concoction" ManaCost:Opt;Water;1 Poison:4 Text: "--- Opt cost paid ---" A:4 Attack
+Name: "Herbal Remedies" Water:1 H:2 Regenerate:2 Special
+
+Tier3
+#8
+Name: "Toxic Deluge" ManaCost:Opt;Water;2 Poison:2 Text: "--- Opt cost paid ---" A:2 Aoe:Cleave;3 Attack

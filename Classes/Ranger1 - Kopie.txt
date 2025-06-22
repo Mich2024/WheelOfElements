@@ -1,0 +1,49 @@
+Variant:1
+
+Passive
+Add A:+1 when attacking vulnerable enemies
+
+Life: 6
+
+Modifiers
+Add 2 +0 Draw Wood:2
+
+Variant:2
+
+Passive
+Add A:+1 when attacking vulnerable enemies
+
+Life: 6
+
+Modifiers
+Add 2 +2 Draw
+
+Type
+Element: Fire
+Element: Wood
+
+Explanation:Disengage
+Explanation:Vulnerable
+
+Base Cards
+
+#Power Levels : 3,3,5,5,8
+
+#ManaCost:Opt;Fire;1
+
+Tier1
+#3
+Name: "Hunters Mark" Vulnerable Wood:1 Attack
+Name: "Disengage" Disengage Special
+
+Tier2 
+#5
+Name: "Natures Help" Wood:2 H:3 Special
+Name: "Barrage" ManaCost:Fire;2 A:3 A:3 A:3
+
+Tier3
+#8
+Name: "Perfect Cover" Text: "Disengage all enemies"
+
+#Name: "Barrage" ManaCost:Fire;2 A:3 A:3 A:3 A:3
+#Name: "Hail of arrows" A:2 A:2 A:2 Ranged

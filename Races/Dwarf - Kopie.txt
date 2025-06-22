@@ -1,18 +1,18 @@
 Variant:1
 
 Passive
-When you remove a bane from yourself, H:2
+The second card you play each turn has ranged
 
-Life: 10
+Life: 6
 
 Modifiers
-Remove 1 +2
-Add 1 +6
+Remove 2 -1
+Remove 1 -2
 
 Type
-Element:Earth
+Element:Wood
 
-Explanation:Taunt
+Explanation:Ranged
 
 Base Cards
 
