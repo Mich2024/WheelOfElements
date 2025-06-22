@@ -1,0 +1,34 @@
+Stats
+
+Variant:1
+Passive
+At the start of Combat, Taunt then roll a D6. The rotated enemy loses that much life.
+
+Life: 8
+
+Modifiers
+
+Variant:2
+Passive
+
+Life: 8
+
+Modifiers
+
+Type
+Element: Earth
+
+Explanation:Taunt
+Explanation:Shield
+
+Tier1
+Name: "Inner Earth" H:2 Earth:1                                                                                         Type:Special
+Name: "Shield" S:1                                                                                                      Type:Special
+
+Tier2
+Name: "Repartee" ManaCost:Opt;Earth;1 A:4 Text: "--- Opt cost paid ---" Taunt                                           Type:Attack
+Name: "Angerfist" A:2 Earth:1 Text: "If this is your first card this turn, discard a Card at Random"                    Type:Attack
+
+Tier3
+Name: "Weave" Text: "Create an empty D8 Lifedice." H:X A:8-X  Text:"Roll a D8, the result is X."                        Type:Attack
+

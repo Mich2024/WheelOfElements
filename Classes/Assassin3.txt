@@ -7,3 +7,21 @@ Life: 7
 
 Modifiers
 Add 2 +1
+
+
+Type
+Element: Metal
+Element: Water
+
+Explanation:Disarm
+Explanation:Poison
+Explanation:Advantage
+
+Tier1
+Name: "Metal Heart" Metal:2 H:1                                                                             Type:Special
+Name: "Bleeding Heel" Disarm Disarm Exhaust                                                                 Type:Special
+Name: "Poisoned Needle" A:2 Poison:4 Text: "If the Attack dealt atleast 4 Damage, Poison:4" Exhaust         Type:Attack
+
+Tier3
+Name: "Murder" A:13 Disarm Exhaust                                                                          Type:Attack
+Name: "Blade Flurry" ManaCost:Water;2 A:3 A:3 A:3 Text:"A:3 for each enemy you kill with this card"         Type:Attack

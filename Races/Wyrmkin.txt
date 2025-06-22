@@ -2,24 +2,24 @@ Variant:1
 
 Passive
 -
-Life: 18
+Life: 20
 
 Modifiers
 Remove 2 +0
 
 Type
-#Element:
+#Element: Water Wood
 
-Explanation:Shield
+Explanation:Regeneration
 
 Tier1
-Name: "Guard" Shield                                                                        Type:Special
-Name: "Guard" Shield                                                                        Type:Special
-Name: "Pumping Blood" H:3                                                                   Type:Special
+Name: "Ancestral Blood" Regeneration:3                                                  Type:Special
+Name: "Ancestral Blood" Regeneration:3                                                  Type:Special
+Name: "Ferocious Bite" A:3+X Text:"X is your Regeneration. Lose all Regeneration"       Type:Special
 
 Tier2
-Name: "Tail Whip" A:2 S:1                                                                   Type:Attack
-Name: "Bite and Tear" A:3 H:2                                                               Type:Attack
+Name: "Tail Whip" A:5                                                                   Type:Attack
+Name: "Bite and Tear" A:3 Regeneration:2                                                Type:Attack
 
 Tier3
-Name: "Carve Flesh" A:8                                                                     Type:Attack
+Name: "Carve Flesh" A:8                                                                 Type:Attack

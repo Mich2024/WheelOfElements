@@ -29,8 +29,11 @@ Name: "Taunt" Taunt                                                             
 Name: "Fire Heart" Fire:2 H:1                                                   Type:Special
 Name: "Charge" Vulnerable Powerful                                              Type:Special
 
-Tier2
+#Tier2
 
 Tier3
-Name: "Barrage" Text: "choose 4 times: A:1 or Fire:1"                           Type:Attack
-Name: "Bash" A:2 A:2 A:2 Powerful                                               Type:Attack
+Name: "Barrage" Text: "choose 3 times: A:2 or Fire:2"                           Type:Attack
+Name: "Crash" ManaCost:Earth;3 A:4 A:4 A:4                                      Type:Attack
+
+
+#Name: "Bash" A:2 A:2 A:2 Powerful                                               Type:Attack

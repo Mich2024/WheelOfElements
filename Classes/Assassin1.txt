@@ -35,8 +35,8 @@ Name: "Sharpen Metal" Metal:3 Disarm Exhaust                                    
 
 Tier2
 Name: "Cut Muscle" Disarm A:5 Exhaust                                                   Type:Attack
-#5+3+4
-Name: "Poisoned Knife" ManaCost:Water;2 A:8 Poison:2 Exhaust                            Type:Attack
+#5+3+2
+Name: "Poisoned Knife" ManaCost:Water;1 A:8 Poison:2 Exhaust                            Type:Attack
 
 Tier3
 Name: "Cut Throat" ManaCost:Water;2 Text: "Execute a non Boss Enemy below half life"    Type:Attack

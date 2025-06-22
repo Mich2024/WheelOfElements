@@ -25,10 +25,10 @@ Explanation:Advantage
 
 Tier1
 Name: "Metal Heart" Metal:2 H:1                                                         Type:Special
-Name:
-Name:
+Name: "Night's Embrace" ManaCost:Water;2 A:10 Exhaust                                   Type:Attack
+Name: "Cloak" Disarm Advantage                                                          Type:Special
 
 Tier2
-Name:
-Name:
+Name: "Sword and Dagger" ManaCost:Water;3 A:7 A:4                                       Type:Attack
+Name: "Slit Tendon" Advantage Disarm Aoe:CleaveThree Exhaust                            Type:Special
 

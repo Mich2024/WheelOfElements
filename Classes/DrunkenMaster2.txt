@@ -1,0 +1,30 @@
+Stats
+
+Variant:1
+Passive
+If you would die, exhaust an empty Lifedice. If you do, roll it and heal that much life
+Life: 0
+
+Modifiers
+
+Variant:2
+Passive
+
+Life: 0
+
+Modifiers
+
+Type
+Element: Earth
+
+Explanation:Taunt
+Explanation:Powerful
+
+Tier1
+Name: "Taunt" Taunt                                                                                                   Type:Special
+Name: "Crack head" ManaCost:Opt;Earth;1 Powerful Powerful Text: "--- Opt cost paid ---" A:2                           Type:Attack
+Name: "Sweep" ManaCost:Opt;Earth;3 A:3 Text: "--- Opt cost paid ---" AOE:MostRight;3                                  Type:Attack
+
+Tier2
+Name: "Bottle" H:3 Text: "Remove all your Debuffs"                                                                    Type:Special
+Name: "Confusion" Text: "Reroll the Monster Die. The Result is X." H:X                                                Type:Special

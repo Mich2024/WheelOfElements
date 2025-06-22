@@ -24,7 +24,7 @@ Explanation:Powerful
 Explanation:Vulnerable
 
 Tier1
-Name: "double punch" ManaCost:Earth;1 A:2 A:2                                                   Type:Attack
+Name: "double punch" ManaCost:Earth;2 A:3 A:3                                                   Type:Attack
 Name: "Fire Heart" Fire:2 H:1                                                                   Type:Special
 Name: "Weave" A:2 H:1                                                                           Type:Attack
 

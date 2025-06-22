@@ -1,8 +1,5 @@
 Stats
 
-Skill:Toughness
-Skill:Charisma
-
 Variant:1
 Passive
 You may pay up to 2 life to add up to +2 Attack
