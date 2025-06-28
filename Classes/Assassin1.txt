@@ -2,13 +2,8 @@ Stats
 
 Variant:1
 Passive
-After playing your cards, you may discard a exhaust card
-
-#-3 to maximum decksize (has exhsaust synergy since you need less playable cards)
-#you may pay 2 metal instead of exhausting the card
-#at the end of combat return an exhausted card to your cardpool
-#whenever you discard a non-exhaust card, you may play it, if you do exhaust it
-Life: 7
+Handsize +1 and decksize -1
+Life: 8
 
 Modifiers
 Remove 1 +2
@@ -16,8 +11,8 @@ Add 1 +4
 
 Variant:2
 Passive
-
-Life: 7
+-4 to maximum decksize
+Life: 4
 
 Modifiers
 Remove 1 +0
@@ -31,12 +26,10 @@ Explanation:Poison
 
 Tier1
 Name: "Metal Heart" Metal:2 H:1                                                         Type:Special
-Name: "Sharpen Metal" Metal:3 Disarm Exhaust                                            Type:Special
 
 Tier2
-Name: "Cut Muscle" Disarm A:5 Exhaust                                                   Type:Attack
-#5+3+2
-Name: "Poisoned Knife" ManaCost:Water;1 A:8 Poison:2 Exhaust                            Type:Attack
+Name: "Cut Muscle" Disarm A:2                                                           Type:Attack
+Name: "Poisoned Knife" ManaCost:Water;1 A:5 Poison:2                                    Type:Attack
 
 Tier3
-Name: "Cut Throat" ManaCost:Water;2 Text: "Execute a non Boss Enemy below half life"    Type:Attack
+Name: "Cut Throat" ManaCost:Water;2 Text: "Execute a non-Boss, if its below half life"  Type:Attack

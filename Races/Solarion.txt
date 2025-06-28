@@ -1,7 +1,7 @@
 Variant:1
 
 Passive
-Whenever you reduce an Opponents life below half apply vulnerable.
+When an enemy moves to your zone, it gets vulnerable
 Life: 7
 
 Modifiers

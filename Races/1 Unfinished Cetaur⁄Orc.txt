@@ -1,0 +1,25 @@
+Variant:1
+
+Passive
+
+Life: 10
+
+Modifiers
+Add 1 +1
+
+Type
+#Element: FireEarth
+
+Explanation: Powerful
+
+Base Cards
+Tier1
+Name:
+Name:
+
+Tier2
+Name:
+Name:
+
+Tier3
+Name:

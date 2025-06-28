@@ -1,7 +1,7 @@
 Variant:1
 
 Passive
-When an enemy moves to your zone, it gets vulnerable
+Whenever you attack an enemy with vulnerable, consume it and Fire:1
 
 Life: 6
 

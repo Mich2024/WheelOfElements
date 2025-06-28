@@ -1,0 +1,29 @@
+Variant:1
+
+Passive
+Improved Cards
+Life: 10
+
+Modifiers
+Add 1 +1
+
+Type
+#Element: EarthMetal
+
+Explanation: Shield
+
+Base Cards
+
+#Tier1
+#Name: "Shield" S:1                                 Type:Special
+
+Tier2
+Name: "Guard" S:1 H:2                                           Type:Special
+Name: "Slash" A:5                                               Type:Attack
+Name: "Lay on Hands" H:5                                        Type:Special
+Name: "Parrying Dagger" S:1 A:2                                 Type:Attack
+
+Tier3
+Name: "Adaptive Fighter" Text: "Choose 2: A:3, H:4 or S:1"      Type:Attack
+#VirtualTier4
+Name: "BaLaNcEd" A:6 H:6                                        Type:Attack
