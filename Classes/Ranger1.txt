@@ -1,0 +1,45 @@
+Variant:1
+
+Passive
+Them Mods
+
+Life: 6
+
+Modifiers
+Add 4 +2 Draw
+
+Variant:2
+
+Passive
+Them Mods
+
+Life: 6
+
+Modifiers
+Add 4 +3
+
+Type
+Element: Wood
+
+Explanation:Ranged
+Explanation:Disengage
+
+Base Cards
+
+#Power Levels : 3,3,5,5,8
+
+#ManaCost:Opt;Wood;1
+
+Tier1
+#3
+Name: "Natures Remedy" ManaCost:Opt;Wood;2 Ranged H:2 Text: "--- Opt cost paid ---" Text: H:4 Special
+Name: "Pocket Sand" Ranged Disengage Special
+
+Tier2 
+#5
+Name: "Aid" Ranged Wood:1 H:3   Special
+Name: "Arrow" Ranged A:4  Attack
+
+Tier3
+#8
+#Name: "Hail of arrows" Ranged Wood:1 A:2 A:2 A:2 Attack

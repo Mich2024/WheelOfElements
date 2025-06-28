@@ -1,0 +1,42 @@
+Variant:1
+
+Passive
+Them Mods
+
+Life: 6
+
+Modifiers
+Add 8 +2 Draw
+
+Variant:2
+
+Passive
+Them Mods
+
+Life: 6
+
+Modifiers
+Add 2 +12
+
+Type
+Element: Wood
+
+Explanation:Regenerate
+
+Base Cards
+
+#Power Levels : 3,3,3,5,5
+
+#ManaCost:Opt;Wood;1
+
+Tier1
+#3
+Name: "Lasting Aid" ManaCost:Opt;Wood;2 Ranged Regenerate:2 :2 Text: "--- Opt cost paid ---" H:4 Special
+Name: "Quickshot" Ranged A:1 A:1  Attack
+Name: "Plink" Wood:1 A:1 A:1 Attack
+
+Tier2 
+#5
+Name: "Split Care" Ranged H:2 H:2  Special
+Name: "Volley Fire" ManaCost:Opt;Wood;2 Ranged A:2 A:2 Text: "--- Opt cost paid ---" A:2 A:2  Attack
+

@@ -6,6 +6,7 @@ Healing is modified by the modifier deck
 Life: 8
 
 Modifiers
+Add 2 +0 Draw Regenerate:2
 
 Variant:2
 
@@ -15,6 +16,8 @@ Healing is modified by the modifier deck
 Life: 8
 
 Modifiers
+Remove 2 +2
+Add 2 +4
 
 Type
 Element: Water
@@ -28,6 +31,11 @@ Explanation:Poison
 
 Tier1
 #3
+Name: "Nightshade" ManaCost:Wood;1 Poison:4 Attack
+Name: "Vital Burst" H:X Text: "X is the amount of regenration on you" Special
+Name: "Leeching Brambles" ManaCost:Wood;2 A:3 H:4 Attack
 
 Tier2
 #5
+Name: "Wellspring" Water:2 Regenerate:3 Special
+Name: "Venopuncture" Water:2 Poison:3 Attack

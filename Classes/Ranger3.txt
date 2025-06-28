@@ -1,0 +1,39 @@
+Variant:1
+
+Passive
+Them Mods
+
+Life: 6
+
+Modifiers
+Add 4 +2 Draw
+
+Variant:2
+
+Passive
+Them Mods
+
+Life: 6
+
+Modifiers
+Add 1 +8 Draw
+
+Type
+Element: Wood
+
+Base Cards
+
+#Power Levels : 3,3,3,8,8
+
+#ManaCost:Opt;Wood;1
+
+Tier1
+#3
+Name: "Shred" ManaCost:Opt;Wood;2 A:1 A:1 Text: "--- Opt cost paid ---" A:1 A:1 Attack
+Name: "Tangle Tumble" ManaCost:Opt;Wood;2 Ranged Disengage Text: "--- Opt cost paid ---" Disengage Special
+Name: "Unload" ManaCost:Opt;Wood;X A:2 Text: "Repeat X Times" Attack
+
+Tier3
+#8
+Name: "Nature's Retreat" Wood:1 Disengage Regenerate:3 Special
+Name: "Heavy Shots" A:4 A:4 Ranged Attack
