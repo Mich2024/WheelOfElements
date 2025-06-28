@@ -1,24 +1,27 @@
 Variant:1
 
 Passive
+When you heal, also apply Regeneration:1
 
-Life: 6
+Life: 8
 
 Modifiers
+Add 2 +0 Draw Regenerate:2
 
 Variant:2
 
 Passive
+When you heal, also apply Regeneration:1
 
-Life: 6
+Life: 8
 
 Modifiers
+Remove 2 +4
+Add 2 +6
 
 Type
 Element: Water
 Element: Wood
-
-
 
 #Power Levels : 3,3,3,8,8
 
@@ -26,6 +29,11 @@ Element: Wood
 
 Tier1
 #3
+Name: "Overgrowth" Water:1 Text: "Double the amount of regeneration on you" Special
+Name: "Toxic Lob" ManaCost:Wood;2 Poison:5 Ranged Attack
+Name: "Shred" ManaCost:Wood;2 A:7 Attack
 
 Tier3
 #8
+Name: "Flood" Water:5 Special
+Name: "Calming Presence" H:4 Text: "Also target the players next to you" Special

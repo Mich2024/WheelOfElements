@@ -46,4 +46,4 @@ Tier3
 Name: "Perfect Cover" Text: "Disengage all enemies"
 
 #Name: "Barrage" ManaCost:Fire;2 A:3 A:3 A:3 A:3
-#Name: "Hail of arrows" A:2 A:2 A:2 Ranged
+

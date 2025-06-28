@@ -6,7 +6,7 @@ At the beginning of our turn, H:2
 Life: 8
 
 Modifiers
-Add 2 +0 Regenerate:2
+Add 2 +0 Draw Regenerate:2
 
 Variant:2
 
@@ -32,8 +32,8 @@ Explanation:Regeneration
 
 Tier1
 #3
-Name: "Vital Burst" H:X Text: "X is the amount of regenration on you" Special
-Name: "Splash" Water:1 A:2 Attack
+Name: "Flowering" ManaCost:Wood;X H:X*2 Regenerate:2 Special
+Name: "Splash" Water:1 Regenerate:2 Special
 
 Tier2
 #5
@@ -42,4 +42,4 @@ Name: "Healing Rain" Water:1 H:3 Ranged Special
 
 Tier3
 #8
-Name: "Regrowth" ManaCost:Wood;X H:8 Regenerate:X Ranged Attack
+Name: "Regrowth" ManaCost:Wood;X H:8 Regenerate:X Ranged Special
