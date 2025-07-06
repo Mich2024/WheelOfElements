@@ -30,10 +30,10 @@ Base Cards
 Tier1
 #3
 Name: "Shred" ManaCost:Opt;Wood;2 A:1 A:1 Text: "--- Opt cost paid ---" A:1 A:1 Attack
-Name: "Tangle Tumble" ManaCost:Opt;Wood;2 Ranged Disengage Text: "--- Opt cost paid ---" Disengage Special
+Name: "Tangle Tumble" ManaCost:Opt;Wood;1 Ranged Disengage Text: "--- Opt cost paid ---" Disengage Special
 Name: "Unload" ManaCost:Opt;Wood;X A:2 Text: "Repeat X Times" Attack
 
 Tier3
 #8
-Name: "Nature's Retreat" Wood:1 Disengage Regenerate:3 Special
+Name: "Nature's Retreat" Wood:2 Disengage Regenerate:3 Special
 Name: "Heavy Shots" A:4 A:4 Ranged Attack

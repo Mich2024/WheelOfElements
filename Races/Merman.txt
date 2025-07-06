@@ -1,0 +1,43 @@
+Variant:1
+
+Passive
+Play with the top of your moifier deck revealed
+
+Life:
+8
+
+Modifiers
+Add 2 +2
+Remove 2 +0
+
+
+#Variant:2
+
+#Passive
+#Play with the top of your moifier deck revealed
+
+#Life:
+#8
+
+#Modifiers
+#Add 3 +3 Draw
+
+Type
+Element: Water
+
+Explanation: Poison
+
+#ManaCost:Opt;Water;1
+
+Base Cards
+Tier1
+Name: "Polluted Waters" Water:1 Poison:2 Attack
+Name: "Schlurp" ManaCost:Opt;Water;2 H:3 Text: "--- Opt cost paid ---" H:4 Special
+Name: "Homeland Brew" ManaCost:Opt;Water;2 H:3 Text: "--- Opt cost paid ---" Poison:4 Special
+
+Tier2
+Name: "Slickness" Water:1 H:4 Special
+Name: "Tidal Grasp" ManaCost:Opt;Water;3 A:2 Text: "--- Opt cost paid ---" A:2 AOE:Cleave;2
+
+Tier3
+Name: "Brine Burst"  Poison:4 H:2 Water:2 Attack

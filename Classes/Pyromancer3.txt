@@ -1,17 +1,17 @@
 Variant:1
 
 Passive
-Whenever you attack an enemy with vulnerable, consume it and Fire:1
+Whenever an enemy in your zone dies, another enemy gets vulnerable
 
 Life: 6
 
 Modifiers
-Add 2 +0 Draw Fire:2
+Add 2 +0 Draw Vulnerable
 
 Variant:2
 
 Passive
-When an enemy moves to your zone, it gets vulnerable
+Whenever an enemy in your zone dies, another enemy gets vulnerable
 
 Life: 6
 
@@ -29,11 +29,11 @@ Base Cards
 
 Tier1
 #3
-Name: "Warmth" Fire:1 H:2 Special
-Name: "Carbonize" A:4 Text: "If this attack kills, Fire:2" Attack Exhaust
-Name: "Hype" Powerful H:1 Special
+Name: "Fan of Flames" Fire:1 A:1 AOE:Cleave;2 Special
+Name: "Carbonize" ManaCost:Fire;2 A:6 Text: "If this attack kills, Fire:2" Attack
+Name: "Fiery veins" ManaCost:Fire;1 Powerful:1 H:3 Special
 
 Tier3
 #8
 Name: "Mortal Flame" ManaCost:Opt;Fire;4 A:8 Text: "--- Opt cost paid: ---" Text: "This attack deals double damage" Attack
-Name: "Mutilate" Text: "All enemies everywhere get vulnerable" Exhaust Attack
+Name: "Mutilate" Text: "All enemies everywhere get vulnerable" Special

@@ -38,5 +38,5 @@ Name: "Plink" Wood:1 A:1 A:1 Attack
 Tier2 
 #5
 Name: "Split Care" Ranged H:2 H:2 Special
-Name: "Volley Fire" ManaCost:Opt;Wood;2 Ranged A:2 A:2 Text: "--- Opt cost paid ---" A:2 A:2 Attack
+Name: "Volley Fire" ManaCost:Opt;Wood;3 Ranged A:2 A:2 Text: "--- Opt cost paid ---" A:2 A:2 Attack
 

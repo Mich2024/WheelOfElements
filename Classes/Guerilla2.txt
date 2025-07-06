@@ -33,12 +33,12 @@ Base Cards
 
 Tier1
 #3
-Name: "Sense Weakness" Vulnerable Ranged Special
-Name: "Recover" H:2 Wood:1 Special
-Name: "Opening Strike" ManaCost:Fire;2 A:4 Ranged Text: "If the target is on full life, deal double damage" Attack
+Name: "Sense Weakness" Ranged Vulnerable Special
+Name: "Ambush Strike" ManaCost:Fire;2 Ranged A:3 A:3  Attack
+Name: "Opening Strike" ManaCost:Fire;2 Ranged A:4 Text: "If the target is on full life, deal double damage" Attack
 
 Tier2 
 #5
-Name: "Ambush Strike" ManaCost:Fire;2 A:8 Ranged Attack
-Name: "Vanish" Disengage Wood:2 Special
+Name: "Hidden Aid" Ranged Wood:2 H:2 Special
+Name: "Vanish" Wood:2 Disengage H:1 Special
 
