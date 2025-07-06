@@ -16,6 +16,7 @@ Base Cards
 Tier1
 Name: "Heal" H:3                                                            Type:Special
 Name: "Triple Shot" A:1 A:1 A:1                                             Type:Attack
+Name: "Bonk" A:3    
 
 Tier2
 Name: "Motivate" Powerful Powerful H:3                                      Type:Special

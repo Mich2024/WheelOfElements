@@ -34,7 +34,7 @@ Base Cards
 Tier1
 #3
 Name: "Mercy Kill" ManaCost:Fire;2 A:4 Text: "If the target is lower than half life, deal double damage" Attack
-Name: "Prepare the Prey" ManaCost:Fire;2 Vulnerable Vulnerable VulnerableRanged Special
+Name: "Prepare the Prey" ManaCost:Fire;1 Vulnerable Vulnerable Ranged Special
 Name: "Drag into cover" Ranged Disengage  Special
 
 Tier3 

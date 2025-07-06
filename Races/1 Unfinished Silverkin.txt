@@ -1,10 +1,12 @@
 Variant:1
 
 Passive
+Double the effect of your modifiers
 
-Life:
+Life: 6
 
 Modifiers
+-
 
 Type
 Element: Metal
@@ -14,15 +16,16 @@ Explanation: Advantage
 Base Cards
 
 Tier1
-Name:
-Name:
+Name: "Like Clockwork" Advantage Metal:2 Special
+Name: "Liquimetal Flow" Advantage H:2 Special
+Name: "Adamantium Infusion" ManaCost:Opt;Metal;X A:3 H:X*2 Attack
 
 Tier2
-Name:
-Name:
+Name: "Adaptive Plating" Metal:1 H:4 Special
+Name: "Bladestorm" ManaCost:Opt;Metal;3 A:5 Text: "--- Opt cost paid ---" Text: "Double the effect of your modifiers (again)" Attack
 
 Tier3
-Name:
+Name: "Filigree Fatality" Advantage A:7 Attack
 
 
 
