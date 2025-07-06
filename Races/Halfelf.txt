@@ -25,7 +25,7 @@ Tier1
 #3
 Name: "Disarm" Disarm Special
 Name: "Heal" H:3 Special
-Name: "Flase Edge" A:2 A:1 Atack
+Name: "Flase Edge" A:2 A:1 Attack
 
 Tier2 
 #5

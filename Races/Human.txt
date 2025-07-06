@@ -14,7 +14,7 @@ Explanation: Shield
 
 Base Cards
 
-#Tier1
+Tier1
 #Name: "Shield" S:1                                 Type:Special
 
 Tier2

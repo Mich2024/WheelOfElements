@@ -24,7 +24,7 @@ Tier1
 #3
 Name: "Woodland Rite" Wood:3 Special
 Name: "Pocket Wood" A:2 Wood:1 Special
-Name: "Slash" A:3 Atack
+Name: "Slash" A:3 Attack
 
 Tier2 
 #5
@@ -32,6 +32,6 @@ Name: "Fly away" H:5 Special
 Name: "Healing Dust" Wood:2 H:3 Special
 
 #8
-Name: "Black Dust" ManaCost:Opt;Wood;3 Ranged A:6 "--- Opt cost paid ---" A:6 Attack
+Name: "Black Dust" ManaCost:Opt;Wood;3 Ranged A:6 Text: "--- Opt cost paid ---" A:6 Attack
 
 #Name: "Radiance" H:3 Text: "Also Target the players next to you" Attack

@@ -1,8 +1,20 @@
 
-Level Up, +5 to Minimum Decksize
+Level Up, +5 to Decksize
 
--5 to Minimum Decksize, -2 to Maximum Handsize
+-5 to Decksize, -2 to Maximum Handsize
 
 Each Player gives a card from their Sideboard to the left, Enemies start with Powerful
 
----,Enemies have double HP
+double status effects caused by players, Enemies have double HP
+
+Loot at end of each turn, +3 to Decksize
+
+enemies rotate backwards , mana rotates backwards
+
++1 draw when modifier,
+
+-1 mana usage on all cards,
+
+, +1 mana usage on all cards (capped at 5)
+
+1 time veto rights for a dice roll,  Until then: +1 mana usage on all cards (capped at 5)

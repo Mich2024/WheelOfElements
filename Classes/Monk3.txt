@@ -17,6 +17,8 @@ At the end of your turn A:1
 Life: 10
 #2x Remove 2 +1 Add 2 +3
 
+Type
+
 Element: Fire
 Element: Earth
 

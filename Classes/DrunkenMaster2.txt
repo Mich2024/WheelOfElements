@@ -23,7 +23,7 @@ Explanation:Powerful
 Tier1
 Name: "Taunt" Taunt                                                                                                   Type:Special
 Name: "Crack head" ManaCost:Opt;Earth;1 Powerful Powerful Text: "--- Opt cost paid ---" A:2                           Type:Attack
-Name: "Sweep" ManaCost:Opt;Earth;3 A:3 Text: "--- Opt cost paid ---" AOE:MostRight;3                                  Type:Attack
+Name: "Sweep" ManaCost:Opt;Earth;3 A:3 Text: "--- Opt cost paid ---" Text: "AOE:MostRight;3 "                                  Type:Attack
 
 Tier2
 Name: "Bottle" H:3 Text: "Remove all your Debuffs"                                                                    Type:Special

@@ -18,6 +18,7 @@ symbolDict = {
     "Energy":r"\symEnergy",
     "A":r"\symAttack",
     "R":r"\symRange",
+    "Ranged":r"\symRange",
     "T":r"\symTargets",
     "AOE":"todo", # todo
     "H":r"\symHeal",
@@ -66,6 +67,7 @@ symbolDict = {
     "Vengeance":r"\symVengeance",
     "V":r"\symVengeance",
     "Regeneration":r"\symRegenerate",
+    "Regenerate":r"\symRegenerate",
     "Invisibility":r"\symInvisibility",
     "Invisibile":r"\symInvisibility",
     "Powerful":r"\symPowerful",
@@ -123,6 +125,7 @@ attackModifiers = {
     "Vengeance":r"\symVengeance",
     "V":r"\symVengeance",
     "Regeneration":r"\symRegenerate",
+    "Regenerate":r"\symRegenerate",
     "Invisibility":r"\symInvisibility",
     "Invisibile":r"\symInvisibility",
 
@@ -158,6 +161,7 @@ dictExplanation = {
     "Vendetta":r"Attacks against targets with Vendetta cause the attacker to loose 1 life per stack after the attack. Removed at the start of the turn",
     "V":r"Attacks against targets with Vendetta cause the attacker to loose 1 life per stack after the attack. Removed at the start of the turn",
     "Regeneration":r"At the start of the turn, gain 2 life and remove a stack of regeneration",
+    "Regenerate":r"At the start of the turn, gain 2 life and remove a stack of regeneration",
     "Invisibility":r"Monsters cannot target invisible players. Removed at the start of the turn",
     "Invisibile":r"Monsters cannot target invisible players. Removed at the start of the turn",
     "Powerful":r"Add A:+1 to your attacks",
@@ -283,15 +287,18 @@ class actionCard:
 
         "A":appendAction,
         "R":appendAction,
+        "Ranged":appendAction,
         "T":appendAction,
         "Targets":appendAction,
         "Target":appendAction,
+        
         "AOE":appendAoe,
         "Aoe":appendAoe,
 
         "H":appendAction,
         "Heal":appendAction,
         "Regeneration":appendAction,
+        "Regenerate":appendAction,
         "Invisibility":appendAction,
         "Bless":appendAction,
         "Blessing":appendAction,

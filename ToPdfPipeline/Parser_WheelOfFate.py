@@ -115,6 +115,10 @@ def sliceClassToCardTypes(lines):
 def sliceStatsToCards(lines):
     
     #print(lines)
+    if "Variant1" in lines:
+        lines[lines.index("Variant1")] = "Variant:1"
+    if "Variant2" in lines:
+        lines[lines.index("Variant2")] = "Variant:2"
     var1Begin = lines.index("Variant:1")        
     typeBegin = lines.index("Type")
 
@@ -199,7 +203,7 @@ def parseStatLinesToCards(lines, name, rank):
     explanations = []
 
     for line in TypeExplanation:
-        print(line)
+        #print(line)
         if startsWith(line, "Element"):
             elements.append(line)
         if startsWith(line, "Explanation"):
@@ -422,7 +426,7 @@ def parseItems():
         
 
         if(lineItem[0:9] == "ShopLevel"):
-            print(lineItem[10:])
+            #print(lineItem[10:])
             shopLevelCurrent = lineItem[10:]
         else:
             
@@ -576,55 +580,57 @@ if __name__ == "__main__":
 
     #files_Input.append(r"..\Races\Centaur.txt")
     #files_Input.append(r"..\Races\Dragonblood.txt")
-    #files_Input.append(r"..\Races\Dwarf.txt")
+    files_Input.append(r"..\Races\Dwarf.txt")
     #files_Input.append(r"..\Races\Elf.txt")
-    #files_Input.append(r"..\Races\Fae.txt")
-    #files_Input.append(r"..\Races\HalfElf.txt")
-    #files_Input.append(r"..\Races\Human.txt")
+    files_Input.append(r"..\Races\Fae.txt")
+    files_Input.append(r"..\Races\HalfElf.txt")
+    files_Input.append(r"..\Races\Human.txt")
     #files_Input.append(r"..\Races\Merman.txt")
     #files_Input.append(r"..\Races\Silverkin.txt")
+    files_Input.append(r"..\Races\Solarian.txt")
     files_Input.append(r"..\Races\Thyger.txt")
     files_Input.append(r"..\Races\Wyrmkin.txt")
     
-    #files_Input.append(r"..\Classes\Alchemist1.txt")
-    #files_Input.append(r"..\Classes\Alchemist2.txt")
-    #files_Input.append(r"..\Classes\Alchemist3.txt")
+    files_Input.append(r"..\Classes\Alchemist1.txt")
+    files_Input.append(r"..\Classes\Alchemist2.txt")
+    files_Input.append(r"..\Classes\Alchemist3.txt")
 
-    #files_Input.append(r"..\Classes\Assassin1.txt")
-    #files_Input.append(r"..\Classes\Assassin2.txt")
-    #files_Input.append(r"..\Classes\Assassin3.txt")
+    files_Input.append(r"..\Classes\Assassin1.txt")
+    files_Input.append(r"..\Classes\Assassin2.txt")
+    files_Input.append(r"..\Classes\Assassin3.txt")
 
     files_Input.append(r"..\Classes\Bloodknight1.txt")
     files_Input.append(r"..\Classes\Bloodknight2.txt")
     files_Input.append(r"..\Classes\Bloodknight3.txt")
 
-    #files_Input.append(r"..\Classes\Druid1.txt")
-    #files_Input.append(r"..\Classes\Druid2.txt")
-    #files_Input.append(r"..\Classes\Druid3.txt")
+    files_Input.append(r"..\Classes\DrunkenMaster1.txt")
+    files_Input.append(r"..\Classes\DrunkenMaster2.txt")
+    files_Input.append(r"..\Classes\DrunkenMaster3.txt")
+
+    files_Input.append(r"..\Classes\Druid1.txt")
+    files_Input.append(r"..\Classes\Druid2.txt")
+    files_Input.append(r"..\Classes\Druid3.txt")
+
+    files_Input.append(r"..\Classes\Guerilla1.txt")
+    files_Input.append(r"..\Classes\Guerilla2.txt")
+    files_Input.append(r"..\Classes\Guerilla3.txt")
 
     files_Input.append(r"..\Classes\Koloss1.txt")
-    #files_Input.append(r"..\Classes\Koloss2.txt")
-    #files_Input.append(r"..\Classes\Koloss3.txt")
+    files_Input.append(r"..\Classes\Koloss2.txt")
+    files_Input.append(r"..\Classes\Koloss3.txt")
 
-    #files_Input.append(r"..\Classes\Artisan1.txt")
-    #files_Input.append(r"..\Classes\Artisan2.txt")
-    #files_Input.append(r"..\Classes\Artisan3.txt")
 
-    #files_Input.append(r"..\Classes\Monk1.txt")
-    #files_Input.append(r"..\Classes\Monk2.txt")
-    #files_Input.append(r"..\Classes\Monk3.txt")
-
-    #files_Input.append(r"..\Classes\Cultist1.txt")
-    #files_Input.append(r"..\Classes\Cultist2.txt")
-    #files_Input.append(r"..\Classes\Cultist3.txt")
+    files_Input.append(r"..\Classes\Monk1.txt")
+    files_Input.append(r"..\Classes\Monk2.txt")
+    files_Input.append(r"..\Classes\Monk3.txt")
 
     files_Input.append(r"..\Classes\Pyromancer1.txt")
     files_Input.append(r"..\Classes\Pyromancer2.txt")
     files_Input.append(r"..\Classes\Pyromancer3.txt")
 
     files_Input.append(r"..\Classes\Ranger1.txt")
-    #files_Input.append(r"..\Classes\Ranger2.txt")
-    #files_Input.append(r"..\Classes\Ranger3.txt")
+    files_Input.append(r"..\Classes\Ranger2.txt")
+    files_Input.append(r"..\Classes\Ranger3.txt")
 
     
 

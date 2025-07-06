@@ -24,7 +24,7 @@ Tier1
 #3
 Name: "Slur" Taunt Earth:2 Special
 Name: "Resilience" Earth:1 H:2 Special
-Name: "Bonk" A:3 Atack
+Name: "Bonk" A:3 Attack
 
 Tier2 
 #5

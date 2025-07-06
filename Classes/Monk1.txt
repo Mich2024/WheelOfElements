@@ -17,6 +17,8 @@ At the end of your turn A:1
 Life: 10
 2x Remove 2 +1 Add 2 +3
 
+Type
+
 Element: Fire
 Element: Earth
 
@@ -29,7 +31,7 @@ Name: "Fire Heart" Fire:2 H:1                                                   
 
 Tier2
 Name: "Bash" Powerful A:3                                                       Type:Attack
-Name: "Triple punch" ManaCost:Earth_2 A:3 A:3 A:3                               Type:Attack
+Name: "Triple punch" ManaCost:Earth;2 A:3 A:3 A:3                               Type:Attack
 
 Tier3
 Name: "Open the ground" Fire:1 A:X A:X Text: "X is Fire Mana in the Pool"       Type:Attack

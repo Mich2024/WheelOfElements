@@ -35,7 +35,7 @@ Name: "Taunt" ManaCost:Metal;2 Taunt Advantage A:4                              
 
 Tier3
 Name: "Cleave" A:2 Disarm Aoe:Cleave;2                                          Type:Attack
-Name: "Roar" Taunt A:2 Aoe:Full                                                 Type:Attack
+Name: "Roar" Taunt A:2 Aoe:All                                                  Type:Attack
 
 
 
