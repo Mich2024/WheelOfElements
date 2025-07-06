@@ -6,13 +6,20 @@ If you would die, exhaust an empty Lifedice. If you do, roll it and heal that mu
 Life: 0
 
 Modifiers
+Remove 2 +0
+Add 1 +4
+Add 1 -2
 
 Variant:2
 Passive
-
-Life: 0
+If you would die, exhaust an empty Lifedice. If you do, roll it and heal that much life
+Life: 4
 
 Modifiers
+Remove 1 +1
+Remove 1 +3
+Add 1 -1
+Add 1 -3
 
 Type
 Element: Earth

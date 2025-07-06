@@ -1,0 +1,25 @@
+Variant:1
+
+Passive
+Redirect Overkill damage to an adjacent enemy
+Life: 8
+
+Modifiers
+Add 1 +1
+
+Type
+#Element: FireEarth
+
+Explanation: Powerful
+
+Base Cards
+Tier1
+Name: "Heal" H:3                                                            Type:Special
+Name: "Triple Shot" A:1 A:1 A:1                                             Type:Attack
+
+Tier2
+Name: "Motivate" Powerful Powerful H:3                                      Type:Special
+Name: "Bash" A:4 A:1                                                        Type:Attack
+
+Tier3
+Name: "Trample" A:7 Text:"Whenever this kills an enemy, gain Powerful"      Type:Attack

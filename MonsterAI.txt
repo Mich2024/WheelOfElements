@@ -11,7 +11,7 @@ Name:Orc Raider
 Normal
 
 Life:10
-Count:4
+Count:6
 Passive: Disengange after action
 
 Rolls:1,2 A:1 A:1
@@ -22,7 +22,7 @@ Rolls:6 A:1 Discard 1
 Hard 
 
 Life:5
-Count:4
+Count:0
 Passive: Disengange after action
 Rolls:1,2 M:3 A:3 R:2
 Rolls:3,4 A:2 T:2 R:3
@@ -34,7 +34,7 @@ Name:Orc Warrior
 Normal
 
 Life:20
-Count:6
+Count:9
 Passive: -
 
 Rolls:1,2 A:2 H:2
@@ -44,7 +44,7 @@ Rolls:4,5,6 A:3
 Hard
 
 Life:5
-Count:4
+Count:0
 Passive: Disengange after damage
 Rolls:1,2 M:3 A:3 R:2
 Rolls:3,4 A:2 T:2 R:3
@@ -55,8 +55,8 @@ Name:Orc Archer
 
 Normal
 
-Life:5
-Count:2
+Life:12
+Count:3
 Passive: Disengange when damaged
 
 Rolls:1,2 A:2 A:2
@@ -66,7 +66,7 @@ Rolls:5,6 H:3
 Hard
 
 Life:5
-Count:4
+Count:0
 Passive: Disengange after damage
 Rolls:1,2 M:3 A:3 R:2
 Rolls:3,4 A:2 T:2 R:3
@@ -88,7 +88,7 @@ Rolls:6 A:6
 Hard 
 
 Life:5
-Count:4
+Count:0
 Passive: Disengange after damage
 Rolls:1,2 M:3 A:3 R:2
 Rolls:3,4 A:2 T:2 R:3
@@ -99,9 +99,9 @@ Name:Orc Shaman
 
 Normal
 
-Life:5
-Count:2
-Passive: Disengange after damage
+Life:10
+Count:3
+Passive: -
 
 Rolls:1,2,3 Powerful to all enemies to the right and self
 Rolls:4 Powerful A:1 A:1
@@ -110,7 +110,7 @@ Rolls:5,6 A:3
 Hard 
 
 Life:5
-Count:4
+Count:0
 Passive: Disengange after damage
 Rolls:1,2 M:3 A:3 R:2
 Rolls:3,4 A:2 T:2 R:3
@@ -121,17 +121,17 @@ End Of File
 
 Setups
 Level:1
-Orc: Warrior Shaman Warrior Raider
-Orc: Warrior Warrior Warrior Raider
+Orc: Warrior Shaman Warrior
+Orc: Warrior Warrior Raider Raider
 Orc: Warboss Warrior
-Orc: Archer Warrior Warrior
+Orc: Warrior Archer Archer
 Level:2
+Orc: Warrior Shaman Archer Warrior
 Orc: Warrior Shaman Warrior Raider Raider
-Orc: Warrior Warrior Warrior Raider Raider
-Orc: Warboss Warrior Raider
-Orc: Archer Warrior Warrior Raider
+Orc: Warboss Warrior Warrior
+Orc: Warrior Archer Archer Warrior
 Level:3
-Orc: Warrior Shaman Warrior Raider Warrior Raider
-Orc: Warrior Warrior Warrior Raider Archer Raider
-Orc: Shaman Warboss Warrior Raider
-Orc: Archer Warrior Shaman Warrior Raider
+Orc: Warrior Shaman Archer Warrior Raider Raider
+Orc: Warrior Shaman Warrior Warrior Raider Raider
+Orc: Warboss Shaman Warrior Raider Raider
+Orc: Warrior Archer Archer Warrior Warrior

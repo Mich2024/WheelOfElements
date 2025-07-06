@@ -6,13 +6,20 @@ Whenever a Dice, including the Monster dice, rolls a 6, A:9.
 Life: 8
 
 Modifiers
+Remove 2 +0
+Add 1 +5
+Add 1 -3
 
 Variant:2
 Passive
-
-Life: 8
+Whenever a Dice, including the Monster dice, rolls a 6, A:9.
+Life: 12
 
 Modifiers
+Remove 1 +1
+Remove 1 +3
+Add 1 -1
+Add 1 -3
 
 Type
 Element: Earth
