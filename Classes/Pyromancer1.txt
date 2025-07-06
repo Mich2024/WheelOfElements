@@ -6,7 +6,7 @@ At the beginning of your round, Fire:1
 Life: 6
 
 Modifiers
-Add 2 +0 Draw Fire:2
+Add 2 +0 Draw Vulnerable
 
 Variant:2
 

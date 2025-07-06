@@ -44,4 +44,4 @@ Name: "Disarm" Disarm Special
 Tier2
 #5
 Name: "Prolonged Suffering" ManaCost:Opt;Water;1 Poison:4 Text: "--- Opt cost paid ---" Disarm Attack
-Name: "Toxic Shock" A:2*X Text: "X is the amount of poison on the target" Exhaust Attack
+Name: "Toxic Shock" A:X Text: "X is the amount of poison on the target" Attack
