@@ -22,17 +22,16 @@ Type
 Element: Fire
 Element: Earth
 
-Explanation:Powerful
 Explanation:Vulnerable
 
 Tier1
-Name: "double punch" ManaCost:Earth;2 A:3 A:3                                                   Type:Attack
+Name: "Double punch" ManaCost:Earth;2 A:3 A:3                                                   Type:Attack
 Name: "Fire Heart" Fire:2 H:1                                                                   Type:Special
 Name: "Weave" A:2 H:1                                                                           Type:Attack
 
 Tier2
 Name: "Bash in" Vulnerable A:3                                                                  Type:Attack
-Name: "100 push-ups" Powerful Text: "You do not lose powerful this turn as the turn ends"       Type:Special
+Name: "Regular Punches" ManaCost:Opt;Earth;X Flurry:X A:2 A:2                                   Type:Special
 
 
 

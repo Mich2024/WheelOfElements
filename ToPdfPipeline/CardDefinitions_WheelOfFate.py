@@ -305,6 +305,7 @@ class actionCard:
         "Advantage":appendAction,
         "Powerful":appendAction,
         "Self":appendAction,
+        "Flurry":appendAction,
 
         "M":appendAction,
         "Jump":appendAction,

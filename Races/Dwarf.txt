@@ -1,7 +1,7 @@
 Variant:1
 
 Passive
-When you remove a bane from yourself, H:2
+Immunity to banes
 
 Life: 10
 
@@ -12,7 +12,7 @@ Add 1 +6
 Type
 Element:Earth
 
-Explanation:Taunt
+Explanation:Powerful
 
 Base Cards
 
@@ -22,14 +22,14 @@ Base Cards
 
 Tier1
 #3
-Name: "Slur" Taunt Earth:2 Special
+Name: "Hype" Powerful Earth:2 Special
 Name: "Resilience" Earth:1 H:2 Special
 Name: "Bonk" A:3 Attack
 
 Tier2 
 #5
-Name: "Girth" Taunt A:3 Attack
-Name: "Tough it out" ManaCost:Opt;Earth;1 H:5 Text: "--- Opt cost paid ---" Taunt Special
+Name: "Girth" Powerful A:3 Attack
+Name: "Tough it out" ManaCost:Opt;Earth;1 H:5 Special
 
 #8
-Name: "Alcoholism" ManaCost:Opt;Earth;2 A:2 A:2 H:4 Text: "--- Opt cost paid ---" H:4 Attack
+Name: "Alcoholism" ManaCost:Opt;Earth;2 A:2 A:2 H:4 Text: "--- Opt cost paid ---" Powerful Powerful Attack

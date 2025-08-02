@@ -3,10 +3,11 @@ Variant:1
 Passive
 You decide who disengages at the end of your turn
 
-Life: 6
+Life: 12
 
 Modifiers
 Remove 2 +0
+Remove 2 -0
 
 Type
 

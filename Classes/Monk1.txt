@@ -13,7 +13,7 @@ Life: 10
 Variant2
 
 Passive
-At the end of your turn A:1
+At the start of your turn Flurry:1
 Life: 10
 2x Remove 2 +1 Add 2 +3
 
@@ -22,16 +22,16 @@ Type
 Element: Fire
 Element: Earth
 
+Explanation:Flurry
 Explanation:Powerful
-Explanation:Taunt
 
 Tier1
-Name: "Pummel" ManaCost:Earth;1 Taunt A:4 Aoe:MostRight                         Type:Attack
-Name: "Fire Heart" Fire:2 H:1                                                   Type:Special
+Name: "Meditate" H:1 Flurry:1                          Type:Attack
+Name: "Hot Rush" Fire:1 Flurry:1                                                Type:Special
 
 Tier2
-Name: "Bash" Powerful A:3                                                       Type:Attack
+Name: "Flex" Powerful H:3                                                       Type:Attack
 Name: "Triple punch" ManaCost:Earth;2 A:3 A:3 A:3                               Type:Attack
 
 Tier3
-Name: "Open the ground" Fire:1 A:X A:X Text: "X is Fire Mana in the Pool"       Type:Attack
+Name: "Open the ground" Fire:1 Flurry:X Text: "X is Fire Mana in the Pool"       Type:Attack

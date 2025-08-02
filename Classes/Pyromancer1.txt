@@ -22,7 +22,7 @@ Type
 Element: Fire
 
 Explanation:Vulnerable
-Explanation:Powerful
+Explanation:Flurry
 
 
 
@@ -38,7 +38,7 @@ Name: "Warmth" Fire:1 H:2 Special
 Tier2
 #5
 Name: "Fire Breathing" ManaCost:Fire;1 A:2 Vulnerable Aoe:Cleave;2 Attack
-Name: "Fire up" Fire:1 Powerful H:2 Special
+Name: "Fire up" Fire:1 Flurry:1 H:3 Special
 
 Tier3
 #8

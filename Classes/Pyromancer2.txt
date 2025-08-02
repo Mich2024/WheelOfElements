@@ -1,7 +1,7 @@
 Variant:1
 
 Passive
-Vulnerable can Stack (everywhere)
+When you consume X Fire, A:X
 
 Life: 6
 
@@ -11,7 +11,7 @@ Add 2 +0 Draw Vulnerable
 Variant:2
 
 Passive
-Vulnerable can Stack (everywhere)
+When you consume X Fire, A:X
 
 Life: 6
 

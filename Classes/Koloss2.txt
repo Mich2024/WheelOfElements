@@ -22,7 +22,6 @@ Type
 Element: Earth
 Element: Metal
 
-Explanation:Shield
 Explanation:Taunt
 
 Tier1
@@ -32,5 +31,5 @@ Name: "Indomitable" ManaCost:Metal;2 S:1 Text: "Double your shield"     Type:Spe
 
 Tier2
 Name: "Bash" A:5                                                        Type:Attack
-Name: "Mock" S:1 Taunt                                                  Type:Special
+Name: "Body of Effulgent Beryl" S:1 H:2                                                  Type:Special
 

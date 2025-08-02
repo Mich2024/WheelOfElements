@@ -582,7 +582,8 @@ if __name__ == "__main__":
     #files_Input.append(r"..\Races\Dragonblood.txt")
     files_Input.append(r"..\Races\Dwarf.txt")
     #files_Input.append(r"..\Races\Elf.txt")
-    files_Input.append(r"..\Races\Fae.txt")
+
+    '''files_Input.append(r"..\Races\Fae.txt")
     files_Input.append(r"..\Races\HalfElf.txt")
     files_Input.append(r"..\Races\Human.txt")
     files_Input.append(r"..\Races\Merman.txt")
@@ -601,13 +602,13 @@ if __name__ == "__main__":
 
     files_Input.append(r"..\Classes\Bloodknight1.txt")
     files_Input.append(r"..\Classes\Bloodknight2.txt")
-    files_Input.append(r"..\Classes\Bloodknight3.txt")
+    files_Input.append(r"..\Classes\Bloodknight3.txt")'''
 
     files_Input.append(r"..\Classes\DrunkenMaster1.txt")
     files_Input.append(r"..\Classes\DrunkenMaster2.txt")
     files_Input.append(r"..\Classes\DrunkenMaster3.txt")
 
-    files_Input.append(r"..\Classes\Druid1.txt")
+    '''files_Input.append(r"..\Classes\Druid1.txt")
     files_Input.append(r"..\Classes\Druid2.txt")
     files_Input.append(r"..\Classes\Druid3.txt")
 
@@ -617,7 +618,7 @@ if __name__ == "__main__":
 
     files_Input.append(r"..\Classes\Koloss1.txt")
     files_Input.append(r"..\Classes\Koloss2.txt")
-    files_Input.append(r"..\Classes\Koloss3.txt")
+    files_Input.append(r"..\Classes\Koloss3.txt")'''
 
 
     files_Input.append(r"..\Classes\Monk1.txt")
@@ -628,9 +629,9 @@ if __name__ == "__main__":
     files_Input.append(r"..\Classes\Pyromancer2.txt")
     files_Input.append(r"..\Classes\Pyromancer3.txt")
 
-    files_Input.append(r"..\Classes\Ranger1.txt")
+    '''files_Input.append(r"..\Classes\Ranger1.txt")
     files_Input.append(r"..\Classes\Ranger2.txt")
-    files_Input.append(r"..\Classes\Ranger3.txt")
+    files_Input.append(r"..\Classes\Ranger3.txt")'''
 
     
 

@@ -3,21 +3,19 @@
 
 
 
-
-
 ###########################################################################################
 Name:Orc Raider
 
 Normal
 
-Life:10
-Count:6
+Life:20
+Count:2
 Passive: Disengange after action
 
-Rolls:1,2 A:1 A:1
-Rolls:3,4 A:3
-Rolls:5 H:3
-Rolls:6 A:1 Discard 1
+Rolls:1,2 A:1 A:1 A:1
+Rolls:3,4 A:4
+Rolls:5 H:6
+Rolls:6 A:2 Discard 2
 
 Hard 
 
@@ -33,13 +31,13 @@ Name:Orc Warrior
 
 Normal
 
-Life:20
-Count:9
+Life:30
+Count:4
 Passive: -
 
-Rolls:1,2 A:2 H:2
-Rolls:3 A:2
-Rolls:4,5,6 A:3
+Rolls:1,2 A:3 H:3
+Rolls:3 A:4
+Rolls:4,5,6 A:5
 
 Hard
 
@@ -55,13 +53,13 @@ Name:Orc Archer
 
 Normal
 
-Life:12
+Life:20
 Count:3
 Passive: Disengange when damaged
 
-Rolls:1,2 A:2 A:2
-Rolls:3,4 A:4
-Rolls:5,6 H:3
+Rolls:1,2 A:3 A:3
+Rolls:3,4 A:6
+Rolls:5,6 H:4
 
 Hard
 
@@ -77,13 +75,13 @@ Name:Orc Warboss
 
 Normal
 
-Life:40
+Life:60
 Count:1
 Passive: Enemy to the right disengages instead if possible
 
-Rolls:1,2,3 A:5
-Rolls:4,5 A:4
-Rolls:6 A:6
+Rolls:1,2,3 A:3 A:3
+Rolls:4,5 A:7
+Rolls:6 A:9
 
 Hard 
 
@@ -99,13 +97,35 @@ Name:Orc Shaman
 
 Normal
 
-Life:10
-Count:3
+Life:15
+Count:2
 Passive: -
 
-Rolls:1,2,3 Powerful to all enemies to the right and self
+Rolls:1,2,3 Powerful to all enemies in this zone
+Rolls:5,6 H:2 targeting all other enemies in this zone
 Rolls:4 Powerful A:1 A:1
-Rolls:5,6 A:3
+
+Hard 
+
+Life:5
+Count:0
+Passive: Disengange after damage
+Rolls:1,2 M:3 A:3 R:2
+Rolls:3,4 A:2 T:2 R:3
+Rolls:5,6 A:4 Pierce:1 R:3
+
+###########################################################################################
+Name:Orc Warlock
+
+Normal
+
+Life:20
+Count:2
+Passive: -
+
+Rolls:1 Powerful A:4
+Rolls:2,3 A:1 A:1
+Rolls:4,5,6 Vulnearble
 
 Hard 
 
@@ -118,20 +138,22 @@ Rolls:5,6 A:4 Pierce:1 R:3
 
 End Of File
 
+End Of File
+
 
 Setups
 Level:1
-Orc: Warrior Shaman Warrior
-Orc: Warrior Warrior Raider Raider
+Orc: Shaman Warrior
+Orc: Warrior Raider
+Orc: Warboss
+Orc: Warrior Archer
+Level:2
+Orc: Shaman Archer Warrior
+Orc: Shaman Warrior Raider
 Orc: Warboss Warrior
 Orc: Warrior Archer Archer
-Level:2
-Orc: Warrior Shaman Archer Warrior
-Orc: Warrior Shaman Warrior Raider Raider
-Orc: Warboss Warrior Warrior
-Orc: Warrior Archer Archer Warrior
 Level:3
-Orc: Warrior Shaman Archer Warrior Raider Raider
-Orc: Warrior Shaman Warrior Warrior Raider Raider
-Orc: Warboss Shaman Warrior Raider Raider
-Orc: Warrior Archer Archer Warrior Warrior
+Orc: Shaman Warrior Raider Raider
+Orc: Shaman Warrior Archer Archer
+Orc: Warboss Warlock
+Orc: Warlock Archer Warrior

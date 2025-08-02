@@ -6,14 +6,14 @@ Skill:Arcana
 Variant1
 
 Passive
-At the end of your turn A:1
+At the start of your turn Vulnerable:1
 Life: 10
 #1x Add 2 +0 Earth:2
 
 Variant2
 
 Passive
-At the end of your turn A:1
+At the start of your turn Vulnerable:1
 Life: 10
 #2x Remove 2 +1 Add 2 +3
 
@@ -22,12 +22,9 @@ Type
 Element: Fire
 Element: Earth
 
-Explanation:Powerful
-Explanation:Vulnerable
-Explanation:Taunt
 
 Tier1
-Name: "Taunt" Taunt                                                             Type:Special
+Name: "Furry" Flurry:2                                                             Type:Special
 Name: "Fire Heart" Fire:2 H:1                                                   Type:Special
 Name: "Charge" Vulnerable Powerful                                              Type:Special
 

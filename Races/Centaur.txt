@@ -10,17 +10,17 @@ Add 1 +1
 Type
 #Element: FireEarth
 
-Explanation: Powerful
+Explanation: Flurry
 
 Base Cards
 Tier1
 Name: "Heal" H:3                                                            Type:Special
-Name: "Triple Shot" A:1 A:1 A:1                                             Type:Attack
+Name: "Overrun" A:1 Flurry                                             Type:Attack
 Name: "Bonk" A:3    
 
 Tier2
-Name: "Motivate" Powerful Powerful H:3                                      Type:Special
+Name: "Rampage" A:1 Flurry Flurry                                       Type:Special
 Name: "Bash" A:4 A:1                                                        Type:Attack
 
 Tier3
-Name: "Trample" A:7 Text:"Whenever this kills an enemy, gain Powerful"      Type:Attack
+Name: "Trample" A:7 Text:"Whenever this kills an enemy, gain Flurry"      Type:Attack

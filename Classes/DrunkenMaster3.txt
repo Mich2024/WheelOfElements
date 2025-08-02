@@ -24,15 +24,11 @@ Add 1 -3
 Type
 Element: Earth
 
-Explanation:Taunt
-Explanation:Shield
-Explanation:Powerful
-
 Tier1
-Name: "Inner Earth" H:2 Earth:1                                                                                                             Type:Special
-Name: "Consider" Earth:1 Text:"Draw Four cards"
+Name: "Bottle" H:2 Text: "Remove all your Debuffs"                                                                    Type:Special
+Name: "Fevered Insight" Earth:1 Text:"Draw Four cards" Type:Special
 Name: "Tenacious" ManaCost:Opt;Earth;3 Text: "Create an empty D4 Lifedice. If the Opt cost was paid create a Full D8 Lifedice instead"      Type:Special
 
 Tier3
 Name: "See Double" Text: "Roll two D6. Create Earth equals to one result and A:X. X is the other result."                                   Type:Attack
-Name: "Sober" ManaCost:Opt;Earth;1 Shield Taunt Text: "--- Opt cost paid ---" Text: "Gain Powerful for each enemy"                          Type:Special
+Name: "Sober" ManaCost:Opt;Earth;3 Shield:2 Text: "--- Opt cost paid ---" Text: "Gain Powerful for each enemy"                          Type:Special

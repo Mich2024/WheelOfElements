@@ -2,7 +2,7 @@ Stats
 
 Variant:1
 Passive
-At the start of Combat, Taunt then roll a D6. The rotated enemy loses that much life.
+At the start of Combat, Roll a D6. A:X, where X is the result
 Life: 8
 
 Modifiers
@@ -12,7 +12,7 @@ Add 1 -1
 
 Variant:2
 Passive
-At the start of Combat, Taunt then roll a D6. The rotated enemy loses that much life.
+At the start of Combat, Roll a D6. A:X, where X is the result
 Life: 12
 
 Modifiers
@@ -24,7 +24,7 @@ Add 1 -3
 Type
 Element: Earth
 
-Explanation:Taunt
+Explanation:Powerful
 Explanation:Shield
 
 Tier1
@@ -32,7 +32,7 @@ Name: "Inner Earth" H:2 Earth:1                                                 
 Name: "Shield" S:1                                                                                                      Type:Special
 
 Tier2
-Name: "Repartee" ManaCost:Opt;Earth;1 A:4 Text: "--- Opt cost paid ---" Taunt                                           Type:Attack
+Name: "Repartee" ManaCost:Opt;Earth;1 A:4 Text: "--- Opt cost paid ---" Powerful Powerful                                      Type:Attack
 Name: "Angerfist" A:2 Earth:1 Text: "If this is your first card this turn, discard a Card at Random"                    Type:Attack
 
 Tier3
