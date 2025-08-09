@@ -4,8 +4,25 @@ Passive
 Improved Cards
 Life: 10
 
-Modifiers
-Add 1 +1
+Modifier Tableau
+#1; 1; 1; 1
+Rank:1
+Add 4 +3, Add 2 +2
+Add 4 +5
+Remove 4 +0, Add 4 +5
+Remove 1 +0, Add 1 +20
+
+#2; 2
+Rank:2
+Remove 2 +0 Add 2 +3
+# -0.2 If above line is taken
+Remove 2 +3 Add 2 +5
+
+#3
+Rank:3
+Remove 2 +2 Add 2 +5
+# -0.2 If above line is taken
+
 
 Type
 #Element: EarthMetal
