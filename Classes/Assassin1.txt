@@ -25,7 +25,7 @@ Explanation:Disarm
 Explanation:Poison
 
 Tier1
-Name: "Metal Heart" Metal:2 H:1                                                         Type:Special
+Name: "Metal Heart" Metal:2                                                         Type:Special
 
 Tier2
 Name: "Cut Muscle" Disarm A:2                                                           Type:Attack

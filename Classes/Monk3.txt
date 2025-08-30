@@ -25,7 +25,7 @@ Element: Earth
 
 Tier1
 Name: "Furry" Flurry:2                                                             Type:Special
-Name: "Fire Heart" Fire:2 H:1                                                   Type:Special
+Name: "Fire Heart" Fire:2 A:1                                                   Type:Special
 Name: "Charge" Vulnerable Powerful                                              Type:Special
 
 #Tier2

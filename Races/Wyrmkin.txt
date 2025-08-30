@@ -10,11 +10,11 @@ Remove 2 +0
 Type
 #Element: Water Wood
 
-Explanation:Regeneration
+Explanation:Heal
 
 Tier1
-Name: "Ancestral Blood" Regeneration:3                                                  Type:Special
-Name: "Ancestral Blood" Regeneration:3                                                  Type:Special
+Name: "Ancestral Blood" H:5                                                             Type:Special
+Name: "Ancestral Blood" H:5                                                             Type:Special
 Name: "Ferocious Bite" A:3+X Text:"X is your Regeneration. Lose all Regeneration"       Type:Special
 
 Tier2

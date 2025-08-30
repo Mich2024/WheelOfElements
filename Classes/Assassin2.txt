@@ -25,7 +25,7 @@ Explanation:Advantage
 
 
 Tier1
-Name: "Metal Heart" Metal:2 H:1                                                 Type:Special
+Name: "Metal Heart" Metal:2                                                 Type:Special
 Name: "Night's Embrace" ManaCost:Water;2 A:7                                    Type:Attack
 Name: "Cloak" Disarm Advantage                                                  Type:Special
 

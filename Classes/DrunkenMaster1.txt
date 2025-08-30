@@ -28,13 +28,13 @@ Explanation:Powerful
 Explanation:Shield
 
 Tier1
-Name: "Inner Earth" H:2 Earth:1                                                                                         Type:Special
+Name: "Inner Earth" A:2 Earth:1                                                                                         Type:Special
 Name: "Shield" S:1                                                                                                      Type:Special
 
 Tier2
-Name: "Repartee" ManaCost:Opt;Earth;1 A:4 Text: "--- Opt cost paid ---" Powerful Powerful                                      Type:Attack
+Name: "Repartee" ManaCost:Opt;Earth;1 A:4 Text: "--- Opt cost paid ---" Powerful Powerful                               Type:Attack
 Name: "Angerfist" A:2 Earth:1 Text: "If this is your first card this turn, discard a Card at Random"                    Type:Attack
 
 Tier3
-Name: "Weave" Text: "Create an empty D8 Lifedice." H:X A:8-X  Text:"Roll a D8, the result is X."                        Type:Attack
+Name: "Weave" Text: "Create a full D4 Lifedice." A:4                                                                    Type:Attack
 

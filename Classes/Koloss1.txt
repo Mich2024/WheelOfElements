@@ -28,7 +28,7 @@ Explanation:Shield
 Explanation:Advantage
 
 Tier1
-Name: "Earthen Heart" H:1 Earth:2                                   Type:Special
+Name: "Earthen Heart" Earth:2                                       Type:Special
 Name: "Slash" ManaCost:Metal;2 Advantage A:6 Type:Attack            Type:Special
 
 Tier2

@@ -24,7 +24,7 @@ Element: Water
 Element: Wood
 
 Explanation:Ranged
-Explanation:Regeneration
+Explanation:Heal
 
 #Power Levels : 3,3,5,5,8
 
@@ -32,14 +32,17 @@ Explanation:Regeneration
 
 Tier1
 #3
-Name: "Flowering" ManaCost:Wood;X H:X*2 Regenerate:2 Special
-Name: "Splash" Water:1 Regenerate:2 Special
+Name: "Flowering" ManaCost:Wood;X H:X*3 A:2                                     Type:Special
+Name: "Splash" Water:1 H:3                                                      Type:Special
 
 Tier2
 #5
-Name: "Razor Petals" ManaCost:Wood;1 A:3 A:3 Attack
-Name: "Healing Rain" Water:1 H:3 Ranged Special
+Name: "Razor Petals" ManaCost:Wood;1 A:5 A:5 Text: "lose 3 life"                Type:Attack
+Name: "Healing Rain" Water:1 A:1 H:2 Ranged                                     Type:Special
 
 Tier3
 #8
-Name: "Regrowth" ManaCost:Wood;X H:8 Regenerate:X Ranged Special
+Name: "Take a Bite" ManaCost:Wood;2 A:7 H:X Text: "X is your damage dealt"      Type:Attack
+
+
+#Name: "Regrowth" ManaCost:Wood;X H:8 H:X*2 Ranged                       Type:Special

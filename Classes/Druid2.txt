@@ -31,11 +31,12 @@ Explanation:Poison
 
 Tier1
 #3
-Name: "Nightshade" ManaCost:Wood;1 Poison:4 Attack
-Name: "Vital Burst" H:X Text: "X is the amount of regenration on you" Special
-Name: "Leeching Brambles" ManaCost:Wood;2 A:3 H:4 Attack
+Name: "Nightshade" ManaCost:Wood;1 Poison:4                                                         Type:Attack
+Name: "Water Heart" Water:2                                                                         Type:Special
+Name: "Leeching Brambles" ManaCost:Wood;2 A:3 H:6                                                   Type:Attack
 
 Tier2
 #5
-Name: "Wellspring" Water:2 Regenerate:3 Special
-Name: "Venopuncture" Water:2 Poison:3 Attack
+Name: "Wellspring" Water:2 H:4                                                                      Type:Special
+Name: "Flay" A:7 Poison:2 Text: "Lose 7 life. If this was your second card, repeat this card."      Type:Attack
+
