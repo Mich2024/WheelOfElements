@@ -33,12 +33,12 @@ Explanation:Flurry
 Tier1
 #3
 Name: "Fireball" ManaCost:Opt;Fire;X A:X Aoe:Cleave;3 Attack
-Name: "Warmth" Fire:1 H:2 Special
+Name: "Warmth" Fire:1 A:2 Special
 
 Tier2
 #5
 Name: "Fire Breathing" ManaCost:Fire;1 A:2 Vulnerable Aoe:Cleave;2 Attack
-Name: "Fire up" Fire:1 Flurry:1 H:3 Special
+Name: "Fire up" Fire:2 Flurry:1 Flurry:1 Special
 
 Tier3
 #8

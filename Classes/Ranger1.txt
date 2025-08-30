@@ -29,12 +29,12 @@ Base Cards
 
 Tier1
 #3
-Name: "Bushcraft" ManaCost:Opt;Wood;3 Ranged Disengage Text: "--- Opt cost paid ---" A:4 A:4 Special
-Name: "Pocket Sand" Ranged Disengage A:2 Special
+Name: "Bushcraft" ManaCost:Opt;Wood;3 Ranged Disengage Text: "--- Opt cost paid ---" A:4 A:4 Attack
+Name: "Pocket Sand" Ranged A:2 Disengage Attack
 
-Tier2 
+Tier2
 #5
-Name: "Canpoy Rain" Ranged A:2 A:2   Special
+Name: "Canpoy Rain" Ranged A:2 A:2   Attack
 Name: "Snipe" Ranged Wood:1 A:4 Attack
 
 Tier3

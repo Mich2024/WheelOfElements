@@ -16,7 +16,7 @@ When you draw a potion add it to your items. Discard them on use like a modifier
 Add 2 +0 Molotov Pot
 #A:1 AOE Cleave:2
 Add 2 +0 Heal Pot
-#Heal 3
+#Heal 4
 
 Life: 6
 
@@ -33,14 +33,14 @@ Explanation:Heal
 
 Tier1
 #3
-Name: "Drink up"  Water:1 Regenerate:2 Special
+Name: "Drink up"  Water:1 Heal:6 Special
 Name: "Flashpowder" A:1 Aoe:Cleave;3 Attack
 
 Tier2
 #5
 Name: "Toxic Concoction" ManaCost:Opt;Water;1 Poison:4 Text: "--- Opt cost paid ---" A:4 Attack
-Name: "Herbal Remedies" Water:1 H:2 Regenerate:2 Special
+Name: "Herbal Remedies" Water:2 H:8 Special
 
 Tier3
 #8
-Name: "Toxic Deluge" ManaCost:Opt;Water;2 Poison:2 Text: "--- Opt cost paid ---" A:2 Aoe:Cleave;3 Attack
+Name: "Toxic Deluge" ManaCost:Opt;Water;3 Poison:3 Text: "--- Opt cost paid ---" A:2 Aoe:Cleave;3 Attack
