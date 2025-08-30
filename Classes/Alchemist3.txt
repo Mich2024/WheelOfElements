@@ -36,11 +36,11 @@ Element: Water
 
 Tier1
 #3
-Name: "Drink up"  Water:1 Regenerate:2 Special
-Name: "Leeching Tinctures" Water:2 Text: "Remove any amount of poison from your enemies. Gain that much regenration" Special
+Name: "Drink up"  Water:1 Heal:6 Special
+Name: "Leeching Tinctures" Water:2 Text: "Remove any amount of poison from your enemies. Heal twice that much health" Special
 Name: "Poison the well" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3 Attack
 
 Tier3
 #8
-Name: "Anaphylactic Shock" Text: "Disarm all Poisoned targets" AOE:All Special
-Name: "Drown in poison" ManaCost:Opt;Water;4 Poison:8 Text: "--- Opt cost paid ---" A:X Text: "X is the amount of poison on the target" Attack
+Name: "Miasma" Text: "Disarm all Poisoned targets" AOE:All Special
+Name: "Drown in poison" ManaCost:Opt;Water;5 Poison:8 Text: "--- Opt cost paid ---" A:X Text: "X is the amount of poison on the target" Attack

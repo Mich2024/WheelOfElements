@@ -22,8 +22,8 @@ Life: 6
 Modifiers
 Add 2 +0 Molotov Pot
 #A:1 AOE Cleave:2
-Add 2 +0 Regen Pot
-#Regen 2
+Add 2 +0 Heal Pot
+#Heal:4
 Remove 2 -1
 
 Type
@@ -37,11 +37,11 @@ Explanation:Disarm
 
 Tier1
 #3
-Name: "Healing Salve"  Water:1 H:2 Special
-Name: "Sickening Wave" Water:1 Poison:1 Aoe:Cleave;2 Attack
+Name: "Drink up"  Water:1 Heal:6 Special
+Name: "Sickening Wave" Water:1 Poison:1 Aoe:Cleave;3 Attack
 Name: "Disarm" Disarm Special
 
 Tier2
 #5
-Name: "Prolonged Suffering" ManaCost:Opt;Water;1 Poison:4 Text: "--- Opt cost paid ---" Disarm Attack
+Name: "Prolonged Suffering" ManaCost:Opt;Water;1 Poison:5 Text: "--- Opt cost paid ---" Disarm Attack
 Name: "Toxic Shock" A:X Text: "X is the amount of poison on the target" Attack

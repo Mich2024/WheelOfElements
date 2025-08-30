@@ -8,19 +8,19 @@ Modifier Tableau
 #1; 1; 1; 1
 Rank:1
 Add 4 +3, Add 2 +2
-Add 4 +5
+Add 4 +4, Add 2 +5
 Remove 4 +0, Add 4 +5
 Remove 2 +0, Add 2 +10
 
 #2; 2
 Rank:2
-Remove 2 +0, Add 2 +3
+Remove 1 +0, Add 1 +3
 # -0.2 If above line is taken
 Remove 2 +3, Add 2 +5
 
 #3
 Rank:3
-Remove 2 +2, Add 2 +5
+Remove 1 +0, Add 1 +3
 # -0.2 If above line is taken
 
 

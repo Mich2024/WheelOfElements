@@ -31,9 +31,9 @@ Tier1
 #3
 Name: "Fan of Flames" Fire:1 A:1 AOE:Cleave;2 Special
 Name: "Carbonize" ManaCost:Fire;2 A:6 Text: "If this attack kills, Fire:2" Attack
-Name: "Fiery veins" ManaCost:Fire;X Flurry:X H:3 Special
+Name: "Fiery veins" ManaCost:Fire;X Flurry:X+1 Special
 
 Tier3
 #8
-Name: "Mortal Flame" ManaCost:Opt;Fire;4 A:8 Text: "--- Opt cost paid: ---" Text: "This attack deals double damage" Attack
+Name: "Mortal Flame" ManaCost:Opt;Fire;5 A:8 Text: "--- Opt cost paid: ---" Text: "This attack deals double damage" Attack
 Name: "Mutilate" Text: "All enemies everywhere get vulnerable" Special

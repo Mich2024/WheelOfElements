@@ -33,17 +33,17 @@ Base Cards
 
 Tier1
 #3
-Name: "Hunters Mark" Vulnerable Wood:1 Attack
-Name: "Hide on bush" Disengage Wood:1 Special
+Name: "Perfect Cover" Wood:1 Text: "Disengage all enemies"
+Name: "Hide on bush" Disengage Wood:2 Special
 
 Tier2 
 #5
-Name: "Natures Help" Wood:2 H:3 Special
-Name: "Barrage" ManaCost:Fire;2 A:3 A:3 A:3
+Name: "Multitask" Wood:1 A:2 Vulnerable Disengage Special
+Name: "Hunters Mark" A:3 Vulnerable Attack
 
 Tier3
 #8
-Name: "Perfect Cover" Text: "Disengage all enemies"
+Name: "Barrage" ManaCost:Fire;2 A:3 A:3 A:3
 
 #Name: "Barrage" ManaCost:Fire;2 A:3 A:3 A:3 A:3
 
