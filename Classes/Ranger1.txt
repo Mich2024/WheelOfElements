@@ -1,22 +1,19 @@
 Variant:1
 
 Passive
-Them Mods
+Add 4 +2 Draw
+
 
 Life: 6
-
-Modifiers
-Add 4 +2 Draw
 
 Variant:2
 
 Passive
-Them Mods
+Add 4 +3
 
 Life: 6
 
-Modifiers
-Add 4 +3
+
 
 Type
 Element: Wood
@@ -32,14 +29,14 @@ Base Cards
 
 Tier1
 #3
-Name: "Natures Remedy" ManaCost:Opt;Wood;2 Ranged H:2 Text: "--- Opt cost paid ---" H:4 Special
-Name: "Pocket Sand" Ranged Disengage Special
+Name: "Bushcraft" ManaCost:Opt;Wood;3 Ranged Disengage Text: "--- Opt cost paid ---" A:4 A:4 Special
+Name: "Pocket Sand" Ranged Disengage A:2 Special
 
 Tier2 
 #5
-Name: "Aid" Ranged Wood:1 H:3   Special
-Name: "Arrow" Ranged A:4  Attack
+Name: "Canpoy Rain" Ranged A:2 A:2   Special
+Name: "Snipe" Ranged Wood:1 A:4 Attack
 
 Tier3
 #8
-#Name: "Hail of arrows" Ranged Wood:1 A:2 A:2 A:2 Attack
+Name: "Hail of arrows" Ranged A:2 A:2 A:2 Attack

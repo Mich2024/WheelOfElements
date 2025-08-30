@@ -106,7 +106,7 @@ def parseTextFromWords(words: list):
     return (text, words)
 
 
-#returns a dict with stats, passive, modifiers, base cards, leveling cards
+#returns a dict with variants, types, modifiers, 
 def sliceClassToCardTypes(lines):
 
     CardsBegin = lines.index("Tier1")
@@ -121,13 +121,15 @@ def sliceStatsToCards(lines):
         lines[lines.index("Variant2")] = "Variant:2"
     var1Begin = lines.index("Variant:1")        
     typeBegin = lines.index("Type")
+    
 
     if("Variant:2" in lines):
         var2Begin = lines.index("Variant:2")
         semantics = {var1Begin:"Variant:1", var2Begin:"Variant:2", typeBegin:"Type"}
         order = [var1Begin,var2Begin,typeBegin]
     else: #Race
-        semantics = {var1Begin:"Variant:1", typeBegin:"Type"}
+        modBegin = lines.index("Modifier Tableau")
+        semantics = {var1Begin:"Variant:1", modBegin:"Modifier Tableau",typeBegin:"Type"}
         order = [var1Begin,typeBegin]
 
     
@@ -185,6 +187,18 @@ def parseActionCardFromLine(line, nameClass, rank, tier):
 
     return actCard        
 
+def parseTableauFromLines(linesTableau):
+    res = tableauCard()
+    res.L1R1=linesTableau[1]
+    res.L1R2=linesTableau[2]
+    res.L1R3=linesTableau[3]
+    res.L1R4=linesTableau[4]
+
+    res.L2R1=linesTableau[6]
+    res.L2R2=linesTableau[7]
+
+    res.L3R1=linesTableau[9]
+
 # input: all lines before cards 
 # output: cards
 def parseStatLinesToCards(lines, name, rank):
@@ -193,11 +207,14 @@ def parseStatLinesToCards(lines, name, rank):
 
     parts = sliceStatsToCards(lines)
     Var1 = parts["Variant:1"]
+    linesTableau = []
     if("Variant:2" in parts):
         Var2 = parts["Variant:2"]
         variants = [Var1, Var2]
     else: #Race
+        linesTableau = parts["Modifier Tableau"]
         variants = [Var1]
+
     TypeExplanation = parts["Type"]
     elements = []
     explanations = []
@@ -222,19 +239,15 @@ def parseStatLinesToCards(lines, name, rank):
             if line == "Passive":
                 mode = "Passive"
                 continue
-            if line == "Modifiers":
-                mode = "Modifiers"
-                continue
             if startsWith(line, "Life:"):
                 card.assignmentDict[line.split(":")[0]](card,line.split(":")[1])
                 continue
 
             if mode == "Passive":
                 card.passive += line + r" \\ "
+        if (linesTableau != []):
+            card.tableau = parseTableauFromLines(linesTableau)
 
-            if mode == "Modifiers":
-                #print(line)
-                card.modifierUpgrades += line + r" \\ "
         res.append(copy.deepcopy(card))
     return res
 

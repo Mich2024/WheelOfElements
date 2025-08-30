@@ -22,7 +22,7 @@ Base Cards
 
 Tier1
 #3
-Name: "Hype" Powerful Earth:2 Special
+Name: "Hype" Powerful Powerful Earth:1 Special
 Name: "Resilience" Earth:1 H:2 Special
 Name: "Bonk" A:3 Attack
 

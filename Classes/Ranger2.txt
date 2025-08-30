@@ -1,27 +1,22 @@
 Variant:1
 
 Passive
-Them Mods
+Add 10 +2 Draw
 
 Life: 6
-
-Modifiers
-Add 8 +2 Draw
 
 Variant:2
 
 Passive
-Them Mods
+Add 2 +12
 
 Life: 6
 
-Modifiers
-Add 2 +12
 
 Type
 Element: Wood
 
-Explanation:Regenerate
+Explanation:Heal
 
 Base Cards
 
@@ -31,12 +26,12 @@ Base Cards
 
 Tier1
 #3
-Name: "Lasting Aid" ManaCost:Opt;Wood;2 Ranged Regenerate:2 Text: "--- Opt cost paid ---" H:4 Special
+Name: "Lasting Aid" ManaCost:Opt;Wood;2 Ranged H:6 Text: "--- Opt cost paid ---" H:8 Special
 Name: "Quickshot" Ranged A:1 A:1 Attack
-Name: "Plink" Wood:1 A:1 A:1 Attack
+Name: "Plink" Ranged A:1 Wood:2 Attack
 
 Tier2 
 #5
-Name: "Split Care" Ranged H:2 H:2 Special
+Name: "Split Care" Ranged H:5 H:5 Special
 Name: "Volley Fire" ManaCost:Opt;Wood;3 Ranged A:2 A:2 Text: "--- Opt cost paid ---" A:2 A:2 Attack
 

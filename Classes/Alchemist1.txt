@@ -2,35 +2,30 @@ Variant:1
 
 Passive
 When you draw a potion add it to your items. Discard them on use like a modifier.
-
-Life: 6
-
-Modifiers
 Add 2 +0 Poison Pot
 #Poison:2
 Add 2 +0 Water Pot
 #Water:2
-Remove 4 +0
+
+Life: 6
 
 Variant:2
 
 Passive
 When you draw a potion add it to your items. Discard them on use like a modifier.
-
-Life: 6
-
-Modifiers
 Add 2 +0 Molotov Pot
 #A:1 AOE Cleave:2
 Add 2 +0 Heal Pot
 #Heal 3
-Remove 4 +0
+
+Life: 6
+
 
 Type
 Element: Water
 
 Explanation:Poison
-Explanation:Regeneration
+Explanation:Heal
 
 #Power Levels : 3,3,5,5,8
 

@@ -423,7 +423,17 @@ class modifierCard:
         res += "\n"
         return res
     
+class tableauCard:
+    def __init__(self):
+        self.L1R1 = ""
+        self.L1R2 = ""
+        self.L1R3 = ""
+        self.L1R4 = ""
 
+        self.L2R1 = ""
+        self.L2R2 = ""
+
+        self.L3R1 = ""
 
 class statCard:
 
@@ -436,6 +446,7 @@ class statCard:
         self.modifierUpgrades = ""
         self.elements = []
         self.explanations = []
+        self.tableau = {}
 
     def setLife(self, l):
         self.life = l

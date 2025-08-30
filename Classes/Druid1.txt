@@ -24,7 +24,7 @@ Element: Water
 Element: Wood
 
 Explanation:Ranged
-Explanation:Regeneration
+Explanation:Heal
 
 #Power Levels : 3,3,5,5,8
 
