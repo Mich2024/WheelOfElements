@@ -25,7 +25,7 @@ Explanation:Poison
 Explanation:Advantage
 
 Tier1
-Name: "Metal Heart" Metal:2 H:1                                                                             Type:Special
+Name: "Metal Heart" Metal:2                                                                             Type:Special
 Name: "Slice Heel" ManaCost:Water;1 Disarm Disarm                                                           Type:Special
 Name: "Poisoned Needle" A:2 Text: "If the Attack dealt atleast 4 Damage, Poison:4"                          Type:Attack
 

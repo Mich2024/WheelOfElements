@@ -26,11 +26,11 @@ Explanation:Flurry
 Explanation:Powerful
 
 Tier1
-Name: "Meditate" H:1 Flurry:1                          Type:Attack
+Name: "Meditate" A:1 Flurry:1                          Type:Attack
 Name: "Hot Rush" Fire:1 Flurry:1                                                Type:Special
 
 Tier2
-Name: "Flex" Powerful H:3                                                       Type:Attack
+Name: "Flex" Powerful A:3                                                       Type:Attack
 Name: "Triple punch" ManaCost:Earth;2 A:3 A:3 A:3                               Type:Attack
 
 Tier3

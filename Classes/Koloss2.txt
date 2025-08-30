@@ -25,11 +25,11 @@ Element: Metal
 Explanation:Taunt
 
 Tier1
-Name: "Earthen Heart" H:1 Earth:2                                       Type:Special
+Name: "Earthen Heart" Earth:2                                           Type:Special
 Name: "Guard" S:1                                                       Type:Special
 Name: "Indomitable" ManaCost:Metal;2 S:1 Text: "Double your shield"     Type:Special
 
 Tier2
 Name: "Bash" A:5                                                        Type:Attack
-Name: "Body of Effulgent Beryl" S:1 H:2                                                  Type:Special
+Name: "Body of Effulgent Beryl" S:1 A:2                                 Type:Special
 
