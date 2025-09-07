@@ -32,7 +32,7 @@ Explanation:Poison
 Tier1
 #3
 Name: "Nightshade" ManaCost:Wood;1 Poison:4                                                         Type:Attack
-Name: "Water Heart" Water:2                                                                         Type:Special
+Name: "Splash" Water:1 H:3                                                                          Type:Special
 Name: "Leeching Brambles" ManaCost:Wood;2 A:3 H:6                                                   Type:Attack
 
 Tier2

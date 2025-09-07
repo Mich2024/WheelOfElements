@@ -1,15 +1,30 @@
 Variant:1
 
 Passive
+#Starts at +0,3 increases to up to +0,6
 Look at them mods
 
 Life: 6
 
-Modifiers
-Remove 2 +0
-Remove 2 -1
-Remove 1 -2
-Remove 1 *0
+Modifiers Tableau
+#1; 1; 1; 1 (+1)
+Rank:1
+Add 2 +4 Add 5 +2 Remove 1 *0
+Remove 4 +0 Add 1 +7
+Remove 1 +0 Remove 1 +2 Add 1 +10
+Remove 2 +2 Add 1 +12
+
+
+#2; 2 (+0,2)
+Rank:2
+Remove 1 +2 Remove 1 +4 Add 1 +8
+Remove 2 +2 Add 1 +4
+
+
+#3 (+0,2)
+Rank:3
+Remove 1 +0
+
 
 Type
 
