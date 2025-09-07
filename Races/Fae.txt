@@ -5,9 +5,23 @@ The second card you play each turn has ranged
 
 Life: 6
 
-Modifiers
-Remove 2 -1
-Remove 1 -2
+Modifier Tableau
+#1; 1; 1; 1
+Rank:1
+Add 8 +2
+Add 4 +4 Draw
+Add 4 +4 Draw
+Add 4 +4 Draw
+
+#2; 2
+Rank:2
+Add 2 +2 Draw
+Add 2 +2 Draw
+
+#3
+Rank:3
+Add 2 +2 Draw
+
 
 Type
 Element:Wood

@@ -5,9 +5,23 @@ You decide who disengages at the end of your turn
 
 Life: 12
 
-Modifiers
-Remove 2 +0
-Remove 2 -0
+Modifier Tableau
+#1; 1; 1; 1
+Rank:1
+Add 4 +3
+Add 4 +6, Add 4 Disengage
+Remove 6 +0
+Add 3 +9
+
+#2; 2
+Rank:2
+Add 2 Disengage Draw
+Add 2 Disengage Draw
+
+#3
+Rank:3
+Add 2 Disengage Draw
+
 
 Type
 

@@ -6,9 +6,22 @@ Play with the top of your moifier deck revealed
 Life:
 8
 
-Modifiers
-Add 2 +2
+Modifier Tableau
+#1; 1; 1; 1
+Rank:1
+Add 1 of each: +1, +2, +3, +4, +5
+Add 1 of each: +6, +7
+Add 1 of each: +8, +9, +10
+Add 1 of each: +11, +12
+
+#2; 2
+Rank:2
 Remove 2 +0
+Remove 2 +0
+
+#3
+Rank:3
+Remove 1 +0
 
 
 #Variant:2

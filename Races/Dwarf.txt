@@ -16,13 +16,11 @@ Remove 1 +0, Add 1 +20
 #2; 2
 Rank:2
 Remove 2 +2, Add 2 +4
-# -0.2 If above line is taken
 Remove 1 +4, Add 1 +7
 
 #3
 Rank:3
 Remove 1 +4, Add 1 +7
-# -0.2 If above line is taken
 
 Type
 Element:Earth

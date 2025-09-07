@@ -4,8 +4,24 @@ Passive
 When an enemy moves to your zone, it gets vulnerable
 Life: 7
 
-Modifiers
-Add 1 +3
+
+Modifier Tableau
+#1; 1; 1; 1
+Rank:1
+Add 8 Vulnerable
+Add 8 Vulnerable Draw
+Add 4 A:1
+Add 4 A:1
+
+#2; 2
+Rank:2
+Add 2 Vulnerable
+Add 2 Vulnerable
+
+#3
+Rank:3
+Add 2 Vulnerable
+
 
 Type
 Element: Fire
