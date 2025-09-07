@@ -4,8 +4,23 @@ Passive
 -
 Life: 20
 
-Modifiers
+Modifier Tableau
+#1; 1; 1; 1
+Rank:1
+Add 4 +2 Add 4 +0 H:4
+Remove 4 +0 Add 4 +3 Add 4 +0 H:6
+Add 5 +7
+Add 5 +10
+
+
+#2; 2
+Rank:2
+Remove 1 +2 Remove 1 +0 H:4 Add 2 +2 H:4
 Remove 2 +0
+
+#3
+Rank:3
+Remove 1 +2 Add 1 +5
 
 Type
 #Element: Water Wood

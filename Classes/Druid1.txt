@@ -32,13 +32,13 @@ Explanation:Heal
 
 Tier1
 #3
-Name: "Flowering" ManaCost:Wood;X H:X*3 A:2                                     Type:Special
-Name: "Splash" Water:1 H:3                                                      Type:Special
+Name: "Water Heart" Water:2                                                     Type:Special
+Name: "Flowering" ManaCost:Wood;X H:X*3 A:2                                     Type:Attack
 
 Tier2
 #5
 Name: "Razor Petals" ManaCost:Wood;1 A:5 A:5 Text: "lose 3 life"                Type:Attack
-Name: "Healing Rain" Water:1 A:1 H:2 Ranged                                     Type:Special
+Name: "Healing Rain" Water:1 A:1 H:2 Ranged                                     Type:Attack
 
 Tier3
 #8
