@@ -1,8 +1,7 @@
 Variant:1
 
 Passive
-#When you heal, also apply Regeneration:1
-Treat your *0 as a *2
+
 Life: 8
 
 Modifiers
@@ -11,8 +10,7 @@ Add 2 +0 Draw Regenerate:2
 Variant:2
 
 Passive
-#When you heal, also apply Regeneration:1
-Treat your *0 as a *2
+
 Life: 8
 
 Modifiers

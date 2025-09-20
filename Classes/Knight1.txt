@@ -1,0 +1,36 @@
+Stats
+
+Variant:1
+Passive
+At the Start of the game draw 4 cards, then discard 4 cards
+Life: 10
+
+Modifiers
+Add 1 +2
+
+Variant:2
+Passive
+At the Start of the game draw 4 cards, then discard 4 cards
+Life: 7
+
+Modifiers
+Remove 1 +0
+Add 2 +1 H:2 R:0 Draw
+Add 1 +2
+
+Type
+Element: Metal
+
+Explanation:Advantage
+Explanation:Disarm
+
+Tier1
+Name: "Channel Metal" Metal:2                                                                                           Type:Special
+Name: "Disarm" Disarm                                                                                                   Type:Special
+
+Tier2
+Name: "Dutybound" Advantage H:4                                                                                         Type:Special
+Name: "Improved Slash" A:4 Metal:1                                                                                      Type:Attack
+
+Tier3
+Name: "Extra Attack" ManaCost:Opt;Metal;2 A:6 Text: "--- Opt cost paid ---" A:6                                         Type:Attack
