@@ -2,22 +2,13 @@ Variant:1
 
 Passive
 At the start of combat: rotate the leftmost enemy of the player to your right
-
 Life: 10
-
-Modifiers
-Remove 2 -1
-
 
 Variant:2
 
 Passive
 At the start of combat: rotate the leftmost enemy of the player to your right
-
 Life: 0
-
-Modifiers
-Remove 4 -1
 
 
 Type

@@ -1,0 +1,31 @@
+Stats
+
+Skill:Toughness
+Skill:Charisma
+
+Variant:1
+Passive
+Treat your *0 as a *2
+Life: 14
+
+Variant:2
+Passive
+#At the start of your turn, gain Advantage
+Treat your *0 as a *2
+Life: 7
+
+Type
+Element: Metal
+
+Explanation:Advantage
+Explanation:Shield
+Explanation:Disarm
+
+Tier1
+Name: "Shield and Stab" ManaCost:Opt;Metal;2 S:1 Text: "--- Opt cost paid ---" Text: "A:4"                  Type:Attack
+Name: "Versatility" Advantage Metal:1                                                                       Type:Special
+Name: "Disarm and Stab" ManaCost:Opt;Metal;2 Disarm Text: "--- Opt cost paid ---" Text: "A:4"               Type:Attack
+
+Tier3
+Name: "Sword and Dagger"  A:X A:X Stun Text: "X is Metal Mana in the Wheel"                                 Type:Attack
+Name: "Mastery" S:1 Advantage A:4                                                                           Type:Attack

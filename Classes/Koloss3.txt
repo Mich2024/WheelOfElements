@@ -5,19 +5,12 @@ At the beginning of each round, H:2.
 
 Life: 10
 
-Modifiers
-Remove 2 +0
-
-
 Variant:2
 
 Passive
 At the beginning of each round, H:2.
 
 Life: 0
-
-Modifiers
-Add 2 +2
 
 
 Type

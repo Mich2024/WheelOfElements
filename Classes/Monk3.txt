@@ -1,21 +1,16 @@
 Stats
 
-Skill:Toughness
-Skill:Arcana
-
 Variant1
 
 Passive
 At the start of your turn Vulnerable:1
 Life: 10
-#1x Add 2 +0 Earth:2
 
 Variant2
 
 Passive
 At the start of your turn Vulnerable:1
 Life: 10
-#2x Remove 2 +1 Add 2 +3
 
 Type
 

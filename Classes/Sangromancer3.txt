@@ -1,23 +1,14 @@
 Variant:1
 
 Passive
-#When you heal, also apply Regeneration:1
-Treat your *0 as a *2
+At the beginning of our turn, H:2
 Life: 8
-
-Modifiers
-Add 2 +0 Draw Regenerate:2
 
 Variant:2
 
 Passive
-#When you heal, also apply Regeneration:1
-Treat your *0 as a *2
+At the beginning of our turn, H:2
 Life: 8
-
-Modifiers
-Remove 2 +4
-Add 2 +6
 
 Type
 Element: Water
