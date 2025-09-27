@@ -602,7 +602,7 @@ if __name__ == "__main__":
     files_Input.append(r"..\Races\Merman.txt")
     files_Input.append(r"..\Races\Silverkin.txt")
     files_Input.append(r"..\Races\Solarian.txt")
-    files_Input.append(r"..\Races\Thyger.txt")
+    files_Input.append(r"..\Raßoß090lplpüi900ß0´ces\Thyger.txt")
     files_Input.append(r"..\Races\Wyrmkin.txt")
     
     files_Input.append(r"..\Classes\Alchemist1.txt")

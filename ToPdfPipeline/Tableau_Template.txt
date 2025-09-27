@@ -1,0 +1,60 @@
+CARDS=10
+BORDER=RECTANGLE
+UNIT=CM
+PAGE=21,29.7,LANDSCAPE,HV
+
+[space_top] = 1
+[space_left] = 0.5
+[space_right] = 0.25
+[space_bottom] = 0.25
+
+[space_text_28] = 1
+[space_text_18] = 0.7
+
+[linestrength] = 0.1
+
+[third_vert] = ((21-[space_top]-[space_bottom])/3)
+[quart_vert] = ((21-[space_top]-[space_bottom])/4)
+
+[third_hor] = ((29.7-[space_left]-[space_right])/3)
+[quart_hor] = ((29.7-[space_left]-[space_right])/4)
+
+DPI=300
+CARDSIZE=29.7,21
+BASERANGE=,ON
+
+
+#Global Simmilar stuff
+FONT = Arial, 28, B, #000000
+TEXT = 1-10, "Passive",     [space_left] + [quart_hor] * 3, [space_top]+[third_vert]*2 - [space_text_28], [quart_hor], [space_text_28], LEFT, TOP
+TEXT = 1-10, "Life Pool",   [space_left] + [quart_hor] * 1, [space_top]+[third_vert]*2, [quart_hor], [space_text_28], LEFT, TOP
+TEXT = 1-10, "Lore",        [space_left] + [quart_hor] * 2, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], LEFT, TOP
+
+
+
+#Human
+FONT = Arial, 28, B, #000000
+TEXT = 1, "Human", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
+FONT = Arial, 18, B, #000000
+TEXT = 1-10, "Add 2 +2\13\Add 4 +4", [space_left] + [quart_hor] * 0, [space_top], [quart_hor], [third_vert], center, center
+
+
+#Elf
+FONT = Arial, 28, B, #000000
+TEXT = 2, "Elf", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
+
+
+
+
+RECTANGLE = 1-10, [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-10, [space_left] + [quart_hor] * 1, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-10, [space_left] + [quart_hor] * 2, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-10, [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
+
+RECTANGLE = 1-10, [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 1, [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-10, [space_left] + [quart_hor] * 1, [space_top] + [third_vert] * 1, [quart_hor], [third_vert], #000000, empty, [linestrength]
+
+RECTANGLE = 1-10, [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-10, [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], #000000, empty, [linestrength]
+
+

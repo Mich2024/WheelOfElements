@@ -1,7 +1,7 @@
 Variant:1
 
 Passive
-Play with the top of your moifier deck revealed
+Play with the top of your modifier deck revealed
 
 Life:
 8

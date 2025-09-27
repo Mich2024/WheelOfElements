@@ -1,4 +1,14 @@
-[['Rolls:1,2', 'M:3', 'A:6', 'R:3', 'Rolls:3', 'A:4', 'T:2', 'R:3', 'Rolls:4,5', 'A:6', 'R:5', 'Cripple', 'Rolls:6', 'M:5', 'H:5', ['Text: ', ' If in melee, create distance']], 
- ['Rolls:1,2', 'M:3', 'A:6', 'R:3', 'Rolls:3', 'A:4', 'T:2', 'R:3', 'Rolls:4,5', 'A:6', 'R:5', 'Cripple', 'Rolls:6', 'M:5', 'H:5', ['Text: ', ' If in melee, create distance']], 
- ['Rolls:1,2', 'M:3', 'A:6', 'R:3', 'Rolls:3', 'A:4', 'T:2', 'R:3', 'Rolls:4,5', 'A:6', 'R:5', 'Cripple', 'Rolls:6', 'M:5', 'H:5', ['Text: ', ' If in melee, create distance']], 
- ['Rolls:1,2', 'M:3', 'A:6', 'R:3', 'Rolls:3', 'A:4', 'T:2', 'R:3', 'Rolls:4,5', 'A:6', 'R:5', 'Cripple', 'Rolls:6', 'M:5', 'H:5', ['Text: ', ' If in melee, create distance']]]
+
+template_line = open('Template_Line_Mod.txt', 'r')
+template_race = open('Template_Race_Single.txt', 'r')
+template_boilerplate = open('Template_Boilerplate.txt', 'r')
+
+lines = template_race.read()
+
+lines = lines.replace(r"${Mods}", "Butter")
+
+print(repr(lines))
+
+
+
+

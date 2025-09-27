@@ -1,0 +1,1 @@
+TEXT = ${Order}, ${Lore},        [space_left] + [quart_hor] * 2, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], LEFT, TOP
