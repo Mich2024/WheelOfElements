@@ -5,18 +5,10 @@ Passive
 At the Start of the game draw 4 cards, then discard 4 cards
 Life: 10
 
-Modifiers
-Add 1 +2
-
 Variant:2
 Passive
 At the Start of the game draw 4 cards, then discard 4 cards
 Life: 7
-
-Modifiers
-Remove 1 +0
-Add 2 +1 H:2 R:0 Draw
-Add 1 +2
 
 Type
 Element: Metal

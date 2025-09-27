@@ -4,18 +4,11 @@ Passive
 Healing is modified by the modifier deck
 Life: 8
 
-Modifiers
-Add 2 +0 Draw Regenerate:2
-
 Variant:2
 
 Passive
 Healing is modified by the modifier deck
 Life: 8
-
-Modifiers
-Remove 2 +2
-Add 2 +4
 
 Type
 Element: Water

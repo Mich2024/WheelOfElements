@@ -8,20 +8,11 @@ Passive
 Treat your *0 as a *2
 Life: 14
 
-Modifiers
-Remove 3 +1
-Add 1 +5
-
 Variant:2
 Passive
 #At the start of your turn, gain Advantage
 Treat your *0 as a *2
 Life: 7
-
-Modifiers
-Remove 1 -1
-Remove 1 +1
-Add 5 +1 H:2 R:0 Draw
 
 Type
 Element: Metal

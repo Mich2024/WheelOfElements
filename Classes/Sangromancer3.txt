@@ -1,21 +1,14 @@
 Variant:1
 
 Passive
-
+At the beginning of our turn, H:2
 Life: 8
-
-Modifiers
-Add 2 +0 Draw Regenerate:2
 
 Variant:2
 
 Passive
-
+At the beginning of our turn, H:2
 Life: 8
-
-Modifiers
-Remove 2 +4
-Add 2 +6
 
 Type
 Element: Water
