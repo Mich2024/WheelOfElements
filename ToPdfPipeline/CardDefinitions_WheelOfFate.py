@@ -426,10 +426,6 @@ class modifierCard:
 class tableauRace:
     def __init__(self):
 
-        self.name = "No Init"
-        self.life = "No Init"
-        self.passive = ""
-        self.lore = ""
 
         self.L1R1 = ""
         self.L1R2 = ""
@@ -443,48 +439,41 @@ class tableauRace:
 
         self.mods = [self.L1R1,self.L1R2,self.L1R3,self.L1R4,self.L2R1,self.L2R2,self.L3R1]
 
-    def serializeToNandeck(self, order: int):
-        template_line_mod = open('Template_Line_Mod.txt', 'r')
-        template_line_mod = template_line.read()
-        template_line_life = open('Template_Line_Life.txt', 'r')
-        template_line_life = template_line.read()
-        template_line_passive = open('Template_Line_Passive.txt', 'r')
-        template_line_passive = template_line.read()
-        template_line_lore = open('Template_Line_Lore.txt', 'r')
-        template_line_lore = template_line.read()
-        template_race = open('Template_Race_Single.txt', 'r')
-        template_race = template_line.read()
-        template_boilerplate = open('Template_Boilerplate.txt', 'r')
+    def serializeToNandeck(self, order):
+        
 
-        self.L1R1 = template_line.replace(r"${Mod}", self.L1R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Add"))
+        template_line_mod = open('Templates/Tableau_Line_Mod.txt', 'r')
+        template_line_mod = template_line_mod.read()
+
+        self.L1R1 = template_line_mod.replace(r"${Mod}", '"' + self.L1R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
         self.L1R1 = self.L1R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(0))
-        self.L1R2 = template_line.replace(r"${Mod}", self.L1R2.replace("Add", r"\13\Add").replace("Remove", r"\13\Add"))
+        self.L1R2 = template_line_mod.replace(r"${Mod}", '"' + self.L1R2.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
         self.L1R2 = self.L1R2.replace(r"${Order}",str(order)).replace(r"${Hor}",str(1)).replace(r"${Vert}",str(0))
-        self.L1R3 = template_line.replace(r"${Mod}", self.L1R3.replace("Add", r"\13\Add").replace("Remove", r"\13\Add"))
+        self.L1R3 = template_line_mod.replace(r"${Mod}", '"' + self.L1R3.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
         self.L1R3 = self.L1R3.replace(r"${Order}",str(order)).replace(r"${Hor}",str(2)).replace(r"${Vert}",str(0))
-        self.L1R4 = template_line.replace(r"${Mod}", self.L1R4.replace("Add", r"\13\Add").replace("Remove", r"\13\Add"))
+        self.L1R4 = template_line_mod.replace(r"${Mod}", '"' + self.L1R4.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
         self.L1R4 = self.L1R4.replace(r"${Order}",str(order)).replace(r"${Hor}",str(3)).replace(r"${Vert}",str(0))
 
-        self.L2R1 = template_line.replace(r"${Mod}", self.L2R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Add"))
+        self.L2R1 = template_line_mod.replace(r"${Mod}", '"' + self.L2R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
         self.L2R1 = self.L2R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(1))
-        self.L2R2 = template_line.replace(r"${Mod}", self.L2R2.replace("Add", r"\13\Add").replace("Remove", r"\13\Add"))
+        self.L2R2 = template_line_mod.replace(r"${Mod}", '"' + self.L2R2.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
         self.L2R2 = self.L2R2.replace(r"${Order}",str(order)).replace(r"${Hor}",str(1)).replace(r"${Vert}",str(1))
 
-        self.L3R1 = template_line.replace(r"${Mod}", self.L3R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Add"))
+        self.L3R1 = template_line_mod.replace(r"${Mod}", '"' + self.L3R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
         self.L3R1 = self.L3R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(2))
-
+        
         lines_mods = ""
-        for mod in self.mods:
-            lines_mods += mod + r"\n"
 
-        template_line_life = template_line_life.replace(r"${Order}",str(order)).replace(r"${Life}",self.life)
-        template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",self.passive = "")
-        template_line_lore = template_line_lore.replace(r"${Order}",str(order)).replace(r"${Lore}",self.lore)
+        lines_mods += self.L1R1
+        lines_mods += self.L1R2
+        lines_mods += self.L1R3
+        lines_mods += self.L1R4
+        lines_mods += self.L2R1
+        lines_mods += self.L2R2
+        lines_mods += self.L3R1
+            
+        return lines_mods
 
-        template_race = template_race.replace(r"${Mod}", lines_mods).replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive).replace(r"${Lore}",template_line_lore)
-
-
-        return template_race
 
 
 
@@ -498,6 +487,8 @@ class statCard:
         self.passive = ""
         self.elements = []
         self.explanations = []
+        self.tableau = None
+        self.lore = "Ipsum Lorum"
 
     def setLife(self, l):
         self.life = l
@@ -521,6 +512,36 @@ class statCard:
             res += line
         res += r"} "
         res += "\n"
+        return res
+
+    def serializeToNandeck(self, order):
+        
+        if isinstance(self.tableau, tableauRace):
+
+            
+            template_line_life = open('Templates/Tableau_Line_Life.txt', 'r')
+            template_line_life = template_line_life.read()
+            template_line_passive = open('Templates/Tableau_Line_Passive.txt', 'r')
+            template_line_passive = template_line_passive.read()
+            template_line_lore = open('Templates/Tableau_Line_Lore.txt', 'r')
+            template_line_lore = template_line_lore.read()
+            template_race = open('Templates/Tableau_Race_Single.txt', 'r')
+            template_race = template_race.read()
+
+            
+            lines_mods = self.tableau.serializeToNandeck(order)
+            
+
+            template_line_life = template_line_life.replace(r"${Order}",str(order)).replace(r"${Life}",self.life)
+            template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",self.passive)
+            template_line_lore = template_line_lore.replace(r"${Order}",str(order)).replace(r"${Lore}",self.lore)
+            template_race = template_race.replace(r"${Order}",str(order)).replace(r"${Race}", self.name )
+            res = template_race.replace(r"${Mods}", lines_mods).replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive).replace(r"${Explanation}",template_line_lore)
+
+        else:
+            print("classes not impemented yet")
+
+
         return res
     
 class monsterAICard:

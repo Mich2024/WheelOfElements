@@ -2,6 +2,8 @@
 toPrint.tex
 toPrintMonAI.tex
 toPrintItems.tex
+ToPdfPipeline/out/*
+
 #Ignore all outputs
 *.pdf
 *.pyc

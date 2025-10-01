@@ -130,10 +130,12 @@ def sliceStatsToCards(lines):
     else: #Race
         modBegin = lines.index("Modifier Tableau")
         semantics = {var1Begin:"Variant:1", modBegin:"Modifier Tableau",typeBegin:"Type"}
-        order = [var1Begin,typeBegin]
+        order = [var1Begin,modBegin,typeBegin]
 
     
     order.sort()
+    #print(order)
+    #print(semantics)
 
     res = {}
 
@@ -146,6 +148,9 @@ def sliceStatsToCards(lines):
             end = order[startIndex+1]
 
         res[value] = lines[start+1:end:]
+
+
+    #print(res)
 
     return res
 
@@ -188,7 +193,7 @@ def parseActionCardFromLine(line, nameClass, rank, tier):
     return actCard        
 
 def parseTableauFromLines(linesTableau):
-    res = tableauCard()
+    res = tableauRace()
     res.L1R1=linesTableau[1]
     res.L1R2=linesTableau[2]
     res.L1R3=linesTableau[3]
@@ -198,6 +203,9 @@ def parseTableauFromLines(linesTableau):
     res.L2R2=linesTableau[7]
 
     res.L3R1=linesTableau[9]
+
+    return res
+
 
 # input: all lines before cards 
 # output: cards
@@ -212,12 +220,14 @@ def parseStatLinesToCards(lines, name, rank):
         Var2 = parts["Variant:2"]
         variants = [Var1, Var2]
     else: #Race
+        #print(linesTableau)
         linesTableau = parts["Modifier Tableau"]
         variants = [Var1]
 
     TypeExplanation = parts["Type"]
     elements = []
     explanations = []
+    #print(linesTableau)
 
     for line in TypeExplanation:
         #print(line)
@@ -247,6 +257,7 @@ def parseStatLinesToCards(lines, name, rank):
                 card.passive += line + r" \\ "
         if (linesTableau != []):
             card.tableau = parseTableauFromLines(linesTableau)
+            #print(card.tableau.L1R1)
 
         res.append(copy.deepcopy(card))
     return res
@@ -518,7 +529,7 @@ def parseRacesAndClasses(files_Input):
 
     for filelong in files_Input:
         print("handling file: " + filelong )
-        file = filelong.split("\\")[2] # Drops the prefix from the card
+        file = filelong.split("/")[2] # Drops the prefix from the card
         if("Classes" in filelong):
             rank = int(file.split(".")[0][-1]) # classes have tier 1 to 3
             name = file.split(".")[0]
@@ -563,9 +574,16 @@ def parseRacesAndClasses(files_Input):
     print("completed parsing")
 
     texStatCards = ""
-    for statusCard in statusCards:
+    nandeckRaces = ""
+
+    for i, statusCard in enumerate(statusCards):
         #print(statusCard.name)
-        texStatCards += statusCard.serializeToLatex()
+        if statusCard.tableau == None:
+
+            texStatCards += statusCard.serializeToLatex()
+        else:
+            #print(statusCard.tableau.L1R1)
+            nandeckRaces += statusCard.serializeToNandeck(i+1)
 
 
     texModCards = ""
@@ -579,6 +597,16 @@ def parseRacesAndClasses(files_Input):
 
     fileToPrint = open('toPrint.tex', 'w+')
     fileToPrint.write(texStatCards + r"\newpage" + texModCards + texActCards)
+    fileToPrint.close()
+    
+    template_boilerplate = open('Templates/Tableau_Boilerplate.txt', 'r')
+    template_boilerplate = template_boilerplate.read()
+
+    template_boilerplate = template_boilerplate.replace(r"${Races}", nandeckRaces)
+
+    fileToPrint = open('out/raceTableaus.txt', 'w+')
+    fileToPrint.write(template_boilerplate)
+    fileToPrint.close()
 
     print("wrote file")
 
@@ -591,9 +619,9 @@ if __name__ == "__main__":
     ### INPUT OF PROPER RACES AND CLASSES
     files_Input = []    
 
-    files_Input.append(r"..\Races\Centaur.txt")
+    files_Input.append(r"../Races/Centaur.txt")
     #files_Input.append(r"..\Races\Dragonblood.txt")
-    files_Input.append(r"..\Races\Dwarf.txt")
+    files_Input.append(r"../Races/Dwarf.txt")
     #files_Input.append(r"..\Races\Elf.txt")
 
     '''files_Input.append(r"..\Races\Fae.txt")
@@ -602,7 +630,7 @@ if __name__ == "__main__":
     files_Input.append(r"..\Races\Merman.txt")
     files_Input.append(r"..\Races\Silverkin.txt")
     files_Input.append(r"..\Races\Solarian.txt")
-    files_Input.append(r"..\Raßoß090lplpüi900ß0´ces\Thyger.txt")
+    files_Input.append(r"..\Races\Thyger.txt")
     files_Input.append(r"..\Races\Wyrmkin.txt")
     
     files_Input.append(r"..\Classes\Alchemist1.txt")
@@ -617,9 +645,9 @@ if __name__ == "__main__":
     files_Input.append(r"..\Classes\Bloodknight2.txt")
     files_Input.append(r"..\Classes\Bloodknight3.txt")'''
 
-    files_Input.append(r"..\Classes\DrunkenMaster1.txt")
+    '''files_Input.append(r"..\Classes\DrunkenMaster1.txt")
     files_Input.append(r"..\Classes\DrunkenMaster2.txt")
-    files_Input.append(r"..\Classes\DrunkenMaster3.txt")
+    files_Input.append(r"..\Classes\DrunkenMaster3.txt")'''
 
     '''files_Input.append(r"..\Classes\Druid1.txt")
     files_Input.append(r"..\Classes\Druid2.txt")
@@ -634,13 +662,13 @@ if __name__ == "__main__":
     files_Input.append(r"..\Classes\Koloss3.txt")'''
 
 
-    files_Input.append(r"..\Classes\Monk1.txt")
+    '''files_Input.append(r"..\Classes\Monk1.txt")
     files_Input.append(r"..\Classes\Monk2.txt")
     files_Input.append(r"..\Classes\Monk3.txt")
 
     files_Input.append(r"..\Classes\Pyromancer1.txt")
     files_Input.append(r"..\Classes\Pyromancer2.txt")
-    files_Input.append(r"..\Classes\Pyromancer3.txt")
+    files_Input.append(r"..\Classes\Pyromancer3.txt")'''
 
     '''files_Input.append(r"..\Classes\Ranger1.txt")
     files_Input.append(r"..\Classes\Ranger2.txt")
@@ -657,7 +685,8 @@ if __name__ == "__main__":
     parseMonsterAI()
     #parseItems()
 
-    #### Deprecated Classes:
+
+#### Deprecated Classes:
 r"""
 #files_Input.append(r"..\Races\Faceless.txt")
 #files_Input.append(r"..\Races\Kobolds.txt") # Deprecated
