@@ -539,8 +539,11 @@ class statCard:
             res = template_race.replace(r"${Mods}", lines_mods).replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive).replace(r"${Explanation}",template_line_lore)
 
         else:
-            print("classes not impemented yet")
+            title = self.name + " " + str(self.rank)
+            templateShingle = open('Templates/Shingle_Race_.txt', 'r')
+            templateShingle = templateShingle.read()
 
+            res = templateShingle.replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life)).replace(r"${Passive}", self.passive)
 
         return res
     

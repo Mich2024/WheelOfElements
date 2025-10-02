@@ -575,15 +575,19 @@ def parseRacesAndClasses(files_Input):
 
     texStatCards = ""
     nandeckRaces = ""
+    orderRaces = 1
+    orderClasses = 1
 
     for i, statusCard in enumerate(statusCards):
         #print(statusCard.name)
         if statusCard.tableau == None:
 
-            texStatCards += statusCard.serializeToLatex()
+            texStatCards += statusCard.serializeToNandeck(orderClasses)
+            orderClasses += 1
         else:
             #print(statusCard.tableau.L1R1)
-            nandeckRaces += statusCard.serializeToNandeck(i+1)
+            nandeckRaces += statusCard.serializeToNandeck(orderRaces)
+            orderRaces += 1
 
 
     texModCards = ""
