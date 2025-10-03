@@ -254,7 +254,7 @@ def parseStatLinesToCards(lines, name, rank):
                 continue
 
             if mode == "Passive":
-                card.passive += line + r" \\ "
+                card.passive += line + " "
         if (linesTableau != []):
             card.tableau = parseTableauFromLines(linesTableau)
             #print(card.tableau.L1R1)

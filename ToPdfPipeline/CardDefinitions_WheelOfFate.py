@@ -11,6 +11,31 @@ def texifyMultSign(line):
     line = line.replace('*',r" $\times $ ")
     return line
 
+def addNanDeckLinebreaks(text: str):
+    res = ""
+    last_copy = 0
+    last_space = 0
+    for i, letter in enumerate(text):
+        if letter == " ":
+            last_space = i
+        
+        '''if letter in [".", "!", "?"] :
+            last_space = i+1
+            res += text[last_copy:last_space] + "\\13\\"
+            last_copy = last_space + 1'''
+
+        if i % 21 == 0:
+            if(i == 0):
+                continue
+            res += text[last_copy:last_space] + "\\13\\"
+            last_copy = last_space + 1 # the +1 gets rid of leading spaces
+            break
+
+    res += text[last_copy:]
+
+    return res
+
+
 symbolDict = {
     
     #"L":r"\symLoot", Mechanic removed from game
@@ -504,7 +529,7 @@ class statCard:
         res += "{" 
         res += symbolDict["Life"] + r"\hspace{0.0cm} Life: " + str(self.life) + r"\\ "
         res += "}"
-        res += "{" + self.passive + "}"
+        res += "{" + self.passive + " \\ }"
         res += "{" + self.modifierUpgrades + r" \\ "
         #for line in self.explanations:
         #    res += line + r" \\ "  + dictExplanation[line.split(":")[1]] + r" \\" 
@@ -543,7 +568,11 @@ class statCard:
             templateShingle = open('Templates/Shingle_Class_Card.txt', 'r')
             templateShingle = templateShingle.read()
 
-            res = templateShingle.replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life)).replace(r"${Passive}", self.passive)
+            #print(self.passive)
+
+            passive_new = self.passive
+
+            res = templateShingle.replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life)).replace(r"${Passive}", passive_new)
 
         return res
     
