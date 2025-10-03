@@ -27,3 +27,5 @@ CARDSIZE=[quart_hor],[third_vert]
 BASERANGE=,ON
 
 RECTANGLE = 1-60, 0, 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
+
+${Classes}

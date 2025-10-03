@@ -1,5 +1,5 @@
-FONT = Arial, 28, B, #000000
-TEXT = ${Order}, "${Title}",   0, [linestrength], [quart_hor], [space_text_28], LEFT, TOP
-FONT = Arial, 18, B, #000000
-TEXT = ${Order}, "life: ${Life}",   0, [linestrength] + [space_text_28], [quart_hor], [space_text_28], LEFT, TOP
-TEXT = ${Order}, "${Passive}",   0, [linestrength] + [space_text_28] + [space_text_18], [quart_hor], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] , LEFT, TOP
+FONT = "Noto Sans Mono", 24, B, #000000
+TEXT = ${Order}, "${Title}",   [linestrength], [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 16, B, #000000
+TEXT = ${Order}, "life: ${Life}",   [linestrength], [linestrength] + [space_text_28], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+TEXT = ${Order}, "${Passive}",   [linestrength], [linestrength] + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] , LEFT, TOP

@@ -573,7 +573,7 @@ def parseRacesAndClasses(files_Input):
 
     print("completed parsing")
 
-    texStatCards = ""
+    nandeckStatCards = ""
     nandeckRaces = ""
     orderRaces = 1
     orderClasses = 1
@@ -582,7 +582,7 @@ def parseRacesAndClasses(files_Input):
         #print(statusCard.name)
         if statusCard.tableau == None:
 
-            texStatCards += statusCard.serializeToNandeck(orderClasses)
+            nandeckStatCards += statusCard.serializeToNandeck(orderClasses)
             orderClasses += 1
         else:
             #print(statusCard.tableau.L1R1)
@@ -598,18 +598,26 @@ def parseRacesAndClasses(files_Input):
     for actCard in actionCards:
         texActCards += actCard.serializeToLatex() 
 
+    template_boilerplate_classes = open('Templates/Shingle_Class_Boilerplate.txt', 'r')
+    template_boilerplate_classes = template_boilerplate_classes.read()
+    template_boilerplate_classes = template_boilerplate_classes.replace(r"${Classes}", nandeckStatCards)
 
-    fileToPrint = open('toPrint.tex', 'w+')
-    fileToPrint.write(texStatCards + r"\newpage" + texModCards + texActCards)
+
+    fileToPrint = open('out/classShingles.txt', 'w+')
+    fileToPrint.write(template_boilerplate_classes)
+    fileToPrint.close()
+
+    fileToPrint = open('out/actionCards.txt', 'w+')
+    fileToPrint.write(texModCards + texActCards)
     fileToPrint.close()
     
-    template_boilerplate = open('Templates/Tableau_Boilerplate.txt', 'r')
-    template_boilerplate = template_boilerplate.read()
+    template_boilerplate_races = open('Templates/Tableau_Boilerplate.txt', 'r')
+    template_boilerplate_races = template_boilerplate_races.read()
 
-    template_boilerplate = template_boilerplate.replace(r"${Races}", nandeckRaces)
+    template_boilerplate_races = template_boilerplate_races.replace(r"${Races}", nandeckRaces)
 
     fileToPrint = open('out/raceTableaus.txt', 'w+')
-    fileToPrint.write(template_boilerplate)
+    fileToPrint.write(template_boilerplate_races)
     fileToPrint.close()
 
     print("wrote file")
@@ -624,59 +632,59 @@ if __name__ == "__main__":
     files_Input = []    
 
     files_Input.append(r"../Races/Centaur.txt")
-    #files_Input.append(r"..\Races\Dragonblood.txt")
+    #files_Input.append(r"../Races/Dragonblood.txt")
     files_Input.append(r"../Races/Dwarf.txt")
-    #files_Input.append(r"..\Races\Elf.txt")
+    #files_Input.append(r"../Races/Elf.txt")
 
-    '''files_Input.append(r"..\Races\Fae.txt")
-    files_Input.append(r"..\Races\HalfElf.txt")
-    files_Input.append(r"..\Races\Human.txt")
-    files_Input.append(r"..\Races\Merman.txt")
-    files_Input.append(r"..\Races\Silverkin.txt")
-    files_Input.append(r"..\Races\Solarian.txt")
-    files_Input.append(r"..\Races\Thyger.txt")
-    files_Input.append(r"..\Races\Wyrmkin.txt")
+    '''files_Input.append(r"../Races/Fae.txt")
+    files_Input.append(r"../Races/HalfElf.txt")
+    files_Input.append(r"../Races/Human.txt")
+    files_Input.append(r"../Races/Merman.txt")
+    files_Input.append(r"../Races/Silverkin.txt")
+    files_Input.append(r"../Races/Solarian.txt")
+    files_Input.append(r"../Races/Thyger.txt")
+    files_Input.append(r"../Races/Wyrmkin.txt")
     
-    files_Input.append(r"..\Classes\Alchemist1.txt")
-    files_Input.append(r"..\Classes\Alchemist2.txt")
-    files_Input.append(r"..\Classes\Alchemist3.txt")
+    files_Input.append(r"../Classes/Alchemist1.txt")
+    files_Input.append(r"../Classes/Alchemist2.txt")
+    files_Input.append(r"../Classes/Alchemist3.txt")
 
-    files_Input.append(r"..\Classes\Assassin1.txt")
-    files_Input.append(r"..\Classes\Assassin2.txt")
-    files_Input.append(r"..\Classes\Assassin3.txt")
+    files_Input.append(r"../Classes/Assassin1.txt")
+    files_Input.append(r"../Classes/Assassin2.txt")
+    files_Input.append(r"../Classes/Assassin3.txt")
 
-    files_Input.append(r"..\Classes\Bloodknight1.txt")
-    files_Input.append(r"..\Classes\Bloodknight2.txt")
-    files_Input.append(r"..\Classes\Bloodknight3.txt")'''
+    files_Input.append(r"../Classes/Bloodknight1.txt")
+    files_Input.append(r"../Classes/Bloodknight2.txt")
+    files_Input.append(r"../Classes/Bloodknight3.txt")'''
 
-    '''files_Input.append(r"..\Classes\DrunkenMaster1.txt")
-    files_Input.append(r"..\Classes\DrunkenMaster2.txt")
-    files_Input.append(r"..\Classes\DrunkenMaster3.txt")'''
+    files_Input.append(r"../Classes/DrunkenMaster1.txt")
+    files_Input.append(r"../Classes/DrunkenMaster2.txt")
+    files_Input.append(r"../Classes/DrunkenMaster3.txt")
 
-    '''files_Input.append(r"..\Classes\Druid1.txt")
-    files_Input.append(r"..\Classes\Druid2.txt")
-    files_Input.append(r"..\Classes\Druid3.txt")
+    '''files_Input.append(r"../Classes/Druid1.txt")
+    files_Input.append(r"../Classes/Druid2.txt")
+    files_Input.append(r"../Classes/Druid3.txt")
 
-    files_Input.append(r"..\Classes\Guerilla1.txt")
-    files_Input.append(r"..\Classes\Guerilla2.txt")
-    files_Input.append(r"..\Classes\Guerilla3.txt")
+    files_Input.append(r"../Classes/Guerilla1.txt")
+    files_Input.append(r"../Classes/Guerilla2.txt")
+    files_Input.append(r"../Classes/Guerilla3.txt")
 
-    files_Input.append(r"..\Classes\Koloss1.txt")
-    files_Input.append(r"..\Classes\Koloss2.txt")
-    files_Input.append(r"..\Classes\Koloss3.txt")'''
+    files_Input.append(r"../Classes/Koloss1.txt")
+    files_Input.append(r"../Classes/Koloss2.txt")
+    files_Input.append(r"../Classes/Koloss3.txt")'''
 
 
-    '''files_Input.append(r"..\Classes\Monk1.txt")
-    files_Input.append(r"..\Classes\Monk2.txt")
-    files_Input.append(r"..\Classes\Monk3.txt")
+    '''files_Input.append(r"../Classes/Monk1.txt")
+    files_Input.append(r"../Classes/Monk2.txt")
+    files_Input.append(r"../Classes/Monk3.txt")
 
-    files_Input.append(r"..\Classes\Pyromancer1.txt")
-    files_Input.append(r"..\Classes\Pyromancer2.txt")
-    files_Input.append(r"..\Classes\Pyromancer3.txt")'''
+    files_Input.append(r"../Classes/Pyromancer1.txt")
+    files_Input.append(r"../Classes/Pyromancer2.txt")
+    files_Input.append(r"../Classes/Pyromancer3.txt")'''
 
-    '''files_Input.append(r"..\Classes\Ranger1.txt")
-    files_Input.append(r"..\Classes\Ranger2.txt")
-    files_Input.append(r"..\Classes\Ranger3.txt")'''
+    '''files_Input.append(r"../Classes/Ranger1.txt")
+    files_Input.append(r"../Classes/Ranger2.txt")
+    files_Input.append(r"../Classes/Ranger3.txt")'''
 
     
 
@@ -692,40 +700,40 @@ if __name__ == "__main__":
 
 #### Deprecated Classes:
 r"""
-#files_Input.append(r"..\Races\Faceless.txt")
-#files_Input.append(r"..\Races\Kobolds.txt") # Deprecated
-#files_Input.append(r"..\Races\Solarian.txt") # Deprecated
+#files_Input.append(r"../Races/Faceless.txt")
+#files_Input.append(r"../Races/Kobolds.txt") # Deprecated
+#files_Input.append(r"../Races/Solarian.txt") # Deprecated
 
-files_Input.append(r"..\Classes\Assassin1.txt")
-files_Input.append(r"..\Classes\Assassin2.txt")
-files_Input.append(r"..\Classes\Assassin3.txt")
+files_Input.append(r"../Classes/Assassin1.txt")
+files_Input.append(r"../Classes/Assassin2.txt")
+files_Input.append(r"../Classes/Assassin3.txt")
 
-files_Input.append(r"..\Classes\Cultist1.txt")
-files_Input.append(r"..\Classes\Cultist2.txt")
-files_Input.append(r"..\Classes\Cultist3.txt")
+files_Input.append(r"../Classes/Cultist1.txt")
+files_Input.append(r"../Classes/Cultist2.txt")
+files_Input.append(r"../Classes/Cultist3.txt")
 
-files_Input.append(r"..\Classes\Drunkenmaster1.txt")
-files_Input.append(r"..\Classes\Drunkenmaster2.txt")
-#files_Input.append(r"..\Classes\Drunkenmaster3.txt")
+files_Input.append(r"../Classes/Drunkenmaster1.txt")
+files_Input.append(r"../Classes/Drunkenmaster2.txt")
+#files_Input.append(r"../Classes/Drunkenmaster3.txt")
 
-files_Input.append(r"..\Classes\Necromancer1.txt")
-files_Input.append(r"..\Classes\Necromancer2.txt")
-#files_Input.append(r"..\Classes\Necromancer3.txt")
+files_Input.append(r"../Classes/Necromancer1.txt")
+files_Input.append(r"../Classes/Necromancer2.txt")
+#files_Input.append(r"../Classes/Necromancer3.txt")
 
-files_Input.append(r"..\Classes\PlagueDoctor1.txt")
-files_Input.append(r"..\Classes\PlagueDoctor2.txt")
-files_Input.append(r"..\Classes\PlagueDoctor3.txt")
+files_Input.append(r"../Classes/PlagueDoctor1.txt")
+files_Input.append(r"../Classes/PlagueDoctor2.txt")
+files_Input.append(r"../Classes/PlagueDoctor3.txt")
 
-files_Input.append(r"..\Classes\Rogue1.txt")
-files_Input.append(r"..\Classes\Rogue2.txt")
-files_Input.append(r"..\Classes\Rogue3.txt")
+files_Input.append(r"../Classes/Rogue1.txt")
+files_Input.append(r"../Classes/Rogue2.txt")
+files_Input.append(r"../Classes/Rogue3.txt")
 
 
-files_Input.append(r"..\Classes\Spearman1.txt")
-files_Input.append(r"..\Classes\Spearman2.txt")
-#files_Input.append(r"..\Classes\Spearman3.txt")
+files_Input.append(r"../Classes/Spearman1.txt")
+files_Input.append(r"../Classes/Spearman2.txt")
+#files_Input.append(r"../Classes/Spearman3.txt")
 
-files_Input.append(r"..\Classes\Summoner1.txt")
-files_Input.append(r"..\Classes\Summoner2.txt")
-#files_Input.append(r"..\Classes\Summoner3.txt")
+files_Input.append(r"../Classes/Summoner1.txt")
+files_Input.append(r"../Classes/Summoner2.txt")
+#files_Input.append(r"../Classes/Summoner3.txt")
 """

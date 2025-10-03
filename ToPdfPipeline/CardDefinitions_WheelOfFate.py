@@ -540,7 +540,7 @@ class statCard:
 
         else:
             title = self.name + " " + str(self.rank)
-            templateShingle = open('Templates/Shingle_Race_.txt', 'r')
+            templateShingle = open('Templates/Shingle_Class_Card.txt', 'r')
             templateShingle = templateShingle.read()
 
             res = templateShingle.replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life)).replace(r"${Passive}", self.passive)
