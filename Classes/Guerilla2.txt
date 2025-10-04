@@ -5,8 +5,6 @@ You may play an additional card each turn
 
 Life: 6
 
-Modifiers
--
 
 Variant:2
 
@@ -15,9 +13,6 @@ You may play an additional card each turn
 
 Life: 0
 
-Modifiers
-Add 2 +3
-Remove 2 +1
 
 Type
 Element: Fire

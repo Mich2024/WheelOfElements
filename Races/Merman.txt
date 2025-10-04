@@ -3,8 +3,7 @@ Variant:1
 Passive
 Play with the top of your modifier deck revealed
 
-Life:
-8
+Life: 8
 
 Modifier Tableau
 #1; 1; 1; 1

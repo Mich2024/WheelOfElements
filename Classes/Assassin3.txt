@@ -5,16 +5,12 @@ Passive
 You have Advantage against disarmed enemies
 Life: 7
 
-Modifiers
-Add 2 +1
 
-Variant:1
+Variant:2
 Passive
 You have Advantage against disarmed enemies
 Life: 7
 
-Modifiers
-Add 2 +1
 
 Type
 Element: Metal

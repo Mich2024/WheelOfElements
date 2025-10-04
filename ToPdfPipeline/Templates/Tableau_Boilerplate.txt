@@ -1,4 +1,5 @@
-CARDS=10
+[CardCount] = ${CardCount}
+CARDS=[CardCount]
 BORDER=RECTANGLE
 UNIT=CM
 PAGE=21,29.7,LANDSCAPE,HV
@@ -23,27 +24,24 @@ DPI=300
 CARDSIZE=29.7,21
 BASERANGE=,ON
 
+${Races}
 
 #Global Simmilar stuff
 FONT = Arial, 28, B, #000000
-TEXT = 1-10, "Passive",     [space_left] + [quart_hor] * 3, [space_top]+[third_vert]*2 - [space_text_28], [quart_hor], [space_text_28], LEFT, TOP
-TEXT = 1-10, "Life Pool",   [space_left] + [quart_hor] * 1, [space_top]+[third_vert]*2, [quart_hor], [space_text_28], LEFT, TOP
-TEXT = 1-10, "Lore",        [space_left] + [quart_hor] * 2, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], LEFT, TOP
+TEXT = 1-[CardCount], "Passive",     [space_left] + [quart_hor] * 3, [space_top]+[third_vert]*2 - [space_text_28], [quart_hor], [space_text_28], LEFT, TOP
+TEXT = 1-[CardCount], "Life Pool",   [space_left] + [quart_hor] * 1, [space_top]+[third_vert]*2, [quart_hor], [space_text_28], LEFT, TOP
+TEXT = 1-[CardCount], "Lore",        [space_left] + [quart_hor] * 2, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], LEFT, TOP
 
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 1, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 2, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 3, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
 
-${Races}
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0, [space_top] + [third_vert], [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 1, [space_top] + [third_vert], [quart_hor], [third_vert], #000000, empty, [linestrength]
 
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], #000000, empty, [linestrength]
 
-
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 0, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 1, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 2, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 3, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
-
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 0, [space_top] + [third_vert], [quart_hor], [third_vert], #000000, empty, [linestrength]
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 1, [space_top] + [third_vert], [quart_hor], [third_vert], #000000, empty, [linestrength]
-
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], #000000, empty, [linestrength]
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], #000000, empty, [linestrength]
 
 
