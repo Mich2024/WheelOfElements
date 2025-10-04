@@ -5,16 +5,12 @@ Passive
 Double damage against enemies with Disarm
 Life: 7
 
-Modifiers
-Add 2 +1
 
 Variant:2
 Passive
 Double damage against enemies with Disarm
 Life: 7
 
-Modifiers
-Remove 1 +0
 
 Type
 Element: Metal

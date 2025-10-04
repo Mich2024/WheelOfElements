@@ -5,8 +5,6 @@ Add A:+1 when attacking vulnerable enemies
 
 Life: 6
 
-Modifiers
-Add 2 +0 Draw Wood:2
 
 Variant:2
 
@@ -15,8 +13,6 @@ Add A:+1 when attacking vulnerable enemies
 
 Life: 6
 
-Modifiers
-Add 2 +2 Draw
 
 Type
 Element: Fire

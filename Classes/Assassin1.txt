@@ -5,17 +5,11 @@ Passive
 Handsize +1 and decksize -1
 Life: 8
 
-Modifiers
-Remove 1 +2
-Add 1 +4
 
 Variant:2
 Passive
 -4 to maximum decksize
 Life: 4
-
-Modifiers
-Remove 1 +0
 
 Type
 Element: Metal

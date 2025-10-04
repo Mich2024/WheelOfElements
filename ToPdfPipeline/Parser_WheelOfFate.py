@@ -130,10 +130,12 @@ def sliceStatsToCards(lines):
     else: #Race
         modBegin = lines.index("Modifier Tableau")
         semantics = {var1Begin:"Variant:1", modBegin:"Modifier Tableau",typeBegin:"Type"}
-        order = [var1Begin,typeBegin]
+        order = [var1Begin,modBegin,typeBegin]
 
     
     order.sort()
+    #print(order)
+    #print(semantics)
 
     res = {}
 
@@ -146,6 +148,9 @@ def sliceStatsToCards(lines):
             end = order[startIndex+1]
 
         res[value] = lines[start+1:end:]
+
+
+    #print(res)
 
     return res
 
@@ -188,7 +193,7 @@ def parseActionCardFromLine(line, nameClass, rank, tier):
     return actCard        
 
 def parseTableauFromLines(linesTableau):
-    res = tableauCard()
+    res = tableauRace()
     res.L1R1=linesTableau[1]
     res.L1R2=linesTableau[2]
     res.L1R3=linesTableau[3]
@@ -198,6 +203,9 @@ def parseTableauFromLines(linesTableau):
     res.L2R2=linesTableau[7]
 
     res.L3R1=linesTableau[9]
+
+    return res
+
 
 # input: all lines before cards 
 # output: cards
@@ -210,14 +218,16 @@ def parseStatLinesToCards(lines, name, rank):
     linesTableau = []
     if("Variant:2" in parts):
         Var2 = parts["Variant:2"]
-        variants = [Var1, Var2]
+        variants = [Var1] # we are dropping variant 2
     else: #Race
+        #print(linesTableau)
         linesTableau = parts["Modifier Tableau"]
         variants = [Var1]
 
     TypeExplanation = parts["Type"]
     elements = []
     explanations = []
+    #print(linesTableau)
 
     for line in TypeExplanation:
         #print(line)
@@ -244,12 +254,59 @@ def parseStatLinesToCards(lines, name, rank):
                 continue
 
             if mode == "Passive":
-                card.passive += line + r" \\ "
+                card.passive += line + " "
         if (linesTableau != []):
             card.tableau = parseTableauFromLines(linesTableau)
+            #print(card.tableau.L1R1)
 
         res.append(copy.deepcopy(card))
     return res
+
+
+def parseRaceLinesToCards(lines, name, rank):
+
+    res = []
+
+    parts = sliceStatsToCards(lines)
+    Var1 = parts["Variant:1"]
+    linesTableau = []
+    linesTableau = parts["Modifier Tableau"]
+
+    TypeExplanation = parts["Type"]
+    elements = []
+    explanations = []
+    #print(linesTableau)
+
+    for line in TypeExplanation:
+        #print(line)
+        if startsWith(line, "Element"):
+            elements.append(line)
+        if startsWith(line, "Explanation"):
+            explanations.append(line)
+
+    
+    card = statCard()
+    card.explanations = explanations
+    card.name = name
+    card.rank = rank
+    card.elements = elements
+
+    mode = ""
+    for line in Var1:
+        if line == "Passive":
+            mode = "Passive"
+            continue
+        if startsWith(line, "Life:"):
+            card.assignmentDict[line.split(":")[0]](card,line.split(":")[1])
+            continue
+
+        if mode == "Passive":
+            card.passive += line + " "
+    card.tableau = parseTableauFromLines(linesTableau)
+
+    res.append(copy.deepcopy(card))
+    return res
+
 
 
 
@@ -518,7 +575,7 @@ def parseRacesAndClasses(files_Input):
 
     for filelong in files_Input:
         print("handling file: " + filelong )
-        file = filelong.split("\\")[2] # Drops the prefix from the card
+        file = filelong.split("/")[2] # Drops the prefix from the card
         if("Classes" in filelong):
             rank = int(file.split(".")[0][-1]) # classes have tier 1 to 3
             name = file.split(".")[0]
@@ -541,7 +598,7 @@ def parseRacesAndClasses(files_Input):
         lines = addSpacesAfterText(lines)
         print("completed sanitization")
 
-        linesStats, linesActions = linesByCardType = sliceClassToCardTypes(lines)
+        linesStats, linesActions = sliceClassToCardTypes(lines)
 
         
         
@@ -562,10 +619,21 @@ def parseRacesAndClasses(files_Input):
 
     print("completed parsing")
 
-    texStatCards = ""
-    for statusCard in statusCards:
+    nandeckStatCards = ""
+    nandeckRaces = ""
+    orderRaces = 1
+    orderClasses = 1
+
+    for i, statusCard in enumerate(statusCards):
         #print(statusCard.name)
-        texStatCards += statusCard.serializeToLatex()
+        if statusCard.tableau == None:
+
+            nandeckStatCards += statusCard.serializeToNandeck(orderClasses)
+            orderClasses += 1
+        else:
+            #print(statusCard.tableau.L1R1)
+            nandeckRaces += statusCard.serializeToNandeck(orderRaces)
+            orderRaces += 1
 
 
     texModCards = ""
@@ -576,9 +644,29 @@ def parseRacesAndClasses(files_Input):
     for actCard in actionCards:
         texActCards += actCard.serializeToLatex() 
 
+        
 
-    fileToPrint = open('toPrint.tex', 'w+')
-    fileToPrint.write(texStatCards + r"\newpage" + texModCards + texActCards)
+    template_boilerplate_classes = open('Templates/Shingle_Class_Boilerplate.txt', 'r')
+    template_boilerplate_classes = template_boilerplate_classes.read()
+    template_boilerplate_classes = template_boilerplate_classes.replace(r"${Classes}", nandeckStatCards).replace(r"${CardCount}", str(orderClasses-1))
+
+
+    fileToPrint = open('out/classShingles.txt', 'w+')
+    fileToPrint.write(template_boilerplate_classes)
+    fileToPrint.close()
+
+    fileToPrint = open('out/actionCards.txt', 'w+')
+    fileToPrint.write(texModCards + texActCards)
+    fileToPrint.close()
+    
+    template_boilerplate_races = open('Templates/Tableau_Boilerplate.txt', 'r')
+    template_boilerplate_races = template_boilerplate_races.read()
+
+    template_boilerplate_races = template_boilerplate_races.replace(r"${Races}", nandeckRaces).replace(r"${CardCount}",str(orderRaces-1))
+
+    fileToPrint = open('out/raceTableaus.txt', 'w+')
+    fileToPrint.write(template_boilerplate_races)
+    fileToPrint.close()
 
     print("wrote file")
 
@@ -591,60 +679,64 @@ if __name__ == "__main__":
     ### INPUT OF PROPER RACES AND CLASSES
     files_Input = []    
 
-    files_Input.append(r"..\Races\Centaur.txt")
-    #files_Input.append(r"..\Races\Dragonblood.txt")
-    files_Input.append(r"..\Races\Dwarf.txt")
-    #files_Input.append(r"..\Races\Elf.txt")
+    files_Input.append(r"../Races/Centaur.txt")
+    #files_Input.append(r"../Races/Dragonblood.txt")
+    files_Input.append(r"../Races/Dwarf.txt")
+    #files_Input.append(r"../Races/Elf.txt")
 
-    '''files_Input.append(r"..\Races\Fae.txt")
-    files_Input.append(r"..\Races\HalfElf.txt")
-    files_Input.append(r"..\Races\Human.txt")
-    files_Input.append(r"..\Races\Merman.txt")
-    files_Input.append(r"..\Races\Silverkin.txt")
-    files_Input.append(r"..\Races\Solarian.txt")
-    files_Input.append(r"..\Races\Thyger.txt")
-    files_Input.append(r"..\Races\Wyrmkin.txt")
+    files_Input.append(r"../Races/Fae.txt")
+    files_Input.append(r"../Races/Halfelf.txt")
+    files_Input.append(r"../Races/Human.txt")
+    files_Input.append(r"../Races/Merman.txt")
+    files_Input.append(r"../Races/Silverkin.txt")
+    files_Input.append(r"../Races/Solarian.txt")
+    files_Input.append(r"../Races/Thyger.txt")
+    files_Input.append(r"../Races/Wyrmkin.txt")
     
-    files_Input.append(r"..\Classes\Alchemist1.txt")
-    files_Input.append(r"..\Classes\Alchemist2.txt")
-    files_Input.append(r"..\Classes\Alchemist3.txt")
+    files_Input.append(r"../Classes/Alchemist1.txt")
+    files_Input.append(r"../Classes/Alchemist2.txt")
+    files_Input.append(r"../Classes/Alchemist3.txt")
 
-    files_Input.append(r"..\Classes\Assassin1.txt")
-    files_Input.append(r"..\Classes\Assassin2.txt")
-    files_Input.append(r"..\Classes\Assassin3.txt")
+    files_Input.append(r"../Classes/Assassin1.txt")
+    files_Input.append(r"../Classes/Assassin2.txt")
+    files_Input.append(r"../Classes/Assassin3.txt")
 
-    files_Input.append(r"..\Classes\Bloodknight1.txt")
-    files_Input.append(r"..\Classes\Bloodknight2.txt")
-    files_Input.append(r"..\Classes\Bloodknight3.txt")'''
+    
 
-    files_Input.append(r"..\Classes\DrunkenMaster1.txt")
-    files_Input.append(r"..\Classes\DrunkenMaster2.txt")
-    files_Input.append(r"..\Classes\DrunkenMaster3.txt")
+    files_Input.append(r"../Classes/DrunkenMaster1.txt")
+    files_Input.append(r"../Classes/DrunkenMaster2.txt")
+    files_Input.append(r"../Classes/DrunkenMaster3.txt")
 
-    '''files_Input.append(r"..\Classes\Druid1.txt")
-    files_Input.append(r"..\Classes\Druid2.txt")
-    files_Input.append(r"..\Classes\Druid3.txt")
+    
 
-    files_Input.append(r"..\Classes\Guerilla1.txt")
-    files_Input.append(r"..\Classes\Guerilla2.txt")
-    files_Input.append(r"..\Classes\Guerilla3.txt")
+    files_Input.append(r"../Classes/Guerilla1.txt")
+    files_Input.append(r"../Classes/Guerilla2.txt")
+    files_Input.append(r"../Classes/Guerilla3.txt")
 
-    files_Input.append(r"..\Classes\Koloss1.txt")
-    files_Input.append(r"..\Classes\Koloss2.txt")
-    files_Input.append(r"..\Classes\Koloss3.txt")'''
+    files_Input.append(r"../Classes/Knight1.txt")
+    files_Input.append(r"../Classes/Knight2.txt")
+    files_Input.append(r"../Classes/Knight3.txt")
+
+    files_Input.append(r"../Classes/Koloss1.txt")
+    files_Input.append(r"../Classes/Koloss2.txt")
+    files_Input.append(r"../Classes/Koloss3.txt")
 
 
-    files_Input.append(r"..\Classes\Monk1.txt")
-    files_Input.append(r"..\Classes\Monk2.txt")
-    files_Input.append(r"..\Classes\Monk3.txt")
+    files_Input.append(r"../Classes/Monk1.txt")
+    files_Input.append(r"../Classes/Monk2.txt")
+    files_Input.append(r"../Classes/Monk3.txt")
 
-    files_Input.append(r"..\Classes\Pyromancer1.txt")
-    files_Input.append(r"..\Classes\Pyromancer2.txt")
-    files_Input.append(r"..\Classes\Pyromancer3.txt")
+    files_Input.append(r"../Classes/Pyromancer1.txt")
+    files_Input.append(r"../Classes/Pyromancer2.txt")
+    files_Input.append(r"../Classes/Pyromancer3.txt")
 
-    '''files_Input.append(r"..\Classes\Ranger1.txt")
-    files_Input.append(r"..\Classes\Ranger2.txt")
-    files_Input.append(r"..\Classes\Ranger3.txt")'''
+    files_Input.append(r"../Classes/Ranger1.txt")
+    files_Input.append(r"../Classes/Ranger2.txt")
+    files_Input.append(r"../Classes/Ranger3.txt")
+
+    files_Input.append(r"../Classes/Sangromancer1.txt")
+    files_Input.append(r"../Classes/Sangromancer2.txt")
+    files_Input.append(r"../Classes/Sangromancer3.txt")
 
     
 
@@ -657,42 +749,43 @@ if __name__ == "__main__":
     parseMonsterAI()
     #parseItems()
 
-    #### Deprecated Classes:
+
+#### Deprecated Classes:
 r"""
-#files_Input.append(r"..\Races\Faceless.txt")
-#files_Input.append(r"..\Races\Kobolds.txt") # Deprecated
-#files_Input.append(r"..\Races\Solarian.txt") # Deprecated
+#files_Input.append(r"../Races/Faceless.txt")
+#files_Input.append(r"../Races/Kobolds.txt") # Deprecated
+#files_Input.append(r"../Races/Solarian.txt") # Deprecated
 
-files_Input.append(r"..\Classes\Assassin1.txt")
-files_Input.append(r"..\Classes\Assassin2.txt")
-files_Input.append(r"..\Classes\Assassin3.txt")
+files_Input.append(r"../Classes/Assassin1.txt")
+files_Input.append(r"../Classes/Assassin2.txt")
+files_Input.append(r"../Classes/Assassin3.txt")
 
-files_Input.append(r"..\Classes\Cultist1.txt")
-files_Input.append(r"..\Classes\Cultist2.txt")
-files_Input.append(r"..\Classes\Cultist3.txt")
+files_Input.append(r"../Classes/Cultist1.txt")
+files_Input.append(r"../Classes/Cultist2.txt")
+files_Input.append(r"../Classes/Cultist3.txt")
 
-files_Input.append(r"..\Classes\Drunkenmaster1.txt")
-files_Input.append(r"..\Classes\Drunkenmaster2.txt")
-#files_Input.append(r"..\Classes\Drunkenmaster3.txt")
+files_Input.append(r"../Classes/Drunkenmaster1.txt")
+files_Input.append(r"../Classes/Drunkenmaster2.txt")
+#files_Input.append(r"../Classes/Drunkenmaster3.txt")
 
-files_Input.append(r"..\Classes\Necromancer1.txt")
-files_Input.append(r"..\Classes\Necromancer2.txt")
-#files_Input.append(r"..\Classes\Necromancer3.txt")
+files_Input.append(r"../Classes/Necromancer1.txt")
+files_Input.append(r"../Classes/Necromancer2.txt")
+#files_Input.append(r"../Classes/Necromancer3.txt")
 
-files_Input.append(r"..\Classes\PlagueDoctor1.txt")
-files_Input.append(r"..\Classes\PlagueDoctor2.txt")
-files_Input.append(r"..\Classes\PlagueDoctor3.txt")
+files_Input.append(r"../Classes/PlagueDoctor1.txt")
+files_Input.append(r"../Classes/PlagueDoctor2.txt")
+files_Input.append(r"../Classes/PlagueDoctor3.txt")
 
-files_Input.append(r"..\Classes\Rogue1.txt")
-files_Input.append(r"..\Classes\Rogue2.txt")
-files_Input.append(r"..\Classes\Rogue3.txt")
+files_Input.append(r"../Classes/Rogue1.txt")
+files_Input.append(r"../Classes/Rogue2.txt")
+files_Input.append(r"../Classes/Rogue3.txt")
 
 
-files_Input.append(r"..\Classes\Spearman1.txt")
-files_Input.append(r"..\Classes\Spearman2.txt")
-#files_Input.append(r"..\Classes\Spearman3.txt")
+files_Input.append(r"../Classes/Spearman1.txt")
+files_Input.append(r"../Classes/Spearman2.txt")
+#files_Input.append(r"../Classes/Spearman3.txt")
 
-files_Input.append(r"..\Classes\Summoner1.txt")
-files_Input.append(r"..\Classes\Summoner2.txt")
-#files_Input.append(r"..\Classes\Summoner3.txt")
+files_Input.append(r"../Classes/Summoner1.txt")
+files_Input.append(r"../Classes/Summoner2.txt")
+#files_Input.append(r"../Classes/Summoner3.txt")
 """

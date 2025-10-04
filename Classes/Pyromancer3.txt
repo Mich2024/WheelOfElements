@@ -5,9 +5,6 @@ Whenever an enemy in your zone dies, move all of its vulerable stack to another 
 
 Life: -6 (minus six)
 
-Modifiers
-Add 2 +0 Draw Vulnerable
-
 Variant:2
 
 Passive
@@ -15,8 +12,6 @@ Whenever an enemy in your zone dies, another enemy gets vulnerable
 
 Life: 6
 
-Modifiers
-Add 2 +5 Add 1 -5
 
 Type
 Element: Fire

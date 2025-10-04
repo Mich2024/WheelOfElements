@@ -11,6 +11,31 @@ def texifyMultSign(line):
     line = line.replace('*',r" $\times $ ")
     return line
 
+def addNanDeckLinebreaks(text: str):
+    res = ""
+    last_copy = 0
+    last_space = 0
+    for i, letter in enumerate(text):
+        if letter == " ":
+            last_space = i
+        
+        '''if letter in [".", "!", "?"] :
+            last_space = i+1
+            res += text[last_copy:last_space] + "\\13\\"
+            last_copy = last_space + 1'''
+
+        if i % 21 == 0:
+            if(i == 0):
+                continue
+            res += text[last_copy:last_space] + "\\13\\"
+            last_copy = last_space + 1 # the +1 gets rid of leading spaces
+            break
+
+    res += text[last_copy:]
+
+    return res
+
+
 symbolDict = {
     
     #"L":r"\symLoot", Mechanic removed from game
@@ -423,8 +448,10 @@ class modifierCard:
         res += "\n"
         return res
     
-class tableauCard:
+class tableauRace:
     def __init__(self):
+
+
         self.L1R1 = ""
         self.L1R2 = ""
         self.L1R3 = ""
@@ -435,6 +462,46 @@ class tableauCard:
 
         self.L3R1 = ""
 
+        self.mods = [self.L1R1,self.L1R2,self.L1R3,self.L1R4,self.L2R1,self.L2R2,self.L3R1]
+
+    def serializeToNandeck(self, order):
+        
+
+        template_line_mod = open('Templates/Tableau_Line_Mod.txt', 'r')
+        template_line_mod = template_line_mod.read()
+
+        self.L1R1 = template_line_mod.replace(r"${Mod}", '"' + self.L1R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L1R1 = self.L1R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(0))
+        self.L1R2 = template_line_mod.replace(r"${Mod}", '"' + self.L1R2.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L1R2 = self.L1R2.replace(r"${Order}",str(order)).replace(r"${Hor}",str(1)).replace(r"${Vert}",str(0))
+        self.L1R3 = template_line_mod.replace(r"${Mod}", '"' + self.L1R3.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L1R3 = self.L1R3.replace(r"${Order}",str(order)).replace(r"${Hor}",str(2)).replace(r"${Vert}",str(0))
+        self.L1R4 = template_line_mod.replace(r"${Mod}", '"' + self.L1R4.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L1R4 = self.L1R4.replace(r"${Order}",str(order)).replace(r"${Hor}",str(3)).replace(r"${Vert}",str(0))
+
+        self.L2R1 = template_line_mod.replace(r"${Mod}", '"' + self.L2R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L2R1 = self.L2R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(1))
+        self.L2R2 = template_line_mod.replace(r"${Mod}", '"' + self.L2R2.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L2R2 = self.L2R2.replace(r"${Order}",str(order)).replace(r"${Hor}",str(1)).replace(r"${Vert}",str(1))
+
+        self.L3R1 = template_line_mod.replace(r"${Mod}", '"' + self.L3R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L3R1 = self.L3R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(2))
+        
+        lines_mods = ""
+
+        lines_mods += self.L1R1
+        lines_mods += self.L1R2
+        lines_mods += self.L1R3
+        lines_mods += self.L1R4
+        lines_mods += self.L2R1
+        lines_mods += self.L2R2
+        lines_mods += self.L3R1
+            
+        return lines_mods
+
+
+
+
 class statCard:
 
     def __init__(self):
@@ -443,10 +510,10 @@ class statCard:
         self.rank = "No Init"
         self.life = "No Init"
         self.passive = ""
-        self.modifierUpgrades = ""
         self.elements = []
         self.explanations = []
-        self.tableau = {}
+        self.tableau = None
+        self.lore = "Ipsum Lorum"
 
     def setLife(self, l):
         self.life = l
@@ -462,7 +529,7 @@ class statCard:
         res += "{" 
         res += symbolDict["Life"] + r"\hspace{0.0cm} Life: " + str(self.life) + r"\\ "
         res += "}"
-        res += "{" + self.passive + "}"
+        res += "{" + self.passive + " \\ }"
         res += "{" + self.modifierUpgrades + r" \\ "
         #for line in self.explanations:
         #    res += line + r" \\ "  + dictExplanation[line.split(":")[1]] + r" \\" 
@@ -470,6 +537,43 @@ class statCard:
             res += line
         res += r"} "
         res += "\n"
+        return res
+
+    def serializeToNandeck(self, order):
+        
+        if isinstance(self.tableau, tableauRace):
+
+            
+            template_line_life = open('Templates/Tableau_Line_Life.txt', 'r')
+            template_line_life = template_line_life.read()
+            template_line_passive = open('Templates/Tableau_Line_Passive.txt', 'r')
+            template_line_passive = template_line_passive.read()
+            template_line_lore = open('Templates/Tableau_Line_Lore.txt', 'r')
+            template_line_lore = template_line_lore.read()
+            template_race = open('Templates/Tableau_Race_Single.txt', 'r')
+            template_race = template_race.read()
+
+            
+            lines_mods = self.tableau.serializeToNandeck(order)
+            
+
+            template_line_life = template_line_life.replace(r"${Order}",str(order)).replace(r"${Life}",self.life)
+            template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",self.passive)
+            template_line_lore = template_line_lore.replace(r"${Order}",str(order)).replace(r"${Lore}",self.lore)
+            template_race = template_race.replace(r"${Order}",str(order)).replace(r"${Race}", self.name )
+            res = template_race.replace(r"${Mods}", lines_mods).replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive).replace(r"${Explanation}",template_line_lore)
+
+        else:
+            title = self.name + " " + str(self.rank)
+            templateShingle = open('Templates/Shingle_Class_Card.txt', 'r')
+            templateShingle = templateShingle.read()
+
+            #print(self.passive)
+
+            passive_new = self.passive
+
+            res = templateShingle.replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life)).replace(r"${Passive}", passive_new)
+
         return res
     
 class monsterAICard:

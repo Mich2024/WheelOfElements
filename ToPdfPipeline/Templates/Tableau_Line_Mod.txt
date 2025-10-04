@@ -1,0 +1,1 @@
+TEXT = ${Order}, ${Mod}, [space_left] + [quart_hor] * ${Hor}, [space_top] + [third_vert] * ${Vert}, [quart_hor], [third_vert], center, center
