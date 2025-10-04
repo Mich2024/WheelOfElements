@@ -5,12 +5,12 @@ Skill:Charisma
 
 Variant:1
 Passive
-You may add both strings from Advantage to the Attack
+At the Start of the game, play two cards
 Life: 10
 
 Variant:2
 Passive
-You may add both strings from Advantage to the Attack
+At the Start of the game, play two cards
 Life: 7
 
 Type
