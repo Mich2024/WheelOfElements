@@ -4,7 +4,7 @@ Variant1
 
 Passive
 At the end of your turn A:1
-Life: 10
+Life: 4
 
 Variant2
 
