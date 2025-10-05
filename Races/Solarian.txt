@@ -2,7 +2,7 @@ Variant:1
 
 Passive
 When an enemy moves to your zone, it gets vulnerable
-Life: 7
+Life: 8
 
 
 Modifier Tableau

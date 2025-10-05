@@ -7,7 +7,7 @@ Life: 10
 Modifier Tableau
 #1; 1; 1; 1
 Rank:1
-Add 4 +3, Add 2 +2
+Add 4 +2, Add 2 -4
 Add 4 +4, Add 2 +5
 Remove 4 +0, Add 4 +5
 Remove 2 +0, Add 2 +10

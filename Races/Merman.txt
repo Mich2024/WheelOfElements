@@ -8,10 +8,10 @@ Life: 8
 Modifier Tableau
 #1; 1; 1; 1
 Rank:1
-Add 1 of each: +1, +2, +3, +4, +5
-Add 1 of each: +6, +7
-Add 1 of each: +8, +9, +10
-Add 1 of each: +11, +12
+Add 1 of each: -3, -2, -1, +1, +2, +3
+Add 1 of each: +4, +5, +6
+Add 1 of each: +7, +8, +9
+Add 1 of each: +10, +11, +12
 
 #2; 2
 Rank:2

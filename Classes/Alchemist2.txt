@@ -2,15 +2,14 @@ Variant:1
 
 Passive
 Poison is modified by the modifier deck
-
-Life: 6
-
-Modifiers
 Add 2 +0 Poison Pot
 #Poison:2
 Add 2 +0 Prismatic Pot
-#Any Element:1
-Remove 2 -1
+#Any Element:2
+
+Life: 6
+
+
 
 Variant:2
 

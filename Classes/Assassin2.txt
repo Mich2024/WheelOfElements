@@ -2,7 +2,7 @@ Stats
 
 Variant:1
 Passive
-Double damage against enemies with Disarm
+Attacks can consume disarm on enemies to deal double damage
 Life: 7
 
 
