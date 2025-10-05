@@ -4,6 +4,9 @@ toPrintMonAI.tex
 toPrintItems.tex
 ToPdfPipeline/out/*
 
+#ignore ods files during work
+*.~lock.*
+
 #Ignore all outputs
 *.pdf
 *.pyc
