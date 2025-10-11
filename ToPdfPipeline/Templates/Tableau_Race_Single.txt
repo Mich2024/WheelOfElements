@@ -3,6 +3,5 @@ FONT = Arial, 28, B, #000000
 TEXT = ${Order}, "${Race}", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
 FONT = Arial, 18, B, #000000
 ${Mods}
-TEXT = ${Order}, "Reminder Text", [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*1 + [space_text_28], [quart_hor], [space_text_28], LEFT, WORDWRAP
 ${Life}
 ${Passive}

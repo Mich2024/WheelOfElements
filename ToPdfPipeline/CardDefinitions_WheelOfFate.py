@@ -497,7 +497,7 @@ class tableauRace:
         lines_mods += self.L2R2
         lines_mods += self.L3R1
             
-        return lines_mods
+        return lines_mods.replace(",","")
 
 
 
@@ -548,8 +548,6 @@ class statCard:
             template_line_life = template_line_life.read()
             template_line_passive = open('Templates/Tableau_Line_Passive.txt', 'r')
             template_line_passive = template_line_passive.read()
-            template_line_lore = open('Templates/Tableau_Line_Lore.txt', 'r')
-            template_line_lore = template_line_lore.read()
             template_race = open('Templates/Tableau_Race_Single.txt', 'r')
             template_race = template_race.read()
 
@@ -559,9 +557,8 @@ class statCard:
 
             template_line_life = template_line_life.replace(r"${Order}",str(order)).replace(r"${Life}",self.life)
             template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",self.passive)
-            template_line_lore = template_line_lore.replace(r"${Order}",str(order)).replace(r"${Lore}",self.lore)
             template_race = template_race.replace(r"${Order}",str(order)).replace(r"${Race}", self.name )
-            res = template_race.replace(r"${Mods}", lines_mods).replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive).replace(r"${Explanation}",template_line_lore)
+            res = template_race.replace(r"${Mods}", lines_mods).replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive)
 
         else:
             title = self.name + " " + str(self.rank)

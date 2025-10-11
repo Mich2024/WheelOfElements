@@ -655,7 +655,7 @@ def parseRacesAndClasses(files_Input):
     fileToPrint.write(template_boilerplate_classes)
     fileToPrint.close()
 
-    fileToPrint = open('out/actionCards.txt', 'w+')
+    fileToPrint = open('toPrint.tex', 'w+')
     fileToPrint.write(texModCards + texActCards)
     fileToPrint.close()
     

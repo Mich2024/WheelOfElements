@@ -35,14 +35,14 @@ Base Cards
 
 Tier1
 #3
-Name: "Lick wounds" H:3 Special
-Name: "Disengage" Disengage H:1 Special
+Name: "Pounce" A:1 A:1 Special
+Name: "Slip Aways" Disengage A:2 Special
 Name: "Bonk" A:3 Attack
 
 Tier2 
 #5
 Name: "Claw" A:2 A:2 Attack
-Name: "Stalk" Disengage H:3 Special
+Name: "Stalk" Disengage A:4 Special
 
 #8
-Name: "Prey upon" A:6 Text: "If this attack kills, H:6" Attack
+Name: "Prey upon" A:6 Text: "If there is only one enemy in your zone, deal double damgage" Attack

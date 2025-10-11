@@ -7,7 +7,7 @@ Life: 8
 Modifier Tableau
 #1; 1; 1; 1 (+1)
 Rank:1
-Add 4 +4 Add 2 -1
+Add 2 +2 Add 4 -1
 Add 4 +7 Add 2 -1
 Remove 4 -1 Add 4 +4
 # Sollte eigentlich "Remove 5 +0 Add 5 +4" sein, aber das ist langweilig. (Remove 4 +0 Add 4 +5 ist auch möglich)
@@ -29,13 +29,13 @@ Explanation: Flurry
 
 Base Cards
 Tier1
-Name: "Bonk" A:3                                                            Type:Special
+Name: "Charge" Flurry Flurry                                                Type:Special
 Name: "Overrun" A:1 Flurry                                                  Type:Attack
 Name: "Bonk" A:3                                                            Type:Attack
 
 Tier2
 Name: "Rampage" A:1 Flurry Flurry                                           Type:Special
-Name: "Bash" A:4 A:1                                                        Type:Attack
+Name: "Stomp" A:4 A:1                                                       Type:Attack
 
 Tier3
 Name: "Trample" A:7 Text:"Whenever this kills an enemy, gain Flurry"        Type:Attack
