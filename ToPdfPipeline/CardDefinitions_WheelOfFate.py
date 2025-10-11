@@ -1,6 +1,8 @@
 def nothing(kwargs):
         return
 
+linebreakString = "\\13\\"
+
 def removeColons(line):
     res = line.replace(":","")
     return res

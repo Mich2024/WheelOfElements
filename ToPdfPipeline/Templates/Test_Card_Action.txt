@@ -1,0 +1,58 @@
+[CardCount] = 5
+
+[col_bronze] = #CD7F32
+[col_silver] = #ACACAC
+[col_gold] = #CFB53B
+
+
+
+[space_text_28] = 1
+[space_text_18] = 0.7
+
+[linestrength] = 0.1
+
+[space_top] = 1
+[space_left] = 0.2
+[space_right] = [space_left]
+[space_bottom] = 0.25
+
+[full_hor] = 6.35 - [space_left] - [space_right]
+
+
+
+CARDS=[CardCount]
+BORDER=ROUNDED,#000000,[linestrength]
+UNIT=CM
+PAGE=21,29.7,PORTRAIT,HV
+DPI=300
+CARDSIZE=6.35,8.89
+BASERANGE=,ON
+
+htmlimage = 1 - [CardCount], Icon_Fire, "..\..\Pictures\Icons\AddFire.png", 0.55, 0.55
+
+htmlfont=font_18,Arial,18,B,#000000,LEFT
+#Name, OptCost
+FONT = Arial, 28, B, #000000
+TEXT = 1, "Eruption", [space_left] , 0, [full_hor], [space_text_28], LEFT, TOP
+FONT = Arial, 18, B, #000000
+htmltext=1,"Opt: Icon_Fire Icon_Fire Icon_Fire","[space_left] ",[space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+#PicBox
+#FONT = Arial, 28, B, #000000
+#TEXT = 1, "Pics or it didnt happen", [space_left] , [space_text_28] + [space_text_18], [full_hor], 4 - [space_text_28] - [space_text_18], LEFT, WORDWRAP
+
+#TextBox
+FONT = Arial, 18, B, #000000
+TEXT = 1, "TextBox Is my waif u", [space_left] , 4, [full_hor], 4, LEFT, WORDWRAP
+
+#Klassenzugehörigkeit
+FONT = Arial, 12, B, #000000
+TEXT = 1, "Pyro", 0 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+#BroneSilberGold
+FONT = Arial, 12, B, [col_gold]
+TEXT = 1, "Gold", 6.35-2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
+
+
+
+
