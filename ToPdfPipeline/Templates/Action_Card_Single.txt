@@ -1,22 +1,17 @@
-
 #Name, OptCost
 FONT = Arial, 28, B, #000000
 TEXT = ${Order}, "${Name}", [space_left] , 0, [full_hor], [space_text_28], LEFT, TOP
 FONT = Arial, 18, B, #000000
-TEXT = ${Order}, "${Opt_Cost}", [space_left] , [space_text_28], [full_hor], [space_text_18], LEFT, TOP
+TEXT = ${Order}, "${Opt_Cost}", [space_left] , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-#PicBox
-#FONT = Arial, 28, B, #000000
-#TEXT = ${Order}, "${Opt_Cost}", [space_left] , [space_text_28] + [space_text_18], [full_hor], 4 - [space_text_28] - [space_text_18], LEFT, WORDWRAP
 
-#TextBox
 FONT = Arial, 18, B, #000000
 TEXT = ${Order}, "${TextBox}", [space_left] , 4, [full_hor], 4, LEFT, WORDWRAP
 
-#Klassenzugehörigkeit
+${AOE}
+
 FONT = Arial, 12, B, #000000
 TEXT = ${Order}, "${Class}", 0 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
-#BroneSilberGold
 FONT = Arial, 12, B, ${Col_Rank}
 TEXT = ${Order}, "${Rank}", 6.35-2 , 8, 2, [space_text_18], RIGHT, WORDWRAP

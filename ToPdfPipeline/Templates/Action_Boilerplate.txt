@@ -28,6 +28,11 @@ DPI=300
 CARDSIZE=6.35,8.89
 BASERANGE=,ON
 
+htmlimage = 1 - [CardCount], Icon_Fire, "..\..\Pictures\Icons\AddFire.png", 0.55, 0.55
+#${Images?}
+
+htmlfont=font_18,Arial,18,B,#000000,LEFT
+
 ${Cards}
 
 

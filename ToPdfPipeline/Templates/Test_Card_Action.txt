@@ -35,7 +35,7 @@ htmlfont=font_18,Arial,18,B,#000000,LEFT
 FONT = Arial, 28, B, #000000
 TEXT = 1, "Eruption", [space_left] , 0, [full_hor], [space_text_28], LEFT, TOP
 FONT = Arial, 18, B, #000000
-htmltext=1,"Opt: Icon_Fire Icon_Fire Icon_Fire","[space_left] ",[space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+htmltext=1,"Opt: Icon_Fire Icon_Fire Icon_Fire",[space_left] ,[space_text_28],[full_hor],[space_text_18] + 0.2,#FFFFFF,0,T,100,font_18
 
 #PicBox
 #FONT = Arial, 28, B, #000000
@@ -44,6 +44,9 @@ htmltext=1,"Opt: Icon_Fire Icon_Fire Icon_Fire","[space_left] ",[space_text_28],
 #TextBox
 FONT = Arial, 18, B, #000000
 TEXT = 1, "TextBox Is my waif u", [space_left] , 4, [full_hor], 4, LEFT, WORDWRAP
+
+#Aoe
+IMAGE= 1, "..\..\Pictures\AOE\AoeAll.png" , [space_left], 6, [full_hor], 2, 0, PN
 
 #Klassenzugehörigkeit
 FONT = Arial, 12, B, #000000
