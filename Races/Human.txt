@@ -7,7 +7,7 @@ Life: 10
 Modifier Tableau
 #1; 1; 1; 1
 Rank:1
-Add 4 +3, Add 2 +2
+Add 4 +2, Add 2 -4
 Add 4 +4, Add 2 +5
 Remove 4 +0, Add 4 +5
 Remove 2 +0, Add 2 +10
@@ -35,12 +35,12 @@ Tier1
 #Name: "Shield" S:1                                 Type:Special
 
 Tier2
-Name: "Guard" S:1 H:2                                           Type:Special
+Name: "Guard" S:2                                          Type:Special
 Name: "Slash" A:5                                               Type:Attack
-Name: "Lay on Hands" H:5                                        Type:Special
+Name: "Flurry" A:1 A:1 A:1                                        Type:Attack
 Name: "Parrying Dagger" S:1 A:2                                 Type:Attack
 
 Tier3
-Name: "Adaptive Fighter" Text: "Choose 2: A:3, H:4 or S:1"      Type:Attack
+Name: "Adaptive Fighter" Text: "Choose 2: A:3, A:1 A:1 or S:1"      Type:Attack
 #VirtualTier4
-Name: "BaLaNcEd" A:6 H:6                                        Type:Attack
+Name: "Crush" A:6 S:2                                        Type:Attack

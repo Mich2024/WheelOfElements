@@ -1,1 +1,1 @@
-TEXT = ${Order}, "${Passive}", [space_left] + [quart_hor] * 3 + [linestrength], [space_top]+[third_vert]*2, [quart_hor], [third_vert], LEFT, WORDWRAP
+TEXT = ${Order}, "${Passive}", [space_left] + [quart_hor] * 3 + [linestrength], [space_top]+[third_vert]*2+[space_text_28], [quart_hor], [third_vert], LEFT, WORDWRAP

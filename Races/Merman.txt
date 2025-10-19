@@ -8,10 +8,10 @@ Life: 8
 Modifier Tableau
 #1; 1; 1; 1
 Rank:1
-Add 1 of each: +1, +2, +3, +4, +5
-Add 1 of each: +6, +7
-Add 1 of each: +8, +9, +10
-Add 1 of each: +11, +12
+Add 1 of each: -3, -2, -1, +1, +2, +3
+Add 1 of each: +4, +5, +6
+Add 1 of each: +7, +8, +9
+Add 1 of each: +10, +11, +12
 
 #2; 2
 Rank:2
@@ -44,12 +44,12 @@ Explanation: Poison
 Base Cards
 Tier1
 Name: "Polluted Waters" Water:1 Poison:2 Attack
-Name: "Schlurp" ManaCost:Opt;Water;2 H:3 Text: "--- Opt cost paid ---" H:4 Special
-Name: "Homeland Brew" ManaCost:Opt;Water;2 H:3 Text: "--- Opt cost paid ---" Poison:4 Special
+Name: "Homeland Brew" ManaCost:Opt;Water;2 Poison:3 Text: "--- Opt cost paid ---" Poison:4 Special
+Name: "Slap" A:3 Special
 
 Tier2
-Name: "Slickness" Water:1 H:4 Special
+Name: "Slickness" Water:1 A:3 Special
 Name: "Tidal Grasp" ManaCost:Opt;Water;3 A:2 Text: "--- Opt cost paid ---" A:2 AOE:Cleave;2
 
 Tier3
-Name: "Brine Burst"  Poison:4 H:2 Water:2 Attack
+Name: "Brine Burst"  Poison:6 Water:2 Attack

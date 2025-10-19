@@ -1,0 +1,39 @@
+[CardCount] = ${CardCount}
+
+[col_bronze] = #CD7F32
+[col_silver] = #ACACAC
+[col_gold] = #CFB53B
+
+
+
+[space_text_28] = 1
+[space_text_18] = 0.7
+
+[linestrength] = 0.1
+
+[space_top] = 1
+[space_left] = [space_text_18] + [linestrength]
+[space_right] = [space_left]
+[space_bottom] = 0.25
+
+[full_hor] = 6.35 - [space_left] - [space_right]
+
+
+
+CARDS=[CardCount]
+BORDER=ROUNDED,#000000,[linestrength]
+UNIT=CM
+PAGE=21,29.7,PORTRAIT,HV
+DPI=300
+CARDSIZE=6.35,8.89
+BASERANGE=,ON
+
+htmlimage = 1 - [CardCount], Icon_Fire, "..\..\Pictures\Icons\AddFire.png", 0.55, 0.55
+#${Images?}
+
+htmlfont=font_18,Arial,18,B,#000000,LEFT
+
+${Cards}
+
+
+

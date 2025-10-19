@@ -5,7 +5,7 @@ Skill:Charisma
 
 Variant:1
 Passive
-At the Start of the game, play two cards
+During your first turn, play two additioal cards
 Life: 10
 
 Variant:2

@@ -4,15 +4,19 @@ BORDER=RECTANGLE
 UNIT=CM
 PAGE=21,29.7,LANDSCAPE,HV
 
-[space_top] = 1
-[space_left] = 0.5
-[space_right] = 0.25
-[space_bottom] = 0.25
+[col_bronze] = #CD7F32
+[col_silver] = #ACACAC
+[col_gold] = #CFB53B
 
 [space_text_28] = 1
 [space_text_18] = 0.7
 
 [linestrength] = 0.1
+
+[space_top] = 1
+[space_left] = [space_text_18] + [linestrength]
+[space_right] = 0.25
+[space_bottom] = 0.25
 
 [third_vert] = ((21-[space_top]-[space_bottom])/3)
 [quart_vert] = ((21-[space_top]-[space_bottom])/4)
@@ -27,10 +31,17 @@ BASERANGE=,ON
 ${Races}
 
 #Global Simmilar stuff
+FONT = Arial, 18, B, [col_gold]
+TEXT = 1-[CardCount], "Mods",           0, [space_top]+[third_vert]*0, [space_text_18], [third_vert], LEFT, TOP, 270
+TEXT = 1-[CardCount], "Passive",        0, [space_top]+[third_vert]*1, [space_text_18], [third_vert], LEFT, TOP, 270
+TEXT = 1-[CardCount], "Cards",          0, [space_top]+[third_vert]*2, [space_text_18], [third_vert], LEFT, TOP, 270
+
 FONT = Arial, 28, B, #000000
-TEXT = 1-[CardCount], "Passive",     [space_left] + [quart_hor] * 3, [space_top]+[third_vert]*2 - [space_text_28], [quart_hor], [space_text_28], LEFT, TOP
+TEXT = 1-[CardCount], "Passive",     [space_left] + [quart_hor] * 3, [space_top]+[third_vert]*2, [quart_hor], [space_text_28], LEFT, TOP
 TEXT = 1-[CardCount], "Life Pool",   [space_left] + [quart_hor] * 1, [space_top]+[third_vert]*2, [quart_hor], [space_text_28], LEFT, TOP
 TEXT = 1-[CardCount], "Lore",        [space_left] + [quart_hor] * 2, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], LEFT, TOP
+FONT = Arial, 18, B, #000000
+TEXT = 1-[CardCount], "Turn order: \13\ 1. Draw cards until hand is full \13\ 2. Roll enemy dice \13\ 3. Play two cards \13\ 4. Perform enemy actions \13\ 5. Rotate enemies and element wheel",  [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*1 + [space_text_28], [quart_hor]*2, [third_vert] - [space_text_28], LEFT, WORDWRAP
 
 RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
 RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 1, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]

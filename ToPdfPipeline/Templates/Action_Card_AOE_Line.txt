@@ -1,0 +1,1 @@
+IMAGE= 1, "..\..\Pictures\AOE\AoeAll.png" , [space_left], 6, [full_hor], 2, 0, PN

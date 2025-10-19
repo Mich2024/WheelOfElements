@@ -34,7 +34,22 @@ idee
 Stun -> Hard CC
 Explanation -> Cursive
 
-
-
-
 Centaurwiener -> auf der Seite der Box übelanger Centaur auf dem alle anderen 9 Rassen sitzen
+
+
+
+Disengage -> evergreen
+Enemies fine
+bronze Silver Gold system for everything
+
+T1 cards -> Bronze
+T2 ...
+
+
+Rank 1 Class: Gold Mods, Bronze Passive, Silver Cards
+Rank 2 Class: Silver Mods, Gold Passive, Bronze Cards
+Rank 3 Class: Bronze Mods, Silver Passive, Gold Cards
+
+ReworkTableau to indicate gold for each class
+Players knowing why they are weak in X should make it feel better
+

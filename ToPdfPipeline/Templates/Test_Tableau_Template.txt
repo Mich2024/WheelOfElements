@@ -1,17 +1,22 @@
-CARDS=10
+[CardCount] = 4
+CARDS=[CardCount]
 BORDER=RECTANGLE
 UNIT=CM
 PAGE=21,29.7,LANDSCAPE,HV
 
-[space_top] = 1
-[space_left] = 0.5
-[space_right] = 0.25
-[space_bottom] = 0.25
+[col_bronze] = #CD7F32
+[col_silver] = #ACACAC
+[col_gold] = #CFB53B
 
 [space_text_28] = 1
 [space_text_18] = 0.7
 
 [linestrength] = 0.1
+
+[space_top] = 1
+[space_left] = [space_text_18] + [linestrength]
+[space_right] = 0.25
+[space_bottom] = 0.25
 
 [third_vert] = ((21-[space_top]-[space_bottom])/3)
 [quart_vert] = ((21-[space_top]-[space_bottom])/4)
@@ -24,37 +29,92 @@ CARDSIZE=29.7,21
 BASERANGE=,ON
 
 
-#Global Simmilar stuff
-FONT = Arial, 28, B, #000000
-TEXT = 1-10, "Passive",     [space_left] + [quart_hor] * 3, [space_top]+[third_vert]*2 - [space_text_28], [quart_hor], [space_text_28], LEFT, TOP
-TEXT = 1-10, "Life Pool",   [space_left] + [quart_hor] * 1, [space_top]+[third_vert]*2, [quart_hor], [space_text_28], LEFT, TOP
-TEXT = 1-10, "Lore",        [space_left] + [quart_hor] * 2, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], LEFT, TOP
-
-
-
-#Human
 FONT = Arial, 28, B, #000000
 TEXT = 1, "Human", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
 FONT = Arial, 18, B, #000000
-TEXT = 1-10, "Add 2 +2\13\Add 4 +4", [space_left] + [quart_hor] * 0, [space_top], [quart_hor], [third_vert], center, center
+TEXT = 1, "\13\Add 4 +2, \13\Add 2 -4", [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 1, "\13\Add 4 +4, \13\Add 2 +5", [space_left] + [quart_hor] * 1, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 1, "\13\Remove 4 +0, \13\Add 4 +5", [space_left] + [quart_hor] * 2, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 1, "\13\Remove 2 +0, \13\Add 2 +10", [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 1, "\13\Remove 1 +0, \13\Add 1 +3", [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 1, [quart_hor], [third_vert], center, center
+TEXT = 1, "\13\Remove 2 +3, \13\Add 2 +5", [space_left] + [quart_hor] * 1, [space_top] + [third_vert] * 1, [quart_hor], [third_vert], center, center
+TEXT = 1, "\13\Remove 1 +0, \13\Add 1 +3", [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], center, center
 
 
-#Elf
+TEXT = 1, " 10",   [space_left] + [quart_hor] * 1  + [linestrength], [space_top]+[third_vert]*2 + [space_text_28], [quart_hor], [space_text_28], LEFT, WORDWRAP
+TEXT = 1, "Improved Cards ", [space_left] + [quart_hor] * 3 + [linestrength], [space_top]+[third_vert]*2, [quart_hor], [third_vert], LEFT, WORDWRAP
+
 FONT = Arial, 28, B, #000000
-TEXT = 2, "Elf", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
+TEXT = 2, "Merman", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
+FONT = Arial, 18, B, #000000
+TEXT = 2, "\13\Add 1 of each: -3, -2, -1, +1, +2, +3", [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 2, "\13\Add 1 of each: +4, +5, +6", [space_left] + [quart_hor] * 1, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 2, "\13\Add 1 of each: +7, +8, +9", [space_left] + [quart_hor] * 2, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 2, "\13\Add 1 of each: +10, +11, +12", [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 2, "\13\Remove 2 +0", [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 1, [quart_hor], [third_vert], center, center
+TEXT = 2, "\13\Remove 2 +0", [space_left] + [quart_hor] * 1, [space_top] + [third_vert] * 1, [quart_hor], [third_vert], center, center
+TEXT = 2, "\13\Remove 1 +0", [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], center, center
+
+TEXT = 2, "Reminder Text", [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*1 + [space_text_28], [quart_hor], [space_text_28], LEFT, WORDWRAP
+TEXT = 2, " 8",   [space_left] + [quart_hor] * 1  + [linestrength], [space_top]+[third_vert]*2 + [space_text_28], [quart_hor], [space_text_28], LEFT, WORDWRAP
+TEXT = 2, "Play with the top of your modifier deck revealed ", [space_left] + [quart_hor] * 3 + [linestrength], [space_top]+[third_vert]*2, [quart_hor], [third_vert], LEFT, WORDWRAP
+
+FONT = Arial, 28, B, #000000
+TEXT = 3, "Silverkin", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
+FONT = Arial, 18, B, #000000
+TEXT = 3, "\13\Add 2 +3 \13\Add 3 -2", [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 3, "\13\Add 3 +9 \13\Add 2 -2", [space_left] + [quart_hor] * 1, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 3, "\13\Remove 4 +0 \13\Add 2 +9 \13\Add 2 -2", [space_left] + [quart_hor] * 2, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 3, "\13\Remove 2 -2 \13\Remove 2 +0", [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 3, "\13\Remove 1 -2 \13\Add 1 +0", [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 1, [quart_hor], [third_vert], center, center
+TEXT = 3, "\13\Remove 2 +0 \13\Add 2 +3", [space_left] + [quart_hor] * 1, [space_top] + [third_vert] * 1, [quart_hor], [third_vert], center, center
+TEXT = 3, "\13\Remove 1 +0 \13\Add 1 +3", [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], center, center
+
+TEXT = 3, "Reminder Text", [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*1 + [space_text_28], [quart_hor], [space_text_28], LEFT, WORDWRAP
+TEXT = 3, " 6",   [space_left] + [quart_hor] * 1  + [linestrength], [space_top]+[third_vert]*2 + [space_text_28], [quart_hor], [space_text_28], LEFT, WORDWRAP
+TEXT = 3, "When using advantage, you may add all routes instead of chosing one ", [space_left] + [quart_hor] * 3 + [linestrength], [space_top]+[third_vert]*2, [quart_hor], [third_vert], LEFT, WORDWRAP
+
+FONT = Arial, 28, B, #000000
+TEXT = 4, "Thyger", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
+FONT = Arial, 18, B, #000000
+TEXT = 4, "\13\Add 2 +3, \13\Add 2 -3", [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 4, "\13\Add 4 +6, \13\Add 4 Disengage", [space_left] + [quart_hor] * 1, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 4, "\13\Remove 6 +0", [space_left] + [quart_hor] * 2, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 4, "\13\Add 3 +9", [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], center, center
+TEXT = 4, "\13\Add 2 Disengage Draw", [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 1, [quart_hor], [third_vert], center, center
+TEXT = 4, "\13\Add 2 Disengage Draw", [space_left] + [quart_hor] * 1, [space_top] + [third_vert] * 1, [quart_hor], [third_vert], center, center
+TEXT = 4, "\13\Add 2 Disengage Draw", [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], center, center
+
+TEXT = 4, "Reminder Text", [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*1 + [space_text_28], [quart_hor], [space_text_28], LEFT, WORDWRAP
+TEXT = 4, " 12",   [space_left] + [quart_hor] * 1  + [linestrength], [space_top]+[third_vert]*2 + [space_text_28], [quart_hor], [space_text_28], LEFT, WORDWRAP
+TEXT = 4, "You decide who disengages at the end of your turn ", [space_left] + [quart_hor] * 3 + [linestrength], [space_top]+[third_vert]*2, [quart_hor], [third_vert], LEFT, WORDWRAP
 
 
+#Global Simmilar stuff
+
+FONT = Arial, 18, B, [col_gold]
+TEXT = 1-[CardCount], "Mods",           0, [space_top]+[third_vert]*0, [space_text_18], [third_vert], LEFT, TOP, 270
+TEXT = 1-[CardCount], "Passive",        0, [space_top]+[third_vert]*1, [space_text_18], [third_vert], LEFT, TOP, 270
+TEXT = 1-[CardCount], "Cards",          0, [space_top]+[third_vert]*2, [space_text_18], [third_vert], LEFT, TOP, 270
+
+FONT = Arial, 28, B, #000000
+TEXT = 1-[CardCount], "Passive",        [space_left] + [quart_hor] * 3, [space_top]+[third_vert]*2, [quart_hor], [space_text_28], LEFT, TOP
+TEXT = 1-[CardCount], "Life Pool",      [space_left] + [quart_hor] * 1, [space_top]+[third_vert]*2, [quart_hor], [space_text_28], LEFT, TOP
+TEXT = 1-[CardCount], "Reminder Text",  [space_left] + [quart_hor] * 2, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], LEFT, TOP
+FONT = Arial, 18, B, #000000
+TEXT = 1-[CardCount], "Turn order: \13\ 1. Draw cards until hand is full \13\ 2. Roll enemy dice \13\ 3. Play two cards \13\ 4. Perform enemy actions \13\ 5. Rotate enemies and element wheel",  [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*1 + [space_text_28], [quart_hor]*2, [third_vert] - [space_text_28], LEFT, WORDWRAP
 
 
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 1, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 2, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 1, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 2, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 3, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
 
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 1, [quart_hor], [third_vert], #000000, empty, [linestrength]
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 1, [space_top] + [third_vert] * 1, [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0, [space_top] + [third_vert], [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 1, [space_top] + [third_vert], [quart_hor], [third_vert], #000000, empty, [linestrength]
 
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], #000000, empty, [linestrength]
-RECTANGLE = 1-10, [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], #000000, empty, [linestrength]
+
 
 

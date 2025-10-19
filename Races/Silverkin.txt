@@ -1,22 +1,22 @@
 Variant:1
 
 Passive
-Double the effect of your modifiers
+When using advantage, you may add all routes instead of chosing one
 
 Life: 6
 
 Modifier Tableau
 #1; 1; 1; 1 (+1)
 Rank:1
-Add 5 +4 Add 2 -2
+Add 2 +3 Add 3 -2
 Add 3 +9 Add 2 -2
-Remove 4 +0 Add 2 +12 Add 2 -2
+Remove 4 +0 Add 2 +9 Add 2 -2
 Remove 2 -2 Remove 2 +0
 
 #2; 2 (+0,2)
 Rank:2
 Remove 1 -2 Add 1 +0
-Remove 2 +0 Add 2 +4
+Remove 2 +0 Add 2 +3
 
 #3 (+0,2)
 Rank:3
@@ -31,11 +31,11 @@ Base Cards
 
 Tier1
 Name: "Like Clockwork" Advantage Metal:2 Special
-Name: "Liquimetal Flow" Advantage H:2 Special
-Name: "Adamantium Infusion" ManaCost:Opt;Metal;X A:3 H:X*2 Attack
+Name: "Liquimetal Flow" Advantage A:2 Special
+Name: "Adamantium Infusion" ManaCost:Opt;Metal;X A:3 Advantage:X Attack
 
 Tier2
-Name: "Adaptive Plating" Metal:1 H:4 Special
+Name: "Adaptive Plating" Metal:X Text: "X is the amount of enemies in your zone" Special
 Name: "Bladestorm" ManaCost:Opt;Metal;3 A:5 Text: "--- Opt cost paid ---" Text: "Double the effect of your modifiers (again)" Attack
 
 Tier3

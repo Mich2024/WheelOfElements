@@ -4,7 +4,7 @@ Variant1
 
 Passive
 At the start of your turn, gain Powerful
-Life: 10
+Life: 4
 
 Variant2
 

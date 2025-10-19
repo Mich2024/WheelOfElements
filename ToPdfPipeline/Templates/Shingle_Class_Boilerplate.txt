@@ -14,14 +14,11 @@
 [third_hor] = ((29.7-[space_left]-[space_right])/3)
 [quart_hor] = ((29.7-[space_left]-[space_right])/4)
 [CardCount] = ${CardCount}
+
 CARDS=[CardCount]
 BORDER=RECTANGLE
 UNIT=CM
 PAGE=21,29.7,LANDSCAPE,HV
-
-
-
-
 DPI=300
 CARDSIZE=[quart_hor],[third_vert]
 BASERANGE=,ON
