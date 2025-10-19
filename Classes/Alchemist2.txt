@@ -1,9 +1,9 @@
 Variant:1
 
 Passive
-Poison is modified by the modifier deck
-Add 2 +0 Poison Pot
-#Poison:2
+When you use a potion, you may pay Water:1 to double the numeric effects
+Add 2 +0 Heal Pot
+#Heal:4
 Add 2 +0 Prismatic Pot
 #Any Element:2
 
@@ -36,11 +36,11 @@ Explanation:Disarm
 
 Tier1
 #3
-Name: "Drink up"  Water:1 Heal:6 Special
 Name: "Sickening Wave" Water:1 Poison:1 Aoe:Cleave;3 Attack
-Name: "Disarm" Disarm Special
+Name: "Flashpowder" Ranged Disarm Special
 
-Tier2
-#5
-Name: "Prolonged Suffering" ManaCost:Opt;Water;1 Poison:5 Text: "--- Opt cost paid ---" Disarm Attack
-Name: "Toxic Shock" A:X Text: "X is the amount of poison on the target" Attack
+Tier3
+#8
+Name: "Miasma" Text: "Disarm all Poisoned targets" AOE:All Special
+Name: "Drown in poison" ManaCost:Opt;Water;5 Poison:12 Opt A:X Text: "X is the amount of poison on the target" Attack
+Name: "Impending Doom" Water:2 Text: "Double the poison on one enemy" Attack

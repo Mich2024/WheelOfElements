@@ -1,32 +1,34 @@
+#Gold Mods, Silver Cards, Bronze Passive
+
 Variant:1
 
 Passive
-The second card you play each turn has ranged
+Cards you play have Ranged
 
 Life: 6
 
 Modifier Tableau
 #1; 1; 1; 1
 Rank:1
-Add 8 +2
-Add 4 +4 Draw
-Add 4 +4 Draw
-Add 4 +4 Draw
+Add 4 +2 Add 4 Wood
+Add 6 +4
+Add 5 Wood Wood Draw
+Add 5 +4 Draw
 
 #2; 2
 Rank:2
-Add 2 +2 Draw
-Add 2 +2 Draw
+Add 3 Wood Draw
+Add 3 +2 Draw
 
 #3
 Rank:3
-Add 2 +2 Draw
+Add 3 +4 Draw
 
 
 Type
 Element:Wood
 
-Explanation:Ranged
+Explanation:Powerful
 
 Base Cards
 
@@ -36,16 +38,16 @@ Base Cards
 
 Tier1
 #3
-Name: "Pocket Wood" A:2 Wood:1 Special
-Name: "Pocket Wood" A:2 Wood:1 Special
-Name: "Slash" A:3 Attack
+Name: "Gardening" Wood:2 
+Name: "Bonk" A:2 
+Name: "Hype" A:1 Powerful
 
 Tier2 
 #5
-Name: "Flyby" A:5 Special
-Name: "Dust Cloud" Wood:2 A:3 Special
+Name: "Flyby" A:3 A:3 
+Name: "Dust Cloud" A:5 Disengage
 
 #8
-Name: "Black Dust" ManaCost:Opt;Wood;3 Ranged A:6 Text: "--- Opt cost paid ---" A:6 Attack
+Name: "Black Dust" ManaCost:Opt;Wood;3 A:8 Disengage Disengage Opt A:10 Powerful:2
 
-#Name: "Radiance" H:3 Text: "Also Target the players next to you" Attack
+#Name: "Radiance" H:3 Text: "Also Target the players next to you" 

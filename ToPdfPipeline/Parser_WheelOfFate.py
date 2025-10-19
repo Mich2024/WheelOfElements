@@ -640,9 +640,11 @@ def parseRacesAndClasses(files_Input):
     #for modCard in modifierCards:
     #    texModCards += modCard.serializeToLatex()
 
-    texActCards = ""
+    orderActions = 1
+    nandeckActCards = ""
     for actCard in actionCards:
-        texActCards += actCard.serializeToLatex() 
+        nandeckActCards += actCard.serializeToNandeck(orderActions) 
+        orderActions += 1
 
         
 
@@ -655,8 +657,12 @@ def parseRacesAndClasses(files_Input):
     fileToPrint.write(template_boilerplate_classes)
     fileToPrint.close()
 
-    fileToPrint = open('toPrint.tex', 'w+')
-    fileToPrint.write(texModCards + texActCards)
+    template_boilerplate_actions = open('Templates/Action_Boilerplate.txt', 'r')
+    template_boilerplate_actions = template_boilerplate_actions.read()
+    template_boilerplate_actions = template_boilerplate_actions.replace(r"${Cards}", nandeckActCards).replace(r"${CardCount}", str(orderActions-1))
+
+    fileToPrint = open('out/ActCards.txt', 'w+')
+    fileToPrint.write(template_boilerplate_actions)
     fileToPrint.close()
     
     template_boilerplate_races = open('Templates/Tableau_Boilerplate.txt', 'r')
@@ -679,9 +685,9 @@ if __name__ == "__main__":
     ### INPUT OF PROPER RACES AND CLASSES
     files_Input = []    
 
-    #files_Input.append(r"../Races/Centaur.txt")
+    files_Input.append(r"../Races/Centaur.txt")
     #files_Input.append(r"../Races/Dragonblood.txt")
-    #files_Input.append(r"../Races/Dwarf.txt")
+    files_Input.append(r"../Races/Dwarf.txt")
     #files_Input.append(r"../Races/Elf.txt")
 
     #files_Input.append(r"../Races/Fae.txt")

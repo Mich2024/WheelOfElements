@@ -1,9 +1,9 @@
 Variant:1
 
 Passive
-When you draw a potion add it to your items. Discard them on use like a modifier.
-Add 2 +0 Poison Pot
-#Poison:2
+When you draw a potion set it aside, and draw another modifier. Usem them at any time during your turn like an extraaction card.Discard them on use like a modifier.
+Add 2 +0 Heal Pot
+#Heal:4
 Add 2 +0 Water Pot
 #Water:2
 
@@ -34,13 +34,13 @@ Explanation:Heal
 Tier1
 #3
 Name: "Drink up"  Water:1 Heal:6 Special
-Name: "Flashpowder" A:1 Aoe:Cleave;3 Attack
+Name: "Spark Powder" A:1 Aoe:Cleave;2 Attack
 
 Tier2
 #5
-Name: "Toxic Concoction" ManaCost:Opt;Water;1 Poison:4 Text: "--- Opt cost paid ---" A:4 Attack
-Name: "Herbal Remedies" Water:2 H:8 Special
+Name: "Toxic Concoction" ManaCost:Opt;Water;3 Poison:8 Opt A:4 Attack
+Name: "Herbal Remedies" Ranged Water:2 H:7 Special
 
 Tier3
 #8
-Name: "Toxic Deluge" ManaCost:Opt;Water;3 Poison:3 Text: "--- Opt cost paid ---" A:2 Aoe:Cleave;3 Attack
+Name: "Toxic Deluge" ManaCost:Opt;Water;3 Poison:5 Text: "--- Opt cost paid ---" A:1 Aoe:Cleave;3 Attack

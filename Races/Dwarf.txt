@@ -1,3 +1,5 @@
+#Gold Cards, Silver Mods, Bronze Passive
+
 Variant:1
 
 Passive
@@ -8,24 +10,24 @@ Life: 10
 Modifier Tableau
 #1; 1; 1; 1
 Rank:1
-Add 5 +2, Add 1 +4
-Remove 1 +4, Add 5 +2, Add 1 +20
+Add 2 -5, Add 4 +5
+Remove 1 +5, Add 5 Earth, Add 1 +20
 Remove 1 +0, Add 1 +20
 Remove 1 +0, Add 1 +20
 
 #2; 2
 Rank:2
-Remove 2 +2, Add 2 +4
-Remove 1 +4, Add 1 +7
+Remove 1 +5, Add 1 +10
+Remove 1 +5, Add 1 +10
 
 #3
 Rank:3
-Remove 1 +4, Add 1 +7
+Remove 1 +10, Add 1 +20
 
 Type
 Element:Earth
 
-Explanation:Powerful
+Explanation:D6
 
 Base Cards
 
@@ -35,14 +37,14 @@ Base Cards
 
 Tier1
 #3
-Name: "Hype" Powerful Powerful Earth:1 Special
-Name: "Resilience" Earth:1 H:2 Special
-Name: "Bonk" A:3 Attack
+Name: "Gamble" ManaCost:Opt;Earth;2 D6:1 A:X Opt A:X
+Name: "Grapple" A:1 Earth
+Name: "Punt" A:1 Disengage
 
 Tier2 
 #5
-Name: "Girth" Powerful A:3 Attack
-Name: "Tough it out" ManaCost:Opt;Earth;1 H:5 Special
 
 #8
-Name: "Alcoholism" ManaCost:Opt;Earth;2 A:2 A:2 H:4 Text: "--- Opt cost paid ---" Powerful Powerful Attack
+Name: "Alcoholism" D6:3 A:X
+Name: "Sculpt" D6 Earth:X-6 A:2*X Text: "Attacks cannot deal less than 0 damage. They still get modified"
+Name: "Crossbow" Ranged A:3 A:3 Earth
