@@ -17,12 +17,13 @@ Explanation:Advantage
 Explanation:Disarm
 
 Tier1
-Name: "Channel Metal" Metal:2                                                                                           Type:Special
-Name: "Disarm" Disarm                                                                                                   Type:Special
+Name: "Heart of Metal" Metal:2
+Name: "Disarm" Disarm
 
 Tier2
-Name: "Dutybound" Advantage H:4                                                                                         Type:Special
-Name: "Improved Slash" A:4 Metal:1                                                                                      Type:Attack
+Name: "Parry" Disarm Metal:2
+Name: "Dutybound" Advantage A:2
 
 Tier3
-Name: "Extra Attack" ManaCost:Opt;Metal;2 A:6 Text: "--- Opt cost paid ---" A:6                                         Type:Attack
+Name: "Extra Attack" ManaCost:Opt;Metal;2 A:4 Text: "--- Opt cost paid ---" A:4
+

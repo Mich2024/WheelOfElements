@@ -2,15 +2,8 @@ Stats
 
 Variant:1
 Passive
-Attacks can consume disarm on enemies to deal double damage
+You have Advantage against disarmed enemies
 Life: 7
-
-
-Variant:2
-Passive
-Double damage against enemies with Disarm
-Life: 7
-
 
 Type
 Element: Metal
@@ -19,13 +12,14 @@ Element: Water
 Explanation:Disarm
 Explanation:Advantage
 
-
 Tier1
-Name: "Metal Heart" Metal:2                                                 Type:Special
-Name: "Night's Embrace" ManaCost:Water;2 A:7                                    Type:Attack
-Name: "Cloak" Disarm Advantage                                                  Type:Special
+Name: "Heart of Metal" Metal:2
+Name: "Slice Heel" ManaCost:Water;1 Disarm Disarm
+Name: "Poisoned Needle" ManaCost:Water;1 A:2 Text: "If the Attack dealt atleast 4 Damage, Poison:4"
 
-Tier2
-Name: "Sword and Dagger" ManaCost:Water;3 A:7 A:4                               Type:Attack
-Name: "Slit Tendon" Advantage A:1 Disarm                                        Type:Special
+Tier3
+#Name: "Slit Tendon" Advantage A:2 Disarm
+Name: "Blade Flurry" ManaCost:Water;2 A:3 A:3 Text:"A:2 for each enemy you kill with this card"
+
+
 

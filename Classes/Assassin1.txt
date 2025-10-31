@@ -5,12 +5,6 @@ Passive
 Handsize +1 and decksize -1
 Life: 8
 
-
-Variant:2
-Passive
--4 to maximum decksize
-Life: 4
-
 Type
 Element: Metal
 Element: Water
@@ -19,11 +13,11 @@ Explanation:Disarm
 Explanation:Poison
 
 Tier1
-Name: "Metal Heart" Metal:2                                                         Type:Special
+Name: "Strike" A:1
 
 Tier2
-Name: "Cut Muscle" Disarm A:2                                                           Type:Attack
-Name: "Poisoned Knife" ManaCost:Water;1 A:5 Poison:2                                    Type:Attack
+Name: "Parry" Disarm Metal:2
+Name: "Poisoned Knife" ManaCost:Water;1 A:3 Poison:2
 
 Tier3
-Name: "Cut Throat" ManaCost:Water;2 Text: "Execute a non-Boss, if its below half life"  Type:Attack
+Name: "Cut Throat" ManaCost:Water;2 Text: "Execute a non-Boss, if its below half life"
