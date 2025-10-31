@@ -45,6 +45,6 @@ Tier2
 #5
 
 #8
-Name: "Alcoholism" D6:3 A:X
+Name: "Alcoholism" D6:2 A:X
 Name: "Sculpt" D6 Earth:X-6 A:2*X Text: "Attacks cannot deal less than 0 damage. They still get modified"
 Name: "Crossbow" Ranged A:3 A:3 Earth
