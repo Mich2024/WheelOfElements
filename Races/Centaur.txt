@@ -11,9 +11,9 @@ Modifier Tableau
 Rank:1
 Add 2 +4 Add 4 -1
 Add 4 +7 Add 2 -1
-Remove 4 -1 Add 4 +4
+Remove 2 -1 Add 4 +4
 # Sollte eigentlich "Remove 5 +0 Add 5 +4" sein, aber das ist langweilig. (Remove 4 +0 Add 4 +5 ist auch möglich)
-Remove 6 +0 Add 6 +4
+Remove 6 +0 Add 6 +2
 
 #2; 2 (+0,2)
 Rank:2
