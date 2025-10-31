@@ -18,28 +18,18 @@ Type
 Element: Fire
 Element: Wood
 
-Explanation:Disengage
+
+Explanation:Flurry
 Explanation:Vulnerable
 
-Base Cards
-
-#Power Levels : 3,3,5,5,8
-
-#ManaCost:Opt;Fire;1
-
 Tier1
-#3
-Name: "Perfect Cover" Wood:1 Text: "Disengage all enemies"
-Name: "Hide on bush" Disengage Wood:2 Special
+Name: "Meditate" Wood:1 Flurry:1                          
+Name: "Tempered Agression" Disengage Flurry:1                 
 
-Tier2 
-#5
-Name: "Multitask" Wood:1 A:2 Vulnerable Disengage Special
-Name: "Hunters Mark" A:3 Vulnerable Attack
+Tier2
+Name: "Hunters Mark" Ranged A:3 Vulnerable    
+Name: "Barrage" ManaCost:Fire;2 A:2 A:2 A:2  
 
 Tier3
-#8
-Name: "Barrage" ManaCost:Fire;2 A:3 A:3 A:3
-
-#Name: "Barrage" ManaCost:Fire;2 A:3 A:3 A:3 A:3
+Name: "Stalk" Wood:1 Ranged Disengage A:6   
 

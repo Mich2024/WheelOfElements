@@ -18,22 +18,15 @@ Type
 Element: Fire
 Element: Wood
 
-Explanation:Ranged
-
-Base Cards
-
-#Power Levels : 3,3,3,5,5
-
-#ManaCost:Opt;Fire;1
+Explanation:Powerful
 
 Tier1
-#3
-Name: "Sense Weakness" Ranged Vulnerable Vulnerable Special
-Name: "Ambush Strike" ManaCost:Fire;2 Ranged A:3 A:3  Attack
-Name: "Opening Strike" ManaCost:Fire;1 Ranged A:3 Text: "If the target is on full life, deal double damage" Attack
+Name: "Hide on Bush" Disengage Disengage Disengage
+Name: "Natures Strength" Wood:1 Powerful Powerful
 
-Tier2
-#5
-Name: "Predation" Ranged A:4 Text: "If the target dies, Wood:2" Attack
-Name: "Trap" Wood:2 Ranged Disengage Vulnerable Special
+#Tier2
 
+Tier3
+Name: "Shred" ManaCost:Fire;X Flurry:2*X 
+Name: "Multitask" Wood:1 Ranged A:1 Flurry Powerful Vulnerable Disengage
+Name: "Hail of Arrows" ManaCost:Fire;3 Ranged A:6 A:6 A:6

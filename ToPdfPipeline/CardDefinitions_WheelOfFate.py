@@ -1,7 +1,8 @@
 def nothing(kwargs):
         return
 
-linebreakString = "\\13\\"
+linebreakStringNanDeck_TEXT = "\\13\\"
+linebreakStringNanDeck_htmltext = "<br>"
 
 def removeColons(line):
     res = line.replace(":","")
@@ -44,8 +45,8 @@ symbolDict = {
     "E":r"\symEnergy",
     "Energy":r"\symEnergy",
     "A":r"\symAttack",
-    "R":r"\symRange",
-    "Ranged":r"\symRange",
+    "R":r"\symRanged",
+    "Ranged":r"\symRanged",
     "T":r"\symTargets",
     "AOE":"todo", # todo
     "H":r"\symHeal",
@@ -259,6 +260,47 @@ def serializeActionToTex(inputActions):
 
     return res
 
+#converst an action list into nandeck String. Adds "" around the text
+def serializeActionToNanDeck(inputActions):
+    res = ''
+    first = True
+    for action in inputActions:
+            if not first:
+                res += linebreakStringNanDeck_htmltext
+            else:
+                first = False
+            #print(action)
+
+            if isinstance(action, list): #Text
+                action = action[1:] # remove "Text:"" .split(":")[0]
+                action = action[0].split(" ")
+                for word in action:
+                    #print(word.split(":")[0])
+                    if(word.split(":")[0] in symbolDict):
+                    
+                        res += " " + symbolDict[word.split(":")[0]] + " " + word + " "
+                    else:
+                        res += word + " "
+                    
+            
+            else:
+                if action.casefold() == "opt":
+                    res += "--- Opt Paid --- "
+
+                elif action.split(":")[0].casefold() == "blaze":
+                    res += "--- Blaze " + action.split(":")[1] + " --- "
+                else:
+
+                    parts = action.split(":")
+                    if parts[0] in symbolDict:
+                        res += " " + symbolDict[parts[0]]
+                    res += " " + parts[0] 
+                    if len(parts) == 2:
+                        res += ": " + parts[1]
+                        res += " "
+                
+    return res
+
 class actionCard:
 
     '''energyCost = "0"
@@ -358,6 +400,9 @@ class actionCard:
         "Panic":appendAction,
         "Taunt":appendAction,
         "Disengage":appendAction,
+        "D6":appendAction,
+        "Blaze":appendAction,
+        "Opt":appendAction,
 
         "Exhaust":appendModifier,
         "Unrecoverable":appendModifier,
@@ -369,6 +414,62 @@ class actionCard:
         "Wood":appendAction,
         
     }
+
+    def serializeToNandeck(self, order: int):
+
+        
+        template_card = open('Templates/Action_Card_Single.txt', 'r')
+        template_card = template_card.read()
+        template_line_aoe = ""
+        
+
+        if self.aoe != "":
+            template_line_aoe = open('Templates/Action_Card_AOE_Line.txt', 'r')
+            template_line_aoe = template_line_aoe.read()
+            template_line_aoe = template_line_aoe.replace( r"${aoe}", removeColons(self.aoe))
+        template_card = template_card.replace(r"${AOE}",template_line_aoe)
+            
+
+        template_card = template_card.replace(r"${Order}",str(order)).replace(r"${Name}", self.cardName)
+
+        optCost = ""
+        
+        if(self.manaCost) != "":
+            optCost += "Opt: "
+            cost = self.manaCost.split(";")
+            for c in cost[1:]:
+                sym = ""
+                if(c in symbolDict):
+                    sym += symbolDict[c]
+                    optCost += sym + " "
+                else:
+                    optCost += c + " "
+
+        template_card = template_card.replace(r"${Opt_Cost}",optCost)
+
+        textAction = serializeActionToNanDeck(self.actions)
+
+        template_card = template_card.replace(r"${TextBox}",textAction)
+
+        
+        template_card = template_card.replace(r"${Class}",self.classname)
+
+        textTier = "Undef"
+        colTier = "[col_bronze]"
+        if self.tier == "1":
+            textTier = "Bronze"
+            colTier = "[col_bronze]"
+        elif self.tier == "2":
+            textTier = "Silver"
+            colTier = "[col_silver]"
+        elif self.tier == "3":
+            textTier = "Gold"
+            colTier = "[col_gold]"
+
+        template_card = template_card.replace(r"${Rank}",textTier + " " + self.tier).replace(r"${Col_Rank}",colTier)
+        
+        return template_card
+
 
     def serializeToLatex(self):
 

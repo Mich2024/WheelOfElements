@@ -25,24 +25,18 @@ Add 2 Disengage Draw
 
 Type
 
-Explanation:Disengage
+Explanation: Flurry
 
 Base Cards
-
-#Power Levels : 3,3,5,5,8
-
-#ManaCost:Opt;Fire;1
-
 Tier1
-#3
-Name: "Pounce" A:1 A:1 Special
-Name: "Slip Aways" Disengage A:2 Special
-Name: "Bonk" A:3 Attack
+Name: "Gallop" Flurry Disengage
+Name: "Charge" Ranged A:1 
+Name: "Bonk" A:2
 
-Tier2 
-#5
-Name: "Claw" A:2 A:2 Attack
-Name: "Stalk" Disengage A:4 Special
+Tier2
 
-#8
-Name: "Prey upon" A:6 Text: "If there is only one enemy in your zone, deal double damgage" Attack
+
+Tier3
+Name: "Puonce" A:7 Text:"Whenever this kills an enemy, gain Flurry"
+Name: "Rampage" A:1 Flurry Flurry
+Name: "Prey Upon" A:4 A:1

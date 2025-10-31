@@ -28,10 +28,28 @@ DPI=300
 CARDSIZE=6.35,8.89
 BASERANGE=,ON
 
-htmlimage = 1 - [CardCount], Icon_Fire, "..\..\Pictures\Icons\AddFire.png", 0.55, 0.55
-#${Images?}
+htmlimage = 1 - [CardCount], \symAddFire, "..\..\Pictures\Icons\AddFire.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAddMetal, "..\..\Pictures\Icons\AddMetal.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAddWater, "..\..\Pictures\Icons\AddWater.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", 0.55, 0.55
 
-htmlfont=font_18,Arial,18,B,#000000,LEFT
+htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symDisarm, "..\..\Pictures\Icons\Disarm.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symPoison, "..\..\Pictures\Icons\Poison.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symHeal, "..\..\Pictures\Icons\Heal.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symPowerful, "..\..\Pictures\Icons\Powerful.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symFlurry, "..\..\Pictures\Icons\Flurry.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symVulnerable, "..\..\Pictures\Icons\Vulnerable.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symBlaze, "..\..\Pictures\Icons\Poison.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symD6, "..\..\Pictures\Icons\Poison.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symShield, "..\..\Pictures\Icons\Shield.png", 0.55, 0.55
+
+htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png", 0.55, 0.55
+
+htmlfont=font_18,Arial,14,B,#000000,LEFT
 
 ${Cards}
 

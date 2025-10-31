@@ -1,13 +1,13 @@
 Variant:1
 
 Passive
-When you use a potion, you may pay Water:1 to double the numeric effects
+Poison is modified by the modifier deck
 
 Life: 6
 
 Modifiers
-Add 2 +0 Gas Pot
-#Poison:1 AOE:Cleave;2
+Add 2 +0 Blossom Pot
+#Ranged Heal:8
 Add 2 +0 Water Pot
 #Water:2
 Remove 2 +1
@@ -36,11 +36,11 @@ Element: Water
 
 Tier1
 #3
-Name: "Drink up"  Water:1 Heal:6 Special
+Name: "Supply Run"  Ranged Water:1 Heal:5 Special
 Name: "Leeching Tinctures" Water:2 Text: "Remove any amount of poison from your enemies. Heal twice that much health" Special
 Name: "Poison the well" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3 Attack
 
-Tier3
-#8
-Name: "Miasma" Text: "Disarm all Poisoned targets" AOE:All Special
-Name: "Drown in poison" ManaCost:Opt;Water;5 Poison:8 Text: "--- Opt cost paid ---" A:X Text: "X is the amount of poison on the target" Attack
+Tier2
+#5
+Name: "Prolonged Suffering" ManaCost:Opt;Water;1 Poison:6 Text: "--- Opt cost paid ---" Disarm Attack
+Name: "Toxic Shock" Ranged A:X Text: "X is the amount of poison on the target" Attack
