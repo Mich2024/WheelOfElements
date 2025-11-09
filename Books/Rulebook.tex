@@ -11,6 +11,7 @@
 %Show what exists first
 %Explain how it is used second
 %Go top down (Complex overarching to simple detail)
+%? Try to not crossref? People can remember 3 things at most, if you have to make them
 
 \begin{document}
 	\maketitle
@@ -19,9 +20,7 @@
 	Game Overview\\
 	
 	Wheel of Elements is a Slay-the-Spire-like cooperative multi-classing card game. Become an unkillable tank, a Mage of Immense arcane Power or something in between. Beat four battles of increasing difficulty and prove your mettle.\\
-	
 	Wheel of Elements is a multi-classing game. Each player starts with two classes and a race. Improve or add a class after each won combat.\\
-	
 	Wheel of Elements is a card game. Each Class an Race gives you cards which combine to a 15 card Deck. Choose which you want to play.\\ 
 	
 	Wheel of Elements has an elemental Wheel. Create elements to consume them for Bursts of Power.\\
@@ -38,7 +37,7 @@
 	
 	\tableofcontents
 	
-		\section{Components}
+	\section{Components}
 	
 	\subsection{Cards}
 	
@@ -60,15 +59,15 @@
 	Action draw pile - Shuffle your deck before combat begins to create your draw pile
 	Action discard pile - After you play a card, it goes here
 	Modifier draw pile - Shuffle your deck before combat begins to create your draw pile
-	Modifier draw pile - After you modify an attack, all drawn modifiers go here
-	Tableau - The tablea tracks you level up decision and life
+	Modifier discard pile - After you modify an attack, all drawn modifiers go here
+	Tableau - The tableau tracks you level up decision and life
 	Enemy Zone - Enemies go here, with the configuration described in the storybook
 	
 	
 	\section{Your Decks}
 	\subsection{The action Deck}
 	Card pool - The cards that can be added to your deck
-	Before combat selesct 15 cards, these will be your deck
+	Before combat aelect 15 cards, these will be your deck
 	Theaction deck contains all cards you can play during combat.
 	Card rarity - Cards can have different rarity levels, from bronze to mithril.
 	Card power varies greatly, but two cards of the same rarity are generally equal
@@ -83,11 +82,41 @@
 	\section{Leveling Up}
 	
 	When you level up, you may choose a new class and add its shingle to your tableau.
+	The class shingles have to be placed in the leftost slot of their rank.
+	Rank 1 classes go in the top row.
+	Rank 2 classes go in the middle row.
+	Rank 3 classes go in the bottom. %Picture for this
+	Each slot for a shingle has changes to the modifer deck printed on it.
+	When you cover a slot with a shingle, add or remove the printed modifiers to your modifier deck.
+	Add the chosen classes cards to your card pool.
+	Inrease your life tracker to reflect the new maximum life.
+	
+	%Shingles passgenau auf das brett zuschneiden?
+	%Dreiecke, Squares, Fünfecke an de seiten?
+	%Runde ecken etc?
 	
 	\section{Events}
+	Events will happen to you between each fight.
+	Events can have many interesting effects and will warp how you choose to play your game.
+	
+	
 	\section{The Sorybook}
-	\section{Stories}
-	\section{Encounters}
+	The storybook contains all of the Stories you can play in Wheel of Elements.
+	Each story will take about 2 hours to play through, contain 3 Encouters and one text containing a short story for why you are fighting.
+	
+	\subsection{Stories}
+	Each story begins with a plot hook, which should be narrated by a player.
+ 	The text is sepearated into four sections. After reading a section, start one of the three fights. After finishing a fight, read another section, draw an event, and level up. After finishing the second fight, repeat this process.
+ 	%Flowchart? with nice pics?
+ 	
+	
+	\subsection{Encounters}
+	Each story comes with three enemy encounters. An encounter presents which enemies hould be fought and in which arrangement.
+	There are always 5 enemy setups described per encounter. Each player gets one of those setups.
+	These enemy setups are distributed in clockwise seating order. %Please get  a picture for this
+	If you are playing with 
+	
+	
 	\section{Enemies}
 	\subsection{Enemy Keywords}
 	\section{Combat Round}
