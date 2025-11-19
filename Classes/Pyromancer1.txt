@@ -5,37 +5,24 @@ At the beginning of your round, Fire:1
 
 Life: 6
 
-
-Variant:2
-
-Passive
-At the beginning of your round, Fire:1
-
-Life: 6
-
-
 Type
 Element: Fire
 
 Explanation:Vulnerable
-Explanation:Flurry
-
-
-
-#Power Levels : 3,3,5,5,8
+Explanation:Blaze
 
 #ManaCost:Opt;Fire;1
 
 Tier1
 #3
-Name: "Fireball" ManaCost:Opt;Fire;X A:X Aoe:Cleave;3 Attack
-Name: "Warmth" Fire:1 A:2 Special
+Name: "Fireball" ManaCost:Fire;X Text: "X can't be 0" A:X Aoe:Cleave;3
+Name: "Heart of Fire" Fire:2 Blaze:2 Fire:1
 
 Tier2
 #5
-Name: "Fire Breathing" ManaCost:Fire;1 A:2 Vulnerable Aoe:Cleave;2 Attack
-Name: "Fire up" Fire:2 Flurry:1 Flurry:1 Special
+Name: "Fire Breathing" ManaCost:Fire;2 A:1 Vulnerable Aoe:Cleave;2
+Name: "Scorch" Fire:1 A:2 Blaze:3 Vulnerable Vulnerable
 
 Tier3
-#8
-Name: "Eruption" ManaCost:Fire;3 A:4 Aoe:All Text: "Target all enemies in range" Attack
+#6
+Name: "Eruption" ManaCost:Fire;3 A:3 Aoe:All

@@ -1,33 +1,27 @@
 Variant:1
 
 Passive
-Add 4 +2 Draw
-
-Life: 6
-
-Variant:2
-
-Passive
-Add 1 +8 Draw
+Add 5 +2 Draw
 
 Life: 6
 
 Type
 Element: Wood
+Element: Fire
 
 Base Cards
 
-#Power Levels : 3,3,3,8,8
+#Power Levels : 2,2,2,6,6
 
 #ManaCost:Opt;Wood;1
 
 Tier1
 #3
-Name: "Shred" ManaCost:Opt;Wood;2 A:1 A:1 Text: "--- Opt cost paid ---" A:1 A:1 Attack
-Name: "Tangle Tumble" Ranged Disengage Disengage Wood:1 Special
-Name: "Unload" ManaCost:Opt;Wood;X A:1 Text: "Repeat X Times" Attack
+Name: "Shred" ManaCost:Fire;2 Flurry:3
+Name: "Tangle Tumble" Ranged Disengage Disengage
+Name: "Focus" Vulnerable
 
 Tier3
 #8
-Name: "Nature's Retreat" Wood:2 Disengage H:10 Special
-Name: "Heavy Shots" Ranged A:4 A:4  Attack
+Name: "Prey Upon" Ranged Wood:2 Vulnerable Vulnerable
+Name: "Execute" Ranged A:5

@@ -17,7 +17,7 @@ Life: 6
 Type
 Element: Fire
 
-Explanation:Disengage
+Explanation:Flurry
 
 Base Cards
 
@@ -35,4 +35,5 @@ Tier2
 #5
 Name: "Swathed in Flames" Fire:1 A:2 Aoe:Cleave;2 Special
 Name: "Blazing Dash" Fire:1 A:3 Disengage Special
+Name: "Fire up" Fire:2 Flurry:1 Flurry:1 Special
 Tier3

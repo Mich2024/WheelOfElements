@@ -1,7 +1,25 @@
 #Todays Print
 
 
+###########################################################################################
+Name:Flurry.exe
 
+Normal
+
+Life:20
+Count:2
+
+Rolls:A Flurry Flurry
+Rolls:B Flurry Flurry
+Rolls:C Text: "Use all stored Flurries"
+
+Hard
+
+Life:20
+Count:0
+Rolls:A Flurry Flurry Flurry
+Rolls:B Flurry Flurry Flurry
+Rolls:C Text: "Use all stored Flurries"
 
 ###########################################################################################
 Name:Orc Raider

@@ -1,37 +1,28 @@
-Variant:1
-
 Passive
-Add 10 +2 Draw
+Add 4 +2 Draw
 
 Life: 6
-
-Variant:2
-
-Passive
-Add 2 +12
-
-Life: 6
-
 
 Type
 Element: Wood
+Element: Fire
 
-Explanation:Heal
+Explanation:Powerful
 
 Base Cards
 
-#Power Levels : 3,3,3,5,5
+#Power Levels : 2,2,2,4,4
 
 #ManaCost:Opt;Wood;1
 
 Tier1
 #3
-Name: "Lasting Aid" ManaCost:Opt;Wood;2 Ranged H:6 Text: "--- Opt cost paid ---" H:8 Special
-Name: "Quickshot" Ranged A:1 A:1 Attack
-Name: "Plink" Ranged A:1 Wood:2 Attack
+Name: "Hype" Powerful Powerful
+Name: "Harass" Flurry Text: "Your flurries have Ranged this turn"
+Name: "Heart of Wood" Wood:2
 
 Tier2 
 #5
-Name: "Split Care" Ranged H:5 H:5 Special
-Name: "Volley Fire" ManaCost:Opt;Wood;3 Ranged A:2 A:2 Text: "--- Opt cost paid ---" A:2 A:2 Attack
+Name: "Roids" Wood A:1 Powerful
+Name: "Volley Fire" ManaCost:Fire;3 Ranged A:3 A:3 A:3
 

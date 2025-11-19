@@ -1,42 +1,31 @@
-Variant:1
-
 Passive
-Add 4 +2 Draw
-
+Add 3 +2 Draw
 
 Life: 6
-
-Variant:2
-
-Passive
-Add 4 +3
-
-Life: 6
-
-
 
 Type
 Element: Wood
+Element: Fire
 
-Explanation:Ranged
-Explanation:Disengage
+Explanation:Flurry
+Explanation:Vulnerable
 
 Base Cards
 
-#Power Levels : 3,3,5,5,8
+#Power Levels : 2,2,4,4,6
 
 #ManaCost:Opt;Wood;1
 
 Tier1
 #3
-Name: "Bushcraft" ManaCost:Opt;Wood;3 Ranged Disengage Text: "--- Opt cost paid ---" A:4 A:4 Attack
-Name: "Pocket Sand" Ranged A:2 Disengage Attack
+Name: "Hunters Mark" ManaCost:Fire;2 Ranged A:3 Vulnerable
+Name: "Pocket Sand" Wood Ranged Disengage
 
 Tier2
 #5
-Name: "Canpoy Rain" Ranged A:2 A:2   Attack
-Name: "Snipe" Ranged Wood:1 A:4 Attack
+Name: "Hail of arrows" Ranged A:1 Flurry
+Name: "Snipe" Wood Ranged A:2  
 
 Tier3
 #8
-Name: "Hail of arrows" Ranged A:2 A:2 A:2 Attack
+Name: "Twinshot" Wood A:2 Flurry 
