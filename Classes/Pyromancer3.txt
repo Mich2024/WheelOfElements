@@ -1,17 +1,7 @@
-Variant:1
-
 Passive
-Whenever an enemy in your zone dies, move all of its vulerable stack to another enemy
-
-Life: -6 (minus six)
-
-Variant:2
-
-Passive
-Whenever an enemy in your zone dies, another enemy gets vulnerable
+When you consume X Fire, A:X
 
 Life: 6
-
 
 Type
 Element: Fire
@@ -24,11 +14,11 @@ Base Cards
 
 Tier1
 #3
-Name: "Fan of Flames" Fire:1 A:1 AOE:Cleave;2 Special
-Name: "Carbonize" ManaCost:Fire;2 A:6 Text: "If this attack kills, Fire:2" Attack
-Name: "Fiery veins" ManaCost:Fire;X Flurry:X+1 Special
+Name: "Carbonize" ManaCost:Fire;2 A:5 Text: "If this attack kills, Fire:2"
+Name: "Fiery veins" ManaCost:Opt;Fire;X Flurry:X+1
+Name: "Blazing Dash" Blaze:1 Fire:1 Ranged A:1 Disengage
 
 Tier3
 #8
-Name: "Mortal Flame" ManaCost:Opt;Fire;5 A:8 Text: "--- Opt cost paid: ---" Text: "This attack deals double damage" Attack
-Name: "Mutilate" Text: "All enemies everywhere get vulnerable" Special
+Name: "Mortal Flame" ManaCost:Opt;Fire;5 Ranged A:5 Text: "--- Opt cost paid: ---" Text: "This attack deals triple damage"
+Name: "Mutilate" Fire:1 Vulnerable AOE:All

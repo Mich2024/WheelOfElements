@@ -1,18 +1,7 @@
-Variant:1
-
 Passive
-When you consume X Fire, A:X
+Whenever an enemy in your zone dies, another enemy gets vulnerable
 
 Life: 6
-
-
-Variant:2
-
-Passive
-When you consume X Fire, A:X
-
-Life: 6
-
 
 Type
 Element: Fire
@@ -27,13 +16,12 @@ Base Cards
 
 Tier1
 #3
-Name: "Wall of Fire" Fire:2 Disengage Special
-Name: "Flame Jet" ManaCost:Fire;4 Vulnerable Vulnerable A:1 Aoe:MostRight;2 Attack
-Name: "Roast" ManaCost:Fire;1 A:3 Vulnerable Attack
+Name: "Wall of Fire" Fire:1 Ranged Disengage
+Name: "Flame Jet" ManaCost:Fire;3 Vulnerable Vulnerable A:1 Blaze:3 Text: "Use the AOE" Aoe:MostRight;2
+Name: "Roast" ManaCost:Fire;1 Ranged A:1 Vulnerable
 
-Tier2 
+Tier2
 #5
-Name: "Swathed in Flames" Fire:1 A:2 Aoe:Cleave;2 Special
-Name: "Blazing Dash" Fire:1 A:3 Disengage Special
-Name: "Fire up" Fire:2 Flurry:1 Flurry:1 Special
+Name: "Swathed in Flames" ManaCost:Fire;2 A:3 Aoe:Cleave;2
+Name: "Fire up" Flurry:1 Flurry:1 Blaze:2 Fire:2
 Tier3

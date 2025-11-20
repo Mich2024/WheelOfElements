@@ -1,8 +1,67 @@
 #Todays Print
 
+###########################################################################################
+Name:Metalcrafter
+
+Normal
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3,4 A:2 A:2
+Rolls:5,6 Text: "Adjacent golems gain powerful"
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
 
 ###########################################################################################
-Name:Flurry.exe
+Name:Patching Golem
+
+Normal
+
+Life:30
+Count:2
+
+Rolls:A Text "Move all damage from other golems in this zone to this unit"
+Rolls:B A:3
+
+Hard
+
+Life:40
+Count:2
+
+Rolls:A Text "Move all damage from other golems in this zone to this unit"
+
+###########################################################################################
+Name:Colossal Golem
+
+Normal
+
+Life:20
+Count:2
+Passive: Shield:1
+
+Rolls:1,2,3 A:3
+Rolls:4,5,6 A:2 A:2
+
+Hard
+
+Life:20
+Count:2
+Passive: Shield:2
+
+Rolls:1,2,3 A:3
+Rolls:4,5,6 A:2 A:2
+
+###########################################################################################
+Name:Capacitor Golem
 
 Normal
 
@@ -10,7 +69,7 @@ Life:20
 Count:2
 
 Rolls:A Flurry Flurry
-Rolls:B Flurry Flurry
+Rolls:B Flurry Flurry Powerful
 Rolls:C Text: "Use all stored Flurries"
 
 Hard
