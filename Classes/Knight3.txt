@@ -5,7 +5,8 @@ Skill:Charisma
 
 Variant:1
 Passive
-Treat your *0 as a *2
+In your first turn, ignore elemental costs.
+Treat Costs of X as 3 if you are not paying them.
 Life: 14
 
 Variant:2

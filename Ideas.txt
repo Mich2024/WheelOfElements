@@ -57,3 +57,5 @@ Swap sides of flurry and powerful, mirror on vuln
 Add Blaze for fire earth
 Add D6 to earth
 
+
+Rename Vuln to Scorch
