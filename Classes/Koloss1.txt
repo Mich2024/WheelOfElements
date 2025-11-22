@@ -1,14 +1,6 @@
-Variant:1
-
 Passive
 At the start of combat: rotate the leftmost enemy of the player to your right
 Life: 10
-
-Variant:2
-
-Passive
-At the start of combat: rotate the leftmost enemy of the player to your right
-Life: 0
 
 
 Type
@@ -19,13 +11,12 @@ Explanation:Shield
 Explanation:Advantage
 
 Tier1
-Name: "Earthen Heart" Earth:2                                       Type:Special
-Name: "Slash" ManaCost:Metal;2 Advantage A:6 Type:Attack            Type:Special
+Name: "Earthen Heart" Earth:2
+Name: "Slash" ManaCost:Metal;2 Advantage A:4
 
 Tier2
-Name: "Shield Slam" S:1 A:X Text: "X is equal to your shield"       Type:Attack
-Name: "Gargantuan" ManaCost:Metal;2 A:9                             Type:Attack
+Name: "Shield Slam" S:1 A:X Text: "X is equal to your shield"
+Name: "Basics" S:1 Advantage ranged
 
 Tier3
-Name: "Guardian" S:3                                                Type:Special
-
+Name: "Shield Up!" S:3

@@ -2,24 +2,20 @@ Stats
 
 Variant:1
 Passive
-If you would die, exhaust an empty Lifedice. If you do, A:X roll the exhausted die, the result is X.
+#Yes its silver lol 22/11/2025
+Whenever a Dice, including the Monster dice, rolls a 1, A:D6. (The attack you gain from the monster die happens before start of combat effects.)
 Life: 0
-
-Variant:2
-Passive
-If you would die, exhaust an empty Lifedice. If you do, roll it and heal that much life
-Life: 4
 
 Type
 Element: Earth
 
-Explanation:Flurry
+Explanation:Blaze
 
 Tier1
-Name: "Slap" Flurry:2                                                                                                                               Type:Special
-Name: "Crack head" ManaCost:Opt;Earth;1 Powerful Powerful Text: "--- Opt cost paid ---" A:2                                                         Type:Attack
-Name: "Sweep" ManaCost:Opt;Earth;3 A:3 Text: "--- Opt cost paid ---" Text: "AOE:MostRight;3 "                                                       Type:Attack
+Name: "Strike" A:1
+Name: "Fire Strike" A:1 Blaze:1 Earth:1
+Name: "Tenacious" ManaCost:Opt;Earth;3 A:D6 A:D6
 
-Tier2
-Name: "Confusion" Text: "Reroll the Monster Die. The Result is X." A:X                                                                              Type:Special
-Name: "Blackout" ManaCost:Opt;Earth;3 Text: "You do not lose powerful this turn as the turn ends" Text: "--- Opt cost paid ---" Powerful Powerful   Type:Special
+Tier3
+Name: "See Double" Text: "Roll two D6. Create Earth equals to one result and A:X. X is the other result." Blaze:1
+Name: "Sober" ManaCost:Opt;Earth;1 A:D6 Text: "--- Opt cost paid ---" ranged A:D6

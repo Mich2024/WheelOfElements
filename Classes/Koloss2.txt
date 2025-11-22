@@ -1,29 +1,21 @@
-Variant:1
-
 Passive
-At the beginning of each round, gain S:1.
+At the beginning of each round, H:2.
 
 Life: 0
-
-Variant:2
-
-Passive
--
-Life: 20
 
 
 Type
 Element: Earth
 Element: Metal
 
-Explanation:Taunt
+Explanation:D6
 
 Tier1
-Name: "Earthen Heart" Earth:2                                           Type:Special
-Name: "Guard" S:1                                                       Type:Special
-Name: "Indomitable" ManaCost:Metal;2 S:1 Text: "Double your shield"     Type:Special
+Name: "Earthen Heart" Earth:2
+Name: "Cleave" ManaCost:Metal;3 A:D6 Aoe:Cleave;2
+Name: "Earthen Heart" Earth:2
 
-Tier2
-Name: "Bash" A:5                                                        Type:Attack
-Name: "Body of Effulgent Beryl" S:1 A:2                                 Type:Special
+Tier3
+Name: "Sword and Shield" S:1 A:D6
+Name: "Roar" A:1 Aoe:All
 

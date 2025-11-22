@@ -2,14 +2,14 @@ Stats
 
 Variant:1
 Passive
-Attacks can consume disarm on enemies to deal double damage
+Attacks can consume Stun on enemies to deal double damage
 Life: 7
 
 Type
 Element: Metal
 Element: Water
 
-Explanation:Disarm
+Explanation:Stun
 Explanation:Poison
 Explanation:Advantage
 
@@ -20,4 +20,4 @@ Name: "Strike" A:1
 
 Tier2
 Name: "Sword and Dagger" ManaCost:Water;3 A:6 A:3
-Name: "Cloak" Disarm Advantage Advantage
+Name: "Cloak" Stun Advantage Advantage

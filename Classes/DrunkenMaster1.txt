@@ -2,28 +2,23 @@ Stats
 
 Variant:1
 Passive
-At the start of Combat, Roll a D6. A:X, where X is the result
+At the start of Combat, A:D6.
 Life: 8
-
-Variant:2
-Passive
-At the start of Combat, Roll a D6. A:X, where X is the result
-Life: 12
 
 Type
 Element: Earth
 
-Explanation:Powerful
+Explanation:D6
 Explanation:Shield
 
 Tier1
-Name: "Inner Earth" A:2 Earth:1                                                                                         Type:Special
-Name: "Shield" S:1                                                                                                      Type:Special
+Name: "Strike" A:1
+Name: "Shield" S:1
 
 Tier2
-Name: "Repartee" ManaCost:Opt;Earth;1 A:4 Text: "--- Opt cost paid ---" Powerful Powerful                               Type:Attack
-Name: "Angerfist" A:2 Earth:1 Text: "If this is your first card this turn, discard a Card at Random"                    Type:Attack
+Name: "Repartee" ManaCost:Opt;Earth;1 A:D6 Text: "--- Opt cost paid ---" S:1
+Name: "Angerfist" A:2 Earth:1
 
 Tier3
-Name: "Weave" Text: "Create a full D4 Lifedice." A:4                                                                    Type:Attack
+Name: "Weave" A:D6 Earth:2
 

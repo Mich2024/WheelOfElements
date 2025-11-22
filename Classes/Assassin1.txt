@@ -9,14 +9,14 @@ Type
 Element: Metal
 Element: Water
 
-Explanation:Disarm
+Explanation:Stun
 Explanation:Poison
 
 Tier1
 Name: "Strike" A:1
 
 Tier2
-Name: "Parry" Disarm Metal:2
+Name: "Parry" Stun Metal:2
 Name: "Poisoned Knife" ManaCost:Water;1 A:3 Poison:2
 
 Tier3

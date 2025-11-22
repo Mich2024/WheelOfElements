@@ -1,16 +1,7 @@
-Variant:1
-
 Passive
-At the beginning of each round, H:2.
+At the beginning of each round, gain S:1.
 
 Life: 10
-
-Variant:2
-
-Passive
-At the beginning of each round, H:2.
-
-Life: 0
 
 
 Type
@@ -18,13 +9,13 @@ Element: Earth
 Element: Metal
 
 Tier1
-Name: "Grounded Stance" Powerful Earth:1                                        Type:Special
-Name: "Sword and Shield" ManaCost:Metal;2 Advantage S:1 A:4                     Type:Special
-Name: "Crush" ManaCost:Metal;2 Powerful Advantage A:4                           Type:Attack
+Name: "Grounded Stance" Advantage Earth:1
+Name: "Fight On" ManaCost:Metal;1 A:D6 ranged
+Name: "Indomitable" ManaCost:Metal;2 S:1 Text: "Double your shield"
 
-Tier3
-Name: "Cleave" S:1 A:3 Aoe:Cleave;2                                             Type:Attack
-Name: "Roar" A:2 Aoe:All                                                        Type:Attack
+Tier2
+Name: "Bash" A:D6
+Name: "Guard" ranged S:2
 
 
 
