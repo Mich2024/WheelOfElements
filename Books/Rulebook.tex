@@ -1,8 +1,10 @@
 \documentclass[english,10pt,a4paper]{article}
 \usepackage[T1]{fontenc}
 \usepackage{graphicx}
+\usepackage[margin=2cm]{geometry}
 \usepackage{xcolor}
 \usepackage{babel}
+\usepackage{longtable}
 \title{Rulebook}
 
 \author{Alexander Mödder and Alexander Vinkeloe}
@@ -14,177 +16,225 @@
 %? Try to not crossref? People can remember 3 things at most, if you have to make them
 
 \begin{document}
-	\maketitle
-	
-	%\section{Foreword} This one wont have a section formatting, but still needs to be there
-	\textbf{Game Overview}\\
-	Wheel of Elements is a cooperative multi-classing deckbuilder. Become an indomitable tank, a Mage of Immense arcane Power or something between, like a berserking Alchemist. Beat three battles of increasing difficulty and prove your mettle.\\
-	
-	Wheel of Elements is a \textbf{multi-classing} game. Each player starts with a Race and two classes. Improve or add a class after each won combat.\\
-	
-	Wheel of Elements is also a \textbf{deckbuilder}. Each Race and class gives you cards which combine to a 15 card Deck. Choose which you want to play.\\ 
-	
-	\textbf{Playtime}\\
-	The Game consists of three fights with random events and deckbuilding sessions between them. A full game takes about 2 hours. Plan for some extra time your first game.\\
-	
-	\textbf{Winning \& Losing}\\
-	Victory - Victory is achieved when all enemies are dead.\\
-	Loss - You lose when every player dies in the same fight.\\
-	
-	\tableofcontents
-	\section{Components}
-	%recalc way at the end
-	\begin{itemize}
-		\item 1 Rulebook
-		\item 1 Storybook
-		\item 1 Elemental Wheel
-		\item 25 Element Chips
-		\item 10 Race Tableau
-		\item 30 Class Shingles
-		\item ~220 Small Cards 
-		\begin{enumerate}	
-			\item (5 Base modifier decks a 10 cards)
-			\item (10 Race modifier Decks a ~15 cards)
-			\item (~20 From Passives)
-		\end{enumerate}
-		\item ~210 Player Cards	
-		\begin{enumerate}	
-			\item (30 Class decks a 5 cards)
-			\item (10 Race decks a 6 cards)
-		\end{enumerate}
-		\item 20 Events
-		\item 150 Monsters
-		\item 5 Dice (Monster Die and Drunkenmaster Die)
-		\item 20 Plastic Cubes 	(Damage Trackers for monsters \& Players)
-		\item 50 Tokens Boons\&Banes
-	\end{itemize}
-	
-	
-	
-	\section{Setup}
+\maketitle
+
+%\section{Foreword} This one wont have a section formatting, but still needs to be there
+\textbf{Game Overview}\\
+Wheel of Elements is a cooperative multi-classing deckbuilder. Become an indomitable tank, a Mage of Immense arcane Power or something between, like a berserking Alchemist. Beat three battles of increasing difficulty and prove your mettle.\\
+
+Wheel of Elements is a \textbf{multi-classing} game. Each player starts with a Race and two classes. Improve or add a class after each won combat.\\
+
+Wheel of Elements is also a \textbf{deckbuilder}. Each Race and class gives you cards which combine to a 15 card Deck. Many cards twist the rules and let you get creative with your combinations., Choose the way in which you create your deck.\\ 
+
+\textbf{Playtime}\\
+The Game consists of three fights with random events and deckbuilding sessions between them. A full game takes about 2 hours. Plan for some extra time your first game.\\
+
+\textbf{Winning \& Losing}\\
+Victory - Victory is achieved when all enemies are dead.\\
+Loss - You lose when every player dies in the same fight.\\
+
+\tableofcontents
+\section{Components}
+%recalc way at the end
+\begin{itemize}
+	\item 1 Rulebook
+	\item 1 Storybook
+	\item 1 Elemental Wheel
+	\item 25 Element Chips
+	\item 10 Race Tableau
+	\item 30 Class Shingles
+	\item ~220 Small Cards 
 	\begin{enumerate}	
-		\item Pick a Race
-		\item Pick a Level 1 Class
-		\item Pick a different level 1 Class
-		\item Shuffle your Action decks together
-		\item Do the modifier changes to your modifier Deck depending of the Race Tableau and shuffle it. Then put the class shingles in the Race Tableau
-		\item Put the Elemental Wheel in the middle
-		\item Select a story from the storybook
-		\item Each player setups the his enemies corresponding to his Fight 1 encounter card
-		\item Start Combat
+		\item (5 Base modifier decks a 10 cards)
+		\item (10 Race modifier Decks a ~15 cards)
+		\item (~20 From Passives)
 	\end{enumerate}
+	\item ~210 Player Cards	
+	\begin{enumerate}	
+		\item (30 Class decks a 5 cards)
+		\item (10 Race decks a 6 cards)
+	\end{enumerate}
+	\item 20 Events
+	\item 150 Monsters
+	\item 5 Dice (Monster Die and Drunkenmaster Die)
+	\item 20 Plastic Cubes 	(Damage Trackers for monsters \& Players)
+	\item 50 Tokens Boons\&Banes
+\end{itemize}
+
+
+
+\section{Setup}
+\begin{enumerate}	
+	\item Pick a Race
+	\item Pick a Level 1 Class
+	\item Pick a different level 1 Class
+	\item Shuffle your Action decks together
+	\item Do the modifier changes to your modifier Deck depending of the Race Tableau and shuffle it. Then put the class shingles in the Race Tableau
+	\item Put the Elemental Wheel in the middle
+	\item Select a story from the storybook
+	\item Each player setups the his enemies corresponding to his Fight 1 encounter card
+	\item Start Combat
+\end{enumerate}
+
+\section{Play Area}
+
+Action draw pile - Shuffle your deck before combat begins to create your draw pile
+Action discard pile - After you play a card, it goes here
+Modifier draw pile - Shuffle your deck before combat begins to create your draw pile
+Modifier discard pile - After you modify an attack, all drawn modifiers go here
+Tableau - The tableau tracks you level up decision and life
+Enemy Zone - Enemies go here, with the configuration described in the storybook
+
+
+\section{Your Decks}
+\subsection{The action Deck}
+Card pool - The cards that can be added to your deck
+Before combat select 15 cards, these will be your deck
+The action deck contains all cards you can play during combat.
+Card rarity - Cards can have different rarity levels, from bronze to mithril.
+Card power varies greatly, but two cards of the same rarity are generally equal
+
+\subsection{The modifier Deck}
+The modifier cards are used every time you attack an enemy. They can have three effects:
+Numerical - Adds a number to your attack damage
+Elements - Create the shown elements
+Draw - Perform all other effects of this modifier, and draw another
+
+
+\section{Leveling Up}
+
+When you level up, you may choose a new class and add its shingle to your tableau.
+The class shingles have to be placed in the leftmost slot of their rank.
+Rank 1 classes go in the top row.
+Rank 2 classes go in the middle row.
+Rank 3 classes go in the bottom. %Picture for this
+Each slot for a shingle has changes to the modifier deck printed on it.
+When you cover a slot with a shingle, add or remove the printed modifiers to your modifier deck.
+Add the chosen classes cards to your card pool.
+Increase your life tracker to reflect the new maximum life.
+
+%Shingles passgenau auf das brett zuschneiden?
+%Dreiecke, Squares, Fünfecke an de seiten?
+%Runde ecken etc?
+
+\section{Events}
+Events will happen to you between each fight.
+Events can have many interesting effects and will warp how you choose to play your game.
+
+
+\section{The Storybook}
+The storybook contains all of the Stories you can play in Wheel of Elements.
+Each story will take about 2 hours to play through, contain 3 Encounters and one text containing a short story for why you are fighting.
+
+\subsection{Stories}
+Each story begins with a plot hook, which should be narrated by a player.
+	The text is separated into four sections. After reading a section, start one of the three fights. After finishing a fight, read another section, draw an event, and level up. After finishing the second fight, repeat this process.
+	%Flowchart? with nice pics?
 	
-	\section{Play Area}
+
+\subsection{Encounters}
+Each story comes with three enemy encounters. An encounter presents which enemies should be fought and in which arrangement.
+There are always 5 enemy setups described per encounter. Each player gets one of those setups.
+These enemy setups are distributed in clockwise seating order. %Please get  a picture for this
+If you are playing with 
+
+
+\section{Enemies}
+\subsection{Enemy Keywords}
+\section{Combat Round}
+\subsection{Player Turn}
+Shuffle your Action deck and your modifier deck before the combat starts. Empty the Elemental Wheel.\\
+Start of Turn\\
+Draw up to your maximum hand size.
+	Empty draw pile - When your draw pile is empty and you need to draw, your discard pile becomes your new draw pile. Shuffle it.
+Roll the Monster Die
+Start of turn and start of combat abilities trigger. Players may decide order.
+Play\\
+Players may play up to 2 cards each turn.
+To play a card:
+Pay its mandatory element cost
+Choose if you want to play the optional costs.
+Resolve the card.
+Put the played card into the discard pile.
+
+\subsection{Enemy Turn}
+Your leftmost enemy, that didnt act yet, uses their action. 
+Resolve the action. 
+Repeat until all your enemies acted, even if you die.
 	
-	Action draw pile - Shuffle your deck before combat begins to create your draw pile
-	Action discard pile - After you play a card, it goes here
-	Modifier draw pile - Shuffle your deck before combat begins to create your draw pile
-	Modifier discard pile - After you modify an attack, all drawn modifiers go here
-	Tableau - The tableau tracks you level up decision and life
-	Enemy Zone - Enemies go here, with the configuration described in the storybook
+\subsection{Cleanup step}
+Remove all single Turn Boons\&Banes (They are Shield, Player Powerful, Advantage etc).\\
+Apply Poison Damage.\\
+Move your leftmost enemy to the player to your left. This happens simultaneous. You cannot give away an enemy given to you this way.\\
+If you are dead give all your remaining enemies to your left. \\
+Rotate the mana wheel.\\
+Shuffle the modifier discard back into the deck if the *0 or *2 modifieris in the discard.
+
+\section{Playing a Card}
+You may play two cards per turn. Most cards do not have a cost. Others have mana costs.
+To pay  a mana cost, remove the stated amount of mana markers from the corresponding field on the wheel back into the stash.
+If the cost is not optional, you may not play it without paying the mana cost.
+
+When playing a card, you execute all effects from top to bottom.
+All effects have to be used if possible.
+
+The most common effects are attacks and mana generation.
+To perform an attack, first select an enemy to attack.
+Secondly, you reveal a modifier from you modifer deck, and add its value to the attack.
+Every Deck also has a *2 and a *0. In that case, multiply your attak value by two (or  zero) after everything else was applied.
+
+To generate elemental mana, check how many mana symbols are shown on the card, and move that many markers from the stash to the wheel, on the corresponding field.
+
+If the card had an optional cost, some actions are separated below by a line.
+Only perform these actions if the optional cost is paid.
+
+Some cards have an Area Of Effect (AOE) marker. If so, target monsters in the pattern shown by the AOE.
+Then repeat all attacks and banes for each monster that is targeted by the AOE.
+
+After playing the card, put it into your discard pile
+
+%Pic: structureof card
+
+\subsection{Modifiers}
+Over the course of the game, you can add many modifiers that are more interesting then just numbers.
+The possible effects are:
+\begin{longtable}{|p{2cm}|p{14.2cm}|}
+	\hline
+	Draw &  Draw another modifier and apply both. This effect can chain into multiple draws  \\
+	\hline
+	Element & Create the shown elements after the full card is performed \\
+	\hline
+	Potions & These cards are alchemist exclusive. When you draw one, immediately put them aside and draw another modifier. When used, the potion returns to your modifier discard \\
+	\hline
+	Keywords & Some races have their keywords on some of the modifiers. If so, apply the keyword afert the full card is performed. \\
+	\hline
 	
-	
-	\section{Your Decks}
-	\subsection{The action Deck}
-	Card pool - The cards that can be added to your deck
-	Before combat select 15 cards, these will be your deck
-	The action deck contains all cards you can play during combat.
-	Card rarity - Cards can have different rarity levels, from bronze to mithril.
-	Card power varies greatly, but two cards of the same rarity are generally equal
-	
-	\subsection{The modifier Deck}
-	The modifier cards are used every time you attack an enemy. They can have three effects:
-	Numerical - Adds a number to your attack damage
-	Elements - Create the shown elements
-	Draw - Perform all other effects of this modifier, and draw another
-	
-	
-	\section{Leveling Up}
-	
-	When you level up, you may choose a new class and add its shingle to your tableau.
-	The class shingles have to be placed in the leftmost slot of their rank.
-	Rank 1 classes go in the top row.
-	Rank 2 classes go in the middle row.
-	Rank 3 classes go in the bottom. %Picture for this
-	Each slot for a shingle has changes to the modifier deck printed on it.
-	When you cover a slot with a shingle, add or remove the printed modifiers to your modifier deck.
-	Add the chosen classes cards to your card pool.
-	Increase your life tracker to reflect the new maximum life.
-	
-	%Shingles passgenau auf das brett zuschneiden?
-	%Dreiecke, Squares, Fünfecke an de seiten?
-	%Runde ecken etc?
-	
-	\section{Events}
-	Events will happen to you between each fight.
-	Events can have many interesting effects and will warp how you choose to play your game.
-	
-	
-	\section{The Storybook}
-	The storybook contains all of the Stories you can play in Wheel of Elements.
-	Each story will take about 2 hours to play through, contain 3 Encounters and one text containing a short story for why you are fighting.
-	
-	\subsection{Stories}
-	Each story begins with a plot hook, which should be narrated by a player.
- 	The text is separated into four sections. After reading a section, start one of the three fights. After finishing a fight, read another section, draw an event, and level up. After finishing the second fight, repeat this process.
- 	%Flowchart? with nice pics?
- 	
-	
-	\subsection{Encounters}
-	Each story comes with three enemy encounters. An encounter presents which enemies should be fought and in which arrangement.
-	There are always 5 enemy setups described per encounter. Each player gets one of those setups.
-	These enemy setups are distributed in clockwise seating order. %Please get  a picture for this
-	If you are playing with 
-	
-	
-	\section{Enemies}
-	\subsection{Enemy Keywords}
-	\section{Combat Round}
-	\subsection{Player Turn}
-	Shuffle your Action deck and your modifier deck before the combat starts. Empty the Elemental Wheel.\\
-	Start of Turn\\
-	Draw up to your maximum hand size.
-		Empty draw pile - When your draw pile is empty and you need to draw, your discard pile becomes your new draw pile. Shuffle it.
-	Roll the Monster Die
-	Start of turn and start of combat abilities trigger. Players may decide order.
-	Play\\
-	Players may play up to 2 cards each turn.
-	To play a card:
-	Pay its mandatory element cost
-	Choose if you want to play the optional costs.
-	Resolve the card.
-	Put the played card into the discard pile.
-	
-	\subsection{Enemy Turn}
-	Your leftmost enemy, that didnt act yet, uses their action. 
-	Resolve the action. 
-	Repeat until all your enemies acted, even if you die.
-		
-	\subsection{Cleanup step}
-	Remove all single Turn Boons\&Banes (They are Shield, Player Powerful, Advantage etc).\\
-	Apply Poison Damage.\\
-	Move your leftmost enemy to the player to your left. This happens simultaneous. You cannot give away an enemy given to you this way.\\
-	If you are dead give all your remaining enemies to your left.
-	
-	\section{Playing a Card}
-	\section{Boons \& Banes}
-	Boons
-	Powerful
-	Advantage
-	Shield
-	Flurry
-	
-	Banes
-	Poison
-	Vulnerable
-	Disarm
-	
-	\section{Optional Rules}
-	When you become more experienced, you can start with one class at rank two, instead of two classes at rank 1
-	
-	If you find it very hectic for all players to take the turns simultaneously, you can choose to play one player at a time. In this case it may be nice for all players to look at the current players hand and discuss.
-	
-	\section{Background Info for Devs}
-	\subsection{Math for nerds}
-	\subsection{Card List}
+\end{longtable}
+
+
+\section{Boons \& Banes}
+As well as other keywords
+
+
+\begin{longtable}{|p{2cm}|p{14.2cm}|}
+Boons
+Powerful
+Advantage
+Shield
+Flurry
+
+Banes
+Poison
+Vulnerable
+Disarm
+\end{longtable}
+
+\section{Optional Rules}
+When you become more experienced, you can start with one class at rank two, instead of two classes at rank 1
+
+If you find it very hectic for all players to take the turns simultaneously, you can choose to play one player at a time. In this case it may be nice for all players to look at the current players hand and discuss.
+
+\section{Background Info for Devs}
+\subsection{Math for nerds}
+\subsection{Card List}
 \end{document}

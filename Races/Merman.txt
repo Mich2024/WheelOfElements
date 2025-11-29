@@ -1,7 +1,7 @@
 Variant:1
 
 Passive
-Play with the top of your modifier deck revealed
+When making an attack, first modify it, and then select a target.
 
 Life: 8
 
