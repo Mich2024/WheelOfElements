@@ -1,6 +1,5 @@
 Stats
 
-Variant:1
 Passive
 Handsize +1 and decksize -1
 Life: 8

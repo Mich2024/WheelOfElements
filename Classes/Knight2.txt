@@ -1,17 +1,10 @@
 Stats
 
-Skill:Toughness
-Skill:Charisma
-
-Variant:1
 Passive
-During your first turn, play two additioal cards
+At the Start of the game, S:3 Advantage.
+#In your first turn, ignore elemental costs.
+#Treat Costs of X as 3 if you are not paying them.
 Life: 10
-
-Variant:2
-Passive
-At the Start of the game, play two cards
-Life: 7
 
 Type
 Element: Metal
@@ -20,10 +13,12 @@ Explanation:Advantage
 Explanation:Shield
 
 Tier1
-Name: "Precise Strike" Advantage A:2                                                                Type:Special
-Name: "Guard" S:1                                                                                   Type:Special
-Name: "Inner Metal" A:2 Metal:1                                                                     Type:Special
+Name: "Shield and Stab" ManaCost:Opt;Metal;2 S:1 Text: "--- Opt cost paid ---" Text: "A:4"
+Name: "Versatility" Advantage Metal:1
+Name: "Inner Metal" A:2 Metal:1
 
-Tier2
-Name: "Smite" ManaCost:Opt;Metal;2 Advantage Text: "--- Opt cost paid ---" Text: "A:8"              Type:Attack
-Name: "Guarded Stance" S:1 Metal:2                                                                  Type:Attack
+Tier3
+Name: "Sword and Dagger"  A:X A:X Stun Text: "X is Metal Mana in the Wheel"
+Name: "Mastery" S:1 Advantage A:4
+
+

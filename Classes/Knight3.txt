@@ -1,19 +1,8 @@
 Stats
 
-Skill:Toughness
-Skill:Charisma
-
-Variant:1
 Passive
-In your first turn, ignore elemental costs.
-Treat Costs of X as 3 if you are not paying them.
-Life: 14
-
-Variant:2
-Passive
-#At the start of your turn, gain Advantage
-Treat your *0 as a *2
-Life: 7
+During your first turn, play two additional cards
+Life: 10
 
 Type
 Element: Metal
@@ -23,10 +12,10 @@ Explanation:Shield
 Explanation:Disarm
 
 Tier1
-Name: "Shield and Stab" ManaCost:Opt;Metal;2 S:1 Text: "--- Opt cost paid ---" Text: "A:4"                  Type:Attack
-Name: "Versatility" Advantage Metal:1                                                                       Type:Special
-Name: "Disarm and Stab" ManaCost:Opt;Metal;2 Disarm Text: "--- Opt cost paid ---" Text: "A:4"               Type:Attack
+Name: "Precise Strike" Advantage A:2
+Name: "Guard" S:1
+Name: "Disarm and Stab" ManaCost:Opt;Metal;2 Disarm Text: "--- Opt cost paid ---" Text: "A:4"
 
-Tier3
-Name: "Sword and Dagger"  A:X A:X Stun Text: "X is Metal Mana in the Wheel"                                 Type:Attack
-Name: "Mastery" S:1 Advantage A:4                                                                           Type:Attack
+Tier2
+Name: "Smite" ManaCost:Opt;Metal;2 Advantage Text: "--- Opt cost paid ---" Text: "A:8"
+Name: "Guarded Stance" S:1 Metal:2
