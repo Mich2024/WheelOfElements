@@ -1,0 +1,26 @@
+Stats
+
+Passive
+
+Life: 5
+
+Type
+
+Element: Fire
+Element: Earth
+
+#Explanation: Blaze
+Explanation: Vulnerable
+
+Tier1
+Name: ""
+Name: ""
+Name: ""
+
+Tier3
+Name: ""
+Name: ""
+
+
+
+

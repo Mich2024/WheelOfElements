@@ -1,39 +1,21 @@
-Variant:1
-
 Passive
-At the beginning of our turn, H:2
-Life: 8
-
-Variant:2
-
-Passive
-At the beginning of our turn, H:2
+At the beginning of our turn, H:1
 Life: 8
 
 Type
 Element: Water
 Element: Wood
 
-Explanation:Ranged
+Explanation:Powerful
 Explanation:Heal
 
-#Power Levels : 3,3,5,5,8
-
-#ManaCost:Opt;Fire;X
-
 Tier1
-#3
-Name: "Water Heart" Water:2                                                     Type:Special
-Name: "Flowering" ManaCost:Wood;X H:X*3 A:2                                     Type:Attack
+Name: "Heart of Water" Water:2
+Name: "Strike" A:1
 
 Tier2
-#5
-Name: "Razor Petals" ManaCost:Wood;1 A:5 A:5 Text: "lose 3 life"                Type:Attack
-Name: "Healing Rain" Water:1 A:1 H:2 Ranged                                     Type:Attack
+Name: "Razor Petals" ManaCost:Wood;1 A:4 A:4 Text: "lose 4 life"
+Name: "Healing Rain" Water:1 A:1 H:1 Ranged
 
 Tier3
-#8
-Name: "Take a Bite" ManaCost:Wood;2 A:7 H:X Text: "X is your damage dealt"      Type:Attack
-
-
-#Name: "Regrowth" ManaCost:Wood;X H:8 H:X*2 Ranged                       Type:Special
+Name: "Take a Bite" ManaCost:Wood;2 A:4 H:X Text: "X is your damage dealt"

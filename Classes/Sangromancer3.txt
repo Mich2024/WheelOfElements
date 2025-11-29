@@ -1,11 +1,3 @@
-Variant:1
-
-Passive
-At the beginning of our turn, H:2
-Life: 8
-
-Variant:2
-
 Passive
 At the beginning of our turn, H:2
 Life: 8
@@ -14,17 +6,11 @@ Type
 Element: Water
 Element: Wood
 
-#Power Levels : 3,3,3,8,8
-
-#ManaCost:Opt;Fire;X
-
 Tier1
-#3
-Name: "Water Heart" Water:2                                                             Type:Attack
-Name: "Toxic Lob" ManaCost:Wood;2 Poison:5 Ranged                                       Type:Attack
-Name: "Shred" ManaCost:Wood;2 A:7                                                       Type:Attack
+Name: "Nightshade" ManaCost:Wood;1 Poison:2 A:1
+Name: "Splash" Water:1 H:3
+Name: "Leeching Brambles" ManaCost:Wood;2 A:2 H:3
 
-Tier3
-#8
-Name: "Wrath" A:X Text: "X is your missing life. X cant be more than 12"                Type:Attack
-Name: "Calming Presence" H:4 Text: "Also target the players next to you"                Type:Special
+Tier2
+Name: "Wellspring" Water:2 H:2
+Name: "Flay" A:4 Poison:2 Text: "Lose 5 life." Text: "If this was your second card, repeat this card."

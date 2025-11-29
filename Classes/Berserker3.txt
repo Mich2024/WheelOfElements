@@ -1,0 +1,23 @@
+Stats
+Whenever you discard one or more cards: A:1
+Passive
+
+Life: 5
+
+Type
+
+Element: Fire
+Element: Earth
+
+#Explanation:Blaze
+#Explanation:D6
+#Explanation: Vulnerable
+
+Tier1
+Name: ""
+Name: ""
+Name: ""
+
+Tier2
+Name: ""
+Name: ""

@@ -8,14 +8,14 @@ Type
 Element: Metal
 
 Explanation:Advantage
-Explanation:Disarm
+Explanation:Stun
 
 Tier1
 Name: "Heart of Metal" Metal:2
-Name: "Disarm" Disarm
+Name: "Disarm" Stun
 
 Tier2
-Name: "Parry" Disarm Metal:2
+Name: "Parry" Stun Metal:2
 Name: "Dutybound" Advantage A:2
 
 Tier3
