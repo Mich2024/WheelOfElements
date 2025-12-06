@@ -1,8 +1,7 @@
-Stats
-
 Passive
-Whenever you discard one or more cards: disengage. You cant disengage the last enemy infront of you this way.
-Life: 5
+Look at that life
+#+6Max life
+Life: 9
 
 Type
 

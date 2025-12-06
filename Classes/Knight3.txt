@@ -1,8 +1,6 @@
-Stats
-
 Passive
 During your first turn, play two additional cards
-Life: 10
+Life: 3
 
 Type
 Element: Metal

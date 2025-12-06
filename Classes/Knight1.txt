@@ -1,8 +1,6 @@
-Stats
-
 Passive
 At the Start of the game draw 4 cards, then discard 4 cards
-Life: 10
+Life: 3
 
 Type
 Element: Metal

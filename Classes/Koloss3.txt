@@ -1,7 +1,6 @@
 Passive
 At the beginning of each round, gain S:1.
-
-Life: 10
+Life: 3
 
 
 Type

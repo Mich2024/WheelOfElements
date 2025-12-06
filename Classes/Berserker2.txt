@@ -1,8 +1,6 @@
-Stats
-
 Passive
-
-Life: 5
+Look at that life
+Life: 12
 
 Type
 
@@ -13,14 +11,15 @@ Element: Earth
 Explanation: Vulnerable
 
 Tier1
-Name: ""
-Name: ""
-Name: ""
+Name: "Heart of Fire" Fire:2
+Name: "Brutalize" ManaCost:Earth;4 Ranged A:9
+Name: "Strike" A:1
 
 Tier3
-Name: ""
-Name: ""
+Name: "Faithless Looting" Text"Draw two cards" Blaze:2 A:8
+Name: "Feral Instinct" Fire:1 Blaze:2 Text:"For each Card discarded gain an Effect depending on their rarity. Bronze:Vulnerable. Silver:Fire:2. Gold:A:D6. Mythril:Set your life to full life."
 
 
 
 
+#Name: "Worthy Foe" Vulnerable Text:"Your attacks against a vulnerable enemy deal +2 additional damage this turn."
