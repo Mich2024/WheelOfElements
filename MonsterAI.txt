@@ -80,7 +80,7 @@ Rolls:A Flurry Flurry Flurry
 Rolls:B Flurry Flurry Flurry
 Rolls:C Powerful Text: "Use all stored Flurries"
 
-End of File
+End Of File
 
 ###########################################################################################
 Name:Orc Raider

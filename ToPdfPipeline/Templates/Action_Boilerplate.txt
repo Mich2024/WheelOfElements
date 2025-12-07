@@ -13,6 +13,7 @@
 
 [space_top] = 1
 [space_left] = [space_text_18] + [linestrength]
+[half_space_left] = (0.5*[space_left])
 [space_right] = [space_left]
 [space_bottom] = 0.25
 
@@ -41,9 +42,10 @@ htmlimage = 1 - [CardCount], \symHeal, "..\..\Pictures\Icons\Heal.png", 0.55, 0.
 htmlimage = 1 - [CardCount], \symPowerful, "..\..\Pictures\Icons\Powerful.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symFlurry, "..\..\Pictures\Icons\Flurry.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symVulnerable, "..\..\Pictures\Icons\Vulnerable.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symBlaze, "..\..\Pictures\Icons\Poison.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symD6, "..\..\Pictures\Icons\Poison.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symBlaze, "..\..\Pictures\Icons\Blaze.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symD6, "..\..\Pictures\Icons\D6.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symShield, "..\..\Pictures\Icons\Shield.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", 0.55, 0.55
 
 htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", 0.55, 0.55

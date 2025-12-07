@@ -12,7 +12,7 @@ Explanation:Advantage
 Tier1
 Name: "Heart of Metal" Metal:2
 Name: "Slice Heel" ManaCost:Water;1 Ranged Stun Stun
-Name: "Poisoned Needle" ManaCost:Water;1 A:2 Text: "If the Attack dealt atleast 4 Damage, Poison:4"
+Name: "Poison Shiv" ManaCost:Water;1 A:2 Text: "If the Attack dealt atleast 4 Damage, Poison:4"
 
 Tier3
 Name: "Slit Tendon" Advantage A:2 Stun

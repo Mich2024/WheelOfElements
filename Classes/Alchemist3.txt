@@ -1,5 +1,5 @@
 Passive
-Poison is modified by the modifier deck
+Poison is modified by the modifier deck \13\
 Add 2 +0 Blossom Pot
 #Ranged Heal:4
 
@@ -15,10 +15,10 @@ Element: Water
 Tier1
 #3
 Name: "Suply Run"  Ranged Disengage H:1 
-Name: "Leeching Tinctures" Water:2 Text: "Remove any amount of poison from your enemies. Heal that much health"
-Name: "Poison the well" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3
+Name: "Leech Poison" Water:2 Text: "Remove any amount of poison from your enemies. Heal that much health"
+Name: "Toxic Blast" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3
 
 Tier2
 #5
-Name: "Prolonged Suffering" ManaCost:Opt;Water;1 Poison:4 Opt Stun
+Name: "Languish" ManaCost:Opt;Water;1 Poison:4 Opt Stun
 Name: "Toxic Shock" Ranged A:X Text: "X is the amount of poison on the target"

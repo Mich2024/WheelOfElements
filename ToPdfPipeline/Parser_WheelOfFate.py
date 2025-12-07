@@ -18,12 +18,6 @@ def removeDoubleQuotes(lines):
         res.append(line.replace('"',""))
     return res
 
-def addSpaceAfterText(lines):
-    res = []
-    for line in lines:
-        res.append(line.replace('Text:"','Text: "'))
-    return res
-
 def removeComments(lines):
     res = []
     for line in lines:
@@ -216,7 +210,7 @@ def parseStatLinesToCards(lines, name, rank):
 
     parts = sliceStatsToCards(lines)
     linesTableau = []
-    passive = [parts["Passive"]] # we are dropping variant 2
+    passive = parts["Passive"] # we are dropping variant 2
     if("Modifier Tableau" in parts.keys()): #Race
         #print(linesTableau)
         linesTableau = parts["Modifier Tableau"]
@@ -234,29 +228,27 @@ def parseStatLinesToCards(lines, name, rank):
             explanations.append(line)
 
     
-    for var in passive:
-        card = statCard()
-        card.explanations = explanations
-        card.name = name
-        card.rank = rank
-        card.elements = elements
+    
+    card = statCard()
+    card.explanations = explanations
+    card.name = name
+    card.rank = rank
+    card.elements = elements
 
-        mode = ""
-        for line in var:
-            if line == "Passive":
-                mode = "Passive"
-                continue
-            if startsWith(line, "Life:"):
-                card.assignmentDict[line.split(":")[0]](card,line.split(":")[1])
-                continue
+    mode = ""
+    #print(passive)
+    for line in passive:
+        if startsWith(line, "Life:"):
+            card.assignmentDict[line.split(":")[0]](card,line.split(":")[1])
+            continue
+        else:
+            #print(line)
+            card.passive += line + " "
+    if (linesTableau != []):
+        card.tableau = parseTableauFromLines(linesTableau)
+        #print(card.tableau.L1R1)
 
-            if mode == "Passive":
-                card.passive += line + " "
-        if (linesTableau != []):
-            card.tableau = parseTableauFromLines(linesTableau)
-            #print(card.tableau.L1R1)
-
-        res.append(copy.deepcopy(card))
+    res.append(copy.deepcopy(card))
     return res
 
 '''
@@ -372,7 +364,7 @@ def parseMonsterAI():
     lines = removeEmptyLines(lines)
     lines = removeTrailingSpaces(lines)
     lines = truncateFile(lines)
-    lines = addSpaceAfterText(lines)
+    lines = addSpacesAfterText(lines)
     
     #print(lines)
     print("completed sanitization")

@@ -39,9 +39,9 @@ TEXT = 1-[CardCount], "Cards",          0, [space_top]+[third_vert]*2, [space_te
 FONT = Arial, 28, B, #000000
 TEXT = 1-[CardCount], "Passive",     [space_left] + [quart_hor] * 3, [space_top]+[third_vert]*2, [quart_hor], [space_text_28], LEFT, TOP
 TEXT = 1-[CardCount], "Life Pool",   [space_left] + [quart_hor] * 1, [space_top]+[third_vert]*2, [quart_hor], [space_text_28], LEFT, TOP
-TEXT = 1-[CardCount], "Lore",        [space_left] + [quart_hor] * 2, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], LEFT, TOP
+TEXT = 1-[CardCount], "Turn order",        [space_left] + [quart_hor] * 2, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], LEFT, TOP
 FONT = Arial, 18, B, #000000
-TEXT = 1-[CardCount], "Turn order: \13\ 1. Draw cards until hand is full \13\ 2. Roll enemy dice \13\ 3. Play two cards \13\ 4. Perform enemy actions \13\ 5. Rotate enemies and element wheel",  [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*1 + [space_text_28], [quart_hor]*2, [third_vert] - [space_text_28], LEFT, WORDWRAP
+TEXT = 1-[CardCount], "1. Draw cards until hand is full \13\ 2. Roll enemy dice \13\ 3. Play two cards \13\ 4. Perform enemy actions \13\ 5. Rotate enemies and element wheel",  [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*1 + [space_text_28], [quart_hor]*2, [third_vert] - [space_text_28], LEFT, WORDWRAP
 
 RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]
 RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 1, [space_top], [quart_hor], [third_vert], #000000, empty, [linestrength]

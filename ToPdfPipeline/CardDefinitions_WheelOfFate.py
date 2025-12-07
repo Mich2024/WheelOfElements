@@ -83,6 +83,8 @@ symbolDict = {
     "P":r"\symPierce", #Todo, maybe rename?
     "Corrosion":r"\symCorrosion",
     "Corrode":r"\symCorrosion",
+    "D6":r"\symD6",
+    "Blaze":r"\symBlaze",
     
 
     # Boons
@@ -226,7 +228,7 @@ def serializeActionToTex(inputActions):
                     #print(word.split(":")[0])
                     if(word.split(":")[0] in symbolDict):
                     
-                        res += " " + symbolDict[word.split(":")[0]] + "~" + word + " "
+                        res += " " + symbolDict[word.split(":")[0]] + " " + word + " "
                     else:
                         res += word + " "
                     
@@ -252,7 +254,7 @@ def serializeActionToTex(inputActions):
 
                 if parts[0] in symbolDict:
                     res += " " + symbolDict[parts[0]]
-                res += "~" + parts[0] 
+                res += " " + parts[0] 
                 if len(parts) == 2:
                     res += ":~" + parts[1]
                     res += " "
@@ -288,7 +290,7 @@ def serializeActionToNanDeck(inputActions):
                     res += "--- Opt Paid --- "
 
                 elif action.split(":")[0].casefold() == "blaze":
-                    res += "--- Blaze " + action.split(":")[1] + " --- "
+                    res += r"--- \symBlaze Blaze " + action.split(":")[1] + " --- "
                 else:
 
                     parts = action.split(":")
@@ -451,8 +453,10 @@ class actionCard:
 
         template_card = template_card.replace(r"${TextBox}",textAction)
 
-        
-        template_card = template_card.replace(r"${Class}",self.classname)
+        classname = self.classname 
+        if(not str(self.rank) == "0"):
+            classname += " " + str(self.rank)
+        template_card = template_card.replace(r"${Class}",classname)
 
         textTier = "Undef"
         colTier = "[col_bronze]"
@@ -573,21 +577,21 @@ class tableauRace:
         template_line_mod = open('Templates/Tableau_Line_Mod.txt', 'r')
         template_line_mod = template_line_mod.read()
 
-        self.L1R1 = template_line_mod.replace(r"${Mod}", '"' + self.L1R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L1R1 = template_line_mod.replace(r"${Mod}", '"' + self.L1R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
         self.L1R1 = self.L1R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(0))
-        self.L1R2 = template_line_mod.replace(r"${Mod}", '"' + self.L1R2.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L1R2 = template_line_mod.replace(r"${Mod}", '"' + self.L1R2.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
         self.L1R2 = self.L1R2.replace(r"${Order}",str(order)).replace(r"${Hor}",str(1)).replace(r"${Vert}",str(0))
-        self.L1R3 = template_line_mod.replace(r"${Mod}", '"' + self.L1R3.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L1R3 = template_line_mod.replace(r"${Mod}", '"' + self.L1R3.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
         self.L1R3 = self.L1R3.replace(r"${Order}",str(order)).replace(r"${Hor}",str(2)).replace(r"${Vert}",str(0))
-        self.L1R4 = template_line_mod.replace(r"${Mod}", '"' + self.L1R4.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L1R4 = template_line_mod.replace(r"${Mod}", '"' + self.L1R4.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
         self.L1R4 = self.L1R4.replace(r"${Order}",str(order)).replace(r"${Hor}",str(3)).replace(r"${Vert}",str(0))
 
-        self.L2R1 = template_line_mod.replace(r"${Mod}", '"' + self.L2R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L2R1 = template_line_mod.replace(r"${Mod}", '"' + self.L2R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
         self.L2R1 = self.L2R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(1))
-        self.L2R2 = template_line_mod.replace(r"${Mod}", '"' + self.L2R2.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L2R2 = template_line_mod.replace(r"${Mod}", '"' + self.L2R2.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
         self.L2R2 = self.L2R2.replace(r"${Order}",str(order)).replace(r"${Hor}",str(1)).replace(r"${Vert}",str(1))
 
-        self.L3R1 = template_line_mod.replace(r"${Mod}", '"' + self.L3R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove") + '"')
+        self.L3R1 = template_line_mod.replace(r"${Mod}", '"' + self.L3R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
         self.L3R1 = self.L3R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(2))
         
         lines_mods = ""
@@ -600,7 +604,7 @@ class tableauRace:
         lines_mods += self.L2R2
         lines_mods += self.L3R1
             
-        return lines_mods.replace(",","")
+        return lines_mods
 
 
 

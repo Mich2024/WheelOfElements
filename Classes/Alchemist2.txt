@@ -1,5 +1,5 @@
 Passive
-Add 2 +0 Heal Pot
+Add 2 +0 Heal Pot \13\
 #Heal:2
 Add 2 +0 Prismatic Pot
 #Any Element:2
@@ -18,11 +18,11 @@ Explanation:Stun
 
 Tier1
 #3
-Name: "Sickening Wave" Poison:1 Aoe:Cleave;2
+Name: "Poison Fume" Poison:1 Aoe:Cleave;2
 Name: "Flashpowder" Ranged Stun
 
 Tier3
 #8
 Name: "Miasma" Water:1 Text: "Stun all Poisoned targets" AOE:All 
-Name: "Drown in poison" ManaCost:Opt;Water;5 Poison:6 Opt A:X Text: "X is the amount of poison on the target" 
-Name: "Impending Doom" Water:2 Text: "Double the poison on one enemy" 
+Name: "Sepsis" ManaCost:Opt;Water;5 Poison:6 Opt A:X Text: "X is the amount of poison on the target" 
+Name: "Fated Death" Water:2 Text: "Double the poison on one enemy" 

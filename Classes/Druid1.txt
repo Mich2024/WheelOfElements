@@ -1,5 +1,5 @@
 Passive
-When you hit your *0 modifier, gain Flurry:1
+When you hit your *2 modifier, gain Flurry:1
 Life: 3
 
 Type
