@@ -1,9 +1,6 @@
-Stats
-
-Variant:1
 Passive
 At the start of Combat, A:D6.
-Life: 8
+Life: 5
 
 Type
 Element: Earth

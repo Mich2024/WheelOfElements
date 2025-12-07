@@ -1,7 +1,6 @@
 Passive
 At the beginning of each round, H:2.
-
-Life: 0
+Life: 3
 
 
 Type

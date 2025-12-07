@@ -1,9 +1,6 @@
-Stats
-
-Variant:1
 Passive
 You have Advantage against stunned enemies
-Life: 7
+Life: 3
 
 Type
 Element: Metal

@@ -1,6 +1,6 @@
 Passive
 Healing is modified by the modifier deck
-Life: 8
+Life: 3
 
 Type
 Element: Water

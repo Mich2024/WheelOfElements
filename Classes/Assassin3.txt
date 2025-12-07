@@ -1,9 +1,6 @@
-Stats
-
-Variant:1
 Passive
 Attacks can consume Stun on enemies to deal double damage
-Life: 7
+Life: 3
 
 Type
 Element: Metal

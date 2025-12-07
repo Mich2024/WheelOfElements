@@ -1,10 +1,6 @@
-Stats
-
-Variant:1
 Passive
-
-#If you would die, exhaust an empty Lifedice. If you do, A:X roll the exhausted die, the result is X.
-Life: 20
+Whenever a Dice, including the Monster dice, rolls a 2, A:D6. (The attack you gain from the monster die happens before start of combat effects.)
+Life: 6
 
 Type
 Element: Earth

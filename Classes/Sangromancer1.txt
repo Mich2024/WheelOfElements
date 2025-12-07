@@ -1,6 +1,6 @@
 Passive
 At the beginning of our turn, H:1
-Life: 8
+Life: 3
 
 Type
 Element: Water

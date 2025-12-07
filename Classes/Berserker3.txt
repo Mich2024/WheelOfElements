@@ -1,8 +1,8 @@
-Stats
-Whenever you discard one or more cards: A:1
 Passive
-
-Life: 5
+#Whenever you discard one or more cards: A:1
+#Your blaze is now choose instead of random
+Look at that life
+Life: 15
 
 Type
 
@@ -14,10 +14,13 @@ Element: Earth
 #Explanation: Vulnerable
 
 Tier1
-Name: ""
-Name: ""
-Name: ""
+Name: "Heart of Fire" Fire:2
+Name: "Heart of Fire" Fire:2
+Name: "Fiery Punch" ManaCost:Earth;2 Ranged Vulnerable A:D4
 
 Tier2
-Name: ""
-Name: ""
+Name: "Rage" Text:"Draw a card" Blaze:3 Text:"You may play the discarded cards if you can pay their mandatory costs."
+Name: "Strike Fear" A:1 Blaze:1 A:2
+
+
+#Name: "Persistent Rage" Return a card you blazed this turn to your hand.

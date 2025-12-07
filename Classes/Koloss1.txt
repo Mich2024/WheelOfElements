@@ -1,6 +1,6 @@
 Passive
 At the start of combat: rotate the leftmost enemy of the player to your right
-Life: 10
+Life: 3
 
 
 Type

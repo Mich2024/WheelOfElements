@@ -2,7 +2,7 @@ Stats
 
 Passive
 Handsize +1 and decksize -1
-Life: 8
+Life: 3
 
 Type
 Element: Metal
