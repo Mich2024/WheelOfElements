@@ -9,12 +9,12 @@ Element: Metal
 
 Tier1
 Name: "Grounded Stance" Advantage Earth:1
-Name: "Fight On" ManaCost:Metal;1 A:D6 ranged
+Name: "Fight On" ManaCost:Metal;1 Ranged A:D6
 Name: "Indomitable" ManaCost:Metal;2 S:1 Text: "Double your shield"
 
 Tier2
 Name: "Bash" A:D6
-Name: "Guard" ranged S:2
+Name: "Guard" Ranged S:2
 
 
 

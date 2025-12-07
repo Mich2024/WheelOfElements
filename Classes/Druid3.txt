@@ -12,4 +12,4 @@ Name: "Shove" Disengage H:1
 
 Tier2
 Name: "Nature's Aid" ManaCost:Opt;Wood;2 Ranged H:4 Opt H:4
-Name: "Leafy Cover" Woood:2 Ranged H:2
+Name: "Leafy Cover" Wood:2 Ranged H:2
