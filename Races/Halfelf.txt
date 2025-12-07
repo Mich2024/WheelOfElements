@@ -56,4 +56,4 @@ Name: "Feint" A:1 Stun
 
 Tier3
 #6
-Name: "Riposte" A:4 Text: "Deals double damage against disarmed units"
+Name: "Riposte" A:4 Text: "Deals double damage against stuned units"

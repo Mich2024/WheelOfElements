@@ -10,7 +10,7 @@ Explanation:Stun
 
 Tier1
 Name: "Heart of Metal" Metal:2
-Name: "Disarm" Stun
+Name: "Stun" Stun
 
 Tier2
 Name: "Parry" Stun Metal:2

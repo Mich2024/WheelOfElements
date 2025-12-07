@@ -7,12 +7,12 @@ Element: Metal
 
 Explanation:Advantage
 Explanation:Shield
-Explanation:Disarm
+Explanation:Stun
 
 Tier1
 Name: "Precise Strike" Advantage A:2
 Name: "Guard" S:1
-Name: "Disarm and Stab" ManaCost:Opt;Metal;2 Disarm Text: "--- Opt cost paid ---" Text: "A:4"
+Name: "Stun and Stab" ManaCost:Opt;Metal;2 Stun Text: "--- Opt cost paid ---" Text: "A:4"
 
 Tier2
 Name: "Smite" ManaCost:Opt;Metal;2 Advantage Text: "--- Opt cost paid ---" Text: "A:8"

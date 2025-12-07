@@ -35,7 +35,7 @@ htmlimage = 1 - [CardCount], \symAddWater, "..\..\Pictures\Icons\AddWater.png", 
 htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", 0.55, 0.55
 
 htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symDisarm, "..\..\Pictures\Icons\Disarm.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symPoison, "..\..\Pictures\Icons\Poison.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symHeal, "..\..\Pictures\Icons\Heal.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symPowerful, "..\..\Pictures\Icons\Powerful.png", 0.55, 0.55
@@ -67,7 +67,7 @@ htmltext = 1, "TextBox Is my waif u <br> \sym AddFire", [space_left] , 4,[full_h
 #Aoe
 IMAGE= 1, "..\..\Pictures\AOE\AoeAll.png" , [space_left], 6, [full_hor], 2, 0, PN
 
-#Klassenzugehörigkeit
+#Klassenzugehï¿½rigkeit
 FONT = Arial, 12, B, #000000
 TEXT = 1, "Pyro", 0 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 

@@ -37,7 +37,7 @@ Name: Elvish Helmet Cost:10 Quantity:2 Slot:Helmet Text: "*2 modifiers count as 
 Name: Girthy Helmet Cost:30 Quantity:2 Slot:Helmet Text: "Increase your maximum Life by 6. You are immune to Silence"
 Name: Halo Cost:30 Quantity:2 Slot:Helmet Text: "When you heal, you may add T:+1 and halve the healing, rounded up"
 
-Name: Girthy Gauntlets Cost:30 Quantity:2 Slot:Gloves Text: "Increase your maximum Life by 6. You are immune to Disarm"
+Name: Girthy Gauntlets Cost:30 Quantity:2 Slot:Gloves Text: "Increase your maximum Life by 6. You are immune to Stun"
 Name: Hidden Dagger Cost:10 Quantity:2 Slot:Gloves Text: "When you loose invisibility, gain an advantage"
 Name: Briar Gauntlets Cost:30 Quantity:2 Slot:Gloves Text: "At the start of your turn, Vendetta:2 R:0"
 
@@ -90,7 +90,7 @@ Name: Nodachi Cost:30 Quantity:2 Slot:TwoHanded Text: "Tap: Gain Advantage"
 Name: Rakshasa's Katana Cost:20 Quantity:2 Slot:TwoHanded Text: "Tap: The next attack card you play costs life instead of energy. You cannot pay more life than your maximum energy"
 Name: Lance Cost:40 Quantity:2 Slot:TwoHanded Text: "Tap: A:X Where X is the amount you moved this turn"
 
-Name: Pepper Pouch Cost:10 Quantity:2 Slot:Consumable Exhaust Text: "Add Disarm to your next attack"
+Name: Pepper Pouch Cost:10 Quantity:2 Slot:Consumable Exhaust Text: "Add Stun to your next attack"
 Name: Shuriken Cost:20 Quantity:2 Slot:Consumable Exhaust Text: "Target Enemy in Range R:3 loses 4 Life"
 Name: Luring Potion Cost:20 Quantity:2 Slot:Consumable Exhaust Text: "Enemies target you this turn"
 Name: Warhorn Cost:20 Quantity:2 Slot:Consumable Exhaust Text: "Pick up all morale tokens in range R:2"
@@ -158,7 +158,7 @@ Name: Bastard Sword Cost:30 Quantity:2 Slot:OneHanded Exhaust Text: "Exhaust: Yo
 Name: Serrated Dagger Cost:20 Quantity:2 Slot:OneHanded Pips:3 Text: "Pip: Add Trauma to your next attack instance"
 Name: Potion of Certainty Cost:20 Quantity:2 Slot:Consumable Text: "Treat an enemy or ally modifier thread currently in use as +0"
 Name: Fleshtosser Cost:20 Quantity:2 Slot:OneHanded Text: "Tap: A summon gains R:+2 on every action for this turn" 
-Name: Parrying Gloves Cost:50 Quantity:2 Slot:Gloves Text: "Tap: Disarm R:1"
+Name: Parrying Gloves Cost:50 Quantity:2 Slot:Gloves Text: "Tap: Stun R:1"
 Name: Summoners Fate Alt Cost:50 Quantity:2 Cloth:3 Text: "Your minions cannot die. You take all damage your minions would take"
 
 Name: Thunderous Greaves Cost:30 Quantity:2 Slot:Boots Pips:3 Exhaust Text: "Whenever you play a card with energy cost X, you may increase X by 1"

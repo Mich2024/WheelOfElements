@@ -114,7 +114,7 @@ symbolDict = {
     "Trauma":r"\symTrauma",
     "Stun":r"\symStun",
     "Cripple":r"\symCripple",
-    "Disarm":r"\symDisarm",
+    "Stun":r"\symStun",
     "Silence":r"\symSilence",
     "Poison":r"\symPoison",
 
@@ -170,7 +170,7 @@ attackModifiers = {
     "Trauma":r"\symTrauma",
     "Stun":r"\symStun",
     "Cripple":r"\symCripple",
-    "Disarm":r"\symDisarm",
+    "Stun":r"\symStun",
     "Silence":r"\symSilence",
     "Poison":r"\symPoison",
 
@@ -388,7 +388,7 @@ class actionCard:
         "Pull":appendAction,
         "Corrode":appendAction,
         "Cripple":appendAction,
-        "Disarm":appendAction,
+        "Stun":appendAction,
         "Confuse":appendAction,
         "Poison":appendAction,
         "Wound":appendAction,
