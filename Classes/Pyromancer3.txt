@@ -1,7 +1,7 @@
 Passive
 When you consume X Fire, A:X
 
-Life: 6
+Life: 1
 
 Type
 Element: Fire
@@ -20,5 +20,5 @@ Name: "Blazing Dash" Blaze:1 Fire:1 Ranged A:1 Disengage
 
 Tier3
 #8
-Name: "Mortal Flame" ManaCost:Opt;Fire;5 Ranged A:5 Text: "--- Opt cost paid: ---" Text: "This attack deals triple damage"
+Name: "Mortal Flame" ManaCost:Opt;Fire;5 Ranged A:5 Opt Text: "This attack deals triple damage"
 Name: "Mutilate" Fire:1 Vulnerable AOE:All

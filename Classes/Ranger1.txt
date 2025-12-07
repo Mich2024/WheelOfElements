@@ -1,7 +1,7 @@
 Passive
 Add 3 +2 Draw
 
-Life: 6
+Life: 3
 
 Type
 Element: Wood

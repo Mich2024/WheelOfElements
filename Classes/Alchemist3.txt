@@ -1,46 +1,24 @@
-Variant:1
-
 Passive
 Poison is modified by the modifier deck
-
-Life: 6
-
-Modifiers
 Add 2 +0 Blossom Pot
-#Ranged Heal:8
-Add 2 +0 Water Pot
-#Water:2
-Remove 2 +1
+#Ranged Heal:4
 
-Variant:2
-
-Passive
-When you use a potion, you may pay Water:1 to double the numeric effects
-
-Life: 6
+Life: 3
 
 Modifiers
-Add 2 +0 Explosive Pot
-#A:4
-Add 2 +0 Blinding Pot
-#Disarm
-Remove 2 +1
 
 Type
 Element: Water
-
-
-#Power Levels : 3,3,3,8,8
 
 #ManaCost:Opt;Fire;X
 
 Tier1
 #3
-Name: "Supply Run"  Ranged Water:1 Heal:5 Special
-Name: "Leeching Tinctures" Water:2 Text: "Remove any amount of poison from your enemies. Heal twice that much health" Special
-Name: "Poison the well" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3 Attack
+Name: "Suply Run"  Ranged Disengage H:1 
+Name: "Leeching Tinctures" Water:2 Text: "Remove any amount of poison from your enemies. Heal that much health"
+Name: "Poison the well" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3
 
 Tier2
 #5
-Name: "Prolonged Suffering" ManaCost:Opt;Water;1 Poison:6 Text: "--- Opt cost paid ---" Disarm Attack
-Name: "Toxic Shock" Ranged A:X Text: "X is the amount of poison on the target" Attack
+Name: "Prolonged Suffering" ManaCost:Opt;Water;1 Poison:4 Opt Stun
+Name: "Toxic Shock" Ranged A:X Text: "X is the amount of poison on the target"

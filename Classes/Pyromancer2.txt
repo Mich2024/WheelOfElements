@@ -1,7 +1,7 @@
 Passive
 Whenever an enemy in your zone dies, another enemy gets vulnerable
 
-Life: 6
+Life: 3
 
 Type
 Element: Fire

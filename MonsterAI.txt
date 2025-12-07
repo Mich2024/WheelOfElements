@@ -6,7 +6,7 @@ Name:Metalcrafter
 Normal
 
 Life:5
-Count:2
+Count:4
 Passive: Can't die as long as a golem is adjacent
 
 Rolls:1,2,3,4 A:2 A:2
@@ -27,10 +27,10 @@ Name:Patching Golem
 Normal
 
 Life:30
-Count:2
+Count:4
 
 Rolls:A Text "Move all damage from other golems in this zone to this unit"
-Rolls:B A:3
+Rolls:B A:1
 
 Hard
 
@@ -45,11 +45,11 @@ Name:Colossal Golem
 Normal
 
 Life:20
-Count:2
+Count:3
 Passive: Shield:1
 
 Rolls:1,2,3 A:3
-Rolls:4,5,6 A:2 A:2
+Rolls:4,5,6 A:1 A:1
 
 Hard
 
@@ -58,7 +58,7 @@ Count:2
 Passive: Shield:2
 
 Rolls:1,2,3 A:3
-Rolls:4,5,6 A:2 A:2
+Rolls:4,5,6 A:1 A:1
 
 ###########################################################################################
 Name:Capacitor Golem
@@ -66,11 +66,11 @@ Name:Capacitor Golem
 Normal
 
 Life:20
-Count:2
+Count:4
 
-Rolls:A Flurry Flurry
-Rolls:B Flurry Flurry Powerful
-Rolls:C Text: "Use all stored Flurries"
+Rolls:A Flurry Flurry Flurry
+Rolls:B Flurry Flurry Flurry
+Rolls:C Text: "Use all stored Flurries" Powerful
 
 Hard
 
@@ -78,7 +78,9 @@ Life:20
 Count:0
 Rolls:A Flurry Flurry Flurry
 Rolls:B Flurry Flurry Flurry
-Rolls:C Text: "Use all stored Flurries"
+Rolls:C Powerful Text: "Use all stored Flurries"
+
+End of File
 
 ###########################################################################################
 Name:Orc Raider
@@ -215,8 +217,6 @@ Rolls:5,6 A:4 Pierce:1 R:3
 
 End Of File
 
-End Of File
-
 
 Setups
 Level:1
@@ -234,3 +234,27 @@ Orc: Shaman Warrior Raider Raider
 Orc: Shaman Warrior Archer Archer
 Orc: Warboss Warlock
 Orc: Warlock Archer Warrior
+
+
+Setups
+Level:1
+Golem: Capacitor Patching
+Golem: Colossal Metalcrafter
+Golem: Colossal Patching
+Golem: Capacitor Metalcrafter
+Level:2
+Golem: Capacitor Metalcrafter Patching
+Golem: Patching Patching Capacitor
+Golem: Colossal Metalcrafter Patching
+Golem: Colossal Colossal Capacitor
+Level:3
+Golem: Patching Metalcrafter Capacitor Capacitor
+Golem: Patching Metalcrafter Colossal
+Golem: Patching Metalcrafter Capacitor Capacitor
+Golem: Patching Metalcrafter Colossal
+
+
+Capacitor Golem -> flurry charger
+Colossal Golem -> Beef
+Patching Golem -> Healer
+Metalcrafter -> Lord
