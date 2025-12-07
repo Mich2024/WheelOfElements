@@ -3,7 +3,7 @@ Variant:1
 Passive
 At the beginning of your round, Fire:1
 
-Life: 6
+Life: 0
 
 Type
 Element: Fire

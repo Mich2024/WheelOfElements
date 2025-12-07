@@ -1,0 +1,20 @@
+Passive
+When you hit your *0 modifier, gain Flurry:1
+Life: 3
+
+Type
+Element: Wood
+
+Explanation:Powerful
+Explanation:Flurry
+
+Tier1
+Name: "Temperance" ManaCost:Opt;Wood;2 Flurry:3
+Name: "Vengeance" Ranged Powerful:2
+
+Tier2
+Name: "Unegrowth Ambush" Wood:1 Disengage:1 Flurry:1
+Name: "Sprouting" Wood:2 Flurry:1
+
+Tier3
+Name: "Roar" Disengage:1 Wood:2 Powerful:3

@@ -1,9 +1,7 @@
-Variant:1
-
 Passive
-Add 5 +2 Draw
+Add 6 +2 Draw
 
-Life: 6
+Life: 3
 
 Type
 Element: Wood
@@ -19,9 +17,8 @@ Tier1
 #3
 Name: "Shred" ManaCost:Fire;2 Flurry:3
 Name: "Tangle Tumble" Ranged Disengage Disengage
-Name: "Focus" Vulnerable
 
-Tier3
-#8
-Name: "Prey Upon" Ranged Wood:2 Vulnerable Vulnerable
-Name: "Execute" Ranged A:5
+Tier2 
+#5
+Name: "Roids" Wood A:1 Powerful
+Name: "Volley Fire" ManaCost:Fire;3 Ranged A:3 A:3 A:3

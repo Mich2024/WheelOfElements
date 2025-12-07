@@ -1,34 +1,16 @@
-Variant:1
-
 Passive
-When you use a potion, you may pay Water:1 to double the numeric effects
 Add 2 +0 Heal Pot
-#Heal:4
+#Heal:2
 Add 2 +0 Prismatic Pot
 #Any Element:2
 
-Life: 6
+Life: 4
 
-
-
-Variant:2
-
-Passive
-Poison is modified by the modifier deck
-
-Life: 6
-
-Modifiers
-Add 2 +0 Molotov Pot
-#A:1 AOE Cleave:2
-Add 2 +0 Heal Pot
-#Heal:4
-Remove 2 -1
 
 Type
 Element: Water
 
-Explanation:Disarm
+Explanation:Stun
 
 #Power Levels : 3,3,3,5,5
 
@@ -36,11 +18,11 @@ Explanation:Disarm
 
 Tier1
 #3
-Name: "Sickening Wave" Water:1 Poison:1 Aoe:Cleave;3 Attack
-Name: "Flashpowder" Ranged Disarm Special
+Name: "Sickening Wave" Poison:1 Aoe:Cleave;2
+Name: "Flashpowder" Ranged Stun
 
 Tier3
 #8
-Name: "Miasma" Text: "Disarm all Poisoned targets" AOE:All Special
-Name: "Drown in poison" ManaCost:Opt;Water;5 Poison:12 Opt A:X Text: "X is the amount of poison on the target" Attack
-Name: "Impending Doom" Water:2 Text: "Double the poison on one enemy" Attack
+Name: "Miasma" Water:1 Text: "Stun all Poisoned targets" AOE:All 
+Name: "Drown in poison" ManaCost:Opt;Water;5 Poison:6 Opt A:X Text: "X is the amount of poison on the target" 
+Name: "Impending Doom" Water:2 Text: "Double the poison on one enemy" 

@@ -1,0 +1,21 @@
+Passive
+When you heal someone else, add H:+2
+Life: 3
+
+Type
+Element: Wood
+
+Explanation:Heal
+
+Tier1
+Name: "Bloom" Wood:1 H:1
+Name: "Outlast" Powerful Text: "At the end of this turn, move your powerful to a neighbour instead of removing it"
+
+
+Tier3
+Name: "Overgrowth" ManaCost:Opt;Wood;2 H:6 Opt Flurry:2
+Name: "Adrenaline Rush" Ranged Wood:1 Powerful:2 H:3
+Name: "Clarity" Flurry:2 H:2
+
+
+

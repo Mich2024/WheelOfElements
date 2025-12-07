@@ -1,7 +1,7 @@
 Passive
 Add 4 +2 Draw
 
-Life: 6
+Life: 3
 
 Type
 Element: Wood
@@ -21,8 +21,10 @@ Name: "Hype" Powerful Powerful
 Name: "Harass" Flurry Text: "Your flurries have Ranged this turn"
 Name: "Heart of Wood" Wood:2
 
-Tier2 
-#5
-Name: "Roids" Wood A:1 Powerful
-Name: "Volley Fire" ManaCost:Fire;3 Ranged A:3 A:3 A:3
+Tier3
+#8
+Name: "Prey Upon" Ranged Wood:2 Vulnerable Vulnerable
+Name: "Execute" Ranged A:5
+Name: "Onsaulght" Powerful A:1 Vulnerable
+
 
