@@ -1,46 +1,52 @@
+#Gold Cards, Silver Mods, Bronze Passive
 Variant:1
 
 Passive
+#Gold + Bronze
 Improved Cards
-Life: 10
+Life: 3
 
 Modifier Tableau
-#1; 1; 1; 1
+#(0,33); (0,83); (1,33); (1,83)
 Rank:1
-Add 4 +2, Add 2 -4
-Add 4 +4, Add 2 +5
-Remove 4 +0, Add 4 +5
-Remove 2 +0, Add 2 +10
+#[((2*2)+(3*1)+(2*-1)+(8*0))/15]=0,33
+Add 2 +2 Add 3 +1 Add 2 -1
+#[((1*4)+(2*3)+(2*2)+(3*1)+(2*-1)+(8*0))/18]=0,83
+Add 2 +3 Add 1 +4
+Remove 2 +0, Add 4 +3
+Remove 2 +0, Add 2 +5
 
 #2; 2
 Rank:2
 Remove 1 +0, Add 1 +3
-# -0.2 If above line is taken
-Remove 2 +3, Add 2 +5
+Remove 1 +0, Add 1 +3
 
 #3
 Rank:3
-Remove 1 +0, Add 1 +3
-# -0.2 If above line is taken
+Remove 2 +2, Add 2 +5
 
 
 Type
-#Element: EarthMetal
+#Element: FireEarth
 
-Explanation: Shield
+Explanation: Blaze
 
 Base Cards
+#Power Levels : 2,4,4,6,6,10
 
 Tier1
-#Name: "Shield" S:1                                 Type:Special
+Name: "Strike" A:1
 
 Tier2
-Name: "Guard" S:2                                          Type:Special
-Name: "Slash" A:5                                               Type:Attack
-Name: "Flurry" A:1 A:1 A:1                                        Type:Attack
-Name: "Parrying Dagger" S:1 A:2                                 Type:Attack
+Name: "Str" A:3
+Name: "Str" A:3
 
 Tier3
-Name: "Adaptive Fighter" Text: "Choose 2: A:3, A:1 A:1 or S:1"      Type:Attack
-#VirtualTier4
-Name: "Crush" A:6 S:2                                        Type:Attack
+Name: "Stri" A:5
+Name: "Stri" A:5
+
+Tier4
+Name: "Smite" A:9
+
+#"Crush" A:6 S:2
+#"Adaptive Fighter" Text: "Choose 2: A:3, A:1 A:1 or S:1"
