@@ -15,7 +15,3 @@ Name: "Indomitable" ManaCost:Metal;2 S:1 Text: "Double your shield"
 Tier2
 Name: "Bash" A:D6
 Name: "Guard" Ranged S:2
-
-
-
-

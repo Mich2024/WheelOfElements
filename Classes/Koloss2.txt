@@ -1,5 +1,5 @@
 Passive
-At the beginning of each round, H:2.
+If your rightmost Enemy deals damage, he deals 0 damage instead.
 Life: 3
 
 
@@ -12,9 +12,8 @@ Explanation:D6
 Tier1
 Name: "Earthen Heart" Earth:2
 Name: "Cleave" ManaCost:Metal;3 A:D6 Aoe:Cleave;2
-Name: "Earthen Heart" Earth:2
 
 Tier3
+Name: "Rock Slam" Earth:2 A:D6
 Name: "Sword and Shield" S:1 A:D6
 Name: "Roar" A:1 Aoe:All
-

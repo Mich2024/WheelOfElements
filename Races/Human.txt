@@ -3,7 +3,7 @@ Variant:1
 
 Passive
 #Gold + Bronze
-Improved Cards
+You have a single Mithril Card
 Life: 3
 
 Modifier Tableau
@@ -35,15 +35,15 @@ Base Cards
 #Power Levels : 2,4,4,6,6,10
 
 Tier1
-Name: "Strike" A:1
+Name: "Strike" A:1 Ranged
 
 Tier2
-Name: "Str" A:3
-Name: "Str" A:3
+Name: "Punt" A:2 disengage Blaze:1 A:1
+Name: "Bow and Arrow" Ranged A:1 Blaze:3 A:5
 
 Tier3
-Name: "Stri" A:5
-Name: "Stri" A:5
+Name: "Spear throw" Ranged A:5 Blaze:1 Disengage
+Name: "Axe strikes" A:2 A:2 Blaze:2 A:2
 
 Tier4
 Name: "Smite" A:9

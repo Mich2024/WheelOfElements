@@ -1,26 +1,28 @@
+#Gold Mods, Silver Cards, Bronze Passive
 Variant:1
 
 Passive
--
-Life: 20
+Increased Max life
+
+Life: 9
 
 Modifier Tableau
-#1; 1; 1; 1
+#(0,5); (1); (1,5); (2)
 Rank:1
-Add 4 +2 Add 4 +0 H:4
-Remove 4 +0 Add 4 +3 Add 4 +0 H:6
-Add 5 +7
-Add 5 +10
+Add 2 +1 H:2 Add 3 -1 Water:2 Add 2 -1
+Add 3 +1 H:2 Add 4 -1 Water:2 Remove 3 +0
+Remove 3 +0 Add 2 H:2 Water:2 +2 Add 1 -2
+Remove 1 -2 Add 1 Water:5 +5
 
 
 #2; 2
 Rank:2
-Remove 1 +2 Remove 1 +0 H:4 Add 2 +2 H:4
-Remove 2 +0
+Remove 2 -1 Add 2 -1 Water:2
+Remove 1 -1 Water:2 Add 1 H:2 Water:2 +0
 
 #3
 Rank:3
-Remove 1 +2 Add 1 +5
+Remove 2 -1 Water:2 Add 2 H:2 Water:2 +0
 
 Type
 #Element: Water Wood
@@ -28,13 +30,13 @@ Type
 Explanation:Heal
 
 Tier1
-Name: "Ancestral Blood" H:5                                                             Type:Special
-Name: "Ancestral Blood" H:5                                                             Type:Special
-Name: "Ferocious Bite" A:3+X Text:"X is your Regeneration. Lose all Regeneration"       Type:Special
+Name: "Leviathan Blood" H:1 Water:1
+Name: "Heal" H:2
+Name: "Heart of Water" Water:2
 
 Tier2
-Name: "Tail Whip" A:5                                                                   Type:Attack
-Name: "Bite and Tear" A:3 Regeneration:2                                                Type:Attack
+Name: "Tail Whip" A:2 Water:1
+Name: "Greater Heal" H:4
 
 Tier3
-Name: "Carve Flesh" A:8                                                                 Type:Attack
+Name: "Bite and Tear" A:2 H:2 Water:1
