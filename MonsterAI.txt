@@ -243,18 +243,20 @@ Golem: Colossal Metalcrafter
 Golem: Colossal Patching
 Golem: Capacitor Patching
 Golem: Capacitor Metalcrafter
+
 Level:2
 Golem: Capacitor Metalcrafter Patching
 Golem: Patching Patching Capacitor
 Golem: Capacitor Metalcrafter Patching
 Golem: Colossal Metalcrafter Patching
 Golem: Colossal Colossal Capacitor
+
 Level:3
 Golem: Patching Metalcrafter Capacitor Capacitor
 Golem: Patching Metalcrafter Colossal
 Golem: Patching Metalcrafter Capacitor Capacitor
 Golem: Patching Metalcrafter Colossal
-Golem: Patching Metalcrafter Capacitor Capacitor
+Golem: Patching Metalcrafter Colossal Capacitor
 
 
 Capacitor Golem -> flurry charger

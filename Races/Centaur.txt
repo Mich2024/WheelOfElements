@@ -40,10 +40,8 @@ Name: "Clobber" ManaCost:Opt;Earth;2 Disengage Disengage Opt A:3
 Name: "Strike" A:1
 Name: "Heart of Earth" Earth:2
 
-Tier2 
-#5
-
+Tier3
 #8
 Name: "Kerfuffle" A:2D6
-Name: "Sculpt" D6 Earth:X-6 A:2*X Text: "Apply modifiers, even if you roll a 6"
-Name: "Javelin" Ranged A:3 A:3 Earth
+Name: "Sculpt" D6 A:X Earth:X-6 Text: "The D6 is X"
+Name: "Javelin" Ranged A:4 Earth
