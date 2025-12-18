@@ -45,5 +45,5 @@ Tier2
 
 #8
 Name: "Kerfuffle" A:2D6
-Name: "Sculpt" D6 Earth:X-6 A:2*X Text: "Attacks cannot deal less than 0 damage. They still get modified"
+Name: "Sculpt" D6 Earth:X-6 A:2*X Text: "Apply modifiers, even if you roll a 6"
 Name: "Javelin" Ranged A:3 A:3 Earth

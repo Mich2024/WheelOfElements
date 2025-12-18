@@ -593,6 +593,8 @@ def parseRacesAndClasses(files_Input):
         
         
         statusCards.extend(parseStatLinesToCards(linesStats, name, rank))
+        if(rank) == 1:
+            statusCards.extend(parseStatLinesToCards(linesStats, name, rank))
         tier = "1"
         for line in linesActions: #######################################
             if startsWith(line, "Tier"):
@@ -601,8 +603,10 @@ def parseRacesAndClasses(files_Input):
                 
             #def parseActionCardFromLine(line, nameClass, rank, tier):
                 newActCard = parseActionCardFromLine(line, name, rank, tier)
-
+                
                 actionCards.append(copy.deepcopy(newActCard))
+                if rank == 1:
+                    actionCards.append(copy.deepcopy(newActCard))
 
         print("parsed action cards")
         
@@ -677,17 +681,17 @@ if __name__ == "__main__":
 
     files_Input.append(r"../Races/Centaur.txt")
     #files_Input.append(r"../Races/Dragonblood.txt")
-    files_Input.append(r"../Races/Dwarf.txt")
+    #files_Input.append(r"../Races/Dwarf.txt")
     #files_Input.append(r"../Races/Elf.txt")
 
     #files_Input.append(r"../Races/Fae.txt")
-    #files_Input.append(r"../Races/Halfelf.txt")
-    #files_Input.append(r"../Races/Human.txt")
+    files_Input.append(r"../Races/Halfelf.txt")
+    files_Input.append(r"../Races/Human.txt")
     #files_Input.append(r"../Races/Merman.txt")
     #files_Input.append(r"../Races/Silverkin.txt")
-    #files_Input.append(r"../Races/Solarian.txt")
-    #files_Input.append(r"../Races/Thyger.txt")
-    #files_Input.append(r"../Races/Wyrmkin.txt")
+    files_Input.append(r"../Races/Solarian.txt")
+    files_Input.append(r"../Races/Thyger.txt")
+    files_Input.append(r"../Races/Wyrmkin.txt")
     
     files_Input.append(r"../Classes/Alchemist1.txt")
     files_Input.append(r"../Classes/Alchemist2.txt")

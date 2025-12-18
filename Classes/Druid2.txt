@@ -9,7 +9,7 @@ Explanation:Heal
 
 Tier1
 Name: "Bloom" Wood:1 H:1
-Name: "Outlast" Powerful Text: "At the end of this turn, move your powerful to a neighbour instead of removing it"
+Name: "Outlast" Powerful Text: "At the end of this turn, keep your powerful"
 
 
 Tier3

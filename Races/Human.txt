@@ -38,7 +38,7 @@ Tier1
 Name: "Strike" A:1 Ranged
 
 Tier2
-Name: "Punt" A:2 disengage Blaze:1 A:1
+Name: "Punt" A:2 Disengage Blaze:1 A:1
 Name: "Bow and Arrow" Ranged A:1 Blaze:3 A:5
 
 Tier3

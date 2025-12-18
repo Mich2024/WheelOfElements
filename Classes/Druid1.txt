@@ -13,7 +13,7 @@ Name: "Temperance" ManaCost:Opt;Wood;2 Flurry:3
 Name: "Vengeance" Ranged Powerful:2
 
 Tier2
-Name: "Unegrowth Ambush" Wood:1 Disengage:1 Flurry:1
+Name: "Bush Ambush" Wood:1 Disengage:1 Flurry:1
 Name: "Sprouting" Wood:2 Flurry:1
 
 Tier3
