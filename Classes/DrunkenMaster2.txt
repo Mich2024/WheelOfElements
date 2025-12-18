@@ -9,10 +9,10 @@ Element: Earth
 Explanation:Blaze
 
 Tier1
-Name: "Strike" A:1
-Name: "Fire Strike" A:1 Blaze:1 Earth:1
-Name: "Tenacious" ManaCost:Opt;Earth;3 A:D6 A:D6
+Name: "Calming Strike" A:1 Blaze:1 Earth:1
+Name: "Tenacious" ManaCost:Earth;3 A:D6 A:D6
 
 Tier3
 Name: "See Double" Text: "Roll two D6. Create Earth equals to one result and A:X. X is the other result." Blaze:1
 Name: "Sober" ManaCost:Opt;Earth;1 A:D6 Text: "--- Opt cost paid ---" Ranged A:D6
+Name: "Lucididty" Earth:1 Disengage A:3

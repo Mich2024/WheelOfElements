@@ -18,10 +18,9 @@ Tier1
 #3
 Name: "Wall of Fire" Fire:1 Ranged Disengage
 Name: "Flame Jet" ManaCost:Fire;3 Vulnerable:2 A:1 Blaze:3 Aoe:MostRight;2
-Name: "Roast" ManaCost:Fire;1 Ranged A:1 Vulnerable
 
-Tier2
-#5
-Name: "Swathed in Flames" ManaCost:Fire;2 A:3 Aoe:Cleave;2
-Name: "Fire up" Flurry:1 Flurry:1 Blaze:2 Fire:2
 Tier3
+#8
+Name: "Mortal Flame" ManaCost:Opt;Fire;5 Ranged A:5 Opt Text: "This attack deals triple damage"
+Name: "Mutilate" Fire:1 Vulnerable AOE:All
+Name: "Roast" ManaCost:Fire;1 Ranged A:5 Vulnerable

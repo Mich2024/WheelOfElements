@@ -33,8 +33,8 @@ ${Races}
 #Global Simmilar stuff
 FONT = Arial, 18, B, [col_gold]
 TEXT = 1-[CardCount], "Mods",           0, [space_top]+[third_vert]*0, [space_text_18], [third_vert], LEFT, TOP, 270
-TEXT = 1-[CardCount], "Passive",        0, [space_top]+[third_vert]*1, [space_text_18], [third_vert], LEFT, TOP, 270
-TEXT = 1-[CardCount], "Cards",          0, [space_top]+[third_vert]*2, [space_text_18], [third_vert], LEFT, TOP, 270
+TEXT = 1-[CardCount], "Cards",        0, [space_top]+[third_vert]*1, [space_text_18], [third_vert], LEFT, TOP, 270
+TEXT = 1-[CardCount], "Passive",          0, [space_top]+[third_vert]*2, [space_text_18], [third_vert], LEFT, TOP, 270
 
 FONT = Arial, 28, B, #000000
 TEXT = 1-[CardCount], "Passive",     [space_left] + [quart_hor] * 3, [space_top]+[third_vert]*2, [quart_hor], [space_text_28], LEFT, TOP

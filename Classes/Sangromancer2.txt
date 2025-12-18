@@ -9,13 +9,13 @@ Element: Wood
 Explanation:Poison
 
 Tier1
-Name: "Heart of Water" Water:2
 Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 A:3 Ranged
 Name: "Shred" ManaCost:Wood;2 A:5
 
 Tier3
 Name: "Wrath" A:X Text: "X is your missing life. X cant be more than 10"
 Name: "Calming Presence" H:2 Text: "Also target the players next to you"
+Name: "Cleanse" Water:4 Ranged H:2 Text: "Remove all debuffs from your target. Lose 4 life"
 
 
 

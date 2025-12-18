@@ -1,26 +1,26 @@
-Variant:1
+#Gold Passive, Silver Mods, Bronze Cards
 
 Passive
 When an enemy moves to your zone, it gets vulnerable
-Life: 8
+Life: 4
 
 
 Modifier Tableau
 #1; 1; 1; 1
 Rank:1
-Add 8 Vulnerable
-Add 8 Vulnerable Draw
-Add 4 A:1
-Add 4 A:1
+Add 4 Vulnerable Add 2 -2
+Add 4 Vulnerable Vulnerable Add 2 -2
+Add 5 Vulnerable Draw
+Add 5 Fire:2 Draw
 
 #2; 2
 Rank:2
-Add 2 Vulnerable
-Add 2 Vulnerable
+Add 2 +4 Fire Add 2 -2
+Add 4 Fire:1 Draw
 
 #3
 Rank:3
-Add 2 Vulnerable
+Add 1 *2 Draw
 
 
 Type
@@ -29,13 +29,10 @@ Element: Fire
 Explanation: Vulnerable
 
 Tier1
-Name: "Sun's Embrace" ManaCost:Opt;Fire;1 H:3 Text: "--- Opt cost paid ---" H:2                                 Type:Special
-Name: "Sun's Kiss" ManaCost:Opt;Fire;2 Fire:1 Vulnerable Text: "--- Opt cost paid ---" A:3                      Type:Attack
-Name: "Fire Heart" Fire:2 H:1                                                                                   Type:Special
+Name: "Sun's Embrace" ManaCost:Opt;Fire;1
+Name: "Heartburn" ManaCost:Opt;Fire;2 Vulnerable Opt ---" A:3
+Name: "Heart of Fire" Fire:2
 
 Tier2
-Name: "Light Barrage" A:1 A:1 H:3                                                                               Type:Attack
-Name: "Halation" ManaCost:Opt;Fire;2 A:1 Aoe:Cleave;3 Text: "--- Opt cost paid ---" A:2 Aoe:Cleave;3            Type:Attack
-
-Tier3
-Name: "Supreme Thunder" Fire:3 Text: "A:1 for each fire in the pool"                                            Type:Attack
+Name: "Light Barrage" A:1 A:1
+Name: "Eternal Flame" ManaCost:Opt;Fire;2 Fire:2 A:1 Opt Aoe:Cleave;3

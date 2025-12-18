@@ -12,9 +12,9 @@ Explanation:D6
 Tier1
 Name: "Earthen Heart" Earth:2
 Name: "Cleave" ManaCost:Metal;3 A:D6 Aoe:Cleave;2
-Name: "Earthen Heart" Earth:2
 
 Tier3
 Name: "Sword and Shield" S:1 A:D6
 Name: "Roar" A:1 Aoe:All
+Name: "Earthwake" Earth:2 S:2
 

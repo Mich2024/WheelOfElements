@@ -9,36 +9,41 @@ Life: 4
 Modifier Tableau
 #1; 1; 1; 1 (+1)
 Rank:1
-Add 2 +2 Add 4 -1
+Add 2 +D6 Add 4 -1
 Add 3 +4 Add 2 -1
-Remove 2 -1 Add 4 +4
-# Sollte eigentlich "Remove 5 +0 Add 5 +4" sein, aber das ist langweilig. (Remove 4 +0 Add 4 +5 ist auch möglich)
+Remove 2 -1 Add 3 +2D6
 Remove 6 +0 Add 6 +2
 
 #2; 2 (+0,2)
 Rank:2
-Remove 2 +0 Add 1 +4 Add 1 -1
-Remove 2 +0 Add 1 +4 Add 1 -1
+Remove 2 +0 Add 1 Earth:2 Add 1 -D6
+Remove 2 +0 Add 1 Earth:2 Add 1 -D6
 
 #3 (+0,2)
 Rank:3
-Remove 2 +0 Add 1 +8 Add 1 -2
+Remove 2 +0 Add 1 +3D6 Add 1 -2
 
 Type
-#Element: FireEarth
+Element:Earth
 
-Explanation: Blaze
+Explanation:D6
 
 Base Cards
+
+#Power Levels : 3,3,5,5,8
+
+#ManaCost:Opt;Fire;1
+
 Tier1
-Name: "Gallop" A:1 Blaze:1 Disengage
-Name: "Charge" Ranged A:1 Blaze:3 A:5
-Name: "Savage Strike" A:1 Blaze:2 A:2
+#3
+Name: "Clobber" ManaCost:Opt;Earth;2 Disengage Disengage Opt A:3
+Name: "Strike" A:1
+Name: "Heart of Earth" Earth:2
 
-Tier2
+Tier2 
+#5
 
-
-Tier3
-Name: "Trample" Ranged A:5 Blaze:1 Disengage
-Name: "Rampage" A:2 A:2 Blaze:2 A:2
-Name: "Stomp" A:3 Disengage Disengage
+#8
+Name: "Kerfuffle" A:2D6
+Name: "Sculpt" D6 Earth:X-6 A:2*X Text: "Attacks cannot deal less than 0 damage. They still get modified"
+Name: "Javelin" Ranged A:3 A:3 Earth

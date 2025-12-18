@@ -13,10 +13,9 @@ Explanation:Shield
 Tier1
 Name: "Shield and Stab" ManaCost:Opt;Metal;2 S:1 Text: "--- Opt cost paid ---" Text: "A:4"
 Name: "Versatility" Advantage Metal:1
-Name: "Inner Metal" A:2 Metal:1
 
 Tier3
 Name: "Sword and Dagger"  A:X A:X Stun Text: "X is Metal Mana in the Wheel"
 Name: "Mastery" S:1 Advantage A:4
-
+Name: "Inner Mettle" Metal:1 A:4
 
