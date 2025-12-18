@@ -1,5 +1,5 @@
 Passive
-At the beginning of each round, H:2.
+If your rightmost Enemy deals damage, he deals 0 damage instead.
 Life: 3
 
 
@@ -17,4 +17,3 @@ Tier3
 Name: "Sword and Shield" S:1 A:D6
 Name: "Roar" A:1 Aoe:All
 Name: "Earthwake" Earth:2 S:2
-

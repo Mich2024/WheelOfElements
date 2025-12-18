@@ -15,9 +15,9 @@ Name: "Heart of Fire" Fire:2
 Name: "Brutalize" ManaCost:Earth;4 Ranged A:9
 
 Tier3
+Name: "Aggression" Fire:1 A:4
 Name: "Faithless Looting" Text: "Draw two cards" Blaze:2 A:8
 Name: "Feral Instinct" Fire:1 Blaze:2 Text:"For each Card discarded gain an Effect depending on their rarity. Bronze:Vulnerable. Silver:Fire:2. Gold:A:D6. Mythril:Set your life to full life."
-Name: "Utrakill" ManaCost:Earth;3 A:12
 
 
 
