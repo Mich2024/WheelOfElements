@@ -66,7 +66,7 @@ Name:Capacitor Golem
 Normal
 
 Life:20
-Count:6
+Count:5
 
 Rolls:A Flurry Flurry Flurry
 Rolls:B Flurry Flurry Flurry
@@ -254,7 +254,7 @@ Golem: Patching Metalcrafter Capacitor Capacitor
 Golem: Patching Metalcrafter Colossal
 Golem: Patching Metalcrafter Capacitor Capacitor
 Golem: Patching Metalcrafter Colossal
-Golem: Patching Metalcrafter Capacitor Capacitor
+Golem: Patching Metalcrafter Colossal Capacitor
 
 
 Capacitor Golem -> flurry charger
