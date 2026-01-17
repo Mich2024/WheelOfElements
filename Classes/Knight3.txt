@@ -10,7 +10,7 @@ Explanation:Shield
 Explanation:Stun
 
 Tier1
-Name: "Precise Strike" Advantage A:2
+Name: "Protect" Ranged Stun
 Name: "Guard" S:1
 Name: "Stun and Stab" ManaCost:Opt;Metal;2 Stun Text: "--- Opt cost paid ---" Text: "A:4"
 
