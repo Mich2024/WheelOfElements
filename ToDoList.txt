@@ -1,7 +1,44 @@
 Races
-    Face
+    Fae
     Dwarf
     Silverkin
     Merman
 Events
 Rulebook
+Pictures should lead through the book, text should explain the picture.
+Pics for:
+At least one pic per section
+    Setup
+        Photo one player & Global
+    Play Area
+        Photo one player
+        - Enemies
+        - Wheel
+        - Deck
+        - Mods
+        - Space for action cards
+        - Markers?
+    Your Decks
+        Photo for deck & modifer deck
+    Leveling Up
+        Photo class shingle with arrow to corrseponding space on tableau
+        - Rank 1 and 2 both on photo with different placement
+    Events
+        - ???
+    Storybook
+        - Excerpt from one double page
+    Enemies
+        - Enemy card
+    Combat
+        - Rotation
+        - Enemy turn order
+        - Dice selecting action
+        - ABC action
+    Playing a card
+        - Action Card
+        - AOE selection
+
+
+
+
+
