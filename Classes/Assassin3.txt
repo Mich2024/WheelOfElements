@@ -13,7 +13,7 @@ Explanation:Advantage
 Tier1
 Name: "Heart of Metal" Metal:2
 Name: "Night's Embrace" ManaCost:Water;2 A:5
-Name: "Strike" A:1
+Name: "Superiority" Advantage Advantage
 
 Tier2
 Name: "Sword and Dagger" ManaCost:Water;3 A:6 A:3

@@ -10,6 +10,7 @@ Explanation:Poison
 
 Tier1
 Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 A:3 Ranged
+Name: "Strike" A:1
 
 Tier3
 Name: "Shred" ManaCost:Wood;2 A:9
