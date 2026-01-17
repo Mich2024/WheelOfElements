@@ -213,24 +213,51 @@ The possible effects are:
 
 
 \section{Boons \& Banes}
-As well as other keywords
+As well as other keywords.
+Boons and banes are traked va status token. When you aplly a boon or bane to a player or an enemy, place a status token on it.
+All status tokens can stack, which results in the effect being applied multiple times.
+For example, if powerful is applied three times on you, place three powerful tokens on your character sheet and apply the effect three times.
 
 
 \begin{longtable}{|p{2cm}|p{14.2cm}|}
-Boons
-Powerful
-Advantage
-Shield
-Flurry
 
-Banes
-Poison
-Vulnerable
-Stun
+	\hline
+	Powerful & Your attacks deal one extra damage. Remove powerful from players at the end of the turn. For enemies powerful persists between turns.
+	\hline
+	Advantage & After revealing a modifier, reveal another. You may choose which to use. Remove advantage from players at the end of the turn.
+	\hline
+	Shield & When taking damage from an attack, take one less. Remove shield from players at the end of the turn. For enemies shield persists between turns.
+	\hline
+	Flurry & At any point during your turn, you may remove one flurry token to perform Attack:1. Flurry persists between turns.
+	\hline
+
+	Poison & At the end of the turn, loose one life. Poison persists between turns.
+	\hline
+	Vulnerable & When taking damage from an attack, take one more. Vulnerable persists between turns.
+	\hline
+	Stun & When playing a card while stunned, instead ignore all of the cards effects and remove one stun token. When an enemy is stunned they instead skip their action to remove one stun token. Stun persists between turns.
+	\hline
+
+
+
+\end{longtable}
+
+Other keywords.
+These keywords modify how an action is performed. Since they only apply once, the do not need status tokens.
+\begin{longtable}{|p{2cm}|p{14.2cm}|}
+	
+	\hline
+	Ranged & All actions after the Ranged keyword may target your neighbours or their enemies.
+	\hline
+	Mana & If elemental mana is part of your cards action, add that much mana chips to field of the corresponding element in the wheel.
+	\hline
+	Disengage & To disengage an enemy, rotate that enemy to the left. This rotation does not respect enemy order or the end of turn, and happens immediately. 
+	\hline 
+	Area Of Effect & Some cards have AOE pictograms. In this case, target enemies in the exact pattern shown in the pictogram. Also make sure to respect placing conditions that enforce starting from the left or right edge of your zone. AOE's can never affect enemeies from multiple different players, as their enemies are never considered adjacent.
 \end{longtable}
 
 \section{Optional Rules}
-When you become more experienced, you can start with one class at rank two, instead of two classes at rank 1
+%When you become more experienced, you can start with one class at rank two, instead of two classes at rank 1
 
 If you find it very hectic for all players to take the turns simultaneously, you can choose to play one player at a time. In this case it may be nice for all players to look at the current players hand and discuss.
 

@@ -693,9 +693,9 @@ if __name__ == "__main__":
     files_Input.append(r"../Races/Thyger.txt")
     files_Input.append(r"../Races/Wyrmkin.txt")
     
-    files_Input.append(r"../Classes/Alchemist1.txt")
-    files_Input.append(r"../Classes/Alchemist2.txt")
-    files_Input.append(r"../Classes/Alchemist3.txt")
+    files_Input.append(r"../Classes/Toxicologist1.txt")
+    files_Input.append(r"../Classes/Toxicologist2.txt")
+    files_Input.append(r"../Classes/Toxicologist3.txt")
 
     files_Input.append(r"../Classes/Assassin1.txt")
     files_Input.append(r"../Classes/Assassin2.txt")

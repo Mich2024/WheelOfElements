@@ -336,6 +336,7 @@ class actionCard:
     def setEnergyCost(self, x):
         self.energyCost = x
     def appendManaCost(self, x):
+        #print(x.split(":")[1])
         self.manaCost = x.split(":")[1]
     def appendAction(self, x):
         self.actions.append(x)
@@ -437,15 +438,15 @@ class actionCard:
         optCost = ""
         
         if(self.manaCost) != "":
-            optCost += "Opt: "
             cost = self.manaCost.split(";")
-            for c in cost[1:]:
+            for c in cost:
                 sym = ""
                 if(c in symbolDict):
                     sym += symbolDict[c]
                     optCost += sym + " "
                 else:
                     optCost += c + " "
+                    
 
         template_card = template_card.replace(r"${Opt_Cost}",optCost)
 
