@@ -238,7 +238,7 @@ def parseStatLinesToCards(lines, name, rank):
     mode = ""
     #print(passive)
     for line in passive:
-        if startsWith(line, "Life:"):
+        if startsWith(line, "Life:") or startsWith(line, "TierCards:") or startsWith(line, "TierPassive:") or startsWith(line, "TierMods:"):
             card.assignmentDict[line.split(":")[0]](card,line.split(":")[1])
             continue
         else:
