@@ -43,5 +43,5 @@ Name: "Heart of Earth" Earth:2
 Tier3
 #8
 Name: "Kerfuffle" A:2D6
-Name: "Sculpt" D6 A:X Earth:X-6 Text: "The D6 is X"
-Name: "Javelin" Ranged A:4 Earth
+Name: "Sculpt" A:D6 Earth:6-X Text: "The D6 is X"
+Name: "Javelin" Earth Ranged A:4
