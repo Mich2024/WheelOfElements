@@ -5,6 +5,9 @@ Variant:1
 Passive
 Redirect Overkill damage to an adjacent enemy
 Life: 4
+TierCards: Gold
+TierPassive: Silver
+TierMods: Bronze
 
 Modifier Tableau
 #1; 1; 1; 1 (+1)

@@ -336,6 +336,7 @@ class actionCard:
     def setEnergyCost(self, x):
         self.energyCost = x
     def appendManaCost(self, x):
+        #print(x.split(":")[1])
         self.manaCost = x.split(":")[1]
     def appendAction(self, x):
         self.actions.append(x)
@@ -437,15 +438,15 @@ class actionCard:
         optCost = ""
         
         if(self.manaCost) != "":
-            optCost += "Opt: "
             cost = self.manaCost.split(";")
-            for c in cost[1:]:
+            for c in cost:
                 sym = ""
                 if(c in symbolDict):
                     sym += symbolDict[c]
                     optCost += sym + " "
                 else:
                     optCost += c + " "
+                    
 
         template_card = template_card.replace(r"${Opt_Cost}",optCost)
 
@@ -621,12 +622,24 @@ class statCard:
         self.explanations = []
         self.tableau = None
         self.lore = "Ipsum Lorum"
+        self.tierCards = "[col_mithril]"
+        self.tierPassive = "[col_mithril]"
+        self.tierMods = "[col_mithril]"
 
     def setLife(self, l):
         self.life = l
+    def setTierCards(self, l: str):
+        self.tierCards = "[col_" + l.strip().lower() + "]"
+    def setTierPassive(self, l: str):
+        self.tierPassive = "[col_" + l.strip().lower() + "]"
+    def setTierMods(self, l: str):
+        self.tierMods = "[col_" + l.strip().lower() + "]"
     
     assignmentDict = {
         "Life":setLife, #stat cards start here
+        "TierCards":setTierCards, 
+        "TierPassive":setTierPassive, 
+        "TierMods":setTierMods, 
     }
     #%Input: name, tier, stats, passive, skills
     def serializeToLatex(self):
@@ -665,6 +678,7 @@ class statCard:
             template_line_life = template_line_life.replace(r"${Order}",str(order)).replace(r"${Life}",self.life)
             template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",self.passive)
             template_race = template_race.replace(r"${Order}",str(order)).replace(r"${Race}", self.name )
+            template_race = template_race.replace(r"${TierMod}",self.tierMods).replace(r"${TierPassive}",self.tierPassive)
             res = template_race.replace(r"${Mods}", lines_mods).replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive)
 
         else:

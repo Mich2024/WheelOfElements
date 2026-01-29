@@ -64,6 +64,7 @@ Loss - You lose when every player dies in the same fight.\\
 
 
 \section{Setup}
+%TODO make all statements global or split global and solo
 \begin{enumerate}	
 	\item Pick a Race
 	\item Pick a Level 1 Class
@@ -86,7 +87,7 @@ Tableau - The tableau tracks you level up decision and life
 Enemy Zone - Enemies go here, with the configuration described in the storybook
 
 
-\section{Your Decks}
+Your Decks\section{Your Decks}
 \subsection{The action Deck}
 Card pool - The cards that can be added to your deck
 Before combat select 15 cards, these will be your deck
@@ -133,17 +134,23 @@ Each story begins with a plot hook, which should be narrated by a player.
 	
 
 \subsection{Encounters}
+%TODO rework with following section
 Each story comes with three enemy encounters. An encounter presents which enemies should be fought and in which arrangement.
 There are always 5 enemy setups described per encounter. Each player gets one of those setups.
 These enemy setups are distributed in clockwise seating order. %Please get  a picture for this
-If you are playing with 
+If you are playing with less than 5 players, ignore the setups beyond your player number.
 
 
 \section{Enemies}
 \subsection{Enemy Keywords}
-\section{Combat Round}
+\section{Combat}
+when entering a new combat from the storybook, shuffle your Action deck and your modifier deck. Empty the Elemental Wheel. Set your life to maximum\\
+
+\subsection{Combat Round}
+First, prepare a new round:
+
 \subsection{Player Turn}
-Shuffle your Action deck and your modifier deck before the combat starts. Empty the Elemental Wheel.\\
+
 Start of Turn\\
 Draw up to your maximum hand size.
 	Empty draw pile - When your draw pile is empty and you need to draw, your discard pile becomes your new draw pile. Shuffle it.
@@ -158,7 +165,11 @@ Resolve the card.
 Put the played card into the discard pile.
 
 \subsection{Enemy Turn}
-Your leftmost enemy, that didnt act yet, uses their action. 
+Enemies act form left to right.
+There are two types of enemies. Those that act based on your diceroll, and those that follow a pattern.
+The dice enemies perform the action that was rolled at the start of the combat round.
+
+The pattern enemies push their pattern marker
 Resolve the action. 
 Repeat until all your enemies acted, even if you die.
 	
@@ -213,24 +224,51 @@ The possible effects are:
 
 
 \section{Boons \& Banes}
-As well as other keywords
+As well as other keywords.
+Boons and banes are traked va status token. When you aplly a boon or bane to a player or an enemy, place a status token on it.
+All status tokens can stack, which results in the effect being applied multiple times.
+For example, if powerful is applied three times on you, place three powerful tokens on your character sheet and apply the effect three times.
 
 
 \begin{longtable}{|p{2cm}|p{14.2cm}|}
-Boons
-Powerful
-Advantage
-Shield
-Flurry
 
-Banes
-Poison
-Vulnerable
-Stun
+	\hline
+	Powerful & Your attacks deal one extra damage. Remove powerful from players at the end of the turn. For enemies powerful persists between turns.
+	\hline
+	Advantage & After revealing a modifier, reveal another. You may choose which to use. Remove advantage from players at the end of the turn.
+	\hline
+	Shield & When taking damage from an attack, take one less. Remove shield from players at the end of the turn. For enemies shield persists between turns.
+	\hline
+	Flurry & At any point during your turn, you may remove one flurry token to perform Attack:1. Flurry persists between turns.
+	\hline
+
+	Poison & At the end of the turn, loose one life. Poison persists between turns.
+	\hline
+	Vulnerable & When taking damage from an attack, take one more. Vulnerable persists between turns.
+	\hline
+	Stun & When playing a card while stunned, instead ignore all of the cards effects and remove one stun token. When an enemy is stunned they instead skip their action to remove one stun token. Stun persists between turns.
+	\hline
+
+
+
+\end{longtable}
+
+Other keywords.
+These keywords modify how an action is performed. Since they only apply once, the do not need status tokens.
+\begin{longtable}{|p{2cm}|p{14.2cm}|}
+	
+	\hline
+	Ranged & All actions after the Ranged keyword may target your neighbours or their enemies.
+	\hline
+	Mana & If elemental mana is part of your cards action, add that much mana chips to field of the corresponding element in the wheel.
+	\hline
+	Disengage & To disengage an enemy, rotate that enemy to the left. This rotation does not respect enemy order or the end of turn, and happens immediately. 
+	\hline 
+	Area Of Effect & Some cards have AOE pictograms. In this case, target enemies in the exact pattern shown in the pictogram. Also make sure to respect placing conditions that enforce starting from the left or right edge of your zone. AOE's can never affect enemeies from multiple different players, as their enemies are never considered adjacent.
 \end{longtable}
 
 \section{Optional Rules}
-When you become more experienced, you can start with one class at rank two, instead of two classes at rank 1
+%When you become more experienced, you can start with one class at rank two, instead of two classes at rank 1
 
 If you find it very hectic for all players to take the turns simultaneously, you can choose to play one player at a time. In this case it may be nice for all players to look at the current players hand and discuss.
 

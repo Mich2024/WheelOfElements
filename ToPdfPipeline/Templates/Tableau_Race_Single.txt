@@ -5,3 +5,5 @@ FONT = Arial, 18, B, #000000
 ${Mods}
 ${Life}
 ${Passive}
+RECTANGLE = ${Order}, [space_left] + [quart_hor] * 0, [space_top], [quart_hor] * 2, [third_vert], ${TierMod}, empty, [linestrength]
+RECTANGLE = ${Order}, [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], ${TierPassive}, empty, [linestrength]

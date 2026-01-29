@@ -6,7 +6,7 @@ Type
 Element: Earth
 
 Tier1
-Name: "Strike" A:1
+Name: "Barrage" A:1 Blaze:1 A:1
 Name: "Gain" Earth:1 Blaze:2 Earth:2
 Name: "Confusion" ManaCost:Opt;Earth;1 S:1 Text: "--- Opt cost paid ---" S:1
 

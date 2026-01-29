@@ -1,0 +1,25 @@
+Passive
+When a poisoned enemy dies, H:4
+
+Life: 4
+
+
+Type
+Element: Water
+
+Explanation:Stun
+
+#Power Levels : 3,3,3,5,5
+
+#ManaCost:Opt;Fire;X
+
+Tier1
+#3
+Name: "Poison Fume" Poison:1 Aoe:Cleave;2
+Name: "Flashpowder" Ranged Stun
+
+Tier3
+#8
+Name: "Miasma" Water:1 Text: "Stun all Poisoned targets" AOE:All 
+Name: "Sepsis" ManaCost:Opt;Water;5 Poison:6 Opt A:X Text: "X is the amount of poison on the target" 
+Name: "Fated Death" Water:2 Text: "Double the poison on one enemy" 
