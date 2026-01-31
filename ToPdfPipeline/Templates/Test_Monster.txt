@@ -1,4 +1,4 @@
-[CardCount] = 5
+[CardCount] = 2
 
 [space_text_28] = 1
 [space_text_18] = 0.7
@@ -8,11 +8,14 @@
 [space_top] = 1
 [space_left] = 0.5
 [half_space_left] = (0.5*[space_left])
-[space_right] = 1.7
+[space_right] = 1.5
 [space_bottom] = 0.25
 [space_hp_box] = 0.7
+[space_action_left] = 0.55*2 + 0.2
+
 
 [full_hor] = 6.35 - [space_left] - [space_right]
+[full_hor_action] = 6.35 - [space_action_left] - [space_right]
 
 CARDS=[CardCount]
 BORDER=ROUNDED,#000000,[linestrength]
@@ -43,6 +46,13 @@ htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", 0.55, 0.
 htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png", 0.55, 0.55
+
+htmlimage = 1 - [CardCount], \symDOne, "..\..\Pictures\Icons\D61.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symDTwo, "..\..\Pictures\Icons\D62.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symDThree, "..\..\Pictures\Icons\D63.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symDFour, "..\..\Pictures\Icons\D64.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symDFive, "..\..\Pictures\Icons\D65.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symDSix, "..\..\Pictures\Icons\D66.png", 0.55, 0.55
 
 htmlfont=font_18,Arial,14,B,#000000,LEFT
 
@@ -94,16 +104,22 @@ TEXT = 1-[CardCount], "90", [space_left] + [space_hp_box] + [full_hor] + [linest
 #Name, OptCost
 FONT = Arial, 28, B, #000000
 TEXT = 1, "${Name}", [space_left] , 0, [full_hor], [space_text_28], LEFT, TOP
-FONT = Arial, 18, B, #000000
 htmltext=1,"${Passive}",[space_left] ,[space_text_28],[full_hor],[space_text_18] + 0.2,#FFFFFF,0,T,100,font_18
 
 #PicBox
 #FONT = Arial, 28, B, #000000
 #TEXT = 1, "Pics or it didnt happen", [space_left] , [space_text_28] + [space_text_18], [full_hor], 4 - [space_text_28] - [space_text_18], LEFT, WORDWRAP
 
-#TextBox
-FONT = Arial, 18, B, #000000
-htmltext = 1, "TextBox Is my waif u <br> \symAddFire", [space_left] , 5,[full_hor], 4,#FFFFFF,0,T,100,font_18
+#TextBox1
+htmltext = 1, "\symDOne \symDTwo", 0 , 4.8,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = 1, "TextBox Is my waif u \symAddFire", [space_action_left] , 4.8,[full_hor_action], 4,#FFFFFF,0,T,100,font_18
+#TextBox2
+htmltext = 1, "\symDThree", 0 , 4.8 + [space_text_18] * 2,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = 1, "TextBox Is my waif u \symAddFire", [space_action_left] , 4.8 + [space_text_18] * 2,[full_hor_action], 4,#FFFFFF,0,T,100,font_18
+#TextBox3
+htmltext = 1, "\symDFour \symDFive", 0 , 4.8 + [space_text_18] * 4,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = 1, "\symDSix", 0.15 * [space_action_left] , 4.8 + [space_text_18] * 5,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = 1, "TextBox Is my waif u \symAddFire", [space_action_left] , 4.8 + [space_text_18] * 4,[full_hor_action], 4,#FFFFFF,0,T,100,font_18
 
 
 
