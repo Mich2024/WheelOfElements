@@ -5,6 +5,8 @@
 \usepackage{xcolor}
 \usepackage{babel}
 \usepackage{longtable}
+\usepackage{parskip}
+\usepackage{array}
 \title{Rulebook}
 
 \author{Alexander Mödder and Alexander Vinkeloe}
@@ -14,6 +16,24 @@
 %Explain how it is used second
 %Go top down (Complex overarching to simple detail)
 %? Try to not crossref? People can remember 3 things at most, if you have to make them
+
+\newcommand{\scaleForSym}{10pt}
+%Local
+\newcommand{\symShield}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Shield.png}}
+\newcommand{\symAdvantage}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Advantage.png}}
+\newcommand{\symStun}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Stun.png}}
+\newcommand{\symPoison}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Poison.png}}
+\newcommand{\symHeal}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Heal.png}}
+\newcommand{\symPowerful}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Powerful.png}}
+\newcommand{\symFlurry}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Flurry.png}}
+\newcommand{\symVulnerable}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Vulnerable.png}}
+\newcommand{\symBlaze}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Blaze.png}}
+\newcommand{\symDSix}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/D6.png}}
+%Global
+\newcommand{\symRanged}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Ranged.png}}
+\newcommand{\symDisengage}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Disengage.png}}
+\newcommand{\symFire}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/AddFire.png}}
+\newcommand{\symDraw}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Draw.png}}
 
 \begin{document}
 \maketitle
@@ -211,11 +231,9 @@ Over the course of the game, you can add many modifiers that are more interestin
 The possible effects are:
 \begin{longtable}{|p{2cm}|p{14.2cm}|}
 	\hline
-	Draw &  Draw another modifier and apply both. This effect can chain into multiple draws  \\
+	Draw \symDraw &  Draw another modifier and apply both. This effect can chain into multiple draws  \\
 	\hline
-	Element & Create the shown elements after the full card is performed \\
-	\hline
-	Potions & These cards are alchemist exclusive. When you draw one, immediately put them aside and draw another modifier. When used, the potion returns to your modifier discard \\
+	Element \symFire & Create the shown elements after the full card is performed \\
 	\hline
 	Keywords & Some races have their keywords on some of the modifiers. If so, apply the keyword afert the full card is performed. \\
 	\hline
@@ -230,47 +248,56 @@ All status tokens can stack, which results in the effect being applied multiple 
 For example, if powerful is applied three times on you, place three powerful tokens on your character sheet and apply the effect three times.
 
 
-\begin{longtable}{|p{2cm}|p{14.2cm}|}
+\begin{longtable}{|p{2.5cm}|p{13.7cm}|}
 
 	\hline
-	Powerful & Your attacks deal one extra damage. Remove powerful from players at the end of the turn. For enemies powerful persists between turns.
+	Powerful \symPowerful & Your attacks deal one extra damage. Remove powerful from players at the end of the turn. For enemies powerful persists between turns. \\
 	\hline
-	Advantage & After revealing a modifier, reveal another. You may choose which to use. Remove advantage from players at the end of the turn.
+	Advantage \symAdvantage & After revealing a modifier, reveal another. You may choose which to use. Remove advantage from players at the end of the turn.\\
 	\hline
-	Shield & When taking damage from an attack, take one less. Remove shield from players at the end of the turn. For enemies shield persists between turns.
+	Shield \symShield & When taking damage from an attack, take one less. Remove shield from players at the end of the turn. For enemies shield persists between turns. \\
 	\hline
-	Flurry & At any point during your turn, you may remove one flurry token to perform Attack:1. Flurry persists between turns.
+	Flurry \symFlurry & At any point during your turn, you may remove one flurry token to perform Attack:1. Flurry persists between turns. \\
 	\hline
-
-	Poison & At the end of the turn, loose one life. Poison persists between turns.
+	Poison \symPoison & At the end of the turn, loose one life. Poison persists between turns. \\
 	\hline
-	Vulnerable & When taking damage from an attack, take one more. Vulnerable persists between turns.
+	Vulnerable \symVulnerable & When taking damage from an attack, take one more. Vulnerable persists between turns. \\
 	\hline
-	Stun & When playing a card while stunned, instead ignore all of the cards effects and remove one stun token. When an enemy is stunned they instead skip their action to remove one stun token. Stun persists between turns.
+	Stun \symStun & When playing a card while stunned, instead ignore all of the cards effects and remove one stun token. When an enemy is stunned they instead skip their action to remove one stun token. Stun persists between turns. \\
 	\hline
 
 
 
 \end{longtable}
 
+
 Other keywords.
-These keywords modify how an action is performed. Since they only apply once, the do not need status tokens.
-\begin{longtable}{|p{2cm}|p{14.2cm}|}
+These keywords modify how an action is performed. Since they only apply once, the do not need status tokens.\\
+\begin{longtable}{|p{2.5cm}|p{13.7cm}|}
 	
 	\hline
-	Ranged & All actions after the Ranged keyword may target your neighbours or their enemies.
+	Heal X \symHeal & Raise the targets health by X\\
 	\hline
-	Mana & If elemental mana is part of your cards action, add that much mana chips to field of the corresponding element in the wheel.
+	Blaze X \symBlaze & If you play a card with blaze as the first card of your tun, discard X cards, and perform the optional effect. If you play that card second, do not discard and do not perform the optional text. \\
 	\hline
-	Disengage & To disengage an enemy, rotate that enemy to the left. This rotation does not respect enemy order or the end of turn, and happens immediately. 
+	D6 \symDSix & When a card asks you to roll some D6, get that many six sided dice, roll them and add their results. The sum is X \\
+	\hline
+	Ranged \symRanged & All actions after the Ranged keyword may target your neighbours or their enemies. \\
+	\hline
+	Mana \symFire & If elemental mana is part of your cards action, add that much mana chips to field of the corresponding element in the wheel. \\
+	\hline
+	Disengage \symDisengage & To disengage an enemy, rotate that enemy to the left. This rotation does not respect enemy order or the end of turn, and happens immediately. \\
 	\hline 
-	Area Of Effect & Some cards have AOE pictograms. In this case, target enemies in the exact pattern shown in the pictogram. Also make sure to respect placing conditions that enforce starting from the left or right edge of your zone. AOE's can never affect enemeies from multiple different players, as their enemies are never considered adjacent.
+	Area Of Effect \centering{\includegraphics[width=2cm]{../Pictures/AOE/AoeRuleSample.png}} & Some cards have AOE pictograms. In this case, target enemies in the exact pattern shown in the pictogram. Also make sure to respect placing conditions that enforce starting from the left or right edge of your zone. AOE's can never affect enemeies from multiple different players, as their enemies are never considered adjacent. \\
+	\hline
 \end{longtable}
 
 \section{Optional Rules}
 %When you become more experienced, you can start with one class at rank two, instead of two classes at rank 1
 
 If you find it very hectic for all players to take the turns simultaneously, you can choose to play one player at a time. In this case it may be nice for all players to look at the current players hand and discuss.
+
+With many players looking at the monster dice may be an issue for some at the table. Consider rolling a dice per person, and everyone uses their own result for the monster action. Remeber to synchronize the starts of your turn though.
 
 \section{Background Info for Devs}
 \subsection{Math for nerds}
