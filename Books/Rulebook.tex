@@ -39,6 +39,8 @@
 \maketitle
 
 %\section{Foreword} This one wont have a section formatting, but still needs to be there
+
+%Al primers need to be in here. This includes: Multiclassing, deckbuilding, the modifier deck, Co-op, species?, roguelike?, Wheelgame?,
 \textbf{Game Overview}\\
 Wheel of Elements is a cooperative multi-classing deckbuilder. Become an indomitable tank, a Mage of Immense arcane Power or something between, like a berserking Alchemist. Beat three battles of increasing difficulty and prove your mettle.\\
 
@@ -162,7 +164,11 @@ If you are playing with less than 5 players, ignore the setups beyond your playe
 
 
 \section{Enemies}
-\subsection{Enemy Keywords}
+Enemy cards consist of three parts:
+The stat lines, which contain the name, and any assive effects, the life bar to the right, and the action box at the bottom.
+%Move entirely to combat?
+
+
 \section{Combat}
 when entering a new combat from the storybook, shuffle your Action deck and your modifier deck. Empty the Elemental Wheel. Set your life to maximum\\
 
@@ -183,6 +189,7 @@ Pay its mandatory element cost
 Choose if you want to play the optional costs.
 Resolve the card.
 Put the played card into the discard pile.
+After evey player has finished playing their cards, move to the enemy turn.
 
 \subsection{Enemy Turn}
 Enemies act form left to right.
@@ -196,7 +203,7 @@ Repeat until all your enemies acted, even if you die.
 \subsection{Cleanup step}
 Remove all single Turn Boons\&Banes (They are Shield, Player Powerful, Advantage etc).\\
 Apply Poison Damage.\\
-Move your leftmost enemy to the player to your left. This happens simultaneous. You cannot give away an enemy given to you this way.\\
+Move your leftmost enemy to the player to your left. This happens simultaneously. You cannot give away an enemy given to you this way.\\
 If you are dead give all your remaining enemies to your left. \\
 Rotate the mana wheel.\\
 Shuffle the modifier discard back into the deck if the *0 or *2 modifieris in the discard.
@@ -270,9 +277,9 @@ For example, if powerful is applied three times on you, place three powerful tok
 
 \end{longtable}
 
+\subsection{Static keywords}
+These keywords modify how an action is performed. Since they only apply once, there is no need for status tokens.\\
 
-Other keywords.
-These keywords modify how an action is performed. Since they only apply once, the do not need status tokens.\\
 \begin{longtable}{|p{2.5cm}|p{13.7cm}|}
 	
 	\hline
@@ -290,6 +297,20 @@ These keywords modify how an action is performed. Since they only apply once, th
 	\hline 
 	Area Of Effect \centering{\includegraphics[width=2cm]{../Pictures/AOE/AoeRuleSample.png}} & Some cards have AOE pictograms. In this case, target enemies in the exact pattern shown in the pictogram. Also make sure to respect placing conditions that enforce starting from the left or right edge of your zone. AOE's can never affect enemeies from multiple different players, as their enemies are never considered adjacent. \\
 	\hline
+\end{longtable}
+
+\subsection{Enemy Keywords}
+Many enemies have one or more keyword as part of their passive.
+
+\begin{longtable}{|p{2.5cm}|p{13.7cm}|}
+
+	\hline
+	Skittish & This enemy disengages immediately after being damaged (You still perform the full action before the enemy disengages) \\
+	Harrier & This enemy disengages at the end of every turn\\
+	Heretic & This enemy rotates to the right instead of left (does not apply when disengaged)\\
+	Enrage & This enemy gains powerful after taking damage\\
+	\hline 
+	
 \end{longtable}
 
 \section{Optional Rules}
