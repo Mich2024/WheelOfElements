@@ -7,6 +7,8 @@
 \usepackage{longtable}
 \usepackage{parskip}
 \usepackage{array}
+\usepackage{wrapfig}
+\usepackage{tocloft}
 \title{Rulebook}
 
 \author{Alexander Mödder and Alexander Vinkeloe}
@@ -36,15 +38,19 @@
 \newcommand{\symDraw}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Draw.png}}
 
 \begin{document}
+
+
+	
 \maketitle
 
 %\section{Foreword} This one wont have a section formatting, but still needs to be there
 
 %Al primers need to be in here. This includes: Multiclassing, deckbuilding, the modifier deck, Co-op, species?, roguelike?, Wheelgame?,
+\begin{minipage}[t][12cm][t]{0.5\textwidth}
 \textbf{Game Overview}\\
-Wheel of Elements is a cooperative multi-classing deckbuilder. Become an indomitable tank, a Mage of Immense arcane Power or something between, like a berserking Alchemist. Beat three battles of increasing difficulty and prove your mettle.\\
+Wheel of Elements is a cooperative multi-classing deckbuilder. Become an indomitable tank, a Mage of Immense arcane Power or something between, like a berserking Alchemist. Beat three battles of increasing difficulty and prove your mettle.
 
-Wheel of Elements is a \textbf{multi-classing} game. Each player starts with a Race and two classes. Improve or add a class after each won combat.\\
+Wheel of Elements is a \textbf{multi-classing} game. Each player starts with a Race and two classes. Improve or add a class after each won combat.
 
 Wheel of Elements is also a \textbf{deckbuilder}. Each Race and class gives you cards which combine to a 15 card Deck. Many cards twist the rules and let you get creative with your combinations., Choose the way in which you create your deck.\\ 
 
@@ -54,39 +60,56 @@ The Game consists of three fights with random events and deckbuilding sessions b
 \textbf{Winning \& Losing}\\
 Victory - Victory is achieved when all enemies are dead.\\
 Loss - You lose when every player dies in the same fight.\\
-
+\end{minipage}
+\begin{minipage}[t][12cm][t]{0.5\textwidth}
+\setlength{\cftbeforetoctitleskip}{-0.5em}
+\setlength{\cftbeforesecskip}{0em}
 \tableofcontents
+
+\framebox[0.4\textwidth]{Hot Thyger Pic here}
+\end{minipage}
+
 \section{Components}
 %recalc way at the end
-\begin{itemize}
-	\item 1 Rulebook
-	\item 1 Storybook
-	\item 1 Elemental Wheel
-	\item 25 Element Chips
-	\item 10 Race Tableau
-	\item 30 Class Shingles
-	\item ~220 Small Cards 
-	\begin{enumerate}	
-		\item (5 Base modifier decks a 10 cards)
-		\item (10 Race modifier Decks a ~15 cards)
-		\item (~20 From Passives)
-	\end{enumerate}
-	\item ~210 Player Cards	
-	\begin{enumerate}	
-		\item (30 Class decks a 5 cards)
-		\item (10 Race decks a 6 cards)
-	\end{enumerate}
-	\item 20 Events
-	\item 150 Monsters
-	\item 5 Dice (Monster Die and Drunkenmaster Die)
-	\item 20 Plastic Cubes 	(Damage Trackers for monsters \& Players)
-	\item 50 Tokens Boons\&Banes
-\end{itemize}
+\begin{minipage}[t][4cm][t]{0.5\textwidth}
+	\begin{itemize}
+		\item 1 Rulebook
+		\item 1 Storybook
+		\item 1 Elemental Wheel
+		\item 25 Element Chips
+		\item 10 Race Tableau
+		\item 30 Class Shingles
+		\item ~220 Small Cards 
+		\begin{enumerate}	
+			\item (5 Base modifier decks a 10 cards)
+			\item (10 Race modifier Decks a ~15 cards)
+			\item (~20 From Passives)
+		\end{enumerate}
+	\end{itemize}
+\end{minipage}
+\begin{minipage}[t][4cm][t]{0.5\textwidth}
+	\begin{itemize}
+		\item ~210 Player Cards	
+		\begin{enumerate}	
+			\item (30 Class decks a 5 cards)
+			\item (10 Race decks a 6 cards)
+		\end{enumerate}
+		\item 20 Events
+		\item 150 Monsters
+		\item 5 Dice (Monster Die and Drunkenmaster Die)
+		\item 20 Plastic Cubes 	(Damage Trackers for monsters \& Players)
+		\item 50 Tokens Boons\&Banes
+	\end{itemize}
+\end{minipage} \\
 
-
+\newpage
 
 \section{Setup}
+\begin{wrapfigure}{l}{0.4\textwidth}
+\includegraphics[width=0.4\textwidth]{ExplanationPics/TwoBoards.jpg}
+\end{wrapfigure}
 %TODO make all statements global or split global and solo
+To construct their action and modifer deck, each player follows the following steps:
 \begin{enumerate}	
 	\item Pick a Race
 	\item Pick a Level 1 Class
@@ -95,7 +118,7 @@ Loss - You lose when every player dies in the same fight.\\
 	\item Do the modifier changes to your modifier Deck depending of the Race Tableau and shuffle it. Then put the class shingles in the Race Tableau
 	\item Put the Elemental Wheel in the middle
 	\item Select a story from the storybook
-	\item Each player setups the his enemies corresponding to his Fight 1 encounter card
+	\item Each player setups the their enemies corresponding to the encounter descrpition
 	\item Start Combat
 \end{enumerate}
 
@@ -110,14 +133,14 @@ Enemy Zone - Enemies go here, with the configuration described in the storybook
 
 
 Your Decks\section{Your Decks}
-\subsection{The action Deck}
+\subsection*{The action Deck}
 Card pool - The cards that can be added to your deck
 Before combat select 15 cards, these will be your deck
 The action deck contains all cards you can play during combat.
 Card rarity - Cards can have different rarity levels, from bronze to mithril.
 Card power varies greatly, but two cards of the same rarity are generally equal
 
-\subsection{The modifier Deck}
+\subsection*{The modifier Deck}
 The modifier cards are used every time you attack an enemy. They can have three effects:
 Numerical - Adds a number to your attack damage
 Elements - Create the shown elements
@@ -149,13 +172,13 @@ Events can have many interesting effects and will warp how you choose to play yo
 The storybook contains all of the Stories you can play in Wheel of Elements.
 Each story will take about 2 hours to play through, contain 3 Encounters and one text containing a short story for why you are fighting.
 
-\subsection{Stories}
+\subsection*{Stories}
 Each story begins with a plot hook, which should be narrated by a player.
 	The text is separated into four sections. After reading a section, start one of the three fights. After finishing a fight, read another section, draw an event, and level up. After finishing the second fight, repeat this process.
 	%Flowchart? with nice pics?
 	
 
-\subsection{Encounters}
+\subsection*{Encounters}
 %TODO rework with following section
 Each story comes with three enemy encounters. An encounter presents which enemies should be fought and in which arrangement.
 There are always 5 enemy setups described per encounter. Each player gets one of those setups.
@@ -172,10 +195,10 @@ The stat lines, which contain the name, and any assive effects, the life bar to 
 \section{Combat}
 when entering a new combat from the storybook, shuffle your Action deck and your modifier deck. Empty the Elemental Wheel. Set your life to maximum\\
 
-\subsection{Combat Round}
+\subsection*{Combat Round}
 First, prepare a new round:
 
-\subsection{Player Turn}
+\subsection*{Player Turn}
 
 Start of Turn\\
 Draw up to your maximum hand size.
@@ -191,7 +214,7 @@ Resolve the card.
 Put the played card into the discard pile.
 After evey player has finished playing their cards, move to the enemy turn.
 
-\subsection{Enemy Turn}
+\subsection*{Enemy Turn}
 Enemies act form left to right.
 There are two types of enemies. Those that act based on your diceroll, and those that follow a pattern.
 The dice enemies perform the action that was rolled at the start of the combat round.
@@ -200,7 +223,7 @@ The pattern enemies push their pattern marker
 Resolve the action. 
 Repeat until all your enemies acted, even if you die.
 	
-\subsection{Cleanup step}
+\subsection*{Cleanup step}
 Remove all single Turn Boons\&Banes (They are Shield, Player Powerful, Advantage etc).\\
 Apply Poison Damage.\\
 Move your leftmost enemy to the player to your left. This happens simultaneously. You cannot give away an enemy given to you this way.\\
@@ -233,7 +256,7 @@ After playing the card, put it into your discard pile
 
 %Pic: structureof card
 
-\subsection{Modifiers}
+\subsection*{Modifiers}
 Over the course of the game, you can add many modifiers that are more interesting then just numbers.
 The possible effects are:
 \begin{longtable}{|p{2cm}|p{14.2cm}|}
@@ -277,7 +300,7 @@ For example, if powerful is applied three times on you, place three powerful tok
 
 \end{longtable}
 
-\subsection{Static keywords}
+\subsection*{Static keywords}
 These keywords modify how an action is performed. Since they only apply once, there is no need for status tokens.\\
 
 \begin{longtable}{|p{2.5cm}|p{13.7cm}|}
@@ -299,7 +322,7 @@ These keywords modify how an action is performed. Since they only apply once, th
 	\hline
 \end{longtable}
 
-\subsection{Enemy Keywords}
+\subsection*{Enemy Keywords}
 Many enemies have one or more keyword as part of their passive.
 
 \begin{longtable}{|p{2.5cm}|p{13.7cm}|}
@@ -321,6 +344,6 @@ If you find it very hectic for all players to take the turns simultaneously, you
 With many players looking at the monster dice may be an issue for some at the table. Consider rolling a dice per person, and everyone uses their own result for the monster action. Remeber to synchronize the starts of your turn though.
 
 \section{Background Info for Devs}
-\subsection{Math for nerds}
-\subsection{Card List}
+\subsection*{Math for nerds}
+\subsection*{Card List}
 \end{document}
