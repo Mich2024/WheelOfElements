@@ -53,7 +53,20 @@ htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png"
 
 htmlfont=font_18,Arial,14,B,#000000,LEFT
 
-${Cards}
+#Name, OptCost
+FONT = Arial, 28, B, #000000
+TEXT = 1, "${Name}", [space_left] , 0, [full_hor], [space_text_28], LEFT, TOP
+FONT = Arial, 18, B, #000000
+htmltext=1,"${Passive}",[space_left] ,[space_text_28],[full_hor],[space_text_18] + 0.2,#FFFFFF,0,T,100,font_18
+
+#PicBox
+#FONT = Arial, 28, B, #000000
+#TEXT = 1, "Pics or it didnt happen", [space_left] , [space_text_28] + [space_text_18], [full_hor], 4 - [space_text_28] - [space_text_18], LEFT, WORDWRAP
+
+#TextBox
+FONT = Arial, 18, B, #000000
+htmltext = 1, "TextBox Is my waif u <br> \sym AddFire", [space_left] , 4,[full_hor], 4,#FFFFFF,0,T,100,font_18
+
 
 
 
