@@ -219,7 +219,7 @@ There are always 5 enemy setups described per encounter. Each player gets one of
 These enemy setups are distributed in clockwise seating order. %Please get  a picture for this
 If you are playing with less than 5 players, ignore the setups beyond your player number.
 
-\subsection*{Enemies}
+\subsection*{Enemy Card}
 \begin{figure}[ht]
 	\begin{minipage}[t][10cm][t]{0.5\textwidth}
 		Enemy cards consist of four parts:
@@ -227,7 +227,10 @@ If you are playing with less than 5 players, ignore the setups beyond your playe
 			\item name	
 			\item any passive effects
 			\item the life bar
+			\item if an enemy dies immediatly remove him from the board
 			\item the action box
+			\item the action either depends on the die
+			\item or is a rotating action that changes each turn 
 		\end{enumerate}
 	\end{minipage}	
 	\begin{minipage}[t][10cm][t]{0.5\textwidth}
@@ -242,26 +245,25 @@ Events can have many interesting effects and will warp how you choose to play yo
 
 \newpage
 \section{Combat}
-when entering a new combat from the storybook, shuffle your Action deck and your modifier deck. Empty the Elemental Wheel. Set your life to maximum\\
+When entering a new combat from the Storybook, shuffle your Action deck and your modifier deck. Empty the Elemental Wheel. Set your life to maximum. Setup enemies based on the Storybook. Start of combat abilities trigger.\\
 
-\subsection*{Combat Round}
-First, prepare a new round:
+%\subsection*{Combat Round}
+%First, prepare a new round:
 
 \subsection*{Player Turn}
 
 Start of Turn\\
-Draw up to your maximum hand size.
-	Empty draw pile - When your draw pile is empty and you need to draw, your discard pile becomes your new draw pile. Shuffle it.
-Roll the Monster Die
-Start of turn and start of combat abilities trigger. Players may decide order.
-Play\\
+Draw up to your maximum hand size.\\
+\hspace*{1cm}Empty draw pile - When your draw pile is empty and you need to draw, your discard pile becomes your \hspace*{1cm}new draw pile. Shuffle it.\\
+Roll the Monster Die\\
+Start of turn abilities trigger. Players may decide order.\\
 Players may play up to 2 cards each turn.
 To play a card:
 Pay its mandatory element cost
 Choose if you want to play the optional costs.
 Resolve the card.
 Put the played card into the discard pile.
-After evey player has finished playing their cards, move to the enemy turn.
+After every player has finished playing their cards, move to the enemy turn.
 
 \subsection*{Enemy Turn}
 Enemies act form left to right.
@@ -280,6 +282,7 @@ If you are dead give all your remaining enemies to your left. \\
 Rotate the mana wheel.\\
 Shuffle the modifier discard back into the deck if the *0 or *2 modifieris in the discard.
 
+\newpage
 \section{Playing a Card}
 You may play two cards per turn. Most cards do not have a cost. Others have mana costs.
 To pay  a mana cost, remove the stated amount of mana markers from the corresponding field on the wheel back into the stash.
