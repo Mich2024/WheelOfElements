@@ -3,12 +3,14 @@
 \usepackage{graphicx}
 \usepackage[margin=2cm]{geometry}
 \usepackage{xcolor}
+\usepackage[table]{xcolor}
 \usepackage{babel}
 \usepackage{longtable}
 \usepackage{parskip}
 \usepackage{array}
 \usepackage{wrapfig}
 \usepackage{tocloft}
+\usepackage[export]{adjustbox}
 \title{Rulebook}
 
 \definecolor{PageBackground}{HTML}{f7e3ba} %e9e5ce  e4d3c5 FFDEAD F5DEB3 F5DEAD
@@ -49,8 +51,8 @@
 %\section{Foreword} This one wont have a section formatting, but still needs to be there
 
 %Al primers need to be in here. This includes: Multiclassing, deckbuilding, the modifier deck, Co-op, species?, roguelike?, Wheelgame?,
-\begin{minipage}[t][12cm][t]{0.5\textwidth}
-\begin{minipage}[t][12cm][t]{0.9\textwidth}
+\begin{minipage}[t][14cm][t]{0.5\textwidth}
+\begin{minipage}[t][14cm][t]{0.9\textwidth}
 \textbf{Game Overview}\\
 Wheel of Elements is a cooperative multi-classing deckbuilder. Become an indomitable tank, a Mage of Immense arcane Power or something between, like a berserking Alchemist. Beat three battles of increasing difficulty and prove your mettle.
 
@@ -62,8 +64,8 @@ Wheel of Elements is also a \textbf{deckbuilder}. Each Race and class gives you 
 The Game consists of three fights with random events and deckbuilding sessions between them. A full game takes about 2 hours. Plan for some extra time your first game.\\
 
 \textbf{Winning \& Losing}\\
-Victory - Victory is achieved when all enemies are dead.\\
-Loss - You lose when every player dies in the same fight.\\
+Victory - Victory is achieved when all enemies from the story are defeated.\\
+Loss - You lose when every player is defeated in the same encounter.\\
 \end{minipage}
 \end{minipage}
 \begin{minipage}[t][12cm][t]{0.5\textwidth}
@@ -84,11 +86,11 @@ Loss - You lose when every player dies in the same fight.\\
 		\item 25 Element Chips
 		\item 10 Race Tableau
 		\item 30 Class Shingles
-		\item ~220 Small Cards 
+		\item 220 Small Cards 
 		\begin{enumerate}	
-			\item (5 Base modifier decks a 10 cards)
-			\item (10 Race modifier Decks a ~15 cards)
-			\item (~20 From Passives)
+			\item (5 Base Modifier Decks a 10 cards)
+			\item (10 Race Modifier Decks a ~15 cards)
+			\item (~20 from Passives)
 		\end{enumerate}
 	\end{itemize}
 \end{minipage}
@@ -111,39 +113,47 @@ Loss - You lose when every player dies in the same fight.\\
 
 \section{Setup}
 
-\begin{minipage}[t][8cm][t]{0.5\textwidth}
-	\begin{wrapfigure}{l}{4cm}
-		\includegraphics[width=4cm]{ExplanationPics/TwoBoards.jpg}
-		%\includegraphics[width=0.8\textwidth]{ExplanationPics/TwoBoards.jpg}
-	\end{wrapfigure}
-\end{minipage}
-\begin{minipage}[t][8cm][t]{0.5\textwidth}
+
+\begin{figure}[ht]
+	\begin{minipage}[t][10cm][t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/PlayAreaAnnotated.png}
+	\end{minipage}
+	\begin{minipage}[t][10cm][t]{0.5\textwidth}
+		To construct their action and modifer deck, each player follows the following steps:
+		\begin{enumerate}	
+			\item Pick a Race
+			\item Pick a Level 1 Class
+			\item Pick a different level 1 Class
+			\item Shuffle all actionyour Action Decks together
+			\item Do the modifier changes to your Modifier Deck depending of the Race Tableau and shuffle it. Then put the Class Shingles in the Race Tableau
+			\item Put the Elemental Wheel in the middle
+			\item Select a story from the Storybook
+			\item Set up your enemies corresponding to the encounter descrpition
+			\item Start Combat
+		\end{enumerate}
+		\begin{enumerate}
+		\end{enumerate}
+	\end{minipage}	
+	
+	%\includegraphics[width=0.8\textwidth]{ExplanationPics/TwoBoards.jpg}
+\end{figure}
 %TODO make all statements global or split global and solo
-To construct their action and modifer deck, each player follows the following steps:
-\begin{enumerate}	
-	\item Pick a Race
-	\item Pick a Level 1 Class
-	\item Pick a different level 1 Class
-	\item Shuffle your Action decks together
-	\item Do the modifier changes to your modifier Deck depending of the Race Tableau and shuffle it. Then put the class shingles in the Race Tableau
-	\item Put the Elemental Wheel in the middle
-	\item Select a story from the storybook
-	\item Each player setups the their enemies corresponding to the encounter descrpition
-	\item Start Combat
-\end{enumerate}
-\end{minipage}
+
 
 \section{Play Area}
 
-Action draw pile - Shuffle your deck before combat begins to create your draw pile
-Action discard pile - After you play a card, it goes here
-Modifier draw pile - Shuffle your deck before combat begins to create your draw pile
-Modifier discard pile - After you modify an attack, all drawn modifiers go here
-Tableau - The tableau tracks you level up decision and life
-Enemy Zone - Enemies go here, with the configuration described in the storybook
+\begin{enumerate}	
+	\item Action draw pile - Shuffle your deck before combat begins to create your draw pile
+	\item Action discard pile - After you play a card, it goes here
+	\item Modifier draw pile - Shuffle your deck before combat begins to create your draw pile
+	\item Modifier discard pile - After you modify an attack, all drawn modifiers go here
+	\item Tableau - The tableau tracks you level up decision and life
+	\item Enemy Zone - Enemies go here, with the configuration described in the storybook
+\end{enumerate}
 
 
-Your Decks\section{Your Decks}
+\section{Your Decks}
 \subsection*{The action Deck}
 Card pool - The cards that can be added to your deck
 Before combat select 15 cards, these will be your deck
@@ -270,7 +280,10 @@ After playing the card, put it into your discard pile
 \subsection*{Modifiers}
 Over the course of the game, you can add many modifiers that are more interesting then just numbers.
 The possible effects are:
+
+\rowcolors{2}{white}{blue!10}
 \begin{longtable}{|p{2cm}|p{14.2cm}|}
+	
 	\hline
 	Draw \symDraw &  Draw another modifier and apply both. This effect can chain into multiple draws  \\
 	\hline
@@ -314,7 +327,9 @@ For example, if powerful is applied three times on you, place three powerful tok
 \subsection*{Static keywords}
 These keywords modify how an action is performed. Since they only apply once, there is no need for status tokens.\\
 
+
 \begin{longtable}{|p{2.5cm}|p{13.7cm}|}
+	
 	
 	\hline
 	Heal X \symHeal & Raise the targets health by X\\
