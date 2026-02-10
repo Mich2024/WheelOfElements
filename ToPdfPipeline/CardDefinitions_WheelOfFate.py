@@ -795,129 +795,37 @@ class monsterAICard:
         res = self.count*res
         return res
 
-class ItemCard:
+class EventCard:
 
     def __init__(self):
 
         self.name = ""
         
-        self.pips = -1
-        self.text = ""
-
-        self.exhaust = False
-        self.armoutNeg = False
-        self.cost = "-1"
-        self.quantity = 2
-        self.slot = "Bagpack"
-        self.level = "0"
-        self.amourType = ""
-        self.amourDurability = ""
+        self.upside = ""
+        self.downside = ""
 
     def setName(self,n):
         self.name = n
 
-    def setLevel(self,n):
-        self.level = n
+    def setUpside(self,n):
+        self.upside = n
     
-    def setCost(self,n):
-        self.cost = n
+    def setDownside(self,n):
+        self.downside = n
 
-    def setQuantity(self,n):
-        n = n.split(":")[1]
-        try:
-            self.quantity = int(n)
-        except:
-            print(n, " is not an integer for item quant")
-
-    def setSlot(self,n):
-        self.slot = n
-
-    def setPips(self,n):
-        n = n.split(":")[1]
-        try:
-            self.pips = int(n)
-        except:
-            print(n, " is not an integer for item pips")
-
-    def setExhaust(self,n):
-        self.exhaust = True
-
-    def setArmourNeg(self,n):
-        self.armoutNeg = True
-
-    def setText(self,n):
-        self.text = n
-
-    def setAmour(self,n):
-        try:
-            amourType, dura = n.split(":")
-            self.amourType += amourType
-            self.amourDurability += dura
-
-        except Exception as ex:
-            print("Broken armour" + ex)
-        self.text = n
  
     assignmentDict = {
         "Name":setName, #stat cards start here
-        "Cost":setCost,
-        "Quantity":setQuantity,
-        "Quant":setQuantity,
-        "Slot":setSlot,
-        "Pips":setPips,
-        "exhaust":setExhaust,
-        "Exhaust":setExhaust,
-        "ArmourNegative":setArmourNeg,
-        "Cloth":setAmour,
-        "Leather":setAmour,
-        "Metal":setAmour,
-
+        "Upside":setUpside,
+        "Downside":setDownside
 
     }
-    #%Input: name, tier, stats, passive, skills
-    def serializeToLatex(self):
-
-        res = r"\itemCard"
-        res += r"{\raggedright " + self.name + r" \hfill "
-        res += "}"
-        res += "{" + self.cost.split(":")[1] + r"~G}"
+    def serializeToNandeck(self, order):
         
-
-        pipcommand = ""
-        if(self.pips != -1):
-            #{Pips3}
-            pipcommand = r"\symPipItem{Pips" + str(self.pips) + "}"
-            if not self.amourType == "":
-                pipcommand += r" \\ "
-
-        if not self.amourType == "":   
-            pipcommand = r"\symPipItem{" + self.amourType + self.amourDurability + "}"
-
-        res += "{" + pipcommand + "}"
-
+        template_event_single = open('Templates/Event_Single.txt', 'r')
+        template_event_single = template_event_single.read()
         
-        if(self.text.strip() == ""):
-            self.text = " ~ "
-        res += "{" + self.text + "}"
+        res = template_event_single.replace(r"${Order}", str(order))
+        res = res.replace(r"${Upside}",self.upside).replace(r"${Downside}", str(self.downside))
 
-        res += "{"
-        if self.exhaust:
-            res += r"\symExhaust "
-        if self.armoutNeg:
-            res += r"\symArmourNeg "
-        res += r" \hfill \symSlot" + self.slot.split(":")[1]
-        res += r"\\ "
-
-        res += self.level + " "
-        res += r"\hfill "
-        res += "Quantity: " + str(self.quantity) + " "
-
-        res += "}"
-        res += "\n"
-
-
-        resQuantMod = ""
-        #print(self.quantity)
-        for i in range(self.quantity):
-            resQuantMod += res
-        return resQuantMod
+        return res
