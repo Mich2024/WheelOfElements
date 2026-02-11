@@ -803,6 +803,7 @@ class EventCard:
         
         self.upside = ""
         self.downside = ""
+        self.flavour = ""
 
     def setName(self,n):
         self.name = n

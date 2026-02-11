@@ -2,85 +2,11 @@ import os
 import re
 from CardDefinitions_WheelOfFate import *
 import copy
+import pandas as pd
+from Utils import *
 
 maxRankToPrint = 8
 flagPrintHardAI = False
-
-def removeLinebreaks(lines):
-    res = []
-    for line in lines:
-        res.append(line.replace("\n",""))
-    return res
-
-def removeDoubleQuotes(lines):
-    res = []
-    for line in lines:
-        res.append(line.replace('"',""))
-    return res
-
-def removeComments(lines):
-    res = []
-    for line in lines:
-        if not line[0] == "#":
-            res.append(line)
-    return res
-
-def removeEmptyLines(lines):
-    res = []
-    for line in lines:
-        spacelessLine = removeSpaces(line)
-        if not spacelessLine == "":
-            res.append(line)
-    return res
-
-def addSpacesAfterText(lines):
-    res = []
-    for line in lines:
-        res.append(line.replace('Text:"', 'Text: "'))
-    return res
-
-def addSpacesBetweenEmptyText(lines):
-    res = []
-    for line in lines:
-        res.append(line.replace('""', '" "'))
-    return res
-
-def removeTrailingSpaces(lines):
-    res = []
-    for line in lines:
-        strippedLine = line.strip()
-        res.append(strippedLine)
-    return res
-
-def removeMonAIAnnotation(lines):
-    res = []
-    for line in lines:
-        spacelessLine = removeSpaces(line)
-        if spacelessLine != "StatsNormal" and spacelessLine != "StatsElite":
-            res.append(line)
-    return res
-
-
-def removeSpaces(str):
-    return str.replace(" ", "")
-
-
-
-def truncateFile(lines):
-    res = []
-    for line in lines:
-        if line == "End Of File":
-            return res
-        else:
-            res.append(line)
-    return res
-
-def startsWith(line, word):
-    res = False
-    if(len(line) > len(word)):
-        if line[:len(word)] == word:
-            res = True
-    return res
 
 # input -> list of words
 # returns -> tuple of ("Text as one string", ["list","with","rest","of","words"])
@@ -251,51 +177,33 @@ def parseStatLinesToCards(lines, name, rank):
     res.append(copy.deepcopy(card))
     return res
 
-'''
-def parseRaceLinesToCards(lines, name, rank):
-
-    res = []
-
-    parts = sliceStatsToCards(lines)
-    Var1 = parts["Variant:1"]
-    linesTableau = []
-    linesTableau = parts["Modifier Tableau"]
-
-    TypeExplanation = parts["Type"]
-    elements = []
-    explanations = []
-    #print(linesTableau)
-
-    for line in TypeExplanation:
-        #print(line)
-        if startsWith(line, "Element"):
-            elements.append(line)
-        if startsWith(line, "Explanation"):
-            explanations.append(line)
-
+def parseEvents(filePath):
     
-    card = statCard()
-    card.explanations = explanations
-    card.name = name
-    card.rank = rank
-    card.elements = elements
+    cardsEvent = []
+    events = pd.read_csv(filePath,sep=",")
+    #Upside, Downside, Name, Flavour
+    for entry in events.itertuples(index=False):
+        card = EventCard()
+        card.name = entry["Name"]
+        card.upside = entry["Upside"]
+        card.downside = entry["Downside"]
+        card.flavour = entry["Flavour"]
+        cardsEvent.append(copy.deepcopy(card))
 
-    mode = ""
-    for line in Var1:
-        if line == "Passive":
-            mode = "Passive"
-            continue
-        if startsWith(line, "Life:"):
-            card.assignmentDict[line.split(":")[0]](card,line.split(":")[1])
-            continue
+    orderEvents = 1
+    nandeckEvents = ""
+    for event in cardsEvent:
+        nandeckEvents += event.serializeToNandeck(orderEvents) 
+        orderEvents += 1
 
-        if mode == "Passive":
-            card.passive += line + " "
-    card.tableau = parseTableauFromLines(linesTableau)
+    event_boilerplate = open('Templates/Event_Boilerplate.txt', 'r')
+    event_boilerplate = event_boilerplate.read()
 
-    res.append(copy.deepcopy(card))
-    return res'''
+    event_boilerplate = event_boilerplate.replace(r"${Events}", nandeckEvents).replace(r"${CardCount}",str(orderEvents-1))
 
+    fileToPrint = open('out/Events.txt', 'w+')
+    fileToPrint.write(event_boilerplate)
+    fileToPrint.close()
 
 
 
@@ -407,37 +315,6 @@ def parseMonsterAI():
                             text, words = parseTextFromWords(words[1:])
                             assignmentFunction(monCard, ["Text: ", text])
 
-                '''
-                            for words in linesAI:
-                words = words.split(" ")
-                #print(words[0].split(":")[0])
-                assignmentFunction = card.assignmentDict[words[0].split(":")[0]]
-                while len(words) > 0:
-                    
-                    if not words[0] == "Text:":
-                        #print(words)
-                        assignmentFunction(card,words[0])
-                        words = words[1:] #remove entry that we just parsed
-                    else: #Text comes here and needs special treatment
-                        #print(words)
-                        quotationMarks = 0
-                        i = 1
-                        result = ""
-                        #print(i)
-                        while quotationMarks < 2:
-                            if '"' in words[i]:
-                                quotationMarks += 1
-                            #print(words[i])
-                            tmp = words[i].split(r'"')
-                            if (tmp[0] == ""):
-                                tmp = tmp[1:]
-                            result += " " + tmp[0]
-                            i += 1
-                        #result = removeDoubleQuotes(result)
-                        assignmentFunction(card, ["Text: ", result])
-                        words = words[i:] #remove entries that we just parsed'''
-            
-
             #parseTextFromWords
             monsterAICards.append(copy.deepcopy(monCard))
 
@@ -458,101 +335,6 @@ def parseMonsterAI():
     fileToPrint.write(texMonAI)
 
     print("wrote AI file")
-
-def parseItems():
-    itemCards = []
-    pathToItems = "../Items.txt"
-    print("handling file: " + pathToItems )
-
-    #open and sanitize file
-    fileToParse = open(pathToItems,"r")
-    lines = fileToParse.readlines()
-    fileToParse.close()
-    lines = removeComments(lines)
-    lines = removeLinebreaks(lines)
-    lines = removeEmptyLines(lines)
-    lines = removeTrailingSpaces(lines)
-    #lines = removeMonAIAnnotation(lines) used now
-    lines = truncateFile(lines)
-    
-    #print(lines)
-    print("completed sanitization")
-
-    #lines = sliceToShopLevels(lines)
-    #print(lines)
-    shopLevelCurrent = "Level parsing did not work"
-    for lineItem in lines:
-
-        
-
-        if(lineItem[0:9] == "ShopLevel"):
-            #print(lineItem[10:])
-            shopLevelCurrent = lineItem[10:]
-        else:
-            
-            itemCard  = ItemCard()
-            itemCard.setLevel(shopLevelCurrent)
-
-            
-            
-            words = lineItem.split(" ")
-            #print(words[0].split(":")[0])
-
-            if(words[0] == "Name:"): #stores name and deletes entries from words
-                nameWordcount = 1
-                for word in words[1:]:
-                    if not ":" in word:
-                        itemCard.name += word
-                        itemCard.name += " " 
-                        nameWordcount += 1
-                    else:
-                        itemCard.name = itemCard.name[0:]
-                        words = words[nameWordcount:]
-                        break
-            else:
-                print("Error parsing item name")
-
-            while len(words) > 0:
-                
-                if not words[0] == "Text:":
-                    #print(words)
-                    #print(words)
-                    itemCard.assignmentDict[words[0].split(":")[0]](itemCard,words[0])
-                    words = words[1:] #remove entry that we just parsed
-                else: #Text comes here and needs special treatment
-                    #print(words)
-                    quotationMarks = 0
-                    i = 1
-                    result = ""
-                    #print(i)
-                    while quotationMarks < 2:
-                        if '"' in words[i]:
-                            quotationMarks += 1
-                        #print(words[i])
-                        tmp = words[i].split(r'"')
-                        if (tmp[0] == ""):
-                            tmp = tmp[1:]
-                        result += " " + tmp[0]
-                        i += 1
-                    #result = removeDoubleQuotes(result)
-                    itemCard.setText(result)
-                    words = words[i:] #remove entries that we just parsed
-
-                  
-            itemCards.append(itemCard)
-
-    print("completed parsing Items")
-    
-    texItems = ""
-    #print(len(monsterAICards))
-    for itemCard in itemCards:
-        #print(itemCard.name)
-        texItems += itemCard.serializeToLatex()
-
-    fileToPrint = open('toPrintItems.tex', 'w+')
-    fileToPrint.write(texItems)
-
-    print("wrote Item file")
 
 
 def parseRacesAndClasses(files_Input):
@@ -581,12 +363,11 @@ def parseRacesAndClasses(files_Input):
         fileToParse = open(filelong,"r")
         lines = fileToParse.readlines()
         fileToParse.close()
-        lines = removeComments(lines)
-        lines = removeLinebreaks(lines)
-        lines = removeEmptyLines(lines)
-        lines = truncateFile(lines)
-        lines = addSpacesAfterText(lines)
-        print("completed sanitization")
+
+        lines = sanitizeLines(lines)
+        
+        
+        
 
         linesStats, linesActions = sliceClassToCardTypes(lines)
 
@@ -749,6 +530,7 @@ if __name__ == "__main__":
     maxRankToPrint = 5
     flagPrintHardAI = False
     parseRacesAndClasses(files_Input)
+    parseEvents("../Events.csv")
     parseMonsterAI()
     #parseItems()
 
