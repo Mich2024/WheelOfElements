@@ -16,7 +16,7 @@
 
 [full_hor] = 6.35 - [space_left] - [space_right]
 [full_hor_action] = 6.35 - [space_action_left] - [space_right]
-[half_vert] = 8.89/2
+
 
 CARDS=[CardCount]
 BORDER=ROUNDED,#000000,[linestrength]
@@ -58,15 +58,17 @@ htmlimage = 1 - [CardCount], \symDSix, "..\..\Pictures\Icons\D66.png", 0.55, 0.5
 htmlfont=font_18,Arial,14,B,#000000,LEFT
 htmlfont=font_28,Arial,21,B,#000000,CENTER
 
-LINE = 1-[CardCount], 0, 4.44, 6.35, 4.44, #000000, [linestrength]
+LINE = 1-[CardCount], 0, [space_text_28], 6.35, [space_text_28], #CFB53B, [linestrength]
+[space_bot] = 7.44
+[half_vert] = ([space_bot]+[space_text_28])/2
 
+LINE = 1-[CardCount], 0, [half_vert], 6.35, [half_vert], #000000, [linestrength]
+LINE = 1-[CardCount], 0, [space_bot], 6.35, [space_bot], #CD7F32, [linestrength]
 
-htmltext = 1, "Upside", [space_left] , 0, [full_hor], [space_text_28], #FFFFFF,0,T,100,font_28
-htmltext = 1, "Downside",[space_left] , [half_vert],[full_hor], [space_text_28],#FFFFFF,0,T,100,font_28
 
 #Cards
+htmltext = 1, "${Name}", [space_left] , 0, [full_hor], [space_text_28], #FFFFFF,0,T,100,font_28
 htmltext = 1, "${Upside}", [space_left] , 0+[space_text_28], [full_hor], [half_vert]-[space_text_28], #FFFFFF,0,T,100,font_18
-
-htmltext = 1, "${Downside}",[space_left] , [half_vert]+[space_text_28],[full_hor], [half_vert]-[space_text_28],#FFFFFF,0,T,100,font_18
-
+htmltext = 1, "${Downside}",[space_left] , [half_vert],[full_hor], [half_vert]-[space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 1, "${Flavour}",[space_left] ,[space_bot],[full_hor], 8.89-[space_bot],#FFFFFF,0,T,100,font_18
 

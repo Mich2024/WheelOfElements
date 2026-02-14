@@ -827,6 +827,7 @@ class EventCard:
         template_event_single = template_event_single.read()
         
         res = template_event_single.replace(r"${Order}", str(order))
-        res = res.replace(r"${Upside}",self.upside).replace(r"${Downside}", str(self.downside))
+        res = res.replace(r"${Upside}",str(self.upside).strip()).replace(r"${Downside}", str(self.downside).strip())
+        res = res.replace(r"${Name}",str(self.name).strip()).replace(r"${Flavour}", str(self.flavour).strip())
 
         return res

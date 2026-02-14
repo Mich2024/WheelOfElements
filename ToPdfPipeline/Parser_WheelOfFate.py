@@ -184,10 +184,10 @@ def parseEvents(filePath):
     #Upside, Downside, Name, Flavour
     for entry in events.itertuples(index=False):
         card = EventCard()
-        card.name = entry["Name"]
-        card.upside = entry["Upside"]
-        card.downside = entry["Downside"]
-        card.flavour = entry["Flavour"]
+        card.name = entry[2]
+        card.upside = entry[0]
+        card.downside = entry[1]
+        card.flavour = entry[3]
         cardsEvent.append(copy.deepcopy(card))
 
     orderEvents = 1
@@ -529,9 +529,9 @@ if __name__ == "__main__":
     
     maxRankToPrint = 5
     flagPrintHardAI = False
-    parseRacesAndClasses(files_Input)
+    #parseRacesAndClasses(files_Input)
     parseEvents("../Events.csv")
-    parseMonsterAI()
+    #parseMonsterAI()
     #parseItems()
 
 
