@@ -205,30 +205,17 @@ There are always 5 enemy setups described per encounter. Each player gets one of
 These enemy setups are distributed in clockwise seating order. %Please get  a picture for this
 If you are playing with less than 5 players, ignore the setups beyond your player number.
 
-\subsection*{Enemy Card}
+\subsection*{Events}
 \begin{figure}[ht]
 	\begin{minipage}[t][10cm][t]{0.5\textwidth}
-		Enemy cards consist of four parts:
-		\begin{enumerate}
-			\item name	
-			\item any passive effects
-			\item the life bar
-			\item if an enemy dies immediatly remove him from the board
-			\item the action box
-			\item the action either depends on the die
-			\item or is a rotating action that changes each turn 
-		\end{enumerate}
+		Between two encounters, you party will encounter events. These will change how you play the rest of the story. All events hav e an upside and a downside which will affect your choices and gameplay.
+		Some events will amke the game harder, and some easier. Some will warp your choices around them, and some may barely affect you. The only garuantee is that no two stories will play out the same.
 	\end{minipage}	
 	\begin{minipage}[t][10cm][t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/Monstercard.drawio.png}
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/Event.drawio.png}
 	\end{minipage}
 \end{figure}
-
-\subsection*{Events}
-Events will happen to you between each fight.
-Events can have many interesting effects and will warp how you choose to play your game.
-
 
 
 \section{Leveling Up} \label{Section:Leveling Up}
@@ -270,6 +257,27 @@ To play a card:\\
 After every player has finished playing their cards, move to the enemy turn.
 
 \subsection*{Enemy Turn}
+
+\subsection*{Enemy Card}
+\begin{figure}[ht]
+	\begin{minipage}[t][6cm][t]{0.5\textwidth}
+		Enemy cards consist of four parts:
+		\begin{enumerate}
+			\item name	
+			\item any passive effects
+			\item the life bar
+			\item if an enemy dies immediatly remove him from the board
+			\item the action box
+			\item the action either depends on the die
+			\item or is a rotating action that changes each turn 
+		\end{enumerate}
+	\end{minipage}	
+	\begin{minipage}[t][6cm][t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/Monstercard.drawio.png}
+	\end{minipage}
+\end{figure}
+
 Enemies act from left to right.\\
 There are two types of enemies. Those that act based on your diceroll, and those that follow a pattern.
 \begin{enumerate}
@@ -279,7 +287,16 @@ There are two types of enemies. Those that act based on your diceroll, and those
 \end{enumerate}
 Resolve the action. 
 Repeat until all your enemies acted, even if you die.
-	
+
+
+\begin{figure}[ht]
+	\begin{minipage}[t][8cm][t]{1\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/MonsterTurn.drawio.png}
+	\end{minipage}	
+\end{figure}
+
+\newpage
 \subsection*{Cleanup step}
 Remove all single Turn Boons\&Banes (They are Shield, Player Powerful, Advantage etc).\\
 Apply Poison Damage.\\
@@ -291,9 +308,26 @@ Roll the Monster die.
 
 \newpage
 \section{Playing a Card}
-You may play two cards per turn. Most cards do not have a cost. Others have mana costs.
-To pay  a mana cost, remove the stated amount of mana markers from the corresponding field on the wheel back into the stash.
-If the cost is not optional, you may not play it without paying the mana cost.
+
+
+\begin{figure}[ht]
+	\begin{minipage}[t][6cm][t]{0.5\textwidth}
+		You may play two cards per turn. Most cards do not have a cost. Others have mana costs.
+		To pay  a mana cost, remove the stated amount of mana markers from the corresponding field on the wheel back into the stash.
+		If the cost is not optional, you may not play it without paying the mana cost.
+		
+		When playing a card, you execute all effects from top to bottom.
+		All effects have to be used if possible.
+		
+		You may play two cards per turn. Most cards do not have a cost. Others have mana costs.
+		To pay  a mana cost, remove the stated amount of mana markers from the corresponding field on the wheel back into the stash.
+		If the cost is not optional, you may not play it without paying the mana cost.
+	\end{minipage}	
+	\begin{minipage}[t][6cm][t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/ActionCard.drawio.png}
+	\end{minipage}
+\end{figure}
 
 When playing a card, you execute all effects from top to bottom.
 All effects have to be used if possible.
@@ -302,6 +336,31 @@ The most common effects are attacks and mana generation.
 To perform an attack, first select an enemy to attack.
 Secondly, you reveal a modifier from you modifer deck, and add its value to the attack.
 Every Deck also has a *2 and a *0. In that case, multiply your attak value by two (or  zero) after everything else was applied.
+\begin{figure}[ht]
+	\begin{minipage}[t][6cm][t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/TargetingSingle.drawio.png}
+	\end{minipage}	
+	\begin{minipage}[t][6cm][t]{0.5\textwidth}
+		Generally, one effect targets one enemy.
+	\end{minipage}
+\end{figure}
+
+
+\begin{figure}[ht]
+	\begin{minipage}[t][6cm][t]{1\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/TargetingRanged.drawio.png}
+	\end{minipage}	
+\end{figure}
+
+
+\begin{figure}[ht]
+	\begin{minipage}[t][12cm][t]{1\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/TargetingAOE.drawio.png}
+	\end{minipage}	
+\end{figure}
 
 To generate elemental mana, check how many mana symbols are shown on the card, and move that many markers from the stash to the wheel, on the corresponding field.
 
