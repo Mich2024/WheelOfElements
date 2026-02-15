@@ -12,6 +12,7 @@
 \usepackage{tocloft}
 \usepackage[export]{adjustbox}
 \title{Rulebook}
+\usepackage{verbatim}
 
 \definecolor{PageBackground}{HTML}{f7e3ba} %e9e5ce  e4d3c5 FFDEAD F5DEB3 F5DEAD
 \pagecolor{PageBackground}
@@ -171,21 +172,57 @@ After the first encounter, read out passage 2 from the storybook and set up the 
 When beating encounter 2, repeat with passage 3 and encounter 3, and when you beat encounter 3,  read the last passage from the story. When you reach this point, you win.
 
 \section{Your Decks}
-\subsection*{The action Deck}
-The Action Deck contains all action you can draw and subsequently ply during combat.
-As a deckbuilding game the action deck will continue to evolve during gameplay.
-After every encounter you will gain access to five more cards. You may add these cards to your deck, but you have to remove one card for each one you remove. You can also add old cards back into your deck, but you always have to remove cards to maintain a deck size of 16.
-When choosing which cards to play you should consider the tier of you card and its synergy with your other cards and passives. The tier of the card directly affects its power level, with gold cards being on average three times more powerful than bronze ones.
-When it comes to synergy, you should be thinking about questions like "How much mana do I produce and consume?", "Is my modifier deck good? Should I play cards with many small hits or cards with one big hit?", or "How can I effectively help teammates when they are in danger?"
+\subsection*{The Action Deck}
+%Dezenter reminder über das level up mit Seitenzahl zu level up segment
 
-\subsection*{The modifier Deck}
+%\begin{figure}[ht]
+	\begin{minipage}[t][10cm][t]{0.5\textwidth}
+%		\begin{text}
+		The Action Deck contains all action cards you can draw and subsequently play during combat.\\
+		Place a card into the discard pile after performing all of its actions.\\
+		As a deckbuilding game the action deck will continue to evolve during gameplay. \textit{Page 4}\\
+		%After every encounter you will gain access to five more cards. You may add these cards to your deck, but you have to remove one card for each one you remove. You can also add old cards back into your deck, but you always have to remove cards to maintain a deck size of 16.
+		%When choosing which cards to play you should consider the tier of you card and its synergy with your other cards and passives. The tier of the card directly affects its power level, with gold cards being on average three times more powerful than bronze ones.
+		%When it comes to synergy, you should be thinking about questions like "How much mana do I produce and consume?", "Is my modifier deck good? Should I play cards with many small hits or cards with one big hit?", or "How can I effectively help teammates when they are in danger?"
+%		\end{text}
+%		\framebox[\textwidth]{Picture}
+%		\centering
+	\end{minipage}
+	\begin{minipage}[t][10cm][t]{0.5\textwidth}
+		
+		%TODO add the stroybook to this pic 
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/ActionCard.drawio.png}		
+	\end{minipage}	
+	
+	%\includegraphics[width=0.8\textwidth]{ExplanationPics/TwoBoards.jpg}
+%\end{figure}
+
+
+
+\subsection*{The Modifier Deck}
 %TODO pics here
-Your modifier deck gros automatically
-The modifier cards are used every time you attack an enemy. They can have three effects:
-Numerical - Adds a number to your attack damage
-Elements - Create the shown elements
-Draw - Perform all other effects of this modifier, and draw another
+Your modifier deck grows when you level up \\
+The modifier cards are used every time you attack an enemy. They can have four effects:
+\begin{figure}[ht]
+	\begin{minipage}[t][10cm][t]{0.5\textwidth}
+		\begin{enumerate}	
+			\item Numerical - Adds a number to your attack damage
+			\item Elements - Create the shown elements
+			\item Bane - Applies a Bane to your enemy
+			\item Draw - Perform all other effects of this modifier, and draw another
+		\end{enumerate}
 
+		\framebox[\textwidth]{Picture}
+		\centering
+	\end{minipage}
+	\begin{minipage}[t][10cm][t]{0.5\textwidth}
+		
+		%TODO add the stroybook to this pic 
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/ModifierCard.drawio.png}		
+	\end{minipage}	
+	
+	%\includegraphics[width=0.8\textwidth]{ExplanationPics/TwoBoards.jpg}
+\end{figure}
 
 \newpage
 \section{The Storybook}
@@ -244,23 +281,25 @@ When entering a new combat from the Storybook, shuffle your Action deck and your
 
 \subsection*{Player Turn}
 
-Start of Turn\\
-Draw up to your maximum hand size.\\
-\hspace*{1cm}Empty draw pile - When your draw pile is empty and you need to draw, your discard pile becomes your \hspace*{1cm}new draw pile. Shuffle it.\\
-Roll the Monster Die\\
-Start of turn abilities trigger. Players may decide order.\\
-Players may play up to 2 cards each turn.
+\textbf{Start of Turn}\\
+\textbf{Draw} - Draw up to your maximum hand size.\\
+\hspace*{1cm}\textbf{Empty draw pile} - When your draw pile is empty and you need to draw, your discard pile becomes your \hspace*{1cm}new draw pile. Shuffle it.\\
+\textbf{Roll} - Roll the Monster Die\\
+\textbf{Start} - Start of turn abilities trigger. Players may decide order.\\
+\textbf{Play} - Players may play up to 2 cards each turn.
 To play a card:\\
 \hspace*{1cm}Pay its mandatory element cost\\
 \hspace*{1cm}Choose if you want to pay the optional costs.\\
-\hspace*{1cm}Resolve the card. Put the played card into the discard pile.\\
+\hspace*{1cm}Resolve the card and apply modifiers. Put the played card into the discard pile.\\
 After every player has finished playing their cards, move to the enemy turn.
+
+\newpage
 
 \subsection*{Enemy Turn}
 
 \subsection*{Enemy Card}
 \begin{figure}[ht]
-	\begin{minipage}[t][6cm][t]{0.5\textwidth}
+	\begin{minipage}[t][5cm][t]{0.5\textwidth}
 		Enemy cards consist of four parts:
 		\begin{enumerate}
 			\item name	
@@ -272,22 +311,15 @@ After every player has finished playing their cards, move to the enemy turn.
 			\item or is a rotating action that changes each turn 
 		\end{enumerate}
 	\end{minipage}	
-	\begin{minipage}[t][6cm][t]{0.5\textwidth}
+	\begin{minipage}[t][5cm][t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/Monstercard.drawio.png}
 	\end{minipage}
 \end{figure}
 
-Enemies act from left to right.\\
-There are two types of enemies. Those that act based on your diceroll, and those that follow a pattern.
-\begin{enumerate}
-\item The dice enemies perform the action that was rolled at the start of the combat round.
-\item Do the action the pattern marker is currently on, then push the marker
-%The pattern enemies push their pattern marker
-\end{enumerate}
-Resolve the action. 
-Repeat until all your enemies acted, even if you die.
-
+Enemies act sequentially from left to right. 
+To perform the enemy turn, look at the monster dice,  and have the monster perform that action.
+Repeat once for every enemy.
 
 \begin{figure}[ht]
 	\begin{minipage}[t][8cm][t]{1\textwidth}
@@ -296,20 +328,56 @@ Repeat until all your enemies acted, even if you die.
 	\end{minipage}	
 \end{figure}
 
-\newpage
+After you are done performing the actions of your enemies, place the leftmost enemy a little from your other to signify to the others that you are done with your turn.
+If you die while your enemies are still acting, the rest of the enemies still perform their action. 
+
+
+\begin{comment}
+	
+	Enemies act in a pattern:
+\begin{itemize}
+	
+	\item \textbf{Act} - Enemies act from left to right
+	\item \textbf{Resolve} - Resolve the action. 
+	\item \textbf{Repeat} - Repeat until all your enemies acted, even if you die.
+	
+	%The pattern enemies push their pattern marker
+\end{itemize}
+\end{comment}
+
 \subsection*{Cleanup step}
-Remove all single Turn Boons\&Banes (They are Shield, Player Powerful, Advantage etc).\\
-Apply Poison Damage.\\
-Move your leftmost enemy to the player to your left. This happens simultaneously. You cannot give away an enemy given to you this way.\\
-If you are dead, give all your remaining enemies to your left. \\
-Rotate the mana wheel.\\
-Shuffle the modifier discard back into the Modifier deck, if the *0 or *2 modifiers are in the discard.\\
-Roll the Monster die.
+
+\begin{figure}[ht]
+	\begin{minipage}[t][11cm][t]{0.5\textwidth}
+		At the end of the turn, the players set up the board for the next turn.
+		\begin{itemize}
+			\item \textbf{Boons\&Banes} - Apply poison damage and remove any single turn boon or bane. More about boons and banes can be found in chapter \ref{Section:BoonsBanes} \\
+			\item \textbf{Rotate} - Move your leftmost enemy to the player to your left. This happens simultaneously. You cannot give away an enemy given to you this way.\\
+			\item \textbf{Dead} - If you are dead, give all your remaining enemies to your left. Without an opponent to fight, all remaining enemies placed in your zone rotate to the left.
+			Enemies will never move to a defeated player, and instead immediately rotate to the next live player.
+			This can result into floods of enemies tearing through the rest of the party if one player fails, so be carefiul! \\
+			\item \textbf{Wheel} - Rotate the inner part of mana wheel. This means that mana in the fire slot becaomes mana in the earth slot and so forth. \\
+			\item \textbf{Modifier Deck} - Shuffle the modifier discard back into the Modifier deck, if the *0 or *2 modifiers are in the discard.\\
+			
+			
+			
+		\end{itemize}
+		
+	\end{minipage}	
+	\begin{minipage}[t][11cm][t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/RotaExample.jpg}
+	\end{minipage}
+\end{figure}
+
+
+
+%\textbf{Roll} - Roll the Monster die.
+
+
 
 \newpage
 \section{Playing a Card}
-
-
 \begin{figure}[ht]
 	\begin{minipage}[t][6cm][t]{0.5\textwidth}
 		You may play two cards per turn. Most cards do not have a cost. Others have mana costs.
@@ -329,22 +397,28 @@ Roll the Monster die.
 	\end{minipage}
 \end{figure}
 
-When playing a card, you execute all effects from top to bottom.
-All effects have to be used if possible.
+\fbox{\parbox[4cm]{\textwidth}{Archer (left) firing artillery at berserker (right) moving a high speeds}}
 
-The most common effects are attacks and mana generation.
-To perform an attack, first select an enemy to attack.
-Secondly, you reveal a modifier from you modifer deck, and add its value to the attack.
-Every Deck also has a *2 and a *0. In that case, multiply your attak value by two (or  zero) after everything else was applied.
+\newpage
+
 \begin{figure}[ht]
 	\begin{minipage}[t][6cm][t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/TargetingSingle.drawio.png}
 	\end{minipage}	
 	\begin{minipage}[t][6cm][t]{0.5\textwidth}
+		When playing a card, you execute all effects from top to bottom.
+		All effects have to be used if possible.
+		
+		The most common effects are attacks and mana generation.
+		To perform an attack, first select an enemy to attack.
+		Secondly, you reveal a modifier from you modifer deck, and add its value to the attack.
+		Every Deck also has a *2 and a *0. In that case, multiply your attak value by two (or  zero) after everything else was applied.
+		
 		Generally, one effect targets one enemy.
 	\end{minipage}
 \end{figure}
+
 
 
 \begin{figure}[ht]
@@ -354,9 +428,11 @@ Every Deck also has a *2 and a *0. In that case, multiply your attak value by tw
 	\end{minipage}	
 \end{figure}
 
+\fbox{\parbox[4cm]{\textwidth}{Bigass artwork of pyromancer blasting wswathes of goblins, while his neighbouring toxicologist cannot throw a flask over tohim while has only one enemy in front of him}}
+\newpage
 
 \begin{figure}[ht]
-	\begin{minipage}[t][12cm][t]{1\textwidth}
+	\begin{minipage}[t][13cm][t]{1\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/TargetingAOE.drawio.png}
 	\end{minipage}	
@@ -391,8 +467,9 @@ The possible effects are:
 	
 \end{longtable}
 
+\newpage
 
-\section{Boons \& Banes}
+\section{Boons \& Banes}\label{Section:BoonsBanes}
 As well as other keywords.
 Boons and banes are traked va status token. When you aplly a boon or bane to a player or an enemy, place a status token on it.
 All status tokens can stack, which results in the effect being applied multiple times.
