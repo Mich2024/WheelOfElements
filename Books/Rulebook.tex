@@ -380,16 +380,14 @@ If you die while your enemies are still acting, the rest of the enemies still pe
 \section{Playing a Card}
 \begin{figure}[ht]
 	\begin{minipage}[t][6cm][t]{0.5\textwidth}
-		You may play two cards per turn. Most cards do not have a cost. Others have mana costs.
+		You may play two cards per turn. Cards either have no cost or a mana cost.
+		Mana costs always corespond to an element.
 		To pay  a mana cost, remove the stated amount of mana markers from the corresponding field on the wheel back into the stash.
-		If the cost is not optional, you may not play it without paying the mana cost.
+		Most often, the mana cost is optional. If the cost is not optional, you may not play it without paying the mana cost.
 		
-		When playing a card, you execute all effects from top to bottom.
-		All effects have to be used if possible.
+		When playing a card, you execute all effects from top to bottom, going line by line.
+		All effects must to be used if possible.
 		
-		You may play two cards per turn. Most cards do not have a cost. Others have mana costs.
-		To pay  a mana cost, remove the stated amount of mana markers from the corresponding field on the wheel back into the stash.
-		If the cost is not optional, you may not play it without paying the mana cost.
 	\end{minipage}	
 	\begin{minipage}[t][6cm][t]{0.5\textwidth}
 		\centering
@@ -402,26 +400,29 @@ If you die while your enemies are still acting, the rest of the enemies still pe
 \newpage
 
 \begin{figure}[ht]
+	\label{fig_SingleTarget}
 	\begin{minipage}[t][6cm][t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/TargetingSingle.drawio.png}
 	\end{minipage}	
-	\begin{minipage}[t][6cm][t]{0.5\textwidth}
-		When playing a card, you execute all effects from top to bottom.
-		All effects have to be used if possible.
-		
-		The most common effects are attacks and mana generation.
+	\begin{minipage}[t][6cm][t]{0.5\textwidth}		
+		The most common actions are attacks and mana generation.
 		To perform an attack, first select an enemy to attack.
 		Secondly, you reveal a modifier from you modifer deck, and add its value to the attack.
 		Every Deck also has a *2 and a *0. In that case, multiply your attak value by two (or  zero) after everything else was applied.
 		
-		Generally, one effect targets one enemy.
+		By default, one actions targets one enemy in your own zone (\ref{fig_SingleTarget}).
+		If the card has the keyword "Ranged" all actions may target any enemy in the zones to your left and right(\ref{fig_RangedSingleMultiTarget})
+		If multiple actions are listed in a single line, all of them must affect the same target.
+		If multiple actions are listed in seperate lines, they may affect different targets.
+		Beneficial actions such as healing , shield etc. target yourself by default. These actions amy target your neighboring players if the card has ranged.
 	\end{minipage}
 \end{figure}
 
 
 
 \begin{figure}[ht]
+	\label{fig_RangedSingleMultiTarget}
 	\begin{minipage}[t][6cm][t]{1\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/TargetingRanged.drawio.png}
@@ -431,24 +432,30 @@ If you die while your enemies are still acting, the rest of the enemies still pe
 \fbox{\parbox[4cm]{\textwidth}{Bigass artwork of pyromancer blasting wswathes of goblins, while his neighbouring toxicologist cannot throw a flask over tohim while has only one enemy in front of him}}
 \newpage
 
+
 \begin{figure}[ht]
+	\label{fig_AOE}
 	\begin{minipage}[t][13cm][t]{1\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/TargetingAOE.drawio.png}
 	\end{minipage}	
 \end{figure}
 
+Some cards have an Area Of Effect (AOE) marker.
+AOE cards may target enemeis that are adjacent to one another (\ref{fig_AOE}), in the pattern shown on the marker. Enemies in different zones never count as adjancent to each other, and AOEs may not flow over to another zone.
+All attacks and banes on the card are applied to each enemy targeted by the AOE.
+Modifiers are drawn and applied separately for each enemy attacked.
+
 To generate elemental mana, check how many mana symbols are shown on the card, and move that many markers from the stash to the wheel, on the corresponding field.
 
-If the card had an optional cost, some actions are separated below by a line.
-Only perform these actions if the optional cost is paid.
+Cards with optional costs have a line with the word OPT going through the card with additional actions below the line.
+If the optional cost was paid, the actions below the line must be used. If not, they cannot be used.
 
-Some cards have an Area Of Effect (AOE) marker. If so, target monsters in the pattern shown by the AOE.
-Then repeat all attacks and banes for each monster that is targeted by the AOE.
+Cards with blaze also have a line, but with the text Blaze:X instead of OPT.
+If you play one of these cards as the first in your turn, you must discard X cards, and use the actions below the line.
+When palyed as the second card in a turn, the blaze actions does nothing. No cards are discarded, and the actions below the line are ignored.
 
-After playing the card, put it into your discard pile
-
-%Pic: structureof card
+After playing a card, put it into your discard pile.
 
 \subsection*{Modifiers}
 Over the course of the game, you can add many modifiers that are more interesting then just numbers.
