@@ -351,7 +351,7 @@ If you die while your enemies are still acting, the rest of the enemies still pe
 	\begin{minipage}[t][11cm][t]{0.5\textwidth}
 		At the end of the turn, the players set up the board for the next turn.
 		\begin{itemize}
-			\item \textbf{Boons\&Banes} - Apply poison damage and remove any single turn boon or bane. More about boons and banes can be found in chapter \ref{Section:BoonsBanes} \\
+			\item \textbf{Boons\&Banes} - Apply poison damage and remove any single turn boon or bane. More about boons and banes can be found in chapter \ref{Section_BoonsBanes} \\
 			\item \textbf{Rotate} - Move your leftmost enemy to the player to your left. This happens simultaneously. You cannot give away an enemy given to you this way.\\
 			\item \textbf{Dead} - If you are dead, give all your remaining enemies to your left. Without an opponent to fight, all remaining enemies placed in your zone rotate to the left.
 			Enemies will never move to a defeated player, and instead immediately rotate to the next live player.
@@ -406,10 +406,7 @@ If you die while your enemies are still acting, the rest of the enemies still pe
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/TargetingSingle.drawio.png}
 	\end{minipage}	
 	\begin{minipage}[t][6cm][t]{0.5\textwidth}		
-		The most common actions are attacks and mana generation.
-		To perform an attack, first select an enemy to attack.
-		Secondly, you reveal a modifier from you modifer deck, and add its value to the attack.
-		Every Deck also has a *2 and a *0. In that case, multiply your attak value by two (or  zero) after everything else was applied.
+		The most common actions are attacks, mana generation, boons and banes.
 		
 		By default, one actions targets one enemy in your own zone (\ref{fig_SingleTarget}).
 		If the card has the keyword "Ranged" all actions may target any enemy in the zones to your left and right(\ref{fig_RangedSingleMultiTarget})
@@ -429,6 +426,11 @@ If you die while your enemies are still acting, the rest of the enemies still pe
 	\end{minipage}	
 \end{figure}
 
+
+Some cards have an Area Of Effect (AOE) marker.
+AOE cards may target enemeis that are adjacent to one another (\ref{fig_AOE}), in the pattern shown on the marker. Enemies in different zones never count as adjancent to each other, and AOEs may not flow over to another zone.
+All attacks and banes on the card are applied to each enemy targeted by the AOE.
+
 \fbox{\parbox[4cm]{\textwidth}{Bigass artwork of pyromancer blasting wswathes of goblins, while his neighbouring toxicologist cannot throw a flask over tohim while has only one enemy in front of him}}
 \newpage
 
@@ -441,10 +443,12 @@ If you die while your enemies are still acting, the rest of the enemies still pe
 	\end{minipage}	
 \end{figure}
 
-Some cards have an Area Of Effect (AOE) marker.
-AOE cards may target enemeis that are adjacent to one another (\ref{fig_AOE}), in the pattern shown on the marker. Enemies in different zones never count as adjancent to each other, and AOEs may not flow over to another zone.
-All attacks and banes on the card are applied to each enemy targeted by the AOE.
-Modifiers are drawn and applied separately for each enemy attacked.
+
+
+To perform an attack, first select an enemy to attack.
+Then, draw a modifier from you modifer deck, and add its value to the attack.
+Every Deck also has a *2 and a *0. In that case, multiply your attak value by two (or  zero) after everything else was applied.
+Modifiers are drawn and applied separately for each enemy attacked. This applies to multiple lines of attacks, as well as AOE attacks.
 
 To generate elemental mana, check how many mana symbols are shown on the card, and move that many markers from the stash to the wheel, on the corresponding field.
 
@@ -455,9 +459,17 @@ Cards with blaze also have a line, but with the text Blaze:X instead of OPT.
 If you play one of these cards as the first in your turn, you must discard X cards, and use the actions below the line.
 When palyed as the second card in a turn, the blaze actions does nothing. No cards are discarded, and the actions below the line are ignored.
 
+To apply a boon or bane, choose a target, then put the listed number of boons or banes on the target.
+All possible effects are listed below in chapter \ref{Section_BoonsBanes}.
+Healing restores life by the stated amount. 
+
 After playing a card, put it into your discard pile.
 
 \subsection*{Modifiers}
+
+The Modifier Deck acts as an element of randomchance. Fighting is reisky business, and sometimes an attack may take an unexpected turn.
+If you ahve played table top RPGs before, you may know the concept from rolling a 20 sided dice to determine the outcome of an action.
+Simmilarly, the modifier deck usually has 20 cards in it, with a slightly positive weighting at the start which improves over time. 
 Over the course of the game, you can add many modifiers that are more interesting then just numbers.
 The possible effects are:
 
@@ -469,14 +481,28 @@ The possible effects are:
 	\hline
 	Element \symFire & Create the shown elements after the full card is performed \\
 	\hline
-	Keywords & Some races have their keywords on some of the modifiers. If so, apply the keyword afert the full card is performed. \\
+	Keywords & Some races have their keywords on some of the modifiers. If so, apply the keyword after the full card is performed. \\
 	\hline
 	
 \end{longtable}
 
+All attacks are modified by default.
+When modifying an attack, by default you draw one card from your modifier deck and add its value to the attack.
+When you draw the *2 or the *0 multiplay your attack by the value. These two modifiers also have a shuffle symbol on them, as a reminder for you to shuffle the Modifier Discard into your deck at the end of the turn.
+If you draw a modifer with a draw symbol, you must draw another. Modifiers with the draw symbol can chain into each other. 
+If you end by drawing a *2 or *0, first apply all addition and subtraction, then multiply.
+
+Advantage gives you an additional chance to hit good modifiers.
+When modifying an attack with advantage, reveal one modifier and if necessary perform all of the extra draws you may have.
+Repeat this process for each advantage you have, and separate the drawn modifiers for each repeat into piles.
+Afterwards choose the pile you like most, and apply the modifers in that pile.
+
+Some classes passives allow you to modify healing or poison.
+If you have one of those classes, modify your poison and heal actions  as you would an attack.
+
 \newpage
 
-\section{Boons \& Banes}\label{Section:BoonsBanes}
+\section{Boons \& Banes}\label{Section_BoonsBanes}
 As well as other keywords.
 Boons and banes are traked va status token. When you aplly a boon or bane to a player or an enemy, place a status token on it.
 All status tokens can stack, which results in the effect being applied multiple times.
