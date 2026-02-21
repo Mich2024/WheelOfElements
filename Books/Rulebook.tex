@@ -166,7 +166,7 @@ The rest of the play area is constructed as follows:
 	\item Set up the enemies corresponding to the first encounter descrpition
 \end{enumerate}
 \subsection*{Setup for encounters 2 and 3}
-After you beat each encounter, you will level up, as described in Section \ref{Section:Leveling Up}.
+After you beat each encounter, you will level up, as described in Section \ref{Section_CharacterBuilding}.
 This will change your decks, and you wil proceed to the next encounter.
 After the first encounter, read out passage 2 from the storybook and set up the second encounter.
 When beating encounter 2, repeat with passage 3 and encounter 3, and when you beat encounter 3,  read the last passage from the story. When you reach this point, you win.
@@ -242,30 +242,66 @@ There are always 5 enemy setups described per encounter. Each player gets one of
 These enemy setups are distributed in clockwise seating order. %Please get  a picture for this
 If you are playing with less than 5 players, ignore the setups beyond your player number.
 
+Between every two encounters, you level up, as described in Section \ref{Section_CharacterBuilding}
+
 \subsection*{Events}
 \begin{figure}[ht]
-	\begin{minipage}[t][10cm][t]{0.5\textwidth}
+	\begin{minipage}[t][6cm][t]{0.5\textwidth}
 		Between two encounters, you party will encounter events. These will change how you play the rest of the story. All events hav e an upside and a downside which will affect your choices and gameplay.
 		Some events will amke the game harder, and some easier. Some will warp your choices around them, and some may barely affect you. The only garuantee is that no two stories will play out the same.
 	\end{minipage}	
-	\begin{minipage}[t][10cm][t]{0.5\textwidth}
+	\begin{minipage}[t][6cm][t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/Event.drawio.png}
 	\end{minipage}
 \end{figure}
 
+\newpage
+\section{Character Building} \label{Section_CharacterBuilding}
 
-\section{Leveling Up} \label{Section:Leveling Up}
+The Character Tableau is your core tool for tracking character progress.
+Every Tableau is dedicated to a different species with unique modifiers passives.
+It contains the species name, places for all of the class shingles, your first passive, a place to put your life counter and a reminder text for the turn order.
 
-When you level up, you may choose a new class and add its shingle to your tableau.
+Whenever you egt a class shigle, it will cover a square on your character sheet.
+Each slot for a shingle has changes to the modifier deck printed on it.
+When you cover a slot with a shingle, add or remove the printed modifiers to your modifier deck.
+
+To begin the game, you will choose two rank 1 classes.
+The respective Class shingles are always placed in the top left in the rectangle.
+Between every two encouters in the storybook, you level up.
+When you level up, you choose a new class and add its shingle to your tableau, you get the cards of that class to add to your card pool, and you increase your life tracker to reflect the new maximum life.
+You also gain a new passive. These effects are varied ways to shape your gameplay.
+Most of the trigger at specified points during your turn. Some offer static bbenenfits, like the one shown for the half elf which massively improves your modifier deck.
+
 The class shingles have to be placed in the leftmost slot of their rank.
 Rank 1 classes go in the top row.
 Rank 2 classes go in the middle row.
-Rank 3 classes go in the bottom. %Picture for this
-Each slot for a shingle has changes to the modifier deck printed on it.
-When you cover a slot with a shingle, add or remove the printed modifiers to your modifier deck.
-Add the chosen classes cards to your card pool.
-Increase your life tracker to reflect the new maximum life.
+Rank 3 classes go in the bottom.
+
+\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/TableauRows.drawio.png}
+		
+\end{figure}
+
+
+
+
+\begin{figure}[ht]
+	\begin{minipage}[t][5cm][t]{0.5\textwidth}
+		While every level up will grant an overall improvement to your cards, passives and modifiers, different choices will prioritize different aspects of your build.
+		Rank 1 Classes emphasize your modifiers, and will highlight ho your species interacts with a variety of playstyles.
+		Rank 2 Classes have the best cards, and will allow for compressed powerful turns as you draw those cards.
+		At the pinacle stand Rank 3 Classes with the best passives.
+		
+	\end{minipage}	
+	\begin{minipage}[t][5cm][t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/ClassShingle.drawio.png}
+	\end{minipage}
+\end{figure}
+
 
 %Shingles passgenau auf das brett zuschneiden?
 %Dreiecke, Squares, Fünfecke an de seiten?
@@ -329,7 +365,7 @@ Repeat once for every enemy.
 \end{figure}
 
 After you are done performing the actions of your enemies, place the leftmost enemy a little from your other to signify to the others that you are done with your turn.
-If you die while your enemies are still acting, the rest of the enemies still perform their action. 
+If you die while your enemies are still acting, the rest of the enemies still p[10erform their action. 
 
 
 \begin{comment}
@@ -345,6 +381,8 @@ If you die while your enemies are still acting, the rest of the enemies still pe
 \end{itemize}
 \end{comment}
 
+\newpage
+
 \subsection*{Cleanup step}
 
 \begin{figure}[ht]
@@ -354,8 +392,8 @@ If you die while your enemies are still acting, the rest of the enemies still pe
 			\item \textbf{Boons\&Banes} - Apply poison damage and remove any single turn boon or bane. More about boons and banes can be found in chapter \ref{Section_BoonsBanes} \\
 			\item \textbf{Rotate} - Move your leftmost enemy to the player to your left. This happens simultaneously. You cannot give away an enemy given to you this way.\\
 			\item \textbf{Dead} - If you are dead, give all your remaining enemies to your left. Without an opponent to fight, all remaining enemies placed in your zone rotate to the left.
-			Enemies will never move to a defeated player, and instead immediately rotate to the next live player.
-			This can result into floods of enemies tearing through the rest of the party if one player fails, so be carefiul! \\
+			Enemies will never move to a defeated player, and instead immediately rotate to the next living player.
+			This can result into floods of enemies tearing through the rest of the party if one player fails, so be careful! \\
 			\item \textbf{Wheel} - Rotate the inner part of mana wheel. This means that mana in the fire slot becaomes mana in the earth slot and so forth. \\
 			\item \textbf{Modifier Deck} - Shuffle the modifier discard back into the Modifier deck, if the *0 or *2 modifiers are in the discard.\\
 			
@@ -373,8 +411,6 @@ If you die while your enemies are still acting, the rest of the enemies still pe
 
 
 %\textbf{Roll} - Roll the Monster die.
-
-
 
 \newpage
 \section{Playing a Card}
@@ -397,7 +433,6 @@ If you die while your enemies are still acting, the rest of the enemies still pe
 
 \fbox{\parbox[4cm]{\textwidth}{Archer (left) firing artillery at berserker (right) moving a high speeds}}
 
-\newpage
 
 \begin{figure}[ht]
 	\label{fig_SingleTarget}
