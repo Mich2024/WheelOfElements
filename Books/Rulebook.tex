@@ -13,6 +13,7 @@
 \usepackage[export]{adjustbox}
 \title{Rulebook}
 \usepackage{verbatim}
+\usepackage{tcolorbox}%tyruck21.2.2026
 
 \definecolor{PageBackground}{HTML}{f7e3ba} %e9e5ce  e4d3c5 FFDEAD F5DEB3 F5DEAD
 \pagecolor{PageBackground}
@@ -42,6 +43,7 @@
 \newcommand{\symDisengage}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Disengage.png}}
 \newcommand{\symFire}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/AddFire.png}}
 \newcommand{\symDraw}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Draw.png}}
+\newcommand{\symAttack}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Attack.png}}
 
 \begin{document}
 
@@ -127,15 +129,15 @@ Loss - You lose when every player is defeated in the same encounter.\\
 	\end{minipage}
 	\begin{minipage}[t][10cm][t]{0.5\textwidth}
 		\begin{enumerate}	
-			\item Action draw pile - Shuffle your Action Deck before combat begins to create your draw pile
-			\item Action discard pile - After you play a card, it is placed face up in this pile
-			\item Modifier draw pile - Shuffle your Modifier Deck before combat begins to create your draw pile
-			\item Modifier discard pile - After you modify an attack, all drawn modifiers are placed face up in this pile
-			\item Tableau - The tableau helps you track your decisions as you level up, your health pool, and contains some reminder text for the turn order
-			\item Enemy Zone - Enemies go here, with the configuration described in the storybook
-			\item The Mana Wheel - Many cards use a shared resource called mana. This resource is tracked here.
-			\item The Storybook - This book contains the story and encounter setup 
-			\item The event deck - between encounters, events will be drawn from this deck to mix up the way the following encounters unfold
+			\item \textbf{Action draw pile} - Shuffle your Action Deck before combat begins to create your draw pile
+			\item \textbf{Action discard pile} - After you play a card, it is placed face up in this pile
+			\item \textbf{Modifier draw pile} - Shuffle your Modifier Deck before combat begins to create your draw pile
+			\item \textbf{Modifier discard pile} - After you modify an attack, all drawn modifiers are placed face up in this pile
+			\item \textbf{Tableau} - The tableau helps you track your decisions as you level up, your health pool, and contains some reminder text for the turn order
+			\item \textbf{Enemy Zone} - Enemies go here, with the configuration described in the storybook
+			\item \textbf{The Mana Wheel} - Many cards use a shared resource called mana. This resource is tracked here.
+			\item \textbf{ The Storybook } - This book contains the story and encounter setup 
+			\item \textbf{The event deck} - between encounters, events will be drawn from this deck to mix up the way the following encounters unfold
 		\end{enumerate}
 		
 		\framebox[\textwidth]{Silverkin, sorting stacks of archaic thick playing cards}
@@ -171,29 +173,48 @@ This will change your decks, and you wil proceed to the next encounter.
 After the first encounter, read out passage 2 from the storybook and set up the second encounter.
 When beating encounter 2, repeat with passage 3 and encounter 3, and when you beat encounter 3,  read the last passage from the story. When you reach this point, you win.
 
+\newpage
+%\begin{tcolorbox}[colframe=black, colback=white]
 \section{Your Decks}
 \subsection*{The Action Deck}
 %Dezenter reminder über das level up mit Seitenzahl zu level up segment
-
-%\begin{figure}[ht]
-	\begin{minipage}[t][10cm][t]{0.5\textwidth}
+	The Action Deck contains all action cards you can draw and subsequently play during combat.\\
+	Place a card into the discard pile after performing all of its actions.\\
+	As a deckbuilding game the action deck will continue to evolve during gameplay. \textit{Page 4}\\
+	%\begin{figure}[ht]
+	\begin{minipage}[t][5cm][t]{0.5\textwidth}
+		 .\\
+		\textbf{Action Cards}
+		\begin{itemize}
 %		\begin{text}
-		The Action Deck contains all action cards you can draw and subsequently play during combat.\\
-		Place a card into the discard pile after performing all of its actions.\\
-		As a deckbuilding game the action deck will continue to evolve during gameplay. \textit{Page 4}\\
-		%After every encounter you will gain access to five more cards. You may add these cards to your deck, but you have to remove one card for each one you remove. You can also add old cards back into your deck, but you always have to remove cards to maintain a deck size of 16.
-		%When choosing which cards to play you should consider the tier of you card and its synergy with your other cards and passives. The tier of the card directly affects its power level, with gold cards being on average three times more powerful than bronze ones.
-		%When it comes to synergy, you should be thinking about questions like "How much mana do I produce and consume?", "Is my modifier deck good? Should I play cards with many small hits or cards with one big hit?", or "How can I effectively help teammates when they are in danger?"
+		\item \textbf{Name} - Name of the Card\\
+		\item\textbf{Cost} - can be mandatory or optional\\
+		\item\textbf{Actions} - what the card does once played\\
+		\item\textbf{Class/Race} - From where you obtained the card\\
+		\item\textbf{Tier} - Strength of a card\\
+		\end{itemize}
+		%\begin{enumerate}	
+		%\item \textbf{Damage} - Damage and Kill\\
+		%\item \textbf{Boons} - Buff yourself and enemies\\
+		%\item \textbf{Banes} - Debuff the enemies\\
+		%\item \textbf{Elements} - Create elements\\
+		%\item \textbf{AOE} - Affect multiple enemies\\
+		%\end{enumerate}
+
 %		\end{text}
 %		\framebox[\textwidth]{Picture}
 %		\centering
 	\end{minipage}
-	\begin{minipage}[t][10cm][t]{0.5\textwidth}
+	\begin{minipage}[t][5cm][t]{0.5\textwidth}
 		
 		%TODO add the stroybook to this pic 
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/ActionCard.drawio.png}		
 	\end{minipage}	
-	
+			%After every encounter you will gain access to five more cards. You may add these cards to your deck, but you have to remove one card for each one you remove. You can also add old cards back into your deck, but you always have to remove cards to maintain a deck size of 16.
+	%When choosing which cards to play you should consider the tier of you card and its synergy with your other cards and passives. The tier of the card directly affects its power level, with gold cards being on average three times more powerful than bronze ones.
+	\begin{tcolorbox}[colframe=black, colback=white]
+		When it comes to synergy, you should be thinking about questions like "How much mana do I produce and consume?", "Is my modifier deck good? Should I play cards with many small hits or cards with one big hit?", or "How can I effectively help teammates when they are in danger?"
+	\end{tcolorbox}
 	%\includegraphics[width=0.8\textwidth]{ExplanationPics/TwoBoards.jpg}
 %\end{figure}
 
@@ -202,14 +223,16 @@ When beating encounter 2, repeat with passage 3 and encounter 3, and when you be
 \subsection*{The Modifier Deck}
 %TODO pics here
 Your modifier deck grows when you level up \\
-The modifier cards are used every time you attack an enemy. They can have four effects:
+The modifier cards are used every time you \symAttack attack an enemy. They can have multiple effects:
 \begin{figure}[ht]
 	\begin{minipage}[t][10cm][t]{0.5\textwidth}
 		\begin{enumerate}	
-			\item Numerical - Adds a number to your attack damage
-			\item Elements - Create the shown elements
-			\item Bane - Applies a Bane to your enemy
-			\item Draw - Perform all other effects of this modifier, and draw another
+			\item \textbf{Numerical} - Adds a number to your attack damage
+			\item \textbf{Elements} - Create the shown elements
+			\item \textbf{Bane} - Applies a Bane to your enemy
+			\item \textbf{Draw} - Perform all other effects of this modifier, and draw another
+			\item \textbf{Critical Success} - Your attack deals double damage
+			\item \textbf{Critical Failure} - Your attack deals 0 damage. It still applies its boons\&banes.
 		\end{enumerate}
 
 		\framebox[\textwidth]{Picture}
@@ -223,7 +246,11 @@ The modifier cards are used every time you attack an enemy. They can have four e
 	
 	%\includegraphics[width=0.8\textwidth]{ExplanationPics/TwoBoards.jpg}
 \end{figure}
+\begin{tcolorbox}[colframe=black, colback=white]
+In the Cleanup step the Critical Success and the Critical Failure cause you to shuffle your modifier discard into your modifier deck. 
+\end{tcolorbox}
 
+%\end{tcolorbox}
 \newpage
 \section{The Storybook}
 The storybook contains all of the Stories you can play in Wheel of Elements.
