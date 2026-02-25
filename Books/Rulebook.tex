@@ -26,6 +26,8 @@
 %Go top down (Complex overarching to simple detail)
 %? Try to not crossref? People can remember 3 things at most, if you have to make them
 
+\rowcolors{2}{white}{blue!10}
+
 \newcommand{\scaleForSym}{10pt}
 %Local
 \newcommand{\symShield}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Shield.png}}
@@ -41,9 +43,16 @@
 %Global
 \newcommand{\symRanged}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Ranged.png}}
 \newcommand{\symDisengage}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Disengage.png}}
-\newcommand{\symFire}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/AddFire.png}}
+
 \newcommand{\symDraw}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Draw.png}}
 \newcommand{\symAttack}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/Attack.png}}
+
+\newcommand{\symFire}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/AddFire.png}}
+\newcommand{\symEarth}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/AddEarth.png}}
+\newcommand{\symMetal}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/AddMetal.png}}
+\newcommand{\symWater}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/AddWater.png}}
+\newcommand{\symWood}{\includegraphics[width=\scaleForSym]{../Pictures/Icons/AddWood.png}}
+
 
 \begin{document}
 
@@ -54,21 +63,27 @@
 %\section{Foreword} This one wont have a section formatting, but still needs to be there
 
 %Al primers need to be in here. This includes: Multiclassing, deckbuilding, the modifier deck, Co-op, species?, roguelike?, Wheelgame?,
-\begin{minipage}[t][14.5cm][t]{0.5\textwidth}
+\begin{minipage}[t][15.5cm][t]{0.5\textwidth}
 \begin{minipage}[t][14cm][t]{0.9\textwidth}
 \textbf{Game Overview}\\
-Wheel of Elements is a cooperative multi-classing deckbuilder. Become an indomitable tank, a Mage of Immense arcane Power or something between, like a berserking Druid. Beat three battles of increasing difficulty and prove your mettle.
+Wheel of Elements is a cooperative multi-classing Deckbuilder. Become an indomitable tank, a Mage of Immense arcane Power or something between, like a berserking Druid. Beat three battles of increasing difficulty and prove your mettle.\\
 
-\textbf{Deckbuilder} - Wheel of Elements is a deckbuilder. Each Race and class gives you cards which combine to a 16 card Deck. Many cards twist the rules and let you get creative with your gameplay. You may find yourself optimizing for maximum damage output, trying to keep your friends safe, or stalling the enemy forces indefinitely. Your cards also interact witht he Modifier Deck, which adds damage or a special effect to each attack you perform.
+Wheel of Elements is a \textbf{Deckbuilder}. Over the course of the game you will add to and remove cards from your deck. Many cards synergize, letting you get creative with your combinations. \\
 
-\textbf{Multi-classing} - Wheel of Elements is also a multi-classing game. Each player starts with a species and two classes. Your species lets you make a major decision at the start of your game and governs how your modifier deck grows, whereas you can choose classes to imrove your strengths and cover your weaknesses. You Improve a class or branch our into a new one after each won combat.\\
+Your cards also interact with the \textbf{Modifier Deck}, which adds damage or a special effect to each attack you perform.\\
+
+It is also a \textbf{Multi-Classing} game. Each species and class comes with cards and a passive effect that will twist your gameplay. You can rank up old classes to improve your strengths and adopt new ones to cover your weaknesses.\\
 
 \textbf{Playtime}\\
-The Game consists of three fights with random events and deckbuilding sessions between them. A full game takes about 2 hours. Plan for some extra time your first game.\\
+The game consists of three fights with random events and deckbuilding sessions between them. A full game takes about 2.5 hours. Plan for some extra time your first game.\\
 
 \textbf{Winning \& Losing}\\
 \textbf{Victory} - Victory is achieved when all enemies from the story are defeated.\\
 \textbf{Loss} - You lose when every player is defeated in the same encounter.\\
+
+\begin{tcolorbox}[colframe=black, colback=white]
+\textbf{Rule 0:} The game is about having fun. If you and your playgroup decide that some change to the rules would improve your fun, experiment with it!
+\end{tcolorbox}
 \end{minipage}
 \end{minipage}
 \begin{minipage}[t][12cm][t]{0.5\textwidth}
@@ -79,6 +94,8 @@ The Game consists of three fights with random events and deckbuilding sessions b
 \fbox{\parbox[4cm]{\textwidth}{Bremer Stadmusikanten, consisting of :Centaur, dwarf, human, elf, fae, sorted by heght witht he fae sitting on the elf}}
 \end{minipage}
 
+
+\newpage
 \section{Components}
 %recalc way at the end
 \begin{minipage}[t][4cm][t]{0.5\textwidth}
@@ -87,12 +104,12 @@ The Game consists of three fights with random events and deckbuilding sessions b
 		\item 1 Storybook
 		\item 1 Elemental Wheel
 		\item 25 Element Chips
-		\item 10 Race Tableau
+		\item 10 Character Tableaus
 		\item 30 Class Shingles
 		\item 220 Small Cards 
 		\begin{enumerate}	
 			\item (5 Base Modifier Decks a 10 cards)
-			\item (10 Race Modifier Decks a ~15 cards)
+			\item (10 Species Modifier Decks a ~15 cards)
 			\item (~20 from Passives)
 		\end{enumerate}
 	\end{itemize}
@@ -102,7 +119,7 @@ The Game consists of three fights with random events and deckbuilding sessions b
 		\item ~210 Player Cards	
 		\begin{enumerate}	
 			\item (30 Class decks a 5 cards)
-			\item (10 Race decks a 6 cards)
+			\item (10 Species decks a 6 cards)
 		\end{enumerate}
 		\item 20 Events
 		\item 150 Monsters
@@ -133,10 +150,10 @@ The Game consists of three fights with random events and deckbuilding sessions b
 			\item \textbf{Action discard pile} - After you play a card, it is placed face up in this pile
 			\item \textbf{Modifier draw pile} - Shuffle your Modifier Deck before combat begins to create your draw pile
 			\item \textbf{Modifier discard pile} - After you modify an attack, all drawn modifiers are placed face up in this pile
-			\item \textbf{Tableau} - The tableau helps you track your decisions as you level up, your health pool, and contains some reminder text for the turn order
+			\item \textbf{Character Tableau} - The tableau helps you track your decisions as you level up, your health pool, and contains some reminder text for the turn order
 			\item \textbf{Enemy Zone} - Enemies go here, with the configuration described in the storybook
-			\item \textbf{The Mana Wheel} - Many cards use a shared resource called mana. This resource is tracked here.
-			\item \textbf{ The Storybook } - This book contains the story and encounter setup 
+			\item \textbf{The Wheel of Elements} - Many cards use a shared resource called elements. This resource is tracked here.
+			\item \textbf{The Storybook} - This book contains the story and encounter setup 
 			\item \textbf{The event deck} - between encounters, events will be drawn from this deck to mix up the way the following encounters unfold
 		\end{enumerate}
 		
@@ -150,25 +167,29 @@ The Game consists of three fights with random events and deckbuilding sessions b
 
 \section{Setup}
 
-
-To construct their first action and modifer deck, each player follows these steps:
+\begin{minipage}[t][10cm][t]{0.5\textwidth}
+To construct their first action and modifer deck, each \textbf{player} follows these steps:
 \begin{enumerate}	
-	\item Pick a species
-	\item Pick a rank 1 Class
-	\item Pick a different rank 1 Class
-	\item Shuffle all modifier cards from your base. This forms your Modifier Deck
-	\item Take your Species Tableau and place the two Class Shingles you chose into your Species Tableau
-	\item Shuffle all action cards from your species and two classes together. This forms your Action Deck
+	\item \textbf{Species} - Pick a Species
+	\item \textbf{Class 1} - Pick a rank 1 Class
+	\item \textbf{Class 2} - Pick a different rank 1 Class
+	\item \textbf{Modifier Deck} - Shuffle your species starter modifier cards and your base deck together. This forms your Modifier Deck
+	\item \textbf{Character Tableau} - Take a Character Tableau and place the two Class Shingles you chose into your Character Tableau
+	\item \textbf{Action Deck} - Shuffle all action cards from your species and two classes together. This forms your Action Deck
 \end{enumerate}
-The rest of the play area is constructed as follows:
+
+
+\vspace{0.3cm}
+The \textbf{shared} play area is constructed as follows:
 \begin{enumerate}
-	\item Put the Mana Wheel in the middle
-	\item Select a story from the Storybook
-	\item Read out the first passage of the story
-	\item Set up the enemies corresponding to the first encounter descrpition
+	\item \textbf{Wheel} - Put the Wheel of Elements in the middle
+	\item \textbf{Storybook} - Select a new story from the Storybook (We recommend Story Nr.1 if it is everyone's first time playing)
+	\item \textbf{Story} - Read out the first passage of the story
+	\item \textbf{Encounter} - Set up the enemies corresponding to the first encounter descrpition
 \end{enumerate}
+\end{minipage}	
 \subsection*{Setup for encounters 2 and 3}
-After you beat each encounter, you will level up, as described in Section \ref{Section_CharacterBuilding}.
+After you beat each encounter, you will level up, as described in Section \pageref{Section_CharacterBuilding}.
 This will change your decks, and you wil proceed to the next encounter.
 After the first encounter, read out passage 2 from the storybook and set up the second encounter.
 When beating encounter 2, repeat with passage 3 and encounter 3, and when you beat encounter 3,  read the last passage from the story. When you reach this point, you win.
@@ -178,57 +199,52 @@ When beating encounter 2, repeat with passage 3 and encounter 3, and when you be
 \section{Your Decks}
 \subsection*{The Action Deck}
 %Dezenter reminder über das level up mit Seitenzahl zu level up segment
-	The Action Deck contains all action cards you can draw and subsequently play during combat.\\
-	Place a card into the discard pile after performing all of its actions.\\
-	As a deckbuilding game the action deck will continue to evolve during gameplay. \textit{Page 4}\\
-	%\begin{figure}[ht]
+The Action Deck contains all action cards you can draw and subsequently play during combat.\\
+Place a card into the discard pile after performing all of its actions.\\
+As a deckbuilding game the action deck will continue to evolve during gameplay. \textit{See Chapter \pageref{Section_CharacterBuilding}}\\
+\begin{figure}[ht]
 	\begin{minipage}[t][5cm][t]{0.5\textwidth}
-		 .\\
+	\begin{minipage}[t][5cm][t]{0.9\textwidth}
 		\textbf{Action Cards}
 		\begin{itemize}
-%		\begin{text}
-		\item \textbf{Name} - Name of the Card\\
-		\item\textbf{Cost} - can be mandatory or optional\\
-		\item\textbf{Actions} - what the card does once played\\
-		\item\textbf{Class/Race} - From where you obtained the card\\
-		\item\textbf{Tier} - Strength of a card\\
+		\item \textbf{Name} - Name of the Card
+		\item\textbf{Cost} - can be mandatory, optional or none
+		\item\textbf{Actions} - what the card does once played
+		\item\textbf{Class/Species} - From where you obtained the card
+		\item\textbf{Tier} - Strength of a card
 		\end{itemize}
-		%\begin{enumerate}	
-		%\item \textbf{Damage} - Damage and Kill\\
-		%\item \textbf{Boons} - Buff yourself and enemies\\
-		%\item \textbf{Banes} - Debuff the enemies\\
-		%\item \textbf{Elements} - Create elements\\
-		%\item \textbf{AOE} - Affect multiple enemies\\
-		%\end{enumerate}
+		%\item \textbf{Damage} - Damage and Kill
+		%\item \textbf{Boons} - Buff yourself and enemies
+		%\item \textbf{Banes} - Debuff the enemies
+		%\item \textbf{Elements} - Create elements
+		%\item \textbf{AOE} - Affect multiple enemies
 
-%		\end{text}
-%		\framebox[\textwidth]{Picture}
-%		\centering
+	\end{minipage}
 	\end{minipage}
 	\begin{minipage}[t][5cm][t]{0.5\textwidth}
 		
-		%TODO add the stroybook to this pic 
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/ActionCard.drawio.png}		
 	\end{minipage}	
+\end{figure}
 			%After every encounter you will gain access to five more cards. You may add these cards to your deck, but you have to remove one card for each one you remove. You can also add old cards back into your deck, but you always have to remove cards to maintain a deck size of 16.
 	%When choosing which cards to play you should consider the tier of you card and its synergy with your other cards and passives. The tier of the card directly affects its power level, with gold cards being on average three times more powerful than bronze ones.
 	\begin{tcolorbox}[colframe=black, colback=white]
-		When it comes to synergy, you should be thinking about questions like "How much mana do I produce and consume?", "Is my modifier deck good? Should I play cards with many small hits or cards with one big hit?", or "How can I effectively help teammates when they are in danger?"
+		Remember: Reading the card explains the card, except when it doesn't. In that case, check the FAQ.
 	\end{tcolorbox}
 	%\includegraphics[width=0.8\textwidth]{ExplanationPics/TwoBoards.jpg}
-%\end{figure}
+
 
 
 
 \subsection*{The Modifier Deck}
-%TODO pics here
-Your modifier deck grows when you level up \\
+Your modifier deck grows when you level up. \\
 The modifier cards are used every time you \symAttack attack an enemy. They can have multiple effects:
 \begin{figure}[ht]
 	\begin{minipage}[t][10cm][t]{0.5\textwidth}
+		\begin{minipage}[t][5cm][t]{0.9\textwidth}
 		\begin{enumerate}	
 			\item \textbf{Numerical} - Adds a number to your attack damage
-			\item \textbf{Elements} - Create the shown elements
+			\item \textbf{Elements} - Place element markers on the wheel
 			\item \textbf{Bane} - Applies a Bane to your enemy
 			\item \textbf{Draw} - Perform all other effects of this modifier, and draw another
 			\item \textbf{Critical Success} - Your attack deals double damage
@@ -238,13 +254,11 @@ The modifier cards are used every time you \symAttack attack an enemy. They can 
 		\framebox[\textwidth]{Picture}
 		\centering
 	\end{minipage}
+	\end{minipage}
 	\begin{minipage}[t][10cm][t]{0.5\textwidth}
-		
-		%TODO add the stroybook to this pic 
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/ModifierCard.drawio.png}		
 	\end{minipage}	
 	
-	%\includegraphics[width=0.8\textwidth]{ExplanationPics/TwoBoards.jpg}
 \end{figure}
 \begin{tcolorbox}[colframe=black, colback=white]
 In the Cleanup step the Critical Success and the Critical Failure cause you to shuffle your modifier discard into your modifier deck. 
@@ -254,54 +268,72 @@ In the Cleanup step the Critical Success and the Critical Failure cause you to s
 \newpage
 \section{The Storybook}
 The storybook contains all of the Stories you can play in Wheel of Elements.
-Each story will take about 2 hours to play through, contain 3 Encounters and one text containing a short story for why you are fighting.
+Each story will take about 2.5 hours to play through, contain 3 Encounters and one text containing a short story for why you are fighting.
 
-\subsection*{Stories}
-Each story begins with a plot hook, which should be narrated by a player.
-	The text is separated into four sections. After reading a section, start one of the three fights. After finishing a fight, read another section, draw an event, and level up. After finishing the second fight, repeat this process.
-	%Flowchart? with nice pics?
+\begin{figure}[ht]
+	\begin{minipage}[t][8cm][t]{0.5\textwidth}
+		\begin{minipage}[t][5cm][t]{0.9\textwidth}
+			\fbox{\parbox[4cm]{\textwidth}{Merfolk storyteller teaching little frogs about the cosmic horrors}}
+		\end{minipage}
+	\end{minipage}
+	\begin{minipage}[t][8cm][t]{0.5\textwidth}
+		
+		\subsection*{Stories}
+		Each story begins with a plot hook, which should be narrated by a player.
+		The text is separated into four sections. After reading a section, start one of the three fights. After finishing a fight, read another section, draw an event, and level up. After finishing the second fight, repeat this process.
+		%Flowchart? with nice pics?
+		
+		
+		\subsection*{Encounters}
+		Each story comes with three enemy encounters. An encounter presents which enemies should be fought and in which arrangement.
+		There are always 5 enemy setups described per encounter. Each player gets one of those setups.
+		These enemy setups are distributed in clockwise seating order. %Please get  a picture for this
+		If you are playing with less than 5 players, ignore the setups beyond your player number.
+		
+		Between every two encounters, you level up, as described in Section \pageref{Section_CharacterBuilding}
+				
+	\end{minipage}	
 	
+	%\includegraphics[width=0.8\textwidth]{ExplanationPics/TwoBoards.jpg}
+\end{figure}
 
-\subsection*{Encounters}
-%TODO rework with following section
-Each story comes with three enemy encounters. An encounter presents which enemies should be fought and in which arrangement.
-There are always 5 enemy setups described per encounter. Each player gets one of those setups.
-These enemy setups are distributed in clockwise seating order. %Please get  a picture for this
-If you are playing with less than 5 players, ignore the setups beyond your player number.
-
-Between every two encounters, you level up, as described in Section \ref{Section_CharacterBuilding}
 
 \subsection*{Events}
 \begin{figure}[ht]
-	\begin{minipage}[t][6cm][t]{0.5\textwidth}
-		Between two encounters, you party will encounter events. These will change how you play the rest of the story. All events hav e an upside and a downside which will affect your choices and gameplay.
-		Some events will amke the game harder, and some easier. Some will warp your choices around them, and some may barely affect you. The only garuantee is that no two stories will play out the same.
+	\begin{minipage}[t][6.5cm][t]{0.5\textwidth}
+		Between two encounters (and before levelling up), you party will encounter events. These will change how you play the rest of the story. All events have an upside and a downside which will affect your choices and gameplay.
+		Some events will make the game harder, and some easier. Some will warp your choices around them, and some may barely affect you. The only guarantee is that no two stories will play out the same.
 	\end{minipage}	
-	\begin{minipage}[t][6cm][t]{0.5\textwidth}
+	\begin{minipage}[t][6.5cm][t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/Event.drawio.png}
 	\end{minipage}
 \end{figure}
+\begin{tcolorbox}[colframe=black, colback=white]
+	Events happen before the level up, so consider adapting your class choices 
+\end{tcolorbox}
+
+\fbox{\parbox[4cm]{\textwidth}{Dragon flying overhead of some Solarians/Wyrmlings}}
 
 \newpage
 \section{Character Building} \label{Section_CharacterBuilding}
 
-The Character Tableau is your core tool for tracking character progress.
-Every Tableau is dedicated to a different species with unique modifiers passives.
+\textbf{The Character Tableau} - your core tool for tracking character progress.
+Every Tableau is dedicated to a different species with unique modifiers and passives.
 It contains the species name, places for all of the class shingles, your first passive, a place to put your life counter and a reminder text for the turn order.
 
-Whenever you egt a class shigle, it will cover a square on your character sheet.
+\textbf{Modifiers} - Whenever you get a class shingle, it will cover a square on your character sheet.
 Each slot for a shingle has changes to the modifier deck printed on it.
 When you cover a slot with a shingle, add or remove the printed modifiers to your modifier deck.
 
-To begin the game, you will choose two rank 1 classes.
+\textbf{Progression} - To begin the game, you will choose two rank 1 classes.
 The respective Class shingles are always placed in the top left in the rectangle.
-Between every two encouters in the storybook, you level up.
-When you level up, you choose a new class and add its shingle to your tableau, you get the cards of that class to add to your card pool, and you increase your life tracker to reflect the new maximum life.
+Between every two encounters and after the event, you level up.
+When you level up, you choose a new class and add its shingle to your tableau, you get the cards of that class, and you increase your life tracker to reflect the new maximum life.
 You also gain a new passive. These effects are varied ways to shape your gameplay.
-Most of the trigger at specified points during your turn. Some offer static bbenenfits, like the one shown for the half elf which massively improves your modifier deck.
+Most of the effects trigger at specified points during your turn. Some offer static benefits, like the one shown for the half elf which massively improves your modifier deck.
 
-The class shingles have to be placed in the leftmost slot of their rank.
+\textbf{Placement} - The class shingles have to be placed in the leftmost slot of their rank.
 Rank 1 classes go in the top row.
 Rank 2 classes go in the middle row.
 Rank 3 classes go in the bottom.
@@ -316,19 +348,22 @@ Rank 3 classes go in the bottom.
 
 
 \begin{figure}[ht]
-	\begin{minipage}[t][5cm][t]{0.5\textwidth}
-		While every level up will grant an overall improvement to your cards, passives and modifiers, different choices will prioritize different aspects of your build.
+	\begin{minipage}[t][4.5cm][t]{0.5\textwidth}
+		\textbf{Specialisation} - While every level up will grant an overall improvement to your cards, passives and modifiers, different choices will prioritize different aspects of your build.
 		Rank 1 Classes emphasize your modifiers, and will highlight ho your species interacts with a variety of playstyles.
 		Rank 2 Classes have the best cards, and will allow for compressed powerful turns as you draw those cards.
-		At the pinacle stand Rank 3 Classes with the best passives.
+		At the pinnacle stand Rank 3 Classes with the best passives.
 		
 	\end{minipage}	
-	\begin{minipage}[t][5cm][t]{0.5\textwidth}
+	\begin{minipage}[t][4.5cm][t]{0.5\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/ClassShingle.drawio.png}
 	\end{minipage}
 \end{figure}
 
+\begin{tcolorbox}[colframe=black, colback=white]
+	The backside of Class Shingles list the cards associated with that Class and rank, so you can sort them back easily. 
+\end{tcolorbox}
 
 %Shingles passgenau auf das brett zuschneiden?
 %Dreiecke, Squares, Fünfecke an de seiten?
@@ -337,30 +372,53 @@ Rank 3 classes go in the bottom.
 
 \newpage
 \section{Combat}
+You will spend most of your time in combat. This is where you test your choices in composing your character and deck are tested against challenging foes.
+\subsection*{Start} 
+When entering an encounter from the storybook, perform these steps once:\\
+\begin{minipage}[t][2.7cm][t]{\textwidth}
+\begin{itemize}
 
-You will spend most of your time in combat. This is where ypu test your choces in composing your character and deck against challenging foes.
-When entering a new combat encounter from the Storybook, shuffle your Action deck and your modifier deck. Empty the Elemental Wheel. Set your life to maximum. Setup enemies based on the Storybook. Roll the Monster Die. Start of combat abilities trigger immediately after the setup before the first player turn.
+\item \textbf{Shuffle} - Shuffle your Action deck and your modifier deck 
+\item \textbf{Elemental Wheel} - Empty it
+\item \textbf{Life} - Set your life to maximum.
+\item \textbf{Enemies} - Setup enemies based on the Storybook.
+\item \textbf{Roll} - Roll the Monster Die
+\item \textbf{Passives} - Start of combat passives trigger
+	
+\end{itemize}
+\end{minipage}
 The first turn goes to the players, followed by an enemy turn. Alternate between player and enemy turn until either every enemy or player is defeated.
+\subsection*{End}
 When all enemies are defeated, you win the encounter. If all encounters are won, you win the story.
 If all players are defeated you loose the story. In case some players are defeated, but the encounter is won, those players incur no penalty, return to full life and win together with the party.
 
+\begin{tcolorbox}[colframe=black, colback=white]
+	We an enemy is defeated, immediately remove that card from the playing area.
+\end{tcolorbox}
+
+
 \subsection*{Player Turn}
 
-The player turn follows a repeating pattern.\\
+The player turn follows a repeating pattern.
+
+\begin{itemize}
+
+	\item \textbf{Draw} - Draw up to your maximum hand size. \\
+	\hspace*{1cm} \textbf{Empty} draw pile and you need to draw? Shuffle your discard pile into a new draw pile.
+	
+	\item \textbf{Passives} - Start of turn passives trigger. Players may decide order.
+	\item \textbf{Play} - Players may play up to 2 cards each turn.
+	To play a card:\\
+	\hspace*{1cm} \textbf{Pay} any element cost you must or want\\
+	\hspace*{1cm} \textbf{Perform} the cards actions. \\
+	\hspace*{1cm} \textbf{Discard} the played card into the discard pile.
+\end{itemize}
+
+\begin{tcolorbox}[colframe=black, colback=white]
+	After every player has finished playing their cards move to the enemy turn. Indicate this by turning your leftmost enemy on the side. Coordination is important here, speak with the group to check that no one is still acting.
+\end{tcolorbox}
 
 
-\textbf{Draw} - Draw up to your maximum hand size.\\
-\hspace*{1cm}When your draw pile is empty and you need to draw, shuffle your discard pile into a new draw pile.\\
-\textbf{Roll} - Roll the Monster Die. This locks in the monster action for this turn, and you can prepare accordingly.\\
-\textbf{Start} - Start of turn abilities trigger. Players may decide order.\\
-\textbf{Play} - Players may play up to 2 cards each turn.
-To play a card:\\
-\hspace*{1cm}Pay its mandatory element cost\\
-\hspace*{1cm}Choose if you want to pay the optional costs.\\
-\hspace*{1cm}Resolve the card and apply modifiers. Put the played card into the discard pile.\\
-
-
-After every player has finished playing their cards, move to the enemy turn.
 
 \newpage
 
@@ -371,13 +429,12 @@ After every player has finished playing their cards, move to the enemy turn.
 	\begin{minipage}[t][5cm][t]{0.5\textwidth}
 		Enemy cards consist of four parts:
 		\begin{enumerate}
-			\item name	
-			\item any passive effects
-			\item the life bar
-			\item if an enemy dies immediatly remove him from the board
-			\item the action box
-			\item the action either depends on the die
-			\item or is a rotating action that changes each turn 
+			\item \textbf{Name}	
+			\item \textbf{Passives} - Enemies can have passive effects too
+			\item \textbf{Life} - The golden Box marks their starting life total
+			\item \textbf{Actions} - \\
+			\hspace*{1cm} \textbf{Dice} - Most enemies act according to the \hspace*{1.1cm} enemy die\\
+			\hspace*{1cm} \textbf{Rotating} - Some enemies rotate their \hspace*{1.1cm} actions in a pattern 
 		\end{enumerate}
 	\end{minipage}	
 	\begin{minipage}[t][5cm][t]{0.5\textwidth}
@@ -386,6 +443,7 @@ After every player has finished playing their cards, move to the enemy turn.
 	\end{minipage}
 \end{figure}
 
+\subsection*{Enemy actions}
 Enemies act sequentially from left to right. 
 To perform the enemy turn, look at the monster dice,  and have the monster perform that action.
 Repeat once for every enemy.
@@ -397,8 +455,12 @@ Repeat once for every enemy.
 	\end{minipage}	
 \end{figure}
 
-After you are done performing the actions of your enemies, place the leftmost enemy a little from your other to signify to the others that you are done with your turn.
-If you die while your enemies are still acting, the rest of the enemies still p[10erform their action. 
+If you die while your enemies are still acting, the rest of the enemies still perform their action into the air.
+
+
+
+
+
 
 
 \begin{comment}
@@ -416,20 +478,22 @@ If you die while your enemies are still acting, the rest of the enemies still p[
 
 \newpage
 
-\subsection*{Cleanup step}
+\subsection*{Cleanup}
 
 \begin{figure}[ht]
-	\begin{minipage}[t][11cm][t]{0.5\textwidth}
+	\begin{minipage}[t][13cm][t]{0.5\textwidth}
 		At the end of the turn, the players set up the board for the next turn.
 		\begin{itemize}
-			\item \textbf{Boons\&Banes} - Apply poison damage and remove any single turn boon or bane. More about boons and banes can be found in chapter \ref{Section_BoonsBanes} \\
-			\item \textbf{Rotate} - Move your leftmost enemy to the player to your left. This happens simultaneously. You cannot give away an enemy given to you this way.\\
-			\item \textbf{Dead} - If you are dead, give all your remaining enemies to your left. Without an opponent to fight, all remaining enemies placed in your zone rotate to the left.
+			\item \textbf{Boons\&Banes} - Apply poison damage and remove any single turn boon or bane. \textit{See page \pageref{Section_BoonsBanes}} \\
+			\item \textbf{Rotate} - Move your leftmost (sideways) enemy to the player to your left. This happens simultaneously. You cannot give away an enemy given to you this way. Right the enemy rotating to you.\\
+			\item \textbf{Dead} - If you are dead, give all your remaining enemies to your left. Without an opponent to fight, all of your remaining enemies rotate to the left.
 			Enemies will never move to a defeated player, and instead immediately rotate to the next living player.
-			This can result into floods of enemies tearing through the rest of the party if one player fails, so be careful! \\
-			\item \textbf{Wheel} - Rotate the inner part of mana wheel. This means that mana in the fire slot becaomes mana in the earth slot and so forth. \\
-			\item \textbf{Modifier Deck} - Shuffle the modifier discard back into the Modifier deck, if the *0 or *2 modifiers are in the discard.\\
-			
+			\begin{tcolorbox}[colframe=black, colback=white]
+				This can result into floods of enemies tearing through the rest of the party, so be careful!
+			\end{tcolorbox}
+			\item \textbf{Wheel} - Rotate the inner part of Wheel of Elements. This means that element markers in the fire slot become element markers in the earth slot and so forth.\\
+			\item \textbf{Modifier Deck} - Shuffle the modifier discard back into the modifier deck, if the *0 or *2 modifiers are in the discard.\\
+			\item \textbf{Roll} - Roll the Monster Die.
 			
 			
 		\end{itemize}
@@ -441,6 +505,11 @@ If you die while your enemies are still acting, the rest of the enemies still p[
 	\end{minipage}
 \end{figure}
 
+\begin{tcolorbox}[colframe=black, colback=white]
+	Turning the enemies sideways is only used as indicator, nothing more. They also have a little nap during rotation.
+\end{tcolorbox}
+
+
 
 
 %\textbf{Roll} - Roll the Monster die.
@@ -449,13 +518,13 @@ If you die while your enemies are still acting, the rest of the enemies still p[
 \section{Playing a Card}
 \begin{figure}[ht]
 	\begin{minipage}[t][6cm][t]{0.5\textwidth}
-		You may play two cards per turn. Cards either have no cost or a mana cost.
-		Mana costs always corespond to an element.
-		To pay  a mana cost, remove the stated amount of mana markers from the corresponding field on the wheel back into the stash.
-		Most often, the mana cost is optional. If the cost is not optional, you may not play it without paying the mana cost.
+		\textbf{Play} - You may play two cards per turn. \\
+		\textbf{Pay} - Cards either have no cost or an element cost. To pay  a element cost, remove the stated amount of element markers from the corresponding field on the wheel back into the stash.
+		Most often, the element cost is optional. If the cost is not optional, you may not play it without paying the element cost.
 		
-		When playing a card, you execute all effects from top to bottom, going line by line.
-		All effects must to be used if possible.
+		\begin{tcolorbox}[colframe=black, colback=white]
+			When playing a card, you execute all effects from top to bottom, going line by line. All effects \textbf{must} to be used if possible.
+		\end{tcolorbox}
 		
 	\end{minipage}	
 	\begin{minipage}[t][6cm][t]{0.5\textwidth}
@@ -463,8 +532,6 @@ If you die while your enemies are still acting, the rest of the enemies still p[
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/ActionCard.drawio.png}
 	\end{minipage}
 \end{figure}
-
-\fbox{\parbox[4cm]{\textwidth}{Archer (left) firing artillery at berserker (right) moving a high speeds}}
 
 
 \begin{figure}[ht]
@@ -474,13 +541,13 @@ If you die while your enemies are still acting, the rest of the enemies still p[
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/TargetingSingle.drawio.png}
 	\end{minipage}	
 	\begin{minipage}[t][6cm][t]{0.5\textwidth}		
-		The most common actions are attacks, mana generation, boons and banes.
+		\textbf{Actions} - The most common actions are \symAttack attacks, element generation, boons and banes.
 		
-		By default, one actions targets one enemy in your own zone (\ref{fig_SingleTarget}).
-		If the card has the keyword "Ranged" all actions may target any enemy in the zones to your left and right(\ref{fig_RangedSingleMultiTarget})
+		\textbf{Targeting} - By default, one actions targets one enemy in your own zone (\textit{See left}).
 		If multiple actions are listed in a single line, all of them must affect the same target.
-		If multiple actions are listed in seperate lines, they may affect different targets.
-		Beneficial actions such as healing , shield etc. target yourself by default. These actions amy target your neighboring players if the card has ranged.
+		If multiple actions are listed in separate lines, they may affect different targets.
+		Beneficial actions such as healing , shield etc. target yourself by default. \\
+		\textbf{Ranged} - If the card has the keyword "Ranged" all actions may target any enemy (or a player) to your left and right. (\textit{See below})
 	\end{minipage}
 \end{figure}
 
@@ -494,14 +561,15 @@ If you die while your enemies are still acting, the rest of the enemies still p[
 	\end{minipage}	
 \end{figure}
 
+\begin{tcolorbox}[colframe=black, colback=white]
+	If you have multiple attacks (or other effects) as part of one card, you may choose new targets when you make each attack.
+\end{tcolorbox}
 
-Some cards have an Area Of Effect (AOE) marker.
-AOE cards may target enemeis that are adjacent to one another (\ref{fig_AOE}), in the pattern shown on the marker. Enemies in different zones never count as adjancent to each other, and AOEs may not flow over to another zone.
-All attacks and banes on the card are applied to each enemy targeted by the AOE.
-
-\fbox{\parbox[4cm]{\textwidth}{Bigass artwork of pyromancer blasting wswathes of goblins, while his neighbouring toxicologist cannot throw a flask over tohim while has only one enemy in front of him}}
 \newpage
 
+\textbf{AOE} - Some cards have an Area Of Effect marker.
+AOE cards may target enemies that are adjacent to one another (\textit{See below}), in the pattern shown on the marker. Enemies of different players are never count as adjacent to each other, and AOEs may not flow over to another zone.
+All attacks and banes on the card are applied to each enemy targeted by the AOE.
 
 \begin{figure}[ht]
 	\label{fig_AOE}
@@ -511,70 +579,79 @@ All attacks and banes on the card are applied to each enemy targeted by the AOE.
 	\end{minipage}	
 \end{figure}
 
-
-
-To perform an attack, first select an enemy to attack.
-Then, draw a modifier from you modifer deck, and add its value to the attack.
-Every Deck also has a *2 and a *0. In that case, multiply your attak value by two (or  zero) after everything else was applied.
+\textbf{Attack} - To perform an attack, first select an enemy to attack.
+Then, draw a modifier from you modifier deck, and add its value to the attack.
+Every Deck also has a *2 and a *0. In that case, multiply your attack value by two (or  zero) after everything else was applied.
 Modifiers are drawn and applied separately for each enemy attacked. This applies to multiple lines of attacks, as well as AOE attacks.
 
-To generate elemental mana, check how many mana symbols are shown on the card, and move that many markers from the stash to the wheel, on the corresponding field.
+\textbf{Elements} - To generate elements, check how many element symbols are shown on the card, and move that many markers from the stash to the wheel, on the corresponding field.
 
-Cards with optional costs have a line with the word OPT going through the card with additional actions below the line.
+\textbf{Opt cost} - Cards with optional costs have a line with the word OPT going through the card with additional actions below the line.
 If the optional cost was paid, the actions below the line must be used. If not, they cannot be used.
 
-Cards with blaze also have a line, but with the text Blaze:X instead of OPT.
+\textbf{Blaze} - Cards with blaze also have a line, but with the text Blaze:X instead of OPT.
 If you play one of these cards as the first in your turn, you must discard X cards, and use the actions below the line.
-When palyed as the second card in a turn, the blaze actions does nothing. No cards are discarded, and the actions below the line are ignored.
+When played as the second card in a turn, the blaze actions does nothing. No cards are discarded, and the actions below the line are ignored.
 
-To apply a boon or bane, choose a target, then put the listed number of boons or banes on the target.
-All possible effects are listed below in chapter \ref{Section_BoonsBanes}.
-Healing restores life by the stated amount. 
+\textbf{Boons\&Banes} - To apply a boon or bane, choose a target, then put the listed number of boons or banes on the target. The full list of boons and banes is on page \pageref{Section_BoonsBanes}.
 
-After playing a card, put it into your discard pile.
+\textbf{Healing} - Healing restores life by the stated amount. 
+
+\textbf{Discard} - After playing a card, put it into your discard pile.
+\begin{tcolorbox}[colframe=black, colback=white]
+	Hier könnte ihre Werbung stehen.
+\end{tcolorbox}
+\newpage
 
 \subsection*{Modifiers}
 
-The Modifier Deck acts as an element of randomchance. Fighting is reisky business, and sometimes an attack may take an unexpected turn.
-If you ahve played table top RPGs before, you may know the concept from rolling a 20 sided dice to determine the outcome of an action.
-Simmilarly, the modifier deck usually has 20 cards in it, with a slightly positive weighting at the start which improves over time. 
-Over the course of the game, you can add many modifiers that are more interesting then just numbers.
+The Modifier Deck acts as an element of random chance. Fighting is risky business, and sometimes an attack may take an unexpected turn.
+the modifier deck usually has 20 cards in it, with a slightly positive weighting at the start which improves over time. 
+Over the course of the game, you can add many modifiers that are more interesting than just numbers.
+\begin{tcolorbox}[colframe=black, colback=white]
+If you have played table top RPGs before, you may know the concept from rolling a 20 sided dice to determine the outcome of an action.
+\end{tcolorbox}
 The possible effects are:
 
-\rowcolors{2}{white}{blue!10}
-\begin{longtable}{|p{2cm}|p{14.2cm}|}
+\begin{minipage}[t][2cm][t]{1\textwidth}
+	\begin{itemize}
+		\item \textbf{Draw \symDraw} Draw another modifier and apply both. This effect can chain into multiple draws 
 	
-	\hline
-	Draw \symDraw &  Draw another modifier and apply both. This effect can chain into multiple draws  \\
-	\hline
-	Element \symFire & Create the shown elements after the full card is performed \\
-	\hline
-	Keywords & Some races have their keywords on some of the modifiers. If so, apply the keyword after the full card is performed. \\
-	\hline
-	
-\end{longtable}
+		\item \textbf{Element \symFire} Create the shown elements after the full card is performed 
+		
+		\item \textbf{Boons\&Banes } Some species have their boon or bane on some of the modifiers. If so, apply the effect immediately after that attack
+	\end{itemize}
+\end{minipage}
 
-All attacks are modified by default.
+\textbf{Default} - All attacks are modified by default.
 When modifying an attack, by default you draw one card from your modifier deck and add its value to the attack.
-When you draw the *2 or the *0 multiplay your attack by the value. These two modifiers also have a shuffle symbol on them, as a reminder for you to shuffle the Modifier Discard into your deck at the end of the turn.
-If you draw a modifer with a draw symbol, you must draw another. Modifiers with the draw symbol can chain into each other. 
+
+\textbf{Multipliers} - When you draw the *2 or the *0 multiply your attack by the value. 
+
+\textbf{Shuffle} - The two base multipliers also have a shuffle symbol on them, as a reminder for you to shuffle the Modifier Discard into your deck at the end of the turn.
+
+\textbf{Draw} - If you draw a modifier with a draw symbol, you must draw another. Modifiers with the draw symbol can chain into each other. 
 If you end by drawing a *2 or *0, first apply all addition and subtraction, then multiply.
 
-Advantage gives you an additional chance to hit good modifiers.
+\textbf{Advantage} - Advantage gives you an additional chance to hit good modifiers.
 When modifying an attack with advantage, reveal one modifier and if necessary perform all of the extra draws you may have.
 Repeat this process for each advantage you have, and separate the drawn modifiers for each repeat into piles.
-Afterwards choose the pile you like most, and apply the modifers in that pile.
+Afterwards choose the pile you like most, and apply the modifiers in that pile.
 
-Some classes passives allow you to modify healing or poison.
+\textbf{Passive Interaction} - Some classes passives allow you to modify healing or poison.
 If you have one of those classes, modify your poison and heal actions  as you would an attack.
+
+\textbf{Empty} - If you ever run out of modifiers in a single turn, the deck stays empty, and all further modifiers are treated as +0. Shuffle only during Cleanup.
+
+\fbox{\parbox[4cm]{\textwidth}{Children: Half elf, thyger and silverkin throwing cards (modifiers) into the air.}}
 
 \newpage
 
 \section{Boons \& Banes}\label{Section_BoonsBanes}
-As well as other keywords.
-Boons and banes are traked va status token. When you aplly a boon or bane to a player or an enemy, place a status token on it.
-All status tokens can stack, which results in the effect being applied multiple times.
-For example, if powerful is applied three times on you, place three powerful tokens on your character sheet and apply the effect three times.
+\begin{tcolorbox}[colframe=black, colback=white]
+	May contain traces of other keywords
+\end{tcolorbox}
+\textbf{Tracking} - Boons and Banes are tracked via status token. When you apply a boon or bane to a player or an enemy, place a status token on it.
 
 
 \begin{longtable}{|p{2.5cm}|p{13.7cm}|}
@@ -584,20 +661,27 @@ For example, if powerful is applied three times on you, place three powerful tok
 	\hline
 	Advantage \symAdvantage & After revealing a modifier, reveal another. You may choose which to use. Remove advantage from players at the end of the turn.\\
 	\hline
-	Shield \symShield & When taking damage from an attack, take one less. Remove shield from players at the end of the turn. For enemies shield persists between turns. \\
+	Shield \symShield & When taking damage from an \symAttack attack (not self inflicted or poison), take one less. Remove shield from players at the end of the turn. For enemies shield persists between turns. \\
 	\hline
-	Flurry \symFlurry & At any point during your turn, you may remove one flurry token to perform Attack:1. Flurry persists between turns. \\
+	Flurry \symFlurry & At any point during your turn, you may remove one flurry token to perform \symAttack:1. Flurry persists between turns. \\
 	\hline
-	Poison \symPoison & At the end of the turn, loose one life. Poison persists between turns. \\
+	Poison \symPoison & At the end of the turn, lose one life. Poison persists between turns. \\
 	\hline
 	Vulnerable \symVulnerable & When taking damage from an attack, take one more. Vulnerable persists between turns. \\
 	\hline
-	Stun \symStun & When playing a card while stunned, instead ignore all of the cards effects and remove one stun token. When an enemy is stunned they instead skip their action to remove one stun token. Stun persists between turns. \\
+	Stun \symStun & When playing a card while stunned, instead ignore all of the cards effects and remove one stun token. When an enemy is stunned they instead skip their full action to remove one stun token. Stun persists between turns. \\
 	\hline
 
 
 
 \end{longtable}
+
+\begin{tcolorbox}[colframe=black, colback=white]
+	All status tokens can stack, which results in the effect being applied multiple times.
+	For example, if powerful is applied three times on you, place three powerful tokens on your character sheet and your attacks now deal three extra Damage.
+\end{tcolorbox}
+
+
 
 \subsection*{Static keywords}
 These keywords modify how an action is performed. Since they only apply once, there is no need for status tokens.\\
@@ -607,22 +691,23 @@ These keywords modify how an action is performed. Since they only apply once, th
 	
 	
 	\hline
-	Heal X \symHeal & Raise the targets health by X\\
+	Heal X \symHeal & Restore X health to the target. This restoration cannot go over the targets maximum health.\\
 	\hline
 	Blaze X \symBlaze & If you play a card with blaze as the first card of your tun, discard X cards, and perform the optional effect. If you play that card second, do not discard and do not perform the optional text. \\
 	\hline
-	D6 \symDSix & When a card asks you to roll some D6, get that many six sided dice, roll them and add their results. The sum is X \\
+	D6 \symDSix & When a card asks you to roll some D6, get that many six sided dice, roll them and add their results. Most often, you attack for an amount of D6. Sometimes the sum is used as a variable X and will be referenced on the card. \\
 	\hline
 	Ranged \symRanged & All actions after the Ranged keyword may target your neighbours or their enemies. \\
 	\hline
-	Mana \symFire & If elemental mana is part of your cards action, add that much mana chips to field of the corresponding element in the wheel. \\
+	Elements \symFire \symEarth \symMetal \symWater \symWood& If elements are part of your cards action, add that many elements markers to field of the shown element in the wheel. \\
 	\hline
 	Disengage \symDisengage & To disengage an enemy, rotate that enemy to the left. This rotation does not respect enemy order or the end of turn, and happens immediately. \\
 	\hline 
-	Area Of Effect \centering{\includegraphics[width=2cm]{../Pictures/AOE/AoeRuleSample.png}} & Some cards have AOE pictograms. In this case, target enemies in the exact pattern shown in the pictogram. Also make sure to respect placing conditions that enforce starting from the left or right edge of your zone. AOE's can never affect enemeies from multiple different players, as their enemies are never considered adjacent. \\
+	Area Of Effect \centering{\includegraphics[width=2cm]{../Pictures/AOE/AoeRuleSample.png}} & Some cards have AOE pictograms. In this case, target enemies in the exact pattern shown in the pictogram. Also make sure to respect placing conditions that enforce starting from the left or right edge of your zone. AOEs can never affect enemies from multiple different players, as their enemies are never considered adjacent. \\
 	\hline
 \end{longtable}
 
+\newpage
 \subsection*{Enemy Keywords}
 Many enemies have one or more keyword as part of their passive.
 
@@ -637,30 +722,31 @@ Many enemies have one or more keyword as part of their passive.
 	
 \end{longtable}
 
-
+\newpage
 \section{The Species and classes}\label{Section_CharDescription}
 
 \subsection*{Species}
 
 \begin{longtable}{|p{2.5cm}|p{13.7cm}|}
 	\hline
-	\textbf{Solarian}&  As creatures born of elemental fire, they inhabit the deserts and mountains of the south. Their presence inflicts vulneability\\
+	\textbf{Solarian} \symFire&  As creatures born of elemental  fire, they inhabit the deserts and mountains of the south. Their presence inflicts vulnerability\\
 	\hline
 	\textbf{Centaur}&  As the noble people  of the plains they blaze through enemy ranks often killing multiple at once\\
 	\hline
-	\textbf{Dwarf}&  Molded of earth they tend to withstand what would kill their equals\\
+	\textbf{Dwarf} \symEarth&  As these earthen dwellers are impervious to banes, they love getting drunk. In their strange moods, they tend to let fate decide\\
 	\hline
-	\textbf{Human}&  As the most numerous race, it is only a matter of time for a Wonder to happen through a humans hand.\\
+	\textbf{Human}&  The most numerous and yet weakest species. Under the right circumstances, they are capable of mythical feats\\
 	\hline
-	\textbf{Silverkin}&  Metal made mortal they are a blade that slices precise and deadly.\\
+	\textbf{Silverkin} \symMetal& Metal made mortal. They are a blade that slices precise and deadly\\
 	\hline
-	\textbf{Half-Elf}&  They used their talents to never fail. Possibility becomes Certainty.\\
+	\textbf{Half-Elf}&  With a humans ambition and decades of dedication, Half-Elves never fail. Possibility becomes Certainty\\
 	\hline
-	\textbf{Merman}&  As creatures of water they open their third eye to peer into the future to mitigate catastrophe and exploit opportunities.\\
+	\textbf{Merman} \symWater&  These mysterious dwellers of the deep open their third eye to peer into the future. They bring a unknown poisons and exploit opportunities\\
 	\hline
-	\textbf{Wyrmkin}&  Mortals that fused with the essence of dragons their wounds tend to heal at unnatural rates.\\
+	\textbf{Wyrmkin}&  Mortals that fused with the essence of dragons. %Their wounds tend to heal at unnatural rates.\\
+	Their wounds can close ins seconds as the endure any onslaught\\
 	\hline
-	\textbf{Fae}&  The tiny and helpful people of the Forest and users of the Wood element are considered an Omen of good fortune \\
+	\textbf{Fae} \symWood&  The tiny and capricious people of the  Forest are oft considered an Omen. Whether good or bad depends on the kind of prank they play\\
 	\hline
 	\textbf{Thyger}&  The cat beastmen tribe is considered the greatest of hunters for they are rarely seen and their flurries are deadly\\
 	\hline
@@ -672,7 +758,7 @@ Many enemies have one or more keyword as part of their passive.
 	
 	
 	\hline
-	\textbf{Pyromancer}&  Blast the battlefield with AOE attacks, and stack vulnerability on your tougher targets as you amp up the heat. \\
+	\textbf{Pyromancer}&  Blast the battlefield with AOE attacks, and stack vulnerability on your tougher targets as you amp up the heat\\
 	\hline
 	\textbf{Berserker}&  Throw your cards away to obtain raw power\\
 	\hline
@@ -680,26 +766,30 @@ Many enemies have one or more keyword as part of their passive.
 	\hline
 	\textbf{Koloss}&  Become nigh invulnerable\\
 	\hline
-	\textbf{Knight}&  Rush the enemy before they can act\\
+	\textbf{Knight}&  Become the vanguard. Take the advantage before the enemy can act\\
 	\hline
 	\textbf{Assassin}&  Stun the enemy as you align the stars to topple even the mightiest foes\\
 	\hline
-	\textbf{Toxicologist}&  Heal your party as your enemies languish amidst your toxic fumes.\\
+	\textbf{Toxicologist}&  Heal your party as your enemies languish amidst your toxic fumes\\
 	\hline
-	\textbf{Sangromancer}&  Use your life as a Resource to bleed yourself and the enemy dry.\\%Dance at the edge of life and death
+	\textbf{Sangromancer}&  Use your life as a Resource to bleed yourself and the enemy dry\\%Dance at the edge of life and death
 	\hline
 	\textbf{Druid}&  Buff and heal your teammates as your store up your fury to devastate your enemy\\
 	\hline
-	\textbf{Ranger}&  Prepre your prey with vulnerability and mow them down with dozens of small attacks\\
+	\textbf{Ranger}&  Prepare your prey with vulnerability and mow them down with dozens of small attacks\\
 	\hline
 \end{longtable}
 
 \section{Optional Rules}
-%When you become more experienced, you can start with one class at rank two, instead of two classes at rank 1
 
 If you find it very hectic for all players to take the turns simultaneously, you can choose to play one player at a time. In this case it may be nice for all players to look at the current players hand and discuss.
 
-With many players looking at the monster dice may be an issue for some at the table. Consider rolling a dice per person, and everyone uses their own result for the monster action. Remeber to synchronize the starts of your turn though.
+With many players looking at the monster dice may be an issue for some at the table. Consider rolling a dice per person, and everyone uses their own result for the monster action. Remember to synchronize the starts of your turn though.
+
+If you need a very hectic experience, don't synchronize your turns. Just play your cards as fast as you can, act for and rotate the enemies when you finish. This is not very balanced. The player that killed the most enemies wins. Try snatching elements whenever possible, it improves your K/D.
+
+\section{FAQ}
+Sideways cards are only used as an indicator in this game. There is no real game action tied to it.
 
 \section{Background Info for Devs}
 \subsection*{Math for nerds}
