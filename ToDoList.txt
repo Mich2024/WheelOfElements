@@ -12,10 +12,7 @@ Redo photo of play area
 Add nubered annotation way bigger
 Redo Modifier Picture
 
-
 Bigass component legend
-
-Remove mana from the game, rename to element marker
 
 Shopping:
     Mon HP counter-> https://spielematerial.de/collections/blankowurfel/products/holzwurfel-8-mm
@@ -38,3 +35,6 @@ Vuln
 Shield
 Advantage
 
+Modifier cards
+Image rework elements,
+Image rework aoe

@@ -1,0 +1,2 @@
+FONT = Arial, 20, B, #000000, [col_mithril]
+TEXT = 1-[CardCount], 50 , [space_left] + [x_hp], [space_top] + [space_hp_box] * 0, [len_hp_box], [len_hp_box], left, center
