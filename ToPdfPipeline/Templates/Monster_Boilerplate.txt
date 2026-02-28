@@ -19,8 +19,8 @@
 [col_mithril] = #87B787
 
 [full_hor] = 6.35 - [space_left] - [space_right]
-[x_hp] = 6.35 - [space_left] - [space_right] - [space_hp_box]
-[x_hp_2nd_row] = 6.35 - [space_left] - [space_right] - [space_hp_box] - [space_hp_box]
+[x_hp_0] = 6.35 - [space_left] - [space_right] - [space_hp_box]
+[x_hp_1] = 6.35 - [space_left] - [space_right] - [space_hp_box] - [space_hp_box]
 [full_hor_action] = 6.35 - [space_action_left] - [space_right]
 [full_hor_passive] = [full_hor] - [space_hp_box] - [space_hp_box]
 

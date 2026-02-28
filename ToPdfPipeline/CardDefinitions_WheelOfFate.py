@@ -777,7 +777,7 @@ class monsterAICard:
         res += "{"
         #make actions into nice boxes
         #print(self.actions)
-        #print(self.actions)
+        print(self.actions)
         for index, action in enumerate(self.actions):
             #print(action[0])
             rolls = action[0].split(":")[1]
@@ -796,6 +796,39 @@ class monsterAICard:
         return res
     
     def serializeToNandeck(self,order):
+
+        template_monster_line_life = open('Templates/Monster_Line_Life.txt', 'r')
+        template_monster_line_life = template_monster_line_life.read()
+        life = ""
+        life_max = int(self.life)
+        row = 0 #line
+        col = 0
+        while(life_max) > 0:
+            if life_max >= 50:
+                tmp = template_monster_line_life.replace(r"${Color}", "[col_mithril]").replace(r"${Life}", "50")
+            elif life_max >= 10:
+                tmp = template_monster_line_life.replace(r"${Color}", "[col_mithril]").replace(r"${Life}", "50")
+            elif life_max >= 5:
+                tmp = template_monster_line_life.replace(r"${Color}", "[col_mithril]").replace(r"${Life}", "50")
+            else:
+                print("unfuck the life toatl of: " + self.name + " sitting at: " + str(life_max))
+            
+            life += tmp.replace(r"${PosX}", "[x_hp_" + str(col) + "]").replace(r"${PosY}", str(row))
+            row += 1
+            if row > 4:
+                row = 0
+                col = 1
+        
+
+        print(self.actions)
+        for index, action in enumerate(self.actions):
+            #print(action[0])
+            rolls = action[0].split(":")[1]
+            res += rolls + r" "
+            action = action[1:]
+            res += serializeActionToNanDeck(action)
+            res += r"\\"
+
         template_event_single = open('Templates/Event_Single.txt', 'r')
         template_event_single = template_event_single.read()
         

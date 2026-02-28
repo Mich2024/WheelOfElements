@@ -530,8 +530,8 @@ if __name__ == "__main__":
     maxRankToPrint = 5
     flagPrintHardAI = False
     #parseRacesAndClasses(files_Input)
-    parseEvents("../Events.csv")
-    #parseMonsterAI()
+    #parseEvents("../Events.csv")
+    parseMonsterAI()
     #parseItems()
 
 
