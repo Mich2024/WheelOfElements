@@ -5,6 +5,8 @@ Races
     Merman
 Events
 
+Bilder Elemente verbessern
+
 suggest rough lineart pictures for free space.
 The current rulebook looks cramped af
 
@@ -15,17 +17,21 @@ Redo Modifier Picture
 Bigass component legend
 
 Shopping:
-    Mon HP counter-> https://spielematerial.de/collections/blankowurfel/products/holzwurfel-8-mm
-        Gold:   20 -> 2€
-        Silver: 20 -> 2€
-        Braun:  50 -> 5€
+    Mon HP ######counter-> https://spielematerial.de/collections/blankowurfel/products/holzwurfel-8-mm
+        Grün:   10 -> 0,8€ https://spielematerial.de/products/cubes-12-mm
+        Gold:   20 -> 1,6€ https://spielematerial.de/products/holzwurfel-10-mm
+        Silver: 20 -> 1,6€ https://spielematerial.de/products/holzwurfel-10-mm
+        Braun:  50 -> 4€ https://spielematerial.de/products/holzwurfel-8-mm
+
+
 
         Player life -> D20 Spindown
             TODO ->Life bar on race board
-            rot holz -> https://spielematerial.de/collections/blankowurfel/products/holzwurfel-8-mm
+            rot holz: 10-> 0,8€ https://spielematerial.de/collections/blankowurfel/products/holzwurfel-8-mm
+                plastic: 10 -> 2€ Transparente Würfel aus Kunststoff 8mm
         d6 -> just shop
 
-blanko: -> https://spielematerial.de/collections/hexagons/products/hexagon-15-mm
+blanko:100 -> 20€ https://spielematerial.de/collections/hexagons/products/hexagon-15-mm
 
 Stun -> https://spielematerial.de/collections/marker-counter-spielgeld/products/ausrustung-energie-liebe-herz
 Poison
@@ -38,3 +44,6 @@ Advantage
 Modifier cards
 Image rework elements,
 Image rework aoe
+
+Für V 2 -> 1€  https://spielematerial.de/collections/wurfel-abweichende-verteilung/products/1-2-3-wuerfel
+      1 -> 0,3€     https://spielematerial.de/products/blankowurfel-aus-holz-16mm?variant=52233326264584
