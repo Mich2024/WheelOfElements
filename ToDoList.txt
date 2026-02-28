@@ -16,3 +16,25 @@ Redo Modifier Picture
 Bigass component legend
 
 Remove mana from the game, rename to element marker
+
+Shopping:
+    Mon HP counter-> https://spielematerial.de/collections/blankowurfel/products/holzwurfel-8-mm
+        Gold:   20 -> 2€
+        Silver: 20 -> 2€
+        Braun:  50 -> 5€
+
+        Player life -> D20 Spindown
+            TODO ->Life bar on race board
+            rot holz -> https://spielematerial.de/collections/blankowurfel/products/holzwurfel-8-mm
+        d6 -> just shop
+
+blanko: -> https://spielematerial.de/collections/hexagons/products/hexagon-15-mm
+
+Stun -> https://spielematerial.de/collections/marker-counter-spielgeld/products/ausrustung-energie-liebe-herz
+Poison
+Powerful
+Flurry
+Vuln
+Shield
+Advantage
+
