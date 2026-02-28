@@ -794,6 +794,17 @@ class monsterAICard:
         res = texifyMultSign(res)
         res = self.count*res
         return res
+    
+    def serializeToNandeck(self):
+        template_event_single = open('Templates/Event_Single.txt', 'r')
+        template_event_single = template_event_single.read()
+        
+        res = template_event_single.replace(r"${Order}", str(order))
+        res = res.replace(r"${Upside}",str(self.upside).strip()).replace(r"${Downside}", str(self.downside).strip())
+        res = res.replace(r"${Name}",str(self.name).strip()).replace(r"${Flavour}", str(self.flavour).strip())
+
+        return res
+        return res
 
 class EventCard:
 
