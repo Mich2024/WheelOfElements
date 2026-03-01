@@ -23,6 +23,7 @@
 [x_hp_1] = 6.35 - [space_left] - [space_right] - [space_hp_box] - [space_hp_box]
 [full_hor_action] = 6.35 - [space_action_left] - [space_right]
 [full_hor_passive] = [full_hor] - [space_hp_box] - [space_hp_box]
+[start_actions] = 4.8
 
 CARDS=[CardCount]
 BORDER=ROUNDED,#000000,[linestrength]

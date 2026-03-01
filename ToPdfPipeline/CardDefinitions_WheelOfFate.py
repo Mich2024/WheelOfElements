@@ -799,21 +799,24 @@ class monsterAICard:
 
         template_monster_line_life = open('Templates/Monster_Line_Life.txt', 'r')
         template_monster_line_life = template_monster_line_life.read()
-        life = ""
+        nanDeckLife = ""
         life_max = int(self.life)
         row = 0 #line
         col = 0
         while(life_max) > 0:
             if life_max >= 50:
                 tmp = template_monster_line_life.replace(r"${Color}", "[col_mithril]").replace(r"${Life}", "50")
+                life_max -= 50
             elif life_max >= 10:
                 tmp = template_monster_line_life.replace(r"${Color}", "[col_mithril]").replace(r"${Life}", "50")
+                life_max -= 10
             elif life_max >= 5:
                 tmp = template_monster_line_life.replace(r"${Color}", "[col_mithril]").replace(r"${Life}", "50")
+                life_max -= 5
             else:
-                print("unfuck the life toatl of: " + self.name + " sitting at: " + str(life_max))
+                print("[Error] unfuck the life total of: " + self.name + " sitting at: " + str(life_max))
             
-            life += tmp.replace(r"${PosX}", "[x_hp_" + str(col) + "]").replace(r"${PosY}", str(row))
+            nanDeckLife += tmp.replace(r"${PosX}", "[x_hp_" + str(col) + "]").replace(r"${PosY}", str(row))
             row += 1
             if row > 4:
                 row = 0
@@ -821,13 +824,32 @@ class monsterAICard:
         
 
         print(self.actions)
+        count_actions = len(self.actions)
+        start_ations = "[start_actions]"
+        if(count_actions < 3):
+            start_ations = "[start_actions] + [space_text_18] * 2"
+        if(count_actions > 3):
+            print("[Error] unfuck the action count of: "  + self.name + " sitting at: " + str(count_actions) )
+
+        template_monster_line_passive = open('Templates/Monster_Line_Passive.txt', 'r')
+        template_monster_line_passive = template_monster_line_passive.read()
+
+        nanDeckPassive = template_monster_line_passive.replace(r"${Passive}", self.passive).replace(r"${StartActions}", start_ations)
+
+        template_monster_line_action = open('Templates/Monster_Line_Action.txt', 'r')
+        template_monster_line_action = template_monster_line_action.read()
+
+        nanDeckActions = ""
+        count_action_curr = 0
+
         for index, action in enumerate(self.actions):
+            tmp = 
+
             #print(action[0])
             rolls = action[0].split(":")[1]
             res += rolls + r" "
             action = action[1:]
-            res += serializeActionToNanDeck(action)
-            res += r"\\"
+            tmp = serializeActionToNanDeck(action)
 
         template_event_single = open('Templates/Event_Single.txt', 'r')
         template_event_single = template_event_single.read()
