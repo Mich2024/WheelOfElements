@@ -1,0 +1,2 @@
+FONT = Arial, 20, B, #000000, ${Color}
+TEXT = ${Order}, ${Life} , [space_left] + ${PosX}, [space_top] + [space_hp_box] * ${PosY}, [len_hp_box], [len_hp_box], left, center
