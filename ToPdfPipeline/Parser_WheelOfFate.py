@@ -322,17 +322,25 @@ def parseMonsterAI():
 
     print("completed parsing MonsterAI")
     
-    texMonAI = ""
+    count_order = 1
+    nandeckMonAI = ""
     #print(len(monsterAICards))
-    for monsterAIcard in monsterAICards:
+    for monAIcard in monsterAICards:
+        assert isinstance(monAIcard, monsterAICard)
         #print(monsterAIcard.name)
-        flagCardHardAI = monsterAIcard.flagHardMode
+        flagCardHardAI = monAIcard.flagHardMode
         if(flagCardHardAI == True and flagPrintHardAI == False):
             continue
-        texMonAI += monsterAIcard.serializeToLatex()
+        for i in range(monAIcard.count):
+            nandeckMonAI += copy.deepcopy(monAIcard).serializeToNandeck(count_order)
+            count_order += 1
 
-    fileToPrint = open('toPrintMonAI.tex', 'w+')
-    fileToPrint.write(texMonAI)
+    template_boilerplate_monster = open('Templates/Monster_Boilerplate.txt', 'r')
+    template_boilerplate_monster = template_boilerplate_monster.read()
+    template_boilerplate_monster = template_boilerplate_monster.replace(r"${Cards}", nandeckMonAI).replace(r"${CardCount}", str(count_order-1))
+
+    fileToPrint = open('out/Monsters.txt', 'w+')
+    fileToPrint.write(template_boilerplate_monster)
 
     print("wrote AI file")
 

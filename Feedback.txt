@@ -19,3 +19,7 @@ drunken master accidental 2 liner
 warum sind player cards Nach enemy turn?
 not entirely sure about how you did the aoe markers. -> symbol sieht aus wie card draw maybe rework? pfeile die sich aufspalten?
 Modifiers brauchen kartenbilder, eventuell in einer tabelle!
+
+
+P1
+

@@ -1,3 +1,5 @@
+import inflect
+
 def nothing(kwargs):
         return
 
@@ -262,7 +264,7 @@ def serializeActionToTex(inputActions):
 
     return res
 
-#converst an action list into nandeck String. Adds "" around the text
+#converst an action list into nandeck String. Does not add "" around the text
 def serializeActionToNanDeck(inputActions):
     res = ''
     first = True
@@ -271,6 +273,42 @@ def serializeActionToNanDeck(inputActions):
                 res += linebreakStringNanDeck_htmltext
             else:
                 first = False
+            #print(action)
+
+            if isinstance(action, list): #Text
+                action = action[1:] # remove "Text:"" .split(":")[0]
+                action = action[0].split(" ")
+                for word in action:
+                    #print(word.split(":")[0])
+                    if(word.split(":")[0] in symbolDict):
+                    
+                        res += " " + symbolDict[word.split(":")[0]] + " " + word + " "
+                    else:
+                        res += word + " "
+                    
+            
+            else:
+                if action.casefold() == "opt":
+                    res += "--- Opt Paid --- "
+
+                elif action.split(":")[0].casefold() == "blaze":
+                    res += r"--- \symBlaze Blaze " + action.split(":")[1] + " --- "
+                else:
+
+                    parts = action.split(":")
+                    if parts[0] in symbolDict:
+                        res += " " + symbolDict[parts[0]]
+                    res += " " + parts[0] 
+                    if len(parts) == 2:
+                        res += ": " + parts[1]
+                        res += " "
+                
+    return res
+
+#converst an action list into nandeck String. Does not add "" around the text
+def serializeMonsterActionToNanDeck(inputActions):
+    res = ''
+    for action in inputActions:
             #print(action)
 
             if isinstance(action, list): #Text
@@ -797,10 +835,14 @@ class monsterAICard:
     
     def serializeToNandeck(self,order):
 
+        if(self.tempAction != []):
+                self.actions.append(self.tempAction[:])# appends the last temp action to the real list
+
         template_monster_line_life = open('Templates/Monster_Line_Life.txt', 'r')
         template_monster_line_life = template_monster_line_life.read()
         nanDeckLife = ""
         life_max = int(self.life)
+        #print(life_max)
         row = 0 #line
         col = 0
         while(life_max) > 0:
@@ -808,10 +850,10 @@ class monsterAICard:
                 tmp = template_monster_line_life.replace(r"${Color}", "[col_mithril]").replace(r"${Life}", "50")
                 life_max -= 50
             elif life_max >= 10:
-                tmp = template_monster_line_life.replace(r"${Color}", "[col_mithril]").replace(r"${Life}", "50")
+                tmp = template_monster_line_life.replace(r"${Color}", "[col_gold]").replace(r"${Life}", "10")
                 life_max -= 10
             elif life_max >= 5:
-                tmp = template_monster_line_life.replace(r"${Color}", "[col_mithril]").replace(r"${Life}", "50")
+                tmp = template_monster_line_life.replace(r"${Color}", "[col_silver]").replace(r"${Life}", "5")
                 life_max -= 5
             else:
                 print("[Error] unfuck the life total of: " + self.name + " sitting at: " + str(life_max))
@@ -823,40 +865,70 @@ class monsterAICard:
                 col = 1
         
 
-        print(self.actions)
+        #print(self.actions)
         count_actions = len(self.actions)
-        start_ations = "[start_actions]"
+        start_actions = "[start_actions]"
         if(count_actions < 3):
-            start_ations = "[start_actions] + [space_text_18] * 2"
+            start_actions = "[start_actions] + [space_text_18] * 2"
         if(count_actions > 3):
             print("[Error] unfuck the action count of: "  + self.name + " sitting at: " + str(count_actions) )
 
         template_monster_line_passive = open('Templates/Monster_Line_Passive.txt', 'r')
         template_monster_line_passive = template_monster_line_passive.read()
-
-        nanDeckPassive = template_monster_line_passive.replace(r"${Passive}", self.passive).replace(r"${StartActions}", start_ations)
+        nanDeckPassive = ""
+        if (self.passive != ""):
+            nanDeckPassive = template_monster_line_passive.replace(r"${Passive}", self.passive).replace(r"${StartActions}", start_actions)
 
         template_monster_line_action = open('Templates/Monster_Line_Action.txt', 'r')
         template_monster_line_action = template_monster_line_action.read()
 
+        template_monster_line_dice = open('Templates/Monster_Line_Dice.txt', 'r')
+        template_monster_line_dice = template_monster_line_dice.read()
+
+        template_monster_line_box = open('Templates/Monster_Line_Box.txt', 'r')
+        template_monster_line_box = template_monster_line_box.read()
+
         nanDeckActions = ""
         count_action_curr = 0
-
-        for index, action in enumerate(self.actions):
-            tmp = 
-
-            #print(action[0])
-            rolls = action[0].split(":")[1]
-            res += rolls + r" "
-            action = action[1:]
-            tmp = serializeActionToNanDeck(action)
-
-        template_event_single = open('Templates/Event_Single.txt', 'r')
-        template_event_single = template_event_single.read()
         
-        res = template_event_single.replace(r"${Order}", str(order))
-        res = res.replace(r"${Upside}",str(self.upside).strip()).replace(r"${Downside}", str(self.downside).strip())
-        res = res.replace(r"${Name}",str(self.name).strip()).replace(r"${Flavour}", str(self.flavour).strip())
+        for index, action in enumerate(self.actions):
+            nanDeckDice = ""
+            rolls = action[0].split(":")[1]
+            dice = ""
+            count_dice = 0
+            count_dice_remaining = len(rolls.split(","))
+            flag_second_row = 0
+            for roll in rolls.split(","):
+                count_dice += 1
+                count_dice_remaining -= 1
+                p = inflect.engine()
+
+                try: #rolls
+                    dice += r"\symD" + p.number_to_words(int(roll.strip())).capitalize()
+                    if(count_dice == 2):
+                        #print(start_actions)
+                        nanDeckDice += template_monster_line_dice.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(count_action_curr + flag_second_row)).replace(r"${PosXAction}", "0")
+                        count_dice = 0
+                        dice = ""
+                        flag_second_row = 1
+                    elif(count_dice_remaining == 0):
+                        nanDeckDice += template_monster_line_dice.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(count_action_curr + flag_second_row)).replace(r"${PosXAction}", "0.2")
+                except: #abc
+                    #TODO
+                    dice += roll.strip()
+                    nanDeckDice += template_monster_line_box.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(count_action_curr + flag_second_row))
+                
+            action = action[1:]
+            html_act = serializeMonsterActionToNanDeck(action)
+            nanDeckActions += template_monster_line_action.replace(r"${Lines_Dice}", nanDeckDice).replace(r"${Action}", html_act ).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(count_action_curr) )
+            count_action_curr += 1
+
+
+        template_monster_single = open('Templates/Monster_Single.txt', 'r')
+        template_monster_single = template_monster_single.read()
+
+        
+        res = template_monster_single.replace(r"${LifeBox}", nanDeckLife).replace(r"${Name}", self.name).replace(r"${Passive}", nanDeckPassive).replace(r"${Actions}", nanDeckActions).replace(r"${Order}", str(order))
 
         return res
 

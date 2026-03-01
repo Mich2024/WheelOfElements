@@ -1,30 +1,11 @@
 
+#NEWMON
 ${LifeBox}
 
 #Name, OptCost
-FONT = Arial, 28, B, #000000, #FFFFFF
-TEXT = 1, "${Name}", [space_left] , 0, [full_hor], [space_text_28], LEFT, TOP 
+FONT = Arial, 22, B, #000000, #FFFFFF
+TEXT = ${Order}, "${Name}", [space_left] , 0, [full_hor], [space_text_28], LEFT, TOP 
 
 ${Passive}
 
-#PicBox
-#FONT = Arial, 28, B, #000000
-#TEXT = 1, "Pics or it didnt happen", [space_left] , [space_text_28] + [space_text_18], [full_hor], 4 - [space_text_28] - [space_text_18], LEFT, WORDWRAP
-
 ${Actions}
-
-
-#TextBox1
-htmltext = 1, "\symDOne \symDTwo", 0 , ${StartActions},[space_action_left], 4,#FFFFFF,0,T,100,font_18
-htmltext = 1, "TextBox Is my waif u \symAddFire", [space_action_left] , ${StartActions},[full_hor_action], 4,#FFFFFF,0,T,100,font_18
-#TextBox2
-htmltext = 1, "\symDThree", 0 ,${StartActions} + [space_text_18] * 2,[space_action_left], 4,#FFFFFF,0,T,100,font_18
-htmltext = 1, "TextBox Is my waif u \symAddFire", [space_action_left] , ${StartActions} + [space_text_18] * 2,[full_hor_action], 4,#FFFFFF,0,T,100,font_18
-#TextBox3
-htmltext = 1, "\symDFour \symDFive", 0 , ${StartActions} + [space_text_18] * 4,[space_action_left], 4,#FFFFFF,0,T,100,font_18
-htmltext = 1, "\symDSix", 0.15 * [space_action_left] , ${StartActions} + [space_text_18] * 5,[space_action_left], 4,#FFFFFF,0,T,100,font_18
-htmltext = 1, "TextBox Is my waif u \symAddFire", [space_action_left] , ${StartActions} + [space_text_18] * 4,[full_hor_action], 4,#FFFFFF,0,T,100,font_18
-
-
-
-

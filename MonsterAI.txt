@@ -29,15 +29,16 @@ Normal
 Life:30
 Count:5
 
-Rolls:A Text "Move all damage from other golems in this zone to this unit"
-Rolls:B A:1
+Rolls:A A:1
+Rolls:B Text: "Move all damage from other golems in this zone to this unit"
+
 
 Hard
 
 Life:40
 Count:2
 
-Rolls:A Text "Move all damage from other golems in this zone to this unit"
+Rolls:A Text: "Move all damage from other golems in this zone to this unit"
 
 ###########################################################################################
 Name:Colossal Golem
