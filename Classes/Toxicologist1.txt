@@ -17,15 +17,15 @@ Explanation:Heal
 
 Tier1
 #3
-Name: "Drink up"  Water:1 Heal:1 
-Name: "Bottled Life" Ranged H:2 
+Name: "Strike" A:1
+Name: "Bottled Life" Ranged H:1
 
 Tier2
 #5
-Name: "Spark Powder" A:1 Aoe:Cleave;2 
-Name: "Toxic Flask" ManaCost:Opt;Water;2 Poison:3 Disengage Opt A:3 
+Name: "Chug" H:2
+Name: "Toxic Flask" ManaCost:Opt;Water;2 Poison:3 Disengage Opt H:2
 
 
 Tier3
 #8
-Name: "Toxic Deluge" ManaCost:Opt;Water;3 Poison:2 Opt A:1 Aoe:Cleave;3 
+Name: "Toxic Deluge" Poison:2 Aoe:Cleave;3 

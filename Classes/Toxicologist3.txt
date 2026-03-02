@@ -1,5 +1,5 @@
 Passive
-Disarm on poison death
+When one of your enemies dies, Stun another
 
 Life: 3
 
@@ -12,11 +12,11 @@ Element: Water
 
 Tier1
 #3
-Name: "Suply Run"  Ranged Disengage H:1 
-Name: "Leech Poison" Water:2 Text: "Remove any amount of poison from your enemies. Heal that much health"
+Name: "Suply Run"  Ranged Disengage Disengage
+Name: "Leech Poison" Water:1 Text: "Remove any amount of poison from your enemies. Heal that much health"
 Name: "Toxic Blast" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3
 
 Tier2
 #5
-Name: "Languish" ManaCost:Opt;Water;1 Poison:4 Opt Stun
+Name: "Languish" ManaCost:Opt;Water;2 Poison:4 Opt Stun
 Name: "Toxic Shock" Ranged A:X Text: "X is the amount of poison on the target"

@@ -1,5 +1,5 @@
 Passive
-When a poisoned enemy dies, H:4
+When one of your enemies dies, H:2
 
 Life: 4
 
@@ -16,10 +16,10 @@ Explanation:Stun
 Tier1
 #3
 Name: "Poison Fume" Poison:1 Aoe:Cleave;2
-Name: "Flashpowder" Ranged Stun
+Name: "Smoke Bomb"  Water Disengage
 
 Tier3
 #8
-Name: "Miasma" Water:1 Text: "Stun all Poisoned targets" AOE:All 
+Name: "Miasma" ManaCost:Water;1 Text: "Stun all Poisoned targets" AOE:All 
 Name: "Sepsis" ManaCost:Opt;Water;5 Poison:6 Opt A:X Text: "X is the amount of poison on the target" 
 Name: "Fated Death" Water:2 Text: "Double the poison on one enemy" 
