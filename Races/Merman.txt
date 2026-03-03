@@ -1,38 +1,27 @@
-Variant:1
+#Bronze Passive, Gold Mods, Silver Cards
 
 Passive
 When making an attack, first modify it, and then select a target.
+#Falls problematisch, Play with top Card of modifierdeck revealed
 
-Life: 8
+Life: 3
 
 Modifier Tableau
-#1; 1; 1; 1
+#("0,5"); (1,05); (1,66)
 Rank:1
-Add 1 of each: -3, -2, -1, +1, +2, +3
-Add 1 of each: +4, +5, +6
-Add 1 of each: +7, +8, +9
-Add 1 of each: +10, +11, +12
+Add 1 -4 Add 1 -3 Add 1 -2 Add 1 -1 Add 1 +0
+Add 1 +1 Add 1 +2 Add 1 +3 Add 1 +4 Add 1 +5
+Add 1 +6 Add 1 +7
+Add 1 +8 Add 1 +9
 
 #2; 2
 Rank:2
-Remove 2 +0
-Remove 2 +0
+Remove 1 -3 Remove 1 +1
+Add 1 +4
 
 #3
 Rank:3
-Remove 1 +0
-
-
-#Variant:2
-
-#Passive
-#Play with the top of your moifier deck revealed
-
-#Life:
-#8
-
-#Modifiers
-#Add 3 +3 Draw
+Remove 1 -1 Remove 1 +3 Remove 1 +5 Add 1 +6 Add 1 +8
 
 Type
 Element: Water
@@ -43,13 +32,13 @@ Explanation: Poison
 
 Base Cards
 Tier1
-Name: "Polluted Waters" Water:1 Poison:2 Attack
-Name: "Homeland Brew" ManaCost:Opt;Water;2 Poison:3 Text: "--- Opt cost paid ---" Poison:4 Special
-Name: "Slap" A:3 Special
+Name: "Homebrew" Poison:2
+Name: "Polluted Waters" ManaCost:Opt;Water;2 Poison:1 Text: "--- Opt cost paid ---" A:1 A:1
+Name: "Heart of Water" Water:2
 
 Tier2
-Name: "Slickness" Water:1 A:3 Special
-Name: "Tidal Grasp" ManaCost:Opt;Water;3 A:2 Text: "--- Opt cost paid ---" A:2 AOE:Cleave;2
+Name: "Slickness" Water:1 A:2
+Name: "Tidal Grasp" ManaCost:Opt;Water;3 A:1 Text: "--- Opt cost paid ---" A:2 AOE:Cleave;2
 
 Tier3
-Name: "Brine Burst"  Poison:6 Water:2 Attack
+Name: "Brine Burst" Poison:4 Water:2

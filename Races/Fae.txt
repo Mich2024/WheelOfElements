@@ -1,28 +1,26 @@
-#Gold Mods, Silver Cards, Bronze Passive
-
-Variant:1
+#Bronze Passive Gold Cards Silver Mods
 
 Passive
 Cards you play have Ranged
 
-Life: 6
+Life: 4
 
 Modifier Tableau
-#1; 1; 1; 1
+#(0,2); (0,7); (1,2)
 Rank:1
-Add 4 +2 Add 4 Wood
-Add 6 +4
+Add 3 -1 Add 3 Wood:1 +0
+Add 2 +0 Add 4 +1
 Add 5 Wood Wood Draw
-Add 5 +4 Draw
+Add 5 +2 Draw
 
 #2; 2
 Rank:2
 Add 3 Wood Draw
-Add 3 +2 Draw
+Add 3 +1 Draw
 
 #3
 Rank:3
-Add 3 +4 Draw
+Add 3 +2 Draw
 
 
 Type
@@ -32,22 +30,16 @@ Explanation:Powerful
 
 Base Cards
 
-#Power Levels : 3,3,5,5,8
-
-#ManaCost:Opt;Wood;1
-
 Tier1
 #3
-Name: "Gardening" Wood:2 
-Name: "Bonk" A:2 
-Name: "Hype" A:1 Powerful
+Name: "Heart of Wood" Wood:2 
+Name: "Annoy" ManaCost:Opt;Wood;1 A:1 Text: "--- Opt cost paid ---" Powerful:2
+Name: "Hype" Wood:1 Powerful
 
 Tier2 
 #5
-Name: "Flyby" A:3 A:3 
-Name: "Dust Cloud" A:5 Disengage
+Name: "Flyby" A:1 A:1 
+Name: "Dust Cloud" A:2 Disengage
 
 #8
-Name: "Black Dust" ManaCost:Opt;Wood;3 A:8 Disengage Disengage Opt A:10 Powerful:2
-
-#Name: "Radiance" H:3 Text: "Also Target the players next to you" 
+Name: "Black Dust" ManaCost:Opt;Wood;3 A:3 Disengage Disengage Text: "--- Opt cost paid ---" A:3 Powerful:2

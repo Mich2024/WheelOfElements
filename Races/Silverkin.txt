@@ -1,26 +1,29 @@
+#Gold Passive, Silver Cards, Bronze Mods,
 Variant:1
 
 Passive
 When using advantage, you may add all routes instead of chosing one
+#ensure all Cards silver and up have advantage
 
-Life: 6
+
+Life: 3
 
 Modifier Tableau
-#1; 1; 1; 1 (+1)
+#(0,15); (0,65); (1,19);
 Rank:1
-Add 2 +3 Add 3 -2
-Add 3 +9 Add 2 -2
-Remove 4 +0 Add 2 +9 Add 2 -2
-Remove 2 -2 Remove 2 +0
+Add 6 -1
+Add 3 +1 Add 3 +2
+Remove 4 +0 Add 2 +7 Add 2 -2
+Remove 2 -2 Remove 2 -1
 
-#2; 2 (+0,2)
+#
 Rank:2
-Remove 1 -2 Add 1 +0
-Remove 2 +0 Add 2 +3
+Remove 1 -1 Add 1 +2
+Remove 1 +0 Add 1 +4
 
-#3 (+0,2)
+#3 
 Rank:3
-Remove 1 +0 Add 1 +3
+Remove 1 +0 Add 1 +7
 
 Type
 Element: Metal
@@ -29,20 +32,19 @@ Explanation: Advantage
 
 Base Cards
 
+#if possible all Cards silver
 Tier1
-Name: "Like Clockwork" Advantage Metal:2 Special
-Name: "Liquimetal Flow" Advantage A:2 Special
-Name: "Adamantium Infusion" ManaCost:Opt;Metal;X A:3 Advantage:X Attack
+Name: "Like Clockwork" Advantage Metal:1
+Name: "Heart of Metal" Metal:2
 
 Tier2
-Name: "Adaptive Plating" Metal:X Text: "X is the amount of enemies in your zone" Special
-Name: "Bladestorm" ManaCost:Opt;Metal;3 A:5 Text: "--- Opt cost paid ---" Text: "Double the effect of your modifiers (again)" Attack
-
-Tier3
-Name: "Filigree Fatality" Advantage A:7 Attack
-
+Name: "Adamantium Infusion" ManaCost:Opt;Metal;X Advantage:X A:2
+Name: "Adaptive Plating" Advantage Metal:X Text: "X is the amount of enemies in your zone"
+Name: "Bladestorm" ManaCost:Opt;Metal;1 A:3 Text: "--- Opt cost paid ---" Text: "Double the effect of modifiers on this Card"
+Name: "Filigree Fatality" Advantage A:3
 
 
+#Name: "Bladestorm" ManaCost:Opt;Metal;3 A:3 Text: "--- Opt cost paid ---" Text: "Double the effect of your modifiers (again)"
 
 
 #Fantasy / Inspiration
