@@ -1,4 +1,5 @@
-#Gold Cards, Silver Mods, Bronze Passive
+# Bronze Passive
+#Gold Cards, Silver Mods,
 
 Variant:1
 

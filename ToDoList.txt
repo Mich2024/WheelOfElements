@@ -1,20 +1,26 @@
 Races
-    Fae
     Dwarf
-    Silverkin
-    Merman
 Events
+Bigass component legend
+what happens with negative results rulebook
 
-Bilder Elemente verbessern
+AV
+heal cost2 rebalance
+Shield cost4 rebalance
+stun cost3 rebalance
+flurry
 
+
+AM
 suggest rough lineart pictures for free space.
 The current rulebook looks cramped af
 
 Redo photo of play area
-Add nubered annotation way bigger
+	Add nubered annotation way bigger
 Redo Modifier Picture
 
-Bigass component legend
+Modifier cards
+Image rework aoe
 
 Shopping:
     Mon HP ######counter-> https://spielematerial.de/collections/blankowurfel/products/holzwurfel-8-mm
@@ -22,8 +28,6 @@ Shopping:
         Gold:   20 -> 1,6€ https://spielematerial.de/products/holzwurfel-10-mm
         Silver: 20 -> 1,6€ https://spielematerial.de/products/holzwurfel-10-mm
         Braun:  50 -> 4€ https://spielematerial.de/products/holzwurfel-8-mm
-
-
 
         Player life -> D20 Spindown
             TODO ->Life bar on race board
@@ -41,9 +45,5 @@ Vuln
 Shield
 Advantage
 
-Modifier cards
-Image rework elements,
-Image rework aoe
-
-Für V 2 -> 1€  https://spielematerial.de/collections/wurfel-abweichende-verteilung/products/1-2-3-wuerfel
+Für V 1 -> 1€  https://spielematerial.de/collections/wurfel-abweichende-verteilung/products/1-2-3-wuerfel
       1 -> 0,3€     https://spielematerial.de/products/blankowurfel-aus-holz-16mm?variant=52233326264584

@@ -4,25 +4,24 @@ Variant:1
 Passive
 Increased Max life
 
-Life: 9
+Life: 6
 
 Modifier Tableau
-#(0,5); (1); (1,5); (2)
+#(0,5); (1); (1,6);
 Rank:1
-Add 2 +1 H:2 Add 3 -1 Water:2 Add 2 -1
-Add 3 +1 H:2 Add 4 -1 Water:2 Remove 3 +0
-Remove 3 +0 Add 2 H:2 Water:2 +2 Add 1 -2
-Remove 1 -2 Add 1 Water:5 +5
-
+Add 3 -1 Add 4 H:1 +0
+Add 2 +1 Add 3 Water:1 +0
+Add 5 H:1 +0 Remove 5 +0
+Remove 3 Water:1 +0 Add 3 Water:2 +3
 
 #2; 2
 Rank:2
-Remove 2 -1 Add 2 -1 Water:2
-Remove 1 -1 Water:2 Add 1 H:2 Water:2 +0
+Remove 1 -1 Add 1 Water:2 +0
+Remove 1 -1 Add 1 Water:2 +0
 
 #3
 Rank:3
-Remove 2 -1 Water:2 Add 2 H:2 Water:2 +0
+Remove 2 +1 Add 2 +5
 
 Type
 #Element: Water Wood
@@ -30,13 +29,13 @@ Type
 Explanation:Heal
 
 Tier1
-Name: "Leviathan Blood" H:1 Water:1
-Name: "Heal" H:2
+Name: "Strike" A:1
+Name: "Heal" H:1 ranged
 Name: "Heart of Water" Water:2
 
 Tier2
 Name: "Tail Whip" A:2 Water:1
-Name: "Greater Heal" H:4
+Name: "Greater Heal" H:2 ranged
 
 Tier3
-Name: "Bite and Tear" A:2 H:2 Water:1
+Name: "Bite and Tear" A:2 H:1 Water:1
