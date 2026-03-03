@@ -1,28 +1,28 @@
-#Gold Cards, Silver Mods, Bronze Passive
-#Change to Gold Mods, Silver Cards, Bronze Passive
-
 Passive
-You decide who disengages at the end of your turn
+You decide who disengages at the end of the turn
+Life: 3
 
-Life: 6
+TierCards: Silver
+TierPassive: Silver
+TierMods: Gold
 
 Modifier Tableau
-#1; 1; 1; 1
+#(0,5); (1); ()
 Rank:1
-Add 6 +1, Add 1 -1
-Add 3 +3, Add 3 Disengage
-Remove 3 +0, Add 3 +2 Draw
-Add 3 +5
+#Disengage in the Modifierdeck is spicy
+Add 4 -1 Add 3 +1
+Add 4 +2 Add 1 +3
+Remove 5 +0, Add 5 +2
+Add 2 +5 Draw
 
 #2; 2
 Rank:2
-Add 2 +1 Draw
-Remove 2 +1
-
+Add 1 +3 Draw
+Add 1 +3 Draw
 
 #3
 Rank:3
-Add 2 +4 Draw, Add 2 -2 Draw
+Add 2 +3 Draw
 
 
 Type
@@ -32,13 +32,13 @@ Explanation: Flurry
 Base Cards
 Tier1
 Name: "Furry Flurry" Flurry
-Name: "Charge" Ranged A:1 
-Name: "Jump" Disengage Disengage
+Name: "Strike" Ranged A:1 
+Name: "Evade" Disengage Disengage
 
 Tier2
-
+Name: "Rampage" Flurry Flurry
+Name: "Prey Upon" A:2 Text: "Double damage against Enemies below half Life"
 
 Tier3
 Name: "Pounce" Ranged A:4 Text:"Whenever this kills an enemy, gain Flurry"
-Name: "Rampage" A:1 Flurry Flurry
-Name: "Prey Upon" A:3 Text: "Double damage against Enemies below half Life"
+

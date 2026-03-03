@@ -1,12 +1,11 @@
-#Gold Passive, Silver Cards, Bronze Mods,
-Variant:1
-
 Passive
 When using advantage, you may add all routes instead of chosing one
 #ensure all Cards silver and up have advantage
-
-
 Life: 3
+
+TierCards: Gold
+TierPassive: Silver
+TierMods: Silver
 
 Modifier Tableau
 #(0,15); (0,65); (1,19);
@@ -32,19 +31,16 @@ Explanation: Advantage
 
 Base Cards
 
-#if possible all Cards silver
 Tier1
-Name: "Like Clockwork" Advantage Metal:1
-Name: "Heart of Metal" Metal:2
-
-Tier2
+Name: "Like Clockwork" A:1 Advantage Metal:1
+Name: "Sharpen" Metal:2 Advantage:2
 Name: "Adamantium Infusion" ManaCost:Opt;Metal;X Advantage:X A:2
 Name: "Adaptive Plating" Advantage Metal:X Text: "X is the amount of enemies in your zone"
-Name: "Bladestorm" ManaCost:Opt;Metal;1 A:3 Text: "--- Opt cost paid ---" Text: "Double the effect of modifiers on this Card"
+Name: "Bladestorm" ManaCost:Opt;Metal;1 A:3 Text: Opt Text: "Double the effect of modifiers on this Card"
 Name: "Filigree Fatality" Advantage A:3
 
 
-#Name: "Bladestorm" ManaCost:Opt;Metal;3 A:3 Text: "--- Opt cost paid ---" Text: "Double the effect of your modifiers (again)"
+#Name: "Bladestorm" ManaCost:Opt;Metal;3 A:3 Text: Opt Text: "Double the effect of your modifiers (again)"
 
 
 #Fantasy / Inspiration

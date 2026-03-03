@@ -1,9 +1,10 @@
-#Bronze Passive Gold Cards Silver Mods
-
 Passive
 Cards you play have Ranged
+Life: 3
 
-Life: 4
+TierCards: Gold
+TierPassive: Bronze
+TierMods: Silver
 
 Modifier Tableau
 #(0,2); (0,7); (1,2)
@@ -33,7 +34,7 @@ Base Cards
 Tier1
 #3
 Name: "Heart of Wood" Wood:2 
-Name: "Annoy" ManaCost:Opt;Wood;1 A:1 Text: "--- Opt cost paid ---" Powerful:2
+Name: "Annoy" ManaCost:Opt;Wood;1 A:1 Opt Powerful:2
 Name: "Hype" Wood:1 Powerful
 
 Tier2 
@@ -42,4 +43,4 @@ Name: "Flyby" A:1 A:1
 Name: "Dust Cloud" A:2 Disengage
 
 #8
-Name: "Black Dust" ManaCost:Opt;Wood;3 A:3 Disengage Disengage Text: "--- Opt cost paid ---" A:3 Powerful:2
+Name: "Black Dust" ManaCost:Opt;Wood;3 A:3 Disengage Disengage Opt A:3 Powerful:2

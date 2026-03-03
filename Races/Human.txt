@@ -1,25 +1,24 @@
-#Gold Cards, Silver Mods, Bronze Passive
-Variant:1
-
 Passive
 #Gold + Bronze
 You have a single Mithril Card
 Life: 3
 
+TierCards: Gold
+TierPassive: Silver
+TierMods: Silver
+
 Modifier Tableau
-#(0,33); (0,83); (1,33); (1,83)
+#(0,35); (0,8); (1,38);
 Rank:1
-#[((2*2)+(3*1)+(2*-1)+(8*0))/15]=0,33
-Add 2 +2 Add 3 +1 Add 2 -1
-#[((1*4)+(2*3)+(2*2)+(3*1)+(2*-1)+(8*0))/18]=0,83
-Add 2 +3 Add 1 +4
-Remove 2 +0, Add 4 +3
-Remove 2 +0, Add 2 +5
+Add 5 -1
+Add 6 +1 Add 3 +2
+Remove 3 +0 Add 3 +3
+Remove 2 +0, 3 +4
 
 #2; 2
 Rank:2
 Remove 1 +0, Add 1 +3
-Remove 1 +0, Add 1 +3
+Remove 1 -1, Add 1 +2
 
 #3
 Rank:3
@@ -27,26 +26,34 @@ Remove 2 +2, Add 2 +5
 
 
 Type
-#Element: FireEarth
+#Element: MetalEarth
 
-Explanation: Blaze
+Explanation: Shield
 
 Base Cards
 #Power Levels : 2,4,4,6,6,10
 
 Tier1
-Name: "Strike" A:1 Ranged
+Name: "Strike" ranged A:1 
 
 Tier2
-Name: "Punt" A:2 Disengage Blaze:1 A:1
-Name: "Bow and Arrow" Ranged A:1 Blaze:3 A:5
+Name: "Shield" Shield:1
+Name: "Scare" A:2 disengage
 
 Tier3
-Name: "Spear throw" Ranged A:5 Blaze:1 Disengage
-Name: "Axe strikes" A:2 A:2 Blaze:2 A:2
+Name: "Fighter" A:1 Shield
+Name: "Guard" ranged Shield disengage disengage
 
 Tier4
 Name: "Smite" A:9
 
+
 #"Crush" A:6 S:2
 #"Adaptive Fighter" Text: "Choose 2: A:3, A:1 A:1 or S:1"
+
+#[((2*2)+(3*1)+(2*-1)+(8*0))/15]=0,33
+#Add 2 +2 Add 3 +1 Add 2 -1
+#[((1*4)+(2*3)+(2*2)+(3*1)+(2*-1)+(8*0))/18]=0,83
+#Add 2 +3 Add 1 +4
+#Remove 2 +0, Add 4 +3
+#Remove 2 +0, Add 2 +5

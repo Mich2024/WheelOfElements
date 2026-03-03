@@ -1,26 +1,28 @@
-#Gold Passive, Silver Mods, Bronze Cards
-
 Passive
 When an enemy moves to your zone, it gets vulnerable
 Life: 4
 
+TierCards: Silver
+TierPassive: Gold
+TierMods: Silver
 
 Modifier Tableau
 #1; 1; 1; 1
 Rank:1
-Add 4 Vulnerable Add 2 -2
-Add 4 Vulnerable Vulnerable Add 2 -2
-Add 5 Vulnerable Draw
+Add 3 -1 Add 1 +0 Add 3 Fire:1 +0
+Add 3 +1 Add 2 +2 
 Add 5 Fire:2 Draw
+Add 5 +2 Draw
+
 
 #2; 2
 Rank:2
-Add 2 +4 Fire Add 2 -2
-Add 4 Fire:1 Draw
+Add 3 +1 Draw
+Add 3 Fire:1 Draw
 
 #3
 Rank:3
-Add 1 *2 Draw
+Remove 1 +0 Add 1 *2 Draw
 
 
 Type
@@ -32,6 +34,7 @@ Tier1
 Name: "Sun's Embrace" ManaCost:Opt;Fire;1 A:1 Opt A:1
 Name: "Heartburn" ManaCost:Opt;Fire;2 Vulnerable Opt A:3
 Name: "Heart of Fire" Fire:2
+Name: "Strike" A:1 ranged
 
 Tier2
 Name: "Light Barrage" A:1 A:1

@@ -1,10 +1,11 @@
-#Bronze Passive, Gold Mods, Silver Cards
-
 Passive
 When making an attack, first modify it, and then select a target.
 #Falls problematisch, Play with top Card of modifierdeck revealed
-
 Life: 3
+
+TierCards: Silver
+TierPassive: Bronze
+TierMods: Gold
 
 Modifier Tableau
 #("0,5"); (1,05); (1,66)
@@ -33,12 +34,12 @@ Explanation: Poison
 Base Cards
 Tier1
 Name: "Homebrew" Poison:2
-Name: "Polluted Waters" ManaCost:Opt;Water;2 Poison:1 Text: "--- Opt cost paid ---" A:1 A:1
+Name: "Polluted Waters" ManaCost:Opt;Water;2 Poison:1 Opt A:1 A:1
 Name: "Heart of Water" Water:2
 
 Tier2
 Name: "Slickness" Water:1 A:2
-Name: "Tidal Grasp" ManaCost:Opt;Water;3 A:1 Text: "--- Opt cost paid ---" A:2 AOE:Cleave;2
+Name: "Tidal Grasp" ManaCost:Opt;Water;3 A:1 Opt A:2 AOE:Cleave;2
 
 Tier3
 Name: "Brine Burst" Poison:4 Water:2
