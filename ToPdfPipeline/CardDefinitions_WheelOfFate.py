@@ -1,4 +1,5 @@
 import inflect
+import copy
 
 def nothing(kwargs):
         return
@@ -644,6 +645,69 @@ class tableauRace:
         lines_mods += self.L3R1
             
         return lines_mods
+    
+    def serializeModToNandeck(self, words_mod ,order, name_species):
+        count = int(words_mod[0])
+        line_mod = ""
+        for word in words_mod[1:]:
+            #print(word.split(":")[0])
+            word = word.replace(",","")
+            if(word.split(":")[0] in symbolDict):
+            
+                line_mod += " " + symbolDict[word.split(":")[0]] + " " + word + " "
+
+            elif(word.split(":")[0].lower() == "draw"):
+                print(word)
+                line_mod += " " + r"\symDraw" + " " + word + " "
+            else:
+                line_mod += word + " "
+
+        template_mod_single = open('Templates/Modifier_Single.txt', 'r')
+        template_mod_single = template_mod_single.read()
+
+        template_mod_single = template_mod_single.replace(r"${Mod}",line_mod).replace(r"${Species}",name_species)
+
+        res = ""
+        for i in range(count):
+            res += template_mod_single.replace(r"${Order}",str(order+i))
+        return count, res
+    
+
+    
+    def serializeModifiersToNandeck(self,order, name_species):
+        nandeckMods = ""
+
+        count_total = 0
+
+        self.mods = [self.L1R1,self.L1R2,self.L1R3,self.L1R4,self.L2R1,self.L2R2,self.L3R1]
+
+        for line_mod in self.mods:
+            words = line_mod.split(" ")
+            mode = "Add"
+            breakpoints = ["Add", "Remove"]
+            words_current = []
+            for word in words:
+                #print(word)
+                if word in breakpoints:
+                    #print(words_current)
+                    if(words_current != []):
+                        count_curr, nanDeckOut = self.serializeModToNandeck(words_current,order+count_total, name_species)
+
+                        nandeckMods += nanDeckOut
+                        count_total += count_curr
+                        words_current = []
+                    mode = word
+                else:
+                    if(mode =="Add"):
+                        words_current.append(word)
+            if(words_current != []):
+                count_curr, nanDeckOut = self.serializeModToNandeck(words_current,order+count_total, name_species)
+
+                nandeckMods += nanDeckOut
+                count_total += count_curr
+                words_current = []
+
+        return count_total, nandeckMods
 
 
 
@@ -731,6 +795,10 @@ class statCard:
             res = templateShingle.replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life)).replace(r"${Passive}", passive_new)
 
         return res
+    
+    def serializeModifiersToNandeck(self, order):
+        assert isinstance(self.tableau, tableauRace)
+        return self.tableau.serializeModifiersToNandeck(order, self.name)
     
 class monsterAICard:
 
