@@ -402,6 +402,32 @@ def parseRacesAndClasses(files_Input):
 
     print("completed parsing")
 
+
+    print("serializing mods")
+
+    nandeckModifiers = ""
+    orderModifiers = 1
+    
+    for i, statusCard in enumerate(statusCards):
+        #print(statusCard.name)
+        if statusCard.tableau != None:
+            #print(statusCard.tableau.L1R1)
+            cardCount ,nanDeckOut = statusCard.serializeModifiersToNandeck(orderModifiers)
+            #print(nanDeckOut)
+
+            nandeckModifiers += nanDeckOut
+            orderModifiers += cardCount
+
+    template_boilerplate_modifiers = open('Templates/Modifier_Boilerplate.txt', 'r')
+    template_boilerplate_modifiers = template_boilerplate_modifiers.read()
+    template_boilerplate_modifiers = template_boilerplate_modifiers.replace(r"${Cards}", nandeckModifiers).replace(r"${CardCount}", str(orderModifiers-1))
+
+    fileToPrint = open('out/Modifiers.txt', 'w+')
+    fileToPrint.write(template_boilerplate_modifiers)
+    fileToPrint.close()
+
+
+    print("serializing cards")
     nandeckStatCards = ""
     nandeckRaces = ""
     orderRaces = 1
@@ -456,6 +482,10 @@ def parseRacesAndClasses(files_Input):
     fileToPrint = open('out/raceTableaus.txt', 'w+')
     fileToPrint.write(template_boilerplate_races)
     fileToPrint.close()
+
+    
+
+    
 
     print("wrote file")
 
@@ -537,9 +567,9 @@ if __name__ == "__main__":
     
     maxRankToPrint = 5
     flagPrintHardAI = False
-    #parseRacesAndClasses(files_Input)
+    parseRacesAndClasses(files_Input)
     #parseEvents("../Events.csv")
-    parseMonsterAI()
+    #parseMonsterAI()
     #parseItems()
 
 
