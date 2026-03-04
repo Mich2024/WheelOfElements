@@ -15,7 +15,7 @@ Tier1
 Name: "Strike" A:1
 
 Tier2
-Name: "Parry" Stun Metal:2
+Name: "Parry" Stun Metal:1
 Name: "Poisoned Knife" ManaCost:Water;1 A:3 Poison:2
 
 Tier3

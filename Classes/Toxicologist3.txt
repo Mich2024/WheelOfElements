@@ -13,7 +13,7 @@ Element: Water
 Tier1
 #3
 Name: "Suply Run"  Ranged Disengage Disengage
-Name: "Leech Poison" Water:1 Text: "Remove any amount of poison from your enemies. Heal that much health"
+Name: "Leech Poison" Water:3 Text: "Remove any amount of poison from your enemies. Heal that much health"
 Name: "Toxic Blast" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3
 
 Tier2

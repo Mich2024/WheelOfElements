@@ -10,10 +10,10 @@ Explanation:Shield
 
 Tier1
 Name: "Strike" A:1
-Name: "Shield" S:1
+Name: "Spikeshield" ManaCost:Opt;Metal;2 A:1 Opt S:1
 
 Tier2
-Name: "Repartee" ManaCost:Opt;Earth;1 A:D6 Text: "--- Opt cost paid ---" S:1
+Name: "Repartee" ManaCost:Opt;Earth;2 A:D6 Opt S:1
 Name: "Angerfist" A:2 Earth:1
 
 Tier3

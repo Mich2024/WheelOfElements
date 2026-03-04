@@ -11,11 +11,12 @@ Explanation:Advantage
 Explanation:Shield
 
 Tier1
-Name: "Shield and Stab" ManaCost:Opt;Metal;2 S:1 Text: "--- Opt cost paid ---" Text: "A:4"
-Name: "Versatility" Advantage Metal:1
+Name: "Pierce" ManaCost:Opt;Metal;2 Advantage Opt Text: A:4
+Name: "Sharpen" Advantage Metal:1
 
 Tier3
 Name: "Clean Strike" Metal:2 A:3
-Name: "Sword and Dagger"  A:X A:X Stun Text: "X is Metal Mana in the Wheel"
-Name: "Mastery" S:1 Advantage A:4
+Name: "Extiguish" ManaCost:Opt;Metal;X Stun A:X+1
+Name: "Sword and Shield" S:1 A:1
 
+#Name: "Sword and Dagger" A:X A:X Stun Text: "X is Metal Mana in the Wheel"

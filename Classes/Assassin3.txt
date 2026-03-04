@@ -17,4 +17,4 @@ Name: "Superiority" Advantage Advantage
 
 Tier2
 Name: "Sword and Dagger" ManaCost:Water;3 A:6 A:3
-Name: "Cloak" Stun Advantage Advantage
+Name: "Cloak" Stun Advantage

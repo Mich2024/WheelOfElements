@@ -15,8 +15,8 @@ Name: "Earthen Heart" Earth:2
 Name: "Slash" ManaCost:Metal;2 Advantage A:4
 
 Tier2
-Name: "Shield Slam" S:1 A:X Text: "X is equal to your shield"
-Name: "Basics" Ranged S:1 Advantage
+Name: "Shield Slam" ManaCost:Metal;1 S:1 Advantage:2
+Name: "Guard" Ranged S:1
 
 Tier3
-Name: "Shield Up!" S:3
+Name: "Shield Slam" S:1 A:X Text: "X is equal to your shield"

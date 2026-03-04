@@ -1,5 +1,6 @@
 Passive
-If your rightmost Enemy deals damage, he deals 0 damage instead.
+#If your rightmost Enemy deals damage, he deals 0 damage instead.
+If your rightmost Enemy performs an action, you may have him deal 1 damage instead.
 Life: 3
 
 
@@ -14,6 +15,8 @@ Name: "Earthen Heart" Earth:2
 Name: "Cleave" ManaCost:Metal;3 A:D6 Aoe:Cleave;2
 
 Tier3
-Name: "Sword and Shield" S:1 A:D6
-Name: "Roar" A:1 Aoe:All
-Name: "Earthwake" Earth:2 S:2
+Name: "Sword and Shield" S:1 A:1
+Name: "Shield Strike" A:D6 Earth:2
+Name: "Earthwake" Earth:2 S:1
+
+#Name: "Roar" A:1 Aoe:All

@@ -1,6 +1,6 @@
 Passive
 At the beginning of each round, gain S:1.
-Life: 3
+Life: 0
 
 
 Type
@@ -14,4 +14,4 @@ Name: "Indomitable" ManaCost:Metal;2 S:1 Text: "Double your shield"
 
 Tier2
 Name: "Bash" A:D6
-Name: "Guard" Ranged S:2
+Name: "Guard" Ranged S:1 Advantage:2

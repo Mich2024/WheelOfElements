@@ -10,12 +10,12 @@ Explanation:Stun
 Explanation:Advantage
 
 Tier1
-Name: "Slice Heel" ManaCost:Water;1 Ranged Stun Stun
+Name: "Slice Heel" ManaCost:Water;2 Ranged Stun Stun
 Name: "Poison Shiv" ManaCost:Water;1 A:2 Text: "If the Attack dealt atleast 4 Damage, Poison:4"
 
 Tier3
 Name: "Clean Strike" Metal:2 A:3
-Name: "Slit Tendon" Advantage A:2 Stun
+Name: "Slit Tendon" Advantage A:1 Stun
 Name: "Blade Flurry" ManaCost:Water;2 A:3 A:3 Text:"A:2 for each enemy you kill with this card"
 
 

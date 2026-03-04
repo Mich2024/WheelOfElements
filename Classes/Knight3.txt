@@ -10,10 +10,10 @@ Explanation:Shield
 Explanation:Stun
 
 Tier1
-Name: "Protect" Ranged Stun
-Name: "Guard" S:1
-Name: "Stun and Stab" ManaCost:Opt;Metal;2 Stun Text: "--- Opt cost paid ---" Text: "A:4"
+Name: "Distract" ManaCost:Opt;Metal;3 A:1 Opt Stun Stun
+Name: "Spikeshield" ManaCost:Opt;Metal;2 A:1 Opt S:1
+Name: "Align" ManaCost:Opt;Metal;4 Advantage Opt Stun A:4
 
 Tier2
-Name: "Smite" ManaCost:Opt;Metal;2 Advantage Text: "--- Opt cost paid ---" Text: "A:8"
 Name: "Guarded Stance" S:1 Metal:2
+Name: "Shield and Stab" ManaCost:Opt;Metal;2 S:1 Opt A:3

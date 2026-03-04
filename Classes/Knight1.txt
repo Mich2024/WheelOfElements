@@ -10,12 +10,12 @@ Explanation:Stun
 
 Tier1
 Name: "Heart of Metal" Metal:2
-Name: "Stun" Stun
+Name: "Stun" ManaCost:Opt;Metal;2 A:1 Opt ranged Stun
 
 Tier2
-Name: "Parry" Stun Metal:2
+Name: "Parry" Stun Metal:1
 Name: "Dutybound" Advantage A:2
 
 Tier3
-Name: "Extra Attack" ManaCost:Opt;Metal;2 A:4 Text: "--- Opt cost paid ---" A:4
+Name: "Extra Attack" ManaCost:Opt;Metal;2 A:4 Opt A:4
 

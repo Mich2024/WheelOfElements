@@ -8,8 +8,8 @@ Element: Earth
 Tier1
 Name: "Barrage" A:1 Blaze:1 A:1
 Name: "Gain" Earth:1 Blaze:2 Earth:2
-Name: "Confusion" ManaCost:Opt;Earth;1 S:1 Text: "--- Opt cost paid ---" S:1
+Name: "Confusion" ManaCost:Opt;Earth;1 A:1 Opt blaze:1 S:1
 
 Tier2
-Name: "Sweep" ManaCost:Opt;Earth;4 A:D6 Text: "--- Opt cost paid ---" AOE:All
+Name: "Sweep" ManaCost:Opt;Earth;4 A:D6 Opt AOE:All
 Name: "Blackout" A:D6 Blaze:3 Earth:2
