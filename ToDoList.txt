@@ -1,14 +1,16 @@
-Races
+Races complete Including Modifierdeck size 18
 	Centaur 
 	Dwarf 
 	Fae 
-	helf 
-	human 
-	merman 
-	silverkin 
-	solarian 
-	thyger
+	Helf
+	Human
+	Merman
+	Silverkin
+	Solarian
+	Thyger
 	Wyrmkin 
+
+Silverkin ist die Einzige Rasse mit Modifiers Bronze
 
 Events
 Bigass component legend
@@ -16,8 +18,17 @@ what happens with negative results rulebook
 
 AV
 heal cost2 rebalance
+	Sangromancer
+	Toxicologist
+	Druid
 Shield cost4 rebalance
+	koloss
+	Knight
+	drunkenmaster
 stun cost3 rebalance
+	assassin
+	Toxicologist
+	knight
 flurry
 sticker sheets
 

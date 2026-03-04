@@ -7,12 +7,14 @@ TierPassive: Bronze
 TierMods: Gold
 
 Modifier Tableau
-#(0,5); (1); (1,6);
+#(0,5); (1); (1,5);
+#Size 18 Modifier Tableau
 Rank:1
-Add 3 -1 Add 4 H:1 +0
+Add 2 -1 Add 3 H:1 +0
 Add 2 +1 Add 3 Water:1 +0
-Add 5 H:1 +0 Remove 5 +0
-Remove 3 Water:1 +0 Add 3 Water:2 +3
+
+Remove 3 +0 Add 3 H:1 +1
+Remove 3 Water:1 +0 Add 3 Water:2 +2
 
 #2; 2
 Rank:2
@@ -21,7 +23,7 @@ Remove 1 -1 Add 1 Water:2 +0
 
 #3
 Rank:3
-Remove 2 +1 Add 2 +5
+Remove 2 +1 Add 2 +4
 
 Type
 #Element: Water Wood
@@ -39,3 +41,8 @@ Name: "Greater Heal" H:2 ranged
 
 Tier3
 Name: "Bite and Tear" A:2 H:1 Water:1
+
+#Add 3 -1 Add 4 H:1 +0
+#Add 2 +1 Add 3 Water:1 +0
+#Add 5 H:1 +0 Remove 5 +0
+#Remove 3 Water:1 +0 Add 3 Water:2 +3

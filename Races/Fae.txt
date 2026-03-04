@@ -7,16 +7,17 @@ TierPassive: Bronze
 TierMods: Silver
 
 Modifier Tableau
-#(0,2); (0,7); (1,2)
+#(0,34); (0,74); (1,34)
 Rank:1
-Add 3 -1 Add 3 Wood:1 +0
-Add 2 +0 Add 4 +1
-Add 5 Wood Wood Draw
-Add 5 +2 Draw
+#Size 18 Modifier Tableau
+Add 2 -1 Add 4 Wood:1 +0
+Add 4 +1
+Add 3 Wood:3 Draw
+Add 3 +3 Draw
 
 #2; 2
 Rank:2
-Add 3 Wood Draw
+Add 3 Wood:1 Draw
 Add 3 +1 Draw
 
 #3
@@ -44,3 +45,8 @@ Name: "Dust Cloud" A:2 Disengage
 
 #8
 Name: "Black Dust" ManaCost:Opt;Wood;3 A:3 Disengage Disengage Opt A:3 Powerful:2
+
+#Add 3 -1 Add 3 Wood:1 +0
+#Add 2 +0 Add 4 +1
+#Add 5 Wood Wood Draw
+#Add 5 +2 Draw

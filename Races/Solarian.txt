@@ -9,10 +9,11 @@ TierMods: Silver
 Modifier Tableau
 #1; 1; 1; 1
 Rank:1
-Add 3 -1 Add 1 +0 Add 3 Fire:1 +0
-Add 3 +1 Add 2 +2 
-Add 5 Fire:2 Draw
-Add 5 +2 Draw
+#Size 18 Modifier Tableau
+Add 2 -1 Add 3 Fire:1 +0
+Add 5 +1
+Add 3 Fire:3 Draw
+Add 3 +3 Draw
 
 
 #2; 2
@@ -39,3 +40,8 @@ Name: "Strike" A:1 ranged
 Tier2
 Name: "Light Barrage" A:1 A:1
 Name: "Eternal Flame" ManaCost:Opt;Fire;2 Fire:2 A:1 Opt Aoe:Cleave;3
+
+#Add 3 -1 Add 1 +0 Add 3 Fire:1 +0
+#Add 3 +1 Add 2 +2
+#Add 5 Fire:2 Draw
+#Add 5 +2 Draw

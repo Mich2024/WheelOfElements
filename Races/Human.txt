@@ -8,10 +8,11 @@ TierPassive: Silver
 TierMods: Silver
 
 Modifier Tableau
-#(0,35); (0,8); (1,38);
+#(0,34); (0,84); (1,4);
 Rank:1
-Add 5 -1
-Add 6 +1 Add 3 +2
+#Size 18 Modifier Tableau
+Add 4 -1
+Add 6 +1 Add 2 +2
 Remove 3 +0 Add 3 +3
 Remove 2 +0, 3 +4
 
@@ -57,3 +58,8 @@ Name: "Smite" A:9
 #Add 2 +3 Add 1 +4
 #Remove 2 +0, Add 4 +3
 #Remove 2 +0, Add 2 +5
+
+#Add 5 -1
+#Add 6 +1 Add 3 +2
+#Remove 3 +0 Add 3 +3
+#Remove 2 +0, 3 +4
