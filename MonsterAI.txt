@@ -219,48 +219,5 @@ Rolls:5,6 A:4 Pierce:1 R:3
 End Of File
 
 
-Setups
-Level:1
-Orc: Shaman Warrior
-Orc: Warrior Raider
-Orc: Warboss
-Orc: Warrior Archer
-Level:2
-Orc: Shaman Archer Warrior
-Orc: Shaman Warrior Raider
-Orc: Warboss Warrior
-Orc: Warrior Archer Archer
-Level:3
-Orc: Shaman Warrior Raider Raider
-Orc: Shaman Warrior Archer Archer
-Orc: Warboss Warlock
-Orc: Warlock Archer Warrior
 
 
-Setups
-Level:1
-Golem: Capacitor Patching
-Golem: Colossal Metalcrafter
-Golem: Colossal Patching
-Golem: Capacitor Patching
-Golem: Capacitor Metalcrafter
-
-Level:2
-Golem: Capacitor Metalcrafter Patching
-Golem: Patching Patching Capacitor
-Golem: Capacitor Metalcrafter Patching
-Golem: Colossal Metalcrafter Patching
-Golem: Colossal Colossal Capacitor
-
-Level:3
-Golem: Patching Metalcrafter Capacitor Capacitor
-Golem: Patching Metalcrafter Colossal
-Golem: Patching Metalcrafter Capacitor Capacitor
-Golem: Patching Metalcrafter Colossal
-Golem: Patching Metalcrafter Colossal Capacitor
-
-
-Capacitor Golem -> flurry charger
-Colossal Golem -> Beef
-Patching Golem -> Healer
-Metalcrafter -> Lord
