@@ -5,6 +5,9 @@ Bigass component legend
 what happens with negative results rulebook
 
 AV
+sticker sheets
+
+flurry complete
 heal cost2 complete
 	Sangromancer
 	Toxicologist
@@ -28,8 +31,6 @@ Races complete Including Modifierdeck size 18 complete
 	Solarian
 	Thyger
 	Wyrmkin
-flurry
-sticker sheets
 
 
 AM
