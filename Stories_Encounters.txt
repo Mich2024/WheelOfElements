@@ -1,48 +1,48 @@
 
 
 Name: Orcbashing
-Level:1
-Orc: Shaman Warrior
-Orc: Warrior Raider
-Orc: Warboss
-Orc: Warrior Archer
-Level:2
-Orc: Shaman Archer Warrior
-Orc: Shaman Warrior Raider
-Orc: Warboss Warrior
-Orc: Warrior Archer Archer
-Level:3
-Orc: Shaman Warrior Raider Raider
-Orc: Shaman Warrior Archer Archer
-Orc: Warboss Warlock
-Orc: Warlock Archer Warrior
-
+Encounter:1
+Orc Shaman, Orc Warrior,
+Orc Warrior, Orc Raider,
+Orc Warboss,
+Orc Warrior, Orc Archer,
+Orc Warrior, Orc Archer,
+Encounter:2
+Orc Shaman, Orc Archer, Orc Warrior,
+Orc Shaman, Orc Warrior, Orc Raider,
+Orc Warboss, Orc Warrior,
+Orc Warrior, Orc Archer, Orc Archer,
+Orc Warrior, Orc Archer, Orc Archer,
+Encounter:3
+Orc Shaman, Orc Warrior, Orc Raider, Orc Raider,
+Orc Shaman, Orc Warrior, Orc Archer, Orc Archer,
+Orc Warboss, Orc Warlock,
+Orc Warlock, Orc Archer, Orc Warrior,
+Orc Warlock, Orc Archer, Orc Warrior,
 
 Name: Golem Deconstruction
-Level:1
-Golem: Capacitor Patching
-Golem: Colossal Metalcrafter
-Golem: Colossal Patching
-Golem: Capacitor Patching
-Golem: Capacitor Metalcrafter
+Encounter:1
+Capacitor Golem, Patching Golem,
+Colossal Golem, Metalcrafter,
+Colossal Golem, Patching Golem,
+Capacitor Golem, Patching Golem,
+Capacitor Golem, Metalcrafter,
 
-Level:2
-Golem: Capacitor Metalcrafter Patching
-Golem: Patching Patching Capacitor
-Golem: Capacitor Metalcrafter Patching
-Golem: Colossal Metalcrafter Patching
-Golem: Colossal Colossal Capacitor
+Encounter:2
+Capacitor Golem, Metalcrafter, Patching Golem,
+Patching Golem, Patching Golem, Capacitor Golem,
+Capacitor Golem, Metalcrafter, Patching Golem,
+Colossal Golem, Metalcrafter, Patching Golem,
+Colossal Golem, Colossal Golem, Capacitor Golem,
 
-Level:3
-Golem: Patching Metalcrafter Capacitor Capacitor
-Golem: Patching Metalcrafter Colossal
-Golem: Patching Metalcrafter Capacitor Capacitor
-Golem: Patching Metalcrafter Colossal
-Golem: Patching Metalcrafter Colossal Capacitor
+Encounter:3
+Patching Golem, Metalcrafter, Capacitor Golem, Capacitor Golem,
+Patching Golem, Metalcrafter, Colossal Golem,
+Patching Golem, Metalcrafter, Capacitor Golem, Capacitor Golem,
+Patching Golem, Metalcrafter, Colossal Golem,
+Patching Golem, Metalcrafter, Colossal Golem, Capacitor Golem,
 
-
-
-#Capacitor Golem -> flurry charger
-#Colossal Golem -> Beef
-#Patching Golem -> Healer
-#Metalcrafter -> Lord
+#Capacitor Golem, Golem -> flurry charger
+#Colossal Golem, Golem -> Beef
+#Patching Golem, Golem -> Healer
+#Metalcrafter, -> Lord

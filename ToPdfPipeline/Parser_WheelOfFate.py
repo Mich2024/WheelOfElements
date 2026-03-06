@@ -344,6 +344,82 @@ def parseMonsterAI():
 
     print("wrote AI file")
 
+#returns a list of list of string [[Story1][Story2]]
+#Names are used as separator
+def SliceToStories(lines):
+    #print(lines)
+    res = []
+    story_curr = []
+    for line in lines:
+        if startsWith(line, "Name:"):
+            if(story_curr != []):
+                res.append(copy.deepcopy(story_curr))
+                story_curr = []
+        story_curr.append(copy.deepcopy(line))
+    if(story_curr != []):
+        res.append(copy.deepcopy(story_curr))
+        story_curr = []
+    return res
+
+
+
+def parseStories():
+    cardsEncounters = []
+    pathToStories = "../Stories_Encounters.txt"
+    print("handling file: " + pathToStories )
+
+    #open and sanitize file
+    fileToParse = open(pathToStories,"r")
+    lines = fileToParse.readlines()
+    fileToParse.close()
+    lines = removeComments(lines)
+    lines = removeLinebreaks(lines)
+    lines = removeEmptyLines(lines)
+    lines = removeTrailingSpaces(lines)
+    lines = truncateFile(lines)
+
+    stories = SliceToStories(lines)
+    #print(stories)
+
+    for story in stories:
+        name_curr = story[0]
+        encounters = [story[1:7],story[7:13],story[13:19]]
+        #print(encounters)
+        for encounter in encounters:
+            encountCard = EncounterCard()
+            encountCard.name = name_curr
+            #print(encounter)
+            encountCard.encounter = encounter[0].split(":")[1]
+            encountCard.P1 = encounter[1]
+            encountCard.P2 = encounter[2]
+            encountCard.P3 = encounter[3]
+            encountCard.P4 = encounter[4]
+            encountCard.P5 = encounter[5]
+
+            cardsEncounters.append(copy.deepcopy(encountCard))
+
+    print("completed parsing Stories")
+    
+    count_order = 1
+    nandeckEncounters = ""
+    #print(len(monsterAICards))
+    for encounter in cardsEncounters:
+        
+        assert isinstance(encounter, EncounterCard)
+        #print(encounter.name)
+        nandeckEncounters += encounter.serializeToNandeck(count_order)
+        count_order += 1
+
+    template_boilerplate_encounters = open('Templates/Story_Boilerplate.txt', 'r')
+    template_boilerplate_encounters = template_boilerplate_encounters.read()
+    template_boilerplate_encounters = template_boilerplate_encounters.replace(r"${Cards}", nandeckEncounters).replace(r"${CardCount}", str(count_order-1))
+
+    fileToPrint = open('out/Stories.txt', 'w+')
+    fileToPrint.write(template_boilerplate_encounters)
+
+    print("wrote AI file")
+
+    
 
 def parseRacesAndClasses(files_Input):
 
@@ -567,10 +643,10 @@ if __name__ == "__main__":
     
     maxRankToPrint = 5
     flagPrintHardAI = False
-    parseRacesAndClasses(files_Input)
+    #parseRacesAndClasses(files_Input)
     #parseEvents("../Events.csv")
     #parseMonsterAI()
-    #parseItems()
+    parseStories()
 
 
 #### Deprecated Classes:

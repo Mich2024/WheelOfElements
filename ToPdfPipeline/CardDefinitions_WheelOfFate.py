@@ -1036,3 +1036,33 @@ class EventCard:
         res = res.replace(r"${Name}",str(self.name).strip()).replace(r"${Flavour}", str(self.flavour).strip())
 
         return res
+    
+
+class EncounterCard:
+    def __init__(self):
+
+
+        self.name = ""
+        self.encounter = 1
+        self.P1 = ""
+        self.P2 = ""
+        self.P3 = ""
+        self.P4 = ""
+        self.P5 = ""
+
+        self.lineups = [self.P1,self.P2,self.P3,self.P4,self.P5]
+
+    def serializeToNandeck(self, order):
+        
+
+        template_story_single = open('Templates/Story_Single.txt', 'r')
+        template_story_single = template_story_single.read()
+
+        res = template_story_single.replace(r"${Order}", str(order))
+        res = res.replace(r"${Lineup1}",self.P1.strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup2}",self.P2.strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup3}",self.P3.strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup4}",self.P4.strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup5}",self.P5.strip().replace(",", linebreakStringNanDeck_htmltext))
+            
+        return res
