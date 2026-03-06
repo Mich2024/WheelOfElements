@@ -1,6 +1,6 @@
 Passive
 Look at that life
-Life: 12
+Life: 8
 
 Type
 

@@ -105,6 +105,7 @@ symbolDict = {
     "Invisibile":r"\symInvisibility",
     "Powerful":r"\symPowerful",
     "Disengage":r"\symDisengage",
+    "Flurry":r"\symFlurry",
 
     # Banes
     "Curse":r"\symCurse",
@@ -304,7 +305,7 @@ def serializeActionToNanDeck(inputActions):
                         res += ": " + parts[1]
                         res += " "
                 
-    return res
+    return res.strip()
 
 #converst an action list into nandeck String. Does not add "" around the text
 def serializeMonsterActionToNanDeck(inputActions):
@@ -975,20 +976,20 @@ class monsterAICard:
                     dice += r"\symD" + p.number_to_words(int(roll.strip())).capitalize()
                     if(count_dice == 2):
                         #print(start_actions)
-                        nanDeckDice += template_monster_line_dice.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(count_action_curr + flag_second_row)).replace(r"${PosXAction}", "0")
+                        nanDeckDice += template_monster_line_dice.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(2*count_action_curr + flag_second_row)).replace(r"${PosXAction}", "0")
                         count_dice = 0
                         dice = ""
                         flag_second_row = 1
                     elif(count_dice_remaining == 0):
-                        nanDeckDice += template_monster_line_dice.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(count_action_curr + flag_second_row)).replace(r"${PosXAction}", "0.2")
+                        nanDeckDice += template_monster_line_dice.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(2*count_action_curr + flag_second_row)).replace(r"${PosXAction}", "0.2")
                 except: #abc
                     #TODO
                     dice += roll.strip()
-                    nanDeckDice += template_monster_line_box.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(count_action_curr + flag_second_row))
+                    nanDeckDice += template_monster_line_box.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(2*count_action_curr + flag_second_row))
                 
             action = action[1:]
             html_act = serializeMonsterActionToNanDeck(action)
-            nanDeckActions += template_monster_line_action.replace(r"${Lines_Dice}", nanDeckDice).replace(r"${Action}", html_act ).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(count_action_curr) )
+            nanDeckActions += template_monster_line_action.replace(r"${Lines_Dice}", nanDeckDice).replace(r"${Action}", html_act ).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(2*count_action_curr) )
             count_action_curr += 1
 
 
@@ -1027,6 +1028,11 @@ class EventCard:
 
     }
     def serializeToNandeck(self, order):
+
+        self.upside = self.upside.replace(";",",")
+        self.downside = self.downside.replace(";",",")
+        self.flavour = self.flavour.replace(";",",")
+
         
         template_event_single = open('Templates/Event_Single.txt', 'r')
         template_event_single = template_event_single.read()

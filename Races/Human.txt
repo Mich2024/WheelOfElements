@@ -35,15 +35,15 @@ Base Cards
 #Power Levels : 2,4,4,6,6,10
 
 Tier1
-Name: "Strike" ranged A:1 
+Name: "Strike" Ranged A:1
 
 Tier2
 Name: "Shield" Shield:1
-Name: "Scare" A:2 disengage
+Name: "Scare" A:2 Disengage
 
 Tier3
 Name: "Fighter" A:1 Shield
-Name: "Guard" ranged Shield disengage disengage
+Name: "Guard" Ranged Shield Disengage Disengage
 
 Tier4
 Name: "Smite" A:9

@@ -41,13 +41,13 @@ Base Cards
 Tier1
 #2
 Name: "Evade" Disengage Disengage
-Name: "Strike" ranged A:1 
-Name: "Strike" ranged A:1 
+Name: "Strike" Ranged A:1
+Name: "Strike" Ranged A:1
 
 Tier2 
 #4
 Name: "Double Strike" A:2 Text: "Deals double damage against stunned units"
-Name: "Disable" ranged disengage Stun
+Name: "Disable" Ranged Disengage Stun
 
 Tier3
 #6

@@ -12,7 +12,7 @@ Explanation:Heal
 
 Tier1
 Name: "Heart of Water" Water:2
-Name: "Strike" ranged A:1
+Name: "Strike" Ranged A:1
 
 Tier2
 #Name: "Razor Petals" ManaCost:Wood;1 A:4 A:4 Text: "lose 4 life"

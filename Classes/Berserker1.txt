@@ -1,7 +1,7 @@
 Passive
 Look at that life
 #+6Max life
-Life: 9
+Life: 6
 
 Type
 

@@ -10,7 +10,7 @@ Explanation:Poison
 
 Tier1
 Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 A:3 Ranged
-Name: "Heal" ranged H:1
+Name: "Heal" Ranged H:1
 
 Tier3
 Name: "Shred" ManaCost:Wood;2 A:9

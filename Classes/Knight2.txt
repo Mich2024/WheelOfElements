@@ -11,7 +11,7 @@ Explanation:Advantage
 Explanation:Shield
 
 Tier1
-Name: "Pierce" ManaCost:Opt;Metal;2 Advantage Opt Text: A:4
+Name: "Pierce" ManaCost:Opt;Metal;2 Advantage Opt A:4
 Name: "Sharpen" Advantage Metal:1
 
 Tier3

@@ -1,4 +1,34 @@
 
+Name: Bandit Hunt
+Encounter:1
+Bandit Harrier, Bandit Skirmisher,
+Bandit Skirmisher, Bandit Raider, Bandit Raider,
+Bandit Berserker,
+Bandit Harrier, Bandit Skirmisher,
+Bandit Skirmisher, Bandit Raider, Bandit Raider,
+
+Encounter:2
+Bandit Skirmisher, Bandit Raider, Bandit Trapper, 
+Bandit Harrier, Bandit Leader, Bandit Raider, 
+Bandit Berserker, Bandit Raider,
+Bandit Bandit Raider, Bandit Raider, Bandit Leader, Bandit Raider,
+Bandit Raider, Bandit Trapper, Bandit Skirmisher,
+
+Encounter:3
+Bandit Skirmisher, Bandit Leader, Bandit Trapper, 
+Bandit Raider, Bandit Raider, Bandit Leader, Bandit Raider, Bandit Raider
+Bandit Harrier, Bandit Leader, Bandit Trapper, 
+Bandit Berserker, Bandit Harrier,
+Bandit Berserker, Bandit Skirmisher,
+
+#Bandit Raider : Bronze
+#Bandit Harrier : Silver
+#Bandit Skirmisher : Silver
+#Bandit Trapper : Silver*
+#Bandit Leader : Silver*
+#Bandit Berserker : Gold
+
+End Of File
 
 Name: Orcbashing
 Encounter:1

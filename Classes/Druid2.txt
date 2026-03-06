@@ -8,7 +8,7 @@ Element: Wood
 Explanation:Heal
 
 Tier1
-Name: "Heal" ranged H:1
+Name: "Heal" Ranged H:1
 Name: "Outlast" Powerful Text: "At the end of this turn, keep your powerful"
 
 
