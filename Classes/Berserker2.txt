@@ -19,7 +19,7 @@ Name: "Aggression" Fire:1 A:4
 Name: "Faithless Looting" Text: "Draw two cards" Blaze:2 A:8
 
 #This shit is unprintable, the space is like two times over
-Name: "Feral Instinct" Fire:1 Blaze:2 Text:"For each Card discarded gain an Effect depending on their rarity. Bronze:Vulnerable. Silver:Fire:2. Gold:A:D6. Mythril:Set your life to full life."
+Name: "Feral Instinct" Fire:1 Blaze:2 Text: "Per discarded Card: <br> Br: \symVulnerable Vulnerable <br> Silver: \symAddFire Fire:2 <br> Gold: \symAttack A:D6"
 
 
 

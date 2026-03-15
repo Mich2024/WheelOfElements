@@ -1,0 +1,71 @@
+[CardCount] = 1
+
+[col_bronze] = #CD7F32
+[col_silver] = #ACACAC
+[col_gold] = #CFB53B
+
+
+
+[space_text_28] = 1
+[space_text_18] = 0.7
+
+[linestrength] = 0.1
+
+[space_top] = 1
+[space_left] = [space_text_18] + [linestrength]
+[half_space_left] = (0.5*[space_left])
+[space_right] = [space_left]
+[space_bottom] = 0.25
+
+[full_hor] = 6.35 - [space_left] - [space_right]
+
+
+
+CARDS=[CardCount]
+BORDER=ROUNDED,#000000,[linestrength]
+UNIT=CM
+PAGE=21,29.7,PORTRAIT,HV
+DPI=300
+CARDSIZE=6.35,8.89
+BASERANGE=,ON
+
+htmlimage = 1 - [CardCount], \symAddFire, "..\..\Pictures\Icons\AddFire.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAddMetal, "..\..\Pictures\Icons\AddMetal.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAddWater, "..\..\Pictures\Icons\AddWater.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", 0.55, 0.55
+
+htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symPoison, "..\..\Pictures\Icons\Poison.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symHeal, "..\..\Pictures\Icons\Heal.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symPowerful, "..\..\Pictures\Icons\Powerful.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symFlurry, "..\..\Pictures\Icons\Flurry.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symVulnerable, "..\..\Pictures\Icons\Vulnerable.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symBlaze, "..\..\Pictures\Icons\Blaze.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symD6, "..\..\Pictures\Icons\D6.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symShield, "..\..\Pictures\Icons\Shield.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", 0.55, 0.55
+
+htmlimage = 1 - [CardCount], \symDraw, "..\..\Pictures\Icons\Draw.png", 0.55, 0.55
+
+htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png", 0.55, 0.55
+
+htmlfont=font_18,Arial,14,B,#000000,LEFT
+
+FONT = Arial, 18, B, #000000
+TEXT = 1, "Adamant Infusion", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 1, "", [space_left] , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 1, "\symAddFire Fire: 1 <br>--- \symBlaze Blaze 2 --- <br> Per discarded Card: <br> Br: \symVulnerable Vulnerable <br> Silver: \symAddFire Fire:2 <br> Gold: \symAttack A:D6", [space_left] , 4,[full_hor], 4,#FFFFFF,0,T,100,font_18
+
+
+
+FONT = Arial, 12, B, #000000
+TEXT = 1, "Berserker 2", 0 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+FONT = Arial, 12, B, [col_gold]
+TEXT = 1, "Gold 3", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
+#Name, OptCost
