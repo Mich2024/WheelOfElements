@@ -33,9 +33,10 @@ Explanation: Advantage
 Base Cards
 
 Tier1
+Tier2
 Name: "Like Clockwork" A:1 Advantage Metal:1
 Name: "Sharpen" Metal:2 Advantage:2
-Name: "Adamantium Infusion" ManaCost:Opt;Metal;X Advantage:X A:2
+Name: "Silver Infusion" ManaCost:Opt;Metal;X Advantage:X A:2
 Name: "Adaptive Plating" Advantage Metal:X Text: "X is the amount of enemies in your zone"
 Name: "Bladestorm" ManaCost:Opt;Metal;1 A:3 Text: Opt Text: "Double the effect of modifiers on this Card"
 Name: "Filigree Fatality" Advantage A:3

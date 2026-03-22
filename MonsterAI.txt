@@ -1,6 +1,141 @@
 #Todays Print
 
 ###########################################################################################
+Name:Bandit Raider
+
+Normal
+
+Life:20
+Count:7
+
+Rolls:1,2 A:3
+Rolls:3,4 A:2
+Rolls:5,6 A:1
+
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+###########################################################################################
+Name:Bandit Harrier
+
+Normal
+
+Life:35
+Count:5
+Passive: Harrier
+
+Rolls:1,2 A:1
+Rolls:3,4 A:2
+Rolls:5,6 A:3
+
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+
+###########################################################################################
+Name:Bandit Skirmisher
+
+Normal
+
+Life:35
+Count:4
+Passive: Skittish
+
+Rolls:A A:1
+Rolls:B A:1
+Rolls:C Stun
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+
+###########################################################################################
+Name:Bandit Trapper
+
+Normal
+
+Life:35
+Count:2
+
+Rolls:1,2 Text: "-"
+Rolls:3 Stun
+Rolls:4,5,6 Poison:1
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+###########################################################################################
+Name:Bandit Leader
+
+Normal
+
+Life:35
+Count:3
+
+Rolls:A Adjacent bandits act twice
+Rolls:B Text: "-"
+
+Hard
+
+Life:5
+Count:3
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+
+###########################################################################################
+Name:Bandit Berseker
+
+Normal
+
+Life:70
+Count:2
+Passive: Enrage
+
+Rolls:1,2,3 A:1
+Rolls:4,5 Stun
+Rolls:6 A:1 A:1
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+End Of File
+
+###########################################################################################
 Name:Metalcrafter
 
 Normal

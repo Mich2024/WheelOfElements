@@ -1,4 +1,4 @@
-[CardCount] = ${CardCount}
+[CardCount] = 1
 
 [col_bronze] = #CD7F32
 [col_silver] = #ACACAC
@@ -55,7 +55,17 @@ htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png"
 
 htmlfont=font_18,Arial,14,B,#000000,LEFT
 
-${Cards}
+FONT = Arial, 18, B, #000000
+TEXT = 1, "Adamant Infusion", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 1, "", [space_left] , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 1, "\symAddFire Fire: 1 <br>--- \symBlaze Blaze 2 --- <br> Per discarded Card: <br> Br: \symVulnerable Vulnerable <br> Silver: \symAddFire Fire:2 <br> Gold: \symAttack A:D6", [space_left] , 4,[full_hor], 4,#FFFFFF,0,T,100,font_18
 
 
 
+FONT = Arial, 12, B, #000000
+TEXT = 1, "Berserker 2", 0 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+FONT = Arial, 12, B, [col_gold]
+TEXT = 1, "Gold 3", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
+#Name, OptCost

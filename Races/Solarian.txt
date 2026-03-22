@@ -35,7 +35,7 @@ Tier1
 Name: "Sun's Embrace" ManaCost:Opt;Fire;1 A:1 Opt A:1
 Name: "Heartburn" ManaCost:Opt;Fire;2 Vulnerable Opt A:3
 Name: "Heart of Fire" Fire:2
-Name: "Strike" A:1 ranged
+Name: "Strike" A:1 Ranged
 
 Tier2
 Name: "Light Barrage" A:1 A:1

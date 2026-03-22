@@ -1,0 +1,15 @@
+htmltext = ${Order}, "Player 1", [x_p1_name] , [y_p1_name], [width_lineup], [height_lineup], #FFFFFF,0,T,100,font_28
+htmltext = ${Order}, "${Lineup1}", [x_p1_lineup] ,[y_p1_lineup], [width_lineup], [height_lineup], #FFFFFF,0,T,100,font_18
+
+htmltext = ${Order}, "Player 2", [x_p2_name] , [y_p2_name], [width_lineup], [height_lineup], #FFFFFF,0,T,100,font_28
+htmltext = ${Order}, "${Lineup2}", [x_p2_lineup] ,[y_p2_lineup], [width_lineup], [height_lineup], #FFFFFF,0,T,100,font_18
+
+htmltext = ${Order}, "Player 3", [x_p3_name] , [y_p3_name], [width_lineup], [height_lineup], #FFFFFF,0,T,100,font_28
+htmltext = ${Order}, "${Lineup3}", [x_p3_lineup] ,[y_p3_lineup], [width_lineup], [height_lineup], #FFFFFF,0,T,100,font_18
+
+htmltext = ${Order}, "Player 4", [x_p4_name] , [y_p4_name], [width_lineup], [height_lineup], #FFFFFF,0,T,100,font_28
+htmltext = ${Order}, "${Lineup4}", [x_p4_lineup] ,[y_p4_lineup], [width_lineup], [height_lineup], #FFFFFF,0,T,100,font_18
+
+htmltext = ${Order}, "Player 5", [x_p5_name] , [y_p5_name], [width_lineup], [height_lineup], #FFFFFF,0,T,100,font_28
+htmltext = ${Order}, "${Lineup5}", [x_p5_lineup] ,[y_p5_lineup], [width_lineup], [height_lineup], #FFFFFF,0,T,100,font_18
+

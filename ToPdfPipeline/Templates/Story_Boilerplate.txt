@@ -1,0 +1,58 @@
+[CardCount] = ${CardCount}
+CARDS=[CardCount]
+BORDER=RECTANGLE
+UNIT=CM
+PAGE=21,14,PORTRAIT,HV
+
+[col_bronze] = #CD7F32
+[col_silver] = #ACACAC
+[col_gold] = #CFB53B
+
+[space_text_28] = 1
+[space_text_18] = 0.7
+
+[linestrength] = 0.1
+
+[start_x] = 3
+[spacing_x] = 6
+
+[start_y] = 2.5
+[spacing_y] = 7
+
+[x_p1_name] = [start_x]
+[y_p1_name] = [start_y]
+[x_p1_lineup] = [x_p1_name] 
+[y_p1_lineup] = [y_p1_name] + [space_text_28]
+
+[x_p5_name] = [start_x]
+[y_p5_name] = [start_y] + [spacing_y]
+[x_p5_lineup] = [x_p5_name]
+[y_p5_lineup] = [y_p5_name] + [space_text_28]
+
+[x_p2_name] = [start_x] + [spacing_x]
+[y_p2_name] = [start_y]
+[x_p2_lineup] = [x_p2_name]
+[y_p2_lineup] = [y_p2_name] + [space_text_28]
+
+[x_p4_name] = [start_x] + [spacing_x]
+[y_p4_name] = [start_y] + [spacing_y]
+[x_p4_lineup] = [x_p4_name]
+[y_p4_lineup] = [y_p4_name] + [space_text_28]
+
+[x_p3_name] = [start_x] + [spacing_x]*2
+[y_p3_name] = [start_y] + [spacing_y]*0.5
+[x_p3_lineup] = [x_p3_name]
+[y_p3_lineup] = [y_p3_name] + [space_text_28]
+
+[width_lineup] = 5
+[height_lineup] = [space_text_18] * 5
+
+
+DPI=300
+CARDSIZE=21,14
+BASERANGE=,ON
+
+htmlfont=font_18,Arial,12,B,#000000,LEFT
+htmlfont=font_28,Arial,21,B,#000000,LEFT
+
+${Cards}

@@ -4,7 +4,7 @@ ${LifeBox}
 
 #Name, OptCost
 FONT = Arial, 22, B, #000000, #FFFFFF
-TEXT = ${Order}, "${Name}", [space_left] , 0, [full_hor], [space_text_28], LEFT, TOP 
+TEXT = ${Order}, "${Name}", [space_left] , 0, [full_hor]-1, [space_text_28]*2, LEFT, WORDWRAP
 
 ${Passive}
 

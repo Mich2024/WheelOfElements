@@ -32,12 +32,12 @@ Explanation:Heal
 
 Tier1
 Name: "Strike" A:1
-Name: "Heal" H:1 ranged
+Name: "Heal" H:1 Ranged
 Name: "Heart of Water" Water:2
 
 Tier2
 Name: "Tail Whip" A:2 Water:1
-Name: "Greater Heal" H:2 ranged
+Name: "Greater Heal" H:2 Ranged
 
 Tier3
 Name: "Bite and Tear" A:2 H:1 Water:1

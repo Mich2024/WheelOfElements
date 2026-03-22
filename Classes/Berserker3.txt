@@ -2,7 +2,7 @@ Passive
 #Whenever you discard one or more cards: A:1
 #Your blaze is now choose instead of random
 Look at that life
-Life: 15
+Life: 10
 
 Type
 
@@ -19,7 +19,7 @@ Name: "Heart of Fire" Fire:2
 Name: "Fiery Punch" ManaCost:Earth;2 Ranged Vulnerable A:D4
 
 Tier2
-Name: "Rage" Text:"Draw a card" Blaze:3 Text:"You may play the discarded cards if you can pay their mandatory costs."
+Name: "Rage" Text:"Draw a card" Blaze:3 Text:"You may play the discarded cards. You still have to pay their costs"
 Name: "Strike Fear" A:1 Blaze:1 A:2
 
 

@@ -35,7 +35,7 @@ Base Cards
 
 Tier1
 Name: "Clobber" ManaCost:Opt;Earth;2 Disengage Disengage Opt A:3
-Name: "Strike" A:1 ranged
+Name: "Strike" A:1 Ranged
 Name: "Heart of Earth" Earth:2
 
 Tier3

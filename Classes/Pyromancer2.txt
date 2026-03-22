@@ -17,7 +17,7 @@ Base Cards
 Tier1
 #3
 Name: "Wall of Fire" Fire:1 Ranged Disengage
-Name: "Flame Jet" ManaCost:Fire;3 Vulnerable:2 A:1 Blaze:3 Aoe:MostRight;2
+Name: "Flame Jet" ManaCost:Fire;3 Vulnerable:2 A:1 Blaze:3 Aoe:Cleave;2
 
 Tier3
 #8
