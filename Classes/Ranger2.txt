@@ -19,7 +19,6 @@ Tier1
 #3
 Name: "Hype" Powerful Powerful
 Name: "Harass" Flurry Text: "Your flurries have Ranged this turn"
-Name: "Heart of Wood" Wood:2
 
 Tier3
 #8

@@ -10,7 +10,7 @@ Explanation:Poison
 
 Tier1
 Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 A:3 Ranged
-Name: "Heal" Ranged H:1
+Name: "Transfusion" Ranged Text: "Loose X Life. X Cannot be more than your current life" H:X+1 
 
 Tier3
 Name: "Shred" ManaCost:Wood;2 A:9

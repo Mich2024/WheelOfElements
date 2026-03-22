@@ -1,6 +1,6 @@
 Passive
 #At the beginning of our turn, H:1
-After applying modifiers you may pay up to 2 life to add that much damage to the attack.
+After applying modifiers, you may pay 2 life to add 4 damage to the attack.
 Life: 3
 
 Type
@@ -12,11 +12,11 @@ Explanation:Heal
 
 Tier1
 Name: "Heart of Water" Water:2
-Name: "Strike" Ranged A:1
+Name: "Bloody Strike" Ranged A:3 Text: "Lose 1 life"
 
 Tier2
-#Name: "Razor Petals" ManaCost:Wood;1 A:4 A:4 Text: "lose 4 life"
-Name: "Blood Petals" ManaCost:Wood;1 A:4 A:4 Text: "lose 2 life"
+#Name: "Razor Petals" ManaCost:Wood;1 A:4 A:4 Text: "Lose 4 life"
+Name: "Blood Petals" ManaCost:Wood;1 A:4 A:4 Text: "Lose 2 life"
 Name: "Healing Rain" Water:1 A:1 H:1 Ranged
 
 Tier3
