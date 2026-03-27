@@ -503,11 +503,14 @@ def parseRacesAndClasses(files_Input):
     fileToPrint.close()
 
 
-    print("serializing cards")
+    print("serializing tableaus")
     nandeckStatCards = ""
     nandeckRaces = ""
     orderRaces = 1
     orderClasses = 1
+
+    template_boilerplate = open('Templates/Utils_Boilerplate.txt', 'r')
+    template_boilerplate = template_boilerplate.read()
 
     for i, statusCard in enumerate(statusCards):
         #print(statusCard.name)
@@ -524,6 +527,7 @@ def parseRacesAndClasses(files_Input):
     texModCards = ""
     #for modCard in modifierCards:
     #    texModCards += modCard.serializeToLatex()
+    print("serializing action cards")
 
     orderActions = 1
     nandeckActCards = ""
@@ -553,7 +557,7 @@ def parseRacesAndClasses(files_Input):
     template_boilerplate_races = open('Templates/Tableau_Boilerplate.txt', 'r')
     template_boilerplate_races = template_boilerplate_races.read()
 
-    template_boilerplate_races = template_boilerplate_races.replace(r"${Races}", nandeckRaces).replace(r"${CardCount}",str(orderRaces-1))
+    template_boilerplate_races = template_boilerplate_races.replace(r"${Races}", nandeckRaces).replace(r"${CardCount}",str(orderRaces-1)).replace(r"${UtilsBoilerplate}", template_boilerplate)
 
     fileToPrint = open('out/raceTableaus.txt', 'w+')
     fileToPrint.write(template_boilerplate_races)

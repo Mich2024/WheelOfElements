@@ -595,7 +595,7 @@ class modifierCard:
         res += "{" + self.classname + "}"
         res += "\n"
         return res
-    
+
 class tableauRace:
     def __init__(self):
 
@@ -612,27 +612,45 @@ class tableauRace:
 
         self.mods = [self.L1R1,self.L1R2,self.L1R3,self.L1R4,self.L2R1,self.L2R2,self.L3R1]
 
+    def symbolify_mod(self, words_mod):
+        line_mod = ""
+        for word in words_mod[1:]:
+            #print(word.split(":")[0])
+            word = word.replace(",","")
+            if(word.split(":")[0] in symbolDict):
+            
+                line_mod += " " + symbolDict[word.split(":")[0]] + " " + word + " "
+
+            elif(word.split(":")[0].lower() == "draw"):
+                print(word)
+                line_mod += " " + r"\symDraw" + " " + word + " "
+            else:
+                line_mod += word + " "
+
+        return line_mod
+
+
     def serializeToNandeck(self, order):
         
 
         template_line_mod = open('Templates/Tableau_Line_Mod.txt', 'r')
         template_line_mod = template_line_mod.read()
 
-        self.L1R1 = template_line_mod.replace(r"${Mod}", '"' + self.L1R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
+        self.L1R1 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L1R1.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
         self.L1R1 = self.L1R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(0))
-        self.L1R2 = template_line_mod.replace(r"${Mod}", '"' + self.L1R2.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
+        self.L1R2 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L1R2.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
         self.L1R2 = self.L1R2.replace(r"${Order}",str(order)).replace(r"${Hor}",str(1)).replace(r"${Vert}",str(0))
-        self.L1R3 = template_line_mod.replace(r"${Mod}", '"' + self.L1R3.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
+        self.L1R3 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L1R3.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
         self.L1R3 = self.L1R3.replace(r"${Order}",str(order)).replace(r"${Hor}",str(2)).replace(r"${Vert}",str(0))
-        self.L1R4 = template_line_mod.replace(r"${Mod}", '"' + self.L1R4.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
+        self.L1R4 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L1R4.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
         self.L1R4 = self.L1R4.replace(r"${Order}",str(order)).replace(r"${Hor}",str(3)).replace(r"${Vert}",str(0))
 
-        self.L2R1 = template_line_mod.replace(r"${Mod}", '"' + self.L2R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
+        self.L2R1 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L2R1.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
         self.L2R1 = self.L2R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(1))
-        self.L2R2 = template_line_mod.replace(r"${Mod}", '"' + self.L2R2.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
+        self.L2R2 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L2R2.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
         self.L2R2 = self.L2R2.replace(r"${Order}",str(order)).replace(r"${Hor}",str(1)).replace(r"${Vert}",str(1))
 
-        self.L3R1 = template_line_mod.replace(r"${Mod}", '"' + self.L3R1.replace("Add", r"\13\Add").replace("Remove", r"\13\Remove").replace(",","") + '"')
+        self.L3R1 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L3R1.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
         self.L3R1 = self.L3R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(2))
         
         lines_mods = ""
@@ -649,19 +667,7 @@ class tableauRace:
     
     def serializeModToNandeck(self, words_mod ,order, name_species):
         count = int(words_mod[0])
-        line_mod = ""
-        for word in words_mod[1:]:
-            #print(word.split(":")[0])
-            word = word.replace(",","")
-            if(word.split(":")[0] in symbolDict):
-            
-                line_mod += " " + symbolDict[word.split(":")[0]] + " " + word + " "
-
-            elif(word.split(":")[0].lower() == "draw"):
-                print(word)
-                line_mod += " " + r"\symDraw" + " " + word + " "
-            else:
-                line_mod += word + " "
+        line_mod = self.symbolify_mod(words_mod[1:])
 
         template_mod_single = open('Templates/Modifier_Single.txt', 'r')
         template_mod_single = template_mod_single.read()
@@ -773,6 +779,7 @@ class statCard:
             template_line_passive = template_line_passive.read()
             template_race = open('Templates/Tableau_Race_Single.txt', 'r')
             template_race = template_race.read()
+            
 
             
             lines_mods = self.tableau.serializeToNandeck(order)
