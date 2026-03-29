@@ -55,12 +55,17 @@ TEXT = 1-[CardCount], "1. Draw cards until hand is full \13\ 2. Roll enemy dice 
 
 
 RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 2, [space_top], [quart_hor], [third_vert], [col_gold], empty, [linestrength]
+TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 2  + [linestrength], [space_top] + [linestrength], [quart_hor] - [linestrength] * 2, [space_text_18], left, center
 RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 3, [space_top], [quart_hor], [third_vert], [col_gold], empty, [linestrength]
+TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 3  + [linestrength], [space_top] + [linestrength], [quart_hor] - [linestrength] * 2, [space_text_18], left, center
 
 RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0, [space_top] + [third_vert], [quart_hor], [third_vert], [col_bronze], empty, [linestrength]
+TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 0  + [linestrength], [space_top]  + [third_vert] * 1 + [linestrength], [quart_hor] - [linestrength] * 2, [space_text_18], left, center
 RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 1, [space_top] + [third_vert], [quart_hor], [third_vert], [col_bronze], empty, [linestrength]
+TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 1  + [linestrength], [space_top]  + [third_vert] * 1 + [linestrength], [quart_hor] - [linestrength] * 2, [space_text_18], left, center
 
 RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], [col_silver], empty, [linestrength]
+TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 0  + [linestrength], [space_top]  + [third_vert] * 2 + [linestrength], [quart_hor] - [linestrength] * 2, [space_text_18], left, center
 
 
 

@@ -5,7 +5,7 @@ Name:Bandit Raider
 
 Normal
 
-Life:20
+Life:10
 Count:7
 
 Rolls:1,2 A:3
@@ -27,7 +27,7 @@ Name:Bandit Harrier
 
 Normal
 
-Life:35
+Life:20
 Count:5
 Passive: Harrier
 
@@ -51,7 +51,7 @@ Name:Bandit Skirmisher
 
 Normal
 
-Life:35
+Life:20
 Count:4
 Passive: Skittish
 
@@ -74,12 +74,12 @@ Name:Bandit Trapper
 
 Normal
 
-Life:35
+Life:20
 Count:2
 
-Rolls:1,2 Text: "-"
-Rolls:3 Stun
-Rolls:4,5,6 Poison:1
+Rolls:1,2,3 Text: "-"
+Rolls:4 Stun
+Rolls:5,6 Poison:1
 
 Hard
 
@@ -95,7 +95,7 @@ Name:Bandit Leader
 
 Normal
 
-Life:35
+Life:20
 Count:3
 
 Rolls:A Adjacent bandits act twice
@@ -116,12 +116,12 @@ Name:Bandit Berseker
 
 Normal
 
-Life:70
+Life:35
 Count:2
 Passive: Enrage
 
-Rolls:1,2,3 A:1
-Rolls:4,5 Stun
+Rolls:1,2,3,4 A:1
+Rolls:5 Stun
 Rolls:6 A:1 A:1
 
 Hard
