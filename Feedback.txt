@@ -1,25 +1,28 @@
-P3 "you wil proceed"
-P6 leveling, darf ich nach sangro 1 und knight 1, koloss 2 nehmen? spielt die reihenfolge wie ich die shingles anordne ne Rolle?
-P7
-"We an enemey is defeated"
-"Empty draw pile and you need to draw?" die art und weise wie das geboldet ist, führt bei mir dazu, dass ich über das "Empty" skippe, und dann ergibt der satz kein sinn.
-P10
-"Play" "Pay" zwar funny, aber ich denke "Play" "Cost[s]" wäre evt besser
-"healing , shield etd."
-P12
-"usually has 20 cards in it", ist das faktuell korrekt?
-P13+
-spacing in den Tabellen ist kinda meh, zu eng zusammen + trennlinien
-P14
-Ich will Heretic mal in aktion sehen ;).
-P15
-drunken master accidental 2 liner
-
 2. pass
 warum sind player cards Nach enemy turn?
 not entirely sure about how you did the aoe markers. -> symbol sieht aus wie card draw maybe rework? pfeile die sich aufspalten?
 Modifiers brauchen kartenbilder, eventuell in einer tabelle!
 
+Kachel -> Tile
 
-P1
+Klassen rückseite weil amn sie sofort beim setup braucht,
+Boons/Banes als einlegeblatt
 
+Klassenkachen besser aufarbeiten, bruacht teiler für Passive
+
+Spezies -> Ancestry
+Ring für gegner??
+Podest in der mitte vom rad für würfel
+Kosten rechts in die ecke
+gleiche würfel für enemy abc
+
+highlight raged globaly, (maybe on top, with a line, different background?)
+Mention that some stuff hits later
+
+Ich habe kaum Powerful und vuln - Druid/Ranger /Fae
+Hunters mark - Vuln & Attack same line
+modifier multi effekt verschiedene zeilen
+pyro plus one life  
+
+
+lebensleiste w:20
