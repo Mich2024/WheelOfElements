@@ -11,7 +11,7 @@ Encounter:2
 Bandit Skirmisher, Bandit Raider, Bandit Trapper, 
 Bandit Harrier, Bandit Leader, Bandit Raider, 
 Bandit Berserker, Bandit Raider,
-Bandit Bandit Raider, Bandit Raider, Bandit Leader, Bandit Raider,
+Bandit Raider, Bandit Raider, Bandit Leader, Bandit Raider,
 Bandit Raider, Bandit Trapper, Bandit Skirmisher,
 
 Encounter:3

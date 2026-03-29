@@ -31,7 +31,7 @@ Type
 Explanation:Heal
 
 Tier1
-Name: "Strike" A:1
+Name: "Strike" Ranged A:1
 Name: "Heal" H:1 Ranged
 Name: "Heart of Water" Water:2
 

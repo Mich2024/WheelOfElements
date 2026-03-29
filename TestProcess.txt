@@ -5,13 +5,16 @@ Wie of spielt ihr Brettspiele, und was für welche?
 Paul: alle zwei wochen, alles
 Cynthia: Nein
 Sarah: Ein Mal im Monat, Ko-Operatives
+Merle: Beiblatt sometimes
+Lena: Spirit Island, Gloomhaven
+Sabine: ???
+Martin: ???
 
 Ist die erste Seite des regelwerks gut?
 
-Paul:
 
 Welche passagen im Regelwerk sind gut/schlecht zu lesen? Vibes only
-
+Paul, Sarah, Cynthia:  Setup ist way more important than expected, put more effort
 
 ##########################
 
@@ -38,14 +41,34 @@ Leute in Person/Live Pitch
 
 Zielerkenntnisse:
 
+Ancestry + Classes:
+Paul, Sarah, Cynthia: Silverkin, Pyro, Assassin ; Fae, Druid, Ranger; HalfElf, Assassin, Toxico
 Im falle von Regelwerk gelesen: ist es verständlich? Wird es korrekt gespielt?
+Status are hard, mods on everything disregarded, Class1 duplicate cards
+Brain damage um kapitel "combat" rum 2x observed
 Was sind häufige Fehler
+Overheal
+DECK != ACTION DECK
+Not replacing cards on level-up
+Enemy keywords, especially the chain disengage ones
 Balance?
+DSA Trupe: Fine, mechanically too complex
+Paul, Sarah, Cynthia: Limit des machbaren: Zu viel HP
 Verständlichkeit der karten?
+Paul, Sarah, Cynthia:  New line -> New target
 Wann fließt das spiel gut? Als Zeitpunkt in Kampf X
+Paul, Sarah, Cynthia:  Nein!? Spieler waren immer ahrt am reden. War auch nötig wegen balance
 Gibt es teile des Spiels die nie fließen?
+Paul, Sarah, Cynthia:  Wer braucht Flurry?, Ranged sarah Fee
 Wo haben die Spieler am meisten Spaß?
+Paul, Sarah, Cynthia:  Combos innerhalb des decks
 Wie sieht die Spaßkurve über Zeit aus?
+Paul, Sarah, Cynthia:  nach oben???
 Endet das spiel auf dem Richtigen Zug?
+Paul, Sarah, Cynthia:  alle tot, way too early
 Wie viel Zeit kostet alles? -> Minuten
+Paul, Sarah, Cynthia:  1.75 h Regeln, 1.5 h Spielen eine runde bis zum Tod
+
+
+Overheal???
 
