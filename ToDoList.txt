@@ -1,5 +1,3 @@
-Silverkin ist die Einzige Rasse mit Modifiers Bronze
-
 https://spielematerial.de/
 
 Events
@@ -19,3 +17,8 @@ dice talk -> replace modifiers?
 
 Sangromancer balance, is lifepay adjusted?
 rework pitch
+
+
+Photos überarbeiten
+
+Rename disengage maybe repel
