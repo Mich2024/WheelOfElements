@@ -1,13 +1,42 @@
 
 \section{Boons \& Banes}\label{Section_BoonsBanes}
-\textbf{Tracking} - Boons \& Banes are tracked with status tokens. When you apply a boon or bane to a player or an enemy, place a status token on it.
+
+\subsection*{Static Boons \& Banes}
+These Boons provide a singular effect or modify how an action is performed.
+\begin{longtable}{|p{2.5cm}|p{13.7cm}|}
+	\hline
+	Heal X \symHeal & Restore X health to the target. This restoration can put the target above its starting health.\\
+	\hline
+	Blaze X \symBlaze & If you play a card with blaze as the first card of your tun, discard X cards, and perform the optional effect. If you play that card second, do not discard and do not perform the optional text. \\
+	\hline
+	D6 \symDSix & When a card asks you to roll some D6, get that many six sided dice, roll them and add their results. Most often, you attack for an amount of D6. Sometimes the sum is used as X and will be referenced on the card. The D6 is not part of your ancestry dice, and cannot be re-rolled with advantage.\\
+	\hline
+	Ranged \symRanged & All actions after the Ranged keyword may target your neighbours or their enemies. \\
+	\hline
+	Elements \symFire \symEarth \symMetal \symWater \symWood& If element generation is part of your cards actions, add that many element markers to field of the shown element on the inner part of the wheel. \\
+	\hline
+	Disengage \symDisengage & To disengage an enemy, rotate that enemy to the left. This rotation does not respect enemy order or the end of turn, and happens immediately. \\
+	\hline 
+	Area Of Effect \centering{\includegraphics[width=2cm]{../Pictures/AOE/AoeRuleSample.png}} & Some cards have AOE emblems. In this case, target enemies in the exact pattern shown in the pictogram. AOEs can never affect enemies from multiple different players. \\
+	\hline
+	AOE All \centering{\includegraphics[height=1.5cm]{../Pictures/AOE/AoeAll.png}} & One special case is the AOE all emblems. If your card has this, target all of your enemies at once. \\
+	\hline
+\end{longtable}
+
+\subsection*{Status Boons \& Banes}
+\textbf{Tracking} - Those types of Boons \& Banes are tracked with status tokens. When you apply a status boon or bane to a player or an enemy, place a status token on it.
+
+\begin{tcolorbox}[colframe=black, colback=white]
+	All status tokens can stack, which results in the effect being applied multiple times.
+	For example, if powerful is applied three times on you, place three powerful tokens on your character sheet and your attacks now deal three extra damage.
+\end{tcolorbox}
 
 \begin{longtable}{|p{2.5cm}|p{13.7cm}|}
 	
 	\hline
 	Powerful \symPowerful & Your attacks deal one extra damage. Remove powerful from players at the end of the turn. For enemies powerful persists between turns. \\
 	\hline
-	Advantage \symAdvantage & After revealing a modifier, reveal another. You may choose which to use. Remove advantage from players and enemies at the end of the turn.\\
+	Advantage \symAdvantage & After rolling your ancestry dice, you may re-roll a number of them equal or less to your advantage stacks. Re-roll them all at once. Do this only once each time you roll your ancestry dice. Remove advantage from players and enemies at the end of the turn.\\
 	\hline
 	Shield \symShield & When taking damage from an \symAttack attack (not self inflicted or poison), take one less. Remove shield from players at the end of the turn. For enemies shield persists between turns. \\
 	\hline
@@ -24,31 +53,7 @@
 	
 \end{longtable}
 
-\begin{tcolorbox}[colframe=black, colback=white]
-	All status tokens can stack, which results in the effect being applied multiple times.
-	For example, if powerful is applied three times on you, place three powerful tokens on your character sheet and your attacks now deal three extra damage.
-\end{tcolorbox}
 
 
 
-\subsection*{Static keywords}
-These keywords modify how an action is performed. Since they only apply once, there is no need for status tokens.
-\begin{longtable}{|p{2.5cm}|p{13.7cm}|}
-	\hline
-	Heal X \symHeal & Restore X health to the target. This restoration can put the target above its starting health.\\
-	\hline
-	Blaze X \symBlaze & If you play a card with blaze as the first card of your tun, discard X cards, and perform the optional effect. If you play that card second, do not discard and do not perform the optional text. \\
-	\hline
-	D6 \symDSix & When a card asks you to roll some D6, get that many six sided dice, roll them and add their results. Most often, you attack for an amount of D6. Sometimes the sum is used as X and will be referenced on the card. \\
-	\hline
-	Ranged \symRanged & All actions after the Ranged keyword may target your neighbours or their enemies. \\
-	\hline
-	Elements \symFire \symEarth \symMetal \symWater \symWood& If element generation is part of your cards actions, add that many element markers to field of the shown element on the inner part of the wheel. \\
-	\hline
-	Disengage \symDisengage & To disengage an enemy, rotate that enemy to the left. This rotation does not respect enemy order or the end of turn, and happens immediately. \\
-	\hline 
-	Area Of Effect \centering{\includegraphics[width=2cm]{../Pictures/AOE/AoeRuleSample.png}} & Some cards have AOE pictograms. In this case, target enemies in the exact pattern shown in the pictogram. AOEs can never affect enemies from multiple different players. \\
-	\hline
-	AOE All \centering{\includegraphics[height=1.5cm]{../Pictures/AOE/AoeAll.png}} & One special case is the AOE all picture. If your card has this, target all of your enemies at once. \\
-	\hline
-\end{longtable}
+
