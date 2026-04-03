@@ -614,7 +614,7 @@ class tableauRace:
 
     def symbolify_mod(self, words_mod):
         line_mod = ""
-        for word in words_mod[1:]:
+        for word in words_mod:
             #print(word.split(":")[0])
             word = word.replace(",","")
             if(word.split(":")[0] in symbolDict):

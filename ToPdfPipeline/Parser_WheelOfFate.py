@@ -652,7 +652,13 @@ if __name__ == "__main__":
     parseMonsterAI()
     parseStories()
 
-#Print location: Z:\home\mich\Documents\NandeckOut\Events.pdf
+#Print location: 
+# Z:\home\mich\Documents\NandeckOut\Events.pdf
+# Z:\home\mich\Documents\NandeckOut\Actions.pdf
+# Z:\home\mich\Documents\NandeckOut\Mods.pdf
+# Z:\home\mich\Documents\NandeckOut\Tableaus.pdf
+# Z:\home\mich\Documents\NandeckOut\Enemies.pdf
+
 
 #### Deprecated Classes:
 r"""

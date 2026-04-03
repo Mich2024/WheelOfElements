@@ -6,4 +6,5 @@ ${Mods}
 ${Passive}
 ${Life}
 RECTANGLE = ${Order}, [space_left] + [quart_hor] * 0, [space_top], [quart_hor] * 2, [third_vert], ${TierMod}, empty, [linestrength]
+TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 0  + [linestrength], [space_top] + [linestrength], [quart_hor] - [linestrength] * 2, [space_text_18], left, center
 RECTANGLE = ${Order}, [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], ${TierPassive}, empty, [linestrength]
