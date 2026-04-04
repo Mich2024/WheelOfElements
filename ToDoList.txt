@@ -31,3 +31,12 @@ In Text enboldification
 rewrite modification passives
 
 Einlegeblätter
+
+Componnt list redo
+
+Dice
+
+Cleanup graphic redo with tapped cards
+also put some arrows on that picture
+
+rewrite life to starting life on all tableaus

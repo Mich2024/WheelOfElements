@@ -29,7 +29,7 @@ After every player has finished playing their cards, move to the enemies turn. Y
 %todo wording
 Enemies always attack only the Player in front of them. This means all players can have their enemies act simultaneously. For each player, enemies act sequentially from left to right. 
 To perform the enemy turn, look at the monster die,  and have the monster perform the corresponding action.
-Repeat once for every enemy.
+Repeat once for every enemy. All enemies use the same global monster die.
 
 \begin{figure}[ht]
 	\begin{minipage}[t][8cm][t]{1\textwidth}
@@ -38,9 +38,8 @@ Repeat once for every enemy.
 	\end{minipage}	
 \end{figure}
 
-\textbf{Knocked Out} - If your life reaches 0 while your enemies are still acting, the rest of the enemies still perform their action. No remaining attack hits, but the enemies could still apply boons to themselves or each other. Afterwards, all of them rotate clockwise in the Cleanup step. 
+\textbf{Downed} - If your life reaches 0 you are downed. Your life cannot raise above 0 for the remainder of the fight. You may only play one card per turn while wounded.
 
-\begin{tcolorbox}[colframe=black, colback=white]
-	Hier könnte ihre Werbung stehen.
-\end{tcolorbox}
+\textbf{Enemy Focus} - Enemies will not finish a downed opponent. If your enemies are still acting, the rest of the enemies still perform their action. No remaining attack hits, but the enemies could still apply boons to themselves or each other. Afterwards, all of them rotate clockwise in the Cleanup step. When enemies rotate to you, immediately pass them to the next ally. You should have no enemy in front of you while downed. Your allies still have to defeat these enemies to win.
+
 
