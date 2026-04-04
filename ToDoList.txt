@@ -1,42 +1,37 @@
 https://spielematerial.de/
-
+Whenever:
 Events
+X-Cost decision talk
 
-what happens with negative modifier results rulebook
 
 AV
-sticker sheets
-
 Redo photo of play area
 	Add nubered annotation way bigger
 Redo Modifier Picture
 
-X-Cost decision talk
-
-dice talk -> replace modifiers?
-
-Sangromancer balance, is lifepay adjusted?
-rework pitch
-
-
 Photos überarbeiten
 Enemy pics.
-Example ABC, life arrows better
 Extra card examples
 
-Rename disengage maybe repel
+Component list redo
+Dice creation
+Fix Wyrmkin, Elements are too intense
 
+
+AM
 In Text enboldification
-
 rewrite modification passives
-
 Einlegeblätter
+Example ABC, life arrows better
 
-Componnt list redo
-
-Dice
+Dice notation def
+Dice template for printing
 
 Cleanup graphic redo with tapped cards
 also put some arrows on that picture
 
 rewrite life to starting life on all tableaus
+
+Both:
+Rename disengage maybe repel
+Silverkin Passive
