@@ -17,6 +17,9 @@ Component list redo
 Dice creation
 Fix Wyrmkin, Elements are too intense
 
+Cleanup graphic redo with tapped cards
+also put some arrows on that picture
+
 
 AM
 In Text enboldification
@@ -27,11 +30,10 @@ Example ABC, life arrows better
 Dice notation def
 Dice template for printing
 
-Cleanup graphic redo with tapped cards
-also put some arrows on that picture
 
 rewrite life to starting life on all tableaus
 Storybook
+redesign enemy and action cards
 
 Both:
 Rename disengage maybe repel
