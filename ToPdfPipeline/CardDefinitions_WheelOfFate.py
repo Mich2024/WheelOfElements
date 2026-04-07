@@ -619,7 +619,7 @@ class tableauRace:
             word = word.replace(",","")
             if(word.split(":")[0] in symbolDict):
             
-                line_mod += " " + symbolDict[word.split(":")[0]] + " " + word + " "
+                line_mod += " " + symbolDict[word.split(":")[0]]
 
             elif(word.split(":")[0].lower() == "draw"):
                 print(word)
@@ -669,10 +669,10 @@ class tableauRace:
         count = int(words_mod[0])
         line_mod = self.symbolify_mod(words_mod[1:])
 
-        template_mod_single = open('Templates/Modifier_Single.txt', 'r')
+        template_mod_single = open('Templates/Dice_Single.txt', 'r')
         template_mod_single = template_mod_single.read()
 
-        template_mod_single = template_mod_single.replace(r"${Mod}",line_mod).replace(r"${Species}",name_species)
+        template_mod_single = template_mod_single.replace(r"${Mod}",line_mod)
 
         res = ""
         for i in range(count):

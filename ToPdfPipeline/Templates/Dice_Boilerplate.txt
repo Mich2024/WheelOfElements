@@ -1,0 +1,26 @@
+[CardCount] = ${CardCount}
+
+[space_text_28] = 1
+[space_text_18] = 0.7
+
+[linestrength] = 0.1
+
+[vert_half] = 1.4/2
+[mod_y] = [vert_half] - [space_text_28]/2
+[full_hor] = 1.4
+
+CARDS=[CardCount]
+BORDER=ROUNDED,#000000,0.2
+UNIT=CM
+PAGE=21,29.7,PORTRAIT,HV
+DPI=300
+CARDSIZE=1.4,1.4
+BASERANGE=,ON
+
+${Utils}
+
+htmlfont=font_28_center,Arial,21,B,#000000,CENTER
+
+
+#Cards
+${Cards}
