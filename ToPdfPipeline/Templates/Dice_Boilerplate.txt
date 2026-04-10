@@ -6,11 +6,11 @@
 [linestrength] = 0.1
 
 [vert_half] = 1.4/2
-[mod_y] = [vert_half] - [space_text_28]/2
+[mod_y] = [vert_half] - [space_text_28]/2 + 0.05
 [full_hor] = 1.4
 
 CARDS=[CardCount]
-BORDER=ROUNDED,#000000,0.2
+BORDER=NONE,#000000,0.2
 UNIT=CM
 PAGE=21,29.7,PORTRAIT,HV
 DPI=300
@@ -20,7 +20,7 @@ BASERANGE=,ON
 ${Utils}
 
 htmlfont=font_28_center,Arial,21,B,#000000,CENTER
-
+CIRCLE = 1-[CardCount], [linestrength]/2, [linestrength]/2, 1.4-[linestrength], 1.4-[linestrength], #000000 ,#ffffff ,[linestrength]
 
 #Cards
 ${Cards}

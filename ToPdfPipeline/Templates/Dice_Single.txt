@@ -1,2 +1,2 @@
 
-htmltext = ${Order}, "${Mod}", 0 , [mod_y], [full_hor] - [linestrength], [space_text_28], #FFFFFF,0,T,100,font_28_center
+htmltext = ${Order}, "${Mod}", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
