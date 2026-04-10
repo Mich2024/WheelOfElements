@@ -486,6 +486,8 @@ class actionCard:
                     optCost += sym + " "
                 else:
                     optCost += c + " "
+        else: 
+            optCost = " - "
                     
 
         template_card = template_card.replace(r"${Opt_Cost}",optCost)
@@ -785,7 +787,7 @@ class statCard:
             lines_mods = self.tableau.serializeToNandeck(order)
             
 
-            template_line_life = template_line_life.replace(r"${Order}",str(order)).replace(r"${Life}",self.life)
+            template_line_life = template_line_life.replace(r"${Order}",str(order)).replace(r"${Life}",self.life.strip())
             template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",self.passive)
             template_race = template_race.replace(r"${Order}",str(order)).replace(r"${Race}", self.name )
             template_race = template_race.replace(r"${TierMod}",self.tierMods).replace(r"${TierPassive}",self.tierPassive)
@@ -798,8 +800,16 @@ class statCard:
 
             #print(self.passive)
 
-            passive_new = self.passive
+            passive_new = ""
 
+            for word in self.passive.split(" "):
+                if(word.split(":")[0] in symbolDict):
+                
+                    passive_new += " " + symbolDict[word.split(":")[0]] + " " + word + " "
+                else:
+                    passive_new += word + " "
+
+            passive_new = passive_new.strip()
             res = templateShingle.replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life)).replace(r"${Passive}", passive_new)
 
         return res

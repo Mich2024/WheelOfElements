@@ -1,4 +1,4 @@
-[CardCount] = 1
+[CardCount] = 2
 
 [col_bronze] = #CD7F32
 [col_silver] = #ACACAC
@@ -22,7 +22,7 @@
 
 
 CARDS=[CardCount]
-BORDER=ROUNDED,#000000,[linestrength]
+BORDER=ROUNDED,#000000,[linestrength]*2
 UNIT=CM
 PAGE=21,29.7,PORTRAIT,HV
 DPI=300
@@ -57,7 +57,7 @@ htmlfont=font_18,Arial,14,B,#000000,LEFT
 
 FONT = Arial, 18, B, #000000
 TEXT = 1, "Feral Instinct", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 1, "", [space_left] , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+htmltext = 1, "Cost:  - ", [space_left] , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
 htmltext = 1, "\symAddFire Fire: 1 <br>--- \symBlaze Blaze 2 --- <br> Per discarded Card: <br> Br: \symVulnerable Vulnerable <br> Silver: \symAddFire Fire:2 <br> Gold: \symAttack A:D6 <br> Mithril: Gain Full Life", [space_left] , 3,[full_hor], 5,#FFFFFF,0,T,100,font_18
 
@@ -68,3 +68,28 @@ FONT = Arial, 12, B, [col_gold]
 TEXT = 1, "Gold 3", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
 #Name, OptCost
 
+
+#Name, OptCost
+FONT = Arial, 18, B, #000000
+TEXT = 2, "Kerfuffle", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 2, "Cost: Opt \symAddEarth 2 ", [space_left] , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 2, "\symAttack A: D6 <br>--- Opt Paid ---", [space_left] , 4,[full_hor], 4,#FFFFFF,0,T,100,font_18
+
+IMAGE= 2, "..\..\Pictures\AOE\AoeCleave;3.png" , [space_left], 6, [full_hor], 2, 0, PN
+
+
+FONT = Arial, 12, B, #000000
+TEXT = 2, "Dwarf", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+FONT = Arial, 12, B, [col_silver]
+TEXT = 2, "Silver 2", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
+
+#Title
+LINE = 1-[CardCount], 0, [space_text_28] - 0.1, 6.35, [space_text_28] - 0.1, #000000, [linestrength]
+#Cost
+RECTANGLE = 1-[CardCount], 0,  [space_text_28] - 0.1, 4.5,  [space_text_28], #000000,empty, [linestrength]
+#Bottom
+LINE = 1-[CardCount], 0,  7.9, 6.35,  7.9, #000000, [linestrength]
+#LINE = 1-[CardCount], 3,  7.9, 3,  8.89, #000000, [linestrength]
+LINE = 1-[CardCount], 4.5,  7.9, 4.5,  8.89, #000000, [linestrength]

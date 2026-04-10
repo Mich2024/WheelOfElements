@@ -13,12 +13,12 @@
 
 [third_hor] = ((29.7-[space_left]-[space_right])/3)
 [quart_hor] = ((29.7-[space_left]-[space_right])/4)
+[CardCount] = 40
 
-CARDS=60
-BORDER=RECTANGLE
+CARDS=[CardCount]
+BORDER=RECTANGLE,#000000,[linestrength]*2
 UNIT=CM
 PAGE=21,29.7,LANDSCAPE,HV
-
 
 
 
@@ -26,4 +26,18 @@ DPI=300
 CARDSIZE=[quart_hor],[third_vert]
 BASERANGE=,ON
 
-RECTANGLE = 1-60, 0, 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount], 0, 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
+
+FONT = "Noto Sans Mono", 20, B, #000000
+TEXT = 1, "Toxicologist 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 1, "Passive:",   [linestrength]*2, [space_text_28] + [linestrength] , [quart_hor] - 4 * [linestrength], [space_text_18], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+TEXT = 1, "Poison is modified ",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] , LEFT, WORDWRAP
+TEXT = 1, "Maximum life:  3",   [linestrength]*2, [third_vert] - [linestrength] - [space_text_18], [quart_hor] - 4 * [linestrength], [space_text_18], LEFT, TOP
+#Life
+RECTANGLE = 1-[CardCount],  0, [third_vert] - [space_text_18] - [linestrength], [quart_hor] - 2.5 , [space_text_18] + [linestrength], #000000, empty, [linestrength]
+#Passive
+#RECTANGLE = 1-[CardCount],  0, [space_text_28] + [linestrength]*2, 2.5, [space_text_18], #000000, empty, [linestrength]
+#TitleSeparator
+LINE = 1-[CardCount],  0, [space_text_28] + [linestrength]*2, [quart_hor], [space_text_28] + [linestrength]*2, #000000, [linestrength]

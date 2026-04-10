@@ -16,10 +16,13 @@
 [CardCount] = ${CardCount}
 
 CARDS=[CardCount]
-BORDER=RECTANGLE
+BORDER=RECTANGLE,#000000,[linestrength]*2
 UNIT=CM
 PAGE=21,29.7,LANDSCAPE,HV
 
+${UtilsBoilerplate}
+
+htmlfont=font_12,Arial,10,B,#000000,LEFT
 
 DPI=300
 CARDSIZE=[quart_hor],[third_vert]

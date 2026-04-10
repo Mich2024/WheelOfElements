@@ -3,6 +3,6 @@ TEXT = ${Order}, "${Title}",   [linestrength]*2, [linestrength], [quart_hor] - 4
 FONT = "Noto Sans Mono", 14, B, #000000
 TEXT = ${Order}, "Passive:",   [linestrength]*2, [space_text_28] + [linestrength] , [quart_hor] - 4 * [linestrength], [space_text_18], LEFT, TOP
 FONT = "Noto Sans Mono", 12, B, #000000
-TEXT = ${Order}, "${Passive}",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] , LEFT, WORDWRAP
-TEXT = ${Order}, "Maximum life:  ${Life}",   [linestrength]*2, [third_vert] - [linestrength] - [space_text_18], [quart_hor] - 4 * [linestrength], [space_text_18], LEFT, TOP
+htmltext = ${Order}, "${Passive}",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_18
+TEXT = ${Order}, "Maximum life: ${Life}",   [linestrength]*2, [third_vert] - [linestrength] - [space_text_18], [quart_hor] - 4 * [linestrength], [space_text_18], LEFT, TOP
 

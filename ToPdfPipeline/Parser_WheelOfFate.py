@@ -542,7 +542,7 @@ def parseRacesAndClasses(files_Input):
 
     template_boilerplate_classes = open('Templates/Shingle_Class_Boilerplate.txt', 'r')
     template_boilerplate_classes = template_boilerplate_classes.read()
-    template_boilerplate_classes = template_boilerplate_classes.replace(r"${Classes}", nandeckStatCards).replace(r"${CardCount}", str(orderClasses-1))
+    template_boilerplate_classes = template_boilerplate_classes.replace(r"${Classes}", nandeckStatCards).replace(r"${CardCount}", str(orderClasses-1)).replace(r"${UtilsBoilerplate}", template_boilerplate)
 
 
     fileToPrint = open('out/classShingles.txt', 'w+')
