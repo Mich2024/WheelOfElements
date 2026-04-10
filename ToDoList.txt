@@ -14,8 +14,6 @@ Enemy pics.
 Extra card examples
 
 Component list redo
-Dice creation
-Fix Wyrmkin, Elements are too intense
 
 Cleanup graphic redo with tapped cards
 also put some arrows on that picture
