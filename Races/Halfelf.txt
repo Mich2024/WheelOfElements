@@ -1,7 +1,6 @@
 Passive
-You do not have a *0
+Better Dice
 #Gold + Bronze
-#0,5 Power per turn(Bronze Mod) -> Remove *0 add +0
 Life: 3
 
 TierCards: Silver
@@ -9,23 +8,19 @@ TierPassive: Bronze
 TierMods: Gold
 
 Modifier Tableau
-#(0,56); (0,94); (1,46)
 Rank:1
-Add 3 -1 Remove 1 *0
-Add 2 +1 Add 2 +2 Add 2 +3
-Remove 3 +0 Add 3 +2
-Remove 2 +0 Add 1 +7
+Add 2 -1 Add 3 +2
+Add 1 Stun Add 3 -1
+Add 3 +1
+Add 3 +1
 
-
-#2; 2 (+0,16)
 Rank:2
-Remove 1 +1 Add 1 +3
-Remove 1 +2 Add 1 +5
+Add 2 +1 Add 1 -1
+Add 2 +1 Add 1 -1
 
 
-#3 (+0,33)
 Rank:3
-Remove 2 +2 Add 2 +5
+Add 3 +1 Add 1 -1
 
 
 Type
