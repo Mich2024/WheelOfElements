@@ -1,5 +1,5 @@
 Passive
-Attacks can consume Stun on enemies to deal double damage
+Attacks can remove a Stun marker on enemies to deal double damage
 Life: 3
 
 Type

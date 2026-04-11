@@ -13,11 +13,11 @@ Modifier Tableau
 Rank:1
 Add 2 -1 Add 2 Water
 Add 4 -1 Add 1 +7
-Add 4 +2 Add 1 -5
+Add 4 Poison Add 1 -1
 Add 4 -1 Add 1 +7
 
 Rank:2
-Add 4 +2 Add 1 -7
+Add 4 Poison Add 1 -1
 Add 4 -1 Add 1 +5
 
 Rank:3

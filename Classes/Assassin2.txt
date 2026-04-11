@@ -1,5 +1,5 @@
 Passive
-You have Advantage against stunned enemies
+You roll your ancestry dice as if you had an extra Advantage against stunned enemies
 Life: 3
 
 Type

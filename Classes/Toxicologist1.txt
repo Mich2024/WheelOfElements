@@ -1,6 +1,6 @@
 Passive
 
-Poison is modified
+When you poison an enemy, roll your ancestry dice and apply their result to the poison like you would with an attack.
 
 Life: 3
 

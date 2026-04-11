@@ -13,12 +13,12 @@ Explanation:Blaze
 
 Tier1
 #3
-Name: "Fireball" ManaCost:Fire;X Text: "X can't be 0" A:X Aoe:Cleave;3
 Name: "Heart of Fire" Fire:2 Blaze:2 Fire:1
+Name: "Fire Breathing" ManaCost:Fire;3 A:1 Vulnerable Aoe:Cleave;2
 
 Tier2
 #5
-Name: "Fire Breathing" ManaCost:Fire;2 A:1 Vulnerable Aoe:Cleave;2
+Name: "Fireball" ManaCost:Fire;X Text: "X can't be 0" A:X Aoe:Cleave;3
 Name: "Scorch" Fire:1 A:2 Blaze:3 Vulnerable Vulnerable
 
 Tier3

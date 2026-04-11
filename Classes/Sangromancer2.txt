@@ -1,5 +1,6 @@
 Passive
-Healing is modified by the modifier deck
+
+When you heal an ally, roll your ancestry dice and apply their result to the heal like you would with an attack.
 Life: 3
 
 Type

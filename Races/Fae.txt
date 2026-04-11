@@ -40,7 +40,7 @@ Name: "Flyby" A:1 A:1
 Name: "Dust Cloud" A:2 Disengage
 
 #8
-Name: "Black Dust" ManaCost:Opt;Wood;3 A:3 Disengage Disengage Opt A:3 Powerful:2
+Name: "Black Dust" ManaCost:Opt;Wood;3 A:4 Disengage Opt A:3 Powerful:2
 
 #Add 3 -1 Add 3 Wood:1 +0
 #Add 2 +0 Add 4 +1

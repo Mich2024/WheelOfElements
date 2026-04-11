@@ -20,18 +20,9 @@ also put some arrows on that picture
 
 
 AM
-In Text enboldification
-rewrite modification passives
-Einlegeblätter
 Example ABC, life arrows better
 
-Dice notation def
-Dice template for printing
-
-
-rewrite life to starting life on all tableaus
-Storybook
-redesign enemy and action cards
+redesign enemy cards
 
 Both:
 Rename disengage maybe repel

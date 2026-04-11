@@ -47,11 +47,11 @@ TEXT = 1-[CardCount], "Mods",           0, [space_top]+[third_vert]*0, [space_te
 TEXT = 1-[CardCount], "Cards",        0, [space_top]+[third_vert]*1, [space_text_18], [third_vert], LEFT, TOP, 270
 TEXT = 1-[CardCount], "Passive",          0, [space_top]+[third_vert]*2, [space_text_18], [third_vert], LEFT, TOP, 270
 
-FONT = Arial, 28, B, #000000
+FONT = Arial, 18, B, #000000
 
 TEXT = 1-[CardCount], "Turn order",        [space_left] + [quart_hor] * 2, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], LEFT, TOP
-FONT = Arial, 18, B, #000000
-TEXT = 1-[CardCount], "1. Draw cards until hand is full \13\ 2. Roll enemy dice \13\ 3. Play two cards \13\ 4. Perform enemy actions \13\ 5. Rotate enemies and element wheel",  [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*1 + [space_text_28], [quart_hor]*2, [third_vert] - [space_text_28], LEFT, WORDWRAP
+FONT = Arial, 14, B, #000000
+TEXT = 1-[CardCount], " 1. Draw cards until hand is full \13\ 2. Roll enemy dice & Move ABC Enemies \13\ 3. Player Turn \13\         Start of turn effects \13\         Play two cards \13\         Perform enemy actions \13\ 4. Enemy Turn \13\ 5. Cleanup",  [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*1 + [space_text_28], [quart_hor]*2, [third_vert] - [space_text_28], LEFT, WORDWRAP
 
 
 RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 2, [space_top], [quart_hor], [third_vert], [col_gold], empty, [linestrength]
@@ -95,24 +95,71 @@ RECTANGLE = 1-[CardCount],[space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 
 TEXT = 1-[CardCount], 9 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 9 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 2, [len_hp_box], [len_hp_box], right, center
 
 RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 0 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
-TEXT = 1-[CardCount], 00 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 0 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 10 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 0 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
 RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 1 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
-TEXT = 1-[CardCount], 10 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 1 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 11 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 1 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
 RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 2 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
-TEXT = 1-[CardCount], 20 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 2 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 12 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 2 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
 RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 3 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
-TEXT = 1-[CardCount], 30 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 3 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 13 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 3 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
 RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 4 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
-TEXT = 1-[CardCount], 40 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 4 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 14 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 4 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
 
 
 RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 5 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
-TEXT = 1-[CardCount], 50 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 5 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 15 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 5 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
 RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 6 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
-TEXT = 1-[CardCount], 60 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 6 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 16 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 6 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
 RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 7 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
-TEXT = 1-[CardCount], 70 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 7 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 17 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 7 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
 RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 8 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
-TEXT = 1-[CardCount], 80 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 8 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 18 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 8 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
 RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 9 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
-TEXT = 1-[CardCount], 90 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 9 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 19 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 9 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
+
+
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 0 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 20 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 0 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 1 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 21 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 1 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 2 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 22 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 2 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 3 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 23 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 3 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 4 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 24 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 4 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], left, center
+
+
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 5 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 25 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 5 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 6 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 26 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 6 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 7 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 27 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 7 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 8 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 28 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 8 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 9 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 29 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 9 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 4, [len_hp_box], [len_hp_box], left, center
+
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 0 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 30 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 0 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 1 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 31 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 1 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 2 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 32 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 2 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 3 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 33 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 3 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 4 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 34 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 4 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], left, center
+
+
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 5 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 35 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 5 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 6 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 36 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 6 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 7 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 37 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 7 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 8 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 38 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 8 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], left, center
+RECTANGLE = 1-[CardCount], [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 9 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], #000000, empty, [linestrength]
+TEXT = 1-[CardCount], 39 , [space_left] * 3 + [quart_hor] * 1 + [space_hp_box] * 9 + 1, [space_top]+[third_vert]*2 + [space_hp_box] * 5, [len_hp_box], [len_hp_box], left, center

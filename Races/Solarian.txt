@@ -10,8 +10,8 @@ Modifier Tableau
 Rank:1
 Add 1 Fire Add 2 +1 Add 2 +2
 Add 3 -1 Add 1 -2
-Add 2 +1 Add 1 fire
-Add 2 +1 Add 1 fire
+Add 2 +1 Add 1 Fire
+Add 2 +1 Add 1 Fire
 
 Rank:2
 Add 1 +1
