@@ -22,14 +22,6 @@ also put some arrows on that picture
 AM
 Example ABC, life arrows better
 
-Koloss1:
-Name: "Rallying Cry" ManaCost:Metal;1 S:1 Advantage:2
-Toxico1:
-Name: "Strike" Ranged A:1
-Ass1:
-Name: "Strike" Ranged A:1
-Druid1:
-Name: "Temperance" ManaCost:Opt;Wood;2 Flurry:1 Opt Flurry:2
 
 Both:
 Rename disengage maybe repel

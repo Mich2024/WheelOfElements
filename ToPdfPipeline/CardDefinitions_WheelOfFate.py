@@ -48,6 +48,7 @@ symbolDict = {
     "E":r"\symEnergy",
     "Energy":r"\symEnergy",
     "A":r"\symAttack",
+    "Attack":r"\symAttack",
     "R":r"\symRanged",
     "Ranged":r"\symRanged",
     "T":r"\symTargets",

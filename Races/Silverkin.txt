@@ -1,5 +1,5 @@
 Passive
-When using advantage, you may add all routes instead of chosing one
+You may activate Advantage a second time on each roll of the ancesry dice
 #ensure all Cards silver and up have advantage
 Life: 3
 

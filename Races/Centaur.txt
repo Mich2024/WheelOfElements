@@ -33,7 +33,7 @@ Base Cards
 
 Tier1
 Name: "Bout" A:1 Blaze:1 A:1
-Name: "Strike" A:1 Ranged
+Name: "Strike" Ranged A:1 
 
 Tier2
 Name: "Punt" A:2 Disengage Blaze:1 A:1

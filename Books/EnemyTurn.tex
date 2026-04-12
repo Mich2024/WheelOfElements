@@ -16,12 +16,13 @@ After every player has finished playing their cards, move to the enemies turn. Y
 			\item \textbf{Life} - The life total is shown at the top right. When an enemy takes damage, place that many damage markers on that enemy. When the enemy has more damage markers than health, it dies
 			\item \textbf{Actions} - enemies have one of two action patterns:\\
 			\hspace*{1cm} \textbf{Dice} - Most enemies act according to the \hspace*{1cm} enemy die\\
-			\hspace*{0.9cm} \textbf{Rotating} - Some enemies rotate their \hspace*{1cm} actions in a pattern, indicated by letters
+			\hspace*{0.9cm} \textbf{ABC} - Some enemies repeat their \hspace*{1cm} actions in a pattern, indicated by letters. Track this by placing an enemy cube of their letter "A" at the start and the move the letter down each time they act.  When you reach the end, place the cube at the top again.
 		\end{enumerate}
 	\end{minipage}	
-	\begin{minipage}[t][5cm][t]{0.5\textwidth}
+	\begin{minipage}[t][10cm][t]{0.5\textwidth}
 		\centering
-		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/Monstercard.drawio.png}
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/MonsterCard.drawio.png}
+		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/MonsterCardABC.drawio.png}
 	\end{minipage}
 \end{figure}
 
@@ -32,12 +33,12 @@ To perform the enemy turn, look at the monster die,  and have the monster perfor
 Repeat once for every enemy. All enemies use the same \textbf{global monster die}.
 
 \begin{figure}[ht]
-	\begin{minipage}[t][8cm][t]{1\textwidth}
+	\begin{minipage}[t][7cm][t]{1\textwidth}
 		\centering
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/MonsterTurn.drawio.png}
 	\end{minipage}	
 \end{figure}
-
+\newpage
 \textbf{Downed} - If your life reaches 0 you are downed. Your life cannot raise above 0 for the \textbf{remainder of the fight}. You may only play \textbf{one card per turn} while wounded.
 
 \textbf{Enemy Focus} - Enemies will not finish a downed opponent. If your enemies are still acting, the rest of the enemies still perform their action. No remaining attack hits, but the enemies could still apply boons to themselves or each other. Afterwards, all of them rotate clockwise in the Cleanup step. When enemies rotate to you, immediately pass them to the next ally. You should have \textbf{no enemy in front of you while downed}. Your allies still have to defeat these enemies to win.
