@@ -1,5 +1,6 @@
 Passive
 Cards you play have Ranged
+(Powerful from your ancestry dice does not have ranged)
 Life: 3
 
 TierCards: Gold
@@ -8,7 +9,7 @@ TierMods: Silver
 
 Modifier Tableau
 Rank:1
-Add 3 Powerful Add 3 -2 Add 1 Fae
+Add 2 Powerful Add 2 -2 Add 1 Fae
 Add 3 Wood Add 1 -1 Add 1 Fae
 Add 1 Powerful Add 1 +1 Add 1 Wood Add 1 -1 Add 1 Fae
 Add 1 Powerful Add 1 +1 Add 1 Wood Add 1 -1 Add 1 Fae
