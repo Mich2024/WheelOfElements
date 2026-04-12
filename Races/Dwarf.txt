@@ -10,7 +10,7 @@ Modifier Tableau
 #(0,34); (0,84); (1,34);
 Rank:1
 #Size 18 Modifier Tableau
-Add 1 -2 Add 1 -1 Add 1 +0 Add 1 +1 Add 1 +2 Add 1 Dwarf
+Add 1 -2 Add 1 -1 Add 1 +1 Add 1 +2 Add 1 Dwarf
 Add 2 Earth Add 1 Dwarf
 Add 1 +3 Add 1 Dwarf
 Add 1 +3 Add 1 Dwarf

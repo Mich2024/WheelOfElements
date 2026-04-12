@@ -4,7 +4,7 @@ You have a single Mithril Card
 Life: 3
 
 TierCards: Gold
-TierPassive: Silver
+TierPassive: Bronze
 TierMods: Silver
 
 Modifier Tableau

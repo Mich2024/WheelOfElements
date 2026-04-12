@@ -16,7 +16,7 @@ Name: "Poison Shiv" ManaCost:Water;1 A:2 Text: "If the Attack dealt atleast 4 Da
 Tier3
 Name: "Clean Strike" Metal:2 A:3
 Name: "Slit Tendon" Advantage A:1 Stun
-Name: "Blade Flurry" ManaCost:Water;2 A:3 A:3 Text:"A:2 for each enemy you kill with this card"
+Name: "Bladestorm" ManaCost:Water;2 A:3 A:3 Text:"for each enemy you kill with this card A:2"
 
 
 

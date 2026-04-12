@@ -1,5 +1,6 @@
 Passive
 Redirect Overkill damage to an adjacent enemy
+(This is not an attack, and does not use your ancestry dice)
 Life: 3
 
 TierCards: Gold
@@ -11,8 +12,8 @@ Rank:1
 #Size 18 Modifier Tableau
 Add 3 +1 Add 2 +2 Add 1 Centaur
 Add 2 -1 Add 2 -2 Add 1 Centaur
-Add 3 -1 Add 3 +2 Add 1 Centaur
-Add 3 -1 Add 3 +2 Add 1 Centaur
+Add 1 -1 Add 2 +2 Add 1 Centaur
+Add 1 -1 Add 2 +2 Add 1 Centaur
 
 Rank:2
 Add 3 -1 Add 2 +2 Add 1 Centaur
