@@ -15,7 +15,7 @@ Name: "Earthen Heart" Earth:2
 Name: "Slash" ManaCost:Metal;2 Advantage A:4
 
 Tier2
-Name: "Shield Slam" ManaCost:Metal;1 S:1 Advantage:2
+Name: "Rallying Cry" ManaCost:Metal;1 S:1 Advantage:2
 Name: "Guard" Ranged S:1
 
 Tier3

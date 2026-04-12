@@ -1,5 +1,5 @@
 Passive
-Add 4 +2 Draw
+Gain a gold Ranger Ancestry Dice
 
 Life: 3
 

@@ -1,5 +1,5 @@
 Passive
-Add 3 +2 Draw
+Gain a silver Ranger Ancestry Dice
 
 Life: 3
 

@@ -3,7 +3,6 @@ When one of your enemies dies, Stun another
 
 Life: 3
 
-Modifiers
 
 Type
 Element: Water

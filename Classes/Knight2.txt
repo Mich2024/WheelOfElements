@@ -1,5 +1,5 @@
 Passive
-At the Start of the game, S:3 Advantage.
+At the start of each combat, Shield:3 Advantage
 #In your first turn, ignore elemental costs.
 #Treat Costs of X as 3 if you are not paying them.
 Life: 3

@@ -1,5 +1,5 @@
 Passive
-Whenever an enemy in your zone dies, another enemy gets vulnerable
+When on of your enemies dies, another enemy gets Vulnerable
 
 Life: 3
 

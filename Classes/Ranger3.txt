@@ -1,5 +1,5 @@
 Passive
-Add 6 +2 Draw
+Gain a mithril Ranger Ancestry Dice
 
 Life: 3
 

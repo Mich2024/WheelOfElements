@@ -1,5 +1,5 @@
 Passive
-When you consume X Fire, A:X
+When you consume X Fire , A:X
 
 Life: 1
 

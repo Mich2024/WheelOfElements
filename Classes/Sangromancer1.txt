@@ -1,6 +1,6 @@
 Passive
 #At the beginning of our turn, H:1
-After applying modifiers, you may pay 2 life to add 4 damage to the attack.
+After applying your ancestry dice, you may pay 2 life to add 4 damage to the Attack
 Life: 3
 
 Type

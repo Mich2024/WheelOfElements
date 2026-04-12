@@ -8,17 +8,17 @@ TierMods: Silver
 
 Modifier Tableau
 Rank:1
-Add 1 Fire Add 2 +1 Add 2 +2 Add 1 Silverkin
-Add 3 -1 Add 1 -2 Add 1 Silverkin
-Add 2 +1 Add 1 Fire Add 1 Silverkin
-Add 2 +1 Add 1 Fire Add 1 Silverkin
+Add 1 Fire Add 2 +1 Add 2 +2 Add 1 Solarian
+Add 3 -1 Add 1 -2 Add 1 Solarian
+Add 2 +1 Add 1 Fire Add 1 Solarian
+Add 2 +1 Add 1 Fire Add 1 Solarian
 
 Rank:2
-Add 1 +1 Add 1 Silverkin
-Add 1 +1 Add 1 Silverkin
+Add 1 +1 Add 1 Solarian
+Add 1 +1 Add 1 Solarian
 
 Rank:3
-Add 1 +1 Add 1 Fire Add 1 Silverkin
+Add 1 +1 Add 1 Fire Add 1 Solarian
 
 
 Type

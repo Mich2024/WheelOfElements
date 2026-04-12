@@ -1,7 +1,7 @@
 Passive
-At the beginning of your round, Fire:1
+At the beginning of your turn, Fire:1
 
-Life: 0
+Life: 1
 
 Type
 Element: Fire

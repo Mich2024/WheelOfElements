@@ -1,6 +1,6 @@
 Passive
 
-When you poison an enemy, roll your ancestry dice and apply their result to the poison like you would with an attack.
+When you Poison an enemy, roll your ancestry dice and apply their result to the Poison like you would with an attack.
 
 Life: 3
 
@@ -17,7 +17,7 @@ Explanation:Heal
 
 Tier1
 #3
-Name: "Strike" A:1
+Name: "Strike" Ranged A:1
 Name: "Heal" Ranged H:1
 
 Tier2

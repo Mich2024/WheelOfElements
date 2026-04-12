@@ -1,5 +1,5 @@
 Passive
-When you heal someone else, add H:+2
+When you Heal someone else, Heal for 2 more
 Life: 3
 
 Type

@@ -1,5 +1,5 @@
 Passive
-At the Start of the game draw 4 cards, then discard 4 cards
+At the Start of each combat draw 4 cards, then discard 4 cards
 Life: 3
 
 Type
