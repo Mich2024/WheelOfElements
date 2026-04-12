@@ -1,5 +1,5 @@
 Passive
-When an enemy moves to your zone, it gets vulnerable
+When an enemy moves to you, it gets Vulnerable
 Life: 4
 
 TierCards: Silver
