@@ -1,5 +1,6 @@
 Passive
 Cards you play have Ranged
+(Powerful from your ancestry dice does not have ranged)
 Life: 3
 
 TierCards: Gold

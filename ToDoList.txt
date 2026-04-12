@@ -10,7 +10,6 @@ Redo photo of play area
 Redo Modifier Picture
 
 Photos überarbeiten
-Enemy pics.
 Extra card examples
 
 Component list redo
@@ -18,9 +17,6 @@ Component list redo
 Cleanup graphic redo with tapped cards
 also put some arrows on that picture
 
-
-AM
-Example ABC, life arrows better
 
 
 Both:
