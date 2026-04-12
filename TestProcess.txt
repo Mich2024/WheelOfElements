@@ -1,7 +1,10 @@
 
 APriori Fragen:
 Wie of spielt ihr Brettspiele, und was für welche?
-
+Pascal, Husam, Siyabend: Dominion, catan,  Risiko, Werwölfe, 5 Minute dungeon, Blodd on the clocktower
+Pascal: alle 2 monate
+Husam: Alle zwei monate
+Siya: ale 4 monate
 Paul: alle zwei wochen, alles
 Cynthia: Nein
 Sarah: Ein Mal im Monat, Ko-Operatives
@@ -11,7 +14,8 @@ Sabine: ???
 Martin: ???
 
 Ist die erste Seite des regelwerks gut?
-
+Not very memorable, but alright i guess
+Rule 0 Good
 
 Welche passagen im Regelwerk sind gut/schlecht zu lesen? Vibes only
 Paul, Sarah, Cynthia:  Setup ist way more important than expected, put more effort
@@ -43,12 +47,26 @@ Zielerkenntnisse:
 
 Ancestry + Classes:
 Paul, Sarah, Cynthia: Silverkin, Pyro, Assassin ; Fae, Druid, Ranger; HalfElf, Assassin, Toxico
-DSA Truppe, Merman Toxico assassin, fae druid ranger, Half elf Knight Sangro, Dwarf Koloss Toico Drunken
+DSA Truppe, Merman Toxico assassin, fae druid ranger, Half elf Knight Pyro, Dwarf Koloss Toico Drunken
+#Husam Centaur Pyro2 Ranger Berserker
+#Pascal Halfelf Ass3 Knight
+#Siyabend Dwarf Berserker3 Sangro
+
+
+
 Im falle von Regelwerk gelesen: ist es verständlich? Wird es korrekt gespielt?
 Status are hard, mods on everything disregarded, Class1 duplicate cards
-Brain damage um kapitel "combat" rum 2x observed
+#Brain damage um kapitel "combat" rum 2x observed
+
+#Enemy dice rolled just once and not once per enemy
+#Play cards in response to knowing enemy action
+#Pyro check vuln amount
 Was sind häufige Fehler
-Overheal
+#Overheal
+#Forgetting, literally everything.
+#AOE rerolle ancestry dice each time
+#Tile placement on level up
+#Tremendous aura
 DECK != ACTION DECK
 Not replacing cards on level-up
 Enemy keywords, especially the chain disengage ones
@@ -59,17 +77,29 @@ Verständlichkeit der karten?
 Paul, Sarah, Cynthia:  New line -> New target
 Wann fließt das spiel gut? Als Zeitpunkt in Kampf X
 Paul, Sarah, Cynthia:  Nein!? Spieler waren immer ahrt am reden. War auch nötig wegen balance
+DSA: not really, etwas gegen ende runde 2
+#Studienboys: Mitte anfang runde 2
 Gibt es teile des Spiels die nie fließen?
+#poison :V
 Paul, Sarah, Cynthia:  Wer braucht Flurry?, Ranged sarah Fee
 Wo haben die Spieler am meisten Spaß?
 Paul, Sarah, Cynthia:  Combos innerhalb des decks
+#actually getting it
 Wie sieht die Spaßkurve über Zeit aus?
 Paul, Sarah, Cynthia:  nach oben???
+DSA: generall nach oben, massic runter nach tod
+Studienboys: steil nach oben, tod ist jetzt eine upside
 Endet das spiel auf dem Richtigen Zug?
 Paul, Sarah, Cynthia:  alle tot, way too early
+DSA: Zu lange
+Studienboys: ja, relativ konsistent runde 5
 Wie viel Zeit kostet alles? -> Minuten
 Paul, Sarah, Cynthia:  1.75 h Regeln, 1.5 h Spielen eine runde bis zum Tod
+DSA: zu lange
+Studienboys, Regeln, 1.5~2h Pascal schnell, Husam slow. Spielen Runde 1: 1.5h Runde 2&3: 45 Min
 
 
 Overheal???
 
+Rename ancestry dice to attack dice
+Behead 2D6 Rewrite
