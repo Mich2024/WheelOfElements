@@ -37,5 +37,5 @@ Both:
 Rename disengage maybe repel
 Silverkin Passive
 
-
+card changes:
 bladefurry->bladestorm
