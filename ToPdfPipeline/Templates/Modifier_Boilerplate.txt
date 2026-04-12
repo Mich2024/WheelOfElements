@@ -11,7 +11,7 @@
 [size_sym] = 0.55
 
 CARDS=[CardCount]
-BORDER=ROUNDED,#000000,[linestrength]
+BORDER=ROUNDED,#000000,[linestrength]*2
 UNIT=CM
 PAGE=21,29.7,PORTRAIT,HV
 DPI=300

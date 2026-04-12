@@ -1,2 +1,2 @@
-RECTANGLE = ${Order}, [space_left] ,  ${StartActions} - [space_text_18],[full_hor_passive],[space_text_18] - [linestrength], #000000, empty, [linestrength]
-htmltext = ${Order}, "${Passive}",[space_left] ,  ${StartActions} - [space_text_18],[full_hor_passive],[space_text_18] ,#FFFFFF,0,T,100,font_18
+RECTANGLE = ${Order}, [space_left] ,  ${StartActions} - [space_text_18] + [linestrength] ,[full_hor_passive],[space_text_18] - [linestrength], #000000, empty, [linestrength]
+htmltext = ${Order}, "${Passive}",[space_left] ,  ${StartActions} - [space_text_18]  + [linestrength],[full_hor_passive],[space_text_18] ,#FFFFFF,0,T,100,font_18

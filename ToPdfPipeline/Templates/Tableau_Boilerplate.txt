@@ -67,7 +67,13 @@ TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 1  + [lines
 RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], [col_silver], empty, [linestrength]
 TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 0  + [linestrength], [space_top]  + [third_vert] * 2 + [linestrength], [quart_hor] - [linestrength] * 2, [space_text_18], left, center
 
-
+RECTANGLE = 1-[CardCount],  [space_left] + [quart_hor] * 0.5 - [len_hp_box], [space_top] + 2.5 + [third_vert] * 0,[len_hp_box]*2, [len_hp_box]*2 ,#CC0000,#CC0000,[linestrength]
+RECTANGLE = 1-[CardCount],  [space_left] + [quart_hor] * 1.5 - [len_hp_box], [space_top] + 2.5 + [third_vert] * 0,[len_hp_box]*2, [len_hp_box]*2 ,#0000CC,#0000CC,[linestrength]
+RECTANGLE = 1-[CardCount],  [space_left] + [quart_hor] * 2.5 - [len_hp_box], [space_top] + 2.5 + [third_vert] * 0,[len_hp_box]*2, [len_hp_box]*2 ,[col_gold],[col_gold],[linestrength]
+RECTANGLE = 1-[CardCount],  [space_left] + [quart_hor] * 3.5 - [len_hp_box], [space_top] + 2.5 + [third_vert] * 0,[len_hp_box]*2, [len_hp_box]*2 ,[col_gold],[col_gold],[linestrength]
+RECTANGLE = 1-[CardCount],  [space_left] + [quart_hor] * 0.5 - [len_hp_box], [space_top] + 2.5 + [third_vert] * 1,[len_hp_box]*2, [len_hp_box]*2 ,[col_bronze],[col_bronze],[linestrength]
+RECTANGLE = 1-[CardCount],  [space_left] + [quart_hor] * 1.5 - [len_hp_box], [space_top] + 2.5 + [third_vert] * 1,[len_hp_box]*2, [len_hp_box]*2 ,[col_bronze],[col_bronze],[linestrength]
+RECTANGLE = 1-[CardCount],  [space_left] + [quart_hor] * 0.5 - [len_hp_box], [space_top] + 2.5 + [third_vert] * 2,[len_hp_box]*2, [len_hp_box]*2 ,[col_silver],[col_silver],[linestrength]
 
 #HP Boxes
 TEXT = 1-[CardCount], "Life Pool",   [space_left] + [quart_hor] * 1 + [linestrength] + 2, [space_top]+[third_vert]*2+ [linestrength]+1, [quart_hor], [space_text_28], LEFT, TOP

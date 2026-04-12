@@ -8,17 +8,17 @@ TierMods: Silver
 
 Modifier Tableau
 Rank:1
-Add 3 Powerful Add 3 -2
-Add 3 Wood Add 1 -1
-Add 1 Powerful Add 1 +1 Add 1 Wood Add 1 -1
-Add 1 Powerful Add 1 +1 Add 1 Wood Add 1 -1
+Add 3 Powerful Add 3 -2 Add 1 Fae
+Add 3 Wood Add 1 -1 Add 1 Fae
+Add 1 Powerful Add 1 +1 Add 1 Wood Add 1 -1 Add 1 Fae
+Add 1 Powerful Add 1 +1 Add 1 Wood Add 1 -1 Add 1 Fae
 
 Rank:2
-Add 1 +1
-Add 1 +1
+Add 1 +1 Add 1 Fae
+Add 1 +1 Add 1 Fae
 
 Rank:3
-Add 2 +1
+Add 2 +1 Add 1 Fae
 
 
 Type

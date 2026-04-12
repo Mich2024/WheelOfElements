@@ -9,18 +9,18 @@ TierMods: Gold
 
 Modifier Tableau
 Rank:1
-Add 2 -1 Add 3 +2
-Add 1 Stun Add 3 -1
-Add 3 +1
-Add 3 +1
+Add 2 -1 Add 3 +2 Add 1 HalfElf
+Add 1 Stun Add 3 -1 Add 1 HalfElf
+Add 3 +1 Add 1 HalfElf
+Add 3 +1 Add 1 HalfElf
 
 Rank:2
-Add 2 +1 Add 1 -1
-Add 2 +1 Add 1 -1
+Add 2 +1 Add 1 -1 Add 1 HalfElf
+Add 2 +1 Add 1 -1 Add 1 HalfElf
 
 
 Rank:3
-Add 3 +1 Add 1 -1
+Add 3 +1 Add 1 -1 Add 1 HalfElf
 
 
 Type

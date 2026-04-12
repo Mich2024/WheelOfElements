@@ -8,17 +8,17 @@ TierMods: Gold
 
 Modifier Tableau
 Rank:1
-Add 2 H:1 Add 2 +1
-Add 3 -1
-Add 3 +1
-Add 3 +1
+Add 2 H:1 Add 2 +1 Add 1 Wyrmkin
+Add 3 -1 Add 1 Wyrmkin
+Add 3 +1 Add 1 Wyrmkin
+Add 3 +1 Add 1 Wyrmkin
 
 Rank:2
-Add 1 +1
-Add 1 +1
+Add 1 +1 Add 1 Wyrmkin
+Add 1 +1 Add 1 Wyrmkin
 
 Rank:3
-Add 2 +1
+Add 2 +1 Add 1 Wyrmkin
 
 Type
 #Element: Water Wood

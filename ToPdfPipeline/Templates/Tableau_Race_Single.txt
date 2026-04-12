@@ -2,7 +2,6 @@
 FONT = Arial, 28, B, #000000
 TEXT = ${Order}, "${Race}", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
 FONT = Arial, 18, B, #000000
-${Mods}
 ${Passive}
 ${Life}
 RECTANGLE = ${Order}, [space_left] + [quart_hor] * 0, [space_top], [quart_hor] * 2, [third_vert], ${TierMod}, empty, [linestrength]

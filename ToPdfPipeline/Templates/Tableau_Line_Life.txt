@@ -1,1 +1,1 @@
-TEXT = ${Order}, "Maximum Life: ${Life}",   [space_left] + [quart_hor] * 3  + [linestrength], [space_top]+[third_vert]*3 - [space_text_28] * 2, [quart_hor], [space_text_28], LEFT, WORDWRAP
+TEXT = ${Order}, "Maximum Life: ${Life}",   [space_left] + [quart_hor] * 3  + [linestrength], [space_top]+[third_vert]*3 - [space_text_18] - [linestrength], [quart_hor], [space_text_18], LEFT, WORDWRAP

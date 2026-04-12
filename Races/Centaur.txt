@@ -9,17 +9,17 @@ TierMods: Bronze
 Modifier Tableau
 Rank:1
 #Size 18 Modifier Tableau
-Add 3 +1 Add 2 +2
-Add 2 -1 Add 2 -2
-Add 3 -1 Add 3 +2
-Add 3 -1 Add 3 +2
+Add 3 +1 Add 2 +2 Add 1 Centaur
+Add 2 -1 Add 2 -2 Add 1 Centaur
+Add 3 -1 Add 3 +2 Add 1 Centaur
+Add 3 -1 Add 3 +2 Add 1 Centaur
 
 Rank:2
-Add 3 -1 Add 2 +2
-Add 3 -1 Add 2 +2
+Add 3 -1 Add 2 +2 Add 1 Centaur
+Add 3 -1 Add 2 +2 Add 1 Centaur
 
 Rank:3
-Add 2 -1 Add 2 +2
+Add 2 -1 Add 2 +2 Add 1 Centaur
 
 Type
 Element:FireEarth

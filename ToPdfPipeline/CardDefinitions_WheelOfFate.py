@@ -784,14 +784,14 @@ class statCard:
             
 
             
-            lines_mods = self.tableau.serializeToNandeck(order)
+            #lines_mods = self.tableau.serializeToNandeck(order)
             
 
             template_line_life = template_line_life.replace(r"${Order}",str(order)).replace(r"${Life}",self.life.strip())
             template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",self.passive)
             template_race = template_race.replace(r"${Order}",str(order)).replace(r"${Race}", self.name )
             template_race = template_race.replace(r"${TierMod}",self.tierMods).replace(r"${TierPassive}",self.tierPassive)
-            res = template_race.replace(r"${Mods}", lines_mods).replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive)
+            res = template_race.replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive)
 
         else:
             title = self.name + " " + str(self.rank)
@@ -1000,9 +1000,8 @@ class monsterAICard:
                     elif(count_dice_remaining == 0):
                         nanDeckDice += template_monster_line_dice.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(2*count_action_curr + flag_second_row)).replace(r"${PosXAction}", "0.2")
                 except: #abc
-                    #TODO
                     dice += roll.strip()
-                    nanDeckDice += template_monster_line_box.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(2*count_action_curr + flag_second_row))
+                    nanDeckDice += template_monster_line_box.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(2*count_action_curr + flag_second_row)+ " + 0.3 ")
                 
             action = action[1:]
             html_act = serializeMonsterActionToNanDeck(action)
