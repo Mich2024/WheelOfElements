@@ -17,6 +17,8 @@ also put some arrows on that picture
 Berserker Feral Instinct rework
 assassin 2 passive rework
 
+blaze less attention drawing
+
 AM
 Targeting Pics
 Bandit leader double action active
@@ -36,6 +38,9 @@ komplettkartenverzierung
 Both:
 Rename disengage maybe repel
 Silverkin Passive
+
+change half elf and fae, change half elf passive to no ancestry dice, just powerful ??
+	- other option: reminder is 1 dmg, one max life, red: 5 sides +1, blue: all sides 0
 
 card changes:
 bladefurry->bladestorm
