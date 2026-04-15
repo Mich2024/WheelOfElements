@@ -8,6 +8,16 @@ AV
 Berserker Feral Instinct rework
 assassin 2 passive rework
 
+Ancestry / Class Overview & Strategy Guide:
+    Each Ancestry & class should have:
+        Lore
+        Elements
+        Boons/Banes
+        Card Examples (2~3)
+        Gameplay advice
+        Passives
+    Strategy Guide
+
 AM
 Targeting Pics
 Bandit leader double action active

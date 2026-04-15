@@ -1,9 +1,13 @@
 
 FONT = Arial, 28, B, #000000
 TEXT = ${Order}, "${Race}", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
-FONT = Arial, 18, B, #000000
+FONT = Arial, 12, B, #000000
 ${Passive}
 ${Life}
-RECTANGLE = ${Order}, [space_left] + [quart_hor] * 0, [space_top], [quart_hor] * 2, [third_vert], ${TierMod}, empty, [linestrength]
-TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 0  + [linestrength], [space_top] + [linestrength], [quart_hor] - [linestrength] * 2, [space_text_18], left, center
-RECTANGLE = ${Order}, [space_left] + [quart_hor] * 3, [space_top] + [third_vert] * 2, [quart_hor], [third_vert], ${TierPassive}, empty, [linestrength]
+
+RECTANGLE = ${Order}, [space_left] + [quart_hor] * 0 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], ${TierMod}, empty, [linestrength]
+RECTANGLE = ${Order}, [space_left] + [quart_hor] * 1 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], ${TierMod}, empty, [linestrength]
+RECTANGLE = ${Order}, [space_left] + [quart_hor] * 3 + [linestrength]/2, [space_top] + [third_vert] * 2 + [linestrength]/2, [quart_hor]- [linestrength], [third_vert]- [linestrength], ${TierPassive}, empty, [linestrength]
+
+LINE = ${Order}, [quart_hor] * 1 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 1 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  ${TierMod}, [linestrength]
+LINE = ${Order}, [quart_hor] * 2 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 2 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  ${TierMod}, [linestrength]
