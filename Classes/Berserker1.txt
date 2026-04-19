@@ -20,4 +20,4 @@ Name: "Scar" A:D6 Blaze:2 Fire:1 Disengage
 Name: "Rampage" A:D6 Blaze:3 Fire:4
 
 Tier3
-Name: "Behead" A:2D6
+Name: "Aggression" Fire:1 A:4

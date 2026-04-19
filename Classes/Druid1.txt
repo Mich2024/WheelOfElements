@@ -1,5 +1,5 @@
 Passive
-When you hit your species picture on the red ancestry dice, gain Flurry:1
+At the beginning of combat, Wood:2
 Life: 3
 
 Type
@@ -9,7 +9,7 @@ Explanation:Powerful
 Explanation:Flurry
 
 Tier1
-Name: "Temperance" ManaCost:Opt;Wood;2 Flurry:1 Opt Flurry:2
+Name: "Strike" Ranged A:1
 Name: "Vengeance" Ranged Powerful:2
 
 Tier2

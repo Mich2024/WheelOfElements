@@ -17,13 +17,11 @@ Base Cards
 
 Tier1
 #3
-Name: "Hype" Powerful Powerful
+Name: "Hype" ManaCost:Fire;1 Powerful:3
 Name: "Harass" Flurry Text: "Your flurries have Ranged this turn"
 
 Tier3
 #8
-Name: "Prey Upon" Ranged Wood:2 Vulnerable Vulnerable
-Name: "Execute" Ranged A:5
-Name: "Onsaulght" Powerful A:1 Vulnerable
-
-
+Name: "Prey Upon" Ranged Wood:2 Vulnerable:2
+Name: "Execute" Wood:1 Ranged A:4
+Name: "Onsaulght" ManaCost:Fire;1 Powerful Vulnerable Flurry
