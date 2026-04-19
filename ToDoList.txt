@@ -6,6 +6,7 @@ X-Cost decision talk
 
 ############
 AV
+\textit{see Boons \& Banes, page \pageref{Section_BoonsBanes}}
 Berserker Feral Instinct rework
 assassin 2 passive rework
 
@@ -22,6 +23,9 @@ Ancestry / Class Overview & Strategy Guide:
 
 ############
 AM
+bild abc turnorder
+Bild Opt cost pfeil
+Opt dicker(cenTern)
 Targeting Pics
 Bandit leader double action active
 bandit trapper als ABC gegner?
@@ -50,11 +54,6 @@ Summed up life totals
 Both:
 Rename disengage maybe repel
 Silverkin Passive
-
-Fedback pascal:
-intro: zusammenfassung des rundenablaufs
-intro: make it clear that you can multiclass
-Clarify element placement in inne wheel
 
 change half elf and fae, change half elf passive to no ancestry dice, just powerful ??
 	- other option: reminder is 1 dmg, one max life, red: 5 sides +1, blue: all sides 0

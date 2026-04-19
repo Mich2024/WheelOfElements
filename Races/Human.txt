@@ -41,7 +41,7 @@ Name: "Fighter" A:1 Shield
 Name: "Guard" Ranged Shield Disengage Disengage
 
 Tier4
-Name: "Smite" A:9
+Name: "Smite" A:10
 
 
 #"Crush" A:6 S:2
