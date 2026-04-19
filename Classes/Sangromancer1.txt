@@ -1,5 +1,5 @@
 Passive
-#At the beginning of our turn, H:1
+#At the beginning of our turn, H:2
 After applying your ancestry dice, you may pay 2 life to add 4 damage to the Attack
 Life: 3
 
@@ -17,7 +17,7 @@ Name: "Bloody Strike" Ranged A:3 Text: "Lose 1 life"
 Tier2
 #Name: "Razor Petals" ManaCost:Wood;1 A:4 A:4 Text: "Lose 4 life"
 Name: "Blood Petals" ManaCost:Wood;1 A:4 A:4 Text: "Lose 2 life"
-Name: "Healing Rain" Water:1 Ranged A:1 H:1 
+Name: "Healing Rain" Water:1 Ranged A:1 H:2 
 
 Tier3
 Name: "Take a Bite" ManaCost:Wood;2 A:3 H:X Text: "X is your damage dealt"

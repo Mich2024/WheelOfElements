@@ -1,5 +1,5 @@
 Passive
-When one of your enemies dies, H:2
+When one of your enemies dies, H:4
 
 Life: 4
 
