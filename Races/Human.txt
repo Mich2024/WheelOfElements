@@ -1,6 +1,6 @@
 Passive
 #Gold + Bronze
-You have a single Mithril Card
+You have a single Diamond Tier card,
 Life: 3
 
 TierCards: Gold
