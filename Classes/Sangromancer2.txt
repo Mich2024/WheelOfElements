@@ -12,16 +12,16 @@ Explanation:Poison
 
 Tier1
 Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 A:3 Ranged
-Name: "Transfusion" Ranged Text: "Loose X Life. X Cannot be more than your current life" H:X+1 
+Name: "Transfusion" Ranged Text: "Loose X Life. X Cannot be more than your current life" H:X+2 
 
 Tier3
 Name: "Shred" ManaCost:Wood;2 A:9
 Name: "Wrath" A:X Text: "X is your missing life. X cant be more than 10"
-Name: "Calming Presence" H:1 Text: "Also target the players next to you"
+Name: "Calming Presence" H:2 Text: "Also target the players next to you"
 
 
 
-#Name: "Cleanse" Water:4 Ranged H:1 Text: "Remove all debuffs from your target. Lose 2 life"
+#Name: "Cleanse" Water:4 Ranged H:2 Text: "Remove all debuffs from your target. Lose 2 life"
 
 
 

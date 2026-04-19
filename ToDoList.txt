@@ -5,19 +5,19 @@ X-Cost decision talk
 
 
 AV
-Redo photo of play area
-	Add nubered annotation way bigger
-Redo Modifier Picture
-
-Photos überarbeiten
-
-Component list redo
-Cleanup graphic redo with tapped cards
-also put some arrows on that picture
 Berserker Feral Instinct rework
 assassin 2 passive rework
 
 blaze less attention drawing
+Ancestry / Class Overview & Strategy Guide:
+    Each Ancestry & class should have:
+        Lore
+        Elements
+        Boons/Banes
+        Card Examples (2~3)
+        Gameplay advice
+        Passives
+    Strategy Guide
 
 AM
 Targeting Pics
@@ -35,6 +35,8 @@ recommended beginner classes
 
 komplettkartenverzierung
 
+
+
 Both:
 Rename disengage maybe repel
 Silverkin Passive
@@ -44,3 +46,32 @@ change half elf and fae, change half elf passive to no ancestry dice, just power
 
 card changes:
 bladefurry->bladestorm
+Ranger_1
+Ranger_2
+Name: "Shred" ManaCost:Fire;3 Flurry:4
+Name: "Mulch" ManaCost:Fire;1 Wood:4
+
+Name: "Aggression" Fire:1 A:4
+Name: "Behead" ManaCost:Earth;1 A:2*D6
+Name: "Faithless Looting" Text: "Draw two cards" Blaze:2 A:6
+
+Druid 1 Passive
+
+
+Name: "Splash" ManaCost:Wood;2 Water:2 H:4
+Name: "Leeching Brambles" ManaCost:Wood;2 A:1 H:4
+Name: "Wellspring" Water:2 H:2
+Name: "Healing Rain" Water:1 Ranged A:1 H:2
+Name: "Calming Presence" H:2 Text: "Also target the players next to you"
+Name: "Transfusion" Ranged Text: "Loose X Life. X Cannot be more than your current life" H:X+2
+
+Name: "Heal" Ranged H:2
+Druid_2
+Druid_3
+
+Name: "Heal" Ranged H:2
+
+Name: "Chug" H:4
+
+Name: "Toxic Flask" ManaCost:Opt;Water;2 Poison:3 Disengage Opt H:4
+Toxico_2 passive

@@ -18,14 +18,14 @@ Base Cards
 
 Tier1
 #3
-Name: "Hunters Mark" ManaCost:Fire;2 Ranged A:3 Vulnerable
+Name: "Barrage" ManaCost:Fire;1 Flurry:2
 Name: "Pocket Sand" Wood Ranged Disengage
 
 Tier2
 #5
-Name: "Hail of arrows" Ranged A:1 Flurry
-Name: "Snipe" Wood Ranged A:2  
+Name: "Hail of arrows" Flurry:2 Text: "Your flurries have Ranged this turn"
+Name: "Hunters Mark" ManaCost:Fire;2 Ranged Vulnerable Flurry:2
 
 Tier3
 #8
-Name: "Twinshot" Wood A:2 Flurry 
+Name: "Twinshot" Wood:2 Flurry:2

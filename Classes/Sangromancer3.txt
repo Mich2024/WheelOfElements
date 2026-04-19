@@ -1,5 +1,5 @@
 Passive
-At the beginning of our turn, Heal:1
+At the beginning of our turn, Heal:2
 Life: 3
 
 Type
@@ -8,10 +8,10 @@ Element: Wood
 
 Tier1
 Name: "Nightshade" ManaCost:Wood;1 Poison:2 A:1
-Name: "Splash" ManaCost:Wood;2 Water:2 H:2
-Name: "Leeching Brambles" ManaCost:Wood;2 A:1 H:2
+Name: "Splash" ManaCost:Wood;2 Water:2 H:4
+Name: "Leeching Brambles" ManaCost:Wood;2 A:1 H:4
 
 Tier2
-Name: "Wellspring" Water:2 H:1
+Name: "Wellspring" Water:2 H:2
 #Name: "Flay" A:4 Poison:2 Text: "Lose 5 life." Text: "If this was your second card, repeat this card."
 Name: "Flay" A:4 Poison:2 Text: "Lose 3 life." Text: "If this was your second card, repeat this card."
