@@ -1,5 +1,5 @@
 Passive
-Increased Max life
++3 Starting Life (already Included)
 Life: 6
 
 TierCards: Silver

@@ -1,5 +1,5 @@
 Passive
-When making an attack, first modify it, and then select a target.
+When attacking, first modify it, then select a target.
 #Falls problematisch, Play with top Card of modifierdeck revealed
 Life: 3
 

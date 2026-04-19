@@ -9,6 +9,7 @@ AV
 Berserker Feral Instinct rework
 assassin 2 passive rework
 
+blaze less attention drawing
 Ancestry / Class Overview & Strategy Guide:
     Each Ancestry & class should have:
         Lore
@@ -29,7 +30,8 @@ remove skittish in tutorial round
 centaur overkil no boons&banes
 Clarify D6 AOE
 
-1Hochgehobener life pool in 3d print tableau
+htmltext for tablea passive
+
 Skew bandit raider to weakness
 clarify stun and multiattacks
 recommended beginner classes
@@ -53,6 +55,9 @@ Fedback pascal:
 intro: zusammenfassung des rundenablaufs
 intro: make it clear that you can multiclass
 Clarify element placement in inne wheel
+
+change half elf and fae, change half elf passive to no ancestry dice, just powerful ??
+	- other option: reminder is 1 dmg, one max life, red: 5 sides +1, blue: all sides 0
 
 ############
 card changes:
