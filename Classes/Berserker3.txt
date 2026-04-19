@@ -16,7 +16,7 @@ Element: Earth
 Tier1
 Name: "Heart of Fire" Fire:2
 Name: "Heart of Fire" Fire:2
-Name: "Fiery Punch" ManaCost:Earth;2 Ranged Vulnerable A:D4
+Name: "Earthen Punch" ManaCost:Earth;2 Ranged Vulnerable A:D6
 
 Tier2
 Name: "Rage" Text:"Draw a card" Blaze:3 Text:"You may play the discarded cards. You still have to pay their costs"

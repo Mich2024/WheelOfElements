@@ -1,5 +1,5 @@
 Passive
-Improved Ancestry Dice. The Stun from your ancestry dice can hit anyone, and not just your target.
+Improved Ancestry Dice. The Stun from your ancestry dice can hit anyone, not just the Attack target.
 #Gold + Bronze
 Life: 3
 
