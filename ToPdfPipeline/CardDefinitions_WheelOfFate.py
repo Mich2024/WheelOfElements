@@ -292,7 +292,7 @@ def serializeActionToNanDeck(inputActions):
             
             else:
                 if action.casefold() == "opt":
-                    res += "--- Opt Paid --- "
+                    res += "------ Opt Paid ------ "
 
                 elif action.split(":")[0].casefold() == "blaze":
                     res += r"--- \symBlaze Blaze " + action.split(":")[1] + " --- "
@@ -328,7 +328,7 @@ def serializeMonsterActionToNanDeck(inputActions):
             
             else:
                 if action.casefold() == "opt":
-                    res += "--- Opt Paid --- "
+                    res += "------ Opt Paid ------ "
 
                 elif action.split(":")[0].casefold() == "blaze":
                     res += r"--- \symBlaze Blaze " + action.split(":")[1] + " --- "

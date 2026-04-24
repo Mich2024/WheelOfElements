@@ -25,18 +25,12 @@ Ancestry / Class Overview & Strategy Guide:
 AM
 bild abc turnorder
 Bild Opt cost pfeil
-Opt dicker(cenTern)
 Targeting Pics
-Bandit leader double action active
-bandit trapper als ABC gegner?
-optional hardcore downed
 remove skittish in tutorial round
-centaur overkil no boons&banes
 Clarify D6 AOE
 
 htmltext for tablea passive
 
-Skew bandit raider to weakness
 clarify stun and multiattacks
 recommended beginner classes
 
@@ -47,7 +41,6 @@ go over whole document with vscode to harmonize:
     Capitalization
 
 Summed up life totals
-
 
 
 ############

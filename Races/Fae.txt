@@ -9,10 +9,10 @@ TierMods: Silver
 
 Modifier Tableau
 Rank:1
-Add 2 Powerful Add 2 -2 Add 1 Fae
-Add 3 Wood Add 1 -1 Add 1 Fae
-Add 1 Powerful Add 1 +1 Add 1 Wood Add 1 -1 Add 1 Fae
-Add 1 Powerful Add 1 +1 Add 1 Wood Add 1 -1 Add 1 Fae
+Add 2 +2 Add 2 -2 Add 1 Fae
+Add 3 +1 Add 1 -1 Add 1 Fae
+Add 1 +2 Add 2 +1 Add 1 -1 Add 1 Fae
+Add 1 +2 Add 2 +1 Add 1 -1 Add 1 Fae
 
 Rank:2
 Add 1 +1 Add 1 Fae
@@ -23,25 +23,23 @@ Add 2 +1 Add 1 Fae
 
 
 Type
-Element:Wood
+#Element:MetalWater
 
-Explanation:Powerful
+Explanation:Stun
 
 Base Cards
 
 Tier1
-#3
-Name: "Heart of Wood" Wood:2 
-Name: "Annoy" ManaCost:Opt;Wood;1 A:1 Opt Powerful:2
-Name: "Hype" Wood:1 Powerful
+#2
+Name: "Fly away" Disengage Disengage
+Name: "Strike" Ranged A:1
+Name: "Strike" Ranged A:1
 
-Tier2 
-#5
-Name: "Flyby" A:1 A:1 
-Name: "Dust Cloud" A:2 Disengage
-
-#8
-Name: "Black Dust" ManaCost:Opt;Wood;3 A:4 Disengage Opt A:3 Powerful:2
+Tier3 
+#6
+Name: "Miséricorde" A:3 Text: "Deals double damage against stunned units"
+Name: "Dust Cloud" Stun Stun
+Name: "Black Dust" Stun A:2
 
 #Add 3 -1 Add 3 Wood:1 +0
 #Add 2 +0 Add 4 +1

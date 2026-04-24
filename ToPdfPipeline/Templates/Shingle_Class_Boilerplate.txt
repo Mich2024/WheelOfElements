@@ -1,18 +1,22 @@
 [space_top] = 1
-[space_left] = 0.5
-[space_right] = 0.25
-[space_bottom] = 0.25
+[space_left] = 0
+[WidthPage] = 24+[space_left]
+[HeightPage] = 18+[space_top]
+[space_right] = 0
+[space_bottom] = 0
 
 [space_text_28] = 1
 [space_text_18] = 0.7
 
-[linestrength] = 0.1
+[linestrength] = 0.25
 
-[third_vert] = ((21-[space_top]-[space_bottom])/3)
-[quart_vert] = ((21-[space_top]-[space_bottom])/4)
 
-[third_hor] = ((29.7-[space_left]-[space_right])/3)
-[quart_hor] = ((29.7-[space_left]-[space_right])/4)
+
+[third_vert] = (([HeightPage]-[space_top]-[space_bottom])/3)
+[quart_vert] = (([HeightPage]-[space_top]-[space_bottom])/4)
+
+[third_hor] = (([WidthPage]-[space_left]-[space_right])/3)
+[quart_hor] = (([WidthPage]-[space_left]-[space_right])/4)
 [CardCount] = ${CardCount}
 
 CARDS=[CardCount]

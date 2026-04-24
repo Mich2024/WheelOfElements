@@ -10,7 +10,7 @@ TierMods: Gold
 Modifier Tableau
 Rank:1
 Add 2 -1 Add 3 +2 Add 1 HalfElf
-Add 1 Stun Add 3 -1 Add 1 HalfElf
+Add 2 +2 Add 3 -1 Add 1 HalfElf
 Add 3 +1 Add 1 HalfElf
 Add 3 +1 Add 1 HalfElf
 
@@ -24,9 +24,9 @@ Add 3 +1 Add 1 -1 Add 1 HalfElf
 
 
 Type
-#Element: MetalWater
+Element: Wood
 
-Explanation:Stun
+Explanation:Powerful
 
 Base Cards
 #Power Levels : 2,2,2,4,4,6
@@ -34,19 +34,18 @@ Base Cards
 #ManaCost:Opt;Fire;1
 
 Tier1
-#2
-Name: "Evade" Disengage Disengage
-Name: "Strike" Ranged A:1
-Name: "Strike" Ranged A:1
+#3
+Name: "Heart of Wood" Wood:2 
+Name: "Lunge" ManaCost:Opt;Wood;1 A:1 Opt Powerful:2
+Name: "Hype" Wood:1 Powerful
 
 Tier2 
-#4
-Name: "Double Strike" A:2 Text: "Deals double damage against stunned units"
-Name: "Disable" Ranged Disengage Stun
+#5
+Name: "Double Strike" A:1 A:1 
+Name: "Riposte" A:2 Disengage
 
-Tier3
-#6
-Name: "Riposte" Stun A:2
+#8
+Name: "Flourish" ManaCost:Opt;Wood;3 A:4 Disengage Opt A:3 Powerful:2
 
 #[( (2*3)+(2*2)+(3*1)+(3*-1)+(5*0) )/15]=0,66
 #Add 2 +3 Add 2 +2 Add 3 +1 Add 3 -1 Remove 2 +0 Remove 1 *0

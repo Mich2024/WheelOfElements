@@ -1,6 +1,6 @@
 Passive
 Redirect Overkill damage to an adjacent enemy
-(This is not an attack, and does not use your ancestry dice)
+(This is not an attack, does not use your ancestry dice, and does not reapply any boons or banes your original attack did)
 Life: 3
 
 TierCards: Gold

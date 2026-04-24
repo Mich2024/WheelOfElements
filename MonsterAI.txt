@@ -8,9 +8,9 @@ Normal
 Life:10
 Count:10
 
-Rolls:1,2 A:3
-Rolls:3,4 A:2
-Rolls:5,6 A:1
+Rolls:1 A:3
+Rolls:2,3 A:2
+Rolls:4,5,6 A:1
 
 
 Hard
@@ -30,7 +30,6 @@ Normal
 
 Life:20
 Count:5
-Passive: Skittish
 
 Rolls:1,2 A:1
 Rolls:3,4 A:2
@@ -54,9 +53,9 @@ Normal
 Life:20
 Count:2
 
-Rolls:1,2,3 Text: "-"
-Rolls:4 Stun
-Rolls:5,6 Poison:1
+Rolls:A Text: "-"
+Rolls:B Poison:1
+Rolls:C Stun
 
 Hard
 
@@ -75,7 +74,7 @@ Normal
 Life:20
 Count:3
 
-Rolls:A Adjacent bandits act twice
+Rolls:A Adjacent bandits immediately act an extra time
 Rolls:B Text: "-"
 
 Hard
