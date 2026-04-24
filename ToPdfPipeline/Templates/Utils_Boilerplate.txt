@@ -32,5 +32,7 @@ htmlimage = 1 - [CardCount], \symDSix, "..\..\Pictures\Icons\D66.png", [size_sym
 htmlimage = 1 - [CardCount], \symDraw, "..\..\Pictures\Icons\Draw.png", [size_sym], [size_sym]
 #htmlimage = 1 - [CardCount], \symShuffle, "..\..\Pictures\Icons\DShuffle.png", [size_sym], [size_sym]
 
+
+htmlfont=font_10,Arial,10,B,#000000,LEFT
 htmlfont=font_18,Arial,12,B,#000000,LEFT
 htmlfont=font_28,Arial,21,B,#000000,LEFT

@@ -1,7 +1,7 @@
 Passive
 
 When you Poison an enemy, roll your ancestry dice and apply their result to the Poison like you would with an attack.
-(Does not affect Poison from your Ancestry Dice)
+#(Does not affect Poison from your Ancestry Dice)
 Life: 3
 
 

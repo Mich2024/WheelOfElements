@@ -74,7 +74,7 @@ Normal
 Life:20
 Count:3
 
-Rolls:A Adjacent bandits immediately act an extra time
+Rolls:A Adjacent bandits act immediately (again)
 Rolls:B Text: "-"
 
 Hard

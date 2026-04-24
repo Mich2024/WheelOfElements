@@ -11,7 +11,7 @@ Element: Wood
 Explanation:Poison
 
 Tier1
-Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 A:3 Ranged
+Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 Ranged A:3
 Name: "Transfusion" Ranged Text: "Loose X Life. X Cannot be more than your current life" H:X+2 
 
 Tier3

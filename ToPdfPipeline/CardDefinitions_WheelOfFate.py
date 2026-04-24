@@ -811,7 +811,7 @@ class statCard:
                     passive_new += word + " "
 
             passive_new = passive_new.strip()
-            res = templateShingle.replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life)).replace(r"${Passive}", passive_new)
+            res = templateShingle.replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life).strip()).replace(r"${Passive}", passive_new)
 
         return res
     

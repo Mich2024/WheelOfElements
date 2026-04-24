@@ -8,15 +8,15 @@
 [space_text_28] = 1
 [space_text_18] = 0.7
 
-[linestrength] = 0.25
+[linestrength] = 0.125
 
 
 
-[third_vert] = (([HeightPage]-[space_top]-[space_bottom])/3)
-[quart_vert] = (([HeightPage]-[space_top]-[space_bottom])/4)
+[third_vert] = 5.7
+[quart_vert] = ((([HeightPage]-[space_top]-[space_bottom])/4)-0.25)
 
-[third_hor] = (([WidthPage]-[space_left]-[space_right])/3)
-[quart_hor] = (([WidthPage]-[space_left]-[space_right])/4)
+[third_hor] = ((([WidthPage]-[space_left]-[space_right])/3)-0.25)
+[quart_hor] = 5.7
 [CardCount] = ${CardCount}
 
 CARDS=[CardCount]
@@ -37,7 +37,7 @@ RECTANGLE = 1-[CardCount], 0, 0, [quart_hor], [third_vert], #000000, empty, [lin
 ${Classes}
 
 #Life
-RECTANGLE = 1-[CardCount],  0, [third_vert] - [space_text_18] - [linestrength], [quart_hor] - 2.5 , [space_text_18] + [linestrength], #000000, empty, [linestrength]
+RECTANGLE = 1-[CardCount],  0, [third_vert] - [space_text_18] - [linestrength], [quart_hor], [space_text_18] + [linestrength], #000000, empty, [linestrength]
 #Passive
 #RECTANGLE = 1-[CardCount],  0, [space_text_28] + [linestrength]*2, 2.5, [space_text_18], #000000, empty, [linestrength]
 #TitleSeparator
