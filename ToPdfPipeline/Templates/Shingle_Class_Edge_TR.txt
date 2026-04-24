@@ -1,9 +1,1 @@
-FONT = "Noto Sans Mono", 14, B, #000000
-TEXT = ${Order}, "${Title}",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
-FONT = "Noto Sans Mono", 12, B, #000000
-TEXT = ${Order}, "Passive:",   [linestrength]*2, [space_text_28] + [linestrength]*2 , [quart_hor] - 4 * [linestrength], [space_text_18], LEFT, TOP
-FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = ${Order}, "${Passive}",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
-TEXT = ${Order}, "Starting life: ${Life}",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18], [quart_hor] - 2 * [linestrength] - 2, [space_text_18], LEFT, TOP
- ${Edge}
-
+LINE = ${Order}, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]

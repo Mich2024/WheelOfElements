@@ -5,5 +5,5 @@ TEXT = ${Order}, "Passive:",   [linestrength]*2, [space_text_28] + [linestrength
 FONT = "Noto Sans Mono", 9, B, #000000
 htmltext = ${Order}, "${Passive}",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
 TEXT = ${Order}, "Starting life: ${Life}",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18], [quart_hor] - 2 * [linestrength] - 2, [space_text_18], LEFT, TOP
- ${Edge}
+${Edge}
 

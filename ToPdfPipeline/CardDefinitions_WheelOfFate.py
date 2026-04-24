@@ -809,9 +809,19 @@ class statCard:
                     passive_new += " " + symbolDict[word.split(":")[0]] + " " + word + " "
                 else:
                     passive_new += word + " "
+            templateEdge = ""
+            if(self.rank == 1):
+                templateEdge = open('Templates/Shingle_Class_Edge_TR.txt', 'r')
+                templateEdge = templateEdge.read()
+            if(self.rank == 2):
+                templateEdge = open('Templates/Shingle_Class_Edge_BR.txt', 'r')
+                templateEdge = templateEdge.read()
+            if(self.rank == 3):
+                templateEdge = open('Templates/Shingle_Class_Edge_BL.txt', 'r')
+                templateEdge = templateEdge.read()
 
             passive_new = passive_new.strip()
-            res = templateShingle.replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life).strip()).replace(r"${Passive}", passive_new)
+            res = templateShingle.replace(r"${Edge}", templateEdge).replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life).strip()).replace(r"${Passive}", passive_new)
 
         return res
     

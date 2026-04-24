@@ -1,0 +1,1 @@
+LINE = ${Order}, [linestrength] + 1, [third_vert] - [linestrength], [linestrength], [third_vert] - [linestrength] - 1,  [col_silver], [linestrength]

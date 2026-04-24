@@ -1,0 +1,1 @@
+LINE = ${Order}, [quart_hor] - [linestrength] - 1, [third_vert] - [linestrength],  [quart_hor] - [linestrength], [third_vert] - [linestrength] - 1,  [col_bronze], [linestrength]
