@@ -1,5 +1,5 @@
 Passive
-Whenever a Dice, including the Monster dice, rolls a 2, A:D6. (The attack you gain from the monster die happens before start of combat effects.)
+Whenever a D6, including the Monster dice, rolls a 2, A:D6. (The attack you gain from the monster die happens before start of combat effects.)
 Life: 6
 
 Type

@@ -1,5 +1,5 @@
 Passive
-Look at that life
+Improved Max Life (+3, already included)
 #+6Max life
 Life: 6
 

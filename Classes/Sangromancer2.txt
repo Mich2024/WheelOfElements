@@ -1,7 +1,7 @@
 Passive
 
 When you Heal an ally, roll your ancestry dice and apply their result to the heal like you would with an attack.
-(Does not affect Heal from your Ancestry Dice)
+#(Does not affect Heal from your Ancestry Dice)
 Life: 3
 
 Type

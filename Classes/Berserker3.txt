@@ -1,7 +1,7 @@
 Passive
 #Whenever you discard one or more cards: A:1
 #Your blaze is now choose instead of random
-Look at that life
+Improved Max Life (+7, already included)
 Life: 10
 
 Type

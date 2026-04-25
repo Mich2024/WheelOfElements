@@ -16,11 +16,11 @@
 [col_mithril] = #87B787
 
 
-[third_vert] = 5.7
+[third_vert] = 5.5
 [quart_vert] = ((([HeightPage]-[space_top]-[space_bottom])/4)-0.25)
 
 [third_hor] = ((([WidthPage]-[space_left]-[space_right])/3)-0.25)
-[quart_hor] = 5.7
+[quart_hor] = 5.5
 [CardCount] = ${CardCount}
 
 CARDS=[CardCount]

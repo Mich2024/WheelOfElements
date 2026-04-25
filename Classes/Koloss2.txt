@@ -1,7 +1,7 @@
 Passive
 #If your rightmost Enemy deals damage, he deals 0 damage instead.
-If your rightmost Enemy performs an action, you may have him deal 1 damage instead.
-Life: 3
+At the start of combat: rotate the leftmost enemy of the player to your right
+Life: 4
 
 
 Type

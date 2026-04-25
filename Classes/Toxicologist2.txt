@@ -1,5 +1,6 @@
 Passive
-When one of your enemies dies, H:4
+
+When you Poison an enemy, roll your ancestry dice and apply their result to the Poison like you would with an attack.
 
 Life: 4
 

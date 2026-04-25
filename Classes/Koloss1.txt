@@ -1,6 +1,6 @@
 Passive
-At the start of combat: rotate the leftmost enemy of the player to your right
-Life: 3
+If your rightmost Enemy performs an action, you may have him deal 1 damage instead.
+Life: 2
 
 
 Type
