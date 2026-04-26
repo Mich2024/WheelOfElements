@@ -19,4 +19,4 @@ Name: "Parry" Stun Metal:1
 Name: "Poisoned Knife" ManaCost:Water;1 A:3 Poison:2
 
 Tier3
-Name: "Cut Throat" ManaCost:Water;2 Text: "Execute an enemy, if its below half life"
+Name: "Cut Throat" ManaCost:Water;2 Text: "Execute an enemy if it is below half life"
