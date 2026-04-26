@@ -28,6 +28,9 @@ Bild Opt cost pfeil
 Targeting Pics
 remove skittish in tutorial round
 Clarify D6 AOE
+AOE pics better, with enemies and separators (dahsed line) for enemy zones & players
+titel für die AOE situationen oben links
+put action on arrow
 
 htmltext for tablea passive
 
@@ -50,6 +53,12 @@ Silverkin Passive
 
 change half elf and fae, change half elf passive to no ancestry dice, just powerful ??
 	- other option: reminder is 1 dmg, one max life, red: 5 sides +1, blue: all sides 0
+	
+make squished handout, with stuff like downed
+
+storybook example during explanation
+
+example attack, example element gen, example blaze, example opt cost, possibly with pics
 
 ############
 Wyrmkin Heals
@@ -57,3 +66,7 @@ assassin 1 Strike
 assassin 1 cut throat
 two d6 on drunken master 2
 smite
+berserker 2 behead
+Drunken master 2 + 3 passive
+drunken maser see double
+dwarf javelin

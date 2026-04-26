@@ -35,13 +35,13 @@ Base Cards
 
 Tier1
 Name: "Clobber" ManaCost:Opt;Earth;2 Disengage Disengage Opt A:3
-Name: "Strike" A:1 Ranged
+Name: "Strike" Ranged A:1
 Name: "Heart of Earth" Earth:2
 
 Tier3
 Name: "Kerfuffle" ManaCost:Opt;Earth;2 A:D6 Opt Aoe:Cleave;3
 Name: "Sculpt" A:D6 Earth:6-X Text: "The D6 is X"
-Name: "Javelin" Earth Ranged A:4
+Name: "Javelin" Earth:2 Ranged A:D6
 
 #Add 6 -1 Add 3 +D6
 #Add 3 Earth:1 +0

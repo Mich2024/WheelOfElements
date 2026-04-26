@@ -13,7 +13,7 @@ Explanation:Blaze
 
 Tier1
 #3
-Name: "Heart of Fire" Fire:2 Blaze:2 Fire:1
+Name: "Blazing Heart" Fire:2 Blaze:2 Fire:1
 Name: "Fire Breathing" ManaCost:Fire;3 A:1 Vulnerable Aoe:Cleave;2
 
 Tier2
