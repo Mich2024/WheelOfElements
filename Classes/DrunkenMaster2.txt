@@ -1,6 +1,6 @@
 Passive
 #Yes its silver lol 22/11/2025
-Whenever a D6, including the Monster dice, rolls a 1, A:D6. (The attack you gain from the monster die happens before start of combat effects.)
+Whenever the Monster dice, rolls a 6, S:2.
 Life: 3
 
 Type

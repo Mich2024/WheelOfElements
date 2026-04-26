@@ -59,14 +59,3 @@ make squished handout, with stuff like downed
 storybook example during explanation
 
 example attack, example element gen, example blaze, example opt cost, possibly with pics
-
-############
-Wyrmkin Heals
-assassin 1 Strike
-assassin 1 cut throat
-two d6 on drunken master 2
-smite
-berserker 2 behead
-Drunken master 2 + 3 passive
-drunken maser see double
-dwarf javelin
