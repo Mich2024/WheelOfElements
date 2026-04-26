@@ -15,11 +15,12 @@ Bandit Raider, Bandit Raider, Bandit Leader, Bandit Raider,
 Bandit Skirmisher, Bandit Leader, Bandit Raider, 
 
 Encounter:3
+Bandit Berserker, Bandit Skirmisher,
 Bandit Skirmisher, Bandit Leader, Bandit Trapper, 
 Bandit Berserker, Bandit Skirmisher,
 Bandit Raider, Bandit Raider, Bandit Leader, Bandit Raider, Bandit Raider
 Bandit Skirmisher, Bandit Leader, Bandit Trapper, 
-Bandit Berserker, Bandit Skirmisher,
+
 
 #Bandit Raider : Bronze
 #Bandit Harrier : Silver

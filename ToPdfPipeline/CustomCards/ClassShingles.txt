@@ -1,0 +1,113 @@
+[space_top] = 1
+[space_left] = 0
+[WidthPage] = 24+[space_left]
+[HeightPage] = 18+[space_top]
+[space_right] = 0
+[space_bottom] = 0
+
+[space_text_28] = 1
+[space_text_18] = 0.7
+
+[linestrength] = 0.125
+
+[col_bronze] = #CD7F32
+[col_silver] = #ACACAC
+[col_gold] = #CFB53B
+[col_mithril] = #87B787
+
+
+[third_vert] = 5.5
+[quart_vert] = ((([HeightPage]-[space_top]-[space_bottom])/4)-0.25)
+
+[third_hor] = ((([WidthPage]-[space_left]-[space_right])/3)-0.25)
+[quart_hor] = 5.5
+[CardCount] = 2
+
+CARDS=[CardCount]
+BORDER=RECTANGLE,#000000,[linestrength]*2
+UNIT=CM
+PAGE=21,29.7,LANDSCAPE,HV
+
+[size_sym] = 0.5
+
+htmlimage = 1 - [CardCount], \symAddFire, "..\..\Pictures\Icons\AddFire.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddMetal, "..\..\Pictures\Icons\AddMetal.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddWater, "..\..\Pictures\Icons\AddWater.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", [size_sym], [size_sym]
+
+htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPoison, "..\..\Pictures\Icons\Poison.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symHeal, "..\..\Pictures\Icons\Heal.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPowerful, "..\..\Pictures\Icons\Powerful.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symFlurry, "..\..\Pictures\Icons\Flurry.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symVulnerable, "..\..\Pictures\Icons\Vulnerable.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symBlaze, "..\..\Pictures\Icons\Blaze.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symD6, "..\..\Pictures\Icons\D6.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symShield, "..\..\Pictures\Icons\Shield.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]
+
+htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png", [size_sym], [size_sym]
+
+htmlimage = 1 - [CardCount], \symDOne, "..\..\Pictures\Icons\D61.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDTwo, "..\..\Pictures\Icons\D62.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDThree, "..\..\Pictures\Icons\D63.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDFour, "..\..\Pictures\Icons\D64.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDFive, "..\..\Pictures\Icons\D65.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDSix, "..\..\Pictures\Icons\D66.png", [size_sym], [size_sym]
+
+htmlimage = 1 - [CardCount], \symDraw, "..\..\Pictures\Icons\Draw.png", [size_sym], [size_sym]
+#htmlimage = 1 - [CardCount], \symShuffle, "..\..\Pictures\Icons\DShuffle.png", [size_sym], [size_sym]
+
+
+htmlfont=font_10,Arial,10,B,#000000,LEFT
+htmlfont=font_18,Arial,12,B,#000000,LEFT
+htmlfont=font_28,Arial,21,B,#000000,LEFT
+
+htmlfont=font_12,Arial,10,B,#000000,LEFT
+
+DPI=300
+CARDSIZE=[quart_hor],[third_vert]
+BASERANGE=,ON
+
+RECTANGLE = 1-[CardCount], 0, 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
+
+
+
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 1, "DrunkenMaster 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+TEXT = 1, "Passive:",   [linestrength]*2, [space_text_28] + [linestrength]*2 , [quart_hor] - 4 * [linestrength], [space_text_18], LEFT, TOP
+FONT = "Noto Sans Mono", 9, B, #000000
+htmltext = 1, "Whenever the Monster dice, rolls a 6,  \symShield S:2.",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+TEXT = 1, "Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18], [quart_hor] - 2 * [linestrength] - 2, [space_text_18], LEFT, TOP
+LINE = 1, [quart_hor] - [linestrength] - 1, [third_vert] - [linestrength],  [quart_hor] - [linestrength], [third_vert] - [linestrength] - 1,  [col_bronze], [linestrength]
+
+
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 2, "DrunkenMaster 3",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+TEXT = 2, "Passive:",   [linestrength]*2, [space_text_28] + [linestrength]*2 , [quart_hor] - 4 * [linestrength], [space_text_18], LEFT, TOP
+FONT = "Noto Sans Mono", 9, B, #000000
+htmltext = 2, "Whenever a D6, including the Monster dice, rolls a 1,  \symAttack A:D6. (The attack you gain from the monster die happens before start of combat effects.)",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+TEXT = 2, "Starting life: 6",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18], [quart_hor] - 2 * [linestrength] - 2, [space_text_18], LEFT, TOP
+LINE = 2, [linestrength] + 1, [third_vert] - [linestrength], [linestrength], [third_vert] - [linestrength] - 1,  [col_silver], [linestrength]
+
+
+
+
+
+
+
+
+
+
+#Life
+RECTANGLE = 1-[CardCount],  0, [third_vert] - [space_text_18] - [linestrength], [quart_hor], [space_text_18] + [linestrength], #000000, empty, [linestrength]
+#Passive
+#RECTANGLE = 1-[CardCount],  0, [space_text_28] + [linestrength]*2, 2.5, [space_text_18], #000000, empty, [linestrength]
+#TitleSeparator
+LINE = 1-[CardCount],  0, [space_text_28] + [linestrength]*2, [quart_hor], [space_text_28] + [linestrength]*2, #000000, [linestrength]

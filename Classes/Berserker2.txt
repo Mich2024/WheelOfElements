@@ -15,7 +15,7 @@ Name: "Heart of Fire" Fire:2
 Name: "Brutalize" ManaCost:Earth;4 Ranged A:9
 
 Tier3
-Name: "Behead" ManaCost:Earth;1 A:2*D6
+Name: "Behead" ManaCost:Earth;2 A:D6 Text: "This attack deals double damage (including ancestry dice and other extra effects)"
 Name: "Faithless Looting" Text: "Draw two cards" Blaze:2 A:6
 
 #This shit is unprintable, the space is like two times over

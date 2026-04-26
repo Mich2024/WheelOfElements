@@ -21,25 +21,57 @@
 
 \textbf{Attack \symAttack} - To perform an attack, first \textbf{target} an enemy to attack (\textit{see Targeting, page \pageref{Section_Targeting}}). Then, \textbf{roll} your ancestry dice (\textit{see Ancestry dice, page \pageref{Section_AncestryDice}}) and add the result to the printed attack value. Lastly, \textbf{apply} the resulting damage to the enemy. Track this damage via the damage cubes. The bronze cubes represent 1 damage, the silver ones 5, the gold ones 10 and the green ones 50.
 
-\textbf{Elements \symFire \symEarth \symMetal \symWater \symWood} - To generate elements, check how many element symbols are pictured on the card, and move that many markers from the stash to the wheel, on the corresponding field.
+\textbf{Elements \symFire \symEarth \symMetal \symWater \symWood} - To generate elements, check how many element symbols are pictured as an action, and move that many markers from the box to the wheel, on the corresponding field.
 
 
 \textbf{Boons \& Banes} - To apply a boon or bane, choose a target, then put the listed number of boons or banes on the target. \textit{see Boons \& Banes, page \pageref{Section_BoonsBanes}}
 
-\textbf{Text} - Quite a few cards have longer text. Simply follow the instruction when playing the card. Those cards are usually very unique in what they do.
+\textbf{Text} - Quite a few cards have text with longer instructions. Simply follow the instruction when playing the card. Those cards are usually very unique in what they do.
 
 
-\textbf{Opt Paid} - Cards with optional costs have a line with the word OPT going through the card with additional actions below the line.
+\textbf{Opt Paid} - Cards with optional costs have a line with the word OPT going through the card with extra actions below the line.
 If the optional cost was paid, the actions below the line must be used. If the cost was not paid, they cannot be used.
 
 \textbf{Blaze \symBlaze} - Cards with blaze also have a line, but with the text Blaze:X instead of OPT.
-If you play one of these cards as the  \textbf{first card} on your turn, you must discard X cards, and use the actions below the line.
+If you play one of these cards as the  \textbf{first card} on your turn, you must \textbf{randomly} discard X cards, and use the actions below the line.
 When played as the second card in a turn, the blaze action does nothing -- no cards are discarded, and the actions below the line are ignored.
 
 \begin{tcolorbox}[colframe=black, colback=white]
 	After playing a card, put it into your discard pile.
 	
 \end{tcolorbox}
+
+
+\newpage
+
+\subsection*{Ancestry Dice}
+\label{Section_AncestryDice}
+
+The Ancestry Dice act as a source of random chance. Fighting is a risky business, and sometimes an attack may take an unexpected turn.
+You usually start with two Ancestry dice.
+Over the course of the game, you add more Ancestry Dice by leveling up and covering your ancestry tableau with class tiles.
+
+
+\textbf{Attacks \symAttack} - Whenever you \symAttack attack, roll your Ancestry Dice.
+First, if any \textbf{Boons or Banes} have been rolled, apply them to yourself or the target. Immediately use Boons \& Banes such as \symPowerful Powerful and \symVulnerable Vulnerable when calculating the damage.
+Second, \textbf{add all numbers} together and add them to the printed value of the attack.
+Afterwards, apply this damage to the targeted enemy. You cannot deal less than 0 damage.
+
+\begin{tcolorbox}[colframe=black, colback=white]
+	%If you have played table top RPGs before, you may know the concept from rolling a 20 sided dice to determine the outcome of an action.
+	Only attacks use the ancestry dice by default, nothing else.
+\end{tcolorbox}
+
+
+\textbf{Advantage \symAdvantage} - Advantage is a boon that gives you an additional chance to hit good modifiers.
+After having rolled your dice but before applying any effect from them, including Boons \& Banes, you may choose a number of dice  \textbf{equal or less than the amount of advantage} you have and roll them again. Advantage is not consumed in this process, and can be used for any ancestry dice roll until it is removed at the end of your turn.
+
+
+\begin{tcolorbox}[colframe=black, colback=white]
+	Hier könnte ihre Werbung stehen.
+\end{tcolorbox}
+
+\fbox{\parbox[4cm]{\textwidth}{Picture: Children: Half elf, thyger and silverkin playing a dice game.}}
 
 \newpage
 
@@ -58,7 +90,7 @@ When played as the second card in a turn, the blaze action does nothing -- no ca
 		If multiple actions are listed in a  \textbf{single line}, all of them must affect the  \textbf{same target}.
 		If multiple actions are listed in  \textbf{separate lines}, they may affect  \textbf{different targets}.
 		Beneficial actions such as healing, shield etc. target yourself by default. \\
-		\textbf{Ranged} - If the card has the keyword \symRanged Ranged, all actions may target any enemy (or in case of boons a player) to your left and right or in front of you. (\textit{See below})
+		\textbf{Ranged} - If the card has the keyword \symRanged Ranged, all actions may target any enemy directly to your left and right or in front of you (\textit{See below}). In case of boons you may target the player to your left or right.
 		\begin{tcolorbox}[colframe=black, colback=white]
 			Ranged actions can also target your own enemies
 		\end{tcolorbox}
@@ -85,7 +117,7 @@ When played as the second card in a turn, the blaze action does nothing -- no ca
 \newpage
 
 \textbf{AOE} - \textbf{A}rea \textbf{O}f \textbf{E}ffect cards may target  \textbf{enemies} that are \textbf{adjacent} to one another (\textit{See below}), in the pattern shown on the emblem. Enemies facing  \textbf{different players} are  \textbf{never} considered as adjacent to each other, and AOEs may not flow over to another player.
-All attacks and banes on the card are applied to each enemy targeted by the AOE.
+\textbf{Repeat} - When you target multiple enemies like this, all attacks and banes of the card are repeated for each enemy. You will re-roll all dice and reapply banes for each enemy separately.
 
 \begin{figure}[ht]
 	\label{fig_AOE}
@@ -94,35 +126,3 @@ All attacks and banes on the card are applied to each enemy targeted by the AOE.
 		\includegraphics[width=0.9\linewidth, valign=t]{ExplanationPics/TargetingAOE.drawio.png}
 	\end{minipage}	
 \end{figure}
-
-
-\newpage
-
-\subsection*{Ancestry Dice}
-\label{Section_AncestryDice}
-
-The Ancestry Dice act as a source of random chance. Fighting is a risky business, and sometimes an attack may take an unexpected turn.
-You usually start with two Ancestry dice.
-Over the course of the game, you add more Ancestry Dice.
-
-
-\textbf{Attacks \symAttack} - Whenever you \symAttack attack, roll your Ancestry Dice.
-First, if any \textbf{Boons or Banes} have been rolled, apply them to yourself or the target. Immediately use Boons \& Banes such as \symPowerful Powerful and \symVulnerable Vulnerable when calculating the damage.
-Second, \textbf{add all numbers} together and add them to the printed value of the attack.
-Afterwards, apply this damage to the targeted enemy. You cannot deal less than 0 damage.
-
-\begin{tcolorbox}[colframe=black, colback=white]
-	%If you have played table top RPGs before, you may know the concept from rolling a 20 sided dice to determine the outcome of an action.
-	Only attacks use the ancestry dice by default, nothing else.
-\end{tcolorbox}
-
-
-\textbf{Advantage \symAdvantage} - Advantage is a boon that gives you an additional chance to hit good modifiers.
-After having rolled your dice but before applying any effect from them, including Boons \& Banes, you may choose a number of dice  \textbf{equal or less than the amount of advantage} you have and roll them again. Advantage is not consumed in this process, and can be used for any ancestry dice roll until it is removed at the end of your turn.
-
-
-\begin{tcolorbox}[colframe=black, colback=white]
-	Hier könnte ihre Werbung stehen.
-\end{tcolorbox}
-
-\fbox{\parbox[4cm]{\textwidth}{Picture: Children: Half elf, thyger and silverkin playing a dice game.}}

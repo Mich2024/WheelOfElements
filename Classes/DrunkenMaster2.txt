@@ -1,6 +1,6 @@
 Passive
 #Yes its silver lol 22/11/2025
-Whenever a D6, including the Monster dice, rolls a 1, A:D6. (The attack you gain from the monster die happens before start of combat effects.)
+Whenever the Monster dice, rolls a 6, S:2.
 Life: 3
 
 Type
@@ -14,5 +14,5 @@ Name: "Tenacious" ManaCost:Earth;3 A:D6 A:D6
 
 Tier3
 Name: "Rock Slam" Earth:2 A:D6
-Name: "See Double" Text: "Roll two D6. Create Earth equals to one result and A:X. X is the other result." Blaze:1
+Name: "See Double" Text: "The enemy die is X"  A:X Earth:6-X Blaze:1
 Name: "Sober" ManaCost:Opt;Earth;1 A:D6 Opt Ranged A:D6
