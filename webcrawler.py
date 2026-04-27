@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Reservation status checker for:
 https://events.spieleautorenzunft.de/event/s2026
@@ -21,6 +20,7 @@ except ImportError:
     sys.exit(1)
 
 # ── Configuration ─────────────────────────────────────────────────────────────
+print("init config")
 EVENT_SHORT_NAME = "s2026"
 BASE_URL         = "https://events.spieleautorenzunft.de"
 API_URL          = f"{BASE_URL}/api/v2/public/event/{EVENT_SHORT_NAME}"
@@ -171,9 +171,9 @@ def desktop_notify(title: str, message: str):
 
 def print_summary(summary: dict[str, dict], changed_names: list[str]):
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f"\n{'─'*55}")
+    #print(f"\n{'─'*55}")
     print(f"  Check at {now}")
-    print(f"{'─'*55}")
+    #print(f"{'─'*55}")
     for name, info in summary.items():
         status_parts = []
         if info["expired"]:
@@ -187,11 +187,11 @@ def print_summary(summary: dict[str, dict], changed_names: list[str]):
             elif avail == 0:
                 status_parts.append("SOLD OUT")
             else:
-                status_parts.append(f"✅  {avail} available")
+                status_parts.append(f" {avail} available")
 
-        flag = "  ⚠️  CHANGED" if name in changed_names else ""
+        flag = "   CHANGED" if name in changed_names else ""
         print(f"  {name}: {', '.join(status_parts)}{flag}")
-    print(f"{'─'*55}")
+    #print(f"{'─'*55}")
 
 
 def main():
@@ -232,7 +232,7 @@ def main():
 
                 if changed_names and NOTIFY:
                     msg = "Slots opened: " + ", ".join(changed_names)
-                    desktop_notify("Reservation Alert 🎉", msg)
+                    desktop_notify("Reservation Alert", msg)
                     # Also beep in the terminal
                     print("\a", end="", flush=True)
 
@@ -241,13 +241,14 @@ def main():
         except requests.exceptions.HTTPError as e:
             print(f"[{datetime.datetime.now():%H:%M:%S}] HTTP error: {e}")
         except requests.exceptions.ConnectionError:
-            print(f"[{datetime.datetime.now():%H:%M:%S}] Connection error – will retry.")
+            print(f"[{datetime.datetime.now():%H:%M:%S}] Connection error - will retry.")
         except Exception as e:
             print(f"[{datetime.datetime.now():%H:%M:%S}] Unexpected error: {e}")
 
-        print(f"  Next check in {POLL_INTERVAL // 60} min …", end="\r")
+        print(f"Next check in {POLL_INTERVAL // 60} min")
         time.sleep(POLL_INTERVAL)
 
 
 if __name__ == "__main__":
+    print("entering main")
     main()
