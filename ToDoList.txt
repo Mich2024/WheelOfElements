@@ -70,6 +70,7 @@ wyrmkin bite and tear
 dwarf sculpt
 bladestorm silverkin
 silverkin gold dice
+drunkenmaster passive1 layout
 
 Advice:
 magic style keyword remindertext (Cycling intimidate etc.)
