@@ -1,6 +1,6 @@
 Passive
 
-When you Heal an ally, roll your ancestry dice and apply their result to the heal like you would with an attack.
+When you Heal with an action card, roll your ancestry dice and apply their result to the Heal like you would with an attack.
 #(Does not affect Heal from your Ancestry Dice)
 Life: 3
 
@@ -12,11 +12,13 @@ Explanation:Poison
 
 Tier1
 Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 Ranged A:3
-Name: "Transfusion" Ranged Text: "Loose X Life. X Cannot be more than your current life" H:X+2 
+Name: "Strike" Ranged A:1
+
+#Name: "Transfusion" Ranged Text: "Loose X Life. X Cannot be more than your current life" H:X+2
 
 Tier3
 Name: "Shred" ManaCost:Wood;2 A:9
-Name: "Wrath" A:X Text: "X is your missing life. X cant be more than 10"
+Name: "Life's Breath" Text: "Return a downed ally back to 2 Life. This may target any player, regardless of usual restrictions"
 Name: "Calming Presence" H:2 Text: "Also target the players next to you"
 
 

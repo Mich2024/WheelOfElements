@@ -1,5 +1,5 @@
 Passive
-When you Heal someone else, Heal for 2 more
+When you Heal an ally, also apply Powerful
 Life: 3
 
 Type
