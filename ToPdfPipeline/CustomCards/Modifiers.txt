@@ -1,4 +1,4 @@
-[CardCount] = 15
+[CardCount] = 35
 
 [space_text_28] = 1
 [space_text_18] = 0.7
@@ -67,6 +67,73 @@ CIRCLE = 1-[CardCount], [linestrength]/2, [linestrength]/2, 1.4-[linestrength], 
 
 #Ranger ###############
 # 2 + 2 + 3 + 4 = 11  
-htmltext = 1-11, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
 
-htmltext = 12-15, "Ranger ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+htmltext = 1, "-1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 2, "-1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 3, "+2 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 4, "+2 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 5, "+2 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 6, "HalfElf ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 7, "+2 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 8, "+2 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 9, "-1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 10, "-1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 11, "-1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 12, "HalfElf ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 13, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 14, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 15, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 16, "HalfElf ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 17, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 18, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 19, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 20, "HalfElf ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 21, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 22, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 23, "-1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 24, "HalfElf ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 25, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 26, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 27, "-1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 28, "HalfElf ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 2, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 30, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 31, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 32, "-1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 33, "HalfElf ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 34, "+1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 35, "-1 ", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
