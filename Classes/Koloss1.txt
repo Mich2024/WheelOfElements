@@ -1,22 +1,21 @@
 Passive
-If your rightmost Enemy performs an action, you may have him deal 1 damage instead.
+If your rightmost Enemy damages you, you may pay 1 life and ignore the damage.
 Life: 2
 
 
 Type
 Element: Earth
-Element: Metal
 
 Explanation:Shield
-Explanation:Advantage
+Explanation:Lifepay
 
 Tier1
-Name: "Earthen Heart" Earth:2
-Name: "Slash" ManaCost:Metal;2 Advantage A:4
+Name: "Overwork" ManaCost:Life;2 Earth:3
+Name: "Trample" ManaCost:Opt;Earth;1 A:1 Opt Ranged A:1
 
 Tier2
-Name: "Rallying Cry" ManaCost:Metal;1 S:1 Advantage:2
-Name: "Guard" Ranged S:1
+Name: "Last Line" ManaCost:Life;3 Shield:3
+Name: "Guard" Ranged Shield:1
 
 Tier3
-Name: "Shield Slam" S:1 A:X Text: "X is equal to your shield"
+Name: "Shield Slam" Shield:1 A:X Text: "X is equal to your shield"

@@ -6,17 +6,16 @@ Life: 4
 
 Type
 Element: Earth
-Element: Metal
 
-Explanation:D6
+Explanation:Blaze
 
 Tier1
-Name: "Earthen Heart" Earth:2
-Name: "Cleave" ManaCost:Metal;3 A:D6 Aoe:Cleave;2
+Name: "Stalwart" ManaCost:Opt;Earth;4 A:1 Opt Shield:2
+Name: "Cleave" ManaCost:Opt;Earth;1 A:1 Opt Aoe:Cleave;2
 
 Tier3
-Name: "Sword and Shield" S:1 A:1
-Name: "Shield Strike" A:D6 Earth:2
-Name: "Earthwake" Earth:2 S:1
+Name: "Sword and Shield" Shield:1 A:1
+Name: "Strike Down" ManaCost:Life;3 A:12 Blaze:3
+Name: "Earthwake" Shield:1 Blaze:2 Earth:4
 
 #Name: "Roar" A:1 Aoe:All

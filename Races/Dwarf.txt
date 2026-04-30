@@ -27,21 +27,21 @@ Add 2 Earth Add 1 Dwarf
 Type
 Element:Earth
 
-Explanation:D6
+Explanation:Shield
 
 Base Cards
 
 #ManaCost:Opt;earth;1
 
 Tier1
-Name: "Clobber" ManaCost:Opt;Earth;2 Disengage Disengage Opt A:3
+Name: "Hunker Down" ManaCost:Opt;Earth;2 Disengage Disengage Opt Shield:1
 Name: "Strike" Ranged A:1
 Name: "Heart of Earth" Earth:2
 
 Tier3
-Name: "Kerfuffle" ManaCost:Opt;Earth;2 A:D6 Opt Aoe:Cleave;3
-Name: "Sculpt" A:D6 Earth:6-X Text: "The D6 is X"
-Name: "Javelin" Earth:2 Ranged A:D6
+Name: "Kerfuffle" ManaCost:Opt;Earth;2 A:3 Opt Aoe:Cleave;3
+Name: "Oust" Earth:2 Shield:1
+Name: "Crossbow" Earth:1 Ranged A:4
 
 #Add 6 -1 Add 3 +D6
 #Add 3 Earth:1 +0

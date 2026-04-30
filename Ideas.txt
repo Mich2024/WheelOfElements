@@ -11,53 +11,20 @@ Zoning alt:
 Snowballing idea for the future: Players can play another card from hand on kill
 
 
-a/b choices for modifiers?
-Possible base included
 
 schrödinger storyline
 
 
-Zum Rassen Brett
-auf dem Rassenbrett stehen effekte drauf die passieren wenn sie überdeckt werden
-
-idee
--> auf dem rassenbrett sind sachen nur aktiv wenn sie offen sind.
-    ->Halbelf hätte bei Rank 3 zumn Beispiel stehen entferne eine *0. Sobald diese Überdeckt wird wird die mal null wieder hinzugefügt
--> Klassen haben drei Varianten von Plättchen bsp:Koloss 1
-    -> passive + remove 1 -1 + +10 Max life
-    -> passive + remove 3 -1
-    -> +30 Max life
--> Idee Rassenbrett Elf. Elf hat +0 Max life
-    ->Rank 1 linkeste beide haben +5 Max life stehen
-
-
-Stun -> Hard CC
-Explanation -> Cursive
-
-Centaurwiener -> auf der Seite der Box übelanger Centaur auf dem alle anderen 9 Rassen sitzen
-
-
-
-Disengage -> evergreen
-Enemies fine
-bronze Silver Gold system for everything
-
-T1 cards -> Bronze
-T2 ...
-
-
-Rank 1 Class: Gold Mods, Bronze Passive, Silver Cards
-Rank 2 Class: Silver Mods, Gold Passive, Bronze Cards
-Rank 3 Class: Bronze Mods, Silver Passive, Gold Cards
-
-ReworkTableau to indicate gold for each class
-Players knowing why they are weak in X should make it feel better
-Halve Health for players
-Swap sides of flurry and powerful, mirror on vuln
-Add Blaze for fire earth
-Add D6 to earth
-
-
 Rename Vuln to Scorch
 
-Spike gold by 0.5 power per turn
+
+
+Explanation -> Cursive
+
+
+Bersrker pasives:
+ -> If you daw from an empty hand, draw one more next turn
+ -> if you reach an empty hand: A:1
+ -> Your blaze effects also trigger on the second card
+ -> Your blaze effects discard one less
+ -> feral instinc style whenever you discard X cards, A:X, Elements or smth
