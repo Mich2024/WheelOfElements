@@ -1,0 +1,21 @@
+Passive
+When you Heal someone else, Heal for 2 more
+Life: 3
+
+Type
+Element: Wood
+
+Explanation:Heal
+
+Tier1
+Name: "Heal" Ranged H:2
+Name: "Outlast" Powerful Text: "At the end of this turn, keep all Powerful stacks"
+
+
+Tier3
+Name: "Overgrowth" ManaCost:Opt;Wood;2 H:6 Opt Flurry:2
+Name: "Adrenaline Rush" Ranged Wood:1 Powerful:1 H:4
+Name: "Temperance" Flurry:2 H:2
+
+
+

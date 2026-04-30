@@ -1,21 +1,27 @@
 Passive
-When you Heal someone else, Heal for 2 more
+
+When you Heal an ally, roll your ancestry dice and apply their result to the heal like you would with an attack.
+#(Does not affect Heal from your Ancestry Dice)
 Life: 3
 
 Type
+Element: Water
 Element: Wood
 
-Explanation:Heal
+Explanation:Poison
 
 Tier1
-Name: "Heal" Ranged H:2
-Name: "Outlast" Powerful Text: "At the end of this turn, keep all Powerful stacks"
-
+Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 Ranged A:3
+Name: "Transfusion" Ranged Text: "Loose X Life. X Cannot be more than your current life" H:X+2 
 
 Tier3
-Name: "Overgrowth" ManaCost:Opt;Wood;2 H:6 Opt Flurry:2
-Name: "Adrenaline Rush" Ranged Wood:1 Powerful:1 H:4
-Name: "Temperance" Flurry:2 H:2
+Name: "Shred" ManaCost:Wood;2 A:9
+Name: "Wrath" A:X Text: "X is your missing life. X cant be more than 10"
+Name: "Calming Presence" H:2 Text: "Also target the players next to you"
+
+
+
+#Name: "Cleanse" Water:4 Ranged H:2 Text: "Remove all debuffs from your target. Lose 2 life"
 
 
 

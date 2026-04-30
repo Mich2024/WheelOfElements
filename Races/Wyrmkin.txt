@@ -1,6 +1,6 @@
 Passive
-Improved Max Life (+3, already included)
-Life: 6
+After applying your ancestry dice, you may pay 2 life to add 4 damage to the Attack
+Life: 3
 
 TierCards: Silver
 TierPassive: Bronze
