@@ -1,8 +1,6 @@
 Passive
-#Whenever you discard one or more cards: A:1
-#Your blaze is now choose instead of random
-Improved Max Life (+7, already included)
-Life: 10
+If you empty your hand, A:1
+Life: 2
 
 Type
 
@@ -16,11 +14,12 @@ Element: Earth
 Tier1
 Name: "Heart of Fire" Fire:2
 Name: "Heart of Fire" Fire:2
-Name: "Earthen Punch" ManaCost:Earth;2 Ranged Vulnerable A:D6
+Name: "Resilience" ManaCost:Earth;2 Ranged Vulnerable Shield:1
 
 Tier2
-Name: "Rage" Text:"Draw a card" Blaze:3 Text:"You may play the discarded cards. You still have to pay their costs"
-Name: "Strike Fear" A:1 Blaze:1 A:2
+Name: "Strike Fear" Shield:1 Blaze:1 Fire:1
+Name: "Rage" Text:"Discard your hand, then draw three cards" Blaze:3 Text:"You may play the discarded cards. You still have to pay their costs"
+
 
 
 #Name: "Persistent Rage" Return a card you blazed this turn to your hand.

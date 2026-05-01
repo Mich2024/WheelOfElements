@@ -1,8 +1,8 @@
 Passive
 
-When you Heal an ally, roll your ancestry dice and apply their result to the heal like you would with an attack.
-#(Does not affect Heal from your Ancestry Dice)
-Life: 3
+Improved Max Life (+5, already included)
+Life: 8
+
 
 Type
 Element: Water

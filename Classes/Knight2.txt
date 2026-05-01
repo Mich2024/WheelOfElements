@@ -8,7 +8,7 @@ Type
 Element: Metal
 
 Explanation:Advantage
-Explanation:Shield
+Explanation:Lifepay
 
 Tier1
 Name: "Pierce" ManaCost:Opt;Metal;2 Advantage Opt A:4
@@ -17,6 +17,6 @@ Name: "Sharpen" Advantage Metal:1
 Tier3
 Name: "Clean Strike" Metal:2 A:3
 Name: "Extinguish" ManaCost:Opt;Metal;X Stun A:2X+2
-Name: "Sword and Shield" S:1 A:1
+Name: "Bleeding Edge" ManaCost:Life;2 A:8
 
 #Name: "Sword and Dagger" A:X A:X Stun Text: "X is Metal Mana in the Wheel"

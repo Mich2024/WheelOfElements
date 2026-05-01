@@ -1,6 +1,7 @@
 Passive
-At the beginning of our turn, Heal:2
-Life: 3
+Improved Max Life (+7, already included)
+Life: 10
+
 
 Type
 Element: Water

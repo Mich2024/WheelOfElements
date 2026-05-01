@@ -1,7 +1,7 @@
 Passive
-Improved Max Life (+3, already included)
+You may remove one Shield from yourself to perform A:4
 #+6Max life
-Life: 6
+Life: 3
 
 Type
 
@@ -9,15 +9,15 @@ Element: Fire
 Element: Earth
 
 Explanation:Blaze
-Explanation:D6
+Explanation:Shield
 
 Tier1
 Name: "Heart of Fire" Fire:2
-Name: "Twin Slam" ManaCost:Earth;3 A:D6 A:D6
+Name: "Twin Slam" ManaCost:Earth;3 A:1 A:1 Aoe:Cleave;2
 
 Tier2
-Name: "Scar" A:D6 Blaze:2 Fire:1 Disengage
-Name: "Rampage" A:D6 Blaze:3 Fire:4
+Name: "Jostle" Shield:1 Blaze:2 Fire:1 Disengage
+Name: "Rampage" A:3 Blaze:3 Fire:4
 
 Tier3
 Name: "Aggression" Fire:1 A:4

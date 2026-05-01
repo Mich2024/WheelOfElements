@@ -53,6 +53,17 @@ Summed up life totals
 Both:
 Rename disengage maybe repel
 Silverkin Passive
+Berserker Shield
+Knight Lifepay
+Dwarf
+Human
+Wyrmkin
+Kolosss
+Bard
+Druid
+Witch
+Sangro
+
 
 change half elf and fae, change half elf passive to no ancestry dice, just powerful ??
 	- other option: reminder is 1 dmg, one max life, red: 5 sides +1, blue: all sides 0

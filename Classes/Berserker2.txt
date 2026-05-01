@@ -1,6 +1,6 @@
 Passive
-Improved Max Life (+5, already included)
-Life: 8
+Your blaze effects also trigger on the second card
+Life: 3
 
 Type
 
@@ -15,11 +15,11 @@ Name: "Heart of Fire" Fire:2
 Name: "Brutalize" ManaCost:Earth;4 Ranged A:9
 
 Tier3
-Name: "Behead" ManaCost:Earth;2 A:D6 Text: "This attack deals double damage (including ancestry dice and other extra effects)"
+Name: "Behead" ManaCost:Earth;2 A:3 Text: "This attack deals double damage (including ancestry dice, boons & banes)"
 Name: "Faithless Looting" Text: "Draw two cards" Blaze:2 A:6
 
 #This shit is unprintable, the space is like two times over
-Name: "Feral Instinct" Fire:1 Blaze:2 Text: "Per discarded Card: <br> Br: \symVulnerable Vulnerable <br> Silver: \symAddFire Fire:2 <br> Gold: \symAttack A:D6"
+Name: "Feral Instinct" Fire:1 Blaze:2 Text: "Per discarded Card: <br> Br: \symVulnerable Vulnerable <br> Silver: \symAddFire Fire:2 <br> Gold: \symShield Shield:1"
 
 
 

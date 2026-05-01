@@ -11,9 +11,9 @@ Explanation:Stun
 
 Tier1
 Name: "Distract" ManaCost:Opt;Metal;3 A:1 Opt Stun Stun
-Name: "Spikeshield" ManaCost:Opt;Metal;2 A:1 Opt S:1
+Name: "Bloody Strike" ManaCost:Life;3 Advantage A:4
 Name: "Align" ManaCost:Opt;Metal;4 Advantage Opt Stun A:4
 
 Tier2
-Name: "Guarded Stance" S:1 Metal:2
-Name: "Shield and Stab" ManaCost:Opt;Metal;2 S:1 Opt A:3
+Name: "Overwhelm" ManaCost:Life;3 Stun Stun Stun
+Name: "Iron Price" Metal:2 A:1
