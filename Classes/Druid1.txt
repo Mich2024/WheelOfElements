@@ -15,7 +15,7 @@ Name: "Heal" Ranged H:2
 
 Tier2
 Name: "Blood Petals" ManaCost:Wood;1 A:2 A:2
-Name: "Healing Rain" Water:1 Ranged A:1 H:2 
+Name: "Healing Rain" Water:1 Ranged A:1 H:2
 
 Tier3
 Name: "Drain Life" ManaCost:Wood;2 A:3 H:X Text: "X is your damage dealt"

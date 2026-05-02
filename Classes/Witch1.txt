@@ -1,6 +1,6 @@
 Passive
 
-When one of your enemies dies, H:4
+When one of your enemies dies, Heal:3
 #(Does not affect Poison from your Ancestry Dice)
 Life: 4
 
@@ -17,13 +17,13 @@ Explanation:Heal
 
 Tier1
 #3
-Name: "Strike" Ranged A:1
-Name: "Heal" Ranged H:2
+Name: "Poison" Poison:2
+Name: "Heal" Ranged Heal:2
 
 Tier2
 #5
-Name: "Chug" H:4
-Name: "Toxic Flask" ManaCost:Opt;Water;2 Poison:3 Disengage Opt H:4
+Name: "Greater Heal" Ranged Heal:3
+Name: "Toxic Mist" ManaCost:Opt;Water;2 Poison:3 Disengage Opt Heal:3
 
 
 Tier3

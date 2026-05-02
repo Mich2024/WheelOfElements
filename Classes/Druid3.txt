@@ -8,9 +8,9 @@ Element: Wood
 
 Tier1
 Name: "Nightshade" ManaCost:Wood;1 Poison:2 A:1
-Name: "Splash" ManaCost:Wood;2 Water:2 H:4
-Name: "Leeching Brambles" ManaCost:Wood;2 A:1 H:4
+Name: "Splash" ManaCost:Wood;2 Water:2 H:3
+Name: "Leeching Brambles" ManaCost:Wood;2 A:1 H:3
 
 Tier2
-Name: "Wellspring" Water:2 H:2
+Name: "Wellspring" Water:1 H:2
 Name: "Flay" ManaCost:Wood;2 A:4 Poison:3

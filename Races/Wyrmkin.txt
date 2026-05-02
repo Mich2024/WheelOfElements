@@ -8,7 +8,7 @@ TierMods: Gold
 
 Modifier Tableau
 Rank:1
-Add 2 H:1 Add 2 +1 Add 1 Wyrmkin
+Add 2 +2 Add 2 +1 Add 1 Wyrmkin
 Add 3 -1 Add 1 Wyrmkin
 Add 3 +1 Add 1 Wyrmkin
 Add 3 +1 Add 1 Wyrmkin
@@ -23,19 +23,19 @@ Add 2 +1 Add 1 Wyrmkin
 Type
 #Element: Water Wood
 
-Explanation:Heal
+Explanation:Lifepay
 
 Tier1
-Name: "Strike" Ranged A:1
-Name: "Heal" Ranged H:2
-Name: "Heart of Water" Water:2
+Name: "Take Flight" Ranged Disengage Disengage
+Name: "Bloody Strike" ManaCost:Life;3 Ranged A:5
+Name: "Heart of Earth" Earth:2
 
 Tier2
-Name: "Tail Whip" A:2 Water:1
-Name: "Greater Heal" Ranged H:4
+Name: "Tail Whip" A:2 Disengage
+Name: "Javelin" Ranged A:3
 
 Tier3
-Name: "Bite and Tear" A:2 H:1 Water:1
+Name: "Bite and Tear" ManaCost:Life;2 Earth:1 A:6
 
 #Add 3 -1 Add 4 H:1 +0
 #Add 2 +1 Add 3 Water:1 +0

@@ -85,6 +85,18 @@ dwarf sculpt
 bladestorm silverkin
 silverkin gold dice
 drunkenmaster passive1 layout
+Witch:1
+Name: "Poison" Poison:2
+Name: "Heal" Ranged Heal:2
+Name: "Greater Heal" Ranged Heal:3
+Name: "Toxic Mist" ManaCost:Opt;Water;2 Poison:3 Disengage Opt Heal:3
+Witch:2
+Name: "Fog"  Water:1 Disengage
+Witch:3
+Passive
+Name: "Gaslight" Ranged Disengage Disengage
+
+All passives?
 
 Advice:
 magic style keyword remindertext (Cycling intimidate etc.)

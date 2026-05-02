@@ -24,21 +24,19 @@ Add 2 +1 Add 1 Human
 Type
 #Element: MetalEarth
 
-Explanation: Shield
+Explanation: Heal
 
 Base Cards
 #Power Levels : 2,4,4,6,6,10
 
 Tier1
 Name: "Strike" Ranged A:1
-
-Tier2
-Name: "Shield" Shield:1
-Name: "Scare" A:2 Disengage
+Name: "Heal" Ranged Heal:2
 
 Tier3
-Name: "Fighter" A:1 Shield
-Name: "Guard" Ranged Shield Disengage Disengage
+Name: "Greater Heal" Ranged Heal:5
+Name: "Fight & Flight" A:1 Heal:2 Disengage
+Name: "Aid" Ranged Heal:3 Disengage Disengage
 
 Tier4
 Name: "Smite" A:10

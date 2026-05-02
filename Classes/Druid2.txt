@@ -14,12 +14,12 @@ Tier1
 Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 Ranged A:3
 Name: "Strike" Ranged A:1
 
-#Name: "Transfusion" Ranged Text: "Loose X Life. X Cannot be more than your current life" H:X+2
+#Name: "Transfusion" Ranged Text: "Choose an X. Loose X Life. X Cannot be more than your current life" H:X+2
 
 Tier3
 Name: "Shred" ManaCost:Wood;2 A:9
 Name: "Life's Breath" Text: "Return a downed ally back to 2 Life. This may target any player, regardless of usual restrictions"
-Name: "Calming Presence" H:2 Text: "Also target the players next to you"
+Name: "Calming Presence" H:2 Text: "Also target one player next to you"
 
 
 

@@ -17,7 +17,7 @@ Explanation:Stun
 Tier1
 #3
 Name: "Poison Fume" Poison:1 Aoe:Cleave;2
-Name: "Smoke Bomb"  Water:1 Disengage
+Name: "Fog"  Water:1 Disengage
 
 Tier3
 #8

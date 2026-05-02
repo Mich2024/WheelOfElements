@@ -6,10 +6,10 @@ Type
 Element: Wood
 
 Tier1
-Name: "Rejuvenate" ManaCost:Opt;Wood;3 Ranged H:2 Opt H:3
+Name: "Rejuvenate" ManaCost:Opt;Wood;2 Ranged H:2 Opt H:3
 Name: "Muscle Burst" Ranged Text: "Double the powerful stacks on your target"
-Name: "Shove" ManaCost:Opt;Wood;1 Ranged Disengage Opt H:2
+Name: "Shove" ManaCost:Opt;Wood;1 Ranged Disengage Opt H:1
 
 Tier2
-Name: "Nature's Aid" ManaCost:Opt;Wood;2 Ranged H:4 Opt H:4
-Name: "Leafy Cover" Wood:2 Ranged H:2
+Name: "Nature's Aid" ManaCost:Opt;Wood;2 Ranged H:3 Opt H:3
+Name: "Leafy Cover" Wood:1 Ranged H:2
