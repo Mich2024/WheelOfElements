@@ -29,6 +29,7 @@ UNIT=CM
 PAGE=21,29.7,LANDSCAPE,HV
 
 ${UtilsBoilerplate}
+htmlimage = 1 - [CardCount], \symSmallLife, "..\..\Pictures\Icons\Life.png", 0.3, 0.3
 
 htmlfont=font_12,Arial,10,B,#000000,LEFT
 

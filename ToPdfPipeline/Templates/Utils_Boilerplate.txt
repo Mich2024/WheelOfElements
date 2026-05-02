@@ -5,6 +5,7 @@ htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", 
 htmlimage = 1 - [CardCount], \symAddMetal, "..\..\Pictures\Icons\AddMetal.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symAddWater, "..\..\Pictures\Icons\AddWater.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symLife, "..\..\Pictures\Icons\Life.png", [size_sym], [size_sym]
 
 htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]

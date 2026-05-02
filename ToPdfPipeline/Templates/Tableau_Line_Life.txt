@@ -1,1 +1,1 @@
-TEXT = ${Order}, "Starting Life: ${Life}",   [space_left] + [quart_hor] * 3  + [linestrength], [space_top]+[third_vert]*3 - [space_text_18] - [linestrength], [quart_hor], [space_text_18], LEFT, WORDWRAP
+htmltext = ${Order}, "\symLife Starting Life: ${Life}",   [space_left] + [quart_hor] * 3  + [linestrength], [space_top]+[third_vert]*3 - [space_text_18] - [linestrength], [quart_hor], [space_text_18], #FFFFFF,0,T,100,font_18
