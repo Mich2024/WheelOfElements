@@ -20,7 +20,7 @@
 
 %\definecolor{PageBackground}{HTML}{f7e3ba} %e9e5ce  e4d3c5 FFDEAD F5DEB3 F5DEAD
 %\pagecolor{PageBackground}
-\title{\textbf {Wheel of Elements} \\Rulebook}
+\title{\textbf {Wheel of Elements} Beginners Guide}
 \author{Alexander Mödder and Alexander Vinkeloe}
 
 %Design structure of this documnt:
@@ -58,10 +58,33 @@
 \newcommand{\symWood}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/AddWood.png}}
 
 
+
+
 \begin{document}
 
+\maketitle
 
-%\section{Background Info for Devs}
-%\subsection*{Math for nerds}
-%\subsection*{Card List}
+\begin{minipage}[t][12cm][t]{0.5\textwidth}
+	The beginner guide serves as a simple (?) \textbf{introduction} to the game, with a focus on players that are \textbf{new to deckbuilders or cardfighters}.
+	
+	The guide is separated into a large \textbf{example story} which you can \textbf{follow along} for your first game, and a strategy guide which explains mos of the concepts you will encounter int he game.
+\end{minipage}
+
+\begin{minipage}[t][12cm][t]{0.5\textwidth}
+	\setlength{\cftbeforetoctitleskip}{-0.5em}
+	\setlength{\cftbeforesecskip}{0em}
+	\tableofcontents
+	
+	\fbox{\parbox[4cm]{\textwidth}{Picture:  Merfolk librarian, browsing the shelves}}
+\end{minipage}
+
+
+\newpage
+
+\input{ExampleStory.tex}
+
+\newpage
+
+\input{StrategyGuide.tex}
+
 \end{document}

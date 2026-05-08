@@ -46,7 +46,7 @@ go over whole document with vscode to harmonize:
     Sybols (attack and other)
     Capitalization
 
-Summed up life totals
+Unify beginning of encounter passives
 
 
 ############
