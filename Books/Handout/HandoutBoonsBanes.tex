@@ -1,0 +1,64 @@
+\documentclass[english,10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+%\usepackage[twoside]{geometry}
+\usepackage[top=2cm,bottom=2cm,left=3cm,right=1cm,asymmetric,twoside]{geometry}
+\usepackage{xcolor}
+\usepackage[table]{xcolor}
+\usepackage{babel}
+\usepackage[none]{hyphenat}
+\usepackage{longtable}
+\usepackage{parskip}
+\usepackage{array}
+\usepackage{wrapfig}
+\usepackage{tocloft}
+\usepackage[export]{adjustbox}
+
+\usepackage{verbatim}
+\usepackage{tcolorbox}%AlexV 21.2.2026
+%\pagenumbering{gobble}
+
+%\definecolor{PageBackground}{HTML}{f7e3ba} %e9e5ce  e4d3c5 FFDEAD F5DEB3 F5DEAD
+%\pagecolor{PageBackground}
+\title{\textbf {Boons \& Banes} \\Handout}
+\author{}
+
+%Design structure of this documnt:
+%Show what exists first
+%Explain how it is used second
+%Go top down (Complex overarching to simple detail)
+%? Try to not crossref? People can remember 3 things at most, if you have to make them
+
+\rowcolors{2}{white}{blue!10}
+\renewcommand\arraystretch{2}
+
+\newcommand{\scaleForSym}{10pt}
+%Local
+\newcommand{\symShield}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Shield.png}}
+\newcommand{\symAdvantage}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Advantage.png}}
+\newcommand{\symStun}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Stun.png}}
+\newcommand{\symPoison}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Poison.png}}
+\newcommand{\symHeal}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Heal.png}}
+\newcommand{\symPowerful}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Powerful.png}}
+\newcommand{\symFlurry}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Flurry.png}}
+\newcommand{\symVulnerable}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Vulnerable.png}}
+\newcommand{\symBlaze}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Blaze.png}}
+\newcommand{\symDSix}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/D6.png}}
+%Global
+\newcommand{\symRanged}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Ranged.png}}
+\newcommand{\symDisengage}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Disengage.png}}
+
+\newcommand{\symDraw}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Draw.png}}
+\newcommand{\symAttack}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/Attack.png}}
+
+\newcommand{\symFire}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/AddFire.png}}
+\newcommand{\symEarth}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/AddEarth.png}}
+\newcommand{\symMetal}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/AddMetal.png}}
+\newcommand{\symWater}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/AddWater.png}}
+\newcommand{\symWood}{\includegraphics[width=\scaleForSym]{../../Pictures/Icons/AddWood.png}}
+
+
+\begin{document}
+	\maketitle
+\input{../Rulebook/BoonsBanes}
+\end{document}
