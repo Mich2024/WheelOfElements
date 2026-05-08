@@ -10,7 +10,7 @@ Explanation:Shield
 Explanation:Lifepay
 
 Tier1
-Name: "Overwork" ManaCost:Life;2 Earth:3
+Name: "Overwork" ManaCost:Life;2 Earth:4
 Name: "Trample" ManaCost:Opt;Earth;1 A:1 Opt Ranged A:1
 
 Tier2

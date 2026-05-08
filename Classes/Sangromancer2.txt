@@ -5,19 +5,19 @@ Life: 8
 
 
 Type
-Element: Water
-Element: Wood
+Element: Metal
+Element: Earth
 
-Explanation:Poison
+Explanation:Shield
 
 Tier1
-Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 Ranged A:3
-Name: "Transfusion" Ranged Text: "Loose X Life. X Cannot be more than your current life" H:X+2 
+Name: "Scar" ManaCost:Metal;2 Ranged A:1 A:3
+Name: "Bloodguard" Ranged Text: "Loose X times 3 Life. X Cannot be more than your current life" Shield:X
 
 Tier3
-Name: "Shred" ManaCost:Wood;2 A:9
+Name: "Sword and Shield" Shield:1 A:1
 Name: "Wrath" A:X Text: "X is your missing life. X cant be more than 10"
-Name: "Calming Presence" H:2 Text: "Also target the players next to you"
+Name: "Blood to Earth" ManaCost:Life;3 Earth:9 Text: "The Elemental Wheel does not rotate this turn"
 
 
 
