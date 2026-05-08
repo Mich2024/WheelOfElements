@@ -198,7 +198,7 @@ def main():
     print(f"Monitoring: {BASE_URL}/event/{EVENT_SHORT_NAME}")
     print(f"Polling every {POLL_INTERVAL // 60} minutes. Press Ctrl+C to stop.\n")
 
-    previous_summary: dict[str, dict] = {'Autoren/Designer Ticket': {'available': 0, 'sold_out': True, 'expired': False}, 'Publisher/Agency Ticket': {'available': 161, 'sold_out': False, 'expired': False}, 'Media Ticket': {'available': None, 'sold_out': False, 'expired': False}, 'Park Ticket': {'available': 0, 'sold_out': True, 'expired': False}}
+    previous_summary: dict[str, dict] = {'Autoren/Designer Ticket': {'available': 0, 'sold_out': True, 'expired': False}, 'Publisher/Agency Ticket': {'available': 161, 'sold_out': False, 'expired': False}, 'Media Ticket': {'available': None, 'sold_out': False, 'expired': False}, 'Park Ticket': {'available': 10, 'sold_out': False, 'expired': False}}
 
 
 
