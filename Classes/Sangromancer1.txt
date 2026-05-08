@@ -1,23 +1,22 @@
 Passive
 Improved Max Life (+3, already included)
-Life: 3
+Life: 6
 
 
 Type
-Element: Water
-Element: Wood
+Element: Metal
+Element: Earth
 
-Explanation:Powerful
-Explanation:Heal
+Explanation:Advantage
+Explanation:Lifepay
 
 Tier1
-Name: "Heart of Water" Water:2
-Name: "Bloody Strike" Ranged A:3 Text: "Lose 1 life"
+Name: "Heart of Earth" Earth:2
+Name: "Bloody Strike" ManaCost:Metal;2  Ranged Advantage Advantage A:3
 
 Tier2
-#Name: "Razor Petals" ManaCost:Wood;1 A:4 A:4 Text: "Lose 4 life"
-Name: "Blood Petals" ManaCost:Wood;1 A:4 A:4 Text: "Lose 2 life"
-Name: "Healing Rain" Water:1 Ranged A:1 H:2 
+Name: "Blood Petals" ManaCost:Metal;1 ManaCost:Life;3 A:4 A:4
+Name: "Earthen Razor" ManaCost:Life;2 Earth:3 Ranged Advantage A:1
 
 Tier3
-Name: "Take a Bite" ManaCost:Wood;2 A:3 H:X Text: "X is your damage dealt"
+Name: "Take a Bite" ManaCost:Life;3 A:9
