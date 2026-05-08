@@ -1,5 +1,5 @@
 Passive
-At the beginning of our turn, H:1
+At the beginning of your turn, H:1
 Life: 1
 
 Type

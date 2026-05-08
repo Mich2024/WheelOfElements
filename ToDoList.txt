@@ -41,12 +41,13 @@ go over whole document with vscode to harmonize:
 Unify beginning of encounter passives
 
 
+Silverkin Passive
+
 ############
 Both:
 Rename disengage maybe repel
-Silverkin Passive
-Berserker Shield
-Knight Lifepay
+Berserker
+Knight
 Dwarf
 Human
 Wyrmkin
@@ -55,6 +56,8 @@ Bard
 Druid
 Witch
 Sangro
+dice fae und halfelf swapdrucken
+All passives?
 
 
 change half elf and fae, change half elf passive to no ancestry dice, just powerful ??
@@ -68,27 +71,6 @@ example attack, example element gen, example blaze, example opt cost, possibly w
 
 
 
-
-muss noch geändert werden
-dice fae und halfelf swapdrucken
-druid1 Bush ambush(disengage:1)
-wyrmkin bite and tear
-dwarf sculpt
-bladestorm silverkin
-silverkin gold dice
-drunkenmaster passive1 layout
-Witch:1
-Name: "Poison" Poison:2
-Name: "Heal" Ranged Heal:2
-Name: "Greater Heal" Ranged Heal:3
-Name: "Toxic Mist" ManaCost:Opt;Water;2 Poison:3 Disengage Opt Heal:3
-Witch:2
-Name: "Fog"  Water:1 Disengage
-Witch:3
-Passive
-Name: "Gaslight" Ranged Disengage Disengage
-
-All passives?
 
 Advice:
 magic style keyword remindertext (Cycling intimidate etc.)

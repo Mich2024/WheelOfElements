@@ -772,6 +772,15 @@ class statCard:
         return res
 
     def serializeToNandeck(self, order):
+        passive_new = ""
+
+        for word in self.passive.split(" "):
+            if(word.split(":")[0] in symbolDict):
+            
+                passive_new += " " + symbolDict[word.split(":")[0]] + " " + word + " "
+            else:
+                passive_new += word + " "
+        passive_new = passive_new.strip()
         
         if isinstance(self.tableau, tableauRace):
 
@@ -792,7 +801,7 @@ class statCard:
             template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",self.passive)
             template_race = template_race.replace(r"${Order}",str(order)).replace(r"${Race}", self.name )
             template_race = template_race.replace(r"${TierMod}",self.tierMods).replace(r"${TierPassive}",self.tierPassive)
-            res = template_race.replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive)
+            res = template_race.replace(r"${Life}",template_line_life).replace(r"${Passive}",passive_new)
 
         else:
             title = self.name + " " + str(self.rank)
@@ -801,14 +810,7 @@ class statCard:
 
             #print(self.passive)
 
-            passive_new = ""
-
-            for word in self.passive.split(" "):
-                if(word.split(":")[0] in symbolDict):
-                
-                    passive_new += " " + symbolDict[word.split(":")[0]] + " " + word + " "
-                else:
-                    passive_new += word + " "
+            
             templateEdge = ""
             if(self.rank == 1):
                 templateEdge = open('Templates/Shingle_Class_Edge_TR.txt', 'r')
@@ -820,7 +822,7 @@ class statCard:
                 templateEdge = open('Templates/Shingle_Class_Edge_BL.txt', 'r')
                 templateEdge = templateEdge.read()
 
-            passive_new = passive_new.strip()
+            
             res = templateShingle.replace(r"${Edge}", templateEdge).replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life).strip()).replace(r"${Passive}", passive_new)
 
         return res
