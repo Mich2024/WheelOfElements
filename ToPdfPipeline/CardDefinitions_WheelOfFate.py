@@ -513,6 +513,9 @@ class actionCard:
         elif self.tier == "3":
             textTier = "Gold"
             colTier = "[col_gold]"
+        elif self.tier == "4":
+            textTier = "Dia"
+            colTier = "[col_mithril]"
 
         template_card = template_card.replace(r"${Rank}",textTier + " " + self.tier).replace(r"${Col_Rank}",colTier)
         
