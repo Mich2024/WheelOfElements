@@ -3,37 +3,29 @@ Whenever:
 Events
 X-Cost decision talk
 
-
+ABC Enemies vs A:1 verwirrung
 ############
 AV
-\textit{see Boons \& Banes, page \pageref{Section_BoonsBanes}}
 Berserker Feral Instinct rework
 assassin 2 passive rework
 
 blaze less attention drawing
-Ancestry / Class Overview & Strategy Guide:
-    Each Ancestry & class should have:
-        Lore
-        Elements
-        Boons/Banes
-        Card Examples (2~3)
-        Gameplay advice
-        Passives
-    Strategy Guide
 
-Wyrmkin
-sangromancer
+Rewrite rulebook
+-> play area & setup needs to be coherent again
+  - Ancestry Tableau needs to be merged into this section 
+  - passives too? We need to explain this, possibly in combat too
+-> level up gets to stay at the end of the book
+-> reread combat section for coherence (the action deck and attack dice got moved)
 
 ############
 AM
 bild abc turnorder
 Bild Opt cost pfeil
 Targeting Pics
-remove skittish in tutorial round
-Clarify D6 AOE
 AOE pics better, with enemies and separators (dahsed line) for enemy zones & players
 titel für die AOE situationen oben links
-put action on arrow
+put action on targeting arrow 
 
 htmltext for tablea passive
 
@@ -123,3 +115,15 @@ felix helf druid123 drunk
 erich wyrmkin ranger123 bers1
 niklas dwarf knight12 sang1 ass1
 georg:silverkin pyro123 berserker1
+
+
+
+Ancestry / Class Overview & Strategy Guide:
+    Each Ancestry & class should have:
+        Lore
+        Elements
+        Boons/Banes
+        Card Examples (2~3)
+        Gameplay advice
+        Passives
+    Strategy Guide
