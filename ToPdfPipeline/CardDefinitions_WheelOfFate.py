@@ -801,10 +801,10 @@ class statCard:
             
 
             template_line_life = template_line_life.replace(r"${Order}",str(order)).replace(r"${Life}",self.life.strip())
-            template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",self.passive)
+            template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",passive_new)
             template_race = template_race.replace(r"${Order}",str(order)).replace(r"${Race}", self.name )
             template_race = template_race.replace(r"${TierMod}",self.tierMods).replace(r"${TierPassive}",self.tierPassive)
-            res = template_race.replace(r"${Life}",template_line_life).replace(r"${Passive}",passive_new)
+            res = template_race.replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive)
 
         else:
             title = self.name + " " + str(self.rank)

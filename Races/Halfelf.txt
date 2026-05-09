@@ -1,16 +1,16 @@
 Passive
-Improved Ancestry Dice. The Stun from your ancestry dice can hit anyone, not just the Attack target.
+Gain double the starting attack dice. (2 Red, 2 Blue)
 #Gold + Silver
 Life: 3
 
-TierCards: Silver
-TierPassive: Bronze
+TierCards: Bronze
+TierPassive: Silver
 TierMods: Gold
 
 Modifier Tableau
 Rank:1
-Add 2 +2 Add 1 HalfElf Add 3 +2 Add 1 HalfElf
-Add 2 -1 Add 1 HalfElf Add 3 -1 Add 1 HalfElf
+Add 3 +2 Add 1 HalfElf Add 3 +2 Add 1 HalfElf
+Add 3 -1 Add 1 HalfElf Add 3 -1 Add 1 HalfElf
 Add 1 -1 Add 2 +2 Add 1 HalfElf
 Add 1 -1 Add 2 +2 Add 1 HalfElf
 
@@ -35,17 +35,16 @@ Base Cards
 
 Tier1
 #3
-Name: "Heart of Wood" Wood:2 
+Name: "Strike" Ranged A:1
 Name: "Lunge" ManaCost:Opt;Wood;1 A:1 Opt Powerful:2
 Name: "Hype" Wood:1 Powerful
+Name: "Flourish" ManaCost:Opt;Wood;3 Wood:1 Disengage Opt Powerful:2 A:1
 
 Tier2 
 #5
 Name: "Double Strike" A:1 A:1 
 Name: "Riposte" A:2 Disengage
 
-#8
-Name: "Flourish" ManaCost:Opt;Wood;3 A:4 Disengage Opt A:3 Powerful:2
 
 #[( (2*3)+(2*2)+(3*1)+(3*-1)+(5*0) )/15]=0,66
 #Add 2 +3 Add 2 +2 Add 3 +1 Add 3 -1 Remove 2 +0 Remove 1 *0
