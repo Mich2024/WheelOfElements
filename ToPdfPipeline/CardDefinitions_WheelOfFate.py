@@ -1088,7 +1088,7 @@ class EncounterCard:
         self.P4 = ""
         self.P5 = ""
 
-        self.lineups = [self.P1,self.P2,self.P3,self.P4,self.P5]
+        
 
     def serializeToNandeck(self, order):
         
@@ -1096,11 +1096,23 @@ class EncounterCard:
         template_story_single = open('Templates/Story_Single.txt', 'r')
         template_story_single = template_story_single.read()
 
+        lineups = [self.P1,self.P2,self.P3,self.P4,self.P5]
+        lineups_new: list[str] = []
+
+        for lineup in lineups:
+            lineup = "Left, " + lineup + " Right"
+            res = ""
+            einruck = 1
+            for word in lineup.split(" "):
+                res += word.replace(",", "," + ("&ensp;" * einruck)) # add progressively more space
+                einruck += 1 #stepsize
+            lineups_new.append(res)
+
         res = template_story_single.replace(r"${Order}", str(order))
-        res = res.replace(r"${Lineup1}",self.P1.strip().replace(",", linebreakStringNanDeck_htmltext))
-        res = res.replace(r"${Lineup2}",self.P2.strip().replace(",", linebreakStringNanDeck_htmltext))
-        res = res.replace(r"${Lineup3}",self.P3.strip().replace(",", linebreakStringNanDeck_htmltext))
-        res = res.replace(r"${Lineup4}",self.P4.strip().replace(",", linebreakStringNanDeck_htmltext))
-        res = res.replace(r"${Lineup5}",self.P5.strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup1}",lineups_new[0].strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup2}",lineups_new[1].strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup3}",lineups_new[2].strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup4}",lineups_new[3].strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup5}",lineups_new[4].strip().replace(",", linebreakStringNanDeck_htmltext))
             
         return res
