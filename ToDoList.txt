@@ -46,26 +46,8 @@ Silverkin Passive
 ############
 Both:
 Rename disengage maybe repel
-Berserker
-Knight
-Dwarf
-Human
-Wyrmkin
-Kolosss
-Bard
-Druid
-Witch
-Sangro
-dice fae und halfelf swapdrucken
-All passives?
+Box cleanup
 
-
-change half elf and fae, change half elf passive to no ancestry dice, just powerful ??
-	- other option: reminder is 1 dmg, one max life, red: 5 sides +1, blue: all sides 0
-	
-make squished handout, with stuff like downed
-
-storybook example during explanation
 
 example attack, example element gen, example blaze, example opt cost, possibly with pics
 
