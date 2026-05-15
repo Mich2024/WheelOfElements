@@ -3,7 +3,7 @@
 [col_bronze] = #CD7F32
 [col_silver] = #ACACAC
 [col_gold] = #CFB53B
-
+[col_mithril] = #87B787
 
 
 [space_text_28] = 1

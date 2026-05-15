@@ -513,6 +513,9 @@ class actionCard:
         elif self.tier == "3":
             textTier = "Gold"
             colTier = "[col_gold]"
+        elif self.tier == "4":
+            textTier = "Dia"
+            colTier = "[col_mithril]"
 
         template_card = template_card.replace(r"${Rank}",textTier + " " + self.tier).replace(r"${Col_Rank}",colTier)
         
@@ -772,6 +775,15 @@ class statCard:
         return res
 
     def serializeToNandeck(self, order):
+        passive_new = ""
+
+        for word in self.passive.split(" "):
+            if(word.split(":")[0] in symbolDict):
+            
+                passive_new += " " + symbolDict[word.split(":")[0]] + " " + word + " "
+            else:
+                passive_new += word + " "
+        passive_new = passive_new.strip()
         
         if isinstance(self.tableau, tableauRace):
 
@@ -789,7 +801,7 @@ class statCard:
             
 
             template_line_life = template_line_life.replace(r"${Order}",str(order)).replace(r"${Life}",self.life.strip())
-            template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",self.passive)
+            template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",passive_new)
             template_race = template_race.replace(r"${Order}",str(order)).replace(r"${Race}", self.name )
             template_race = template_race.replace(r"${TierMod}",self.tierMods).replace(r"${TierPassive}",self.tierPassive)
             res = template_race.replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive)
@@ -801,14 +813,7 @@ class statCard:
 
             #print(self.passive)
 
-            passive_new = ""
-
-            for word in self.passive.split(" "):
-                if(word.split(":")[0] in symbolDict):
-                
-                    passive_new += " " + symbolDict[word.split(":")[0]] + " " + word + " "
-                else:
-                    passive_new += word + " "
+            
             templateEdge = ""
             if(self.rank == 1):
                 templateEdge = open('Templates/Shingle_Class_Edge_TR.txt', 'r')
@@ -820,7 +825,7 @@ class statCard:
                 templateEdge = open('Templates/Shingle_Class_Edge_BL.txt', 'r')
                 templateEdge = templateEdge.read()
 
-            passive_new = passive_new.strip()
+            
             res = templateShingle.replace(r"${Edge}", templateEdge).replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life).strip()).replace(r"${Passive}", passive_new)
 
         return res
@@ -1083,7 +1088,7 @@ class EncounterCard:
         self.P4 = ""
         self.P5 = ""
 
-        self.lineups = [self.P1,self.P2,self.P3,self.P4,self.P5]
+        
 
     def serializeToNandeck(self, order):
         
@@ -1091,11 +1096,23 @@ class EncounterCard:
         template_story_single = open('Templates/Story_Single.txt', 'r')
         template_story_single = template_story_single.read()
 
+        lineups = [self.P1,self.P2,self.P3,self.P4,self.P5]
+        lineups_new: list[str] = []
+
+        for lineup in lineups:
+            lineup = "Left, " + lineup + " Right"
+            res = ""
+            einruck = 1
+            for word in lineup.split(" "):
+                res += word.replace(",", "," + ("&ensp;" * einruck)) # add progressively more space
+                einruck += 1 #stepsize
+            lineups_new.append(res)
+
         res = template_story_single.replace(r"${Order}", str(order))
-        res = res.replace(r"${Lineup1}",self.P1.strip().replace(",", linebreakStringNanDeck_htmltext))
-        res = res.replace(r"${Lineup2}",self.P2.strip().replace(",", linebreakStringNanDeck_htmltext))
-        res = res.replace(r"${Lineup3}",self.P3.strip().replace(",", linebreakStringNanDeck_htmltext))
-        res = res.replace(r"${Lineup4}",self.P4.strip().replace(",", linebreakStringNanDeck_htmltext))
-        res = res.replace(r"${Lineup5}",self.P5.strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup1}",lineups_new[0].strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup2}",lineups_new[1].strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup3}",lineups_new[2].strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup4}",lineups_new[3].strip().replace(",", linebreakStringNanDeck_htmltext))
+        res = res.replace(r"${Lineup5}",lineups_new[4].strip().replace(",", linebreakStringNanDeck_htmltext))
             
         return res

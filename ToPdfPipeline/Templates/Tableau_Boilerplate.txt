@@ -60,26 +60,26 @@ TEXT = 1-[CardCount], " 1. Draw cards until hand is full \13\ 2. Roll enemy dice
 
 TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 0  + [linestrength]*2, [space_top] + [linestrength]*2, [quart_hor] - [linestrength] * 3 - 1, [space_text_18], left, center
 TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 1  + [linestrength]*2, [space_top] + [linestrength]*2, [quart_hor] - [linestrength] * 3 - 1, [space_text_18], left, center
-RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 2 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], [col_gold], empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 2 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
 TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 2  + [linestrength]*2, [space_top] + [linestrength]*2, [quart_hor] - [linestrength] * 3, [space_text_18], left, center
-RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 3 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], [col_gold], empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 3 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
 TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 3  + [linestrength]*2, [space_top] + [linestrength]*2, [quart_hor] - [linestrength] * 3, [space_text_18], left, center
 
-RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0 + [linestrength]/2, [space_top] + [third_vert] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], [col_bronze], empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0 + [linestrength]/2, [space_top] + [third_vert] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
 TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 0  + [linestrength]*2, [space_top]  + [third_vert] * 1 + [linestrength]*2, [quart_hor] - [linestrength] * 3, [space_text_18], left, center
-RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 1 + [linestrength]/2, [space_top] + [third_vert] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], [col_bronze], empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 1 + [linestrength]/2, [space_top] + [third_vert] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
 TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 1  + [linestrength]*2, [space_top]  + [third_vert] * 1 + [linestrength]*2, [quart_hor] - [linestrength] * 3, [space_text_18], left, center
 
-RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0 + [linestrength]/2, [space_top] + [third_vert] * 2 + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], [col_silver], empty, [linestrength]
+RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0 + [linestrength]/2, [space_top] + [third_vert] * 2 + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
 TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 0  + [linestrength]*2, [space_top]  + [third_vert] * 2 + [linestrength]*2, [quart_hor] - [linestrength] * 3, [space_text_18], left, center
 
-LINE = 1-[CardCount], [quart_hor] * 3 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 3 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  [col_gold], [linestrength]
-LINE = 1-[CardCount], [quart_hor] * 4 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 4 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  [col_gold], [linestrength]
+LINE = 1-[CardCount], [quart_hor] * 3 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 3 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  #000000, [linestrength]
+LINE = 1-[CardCount], [quart_hor] * 4 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 4 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  #000000, [linestrength]
 
-LINE = 1-[CardCount], [quart_hor] * 1 - [linestrength]/2 - 1, [space_top] + [third_vert]*2 - [linestrength]/2, [space_left] + [quart_hor] * 1 - [linestrength]/2, [space_top] + [third_vert]*2 - [linestrength]/2 - 1,  [col_bronze], [linestrength]
-LINE = 1-[CardCount], [quart_hor] * 2 - [linestrength]/2 - 1, [space_top] + [third_vert]*2 - [linestrength]/2, [space_left] + [quart_hor] * 2 - [linestrength]/2, [space_top] + [third_vert]*2 - [linestrength]/2 - 1,  [col_bronze], [linestrength]
+LINE = 1-[CardCount], [quart_hor] * 1 - [linestrength]/2 - 1, [space_top] + [third_vert]*2 - [linestrength]/2, [space_left] + [quart_hor] * 1 - [linestrength]/2, [space_top] + [third_vert]*2 - [linestrength]/2 - 1,  #000000, [linestrength]
+LINE = 1-[CardCount], [quart_hor] * 2 - [linestrength]/2 - 1, [space_top] + [third_vert]*2 - [linestrength]/2, [space_left] + [quart_hor] * 2 - [linestrength]/2, [space_top] + [third_vert]*2 - [linestrength]/2 - 1,  #000000, [linestrength]
 
-LINE = 1-[CardCount], [quart_hor] * 0 + [linestrength]/2 + 1, [space_top] + [third_vert]*3 - [linestrength]/2, [space_left] + [quart_hor] * 0 + [linestrength]/2, [space_top] + [third_vert]*3 - [linestrength]/2 - 1,  [col_silver], [linestrength]
+LINE = 1-[CardCount], [quart_hor] * 0 + [linestrength]/2 + 1, [space_top] + [third_vert]*3 - [linestrength]/2, [space_left] + [quart_hor] * 0 + [linestrength]/2, [space_top] + [third_vert]*3 - [linestrength]/2 - 1,  #000000, [linestrength]
 
 RECTANGLE = 1-[CardCount],  [space_left] + [quart_hor] * 0.5 - [len_hp_box], [space_top] + 2.3 + [third_vert] * 0,[len_hp_box]*2, [len_hp_box]*2 ,#CC0000,#CC0000,[linestrength]
 RECTANGLE = 1-[CardCount],  [space_left] + [quart_hor] * 1.5 - [len_hp_box], [space_top] + 2.3 + [third_vert] * 0,[len_hp_box]*2, [len_hp_box]*2 ,#0000CC,#0000CC,[linestrength]

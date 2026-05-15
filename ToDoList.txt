@@ -3,37 +3,29 @@ Whenever:
 Events
 X-Cost decision talk
 
-
+ABC Enemies vs A:1 verwirrung
 ############
 AV
-\textit{see Boons \& Banes, page \pageref{Section_BoonsBanes}}
 Berserker Feral Instinct rework
 assassin 2 passive rework
 
 blaze less attention drawing
-Ancestry / Class Overview & Strategy Guide:
-    Each Ancestry & class should have:
-        Lore
-        Elements
-        Boons/Banes
-        Card Examples (2~3)
-        Gameplay advice
-        Passives
-    Strategy Guide
 
-Wyrmkin
-sangromancer
+Rewrite rulebook
+-> play area & setup needs to be coherent again
+  - Ancestry Tableau needs to be merged into this section 
+  - passives too? We need to explain this, possibly in combat too
+-> level up gets to stay at the end of the book
+-> reread combat section for coherence (the action deck and attack dice got moved)
 
 ############
 AM
 bild abc turnorder
 Bild Opt cost pfeil
 Targeting Pics
-remove skittish in tutorial round
-Clarify D6 AOE
 AOE pics better, with enemies and separators (dahsed line) for enemy zones & players
 titel für die AOE situationen oben links
-put action on arrow
+put action on targeting arrow 
 
 htmltext for tablea passive
 
@@ -46,15 +38,16 @@ go over whole document with vscode to harmonize:
     Sybols (attack and other)
     Capitalization
 
-Summed up life totals
+Unify beginning of encounter passives
 
+
+Silverkin Passive
 
 ############
 Both:
 Rename disengage maybe repel
-Silverkin Passive
-Berserker Shield
-Knight Lifepay
+Berserker
+Knight
 Dwarf
 Human
 Wyrmkin
@@ -63,6 +56,8 @@ Bard
 Druid
 Witch
 Sangro
+dice fae und halfelf swapdrucken
+All passives?
 
 
 change half elf and fae, change half elf passive to no ancestry dice, just powerful ??
@@ -76,27 +71,6 @@ example attack, example element gen, example blaze, example opt cost, possibly w
 
 
 
-
-muss noch geändert werden
-dice fae und halfelf swapdrucken
-druid1 Bush ambush(disengage:1)
-wyrmkin bite and tear
-dwarf sculpt
-bladestorm silverkin
-silverkin gold dice
-drunkenmaster passive1 layout
-Witch:1
-Name: "Poison" Poison:2
-Name: "Heal" Ranged Heal:2
-Name: "Greater Heal" Ranged Heal:3
-Name: "Toxic Mist" ManaCost:Opt;Water;2 Poison:3 Disengage Opt Heal:3
-Witch:2
-Name: "Fog"  Water:1 Disengage
-Witch:3
-Passive
-Name: "Gaslight" Ranged Disengage Disengage
-
-All passives?
 
 Advice:
 magic style keyword remindertext (Cycling intimidate etc.)
@@ -123,3 +97,15 @@ felix helf druid123 drunk
 erich wyrmkin ranger123 bers1
 niklas dwarf knight12 sang1 ass1
 georg:silverkin pyro123 berserker1
+
+
+
+Ancestry / Class Overview & Strategy Guide:
+    Each Ancestry & class should have:
+        Lore
+        Elements
+        Boons/Banes
+        Card Examples (2~3)
+        Gameplay advice
+        Passives
+    Strategy Guide

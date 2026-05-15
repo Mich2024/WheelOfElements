@@ -1,5 +1,5 @@
 Passive
-At the beginning of combat, Wood:2
+At the beginning of each encounter, Wood:2
 Life: 3
 
 Type

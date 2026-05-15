@@ -1,6 +1,6 @@
 Passive
 
-When you Poison with an action card, roll your ancestry dice and apply their result to the Poison like you would with an attack.
+When you Poison with an action card, roll your attack dice and apply their result to the Poison like with an attack.
 
 Life: 4
 

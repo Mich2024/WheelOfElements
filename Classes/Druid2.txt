@@ -1,6 +1,6 @@
 Passive
 
-When you Heal with an action card, roll your ancestry dice and apply their result to the Heal like you would with an attack.
+When you Heal with an action card, roll your attack dice and apply their result to the Heal like with an attack.
 #(Does not affect Heal from your Ancestry Dice)
 Life: 3
 

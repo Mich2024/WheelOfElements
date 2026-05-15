@@ -1,6 +1,6 @@
 Passive
 #If your rightmost Enemy deals damage, he deals 0 damage instead.
-At the start of combat: rotate the leftmost enemy of the player to your right
+At the beginning of each encounter, rotate the leftmost enemy of the player to your right to your enemies
 Life: 4
 
 

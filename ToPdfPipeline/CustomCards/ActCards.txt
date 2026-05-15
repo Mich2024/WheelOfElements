@@ -1,4 +1,4 @@
-[CardCount] = 9
+[CardCount] = 5
 
 [col_bronze] = #CD7F32
 [col_silver] = #ACACAC
@@ -35,6 +35,7 @@ htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", 
 htmlimage = 1 - [CardCount], \symAddMetal, "..\..\Pictures\Icons\AddMetal.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symAddWater, "..\..\Pictures\Icons\AddWater.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symLife, "..\..\Pictures\Icons\Life.png", 0.55, 0.55
 
 htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", 0.55, 0.55
@@ -62,9 +63,7 @@ FONT = Arial, 18, B, #000000
 TEXT = 1, "Feral Instinct", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
 htmltext = 1, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 1, "\symAddFire Fire: 1 <br>--- \symBlaze Blaze 2 --- <br> Per discarded Card: <br> Br: \symVulnerable Vulnerable <br> Silver: \symAddFire Fire:2 <br> Gold: \symAttack A:D6 <br> Dia: Draw your deck", [linestrength] * 2 , 3,[full_hor] + 0.6, 5,#FFFFFF,0,T,100,font_18
-
-
+htmltext = 1, "\symAddFire Fire: 1 <br>--- \symBlaze Blaze 2 --- <br> Per discarded Card: <br> Br: \symVulnerable Vulnerable <br> Silver: \symAddFire Fire:2 <br> Gold: \symAttack A:3 <br> Dia: Draw your deck", [linestrength] * 2 , 3,[full_hor] + 0.6, 5,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
 TEXT = 1, "Berserker 2", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
@@ -73,112 +72,60 @@ FONT = Arial, 12, B, [col_gold]
 TEXT = 1, "Gold 3", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
 
 
-
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
-TEXT = 2, "Heal", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 2, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+TEXT = 2, "Bloodguard", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 2, "Cost: \symLife 3*X ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 2, "\symRanged Ranged<br> \symHeal H: 2", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+htmltext = 2, "\symRanged Ranged<br> \symShield Shield: X <br>(X is 1 while downed)", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
-TEXT = 2, "Wyrmkin", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+TEXT = 2, "Sangromancer 2", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
 FONT = Arial, 12, B, [col_bronze]
 TEXT = 2, "Bronze 1", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
 
-
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
-TEXT = 3, "Greater Heal", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+TEXT = 3, "Rage", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
 htmltext = 3, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 3, "\symRanged Ranged<br> \symHeal H: 4", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+htmltext = 3, "Discard your hand, then draw three cards <br>--- \symBlaze Blaze 3 --- <br>You may play the discarded cards. You still have to pay their costs", [linestrength] * 2 , 3,[full_hor] + 0.6, 5,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
-TEXT = 3, "Wyrmkin", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+TEXT = 3, "Berserker 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
 FONT = Arial, 12, B, [col_silver]
 TEXT = 3, "Silver 2", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
 
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
-TEXT = 4, "Bite and Tear", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+TEXT = 4, "Strike", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
 htmltext = 4, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 4, "\symAttack A: 2 <br> \symHeal H: 1 <br> \symAddWater Water: 1", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+htmltext = 4, "\symRanged Ranged<br> \symAttack A: 1", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
-TEXT = 4, "Wyrmkin", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+TEXT = 4, "Halfelf", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
-FONT = Arial, 12, B, [col_gold]
-TEXT = 4, "Gold 3", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
+FONT = Arial, 12, B, [col_bronze]
+TEXT = 4, "Bronze 1", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
 
 
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
-TEXT = 5, "Cut Throat", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 5, "Cost: \symAddWater 2 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+TEXT = 5, "Flourish", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 5, "Cost: Opt \symAddWood 3 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 5, "Execute an enemy if it is below half life", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
-
-FONT = Arial, 12, B, #000000
-TEXT = 5, "Assassin 1", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
-
-FONT = Arial, 12, B, [col_gold]
-TEXT = 5, "Gold 3", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
-
-#Name, OptCost ########################################
-FONT = Arial, 18, B, #000000
-TEXT = 6, "See Double", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 6, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
-
-htmltext = 6, "The enemy die is X <br> \symAttack A: X <br> \symAddEarth Earth: 6-X <br>--- \symBlaze Blaze 1 ---", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+htmltext = 5, "\symAddWood Wood: 1 <br> \symDisengage Disengage<br>------ Opt Paid ------ <br> \symPowerful Powerful: 2 <br> \symAttack A: 1", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
-TEXT = 6, "DrunkenMaster 2", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+TEXT = 5, "Halfelf", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
-FONT = Arial, 12, B, [col_gold]
-TEXT = 6, "Gold 3", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
+FONT = Arial, 12, B, [col_bronze]
+TEXT = 5, "Bronze 1", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
 
-#Name, OptCost ########################################
-FONT = Arial, 18, B, #000000
-TEXT = 7, "Smite", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 7, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 7, "\symAttack A: 10", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
-
-FONT = Arial, 12, B, #000000
-TEXT = 7, "Human", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
-
-FONT = Arial, 12, B, [col_mithril]
-TEXT = 7, "Dia 4", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
-
-#Name, OptCost ########################################
-FONT = Arial, 18, B, #000000
-TEXT = 8, "Behead", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 8, "Cost: \symAddEarth 2 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
-
-htmltext = 8, "\symAttack A: D6 <br>This attack deals double damage (including ancestry dice and other extra effects)", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
-
-FONT = Arial, 12, B, #000000
-TEXT = 8, "Berserker 2", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
-
-FONT = Arial, 12, B, [col_gold]
-TEXT = 8, "Gold 3", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
-
-#Name, OptCost ########################################
-FONT = Arial, 18, B, #000000
-TEXT = 9, "Javelin", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 9, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
-
-htmltext = 9, "\symAddEarth Earth: 2 <br> \symRanged Ranged<br> \symAttack A: D6", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
-
-FONT = Arial, 12, B, #000000
-TEXT = 9, "Dwarf", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
-
-FONT = Arial, 12, B, [col_gold]
-TEXT = 9, "Gold 3", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
 
 #Title
 LINE = 1-[CardCount], 0, [space_text_28] - 0.1, 6.35, [space_text_28] - 0.1, #000000, [linestrength]

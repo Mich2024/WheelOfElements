@@ -1,5 +1,5 @@
 Passive
-Gain a silver Ranger Ancestry Dice
+Gain a silver tier Ranger Ancestry Dice
 
 Life: 3
 
