@@ -1,1 +1,2 @@
+image = 1, "..\..\Pictures\Tiers\PassiveTier${IntTierPassive}.png", [space_left] + [quart_hor] * 3  + [linestrength] + 0.1, [space_top]+[third_vert]*2  + [linestrength], 0.8, 0.8, 0
 htmltext = ${Order}, "${Passive}", [space_left] + [quart_hor] * 3 + [linestrength], [space_top]+[third_vert]*2+[space_text_28] + [linestrength], [quart_hor] - [linestrength]*2, [third_vert], #FFFFFF,0,T,100,font_18

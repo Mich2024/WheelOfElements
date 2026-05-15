@@ -41,6 +41,35 @@ def addNanDeckLinebreaks(text: str):
 
     return res
 
+#expexts bronze, silver, gold or diamond or mithril as input.
+def tier_str_to_int(str_tier):
+    res = -1
+    str_tier = str_tier.strip().lower()
+    if(str_tier == "bronze"):
+        res = 1
+    elif(str_tier == "silver"):
+        res = 2
+    elif(str_tier == "gold"):
+        res = 3
+    elif(str_tier == "diamond"):
+        res = 4
+    elif(str_tier == "mithril"):
+        res = 4
+    return res
+
+#expexts int from 1 to 4
+def tier_int_to_str(int_tier):
+    res = "error"
+    str_tier = str_tier.strip().lower()
+    if(str_tier == 1):
+        res = "bronze"
+    elif(str_tier == 2):
+        res = "silver"
+    elif(str_tier == 3):
+        res = "gold"
+    elif(str_tier == 4):
+        res = "mithril"
+    return res
 
 symbolDict = {
     
@@ -739,6 +768,7 @@ class statCard:
         self.lore = "Ipsum Lorum"
         self.tierCards = "[col_mithril]"
         self.tierPassive = "[col_mithril]"
+        self.intTierPassive = 4
         self.tierMods = "[col_mithril]"
 
     def setLife(self, l):
@@ -747,6 +777,7 @@ class statCard:
         self.tierCards = "[col_" + l.strip().lower() + "]"
     def setTierPassive(self, l: str):
         self.tierPassive = "[col_" + l.strip().lower() + "]"
+        self.intTierPassive = tier_str_to_int(l)
     def setTierMods(self, l: str):
         self.tierMods = "[col_" + l.strip().lower() + "]"
     
@@ -801,7 +832,7 @@ class statCard:
             
 
             template_line_life = template_line_life.replace(r"${Order}",str(order)).replace(r"${Life}",self.life.strip())
-            template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",passive_new)
+            template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",passive_new).replace(r"${IntTierPassive}",str(self.intTierPassive))
             template_race = template_race.replace(r"${Order}",str(order)).replace(r"${Race}", self.name )
             template_race = template_race.replace(r"${TierMod}",self.tierMods).replace(r"${TierPassive}",self.tierPassive)
             res = template_race.replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive)

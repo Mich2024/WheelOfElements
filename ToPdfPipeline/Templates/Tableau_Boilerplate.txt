@@ -45,7 +45,7 @@ htmlfont=font_center_18,Arial,12,B,#000000,CENTER
 htmlfont=font_center_28,Arial,21,B,#000000,CENTER
 
 FONT = Arial, 18, B, #000000
-TEXT = 1-[CardCount], "Passive",     [space_left] + [quart_hor] * 3  + [linestrength] , [space_top]+[third_vert]*2  + [linestrength], [quart_hor]-[linestrength]*2, [space_text_28], LEFT, TOP
+TEXT = 1-[CardCount], "Passive", [space_left] + [quart_hor] * 3  + [linestrength] + 1 , [space_top]+[third_vert]*2  + [linestrength], [quart_hor]-[linestrength]*2, [space_text_28], LEFT, TOP
 
 
 ${Races}
