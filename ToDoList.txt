@@ -19,6 +19,8 @@ AM
 blaze text improven "first card -> blaze X"
 Pyro 2 passive rework
 
+boon friendly targeting
+
 bild abc turnorder
 Bild Opt cost pfeil
 Targeting Pics
