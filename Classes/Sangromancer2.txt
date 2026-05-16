@@ -12,7 +12,7 @@ Explanation:Shield
 
 Tier1
 Name: "Scar" ManaCost:Metal;2 Ranged A:1 A:3
-Name: "Bloodguard" ManaCost:Life;3*X Ranged Shield:X Text: "(X is 1 while downed)"
+Name: "Bloodguard" ManaCost:Life;3*X Ranged Shield:X Text: "(X is 1 while backlined)"
 
 Tier3
 Name: "Sword and Shield" Shield:1 A:1

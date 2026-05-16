@@ -6,20 +6,19 @@ X-Cost decision talk
 ABC Enemies vs A:1 verwirrung
 ############
 AV
-Berserker Feral Instinct rework
 assassin 2 passive rework
 
-blaze less attention drawing
 
-Rewrite rulebook
--> play area & setup needs to be coherent again
-  - Ancestry Tableau needs to be merged into this section 
-  - passives too? We need to explain this, possibly in combat too
--> level up gets to stay at the end of the book
--> reread combat section for coherence (the action deck and attack dice got moved)
+Halbkreis in class tile trotzdem noch entfernen
 
+Elemenetal Wheel Fire and Water swap random
+mehr abfuck elemental wheel in "höheren" events
 ############
 AM
+
+blaze text improven "first card -> blaze X"
+Pyro 2 passive rework
+
 bild abc turnorder
 Bild Opt cost pfeil
 Targeting Pics
@@ -47,7 +46,7 @@ Silverkin Passive
 Both:
 Rename disengage maybe repel
 Box cleanup
-
+AOE diceroll change
 
 example attack, example element gen, example blaze, example opt cost, possibly with pics
 
@@ -56,25 +55,12 @@ example attack, example element gen, example blaze, example opt cost, possibly w
 
 Advice:
 magic style keyword remindertext (Cycling intimidate etc.)
-Ecke trotzdem noch entfernen
-blaze zu den kosten verschieben
-start of combat und start of turn härter auseinanderziehen(at the beginning of encounter)
-karte kriegt range in der mitte der karte bei disengage war instinct
-bandit leader other eneiy is stunned rule explanation on bandit leader
-Elemenetal Wheel Fire and Water swap random
-gegner wurden von links nach rechts platziert
-heal ist broken
-monsterverteilung zu unsymetrisch
-disengager tank damagedealer "nichtstuer" konstelation kann passieren
-mehr abfuck elemental wheel in "höheren" events
 
 a1matte wo ist was
 wie ist der erste zug beispiel in der anleitung.
-rassenpassive leich vergesslich durch platzierung 
 
 
 
-Druid problem: 1healt nicht 2ist massiver healer ->swap sangromancer and druid placement
 felix helf druid123 drunk
 erich wyrmkin ranger123 bers1
 niklas dwarf knight12 sang1 ass1
@@ -91,3 +77,8 @@ Ancestry / Class Overview & Strategy Guide:
         Gameplay advice
         Passives
     Strategy Guide
+
+
+Pitch:
+
+, RPG-style Multiclasser, coop, cardbattler, inverted game (low deth high breadth)
