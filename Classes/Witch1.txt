@@ -1,6 +1,6 @@
 Passive
 
-When one of your enemies dies, Heal:3
+When an enemy dies in front of you, Heal:2
 #(Does not affect Poison from your Ancestry Dice)
 Life: 4
 

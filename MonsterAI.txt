@@ -1,6 +1,123 @@
 #Todays Print
 
 ###########################################################################################
+Name:Elder Vampire
+
+Normal
+
+Life:30
+Count:2
+Passive: Sunburn
+
+Rolls:1,2 A:2 Text: " Powerful:1 H:4 "
+Rolls:3,4,5,6 A:1 A:1 H:2
+
+Hard
+ 
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+
+###########################################################################################
+Name:Vampire Chanter
+
+Normal
+
+Life:20
+Count:3
+Passive: Sunburn
+
+Rolls:1,2 H:4 Water:1
+Rolls:2,3 A:3 Metal:1
+Rolls:5,6 A:1 A:1
+
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+###########################################################################################
+Name:Vampire
+
+Normal
+
+Life:10
+Count:4
+Passive: Sunburn
+
+Rolls:1,2 A:1 H:2
+Rolls:2,3 A:2 H:1
+Rolls:5,6 A:3
+
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+###########################################################################################
+Name:Sycophant
+
+Normal
+
+Life:20
+Count:3
+
+Rolls:1,2 A:1
+Rolls:3,4 A:2
+Rolls:5,6 Text: "Adjacent Enemies get Powerful:1 "
+
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+###########################################################################################
+Name:Cultist
+
+Normal
+
+Life:10
+Count:13
+Passive: Scenariobound
+#Vampires : when adjacent vamp would die, move as maydmg as you can from vamp to this
+
+Rolls:1 A:3
+Rolls:2,3 A:2
+Rolls:4,5,6 A:1
+
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+
+End Of File
+
+###########################################################################################
 Name:Bandit Raider
 
 Normal
@@ -109,7 +226,7 @@ Passive: Can't die as long as a golem is adjacent
 Rolls:1,2,3 A:2 A:2
 Rolls:4,5,6 Text: "Adjacent golems gain powerful"
 
-End Of File
+
 
 ###########################################################################################
 Name:Metalcrafter

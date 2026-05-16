@@ -14,14 +14,20 @@
 \usepackage[export]{adjustbox}
 \title{Storybook}
 \usepackage{verbatim}
+\usepackage{tikz}
 %end copy Rulebook
 
 \author{Alexander Mödder and Alexander Vinkeloe}
 
 
 \begin {document}
-%\maketitle
-%\tableofcontents
-%\newpage
+\maketitle
+\tableofcontents
+
+\begin{tikzpicture}[remember picture,overlay,inner sep=0pt,outer sep=0pt]
+	\node at (7.5cm,-9cm) {\includegraphics[width=0.8\paperwidth]{../GuidePics/Circle_Mechanics.drawio.png}};
+\end{tikzpicture}
+\newpage
 \input{./Story1/Story1.tex}
+\input{./Story2/Story2.tex}
 \end {document}

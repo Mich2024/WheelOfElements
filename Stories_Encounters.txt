@@ -1,4 +1,4 @@
-
+#######################
 Name: Bandit Hunt
 Encounter:1
 Bandit Skirmisher, Bandit Raider, Bandit Raider,
@@ -28,6 +28,38 @@ Bandit Skirmisher, Bandit Leader, Bandit Trapper,
 #Bandit Trapper : Silver*
 #Bandit Leader : Silver*
 #Bandit Berserker : Gold
+
+#######################
+Name: Vampires in the Masquerade
+
+Encounter:1
+Vampire, Cultist, Cultist,
+Sycophant, Cultist, Cultist,
+Vampire, Cultist, Cultist,
+Sycophant, Cultist, Cultist,
+Vampire, Cultist, Cultist,
+
+Encounter:2
+Cultist, Vampire Chanter, Cultist, Cultist,
+Sycophant, Vampire, Cultist, Cultist,
+Cultist, Vampire Chanter, Cultist, Cultist,
+Sycophant, Vampire, Cultist, Cultist,
+Cultist, Vampire Chanter, Cultist, Cultist,
+
+
+Encounter:3
+Cultist, Elder Vampire, Cultist
+Cultist, Cultist, Vampire Chanter, Sycophant,
+Cultist, Vampire, Sycophant, Vampire, Cultist, 
+Cultist, Elder Vampire, Cultist
+Cultist, Cultist, Vampire Chanter, Sycophant,
+
+#Bandit Cultist : Bronze
+#Bandit Sycophant : Silver
+#Bandit Vampire : Silver
+#Vampire Chanter : Silver*
+#Elder Vampire : Gold
+
 
 End Of File
 
