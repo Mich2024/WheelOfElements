@@ -48,11 +48,11 @@ Cultist, Vampire Chanter, Cultist, Cultist,
 
 
 Encounter:3
-Cultist, Elder Vampire, Cultist
-Cultist, Cultist, Vampire Chanter, Sycophant,
-Cultist, Vampire, Sycophant, Vampire, Cultist, 
-Cultist, Elder Vampire, Cultist
-Cultist, Cultist, Vampire Chanter, Sycophant,
+Cultist, Elder Vampire, Cultist, Cultist,
+Cultist, Cultist, Vampire Chanter, Sycophant, Cultist,
+Cultist, Vampire, Sycophant, Vampire, Cultist, Cultist,
+Cultist, Elder Vampire, Cultist, Cultist,
+Cultist, Cultist, Vampire Chanter, Sycophant, Cultist,
 
 #Bandit Cultist : Bronze
 #Bandit Sycophant : Silver
