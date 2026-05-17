@@ -16,8 +16,8 @@ Name: "Bloodguard" ManaCost:Life;3*X Ranged Shield:X Text: "(X is 1 while backli
 
 Tier3
 Name: "Sword and Shield" Shield:1 A:1
-Name: "Wrath" A:X Text: "X is your missing life. X cant be more than 10"
-Name: "Blood to Earth" ManaCost:Life;3 Earth:9 Text: "The Elemental Wheel does not rotate this turn"
+Name: "Wrath" A:X Text: "X is the difference from your current life to your starting life. X cant be more than 9"
+Name: "Blood to Earth" ManaCost:Life;3 Earth:7 Text: "The Elemental Wheel does not rotate this turn"
 
 
 

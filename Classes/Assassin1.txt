@@ -1,7 +1,7 @@
 Stats
 
 Passive
-Your handsize is increased by 1 (to 5) and your decksize is decreased by 1 (to 15)
+Your handsize is increased by 1 (to 5) and your decksize is decreased by 1 (to 15). Assassin 1 only grants 4 Cards
 Life: 3
 
 Type
@@ -16,7 +16,7 @@ Name: "Strike" Ranged A:1
 
 Tier2
 Name: "Parry" Stun Metal:1
-Name: "Poisoned Knife" ManaCost:Water;1 A:3 Poison:2
+Name: "Poisoned Dagger" ManaCost:Water;1 A:3 Poison:2
 
 Tier3
 Name: "Cut Throat" ManaCost:Water;2 Text: "Execute an enemy if it is below half life"

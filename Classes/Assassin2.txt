@@ -11,7 +11,7 @@ Explanation:Advantage
 
 Tier1
 Name: "Slice Heel" ManaCost:Water;2 Ranged Stun Stun
-Name: "Poison Shiv" ManaCost:Water;1 A:2 Text: "If the Attack dealt atleast 4 Damage, Poison:4"
+Name: "Poison Shiv" ManaCost:Water;1 A:2 Text: "If the Attack dealt at least 4 Damage, Poison:4"
 
 Tier3
 Name: "Clean Strike" Metal:2 A:3
