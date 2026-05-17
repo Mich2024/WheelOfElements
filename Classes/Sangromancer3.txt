@@ -14,4 +14,4 @@ Name: "Dice" ManaCost:Metal;3 A:7
 
 Tier2
 Name: "Renew" Earth:2 Advantage Advantage
-Name: "Flay" ManaCost:Life;3 A:7 Text: "If this was your second card, repeat this card (including the cost)."
+Name: "Flay" ManaCost:Life;4 A:7 Text: "If this was your second card, repeat this card (including the cost)."

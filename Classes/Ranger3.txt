@@ -1,5 +1,5 @@
 Passive
-Gain a diamond tier Ranger Ancestry Dice
+Gain a diamond tier Ranger Attack Dice
 
 Life: 3
 

@@ -1,5 +1,5 @@
 Passive
-Gain a silver tier Ranger Ancestry Dice
+Gain a silver tier Ranger Attack Dice
 
 Life: 3
 
@@ -19,7 +19,7 @@ Base Cards
 Tier1
 #3
 Name: "Barrage" ManaCost:Fire;1 Flurry:2
-Name: "Pocket Sand" Wood Ranged Disengage
+Name: "Pocket Sand" Wood:1 Ranged Disengage
 
 Tier2
 #5
