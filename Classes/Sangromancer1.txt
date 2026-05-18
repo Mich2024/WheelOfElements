@@ -12,10 +12,10 @@ Explanation:Lifepay
 
 Tier1
 Name: "Heart of Earth" Earth:2
-Name: "Bloody Strike" ManaCost:Metal;2  Ranged Advantage Advantage A:3
+Name: "Metal Strike" ManaCost:Metal;2  Ranged Advantage Advantage A:3
 
 Tier2
-Name: "Blood Petals" ManaCost:Metal;1 ManaCost:Life;3 A:4 A:4
+Name: "Blood Petals" ManaCost:Life;3 A:3 A:3
 Name: "Earthen Razor" ManaCost:Life;2 Earth:3 Ranged Advantage A:1
 
 Tier3

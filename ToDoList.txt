@@ -7,7 +7,7 @@ ABC Enemies vs A:1 verwirrung
 ############
 AV
 assassin 2 passive rework
-
+life sieht aus wie wasser?
 
 Halbkreis in class tile trotzdem noch entfernen
 
@@ -15,6 +15,8 @@ Elemenetal Wheel Fire and Water swap random
 mehr abfuck elemental wheel in "höheren" events
 ############
 AM
+flurry description token to you
+magic style keyword remindertext (Cycling intimidate etc.)
 
 blaze text improven "first card -> blaze X"
 Pyro 2 passive rework
@@ -54,7 +56,7 @@ example attack, example element gen, example blaze, example opt cost, possibly w
 
 
 
-
+############
 Advice:
 magic style keyword remindertext (Cycling intimidate etc.)
 
@@ -79,6 +81,35 @@ Ancestry / Class Overview & Strategy Guide:
         Gameplay advice
         Passives
     Strategy Guide
+############
+dice:
+silverkin Gold
+
+Karten:
+ass1 poisoned Dagger
+ass1 cut throat
+ass2 poison shiv
+sangro1 Blood Petals
+sangro1 Metal strike
+sangr2 Bloodguard
+sangr2 Blood to Earth
+sangr2 Wrath
+sangr3 flay
+koloss1 last line
+centaur punt
+thyger Prey upon parser brick
+rang1 Pocket Sand
+solarian strike
+pyro1 Blazing Heart
+
+passives: 
+Ass1
+ranger123
+pyro3
+races:all
+
+
+
 
 
 Pitch:

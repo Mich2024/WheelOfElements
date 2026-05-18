@@ -1,5 +1,5 @@
 Passive
-Gain a gold tier Ranger Ancestry Dice
+Gain a gold tier Ranger Attack Dice
 
 Life: 3
 
