@@ -1,5 +1,5 @@
 Passive
-At the beginning of each encounter, Shield:3 Advantage
+At the beginning of each encounter, Stun Stun Advantage:2
 #In your first turn, ignore elemental costs.
 #Treat Costs of X as 3 if you are not paying them.
 Life: 3
