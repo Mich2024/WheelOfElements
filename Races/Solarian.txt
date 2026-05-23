@@ -1,5 +1,5 @@
 Passive
-When an enemy moves to you, it gets Vulnerable
+When an enemy rotates or is disengaged to you, it gets Vulnerable
 Life: 4
 
 TierCards: Silver
