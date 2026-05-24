@@ -1,5 +1,5 @@
 Passive
-You may remove one Shield from yourself to perform A:4
+At the beggining of your first turn: A:4
 #+6Max life
 Life: 3
 
