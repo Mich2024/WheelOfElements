@@ -23,7 +23,8 @@ Add 2 +1 Add 1 Fae
 
 
 Type
-#Element:MetalWater
+Element:Metal
+Element:Water
 
 Explanation:Stun
 

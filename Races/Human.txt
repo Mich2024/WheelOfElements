@@ -22,7 +22,8 @@ Rank:3
 Add 2 +1 Add 1 Human
 
 Type
-#Element: MetalEarth
+Element: Water
+Element: Wood
 
 Explanation: Heal
 

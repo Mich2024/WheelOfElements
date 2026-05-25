@@ -3,7 +3,6 @@ If you empty your hand, A:1
 Life: 2
 
 Type
-
 Element: Fire
 Element: Earth
 

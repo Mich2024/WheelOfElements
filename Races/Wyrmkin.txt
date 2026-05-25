@@ -21,7 +21,8 @@ Rank:3
 Add 2 +1 Add 1 Wyrmkin
 
 Type
-#Element: Water Wood
+Element: Earth
+Element: Metal
 
 Explanation:Lifepay
 

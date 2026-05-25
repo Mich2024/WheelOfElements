@@ -23,7 +23,8 @@ Rank:3
 Add 2 -1 Add 2 +2 Add 1 Centaur
 
 Type
-Element:FireEarth
+Element:Fire
+Element:Earth
 
 Explanation:Blaze
 

@@ -22,6 +22,8 @@ Add 2 +1 Add 1 Thyger
 
 
 Type
+Element: Wood
+Element: Fire
 
 Explanation: Flurry
 
