@@ -324,7 +324,7 @@ def serializeActionToNanDeck(inputActions):
                     res += "------ Opt Paid ------ "
 
                 elif action.split(":")[0].casefold() == "blaze":
-                    res += r"--First Card -> \symBlaze Blaze " + action.split(":")[1] + " -- "
+                    res += r"-First Card->\symBlaze Blaze " + action.split(":")[1] + "-"
                 else:
 
                     parts = action.split(":")
