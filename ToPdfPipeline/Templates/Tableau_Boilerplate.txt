@@ -55,7 +55,7 @@ FONT = Arial, 18, B, #000000
 
 TEXT = 1-[CardCount], "Turn order",        [space_left] + [quart_hor] * 2, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], LEFT, TOP
 FONT = Arial, 14, B, #000000
-TEXT = 1-[CardCount], " 1. Draw cards until hand is full \13\ 2. Roll enemy dice & move ABC tracker \13\ 3. Player Turn - Simultaneuos \13\         Start of turn effects \13\         Play two cards \13\ 4. Enemy Turn \13\ 5. Cleanup",  [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*1 + [space_text_28], [quart_hor]*2, [third_vert] - [space_text_28] - [linestrength], LEFT, WORDWRAP
+TEXT = 1-[CardCount], " 1. Draw cards until hand is full (4) \13\ 2. Roll enemy dice & move ABC tracker \13\ 3. Player Turn - Simultaneuos \13\         Start of turn effects \13\         Play two cards \13\ 4. Enemy Turn \13\ 5. Cleanup (rotate, boons&banes)",  [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*1 + [space_text_28], [quart_hor]*2, [third_vert] - [space_text_28] - [linestrength], LEFT, WORDWRAP
 
 
 TEXT = 1-[CardCount], "When covered:" , [space_left] + [quart_hor] * 0  + [linestrength]*2, [space_top] + [linestrength]*2, [quart_hor] - [linestrength] * 3 - 1, [space_text_18], left, center
