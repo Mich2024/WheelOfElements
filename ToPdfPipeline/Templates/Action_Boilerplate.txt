@@ -54,12 +54,26 @@ htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", 0.55
 htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", 0.55, 0.55
 htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png", 0.55, 0.55
 
+htmlimage = 1 - [CardCount], \symCardsBronze, "..\..\Pictures\Tiers\CardsTier1.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symCardsSilver, "..\..\Pictures\Tiers\CardsTier2.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symCardsGold, "..\..\Pictures\Tiers\CardsTier3.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symCardsDia, "..\..\Pictures\Tiers\CardsTier4.png", 0.4, 0.4
+
+htmlimage = 1 - [CardCount], \symDiceBronze, "..\..\Pictures\Tiers\DiceTier1.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symDiceSilver, "..\..\Pictures\Tiers\DiceTier2.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symDiceGold, "..\..\Pictures\Tiers\DiceTier3.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symDiceDia, "..\..\Pictures\Tiers\DiceTier4.png", 0.4, 0.4
+
+htmlimage = 1 - [CardCount], \symPassiveBronze, "..\..\Pictures\Tiers\PassiveTier1.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symPassiveSilver, "..\..\Pictures\Tiers\PassiveTier2.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3.png", 0.4, 0.4
+
 htmlfont=font_18,Arial,14,B,#000000,LEFT
 
-htmlfont=font_12_right_bronze,Arial,12,B,#CD7F32,RIGHT
-htmlfont=font_12_right_silver,Arial,12,B,#ACACAC,RIGHT
-htmlfont=font_12_right_gold,Arial,12,B,#CFB53B,RIGHT
-htmlfont=font_12_right_mithril,Arial,12,B,#87B787,RIGHT
+htmlfont=font_12_right_Bronze,Arial,12,B,#CD7F32,RIGHT
+htmlfont=font_12_right_Silver,Arial,12,B,#ACACAC,RIGHT
+htmlfont=font_12_right_Gold,Arial,12,B,#CFB53B,RIGHT
+htmlfont=font_12_right_Dia,Arial,12,B,#87B787,RIGHT
 
 ${Cards}
 
@@ -70,4 +84,4 @@ RECTANGLE = 1-[CardCount], 0,  [space_text_28] - 0.1, 3.9,  [space_text_28], #00
 #Bottom
 LINE = 1-[CardCount], 0,  7.9, 6.35,  7.9, #000000, [linestrength]
 #LINE = 1-[CardCount], 3,  7.9, 3,  8.89, #000000, [linestrength]
-LINE = 1-[CardCount], 4.2,  7.9, 4.2,  8.89, #000000, [linestrength]
+LINE = 1-[CardCount], 3.8,  7.9, 3.8,  8.89, #000000, [linestrength]

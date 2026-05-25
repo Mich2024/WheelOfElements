@@ -324,7 +324,7 @@ def serializeActionToNanDeck(inputActions):
                     res += "------ Opt Paid ------ "
 
                 elif action.split(":")[0].casefold() == "blaze":
-                    res += r"-First Card->\symBlaze Blaze " + action.split(":")[1] + "-"
+                    res += r"---Card 1 -> \symBlaze Blaze " + action.split(":")[1] + "---"
                 else:
 
                     parts = action.split(":")
@@ -535,16 +535,16 @@ class actionCard:
         colTier = "bronze"
         if self.tier == "1":
             textTier = "Bronze"
-            colTier = "bronze"
+            colTier = "Bronze"
         elif self.tier == "2":
             textTier = "Silver"
-            colTier = "silver"
+            colTier = "Silver"
         elif self.tier == "3":
             textTier = "Gold"
-            colTier = "gold"
+            colTier = "Gold"
         elif self.tier == "4":
             textTier = "Dia"
-            colTier = "mithril"
+            colTier = "Dia"
 
         template_card = template_card.replace(r"${Rank}",textTier).replace(r"${Col_Rank}",colTier)
         
