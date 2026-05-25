@@ -56,6 +56,11 @@ htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png"
 
 htmlfont=font_18,Arial,14,B,#000000,LEFT
 
+htmlfont=font_12_right_bronze,Arial,12,B,#CD7F32,RIGHT
+htmlfont=font_12_right_silver,Arial,12,B,#ACACAC,RIGHT
+htmlfont=font_12_right_gold,Arial,12,B,#CFB53B,RIGHT
+htmlfont=font_12_right_mithril,Arial,12,B,#87B787,RIGHT
+
 ${Cards}
 
 #Title

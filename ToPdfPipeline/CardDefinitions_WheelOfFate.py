@@ -324,7 +324,7 @@ def serializeActionToNanDeck(inputActions):
                     res += "------ Opt Paid ------ "
 
                 elif action.split(":")[0].casefold() == "blaze":
-                    res += r"--- \symBlaze Blaze " + action.split(":")[1] + " --- "
+                    res += r"--First Card -> \symBlaze Blaze " + action.split(":")[1] + " -- "
                 else:
 
                     parts = action.split(":")
@@ -532,21 +532,21 @@ class actionCard:
         template_card = template_card.replace(r"${Class}",classname)
 
         textTier = "Undef"
-        colTier = "[col_bronze]"
+        colTier = "bronze"
         if self.tier == "1":
             textTier = "Bronze"
-            colTier = "[col_bronze]"
+            colTier = "bronze"
         elif self.tier == "2":
             textTier = "Silver"
-            colTier = "[col_silver]"
+            colTier = "silver"
         elif self.tier == "3":
             textTier = "Gold"
-            colTier = "[col_gold]"
+            colTier = "gold"
         elif self.tier == "4":
             textTier = "Dia"
-            colTier = "[col_mithril]"
+            colTier = "mithril"
 
-        template_card = template_card.replace(r"${Rank}",textTier + " " + self.tier).replace(r"${Col_Rank}",colTier)
+        template_card = template_card.replace(r"${Rank}",textTier).replace(r"${Col_Rank}",colTier)
         
         return template_card
 
@@ -973,10 +973,11 @@ class monsterAICard:
 
         template_monster_line_life = open('Templates/Monster_Line_Life.txt', 'r')
         template_monster_line_life = template_monster_line_life.read()
-        nanDeckLife = ""
-        life_max = int(self.life)
+        #life_max = int(self.life)
+        nanDeckLife = template_monster_line_life.replace(r"${Life}", self.life)
+        #print(nanDeckLife)
         #print(life_max)
-        row = 0 #line
+        '''row = 0 #line
         col = 0
         while(life_max) > 0:
             if life_max >= 50:
@@ -995,7 +996,9 @@ class monsterAICard:
             row += 1
             if row > 4:
                 row = 0
-                col = 1
+                col = 1'''
+        
+
         
 
         #print(self.actions)

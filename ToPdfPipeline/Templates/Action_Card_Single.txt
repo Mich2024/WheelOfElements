@@ -10,5 +10,4 @@ ${AOE}
 FONT = Arial, 12, B, #000000
 TEXT = ${Order}, "${Class}", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
-FONT = Arial, 12, B, ${Col_Rank}
-TEXT = ${Order}, "${Rank}", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
+htmltext = ${Order}, "${Rank}", 6.35-2.2 , 8, 2, [space_text_18], #FFFFFF,0,T,100,font_12_right_${Col_Rank}
