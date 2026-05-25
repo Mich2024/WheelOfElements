@@ -769,17 +769,21 @@ class statCard:
         self.tierCards = "[col_mithril]"
         self.tierPassive = "[col_mithril]"
         self.intTierPassive = 4
+        self.intTierCards = 4
+        self.intTierDice = 4
         self.tierMods = "[col_mithril]"
 
     def setLife(self, l):
         self.life = l
     def setTierCards(self, l: str):
         self.tierCards = "[col_" + l.strip().lower() + "]"
+        self.intTierCards = tier_str_to_int(l)
     def setTierPassive(self, l: str):
         self.tierPassive = "[col_" + l.strip().lower() + "]"
         self.intTierPassive = tier_str_to_int(l)
     def setTierMods(self, l: str):
         self.tierMods = "[col_" + l.strip().lower() + "]"
+        self.intTierDice = tier_str_to_int(l)
     
     assignmentDict = {
         "Life":setLife, #stat cards start here
@@ -833,7 +837,7 @@ class statCard:
 
             template_line_life = template_line_life.replace(r"${Order}",str(order)).replace(r"${Life}",self.life.strip())
             template_line_passive = template_line_passive.replace(r"${Order}",str(order)).replace(r"${Passive}",passive_new).replace(r"${IntTierPassive}",str(self.intTierPassive))
-            template_race = template_race.replace(r"${Order}",str(order)).replace(r"${Race}", self.name )
+            template_race = template_race.replace(r"${Order}",str(order)).replace(r"${Race}", self.name ).replace(r"${IntTierCards}",str(self.intTierCards)).replace(r"${IntTierDice}",str(self.intTierDice))
             template_race = template_race.replace(r"${TierMod}",self.tierMods).replace(r"${TierPassive}",self.tierPassive)
             res = template_race.replace(r"${Life}",template_line_life).replace(r"${Passive}",template_line_passive)
 
