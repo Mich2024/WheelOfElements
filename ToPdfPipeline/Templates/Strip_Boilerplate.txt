@@ -68,7 +68,7 @@ htmlimage = 1 - [CardCount], \symPassiveSilver, "..\..\Pictures\Tiers\PassiveTie
 htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3.png", [size_sym], [size_sym]
 
 htmlfont=font_18,Arial,14,B,#000000,Center
-htmlfont=font_20,Arial,17,B,#000000,LEFT
+htmlfont=font_20,Arial,15,B,#000000,LEFT
 
 [start_name] = ([size_sym] + [linestrength])* 2
 [start_bot] = 6.5
