@@ -18,19 +18,15 @@ AM
 flurry description token to you
 magic style keyword remindertext (Cycling intimidate etc.)
 
-blaze text improven "first card -> blaze X"
+Passive halfcircle
+Passive trigger - effect formatting
+
 Pyro 2 passive rework
 
-boon friendly targeting
+boon friendly targeting -> rulebook pic
 
 bild abc turnorder
-Bild Opt cost pfeil
-Targeting Pics
-AOE pics better, with enemies and separators (dahsed line) for enemy zones & players
 titel für die AOE situationen oben links
-put action on targeting arrow 
-
-htmltext for tablea passive
 
 clarify stun and multiattacks
 recommended beginner classes
@@ -40,9 +36,6 @@ komplettkartenverzierung
 go over whole document with vscode to harmonize:
     Sybols (attack and other)
     Capitalization
-
-Unify beginning of encounter passives
-
 
 Silverkin Passive
 
@@ -54,6 +47,7 @@ AOE diceroll change
 
 example attack, example element gen, example blaze, example opt cost, possibly with pics
 
+Box, tischdecke
 
 
 ############
@@ -85,39 +79,8 @@ Ancestry / Class Overview & Strategy Guide:
 dice:
 silverkin Gold
 
-Karten:
-ass1 poisoned Dagger
-ass1 cut throat
-ass2 poison shiv
-sangro1 Blood Petals
-sangro1 Metal strike
-sangr2 Bloodguard
-sangr2 Blood to Earth
-sangr2 Wrath
-sangr3 flay
-koloss1 last line
-centaur punt
-thyger Prey upon parser brick
-rang1 Pocket Sand
-solarian strike
-pyro1 Blazing Heart
-
-passives: 
-Ass1
-ranger123
-pyro3
+recheck passives for:
 races:all
-
-
-
-
-
-Pitch:
-
-, RPG-style Multiclasser, coop, cardbattler, inverted game (low deth high breadth)
-
-
-
 
 ##################
 # Notes Tutorium #
