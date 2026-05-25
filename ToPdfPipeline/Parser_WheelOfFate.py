@@ -147,9 +147,10 @@ def parseStatLinesToCards(lines, name, rank):
     #print(linesTableau)
 
     for line in TypeExplanation:
-        #print(line)
+        #print(name)
         if startsWith(line, "Element"):
-            elements.append(line)
+            #print(line.split(":"))
+            elements.append(line.split(":")[1].strip())
         if startsWith(line, "Explanation"):
             explanations.append(line)
 
@@ -510,8 +511,10 @@ def parseRacesAndClasses(files_Input):
     print("serializing tableaus")
     nandeckStatCards = ""
     nandeckRaces = ""
+    nandeckStrips = ""
     orderRaces = 1
     orderClasses = 1
+    orderStrip = 1
 
     
 
@@ -521,6 +524,9 @@ def parseRacesAndClasses(files_Input):
 
             nandeckStatCards += statusCard.serializeToNandeck(orderClasses)
             orderClasses += 1
+
+            nandeckStrips += statusCard.serializeStripToNandeck(orderStrip)
+            orderStrip+=1
         else:
             #print(statusCard.tableau.L1R1)
             nandeckRaces += statusCard.serializeToNandeck(orderRaces)
@@ -531,7 +537,6 @@ def parseRacesAndClasses(files_Input):
     #for modCard in modifierCards:
     #    texModCards += modCard.serializeToLatex()
     print("serializing action cards")
-
     orderActions = 1
     nandeckActCards = ""
     for actCard in actionCards:
@@ -547,6 +552,14 @@ def parseRacesAndClasses(files_Input):
 
     fileToPrint = open('out/classShingles.txt', 'w+')
     fileToPrint.write(template_boilerplate_classes)
+    fileToPrint.close()
+
+    template_boilerplate_strips = open('Templates/Strip_Boilerplate.txt', 'r')
+    template_boilerplate_strips = template_boilerplate_strips.read()
+    template_boilerplate_strips = template_boilerplate_strips.replace(r"${Cards}", nandeckStrips).replace(r"${CardCount}", str(orderStrip-1))
+
+    fileToPrint = open('out/strips.txt', 'w+')
+    fileToPrint.write(template_boilerplate_strips)
     fileToPrint.close()
 
     template_boilerplate_actions = open('Templates/Action_Boilerplate.txt', 'r')

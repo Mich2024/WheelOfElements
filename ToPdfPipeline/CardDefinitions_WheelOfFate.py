@@ -856,7 +856,6 @@ class statCard:
                 templateEdge = open('Templates/Shingle_Class_Edge_BL.txt', 'r')
                 templateEdge = templateEdge.read()
 
-            
             res = templateShingle.replace(r"${Edge}", templateEdge).replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life).strip()).replace(r"${Passive}", passive_new)
 
         return res
@@ -865,6 +864,31 @@ class statCard:
         assert isinstance(self.tableau, tableauRace)
         return self.tableau.serializeModifiersToNandeck(order, self.name)
     
+    def serializeStripToNandeck(self, order):
+
+        if isinstance(self.tableau, tableauRace): #strips only exist for classes
+            return ""
+        
+        title = self.name + " " + str(self.rank)
+        templateStrip = open('Templates/Strip_Single.txt', 'r')
+        templateStrip = templateStrip.read()
+
+        templateRank = open('Templates/Strip_Rank_' + str(self.rank) + '.txt', 'r')
+        templateRank = templateRank.read()
+
+        nandeckStrip = templateStrip.replace(r"${Name}", str(self.name).strip()).replace(r"${Sym_Rank}", templateRank)
+
+        ele_1 = self.elements[0]
+        ele_2 = ""
+        if len(self.elements) > 1:
+            ele_2 = self.elements[1]
+        nandeckStrip = nandeckStrip.replace(r"${Order}",str(order)).replace(r"${Element_1}",ele_1).replace(r"${Element_2}",ele_2)
+
+
+        #print(self.passive)
+
+        return nandeckStrip
+
 class monsterAICard:
 
     def __init__(self):

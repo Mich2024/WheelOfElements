@@ -1,0 +1,6 @@
+htmltext = ${Order}, "\symAdd${Element_1}",[space_left] , 0,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = ${Order}, "\symAdd${Element_2}",[space_left] , [size_sym] + [linestrength] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+
+htmltext = ${Order}, "${Name}", 0.15, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+${Sym_Rank}

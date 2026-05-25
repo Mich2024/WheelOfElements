@@ -1,34 +1,32 @@
 [CardCount] = ${CardCount}
 
-[col_bronze] = #CD7F32
-[col_silver] = #ACACAC
-[col_gold] = #CFB53B
-[col_mithril] = #87B787
-
-
 [space_text_28] = 1
 [space_text_18] = 0.7
 
 [linestrength] = 0.1
 
 [space_top] = 1
-[space_left] = [space_text_18] + [linestrength]
+[space_left] = 0.05
 [half_space_left] = (0.5*[space_left])
-[space_right] = [space_left]
+[space_right] = 0.5
 [space_bottom] = 0.25
+[space_hp_box] = 0.7
+[space_action_left] = 0.55*2 + 0.2
 
-[full_hor] = 6.35 - [space_left] - [space_right]
 
-
+[full_hor] = 1
+[full_hor_action] = 1
 
 CARDS=[CardCount]
-BORDER=ROUNDED,#000000,[linestrength]*2
+BORDER=NONE
 UNIT=CM
 PAGE=21,29.7,PORTRAIT,HV
 DPI=300
-CARDSIZE=6.35,8.89
+CARDSIZE=1.1,8.89
 BASERANGE=,ON
-[size_sym] = 0.45
+
+
+[size_sym] = 0.8
 
 htmlimage = 1 - [CardCount], \symAddFire, "..\..\Pictures\Icons\AddFire.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", [size_sym], [size_sym]
@@ -55,34 +53,29 @@ htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", [siz
 htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png", [size_sym], [size_sym]
 
-htmlimage = 1 - [CardCount], \symCardsBronze, "..\..\Pictures\Tiers\CardsTier1.png", 0.4, 0.4
-htmlimage = 1 - [CardCount], \symCardsSilver, "..\..\Pictures\Tiers\CardsTier2.png", 0.4, 0.4
-htmlimage = 1 - [CardCount], \symCardsGold, "..\..\Pictures\Tiers\CardsTier3.png", 0.4, 0.4
-htmlimage = 1 - [CardCount], \symCardsDia, "..\..\Pictures\Tiers\CardsTier4.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symCardsBronze, "..\..\Pictures\Tiers\CardsTier1.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symCardsSilver, "..\..\Pictures\Tiers\CardsTier2.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symCardsGold, "..\..\Pictures\Tiers\CardsTier3.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symCardsDia, "..\..\Pictures\Tiers\CardsTier4.png", [size_sym], [size_sym]
 
-htmlimage = 1 - [CardCount], \symDiceBronze, "..\..\Pictures\Tiers\DiceTier1.png", 0.4, 0.4[size_sym]
-htmlimage = 1 - [CardCount], \symDiceSilver, "..\..\Pictures\Tiers\DiceTier2.png", 0.4, 0.4
-htmlimage = 1 - [CardCount], \symDiceGold, "..\..\Pictures\Tiers\DiceTier3.png", 0.4, 0.4
-htmlimage = 1 - [CardCount], \symDiceDia, "..\..\Pictures\Tiers\DiceTier4.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symDiceBronze, "..\..\Pictures\Tiers\DiceTier1.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDiceSilver, "..\..\Pictures\Tiers\DiceTier2.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDiceGold, "..\..\Pictures\Tiers\DiceTier3.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDiceDia, "..\..\Pictures\Tiers\DiceTier4.png", [size_sym], [size_sym]
 
-htmlimage = 1 - [CardCount], \symPassiveBronze, "..\..\Pictures\Tiers\PassiveTier1.png", 0.4, 0.4
-htmlimage = 1 - [CardCount], \symPassiveSilver, "..\..\Pictures\Tiers\PassiveTier2.png", 0.4, 0.4
-htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symPassiveBronze, "..\..\Pictures\Tiers\PassiveTier1.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPassiveSilver, "..\..\Pictures\Tiers\PassiveTier2.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3.png", [size_sym], [size_sym]
 
-htmlfont=font_18,Arial,14,B,#000000,LEFT
+htmlfont=font_18,Arial,14,B,#000000,Center
+htmlfont=font_20,Arial,17,B,#000000,LEFT
 
-htmlfont=font_12_right_Bronze,Arial,12,B,#CD7F32,RIGHT
-htmlfont=font_12_right_Silver,Arial,12,B,#ACACAC,RIGHT
-htmlfont=font_12_right_Gold,Arial,12,B,#CFB53B,RIGHT
-htmlfont=font_12_right_Dia,Arial,12,B,#87B787,RIGHT
+[start_name] = ([size_sym] + [linestrength])* 2
+[start_bot] = 6.5
+
 
 ${Cards}
 
-#Title
-LINE = 1-[CardCount], 0, [space_text_28] - 0.1, 6.35, [space_text_28] - 0.1, #000000, [linestrength]
-#Cost
-RECTANGLE = 1-[CardCount], 0,  [space_text_28] - 0.1, 3.9,  [space_text_28], #000000,empty, [linestrength]
-#Bottom
-LINE = 1-[CardCount], 0,  7.9, 6.35,  7.9, #000000, [linestrength]
-#LINE = 1-[CardCount], 3,  7.9, 3,  8.89, #000000, [linestrength]
-LINE = 1-[CardCount], 3.8,  7.9, 3.8,  8.89, #000000, [linestrength]
+LINE = 1-[CardCount], 0, [start_name], 1.1,[start_name], #000000, [linestrength]
+LINE = 1-[CardCount], 0, [start_bot]-[linestrength], 1.1, [start_bot]-[linestrength], #000000, [linestrength]
+
