@@ -1,5 +1,5 @@
 Passive
-At the beggining of your first turn: A:4
+First turn:<br>- A:4
 #+6Max life
 Life: 3
 

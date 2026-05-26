@@ -15,23 +15,23 @@ Elemenetal Wheel Fire and Water swap random
 mehr abfuck elemental wheel in "höheren" events
 ############
 AM
-flurry description token to you
 magic style keyword remindertext (Cycling intimidate etc.)
 
-Passive halfcircle
 Passive trigger - effect formatting
-
-Pyro 2 passive rework
-
 
 Reminder Boxes, importatn boxes and flavour boxes in rulebook
 boon friendly targeting -> rulebook pic
 
-bild abc turnorder
 titel für die AOE situationen oben links
 
 clarify stun and multiattacks
 recommended beginner classes
+-> Human Knight Koloss
+-> HalfElf Ranger Bard
+-> Fae Druid Assassin
+-> Dwarf Berserker Pyromancer
+-> Centaur Sangromancer Witch
+
 
 komplettkartenverzierung
 

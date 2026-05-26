@@ -39,6 +39,8 @@ DPI=300
 CARDSIZE=[WidthPage],[HeightPage]
 BASERANGE=,ON
 
+[size_sym] = 0.5
+
 ${UtilsBoilerplate}
 
 htmlfont=font_center_18,Arial,12,B,#000000,CENTER

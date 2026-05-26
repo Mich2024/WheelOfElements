@@ -14,7 +14,7 @@
 [col_silver] = #ACACAC
 [col_gold] = #CFB53B
 [col_mithril] = #87B787
-[radius] = 1
+[radius] = 1.1
 
 [third_vert] = 5.5
 [quart_vert] = ((([HeightPage]-[space_top]-[space_bottom])/4)-0.25)
@@ -27,6 +27,8 @@ CARDS=[CardCount]
 BORDER=RECTANGLE,#000000,[linestrength]*2
 UNIT=CM
 PAGE=21,29.7,LANDSCAPE,HV
+
+[size_sym] = 0.35
 
 ${UtilsBoilerplate}
 htmlimage = 1 - [CardCount], \symSmallLife, "..\..\Pictures\Icons\Life.png", 0.3, 0.3

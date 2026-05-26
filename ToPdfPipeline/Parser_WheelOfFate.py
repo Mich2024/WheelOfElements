@@ -633,9 +633,9 @@ if __name__ == "__main__":
     files_Input.append(r"../Classes/Koloss2.txt")
     files_Input.append(r"../Classes/Koloss3.txt")
 
-    files_Input.append(r"../Classes/Pyromancer1.txt")
+    files_Input.append(r"../Classes/Pyromancer1.txt")'''
     files_Input.append(r"../Classes/Pyromancer2.txt")
-    files_Input.append(r"../Classes/Pyromancer3.txt")
+    '''files_Input.append(r"../Classes/Pyromancer3.txt")
 
     files_Input.append(r"../Classes/Ranger1.txt")
     files_Input.append(r"../Classes/Ranger2.txt")

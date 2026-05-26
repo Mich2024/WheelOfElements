@@ -1,5 +1,5 @@
 Passive
-When on of your enemies dies, another enemy gets Vulnerable
+When you kill:<br>  Vulnerable:1
 
 Life: 3
 
