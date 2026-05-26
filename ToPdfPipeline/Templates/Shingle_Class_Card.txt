@@ -3,7 +3,7 @@ TEXT = ${Order}, "${Title}",   [linestrength]*2, [linestrength], [quart_hor] - 4
 FONT = "Noto Sans Mono", 12, B, #000000
 TEXT = ${Order}, "Passive:",   [linestrength]*2, [space_text_28] + [linestrength]*2 , [quart_hor] - 4 * [linestrength], [space_text_18], LEFT, TOP
 FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = ${Order}, "${Passive}",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = ${Order}, "${Passive}",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
 htmltext = ${Order}, "\symSmallLife Starting life: ${Life}",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
 ${Edge}
 
