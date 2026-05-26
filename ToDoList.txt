@@ -23,6 +23,8 @@ Passive trigger - effect formatting
 
 Pyro 2 passive rework
 
+
+Reminder Boxes, importatn boxes and flavour boxes in rulebook
 boon friendly targeting -> rulebook pic
 
 bild abc turnorder
@@ -42,14 +44,23 @@ Silverkin Passive
 ############
 Both:
 Rename disengage maybe repel
+
 Box cleanup
-AOE diceroll change
 
 example attack, example element gen, example blaze, example opt cost, possibly with pics
 
 Box, tischdecke
 
 
+Research verlage und schreibe personalisierten pitch
+-> Feuerland Verlagsgesllschaft mbH
+-> Hans im Glück ???
+-> Korea Boardgames
+-> PD-Verlag GmbH & Co. KG ???
+-> Pektis Studio Asleh, Abdelwahab und Cui GbR ?????????
+-> Skellig Games
+-> Squink
+-> Wonderbow Games
 ############
 Advice:
 magic style keyword remindertext (Cycling intimidate etc.)
