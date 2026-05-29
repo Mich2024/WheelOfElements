@@ -22,6 +22,9 @@ Passive trigger - effect formatting
 titel für die AOE situationen oben links
 
 clarify stun and multiattacks
+
+passive symbol statt schriftzug bei den classe kacheln
+
 recommended beginner classes
 -> Human Knight Koloss
 -> HalfElf Ranger Bard
@@ -38,26 +41,65 @@ go over whole document with vscode to harmonize:
 
 Silverkin Passive
 
+holzwürfel statt element marker ins rulebook schreiben
+
 ############
 Both:
 Rename disengage maybe repel
 
-Box cleanup
-
 example attack, example element gen, example blaze, example opt cost, possibly with pics
 
 Box, tischdecke
+Hotel Buchen
 
 
 Research verlage und schreibe personalisierten pitch
 -> Feuerland Verlagsgesllschaft mbH
--> Hans im Glück ???
 -> Korea Boardgames
--> PD-Verlag GmbH & Co. KG ???
--> Pektis Studio Asleh, Abdelwahab und Cui GbR ?????????
 -> Skellig Games
 -> Squink
 -> Wonderbow Games
+-> Rebel Studio
+-> Pegasus Spiele
+
+-> Hans im Glück ???
+-> PD-Verlag GmbH & Co. KG ???
+#Not in anymore ?? -> Pektis Studio Asleh, Abdelwahab und Cui GbR ?????????
+
+X 999 Games
+X AMIGO Spiel + Freizeit GmbH
+X ars Edition GmbH
+X D&R Denkriesen GmbH
+X Deep Print Games
+X Edition Spielwiese
+-> Feuerland Verlagsgesllschaft mbH
+X Franckh-Kosmos Verlags-GmbH & Co. KG
+?? Hans im Glück
+X Helvetiq
+X HUCH! (Hutter)
+-> Korea Boardgames
+X Lookout Spiele
+X Loosey Goosey Games GmbH
+X moses. Verlag GmbH
+X Nürnberger-Spielkarten Verlag GmbH
+X Pattloch Verlag
+?? PD-Verlag GmbH & Co. KG
+-> Pegasus Spiele
+X Perdix Spiele
+X Piatnik
+X Projekt Brett-Spiel-Testen
+X QANGO Games GmbH
+X Ravensburger Verlag  GmbH
+-> Rebel Studio
+X Schmidt Spiele GmbH
+X Schüler Spiele GmbH
+-> Skellig Games
+X SPIELDAS!
+X SpielStart
+-> Squink
+-> Wonderbow Games
+
+
 ############
 Advice:
 magic style keyword remindertext (Cycling intimidate etc.)

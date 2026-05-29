@@ -1,5 +1,5 @@
 Passive
-When you kill:<br>  Vulnerable:1
+When you kill:<br> - Vulnerable:1
 
 Life: 3
 
@@ -16,7 +16,7 @@ Base Cards
 
 Tier1
 #3
-Name: "Wall of Fire" Fire:1 Ranged Disengage
+Name: "Wall of Fire" Fire:1 Ranged Disengage Text: "<small><i>(Rotate an enemy to the next person)</i></small>"
 Name: "Flame Jet" ManaCost:Fire;3 Vulnerable:2 A:1 Blaze:3 Aoe:Cleave;2
 
 Tier3
