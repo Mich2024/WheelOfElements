@@ -593,16 +593,16 @@ def parseRacesAndClasses(files_Input):
 if __name__ == "__main__":
     ### INPUT OF PROPER RACES AND CLASSES
     files_Input = []    
-
-    files_Input.append(r"../Races/Centaur.txt")
+    
+    #files_Input.append(r"../Races/Catkin.txt")
+    #files_Input.append(r"../Races/Centaur.txt")
     #files_Input.append(r"../Races/Dwarf.txt")
     #files_Input.append(r"../Races/Fae.txt")
-    files_Input.append(r"../Races/Halfelf.txt")
+    #files_Input.append(r"../Races/Halfelf.txt")
     #files_Input.append(r"../Races/Human.txt")
     #files_Input.append(r"../Races/Merman.txt")
     #files_Input.append(r"../Races/Silverkin.txt")
     #files_Input.append(r"../Races/Solarian.txt")
-    #files_Input.append(r"../Races/Thyger.txt")
     #files_Input.append(r"../Races/Wyrmkin.txt")
     
     '''files_Input.append(r"../Classes/Witch1.txt")
@@ -614,8 +614,8 @@ if __name__ == "__main__":
     files_Input.append(r"../Classes/Assassin3.txt")
 
     files_Input.append(r"../Classes/Berserker1.txt")'''
-    files_Input.append(r"../Classes/Berserker2.txt") #############
-    files_Input.append(r"../Classes/Berserker3.txt")
+    #files_Input.append(r"../Classes/Berserker2.txt") #############
+    #files_Input.append(r"../Classes/Berserker3.txt")
 
     '''files_Input.append(r"../Classes/Druid1.txt")
     files_Input.append(r"../Classes/Druid2.txt")
