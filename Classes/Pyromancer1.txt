@@ -1,5 +1,5 @@
 Passive
-At the start of your turn, Fire:1
+Each turn:<br> - Fire:1
 
 Life: 1
 

@@ -1,5 +1,5 @@
 Passive
-After applying your ancestry dice, you may pay 2 life to add A:+3 damage to the Attack (Does not work while backlined)
+After applying your ancestry dice:<br> - you may pay 2 life to add A:+3 damage to the Attack <small><i>(Does not work while backlined)</i></small>
 Life: 3
 
 TierCards: Silver

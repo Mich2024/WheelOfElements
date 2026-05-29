@@ -1,6 +1,6 @@
 Passive
 
-Improved Max Life (+5, already included)
+Improved max life <small><i>(+5, already included)</i></small>
 Life: 8
 
 
@@ -21,7 +21,7 @@ Name: "Blood to Earth" ManaCost:Life;3 Earth:7 Text: "The Elemental Wheel does n
 
 
 
-#Name: "Cleanse" Water:4 Ranged H:2 Text: "Remove all debuffs from your target. Lose 2 life"
+#Name: "Cleanse" Water:4 Ranged Heal:2 Text: "Remove all debuffs from your target. Lose 2 life"
 
 
 

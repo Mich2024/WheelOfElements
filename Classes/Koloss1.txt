@@ -1,5 +1,5 @@
 Passive
-If your rightmost Enemy damages you, you may pay 1 life and ignore the damage.
+When your rightmost Enemy damages you:<br> - loose 1 life instead of the original damage
 Life: 2
 
 

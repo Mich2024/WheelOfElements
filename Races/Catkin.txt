@@ -1,5 +1,5 @@
 Passive
-You decide who disengages at the end of the turn
+During cleanup:<br> - you decide which enemy rotates
 Life: 3
 
 TierCards: Silver

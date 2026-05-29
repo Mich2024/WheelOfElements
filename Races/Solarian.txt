@@ -1,5 +1,5 @@
 Passive
-When an enemy rotates or is disengaged to you, it gets Vulnerable
+When an enemy rotates or is disengaged to you:<br> -  Vulnerable:1 , targeting that enemy
 Life: 4
 
 TierCards: Silver

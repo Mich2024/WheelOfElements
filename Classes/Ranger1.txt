@@ -1,5 +1,5 @@
 Passive
-Gain a silver tier Ranger Attack Dice
+Gain a silver tier Ranger attack dice
 
 Life: 3
 

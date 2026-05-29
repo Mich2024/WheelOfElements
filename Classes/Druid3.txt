@@ -1,5 +1,5 @@
 Passive
-When you Heal a player below 5 Life, add +2 Heal
+When you Heal a player below 5 Life:<br> - add +2 Heal
 Life: 3
 
 Type
@@ -8,9 +8,9 @@ Element: Wood
 
 Tier1
 Name: "Nightshade" ManaCost:Wood;1 Poison:2 A:1
-Name: "Splash" ManaCost:Wood;2 Water:2 H:3
-Name: "Leeching Brambles" ManaCost:Wood;2 A:1 H:3
+Name: "Splash" ManaCost:Wood;2 Water:2 Heal:3
+Name: "Leeching Brambles" ManaCost:Wood;2 A:1 Heal:3
 
 Tier2
-Name: "Wellspring" Water:1 H:2
+Name: "Wellspring" Water:1 Heal:2
 Name: "Flay" ManaCost:Wood;2 A:4 Poison:3

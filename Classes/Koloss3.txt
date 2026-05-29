@@ -1,5 +1,5 @@
 Passive
-At the start of your turn, gain Shield:1.
+Each turn:<br> - Shield:1
 Life: 0
 
 

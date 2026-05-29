@@ -1,6 +1,6 @@
 Passive
 #Gold + Bronze
-You have a single Diamond Tier card,
+You have a single Diamond Tier card (\symCardsDia)
 Life: 3
 
 TierCards: Gold

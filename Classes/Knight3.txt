@@ -1,5 +1,5 @@
 Passive
-At the beginning of each encounter, play two additional cards during your first turn
+Start of turn 1:<br> - play two additional cards
 Life: 3
 
 Type

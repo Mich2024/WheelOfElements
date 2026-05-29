@@ -1,5 +1,5 @@
 Passive
-At the beginning of each encounter, draw 4 cards, then discard 4 cards
+Start of turn 1:<br> - draw 4 cards, then discard 4 cards
 Life: 3
 
 Type

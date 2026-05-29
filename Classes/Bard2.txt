@@ -1,5 +1,5 @@
 Passive
-When you Heal an ally, also apply Powerful
+When you Heal an ally:<br> - also apply <br>Powerful:1
 Life: 3
 
 Type
@@ -8,14 +8,14 @@ Element: Wood
 Explanation:Heal
 
 Tier1
-Name: "Heal" Ranged H:2
+Name: "Heal" Ranged Heal:2
 Name: "Outlast" Powerful Text: "At the end of this turn, keep all Powerful stacks"
 
 
 Tier3
-Name: "Overgrowth" ManaCost:Opt;Wood;2 H:4 Opt Flurry:2
-Name: "Adrenaline Rush" Ranged Wood:1 Powerful:1 H:3
-Name: "Temperance" Flurry:2 H:2
+Name: "Overgrowth" ManaCost:Opt;Wood;2 Heal:4 Opt Flurry:2
+Name: "Adrenaline Rush" Ranged Wood:1 Powerful:1 Heal:3
+Name: "Temperance" Flurry:2 Heal:2
 
 
 

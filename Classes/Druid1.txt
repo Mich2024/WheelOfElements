@@ -1,5 +1,5 @@
 Passive
-At the start of your turn, H:1
+Each turn:<br> -  Heal:1
 Life: 1
 
 Type
@@ -11,12 +11,12 @@ Explanation:Heal
 
 Tier1
 Name: "Heart of Water" Water:2
-Name: "Heal" Ranged H:2
+Name: "Heal" Ranged Heal:2
 
 Tier2
 Name: "Blood Petals" ManaCost:Wood;1 A:2 A:2
-Name: "Healing Rain" Water:1 Ranged A:1 H:2
+Name: "Healing Rain" Water:1 Ranged A:1 Heal:2
 
 Tier3
-Name: "Drain Life" ManaCost:Wood;2 A:3 H:X Text: "X is your damage dealt"
-#Name: "Take a Bite" ManaCost:Wood;2 A:3 H:X Text: "X is your damage dealt"
+Name: "Drain Life" ManaCost:Wood;2 A:3 Heal:X Text: "X is your damage dealt"
+#Name: "Take a Bite" ManaCost:Wood;2 A:3 Heal:X Text: "X is your damage dealt"

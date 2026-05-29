@@ -60,15 +60,14 @@ def tier_str_to_int(str_tier):
 #expexts int from 1 to 4
 def tier_int_to_str(int_tier):
     res = "error"
-    str_tier = str_tier.strip().lower()
-    if(str_tier == 1):
-        res = "bronze"
-    elif(str_tier == 2):
-        res = "silver"
-    elif(str_tier == 3):
-        res = "gold"
-    elif(str_tier == 4):
-        res = "mithril"
+    if(int_tier == 1):
+        res = "Bronze"
+    elif(int_tier == 2):
+        res = "Silver"
+    elif(int_tier == 3):
+        res = "Gold"
+    elif(int_tier == 4):
+        res = "Dia"
     return res
 
 symbolDict = {
@@ -860,7 +859,7 @@ class statCard:
                 templateEdge = open('Templates/Shingle_Class_Edge_BL.txt', 'r')
                 templateEdge = templateEdge.read()
 
-            res = templateShingle.replace(r"${Edge}", templateEdge).replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life).strip()).replace(r"${Passive}", passive_new)
+            res = templateShingle.replace(r"${Edge}", templateEdge).replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life).strip()).replace(r"${Passive}", passive_new).replace(r"${IntTierPassive}",  str(self.rank))
 
         return res
     

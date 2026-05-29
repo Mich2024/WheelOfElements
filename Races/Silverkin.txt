@@ -1,5 +1,5 @@
 Passive
-You may activate Advantage a second time on each roll of the ancestry dice
+When attacking:<br> - you may activate <br> Advantage a second time on each roll of the ancestry dice
 #ensure all Cards silver and up have advantage
 Life: 3
 

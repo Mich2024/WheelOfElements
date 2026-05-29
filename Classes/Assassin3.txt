@@ -1,5 +1,5 @@
 Passive
-Attacks can remove a Stun marker on enemies to deal double damage
+On attack against a stunned enemy:<br> - you may remove a stun marker to deal double damage
 Life: 3
 
 Type

@@ -1,15 +1,15 @@
 Passive
-At the end of your turn, Flurry:1
+End of each turn:<br> -  Flurry:1
 Life: 3
 
 Type
 Element: Wood
 
 Tier1
-Name: "Rejuvenate" ManaCost:Opt;Wood;2 Ranged H:2 Opt H:3
+Name: "Rejuvenate" ManaCost:Opt;Wood;2 Ranged Heal:2 Opt Heal:3
 Name: "Muscle Burst" Ranged Text: "Double the powerful stacks on your target"
-Name: "Shove" ManaCost:Opt;Wood;1 Ranged Disengage Opt H:1
+Name: "Shove" ManaCost:Opt;Wood;1 Ranged Disengage Opt Heal:1
 
 Tier2
-Name: "Nature's Aid" ManaCost:Opt;Wood;2 Ranged H:3 Opt H:3
-Name: "Leafy Cover" Wood:1 Ranged H:2
+Name: "Nature's Aid" ManaCost:Opt;Wood;2 Ranged Heal:3 Opt Heal:3
+Name: "Leafy Cover" Wood:1 Ranged Heal:2

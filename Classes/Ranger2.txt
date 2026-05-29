@@ -1,5 +1,5 @@
 Passive
-Gain a gold tier Ranger Attack Dice
+Gain a gold tier Ranger attack dice
 
 Life: 3
 

@@ -1,7 +1,7 @@
 Stats
 
 Passive
-Your handsize is increased by 1 (to 5) and your decksize is decreased by 1 (to 15). Assassin 1 only grants 4 Cards
+Your handsize is increased by 1 (to 5) and your decksize is decreased by 1 (to 15). <small><i>(Assassin 1 only grants 4 Cards )</i></small>
 Life: 3
 
 Type

@@ -31,19 +31,19 @@ htmlimage = 1 - [CardCount], \symDSix, "..\..\Pictures\Icons\D66.png", [size_sym
 htmlimage = 1 - [CardCount], \symDraw, "..\..\Pictures\Icons\Draw.png", [size_sym], [size_sym]
 #htmlimage = 1 - [CardCount], \symShuffle, "..\..\Pictures\Icons\DShuffle.png", [size_sym], [size_sym]
 
-htmlimage = 1 - [CardCount], \symCardsBronze, "..\..\Pictures\Tiers\CardsTier1.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symCardsSilver, "..\..\Pictures\Tiers\CardsTier2.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symCardsGold, "..\..\Pictures\Tiers\CardsTier3.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symCardsDia, "..\..\Pictures\Tiers\CardsTier4.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symCardsBronze, "..\..\Pictures\Tiers\CardsTier1.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symCardsSilver, "..\..\Pictures\Tiers\CardsTier2.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symCardsGold, "..\..\Pictures\Tiers\CardsTier3.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symCardsDia, "..\..\Pictures\Tiers\CardsTier4.png", [size_tier], [size_tier]
 
-htmlimage = 1 - [CardCount], \symDiceBronze, "..\..\Pictures\Tiers\DiceTier1.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symDiceSilver, "..\..\Pictures\Tiers\DiceTier2.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symDiceGold, "..\..\Pictures\Tiers\DiceTier3.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symDiceDia, "..\..\Pictures\Tiers\DiceTier4.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDiceBronze, "..\..\Pictures\Tiers\DiceTier1.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symDiceSilver, "..\..\Pictures\Tiers\DiceTier2.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symDiceGold, "..\..\Pictures\Tiers\DiceTier3.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symDiceDia, "..\..\Pictures\Tiers\DiceTier4.png", [size_tier], [size_tier]
 
-htmlimage = 1 - [CardCount], \symPassiveBronze, "..\..\Pictures\Tiers\PassiveTier1.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symPassiveSilver, "..\..\Pictures\Tiers\PassiveTier2.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPassiveBronze, "..\..\Pictures\Tiers\PassiveTier1.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symPassiveSilver, "..\..\Pictures\Tiers\PassiveTier2.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3.png", [size_tier], [size_tier]
 
 
 htmlfont=font_10,Arial,10,B,#000000,LEFT

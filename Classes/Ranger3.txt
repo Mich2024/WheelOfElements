@@ -1,5 +1,5 @@
 Passive
-Gain a diamond tier Ranger Attack Dice
+Gain a diamond tier Ranger attack dice
 
 Life: 3
 

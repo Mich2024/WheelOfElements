@@ -1,6 +1,6 @@
 Passive
 #If your rightmost Enemy deals damage, he deals 0 damage instead.
-At the beginning of each encounter, rotate the leftmost enemy of the player to your right to your enemies
+Start of turn 1:<br> - Disengage the leftmost enemy from the player to your right
 Life: 4
 
 

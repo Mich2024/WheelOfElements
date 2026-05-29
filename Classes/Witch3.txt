@@ -1,5 +1,6 @@
 Passive
-At the end of your turn, your enemy with the highest poison gets another 2 poison.
+
+End of each turn:<br> - Poison:2 , targeting the enemy with the highst posion
 Life: 3
 
 

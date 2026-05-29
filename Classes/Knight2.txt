@@ -1,5 +1,5 @@
 Passive
-At the beginning of each encounter, Stun Stun Advantage:2
+Start of turn 1:<br> - Stun Stun <br>Advantage:2
 #In your first turn, ignore elemental costs.
 #Treat Costs of X as 3 if you are not paying them.
 Life: 3

@@ -1,6 +1,6 @@
 Passive
 
-When you Poison with an action card, roll your attack dice and apply their result to the Poison like with an attack.
+When you Poison:<br> - roll your attack dice and apply their result <small><i>(like when you attack)</i></small>
 
 Life: 4
 

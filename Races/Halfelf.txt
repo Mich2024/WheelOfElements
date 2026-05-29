@@ -1,5 +1,5 @@
 Passive
-Gain double the starting attack dice. (2 Red, 2 Blue)
+Gain double the starting attack dice. <small><i>(2 Red, 2 Blue)</i></small>
 #Gold + Silver
 Life: 3
 

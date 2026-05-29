@@ -29,6 +29,7 @@ UNIT=CM
 PAGE=21,29.7,LANDSCAPE,HV
 
 [size_sym] = 0.35
+[size_tier] = 0.7
 
 ${UtilsBoilerplate}
 htmlimage = 1 - [CardCount], \symSmallLife, "..\..\Pictures\Icons\Life.png", 0.3, 0.3

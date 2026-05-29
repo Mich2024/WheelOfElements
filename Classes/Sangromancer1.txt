@@ -1,5 +1,5 @@
 Passive
-Improved Max Life (+3, already included)
+Improved max life <small><i>(+3, already included)</i></small>
 Life: 6
 
 

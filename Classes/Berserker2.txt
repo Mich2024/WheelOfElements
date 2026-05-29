@@ -1,5 +1,5 @@
 Passive
-Your blaze effects also trigger on the second card
+Second card:<br> - Your blaze effects also trigger <small><i>(mandatory)</i></small>
 Life: 3
 
 Type

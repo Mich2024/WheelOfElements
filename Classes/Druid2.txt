@@ -1,6 +1,6 @@
 Passive
 
-When you Heal with an action card, roll your attack dice and apply their result to the Heal like with an attack.
+When you Heal:<br> - roll your attack dice and apply their result <small><i>(like when you attack)</i></small>
 #(Does not affect Heal from your Ancestry Dice)
 Life: 3
 
@@ -14,16 +14,16 @@ Tier1
 Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 Ranged A:3
 Name: "Strike" Ranged A:1
 
-#Name: "Transfusion" Ranged Text: "Choose an X. Loose X Life. X Cannot be more than your current life" H:X+2
+#Name: "Transfusion" Ranged Text: "Choose an X. Loose X Life. X Cannot be more than your current life" Heal:X+2
 
 Tier3
 Name: "Shred" ManaCost:Wood;2 A:9
 Name: "Life's Breath" Text: "Return a backlined ally back to 2 Life. This may target any player, regardless of usual restrictions"
-Name: "Calming Presence" H:2 Text: "Also target one player next to you"
+Name: "Calming Presence" Heal:2 Text: "Also target one player next to you"
 
 
 
-#Name: "Cleanse" Water:4 Ranged H:2 Text: "Remove all debuffs from your target. Lose 2 life"
+#Name: "Cleanse" Water:4 Ranged Heal:2 Text: "Remove all debuffs from your target. Lose 2 life"
 
 
 

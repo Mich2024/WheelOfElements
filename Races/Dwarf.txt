@@ -1,5 +1,5 @@
 Passive
-Immunity to Banes ( Vulnerable , Poison and Stun )
+Immunity to Banes <br><small><i>( Vulnerable , Poison and Stun )</i></small>
 Life: 4
 
 TierCards: Gold

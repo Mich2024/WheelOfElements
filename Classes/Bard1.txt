@@ -1,5 +1,5 @@
 Passive
-At the beginning of each encounter, Wood:2
+Start of turn 1:<br> -  Wood:2
 Life: 3
 
 Type

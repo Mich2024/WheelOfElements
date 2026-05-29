@@ -1,5 +1,5 @@
 Passive
-When you pay X Fire , A:X
+On paying X Fire:<br> - A:X
 
 Life: 1
 
