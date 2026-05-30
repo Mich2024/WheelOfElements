@@ -34,16 +34,16 @@ Name: Vampires in the Masquerade
 
 Encounter:1
 Vampire, Cultist, Cultist,
-Sycophant, Cultist, Cultist,
+Cultist, Sycophant, Cultist,
 Vampire, Cultist, Cultist,
-Sycophant, Cultist, Cultist,
+Cultist, Sycophant, Cultist,
 Vampire, Cultist, Cultist,
 
 Encounter:2
 Cultist, Vampire Chanter, Cultist, Cultist,
-Sycophant, Vampire, Cultist, Cultist,
+Cultist, Sycophant, Vampire, Cultist,
 Cultist, Vampire Chanter, Cultist, Cultist,
-Sycophant, Vampire, Cultist, Cultist,
+Cultist, Sycophant, Vampire, Cultist,
 Cultist, Vampire Chanter, Cultist, Cultist,
 
 

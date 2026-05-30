@@ -15,15 +15,21 @@ Elemenetal Wheel Fire and Water swap random
 mehr abfuck elemental wheel in "höheren" events
 ############
 AM
+
+##
+cards
+
 magic style keyword remindertext (Cycling intimidate etc.)
 
-Passive trigger - effect formatting
+Silverkin Passive
+komplettkartenverzierung
 
-titel für die AOE situationen oben links
+##
+Rulebook:
 
+align document
+holzwürfel statt element marker ins rulebook schreiben
 clarify stun and multiattacks
-
-passive symbol statt schriftzug bei den classe kacheln
 
 recommended beginner classes
 -> Human Knight Koloss
@@ -33,15 +39,13 @@ recommended beginner classes
 -> Centaur Sangromancer Witch
 
 
-komplettkartenverzierung
 
 go over whole document with vscode to harmonize:
     Sybols (attack and other)
     Capitalization
 
-Silverkin Passive
+setup pic
 
-holzwürfel statt element marker ins rulebook schreiben
 
 ############
 Both:
