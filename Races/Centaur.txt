@@ -1,5 +1,5 @@
 Passive
-When you kill:<br> - redirect leftover damage to an adjacent enemy <small><i>(This is not an attack, does not use your ancestry dice, and does not reapply any boons or banes your original attack did)</i></small>
+When you kill:<br> - redirect leftover damage to an adjacent enemy <br><small><i>(This is not an attack, does not use your ancestry dice, and does not reapply any boons or banes your original attack did)</i></small>
 Life: 3
 
 TierCards: Gold

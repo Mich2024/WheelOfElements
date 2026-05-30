@@ -4,7 +4,7 @@ When attacking:<br> - you may activate <br> Advantage a second time on each roll
 Life: 3
 
 TierCards: Gold
-TierPassive: Silver
+TierPassive: Bronze
 TierMods: Silver
 
 Modifier Tableau

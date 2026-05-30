@@ -4,7 +4,7 @@ Life: 4
 
 TierCards: Silver
 TierPassive: Gold
-TierMods: Silver
+TierMods: Bronze
 
 Modifier Tableau
 Rank:1

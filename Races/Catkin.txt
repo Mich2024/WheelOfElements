@@ -3,7 +3,7 @@ During cleanup:<br> - you decide which enemy rotates
 Life: 3
 
 TierCards: Silver
-TierPassive: Silver
+TierPassive: Bronze
 TierMods: Gold
 
 Modifier Tableau
