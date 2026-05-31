@@ -879,13 +879,20 @@ class statCard:
         templateRank = open('Templates/Strip_Rank_' + str(self.rank) + '.txt', 'r')
         templateRank = templateRank.read()
 
+        templateEle_2 = open('Templates/Strip_Line_Element_2.txt', 'r')
+        templateEle_2 = templateEle_2.read()
+    
         nandeckStrip = templateStrip.replace(r"${Name}", str(self.name).strip() + " " + str(self.rank)  ).replace(r"${Sym_Rank}", templateRank)
 
         ele_1 = self.elements[0]
         ele_2 = ""
         if len(self.elements) > 1:
             ele_2 = self.elements[1]
-        nandeckStrip = nandeckStrip.replace(r"${Order}",str(order)).replace(r"${Element_1}",ele_1).replace(r"${Element_2}",ele_2)
+            templateEle_2 = templateEle_2.replace(r"${Element_2}",ele_2)
+        else:
+            templateEle_2 = ""
+        nandeckStrip = nandeckStrip.replace(r"${Line_Element_2}",templateEle_2)
+        nandeckStrip = nandeckStrip.replace(r"${Order}",str(order)).replace(r"${Element_1}",ele_1)
 
 
         #print(self.passive)

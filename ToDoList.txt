@@ -19,6 +19,8 @@ AM
 ##
 cards
 
+druid 2 strike
+
 Silverkin Passive
 komplettkartenverzierung
 

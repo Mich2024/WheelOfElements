@@ -1,0 +1,2 @@
+htmltext = ${Order}, "\symAdd${Element_2}",[space_left] , [size_sym] + [linestrength] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+
