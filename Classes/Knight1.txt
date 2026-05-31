@@ -9,12 +9,12 @@ Explanation:Advantage
 Explanation:Stun
 
 Tier1
-Name: "Heart of Metal" Metal:2
+Name: "Heart of Metal" Metal:2 Text: "<small><i>(Add two brown cubes to the 'Metal' section of the wheel.)</i></small>"
 Name: "Stun" ManaCost:Opt;Metal;2 A:1 Opt Ranged Stun
 
 Tier2
-Name: "Parry" Stun Metal:1
-Name: "Dutybound" Advantage A:2
+Name: "Parry"  Metal:1 Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>"
+Name: "Dutybound" Advantage Text: "<small><i>(Gain an advantage marker. When you roll your attack dice, you may reroll one per advantage marker.)</i></small>" A:2
 
 Tier3
 Name: "Extra Attack" ManaCost:Opt;Metal;2 A:4 Opt A:4

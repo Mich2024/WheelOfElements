@@ -9,12 +9,12 @@ Explanation:Powerful
 Explanation:Flurry
 
 Tier1
-Name: "Strike" Ranged A:1
-Name: "Vengeance" Ranged Powerful:2
+Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Vengeance" Ranged Powerful:2 Text: "<small><i>(Your attacks this turn deal 2 extra damage.)</i></small>" 
 
 Tier2
-Name: "Bush Ambush" Wood:1 Disengage:1 Flurry:1
-Name: "Sprouting" Wood:2 Flurry:1
+Name: "Bush Ambush" Wood:1 Disengage:1 Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
+Name: "Sprouting" Wood:2 Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
 
 Tier3
 Name: "Roar" Disengage:1 Wood:2 Powerful:3

@@ -32,13 +32,13 @@ Explanation: Poison
 
 Base Cards
 Tier1
-Name: "Homebrew" Poison:2
+Name: "Poison" Poison:2 Text: "<small><i>(Put two posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
 Name: "Polluted Waters" ManaCost:Opt;Water;2 Poison:1 Opt A:1 A:1
-Name: "Heart of Water" Water:2
+Name: "Heart of Water" Water:2 Text: "<small><i>(Add two brown cubes to the 'Water' section of the wheel.)</i></small>"
 
 Tier2
-Name: "Slickness" Water:1 A:2
+Name: "Slickness" Water:1 Text: "<small><i>(Add one brown cube to the 'Water' section of the wheel.)</i></small>" A:2
 Name: "Tidal Grasp" ManaCost:Opt;Water;3 A:1 Opt A:2 AOE:Cleave;2
 
 Tier3
-Name: "Brine Burst" Poison:4 Water:2
+Name: "Brine Burst" Water:2 Poison:4 Text: "<small><i>(Put two posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"

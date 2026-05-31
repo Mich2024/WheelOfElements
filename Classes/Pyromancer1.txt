@@ -13,14 +13,14 @@ Explanation:Blaze
 
 Tier1
 #3
-Name: "Blazing Heart" Fire:2 Blaze:2 Fire:1
+Name: "Blazing Heart" Fire:2 Blaze:2 Fire:1 Text: "<small><i>(First card ->, randomly discard two cards and do the extra actions.)</i></small>"
 Name: "Fire Breathing" ManaCost:Fire;3 A:1 Vulnerable Aoe:Cleave;2
 
 Tier2
 #5
 Name: "Fireball" ManaCost:Fire;X Text: "X can't be 0" A:X Aoe:Cleave;3
-Name: "Scorch" Fire:1 A:2 Blaze:3 Vulnerable Vulnerable
+Name: "Scorch" Fire:1 A:2 Blaze:3 Vulnerable Vulnerable Text: "<small><i>(First card ->, randomly discard three cards and do the extra actions.)</i></small>"
 
 Tier3
 #6
-Name: "Eruption" ManaCost:Fire;3 A:3 Aoe:All
+Name: "Eruption" ManaCost:Fire;3 A:3 Text: "<small><i>(Targets all of your enemies)</i></small>" Aoe:All

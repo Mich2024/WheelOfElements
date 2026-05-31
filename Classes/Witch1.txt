@@ -17,12 +17,12 @@ Explanation:Heal
 
 Tier1
 #3
-Name: "Poison" Poison:2
-Name: "Heal" Ranged Heal:2
+Name: "Poison" Poison:2 Text: "<small><i>(Put two posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
+Name: "Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:2 Text: "<small><i>(Regain 2 Life)</i></small>"
 
 Tier2
 #5
-Name: "Greater Heal" Ranged Heal:3
+Name: "Greater Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:3 Text: "<small><i>(Regain 2 Life)</i></small>"
 Name: "Toxic Mist" ManaCost:Opt;Water;2 Poison:3 Disengage Opt Heal:3
 
 

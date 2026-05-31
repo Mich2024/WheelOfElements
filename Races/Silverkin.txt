@@ -30,9 +30,9 @@ Base Cards
 
 Tier1
 Tier2
-Name: "Like Clockwork" A:1 Advantage Metal:1
-Name: "Sharpen" Metal:2 Advantage:2
-Name: "Silver Infusion" ManaCost:Opt;Metal;X Advantage:X A:2
-Name: "Adaptive Plating" Advantage Metal:X Text: "X is the amount of your enemies"
+Name: "Like Clockwork" A:1 Advantage Metal:1 Text: "<small><i>(Add one brown cube to the 'Metal' section of the wheel.)</i></small>"
+Name: "Sharpen" Metal:2 Advantage:2 Text: "<small><i>(Gain an advantage marker. When you roll your attack dice, you may reroll one per advantage marker.)</i></small>"
+Name: "Silver Infusion" ManaCost:Opt;Metal;X Advantage:X Text: "<small><i>(Gain an advantage marker. When you roll your attack dice, you may reroll one per advantage marker.)</i></small>" A:3 A:2
+Name: "Adaptive Plating" Metal:X Text: "X is the amount of your enemies" Advantage 
 Name: "Steel Storm" ManaCost:Opt;Metal;1 A:3 Text: Opt Text: "Double the effect of modifiers on this Card"
-Name: "Filigree Fatality" Advantage A:3
+Name: "Filigree Fatality" Advantage Text: "<small><i>(Gain an advantage marker. When you roll your attack dice, you may reroll one per advantage marker.)</i></small>" A:3

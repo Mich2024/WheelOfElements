@@ -12,10 +12,10 @@ Explanation:Stun
 Explanation:Poison
 
 Tier1
-Name: "Strike" Ranged A:1
+Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
 
 Tier2
-Name: "Parry" Stun Metal:1
+Name: "Parry" Metal:1 Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>"
 Name: "Poisoned Dagger" ManaCost:Water;1 A:3 Poison:2
 
 Tier3

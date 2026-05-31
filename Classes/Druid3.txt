@@ -12,5 +12,5 @@ Name: "Splash" ManaCost:Wood;2 Water:2 Heal:3
 Name: "Leeching Brambles" ManaCost:Wood;2 A:1 Heal:3
 
 Tier2
-Name: "Wellspring" Water:1 Heal:2
+Name: "Wellspring" Water:1 Ranged Heal:2
 Name: "Flay" ManaCost:Wood;2 A:4 Poison:3

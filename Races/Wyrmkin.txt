@@ -27,16 +27,16 @@ Element: Metal
 Explanation:Lifepay
 
 Tier1
-Name: "Take Flight" Ranged Disengage Disengage
-Name: "Bloody Strike" ManaCost:Life;3 Ranged A:5
-Name: "Heart of Earth" Earth:2
+Name: "Take Flight" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" Disengage Disengage
+Name: "Bloody Strike" ManaCost:Life;3 Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:5 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Heart of Earth" Earth:2 Text: "<small><i>(Add two brown cubes to the 'Earth' section of the wheel.)</i></small>"
 
 Tier2
-Name: "Tail Whip" A:2 Disengage
-Name: "Javelin" Ranged A:3
+Name: "Tail Whip" A:2 Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
+Name: "Javelin" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:3 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
 
 Tier3
-Name: "Bite and Tear" ManaCost:Life;2 Earth:1 A:6
+Name: "Bite and Tear" ManaCost:Life;2 Earth:1 Text: "<small><i>(Add one brown cube to the 'Earth' section of the wheel.)</i></small>" A:6
 
 #Add 3 -1 Add 4 H:1 +0
 #Add 2 +1 Add 3 Water:1 +0

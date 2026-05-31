@@ -31,15 +31,15 @@ Base Cards
 
 Tier1
 #2
-Name: "Fly away" Disengage Disengage
-Name: "Strike" Ranged A:1
-Name: "Strike" Ranged A:1
+Name: "Fly away" Disengage Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
+Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
 
 Tier3 
 #6
 Name: "Miséricorde" A:3 Text: "Deals double damage against stunned units"
-Name: "Dust Cloud" Stun Stun
-Name: "Black Dust" Stun A:2
+Name: "Dust Cloud" Stun Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>"
+Name: "Black Dust" Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>" A:2 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
 
 #Add 3 -1 Add 3 Wood:1 +0
 #Add 2 +0 Add 4 +1

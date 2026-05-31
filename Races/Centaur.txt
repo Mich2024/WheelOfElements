@@ -33,16 +33,16 @@ Base Cards
 
 
 Tier1
-Name: "Bout" A:1 Blaze:1 A:1
-Name: "Strike" Ranged A:1 
+Name: "Bout" A:1 Blaze:1 A:1 Text: "<small><i>(First card ->, randomly discard a card and do the extra actions.)</i></small>"
+Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
 
 Tier2
-Name: "Punt" A:2 Disengage Blaze:1 A:1
-Name: "Bow and Arrow" Ranged A:1 Blaze:3 A:5
+Name: "Punt" A:2 Disengage Blaze:1 A:1 Text: "<small><i>(First card ->, randomly discard a card and do the extra actions.)</i></small>"
+Name: "Bow and Arrow" Ranged A:1 Blaze:3 A:5 Text: "<small><i>(First card ->, randomly discard three cards and do the extra actions.)</i></small>"
 
 Tier3
-Name: "Spear throw" Ranged A:5 Blaze:1 Disengage
-Name: "Axe strikes" A:2 A:2 Blaze:2 A:2
+Name: "Spear throw" Ranged A:5 Blaze:1 Disengage Text: "<small><i>(First card ->, randomly discard a card and do the extra actions.)</i></small>"
+Name: "Axe strikes" A:2 A:2 Blaze:2 A:2 Text: "<small><i>(First card ->, randomly discard two cards and do the extra actions.)</i></small>"
 
 #Add 8 -1
 #Add 4 +3

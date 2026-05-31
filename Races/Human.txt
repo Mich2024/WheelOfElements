@@ -31,13 +31,13 @@ Base Cards
 #Power Levels : 2,4,4,6,6,10
 
 Tier1
-Name: "Strike" Ranged A:1
-Name: "Heal" Ranged Heal:2
+Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:2 Text: "<small><i>(Regain 2 Life)</i></small>"
 
 Tier3
-Name: "Greater Heal" Ranged Heal:5
-Name: "Fight & Flight" A:1 Heal:2 Disengage
-Name: "Aid" Ranged Heal:3 Disengage Disengage
+Name: "Greater Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:5 Text: "<small><i>(Regain 5 Life)</i></small>"
+Name: "Fight & Flight" A:1 Heal:2 Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
+Name: "Aid" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" Heal:3 Disengage Disengage
 
 Tier4
 Name: "Smite" A:10

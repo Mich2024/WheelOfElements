@@ -29,11 +29,11 @@ Explanation: Vulnerable
 Tier1
 Name: "Sun's Embrace" ManaCost:Opt;Fire;1 A:1 Opt A:1
 Name: "Heartburn" ManaCost:Opt;Fire;2 Vulnerable Opt A:3
-Name: "Heart of Fire" Fire:2
-Name: "Strike" Ranged A:1
+Name: "Heart of Fire" Fire:2 Text: "<small><i>(Add two brown cubes to the 'Fire' section of the wheel.)</i></small>"
+Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
 
 Tier2
-Name: "Light Barrage" A:1 A:1
+Name: "Double Strike" A:1 A:1 Text: "<small><i>(The second attack may target a different enemy.)</i></small>"
 Name: "Eternal Flame" ManaCost:Opt;Fire;2 Fire:2 A:1 Opt Aoe:Cleave;3
 
 #Add 3 -1 Add 1 +0 Add 3 Fire:1 +0

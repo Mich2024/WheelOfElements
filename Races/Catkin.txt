@@ -29,12 +29,12 @@ Explanation: Flurry
 
 Base Cards
 Tier1
-Name: "Furry Flurry" Flurry
-Name: "Strike" Ranged A:1 
-Name: "Evade" Disengage Disengage
+Name: "Furry Flurry" Flurry Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
+Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Evade" Disengage Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
 
 Tier2
-Name: "Rampage" Flurry Flurry
+Name: "Rampage" Flurry:2 Text: "<small><i>(Gain two flurry tokens. You may spend it at any time to perform A:1.)</i></small>"
 Name: "Prey Upon" A:2 Text: "Double damage against Enemies below half Life"
 
 Tier3
