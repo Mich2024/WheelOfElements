@@ -19,4 +19,4 @@ Name: "Parry" Metal:1 Stun Text: "<small><i>(A stunned enemy skips their turn.)<
 Name: "Poisoned Dagger" ManaCost:Water;1 A:3 Poison:2
 
 Tier3
-Name: "Cut Throat" ManaCost:Water;2 Text: "Execute an enemy if it is below half life"
+Name: "Cut Throat" ManaCost:Water;2 Text: "Execute an enemy if it is at or below half life"

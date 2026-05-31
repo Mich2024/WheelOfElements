@@ -19,7 +19,7 @@ Name: "Fire Breathing" ManaCost:Fire;3 A:1 Vulnerable Aoe:Cleave;2
 Tier2
 #5
 Name: "Fireball" ManaCost:Fire;X Text: "X can't be 0" A:X Aoe:Cleave;3
-Name: "Scorch" Fire:1 A:2 Blaze:3 Vulnerable Vulnerable Text: "<small><i>(First card ->, randomly discard three cards and do the extra actions.)</i></small>"
+Name: "Scorch" Fire:1 A:2 Blaze:3 Vulnerable Vulnerable
 
 Tier3
 #6

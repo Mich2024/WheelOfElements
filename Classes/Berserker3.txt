@@ -17,7 +17,7 @@ Name: "Resilience" ManaCost:Earth;2 Ranged Vulnerable Shield:1
 
 Tier2
 Name: "Strike Fear" Shield:1 Blaze:1 Fire:1
-Name: "Rage" Text:"Discard your hand, then draw three cards" Blaze:3 Text:"You may play the discarded cards. You still have to pay their costs"
+Name: "Rage" Text:"Discard your hand, draw three new cards" Blaze:3 Text:"You may play the discarded cards. <small><i>(You still have to pay their costs)</i></small>"
 
 
 

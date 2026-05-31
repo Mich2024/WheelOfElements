@@ -14,7 +14,7 @@ Name: "Stun" ManaCost:Opt;Metal;2 A:1 Opt Ranged Stun
 
 Tier2
 Name: "Parry"  Metal:1 Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>"
-Name: "Dutybound" Advantage Text: "<small><i>(Gain an advantage marker. When you roll your attack dice, you may reroll one per advantage marker.)</i></small>" A:2
+Name: "Dutybound" Advantage Text: "<small><i>(Gain an advantage marker. When attacking, you may reroll one dice per marker.)</i></small>" A:2
 
 Tier3
 Name: "Extra Attack" ManaCost:Opt;Metal;2 A:4 Opt A:4
