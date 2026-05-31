@@ -1,23 +1,22 @@
-[CardCount] = 122
+[CardCount] = 80
 
 [space_text_28] = 1
 [space_text_18] = 0.7
 
 [linestrength] = 0.1
 
-[vert_half] = 1.4/2
-[mod_y] = [vert_half] - [space_text_28]/2 + 0.05
-[full_hor] = 1.4
+[marker_x] = 0.0
+[marker_y] = 0.0
 
 CARDS=[CardCount]
 BORDER=NONE,#000000,0.2
 UNIT=CM
 PAGE=19,27.7,PORTRAIT,HV
 DPI=300
-CARDSIZE=1.4,1.4
+CARDSIZE=2,2
 BASERANGE=,ON
 
-[size_sym] = 0.5
+[size_sym] = 1.8
 
 htmlimage = 1 - [CardCount], \symAddFire, "..\..\Pictures\Icons\AddFire.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", [size_sym], [size_sym]
@@ -28,14 +27,13 @@ htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", [s
 htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symPoison, "..\..\Pictures\Icons\Poison.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPoison5, "..\..\Pictures\Icons\Poison52.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symHeal, "..\..\Pictures\Icons\Heal.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symPowerful, "..\..\Pictures\Icons\Powerful.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symFlurry, "..\..\Pictures\Icons\Flurry.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symVulnerable, "..\..\Pictures\Icons\Vulnerable.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symBlaze, "..\..\Pictures\Icons\Blaze.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symD6, "..\..\Pictures\Icons\D6.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symShield, "..\..\Pictures\Icons\Shield.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]
 
 htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", [size_sym], [size_sym]
@@ -55,9 +53,6 @@ htmlfont=font_18,Arial,12,B,#000000,LEFT
 htmlfont=font_28,Arial,21,B,#000000,LEFT
 
 htmlfont=font_28_center,Arial,21,B,#000000,CENTER
-CIRCLE = 1-[CardCount], [linestrength]/2, [linestrength]/2, 1.4-[linestrength], 1.4-[linestrength], #000000 ,#ffffff ,[linestrength]
-
-
 
 #Boilerplate end
 ################
@@ -68,34 +63,11 @@ CIRCLE = 1-[CardCount], [linestrength]/2, [linestrength]/2, 1.4-[linestrength], 
 #Ranger ###############
 # 2 + 2 + 3 + 4 = 11  
 
-htmltext = 1-7, "Ca", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 8-14, "Ce", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 15-21, "Dw", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 22-28, "Fa", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 29-35, "Ha", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 36-42, "Hu", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 43-49, "Me", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 50-56, "Si", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 57-63, "So", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 64-70, "Wy", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 71-80, "-2", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 81-90, "-1", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 91-100, "+1", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 101-110, "+2", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 111-120, "+3", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
-
-htmltext = 121-122, "Ha", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+htmltext = 1-10, "\symAdvantage", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 11-20, "\symStun", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 21-30, "\symPoison", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 31-40, "\symPowerful", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 41-50, "\symFlurry", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 51-60, "\symVulnerable", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 61-70, "\symShield", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 71-80, "\symPoison5", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
