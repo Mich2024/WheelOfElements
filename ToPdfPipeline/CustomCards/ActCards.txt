@@ -1,10 +1,9 @@
-[CardCount] = 5
+[CardCount] = 1
 
 [col_bronze] = #CD7F32
 [col_silver] = #ACACAC
 [col_gold] = #CFB53B
 [col_mithril] = #87B787
-
 
 
 [space_text_28] = 1
@@ -29,36 +28,58 @@ PAGE=21,29.7,PORTRAIT,HV
 DPI=300
 CARDSIZE=6.35,8.89
 BASERANGE=,ON
+[size_sym] = 0.45
 
-htmlimage = 1 - [CardCount], \symAddFire, "..\..\Pictures\Icons\AddFire.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symAddMetal, "..\..\Pictures\Icons\AddMetal.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symAddWater, "..\..\Pictures\Icons\AddWater.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symLife, "..\..\Pictures\Icons\Life.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAddFire, "..\..\Pictures\Icons\AddFire.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddMetal, "..\..\Pictures\Icons\AddMetal.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddWater, "..\..\Pictures\Icons\AddWater.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symLife, "..\..\Pictures\Icons\Life.png", [size_sym], [size_sym]
 
-htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symPoison, "..\..\Pictures\Icons\Poison.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symHeal, "..\..\Pictures\Icons\Heal.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symPowerful, "..\..\Pictures\Icons\Powerful.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symFlurry, "..\..\Pictures\Icons\Flurry.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symVulnerable, "..\..\Pictures\Icons\Vulnerable.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symBlaze, "..\..\Pictures\Icons\Blaze.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symD6, "..\..\Pictures\Icons\D6.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symShield, "..\..\Pictures\Icons\Shield.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPoison, "..\..\Pictures\Icons\Poison.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symHeal, "..\..\Pictures\Icons\Heal.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPowerful, "..\..\Pictures\Icons\Powerful.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symFlurry, "..\..\Pictures\Icons\Flurry.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symVulnerable, "..\..\Pictures\Icons\Vulnerable.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symBlaze, "..\..\Pictures\Icons\Blaze.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symD6, "..\..\Pictures\Icons\D6.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symShield, "..\..\Pictures\Icons\Shield.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]
 
-htmlimage = 1 - [CardCount], \symDraw, "..\..\Pictures\Icons\Draw.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symDraw, "..\..\Pictures\Icons\Draw.png", [size_sym], [size_sym]
 
-htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png", [size_sym], [size_sym]
+
+htmlimage = 1 - [CardCount], \symCardsBronze, "..\..\Pictures\Tiers\CardsTier1.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symCardsSilver, "..\..\Pictures\Tiers\CardsTier2.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symCardsGold, "..\..\Pictures\Tiers\CardsTier3.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symCardsDia, "..\..\Pictures\Tiers\CardsTier4.png", 0.4, 0.4
+
+htmlimage = 1 - [CardCount], \symDiceBronze, "..\..\Pictures\Tiers\DiceTier1.png", 0.4, 0.4[size_sym]
+htmlimage = 1 - [CardCount], \symDiceSilver, "..\..\Pictures\Tiers\DiceTier2.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symDiceGold, "..\..\Pictures\Tiers\DiceTier3.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symDiceDia, "..\..\Pictures\Tiers\DiceTier4.png", 0.4, 0.4
+
+htmlimage = 1 - [CardCount], \symPassiveBronze, "..\..\Pictures\Tiers\PassiveTier1.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symPassiveSilver, "..\..\Pictures\Tiers\PassiveTier2.png", 0.4, 0.4
+htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3.png", 0.4, 0.4
 
 htmlfont=font_18,Arial,14,B,#000000,LEFT
 
+htmlfont=font_12_right_Bronze,Arial,12,B,#CD7F32,RIGHT
+htmlfont=font_12_right_Silver,Arial,12,B,#ACACAC,RIGHT
+htmlfont=font_12_right_Gold,Arial,12,B,#CFB53B,RIGHT
+htmlfont=font_12_right_Dia,Arial,12,B,#87B787,RIGHT
 
-#Name, OptCost
+
+
+
+#Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
 TEXT = 1, "Feral Instinct", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
 htmltext = 1, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
@@ -68,62 +89,7 @@ htmltext = 1, "\symAddFire Fire: 1 <br>--- \symBlaze Blaze 2 --- <br> Per discar
 FONT = Arial, 12, B, #000000
 TEXT = 1, "Berserker 2", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
-FONT = Arial, 12, B, [col_gold]
-TEXT = 1, "Gold 3", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
-
-
-#Name, OptCost ########################################
-FONT = Arial, 18, B, #000000
-TEXT = 2, "Bloodguard", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 2, "Cost: \symLife 3*X ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
-
-htmltext = 2, "\symRanged Ranged<br> \symShield Shield: X <br>(X is 1 while backlined)", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
-
-FONT = Arial, 12, B, #000000
-TEXT = 2, "Sangromancer 2", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
-
-FONT = Arial, 12, B, [col_bronze]
-TEXT = 2, "Bronze 1", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
-
-#Name, OptCost ########################################
-FONT = Arial, 18, B, #000000
-TEXT = 3, "Rage", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 3, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
-
-htmltext = 3, "Discard your hand, then draw three cards <br>--- \symBlaze Blaze 3 --- <br>You may play the discarded cards. You still have to pay their costs", [linestrength] * 2 , 3,[full_hor] + 0.6, 5,#FFFFFF,0,T,100,font_18
-
-FONT = Arial, 12, B, #000000
-TEXT = 3, "Berserker 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
-
-FONT = Arial, 12, B, [col_silver]
-TEXT = 3, "Silver 2", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
-
-#Name, OptCost ########################################
-FONT = Arial, 18, B, #000000
-TEXT = 4, "Strike", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 4, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
-
-htmltext = 4, "\symRanged Ranged<br> \symAttack A: 1", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
-
-FONT = Arial, 12, B, #000000
-TEXT = 4, "Halfelf", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
-
-FONT = Arial, 12, B, [col_bronze]
-TEXT = 4, "Bronze 1", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
-
-
-#Name, OptCost ########################################
-FONT = Arial, 18, B, #000000
-TEXT = 5, "Flourish", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 5, "Cost: Opt \symAddWood 3 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
-
-htmltext = 5, "\symAddWood Wood: 1 <br> \symDisengage Disengage<br>------ Opt Paid ------ <br> \symPowerful Powerful: 2 <br> \symAttack A: 1", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
-
-FONT = Arial, 12, B, #000000
-TEXT = 5, "Halfelf", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
-
-FONT = Arial, 12, B, [col_bronze]
-TEXT = 5, "Bronze 1", 6.35-2.2 , 8, 2, [space_text_18], RIGHT, WORDWRAP
+htmltext = 1, "Gold \symCardsGold", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Gold
 
 
 
@@ -134,4 +100,4 @@ RECTANGLE = 1-[CardCount], 0,  [space_text_28] - 0.1, 3.9,  [space_text_28], #00
 #Bottom
 LINE = 1-[CardCount], 0,  7.9, 6.35,  7.9, #000000, [linestrength]
 #LINE = 1-[CardCount], 3,  7.9, 3,  8.89, #000000, [linestrength]
-LINE = 1-[CardCount], 4.2,  7.9, 4.2,  8.89, #000000, [linestrength]
+LINE = 1-[CardCount], 3.8,  7.9, 3.8,  8.89, #000000, [linestrength]
