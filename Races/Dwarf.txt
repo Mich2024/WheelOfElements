@@ -40,7 +40,7 @@ Name: "Heart of Earth" Earth:2 Text: "<small><i>(Add two brown cubes to the 'Ear
 
 Tier3
 Name: "Kerfuffle" ManaCost:Opt;Earth;2 A:3 Opt Aoe:Cleave;3
-Name: "Oust" Earth:2 Shield:1 Text: "<small><i>(Add two brown cubes to the 'Earth' section of the wheel.)</i></small>"
+Name: "Oust" Earth:2 Shield:1 Text: "<small><i>(Take one damage less from each attack.)</i></small>"
 Name: "Crossbow" Earth:1 Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:4
 
 #Add 6 -1 Add 3 +D6

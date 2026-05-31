@@ -10,8 +10,8 @@ Modifier Tableau
 Rank:1
 Add 5 +1 Add 1 Thyger
 Add 2 -1 Add 1 Thyger
-Add 1 +1 Add 1 Flurry Add 1 Thyger
-Add 1 +1 Add 1 Flurry Add 1 Thyger
+Add 1 +1 Add 1 +2 Add 1 Thyger
+Add 1 +1 Add 1 +2 Add 1 Thyger
 
 Rank:2
 Add 1 +1 Add 1 Thyger

@@ -21,5 +21,5 @@ Name: "Shred" ManaCost:Fire;3 Flurry:4
 
 Tier2 
 #5
-Name: "Roids" Wood A:1 Powerful
+Name: "Roids" Powerful A:1 
 Name: "Volley Fire" ManaCost:Fire;3 Ranged A:3 A:3 A:3

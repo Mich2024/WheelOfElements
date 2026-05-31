@@ -19,6 +19,24 @@ AM
 ##
 cards
 
+custom:
+ranger 3 roids
+dwarf oust
+Silverkin Steel Storm
+Silverkin Silver Infusion
+Silverkin Filigree Fatality
+
+custom class: bard 3
+
+custom dice:
+ranger dice initials
+merman +5
+
+spruce up dice:
+catkin
+wyrmkin
+dwarf
+
 druid 2 strike
 
 Silverkin Passive

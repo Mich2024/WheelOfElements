@@ -1,4 +1,4 @@
-[CardCount] = 122
+[CardCount] = 172
 
 [space_text_28] = 1
 [space_text_18] = 0.7
@@ -17,7 +17,7 @@ DPI=300
 CARDSIZE=1.4,1.4
 BASERANGE=,ON
 
-[size_sym] = 0.5
+[size_sym] = 0.9
 
 htmlimage = 1 - [CardCount], \symAddFire, "..\..\Pictures\Icons\AddFire.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", [size_sym], [size_sym]
@@ -98,14 +98,14 @@ htmltext = 101-110, "+2", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_tex
 
 htmltext = 111-120, "+3", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
 
-htmltext = 121-130, "\symAddFire", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+htmltext = 121-130, "\symAddFire", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
 
-htmltext = 131-140, "\symAddEarth", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+htmltext = 131-140, "\symAddEarth", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
 
-htmltext = 141-150, "\symAddMetal", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+htmltext = 141-150, "\symAddMetal", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
 
-htmltext = 151-160, "\symAddWater", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+htmltext = 151-160, "\symAddWater", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
 
-htmltext = 161-170, "\symAddWood", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+htmltext = 161-170, "\symAddWood", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
 
 htmltext = 171-172, "Ha", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
