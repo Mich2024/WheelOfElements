@@ -19,8 +19,6 @@ AM
 ##
 cards
 
-magic style keyword remindertext (Cycling intimidate etc.)
-
 Silverkin Passive
 komplettkartenverzierung
 
