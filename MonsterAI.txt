@@ -51,7 +51,7 @@ Name:Vampire
 Normal
 
 Life:10
-Count:4
+Count:3
 Passive: Sunburn
 
 Rolls:1,2 A:1 H:2
@@ -96,7 +96,7 @@ Name:Cultist
 Normal
 
 Life:10
-Count:13
+Count:15
 Passive: Scenariobound
 #Vampires : when adjacent vamp would die, move as maydmg as you can from vamp to this
 
@@ -115,7 +115,6 @@ Rolls:1,2,3 A:2 A:2
 Rolls:4,5,6 Text: "Adjacent golems gain powerful"
 
 
-End Of File
 
 ###########################################################################################
 Name:Bandit Raider
@@ -227,6 +226,8 @@ Rolls:1,2,3 A:2 A:2
 Rolls:4,5,6 Text: "Adjacent golems gain powerful"
 
 
+
+End Of File
 
 ###########################################################################################
 Name:Metalcrafter

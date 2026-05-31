@@ -41,4 +41,4 @@ Name: "Slickness" Water:1 Text: "<small><i>(Add one brown cube to the 'Water' se
 Name: "Tidal Grasp" ManaCost:Opt;Water;3 A:1 Opt A:2 AOE:Cleave;2
 
 Tier3
-Name: "Brine Burst" Water:2 Poison:4 Text: "<small><i>(Put two posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
+Name: "Brine Burst" Water:2 Poison:4 Text: "<small><i>(Put four posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
