@@ -26,7 +26,8 @@ Silverkin Steel Storm
 Silverkin Silver Infusion
 Silverkin Filigree Fatality
 
-custom class: bard 3
+custom class shingle:
+bard 3
 
 custom dice:
 ranger dice initials
@@ -34,8 +35,13 @@ merman +5
 
 spruce up dice:
 catkin
+-> change all gold, silver bronze
 wyrmkin
+-> change all gold, silver bronze
 dwarf
+-> change all element dice, silver bronze, blue
+dwarf
+-> -1 on, blue
 
 druid 2 strike
 
