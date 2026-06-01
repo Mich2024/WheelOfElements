@@ -91,6 +91,67 @@ TEXT = 1, "Berserker 2", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
 htmltext = 1, "Gold \symCardsGold", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Gold
 
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 237, "Roids", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 237, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 237, "\symPowerful Powerful<br> \symAttack A: 1", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 237, "Ranger 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 237, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 17, "Oust", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 17, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 17, "\symAddEarth Earth: 2 <br> \symShield Shield: 1 <br><small><i>(Take one damage less from each attack.)</i></small>", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 17, "Dwarf", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 17, "Gold \symCardsGold", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Gold
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 47, "Steel Storm", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 47, "Cost: Opt \symAddMetal 1 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 47, "\symAttack A: 3 <br>------ Opt Paid ------ <br>Apply the result of your attack dice twice to this attack", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 47, "Silverkin", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 47, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 48, "Filigree Fatality", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 48, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 48, "\symAdvantage Advantage<br><small><i>(Gain an advantage marker. When attacking, you may reroll one dice per marker.)</i></small> <br> \symAttack A: 2", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 48, "Silverkin", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 48, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 45, "Silver Infusion", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 45, "Cost: Opt \symAddMetal X ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 45, "\symAdvantage Advantage: X <br><small><i>(Gain an advantage marker. When attacking, you may reroll one dice per marker.)</i></small> <br> \symAttack A: 3", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 45, "Silverkin", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 45, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+
+
 
 
 #Title

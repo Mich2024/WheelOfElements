@@ -11,18 +11,18 @@ Modifier Tableau
 Rank:1
 #Size 18 Modifier Tableau
 Add 1 -2 Add 1 -1 Add 1 +1 Add 1 +2 Add 1 Dwarf
-Add 2 Earth Add 1 Dwarf
+Add 2 Earth Add 1 -1 Add 1 Dwarf
 Add 1 +3 Add 1 Dwarf
 Add 1 +3 Add 1 Dwarf
 
 #2; 2
 Rank:2
-Add 1 Earth Add 1 Dwarf
-Add 1 Earth Add 1 Dwarf
+Add 2 Earth Add 1 -2 Add 1 Dwarf
+Add 2 Earth Add 1 -2 Add 1 Dwarf
 
 #3
 Rank:3
-Add 2 Earth Add 1 Dwarf
+Add 2 Earth Add 1 -1 Add 1 Dwarf
 
 Type
 Element:Earth

@@ -108,4 +108,10 @@ htmltext = 151-160, "\symAddWater", 0.1 , [mod_y], [full_hor] - [linestrength]*2
 
 htmltext = 161-170, "\symAddWood", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
 
-htmltext = 171-172, "Ha", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+htmltext = 171-175, "Ra", 0.1 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 176-180, "+5", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 181-185, "+6", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 186-190, "+7", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
