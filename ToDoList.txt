@@ -16,18 +16,10 @@ mehr abfuck elemental wheel in "höheren" events
 ############
 AM
 
-##
-cards
+strips for whells & attack dice
+elements of class tableau
+clean up start of combat in rulebook
 
-custom:
-ranger 3 roids
-dwarf oust
-Silverkin Steel Storm
-Silverkin Silver Infusion
-Silverkin Filigree Fatality
-
-custom class shingle:
-bard 3
 
 custom dice:
 ranger dice initials

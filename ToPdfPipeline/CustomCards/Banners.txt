@@ -1,0 +1,140 @@
+[CardCount] = 22
+
+[space_text_28] = 1
+[space_text_18] = 0.7
+
+[linestrength] = 0.1
+
+[space_top] = 1
+[space_left] = 0.2
+[half_space_left] = (0.5*[space_left])
+[space_right] = 0.5
+[space_bottom] = 0.25
+[space_hp_box] = 0.7
+[space_action_left] = 0.55*2 + 0.2
+
+
+[full_hor] = 1
+[full_hor_action] = 1
+
+CARDS=[CardCount]
+BORDER=NONE
+UNIT=CM
+PAGE=19,28,PORTRAIT,HV
+DPI=300
+CARDSIZE=1.4,7
+BASERANGE=,ON
+
+
+[size_sym] = 0.8
+
+htmlimage = 1 - [CardCount], \symAddFire, "..\..\Pictures\Icons\AddFire.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddMetal, "..\..\Pictures\Icons\AddMetal.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddWater, "..\..\Pictures\Icons\AddWater.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symLife, "..\..\Pictures\Icons\Life.png", [size_sym], [size_sym]
+
+htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPoison, "..\..\Pictures\Icons\Poison.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symHeal, "..\..\Pictures\Icons\Heal.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPowerful, "..\..\Pictures\Icons\Powerful.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symFlurry, "..\..\Pictures\Icons\Flurry.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symVulnerable, "..\..\Pictures\Icons\Vulnerable.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symBlaze, "..\..\Pictures\Icons\Blaze.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symD6, "..\..\Pictures\Icons\D6.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symShield, "..\..\Pictures\Icons\Shield.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]
+
+htmlimage = 1 - [CardCount], \symDraw, "..\..\Pictures\Icons\Draw.png", [size_sym], [size_sym]
+
+htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png", [size_sym], [size_sym]
+
+htmlimage = 1 - [CardCount], \symCardsBronze, "..\..\Pictures\Tiers\CardsTier1.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symCardsSilver, "..\..\Pictures\Tiers\CardsTier2.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symCardsGold, "..\..\Pictures\Tiers\CardsTier3.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symCardsDia, "..\..\Pictures\Tiers\CardsTier4.png", [size_sym], [size_sym]
+
+htmlimage = 1 - [CardCount], \symDiceBronze, "..\..\Pictures\Tiers\DiceTier1.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDiceSilver, "..\..\Pictures\Tiers\DiceTier2.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDiceGold, "..\..\Pictures\Tiers\DiceTier3.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDiceDia, "..\..\Pictures\Tiers\DiceTier4.png", [size_sym], [size_sym]
+
+htmlimage = 1 - [CardCount], \symPassiveBronze, "..\..\Pictures\Tiers\PassiveTier1.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPassiveSilver, "..\..\Pictures\Tiers\PassiveTier2.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3.png", [size_sym], [size_sym]
+
+htmlfont=font_18,Arial,14,B,#000000,Center
+htmlfont=font_20,Arial,15,B,#000000,LEFT
+
+[start_name] = 0
+[start_bot] = 7 - ([size_sym] + [linestrength])* 1
+
+
+htmltext = 1, "\symDiceGold",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 1, "Attack Dice Catkin", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 2, "\symDiceBronze",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 2, "Attack Dice Centaur", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 3, "\symDiceSilver",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 3, "Attack Dice Dwarf", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 4, "\symDiceSilver",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 4, "Attack Dice Fae", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 5, "\symDiceDia",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 5, "Attack Dice Halfelf", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 6, "\symDiceSilver",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 6, "Attack Dice Human", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 7, "\symDiceGold",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 7, "Attack Dice Merman", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 8, "\symDiceSilver",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 8, "Attack Dice Silverkin", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 9, "\symDiceBronze",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 9, "Attack Dice Solarian", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 10, "\symDiceGold",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 10, "Attack Dice Wyrmkin", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 11, "\symAddFire",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 11, "Fire", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 12, "\symAddEarth",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 12, "Earth", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 13, "\symAddMetal",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 13, "Metal", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 14, "\symAddWater",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 14, "Water", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 15, "\symAddWood",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 15, "Wood", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 16, "Classes: Rank 1", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 17, "Classes: Rank 1", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 18, "Classes: Rank 2", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 19, "Classes: Rank 3", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+
+htmltext = 20, "Events", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 21, "Enemies", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+
+htmltext = 22, "Action Cards: Ancestries", 0.35, 0, [space_text_28] ,7, #FFFFFF,270,T,100,font_20
+
+
+#LINE = 1-[CardCount], 0, [start_name], 1.1,[start_name], #000000, [linestrength]
+#LINE = 1-[CardCount], 0, [start_bot]-[linestrength], 1.1, [start_bot]-[linestrength], #000000, [linestrength]
+
