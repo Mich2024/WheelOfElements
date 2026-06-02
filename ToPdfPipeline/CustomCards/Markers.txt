@@ -1,4 +1,4 @@
-[CardCount] = 80
+[CardCount] = 96
 
 [space_text_28] = 1
 [space_text_18] = 0.7
@@ -11,7 +11,7 @@
 CARDS=[CardCount]
 BORDER=NONE,#000000,0.2
 UNIT=CM
-PAGE=19,27.7,PORTRAIT,HV
+PAGE=17,25.7,PORTRAIT,HV
 DPI=300
 CARDSIZE=2,2
 BASERANGE=,ON
@@ -27,7 +27,7 @@ htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", [s
 htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symPoison, "..\..\Pictures\Icons\Poison.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symPoison5, "..\..\Pictures\Icons\Poison52.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symFive_Poison, "..\..\Pictures\Icons\Poison52.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symHeal, "..\..\Pictures\Icons\Heal.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symPowerful, "..\..\Pictures\Icons\Powerful.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symFlurry, "..\..\Pictures\Icons\Flurry.png", [size_sym], [size_sym]
@@ -63,11 +63,11 @@ htmlfont=font_28_center,Arial,21,B,#000000,CENTER
 #Ranger ###############
 # 2 + 2 + 3 + 4 = 11  
 
-htmltext = 1-10, "\symAdvantage", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
-htmltext = 11-20, "\symStun", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
-htmltext = 21-30, "\symPoison", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
-htmltext = 31-40, "\symPowerful", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
-htmltext = 41-50, "\symFlurry", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
-htmltext = 51-60, "\symVulnerable", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
-htmltext = 61-70, "\symShield", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
-htmltext = 71-80, "\symPoison5", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 1-12, "\symAdvantage", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 13-24, "\symStun", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 25-36, "\symPoison", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 37-48, "\symPowerful", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 49-60, "\symFlurry", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 61-72, "\symVulnerable", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 73-84, "\symShield", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
+htmltext = 85-96, "\symFive_Poison", [marker_x] , [marker_y], [size_sym]+0.1, [size_sym]+0.1, #FFFFFF,0,T,100,font_28_center
