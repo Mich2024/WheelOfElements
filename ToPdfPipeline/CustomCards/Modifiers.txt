@@ -1,4 +1,4 @@
-[CardCount] = 172
+[CardCount] = 205
 
 [space_text_28] = 1
 [space_text_18] = 0.7
@@ -115,3 +115,9 @@ htmltext = 176-180, "+5", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_tex
 htmltext = 181-185, "+6", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
 
 htmltext = 186-190, "+7", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 191-195, "-5", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 196-200, "-3", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
+
+htmltext = 201-205, "-4", 0 , [mod_y], [full_hor] - [linestrength]*2, [space_text_28], #FFFFFF,0,T,100,font_28_center
