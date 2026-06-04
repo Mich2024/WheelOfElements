@@ -10,15 +10,17 @@ Modifier Tableau
 Rank:1
 Add 5 +1 Add 1 Thyger
 Add 2 -1 Add 1 Thyger
-Add 4 +1 Add 1 -1 Add 1 Thyger
-Add 4 +1 Add 1 -1 Add 1 Thyger
+Add 3 +1 Add 1 +2 Add 1 -2 Add 1 Wyrmkin
+Add 3 +1 Add 1 +2 Add 1 -2 Add 1 Wyrmkin
+
 
 Rank:2
-Add 4 +1 Add 1 -3 Add 1 Thyger
-Add 4 +1 Add 1 -3 Add 1 Thyger
+Add 1 +1 Add 1 +2 Add 1 -2 Add 1 Wyrmkin
+Add 1 +1 Add 1 +2 Add 1 -2 Add 1 Wyrmkin
 
 Rank:3
-Add 4 +1 Add 1 -2 Add 1 Thyger
+Add 2 +1 Add 1 +2 Add 1 -2 Add 1 Wyrmkin
+
 
 
 Type
