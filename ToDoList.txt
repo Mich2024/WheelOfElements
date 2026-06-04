@@ -13,25 +13,21 @@ Halbkreis in class tile trotzdem noch entfernen
 
 Elemenetal Wheel Fire and Water swap random
 mehr abfuck elemental wheel in "höheren" events
+
+
+
+Ancestry / Class Overview & Strategy Guide:
+    Each Ancestry & class should have:
+        Lore
+        Elements
+        Boons/Banes
+        Card Examples (2~3)
+        Gameplay advice
+        Passives
+    Strategy Guide
+
 ############
 AM
-
-elements auf class tableau
-
-
-custom dice:
-ranger dice initials
-merman +5
-
-spruce up dice:
-catkin
--> change all gold, silver bronze
-wyrmkin
--> change all gold, silver bronze
-dwarf
--> change all element dice, silver bronze, blue
-dwarf
--> -1 on, blue
 
 druid 2 strike
 Silverkin Passive
@@ -40,19 +36,8 @@ komplettkartenverzierung
 ##
 Rulebook:
 
-align document
 clarify stun and multiattacks
 setup pic
-
-
-recommended beginner classes
--> Human Knight Koloss
--> HalfElf Ranger Bard
--> Fae Druid Assassin
--> Dwarf Berserker Pyromancer
--> Centaur Sangromancer Witch
-
-
 
 go over whole document with vscode to harmonize:
     Sybols (attack and other)
@@ -62,12 +47,6 @@ go over whole document with vscode to harmonize:
 ############
 Both:
 Rename disengage maybe repel
-
-example attack, example element gen, example blaze, example opt cost, possibly with pics
-
-Box, tischdecke
-Hotel Buchen
-
 
 Research verlage und schreibe personalisierten pitch
 -> Feuerland Verlagsgesllschaft mbH
@@ -87,12 +66,16 @@ X AMIGO Spiel + Freizeit GmbH
 X ars Edition GmbH
 X D&R Denkriesen GmbH
 X Deep Print Games
+X Edition Michael Fischer
 X Edition Spielwiese
 -> Feuerland Verlagsgesllschaft mbH
 X Franckh-Kosmos Verlags-GmbH & Co. KG
+X HABA
 ?? Hans im Glück
 X Helvetiq
+X Hobby World
 X HUCH! (Hutter)
+X Karma Games
 -> Korea Boardgames
 X Lookout Spiele
 X Loosey Goosey Games GmbH
@@ -101,6 +84,7 @@ X Nürnberger-Spielkarten Verlag GmbH
 X Pattloch Verlag
 ?? PD-Verlag GmbH & Co. KG
 -> Pegasus Spiele
+X Pektis Studio
 X Perdix Spiele
 X Piatnik
 X Projekt Brett-Spiel-Testen
@@ -113,34 +97,14 @@ X Schüler Spiele GmbH
 X SPIELDAS!
 X SpielStart
 -> Squink
+X Steinbock-Brettspiele
 -> Wonderbow Games
 
 
 ############
 Advice:
-magic style keyword remindertext (Cycling intimidate etc.)
-
-a1matte wo ist was
-wie ist der erste zug beispiel in der anleitung.
 
 
-
-felix helf druid123 drunk
-erich wyrmkin ranger123 bers1
-niklas dwarf knight12 sang1 ass1
-georg:silverkin pyro123 berserker1
-
-
-
-Ancestry / Class Overview & Strategy Guide:
-    Each Ancestry & class should have:
-        Lore
-        Elements
-        Boons/Banes
-        Card Examples (2~3)
-        Gameplay advice
-        Passives
-    Strategy Guide
 ############
 dice:
 silverkin Gold
