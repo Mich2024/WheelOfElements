@@ -13,6 +13,19 @@ Halbkreis in class tile trotzdem noch entfernen
 
 Elemenetal Wheel Fire and Water swap random
 mehr abfuck elemental wheel in "höheren" events
+
+
+
+Ancestry / Class Overview & Strategy Guide:
+    Each Ancestry & class should have:
+        Lore
+        Elements
+        Boons/Banes
+        Card Examples (2~3)
+        Gameplay advice
+        Passives
+    Strategy Guide
+
 ############
 AM
 
@@ -90,29 +103,8 @@ X Steinbock-Brettspiele
 
 ############
 Advice:
-magic style keyword remindertext (Cycling intimidate etc.)
-
-a1matte wo ist was
-wie ist der erste zug beispiel in der anleitung.
 
 
-
-felix helf druid123 drunk
-erich wyrmkin ranger123 bers1
-niklas dwarf knight12 sang1 ass1
-georg:silverkin pyro123 berserker1
-
-
-
-Ancestry / Class Overview & Strategy Guide:
-    Each Ancestry & class should have:
-        Lore
-        Elements
-        Boons/Banes
-        Card Examples (2~3)
-        Gameplay advice
-        Passives
-    Strategy Guide
 ############
 dice:
 silverkin Gold
