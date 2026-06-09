@@ -93,7 +93,7 @@ Name:Black Knight
 
 Normal
 
-Life:20
+Life:25
 Count:2
 Passive: Vengeance
 
