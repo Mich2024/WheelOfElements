@@ -93,6 +93,36 @@ Preacher, Cultist, Preacher, Cultist, Preacher,
 #Lesser Demon : Silver*
 #Archdemon : Gold
 
+#######################
+Name: Golem Deconstruction
+
+Encounter:1
+Capacitor Golem, Patching Golem,
+Colossal Golem, Metalcrafter,
+Colossal Golem, Patching Golem,
+Capacitor Golem, Patching Golem,
+Capacitor Golem, Metalcrafter,
+
+Encounter:2
+Capacitor Golem, Metalcrafter, Patching Golem,
+Patching Golem, Capacitor Golem, Patching Golem, 
+Capacitor Golem, Metalcrafter, Patching Golem,
+Colossal Golem, Metalcrafter, Patching Golem,
+Colossal Golem, Colossal Golem, Capacitor Golem,
+
+Encounter:3
+Metalcrafter, Capacitor Golem, Patching Golem, 
+Metalcrafter, Colossal Golem, Patching Golem, 
+Metalcrafter, Capacitor Golem, Patching Golem, 
+Metalcrafter, Colossal Golem, Patching Golem, 
+Metalcrafter, Capacitor Golem, Patching Golem,
+
+#Capacitor Golem : Silver +
+#Colossal Golem : Silver +
+#Patching Golem : Silver +
+#Metalcrafter : Silver +
+
+
 ###########
 End Of File
 
@@ -117,29 +147,3 @@ Orc Warboss, Orc Warlock,
 Orc Warlock, Orc Archer, Orc Warrior,
 Orc Warlock, Orc Archer, Orc Warrior,
 
-Name: Golem Deconstruction
-Encounter:1
-Capacitor Golem, Patching Golem,
-Colossal Golem, Metalcrafter,
-Colossal Golem, Patching Golem,
-Capacitor Golem, Patching Golem,
-Capacitor Golem, Metalcrafter,
-
-Encounter:2
-Capacitor Golem, Metalcrafter, Patching Golem,
-Patching Golem, Patching Golem, Capacitor Golem,
-Capacitor Golem, Metalcrafter, Patching Golem,
-Colossal Golem, Metalcrafter, Patching Golem,
-Colossal Golem, Colossal Golem, Capacitor Golem,
-
-Encounter:3
-Patching Golem, Metalcrafter, Capacitor Golem, Capacitor Golem,
-Patching Golem, Metalcrafter, Colossal Golem,
-Patching Golem, Metalcrafter, Capacitor Golem, Capacitor Golem,
-Patching Golem, Metalcrafter, Colossal Golem,
-Patching Golem, Metalcrafter, Colossal Golem, Capacitor Golem,
-
-#Capacitor Golem, Golem -> flurry charger
-#Colossal Golem, Golem -> Beef
-#Patching Golem, Golem -> Healer
-#Metalcrafter, -> Lord
