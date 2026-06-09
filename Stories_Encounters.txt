@@ -111,11 +111,11 @@ Colossal Golem, Metalcrafter, Patching Golem,
 Colossal Golem, Colossal Golem, Capacitor Golem,
 
 Encounter:3
-Metalcrafter, Capacitor Golem, Patching Golem, 
-Metalcrafter, Colossal Golem, Patching Golem, 
-Metalcrafter, Capacitor Golem, Patching Golem, 
-Metalcrafter, Colossal Golem, Patching Golem, 
-Metalcrafter, Capacitor Golem, Patching Golem,
+Colossal Golem, Metalcrafter, Capacitor Golem, Patching Golem, 
+Colossal Golem, Metalcrafter, Capacitor Golem, Patching Golem, 
+Colossal Golem, Metalcrafter, Capacitor Golem, Patching Golem, 
+Colossal Golem, Metalcrafter, Capacitor Golem, Patching Golem, 
+Colossal Golem, Metalcrafter, Capacitor Golem, Patching Golem,
 
 #Capacitor Golem : Silver +
 #Colossal Golem : Silver +
