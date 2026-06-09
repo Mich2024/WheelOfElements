@@ -104,11 +104,11 @@ Capacitor Golem, Patching Golem,
 Capacitor Golem, Metalcrafter,
 
 Encounter:2
-Capacitor Golem, Metalcrafter, Patching Golem,
-Patching Golem, Capacitor Golem, Patching Golem, 
-Capacitor Golem, Metalcrafter, Patching Golem,
-Colossal Golem, Metalcrafter, Patching Golem,
-Colossal Golem, Colossal Golem, Capacitor Golem,
+Patching Golem, Capacitor Golem, Metalcrafter, 
+Colossal Golem, Metalcrafter, Capacitor Golem, 
+Patching Golem, Colossal Golem, Capacitor Golem, 
+Colossal Golem, Metalcrafter, Capacitor Golem, 
+Patching Golem, Colossal Golem, Capacitor Golem, 
 
 Encounter:3
 Colossal Golem, Metalcrafter, Capacitor Golem, Patching Golem, 
