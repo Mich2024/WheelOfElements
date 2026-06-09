@@ -1,3 +1,5 @@
+
+
 #######################
 Name: Bandit Hunt
 Encounter:1
@@ -54,14 +56,46 @@ Cultist, Vampire, Sycophant, Vampire, Cultist, Cultist,
 Cultist, Elder Vampire, Cultist, Cultist,
 Cultist, Cultist, Vampire Chanter, Sycophant, Cultist,
 
-#Bandit Cultist : Bronze
-#Bandit Sycophant : Silver
-#Bandit Vampire : Silver
+#Cultist : Bronze
+#Sycophant : Silver
+#Vampire : Silver
 #Vampire Chanter : Silver*
 #Elder Vampire : Gold
 
+#######################
+Name: Heresy
 
+Encounter:1
+Cultist, Preacher,
+Cultist, Preacher,
+Preacher, Cultist,
+Cultist, Preacher,
+Preacher, Cultist,
+
+Encounter:2
+Black Knight, Cultist, Preacher,
+Preacher, Cultist, Preacher,
+Lesser Demon, Cultist, Preacher,
+Black Knight, Cultist, Preacher,
+Lesser Demon, Preacher, Cultist,
+
+
+Encounter:3
+Black Knight, Archdemon,
+Preacher, Cultist, Preacher, Cultist, Preacher,
+Preacher, Cultist, Archdemon,
+Black Knight, Archdemon,
+Preacher, Cultist, Preacher, Cultist, Preacher,
+
+#Cultist : Bronze + Silver+
+#Preacher : Silver -
+#Black Knight : Silver+
+#Lesser Demon : Silver*
+#Archdemon : Gold
+
+###########
 End Of File
+
 
 Name: Orcbashing
 Encounter:1
