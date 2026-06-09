@@ -9,10 +9,6 @@ AV
 assassin 2 passive rework
 life sieht aus wie wasser?
 
-Halbkreis in class tile trotzdem noch entfernen
-
-Elemenetal Wheel Fire and Water swap random
-mehr abfuck elemental wheel in "höheren" events
 ############
 AM
 
@@ -91,11 +87,8 @@ X Steinbock-Brettspiele
 ############
 Advice:
 magic style keyword remindertext (Cycling intimidate etc.)
-
 a1matte wo ist was
 wie ist der erste zug beispiel in der anleitung.
-
-
 
 felix helf druid123 drunk
 erich wyrmkin ranger123 bers1
@@ -114,11 +107,17 @@ Ancestry / Class Overview & Strategy Guide:
         Passives
     Strategy Guide
 ############
+rulebook:
+FAQ
+
 dice:
 silverkin Gold
 
 recheck passives for:
 races:all
+
+classes:
+Name: "Sword and Dagger" ManaCost:Water;3 A:6 A:2
 
 ##################
 # Notes Tutorium #

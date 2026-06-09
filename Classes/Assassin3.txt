@@ -16,5 +16,5 @@ Name: "Night's Embrace" ManaCost:Water;2 A:5
 Name: "Superiority" Advantage Advantage
 
 Tier2
-Name: "Sword and Dagger" ManaCost:Water;3 A:6 A:3
+Name: "Sword and Dagger" ManaCost:Water;3 A:6 A:2
 Name: "Cloak" Stun Advantage
