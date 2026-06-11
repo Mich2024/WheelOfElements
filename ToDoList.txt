@@ -31,6 +31,29 @@ go over whole document with vscode to harmonize:
 Both:
 Rename disengage maybe repel
 
+
+Passives:
+Koloss 1
+Bard2
+
+Cards
+Witch:1 Greater Heal
+Witch:3 Leech Poison
+Bard3:
+Berserker2: "Faithless Looting"
+Berserker2: "Feral Instict"
+Berserker3: "Resilience"
+Berserker3: "Hunker Down"
+Berserker3: "Rage"
+Knight3: Align
+Koloss3: Indomitable
+Koloss3: Bash
+Koloss3: Wall Off
+Ranger3:Volley Fire
+Pyro3: Fire Up
+Halfelf: Lunge
+
+
 Research verlage und schreibe personalisierten pitch
 -> Feuerland Verlagsgesllschaft mbH
 -> Korea Boardgames

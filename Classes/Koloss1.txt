@@ -1,5 +1,5 @@
 Passive
-When your rightmost Enemy damages you:<br> - loose 1 life instead of the original damage
+When your rightmost Enemy damages you:<br> - lose 1 life instead of the original damage
 Life: 2
 
 

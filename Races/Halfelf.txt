@@ -36,7 +36,7 @@ Base Cards
 Tier1
 #3
 Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
-Name: "Lunge" ManaCost:Opt;Wood;1 A:1 Opt Powerful:2 Text: "<small><i>(Your attacks this turn deal 2 extra damage.)</i></small>" 
+Name: "Lunge" ManaCost:Opt;Wood;2 Powerful:2 Text: "<small><i>(Your attacks this turn deal 2 extra damage.)</i></small>" Opt A:1 
 Name: "Hype" Wood:1 Text: "<small><i>(Add one brown cube to the 'Wood' section of the wheel.)</i></small>" Powerful Text: "<small><i>(Your attacks this turn deal 1 extra damage.)</i></small>" 
 Name: "Flourish" ManaCost:Opt;Wood;3 Wood:1 Disengage Opt Powerful:2 A:1
 

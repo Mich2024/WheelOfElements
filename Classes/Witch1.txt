@@ -22,7 +22,7 @@ Name: "Heal" Ranged Text: "<small><i>(You may target players to the left or righ
 
 Tier2
 #5
-Name: "Greater Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:3 Text: "<small><i>(Regain 2 Life)</i></small>"
+Name: "Greater Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:3 Text: "<small><i>(Regain 3 Life)</i></small>"
 Name: "Toxic Mist" ManaCost:Opt;Water;2 Poison:3 Disengage Opt Heal:3
 
 

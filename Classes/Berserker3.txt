@@ -12,12 +12,12 @@ Element: Earth
 
 Tier1
 Name: "Heart of Fire" Fire:2
-Name: "Heart of Fire" Fire:2
-Name: "Resilience" ManaCost:Earth;2 Ranged Vulnerable Shield:1
+Name: "Hunker Down" ManaCost:Opt;Earth;2 Disengage Disengage Opt Shield:1
+Name: "Resilience" ManaCost:Earth;2 Ranged Vulnerable Shield:1 Disengage
 
 Tier2
 Name: "Strike Fear" Shield:1 Blaze:1 Fire:1
-Name: "Rage" Text:"Discard your hand, draw three new cards" Blaze:3 Text:"You may play the discarded cards. <small><i>(You still have to pay their costs)</i></small>"
+Name: "Rage" Blaze:3 Text:"You may play the discarded cards. <small><i>(You still have to pay their costs)</i></small>"
 
 
 

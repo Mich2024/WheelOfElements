@@ -1,5 +1,5 @@
 Passive
-When you Heal an ally:<br> - also apply <br>Powerful:1
+When you Heal another player:<br> - also apply <br>Powerful:1
 Life: 3
 
 Type

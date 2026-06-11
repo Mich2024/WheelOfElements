@@ -12,7 +12,7 @@ Explanation:Stun
 Tier1
 Name: "Distract" ManaCost:Opt;Metal;3 A:1 Opt Stun Stun
 Name: "Bloody Strike" ManaCost:Life;3 Advantage A:4
-Name: "Align" ManaCost:Opt;Metal;4 Advantage Opt Stun A:4
+Name: "Align" ManaCost:Opt;Metal;4 Advantage:2 Opt Stun A:3
 
 Tier2
 Name: "Overwhelm" ManaCost:Life;3 Stun Stun Stun

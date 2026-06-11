@@ -42,18 +42,3 @@ Name: "Aid" Ranged Text: "<small><i>(You may target enemies to the left or right
 Tier4
 Name: "Smite" A:10
 
-
-#"Crush" A:6 S:2
-#"Adaptive Fighter" Text: "Choose 2: A:3, A:1 A:1 or S:1"
-
-#[((2*2)+(3*1)+(2*-1)+(8*0))/15]=0,33
-#Add 2 +2 Add 3 +1 Add 2 -1
-#[((1*4)+(2*3)+(2*2)+(3*1)+(2*-1)+(8*0))/18]=0,83
-#Add 2 +3 Add 1 +4
-#Remove 2 +0, Add 4 +3
-#Remove 2 +0, Add 2 +5
-
-#Add 5 -1
-#Add 6 +1 Add 3 +2
-#Remove 3 +0 Add 3 +3
-#Remove 2 +0, 3 +4
