@@ -15,21 +15,36 @@
 \title{Storybook}
 \usepackage{verbatim}
 \usepackage{tikz}
+\usepackage{titlesec}
 %end copy Rulebook
+
+
+\titlespacing*{\section}
+{0cm}{0cm}{0cm}
 
 \author{Alexander Mödder and Alexander Vinkeloe\\ainfomail@arcor.de, alexander.vinkeloe@gmail.com}
 
 
 \begin {document}
 \maketitle
-\tableofcontents
 
 \begin{tikzpicture}[remember picture,overlay,inner sep=0pt,outer sep=0pt]
 	\node at (7.5cm,-9cm) {\includegraphics[width=0.85\paperwidth]{../Art/BremerStadtAbenteurer.png}};
 \end{tikzpicture}
+
 \newpage
+\tableofcontents
+\newpage
+
+Filler Page, put a big picture here\\
+
+\newpage
+
 \input{./Story1/Story1.tex}
+\newpage
 \input{./Story2/Story2.tex}
+\newpage
 \input{./Story3/Story3.tex}
+\newpage
 \input{./Story4/Story4.tex}
 \end {document}
