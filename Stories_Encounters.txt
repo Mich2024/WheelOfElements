@@ -74,7 +74,7 @@ Preacher, Cultist,
 
 Encounter:2
 Black Knight, Cultist, Preacher,
-Preacher, Cultist, Preacher,
+Black Knight, Cultist, Preacher,
 Lesser Demon, Cultist, Preacher,
 Black Knight, Cultist, Preacher,
 Lesser Demon, Preacher, Cultist,
