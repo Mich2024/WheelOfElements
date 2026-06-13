@@ -55,6 +55,10 @@ Ranger3:Volley Fire
 Pyro3: Fire Up
 Halfelf: Lunge
 
+Monster:
+Vampire
+Mettallurge
+
 
 Research verlage und schreibe personalisierten pitch
 -> Feuerland Verlagsgesllschaft mbH
