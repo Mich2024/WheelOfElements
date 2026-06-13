@@ -20,6 +20,7 @@ Rolls:1,2,3 A:2 A:2
 Rolls:4,5,6 Text: "Adjacent golems gain powerful"
 
 ###########################################################################################
+
 Name:Vengeful Ghost
 
 Normal
@@ -43,7 +44,7 @@ Rolls:4,5,6 Text: "Adjacent golems gain powerful"
 
 End Of File
 ###########################################################################################
-Name:Metalcrafter
+Name:Metallurge
 
 Normal
 
@@ -270,7 +271,7 @@ Count:3
 Passive: Sunburn
 
 Rolls:1,2 A:1 H:2
-Rolls:2,3 A:2 H:1
+Rolls:3,4 A:2 H:1
 Rolls:5,6 A:3
 
 
