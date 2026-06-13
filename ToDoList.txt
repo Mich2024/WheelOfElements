@@ -49,6 +49,8 @@ Knight3: Align
 Koloss3: Indomitable
 Koloss3: Bash
 Koloss3: Wall Off
+Sangromancer3: Slice
+Sangromancer3: Dice
 Ranger3:Volley Fire
 Pyro3: Fire Up
 Halfelf: Lunge

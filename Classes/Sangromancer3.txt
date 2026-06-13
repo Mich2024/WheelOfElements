@@ -10,7 +10,7 @@ Element: Earth
 Tier1
 Name: "Heart of Earth" Earth:2
 Name: "Slice" ManaCost:Metal;2 Advantage:2 A:3
-Name: "Dice" ManaCost:Metal;3 Advantage:3 A:4
+Name: "Dice" ManaCost:Metal;3 Advantage:3 A:3
 
 Tier2
 Name: "Renew" Earth:2 Advantage Advantage
