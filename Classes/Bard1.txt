@@ -9,7 +9,7 @@ Explanation:Powerful
 Explanation:Flurry
 
 Tier1
-Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Inspire" ManaCost:Opt;Wood;3 Powerful:2 Opt Text: "Also target both players next to you"
 Name: "Vengeance" Ranged Powerful:2 Text: "<small><i>(Your attacks this turn deal 2 extra damage.)</i></small>" 
 
 Tier2

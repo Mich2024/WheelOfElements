@@ -1,14 +1,14 @@
 Passive
-After applying your ancestry dice:<br> - you may pay 2 life to add A:+3 damage to the Attack <small><i>(Does not work while backlined)</i></small>
+After applying your ancestry dice:<br> - you may pay 2 life to add A:+4 damage to the Attack <small><i>(Does not work while backlined)</i></small>
 Life: 3
 
 TierCards: Silver
-TierPassive: Bronze
-TierMods: Gold
+TierPassive: Gold
+TierMods: Bronze
 
 Modifier Tableau
 Rank:1
-Add 2 +2 Add 2 +1 Add 1 Wyrmkin
+Add 4 +1 Add 1 Wyrmkin
 Add 3 -1 Add 1 Wyrmkin
 Add 4 +1 Add 1 -1 Add 1 Thyger
 Add 4 +1 Add 1 -1 Add 1 Thyger

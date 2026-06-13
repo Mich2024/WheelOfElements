@@ -35,10 +35,16 @@ Rename disengage maybe repel
 Passives:
 Koloss 1
 Bard2
+Wyrmkin
+
+Wyrmkin Dice
+Wyrmkin Symbols
 
 Cards
 Witch:1 Greater Heal
 Witch:3 Leech Poison
+Bard1:Inspire
+Bard2: Temperance
 Bard3:
 Berserker2: "Faithless Looting"
 Berserker2: "Feral Instict"
@@ -58,6 +64,8 @@ Halfelf: Lunge
 Monster:
 Vampire
 Mettallurge
+
+
 
 
 Research verlage und schreibe personalisierten pitch

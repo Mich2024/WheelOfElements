@@ -15,7 +15,7 @@ Name: "Outlast" Powerful Text: "At the end of this turn, keep all Powerful stack
 Tier3
 Name: "Overgrowth" ManaCost:Opt;Wood;2 Heal:4 Opt Flurry:2
 Name: "Adrenaline Rush" Ranged Wood:1 Powerful:1 Heal:3
-Name: "Temperance" Flurry:2 Heal:2
+Name: "Temperance" ManaCost:Opt;Wood;1 Flurry:2 Heal:2 Opt Disengage Disengage
 
 
 
