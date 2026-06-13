@@ -1,6 +1,30 @@
 #Todays Print
 
 ###########################################################################################
+
+Name:Vengeful Ghost
+
+Normal
+
+Life:20
+Count:1
+Passive: Shield
+
+Rolls:A A:1
+Rolls:B A:1 A:1
+Rolls:C Text: "Monsters facing the same player gain powerful"
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+End Of File
+###########################################################################################
 Name:Metallurge
 
 Normal
@@ -535,7 +559,7 @@ Rolls:1,2 M:3 A:3 R:2
 Rolls:3,4 A:2 T:2 R:3
 Rolls:5,6 A:4 Pierce:1 R:3
 
-End Of File
+
 
 
 
