@@ -14,27 +14,29 @@
 [col_silver] = #ACACAC
 [col_gold] = #CFB53B
 [col_mithril] = #87B787
-
+[radius] = 1.1
 
 [third_vert] = 5.5
 [quart_vert] = ((([HeightPage]-[space_top]-[space_bottom])/4)-0.25)
 
 [third_hor] = ((([WidthPage]-[space_left]-[space_right])/3)-0.25)
 [quart_hor] = 5.5
-[CardCount] = 2
+[CardCount] = 40
 
 CARDS=[CardCount]
 BORDER=RECTANGLE,#000000,[linestrength]*2
 UNIT=CM
 PAGE=21,29.7,LANDSCAPE,HV
 
-[size_sym] = 0.5
+[size_sym] = 0.35
+[size_tier] = 0.7
 
 htmlimage = 1 - [CardCount], \symAddFire, "..\..\Pictures\Icons\AddFire.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symAddMetal, "..\..\Pictures\Icons\AddMetal.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symAddWater, "..\..\Pictures\Icons\AddWater.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symLife, "..\..\Pictures\Icons\Life.png", [size_sym], [size_sym]
 
 htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]
@@ -62,10 +64,25 @@ htmlimage = 1 - [CardCount], \symDSix, "..\..\Pictures\Icons\D66.png", [size_sym
 htmlimage = 1 - [CardCount], \symDraw, "..\..\Pictures\Icons\Draw.png", [size_sym], [size_sym]
 #htmlimage = 1 - [CardCount], \symShuffle, "..\..\Pictures\Icons\DShuffle.png", [size_sym], [size_sym]
 
+htmlimage = 1 - [CardCount], \symCardsBronze, "..\..\Pictures\Tiers\CardsTier1.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symCardsSilver, "..\..\Pictures\Tiers\CardsTier2.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symCardsGold, "..\..\Pictures\Tiers\CardsTier3.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symCardsDia, "..\..\Pictures\Tiers\CardsTier4.png", [size_tier], [size_tier]
+
+htmlimage = 1 - [CardCount], \symDiceBronze, "..\..\Pictures\Tiers\DiceTier1.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symDiceSilver, "..\..\Pictures\Tiers\DiceTier2.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symDiceGold, "..\..\Pictures\Tiers\DiceTier3.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symDiceDia, "..\..\Pictures\Tiers\DiceTier4.png", [size_tier], [size_tier]
+
+htmlimage = 1 - [CardCount], \symPassiveBronze, "..\..\Pictures\Tiers\PassiveTier1.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symPassiveSilver, "..\..\Pictures\Tiers\PassiveTier2.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3.png", [size_tier], [size_tier]
+
 
 htmlfont=font_10,Arial,10,B,#000000,LEFT
 htmlfont=font_18,Arial,12,B,#000000,LEFT
 htmlfont=font_28,Arial,21,B,#000000,LEFT
+htmlimage = 1 - [CardCount], \symSmallLife, "..\..\Pictures\Icons\Life.png", 0.3, 0.3
 
 htmlfont=font_12,Arial,10,B,#000000,LEFT
 
@@ -78,24 +95,37 @@ RECTANGLE = 1-[CardCount], 0, 0, [quart_hor], [third_vert], #000000, empty, [lin
 
 
 FONT = "Noto Sans Mono", 14, B, #000000
-TEXT = 1, "DrunkenMaster 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+TEXT = 1 "Bard 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
 FONT = "Noto Sans Mono", 12, B, #000000
-TEXT = 1, "Passive:",   [linestrength]*2, [space_text_28] + [linestrength]*2 , [quart_hor] - 4 * [linestrength], [space_text_18], LEFT, TOP
+image = 1 "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 1 "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
 FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = 1, "Whenever the Monster dice, rolls a 6,  \symShield S:2.",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
-TEXT = 1, "Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18], [quart_hor] - 2 * [linestrength] - 2, [space_text_18], LEFT, TOP
-LINE = 1, [quart_hor] - [linestrength] - 1, [third_vert] - [linestrength],  [quart_hor] - [linestrength], [third_vert] - [linestrength] - 1,  [col_bronze], [linestrength]
+htmltext = 1 "When you  \symHeal Heal another player:<br> - also apply <br>Powerful:1",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 1 "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 1 [quart_hor] - [linestrength] - 1, [third_vert] - [linestrength],  [quart_hor] - [linestrength], [third_vert] - [linestrength] - 1,  [col_bronze], [linestrength]
+
 
 
 FONT = "Noto Sans Mono", 14, B, #000000
-TEXT = 2, "DrunkenMaster 3",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+TEXT = 2 "Koloss 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
 FONT = "Noto Sans Mono", 12, B, #000000
-TEXT = 2, "Passive:",   [linestrength]*2, [space_text_28] + [linestrength]*2 , [quart_hor] - 4 * [linestrength], [space_text_18], LEFT, TOP
+image = 2 "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 2 "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
 FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = 2, "Whenever a D6, including the Monster dice, rolls a 1,  \symAttack A:D6. (The attack you gain from the monster die happens before start of combat effects.)",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
-TEXT = 2, "Starting life: 6",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18], [quart_hor] - 2 * [linestrength] - 2, [space_text_18], LEFT, TOP
-LINE = 2, [linestrength] + 1, [third_vert] - [linestrength], [linestrength], [third_vert] - [linestrength] - 1,  [col_silver], [linestrength]
+htmltext = 2 "When your rightmost Enemy damages you:<br> - lose 1 life instead of the original damage",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 2 "\symSmallLife Starting life: 2",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 2 [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
 
+
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 3 "Koloss 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+image = 3 "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 3 "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+FONT = "Noto Sans Mono", 9, B, #000000
+htmltext = 3 "When your rightmost Enemy damages you:<br> - lose 1 life instead of the original damage",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 3 "\symSmallLife Starting life: 2",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 3 [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
 
 
 
@@ -111,3 +141,5 @@ RECTANGLE = 1-[CardCount],  0, [third_vert] - [space_text_18] - [linestrength], 
 #RECTANGLE = 1-[CardCount],  0, [space_text_28] + [linestrength]*2, 2.5, [space_text_18], #000000, empty, [linestrength]
 #TitleSeparator
 LINE = 1-[CardCount],  0, [space_text_28] + [linestrength]*2, [quart_hor], [space_text_28] + [linestrength]*2, #000000, [linestrength]
+CIRCLE = 1-[CardCount], [quart_hor] - [radius], [third_vert]/2 - [radius] , [radius]  * 2, [radius]  * 2, #000000 ,#ffffff ,[linestrength]
+

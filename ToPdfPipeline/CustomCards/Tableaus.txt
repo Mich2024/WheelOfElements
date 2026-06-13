@@ -102,22 +102,23 @@ TEXT = 1-[CardCount], "Passive", [space_left] + [quart_hor] * 3  + [linestrength
 
 
 FONT = Arial, 28, B, #000000
-TEXT = 5, "Halfelf", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
+TEXT = 1, "Wyrmkin", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
 FONT = Arial, 12, B, #000000
-image = 5, "..\..\Pictures\Tiers\PassiveTier2.png", [space_left] + [quart_hor] * 3  + [linestrength] + 0.1, [space_top]+[third_vert]*2  + [linestrength], 0.8, 0.8, 0
-htmltext = 5, "Gain double the starting attack dice. <small><i>(2 Red, 2 Blue)</i></small>", [space_left] + [quart_hor] * 3 + [linestrength], [space_top]+[third_vert]*2+[space_text_28] + [linestrength], [quart_hor] - [linestrength]*2, [third_vert], #FFFFFF,0,T,100,font_18
+image = 1, "..\..\Pictures\Tiers\PassiveTier3.png", [space_left] + [quart_hor] * 3  + [linestrength] + 0.1, [space_top]+[third_vert]*2  + [linestrength], 0.8, 0.8, 0
+htmltext = 1, "After applying your ancestry dice:<br> - you may pay 2 life to add  \symAttack A:+4 damage to the  \symAttack Attack <small><i>(Does not work while backlined)</i></small>", [space_left] + [quart_hor] * 3 + [linestrength], [space_top]+[third_vert]*2+[space_text_28] + [linestrength], [quart_hor] - [linestrength]*2, [third_vert], #FFFFFF,0,T,100,font_18
 
-htmltext = 5, "\symLife Starting Life: 3",   [space_left] + [quart_hor] * 3  + [linestrength], [space_top]+[third_vert]*3 - [space_text_18] - [linestrength], [quart_hor], [space_text_18], #FFFFFF,0,T,100,font_18
+htmltext = 1, "\symLife Starting Life: 3",   [space_left] + [quart_hor] * 3  + [linestrength], [space_top]+[third_vert]*3 - [space_text_18] - [linestrength], [quart_hor], [space_text_18], #FFFFFF,0,T,100,font_18
 
-image = 5, "..\..\Pictures\Tiers\CardsTier1.png", [space_left] + [quart_hor] * 3 - 0.9, [space_top]+[third_vert]*2  + [linestrength], 0.8, 0.8, 0
-image = 5, "..\..\Pictures\Tiers\DiceTier3.png", [space_left] + [quart_hor] * 3 - 1.8, [space_top]+[third_vert]*2  + [linestrength], 0.8, 0.8, 0
+image = 1, "..\..\Pictures\Tiers\CardsTier2.png", [space_left] + [quart_hor] * 3 - 0.9, [space_top]+[third_vert]*2  + [linestrength], 0.8, 0.8, 0
+image = 1, "..\..\Pictures\Tiers\DiceTier1.png", [space_left] + [quart_hor] * 3 - 1.8, [space_top]+[third_vert]*2  + [linestrength], 0.8, 0.8, 0
 
-RECTANGLE = 5, [space_left] + [quart_hor] * 0 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
-RECTANGLE = 5, [space_left] + [quart_hor] * 1 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
-RECTANGLE = 5, [space_left] + [quart_hor] * 3 + [linestrength]/2, [space_top] + [third_vert] * 2 + [linestrength]/2, [quart_hor]- [linestrength], [third_vert]- [linestrength], [col_silver], empty, [linestrength]
+RECTANGLE = 1, [space_left] + [quart_hor] * 0 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
+RECTANGLE = 1, [space_left] + [quart_hor] * 1 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
+RECTANGLE = 1, [space_left] + [quart_hor] * 3 + [linestrength]/2, [space_top] + [third_vert] * 2 + [linestrength]/2, [quart_hor]- [linestrength], [third_vert]- [linestrength], [col_gold], empty, [linestrength]
 
-LINE = 5, [quart_hor] * 1 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 1 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  #000000, [linestrength]
-LINE = 5, [quart_hor] * 2 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 2 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  #000000, [linestrength]
+LINE = 1, [quart_hor] * 1 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 1 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  #000000, [linestrength]
+LINE = 1, [quart_hor] * 2 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 2 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  #000000, [linestrength]
+
 
 #Global Simmilar stuff
 FONT = Arial, 18, B, #000000

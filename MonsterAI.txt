@@ -42,7 +42,6 @@ Passive: Can't die as long as a golem is adjacent
 Rolls:1,2,3 A:2 A:2
 Rolls:4,5,6 Text: "Adjacent golems gain powerful"
 
-End Of File
 ###########################################################################################
 Name:Metallurge
 
@@ -63,6 +62,32 @@ Passive: Can't die as long as a golem is adjacent
 
 Rolls:1,2,3 A:2 A:2
 Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+###########################################################################################
+#Duplicate, remove later
+Name:Vampire
+
+Normal
+
+Life:10
+Count:3
+Passive: Sunburn
+
+Rolls:1,2 A:1 H:2
+Rolls:3,4 A:2 H:1
+Rolls:5,6 A:3
+
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:1,2,3 A:2 A:2
+Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+End Of File
 
 ###########################################################################################
 Name:Patching Golem

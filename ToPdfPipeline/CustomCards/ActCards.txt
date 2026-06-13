@@ -84,7 +84,7 @@ FONT = Arial, 18, B, #000000
 TEXT = 1, "Feral Instinct", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
 htmltext = 1, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 1, "\symAddFire Fire: 1 <br>--- \symBlaze Blaze 2 --- <br> Per discarded Card: <br> Br: \symVulnerable Vulnerable <br> Silver: \symAddFire Fire:2 <br> Gold: \symAttack A:3 <br> Dia: Draw your deck", [linestrength] * 2 , 3,[full_hor] + 0.6, 5,#FFFFFF,0,T,100,font_18
+htmltext = 1, "\symAddFire Fire: 2 <br>--- \symBlaze Blaze 2 --- <br> Per discarded Card: <br> Br: \symAddFire Fire:1 <br> Silver: \symVulnerable Vulnerable <br> Gold: \symAttack A:3 <br> Dia: Draw your deck", [linestrength] * 2 , 3,[full_hor] + 0.6, 5,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
 TEXT = 1, "Berserker 2", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
@@ -93,65 +93,292 @@ htmltext = 1, "Gold \symCardsGold", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,
 
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
-TEXT = 2, "Roids", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 2, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+TEXT = 65, "Greater Heal", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 65, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 2, "\symPowerful Powerful<br> \symAttack A: 1", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+htmltext = 65, "\symRanged Ranged<br><small><i>(You may target players to the left or right)</i></small> <br> \symHeal Heal: 3 <br><small><i>(Regain 3 Life)</i></small>", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
-TEXT = 2, "Ranger 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+TEXT = 65, "Witch 1", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
-htmltext = 2, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+htmltext = 65, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+
+
+
 
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
-TEXT = 3, "Oust", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 3, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+TEXT = 139, "Inspire", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 139, "Cost: Opt \symAddWood 3 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 3, "\symAddEarth Earth: 2 <br> \symShield Shield: 1 <br><small><i>(Take one damage less from each attack.)</i></small>", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+htmltext = 139, "\symPowerful Powerful: 2 <br>------ Opt Paid ------ <br>Also target both players next to you", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
-TEXT = 3, "Dwarf", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+TEXT = 139, "Bard 1", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
-htmltext = 3, "Gold \symCardsGold", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Gold
+htmltext = 139, "Bronze \symCardsBronze", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Bronze
+
 
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
-TEXT = 4, "Steel Storm", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 4, "Cost: Opt \symAddMetal 1 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+TEXT = 140, "Inspire", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 140, "Cost: Opt \symAddWood 3 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 4, "\symAttack A: 3 <br>------ Opt Paid ------ <br>Apply the result of your attack dice twice to this attack", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+htmltext = 140, "\symPowerful Powerful: 2 <br>------ Opt Paid ------ <br>Also target both players next to you", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
-TEXT = 4, "Silverkin", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+TEXT = 140, "Bard 1", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
-htmltext = 4, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+htmltext = 140, "Bronze \symCardsBronze", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Bronze
+
 
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
-TEXT = 5, "Filigree Fatality", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 5, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+TEXT = 153, "Temperance", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 153, "Cost: Opt \symAddWood 1 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 5, "\symAdvantage Advantage<br><small><i>(Gain an advantage marker. When attacking, you may reroll one dice per marker.)</i></small> <br> \symAttack A: 2", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+htmltext = 153, "\symFlurry Flurry: 2 <br> \symHeal Heal: 2 <br>------ Opt Paid ------ <br> \symDisengage Disengage<br> \symDisengage Disengage", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
-TEXT = 5, "Silverkin", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+TEXT = 153, "Bard 2", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
-htmltext = 5, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+htmltext = 153, "Gold \symCardsGold", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Gold
+
 
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
-TEXT = 6, "Silver Infusion", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 6, "Cost: Opt \symAddMetal X ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+TEXT = 154, "Rejuvenate", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 154, "Cost: Opt \symAddWood 2 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 6, "\symAdvantage Advantage: X <br><small><i>(Gain an advantage marker. When attacking, you may reroll one dice per marker.)</i></small> <br> \symAttack A: 3", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+htmltext = 154, "\symRanged Ranged<br> \symHeal Heal: 1 <br>------ Opt Paid ------ <br> \symFlurry Flurry: 2", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
-TEXT = 6, "Silverkin", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+TEXT = 154, "Bard 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
-htmltext = 6, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+htmltext = 154, "Bronze \symCardsBronze", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Bronze
 
 
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 155, "Muscle Burst", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 155, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 155, "\symRanged Ranged<br>Double the powerful stacks on your target", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 155, "Bard 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 155, "Bronze \symCardsBronze", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Bronze
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 156, "Shove", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 156, "Cost: Opt \symAddWood 1 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 156, "\symRanged Ranged<br> \symDisengage Disengage<br>------ Opt Paid ------ <br> \symHeal Heal: 1 <br> \symHeal Heal: 1", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 156, "Bard 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 156, "Bronze \symCardsBronze", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Bronze
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 157, "Nature's Aid", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 157, "Cost: Opt \symAddWood 2 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 157, "\symRanged Ranged<br> \symHeal Heal: 3 <br>------ Opt Paid ------ <br> \symHeal Heal: 3", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 157, "Bard 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 157, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 158, "Leafy Cover", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 158, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 158, "\symAddWood Wood: 1 <br> \symRanged Ranged<br> \symHeal Heal: 2", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 158, "Bard 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 158, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 112, "Faithless Looting", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 112, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 112, "\symDraw Draw two cards <br>---Card 1 -> \symBlaze Blaze 2---<br> \symRanged Ranged<br> \symAttack A: 6", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 112, "Berserker 2", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 112, "Gold \symCardsGold", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Gold
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 115, "Hunker Down", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 115, "Cost: Opt \symAddEarth 2 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 115, "\symDisengage Disengage<br> \symDisengage Disengage<br>------ Opt Paid ------ <br> \symShield Shield: 1", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 115, "Berserker 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 115, "Bronze \symCardsBronze", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Bronze
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 116, "Resilience", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 116, "Cost: \symAddEarth 2 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 116, "\symRanged Ranged<br> \symVulnerable Vulnerable<br> \symShield Shield: 1 <br> \symDisengage Disengage", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 116, "Berserker 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 116, "Bronze \symCardsBronze", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Bronze
+
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 118, "Rage", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 118, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 118, "---Card 1 -> \symBlaze Blaze 3---<br>You may play the discarded cards. <small><i>(You still have to pay their costs)</i></small>", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 118, "Berserker 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 118, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 176, "Align", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 176, "Cost: Opt \symAddMetal 4 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 176, "\symAdvantage Advantage: 2 <br>------ Opt Paid ------ <br> \symStun Stun<br> \symAttack A: 3", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 176, "Knight 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 176, "Bronze \symCardsBronze", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Bronze
+
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 196, "Bash", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 196, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 196, "\symAttack A: X <br>X is equal to your shield", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 196, "Koloss 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 196, "Bronze \symCardsBronze", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Bronze
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 197, "Indomitable", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 197, "Cost: \symLife 2 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 197, "\symShield Shield: 1 <br> \symAttack A: 2", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 197, "Koloss 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 197, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 198, "Wall Off", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 198, "Cost: Opt \symAddEarth 2 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 198, "\symRanged Ranged<br> \symShield Shield: 1 <br>------ Opt Paid ------ <br> \symShield Shield: 2", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 198, "Koloss 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 198, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 255, "Slice", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 255, "Cost: \symAddMetal 2 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 255, "\symAdvantage Advantage: 2 <br> \symAttack A: 3", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 255, "Sangromancer 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 255, "Bronze \symCardsBronze", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Bronze
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 256, "Dice", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 256, "Cost: \symAddMetal 3 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 256, "\symAdvantage Advantage: 3 <br> \symAttack A: 3", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 256, "Sangromancer 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 256, "Bronze \symCardsBronze", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Bronze
+
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 238, "Volley Fire", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 238, "Cost: \symAddFire 4 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 238, "\symRanged Ranged<br> \symAttack A: 3 <br> \symAttack A: 3 <br> \symAttack A: 3", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 238, "Ranger 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 238, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 218, "Fire up", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 218, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 218, "\symFlurry Flurry: 2 <br>---Card 1 -> \symBlaze Blaze 2---<br> \symAddFire Fire: 2", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 218, "Pyromancer 3", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 218, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Silver
+
+
+#Name, OptCost ########################################
+FONT = Arial, 18, B, #000000
+TEXT = 26, "Lunge", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 26, "Cost: Opt \symAddWood 2 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+htmltext = 26, "\symPowerful Powerful: 2 <br><small><i>(Your attacks this turn deal 2 extra damage.)</i></small> <br>------ Opt Paid ------ <br> \symAttack A: 1", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+
+FONT = Arial, 12, B, #000000
+TEXT = 26, "Halfelf", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+
+htmltext = 26, "Bronze \symCardsBronze", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Bronze
 
 
 #Title

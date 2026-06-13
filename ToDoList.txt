@@ -37,8 +37,8 @@ Koloss 1
 Bard2
 Wyrmkin
 
-Wyrmkin Dice
-Wyrmkin Symbols
+Wyrmkin Dice // Red
+Wyrmkin Tier Symbols
 
 Cards
 Witch:1 Greater Heal
@@ -63,7 +63,7 @@ Halfelf: Lunge
 
 Monster:
 Vampire
-Mettallurge
+Metallurge
 
 
 
