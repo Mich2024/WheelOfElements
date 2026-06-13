@@ -123,8 +123,42 @@ Colossal Golem, Metalcrafter, Capacitor Golem, Patching Golem,
 #Metalcrafter : Silver +
 
 
+#######################
+Name: Bandit Revenge
+
+Encounter:1
+Bandit Skirmisher, Bandit Trapper,
+Bandit Raider, Bandit Leader, Bandit Raider,
+Bandit Skirmisher, Bandit Trapper,
+Bandit Raider, Bandit Leader, Bandit Raider,
+Bandit Skirmisher, Bandit Skirmisher,
+
+Encounter:2
+Bandit Berserker, Cultist,
+Bandit Skirmisher, Bandit Skirmisher, Cultist,
+Bandit Skirmisher, Bandit Trapper, Cultist,
+Bandit Skirmisher, Bandit Leader, Cultist,
+Bandit Skirmisher, Bandit Trapper, Cultist,
+
+Encounter:3
+Vengeful Ghost, Cultist, Cultist,
+Cultist, Cultist, Bandit Skirmisher, Cultist, Cultist,
+Bandit Skirmisher, Bandit Trapper, Cultist, Cultist,
+Bandit Berserker, Bandit Leader, Cultist, Cultist,
+Bandit Skirmisher, Bandit Trapper, Bandit Skirmisher,
+
+#Bandit Raider : Bronze
+#Cultist : Bronze +
+#Vengeful Ghost: Gold
+#Bandit Skirmisher : Silver
+#Bandit Trapper : Silver
+#Bandit Leader : Silver
+#Bandit Berserker : Gold
+#Bandit Berserker : Gold
+
 ###########
 End Of File
+
 
 
 Name: Orcbashing
