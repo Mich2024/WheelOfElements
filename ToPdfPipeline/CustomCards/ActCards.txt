@@ -1,4 +1,4 @@
-[CardCount] = 6
+[CardCount] = 23
 
 [col_bronze] = #CD7F32
 [col_silver] = #ACACAC

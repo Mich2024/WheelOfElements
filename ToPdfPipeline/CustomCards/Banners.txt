@@ -1,4 +1,4 @@
-[CardCount] = 22
+[CardCount] = 1
 
 [space_text_28] = 1
 [space_text_18] = 0.7
@@ -20,7 +20,7 @@
 CARDS=[CardCount]
 BORDER=NONE
 UNIT=CM
-PAGE=19,28,PORTRAIT,HV
+PAGE=10,20,PORTRAIT,HV
 DPI=300
 CARDSIZE=1.4,7
 BASERANGE=,ON
@@ -74,8 +74,8 @@ htmlfont=font_20,Arial,15,B,#000000,LEFT
 [start_bot] = 7 - ([size_sym] + [linestrength])* 1
 
 
-htmltext = 1, "\symDiceGold",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
-htmltext = 1, "Attack Dice Catkin", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+htmltext = 10, "\symDiceGold",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 10, "Attack Dice Catkin", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
 
 htmltext = 2, "\symDiceBronze",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
 htmltext = 2, "Attack Dice Centaur", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
@@ -101,8 +101,8 @@ htmltext = 8, "Attack Dice Silverkin", 0.35, [start_name], [space_text_28] ,[sta
 htmltext = 9, "\symDiceBronze",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
 htmltext = 9, "Attack Dice Solarian", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
 
-htmltext = 10, "\symDiceGold",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
-htmltext = 10, "Attack Dice Wyrmkin", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
+htmltext = 1, "\symDiceBronze",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
+htmltext = 1, "Attack Dice Wyrmkin", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20
 
 htmltext = 11, "\symAddFire",[space_left] , [start_bot] ,[full_hor], [space_text_28],#FFFFFF,0,T,100,font_18
 htmltext = 11, "Fire", 0.35, [start_name], [space_text_28] ,[start_bot] - [start_name] - [linestrength]*2, #FFFFFF,270,T,100,font_20

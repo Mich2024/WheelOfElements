@@ -1,3 +1,4 @@
+[CardCount] = 3
 [space_top] = 1
 [space_left] = 0
 [WidthPage] = 24+[space_left]
@@ -21,7 +22,7 @@
 
 [third_hor] = ((([WidthPage]-[space_left]-[space_right])/3)-0.25)
 [quart_hor] = 5.5
-[CardCount] = 40
+
 
 CARDS=[CardCount]
 BORDER=RECTANGLE,#000000,[linestrength]*2
@@ -95,37 +96,37 @@ RECTANGLE = 1-[CardCount], 0, 0, [quart_hor], [third_vert], #000000, empty, [lin
 
 
 FONT = "Noto Sans Mono", 14, B, #000000
-TEXT = 1 "Bard 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+TEXT = 1, "Bard 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
 FONT = "Noto Sans Mono", 12, B, #000000
-image = 1 "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
-htmltext = 1 "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+image = 1, "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 1, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
 FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = 1 "When you  \symHeal Heal another player:<br> - also apply <br>Powerful:1",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
-htmltext = 1 "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
-LINE = 1 [quart_hor] - [linestrength] - 1, [third_vert] - [linestrength],  [quart_hor] - [linestrength], [third_vert] - [linestrength] - 1,  [col_bronze], [linestrength]
+htmltext = 1, "When you  \symHeal Heal another player:<br> - also apply <br>Powerful:1",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 1, "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 1, [quart_hor] - [linestrength] - 1, [third_vert] - [linestrength],  [quart_hor] - [linestrength], [third_vert] - [linestrength] - 1,  [col_bronze], [linestrength]
 
 
 
 FONT = "Noto Sans Mono", 14, B, #000000
-TEXT = 2 "Koloss 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+TEXT = 2, "Koloss 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
 FONT = "Noto Sans Mono", 12, B, #000000
-image = 2 "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
-htmltext = 2 "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+image = 2, "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 2, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
 FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = 2 "When your rightmost Enemy damages you:<br> - lose 1 life instead of the original damage",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
-htmltext = 2 "\symSmallLife Starting life: 2",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
-LINE = 2 [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
+htmltext = 2, "When your rightmost Enemy damages you:<br> - lose 1 life instead of the original damage",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 2, "\symSmallLife Starting life: 2",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 2, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
 
 
 FONT = "Noto Sans Mono", 14, B, #000000
-TEXT = 3 "Koloss 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+TEXT = 3, "Koloss 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
 FONT = "Noto Sans Mono", 12, B, #000000
-image = 3 "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
-htmltext = 3 "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+image = 3, "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 3, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
 FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = 3 "When your rightmost Enemy damages you:<br> - lose 1 life instead of the original damage",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
-htmltext = 3 "\symSmallLife Starting life: 2",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
-LINE = 3 [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
+htmltext = 3, "When your rightmost Enemy damages you:<br> - lose 1 life instead of the original damage",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 3, "\symSmallLife Starting life: 2",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 3, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
 
 
 
