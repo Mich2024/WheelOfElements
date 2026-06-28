@@ -15,7 +15,7 @@ ABC enemy that does nothing on its first to actions and deals 6 on C
 ############
 AM
 druid 1 no powerful
-
+Name: "Last Line" ManaCost:Life;2 Shield:3 Text: "<small><i>(Take three damage less from each attack.)</i></small>" Koloss
 
 druid 2 strike
 Silverkin Passive
