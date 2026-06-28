@@ -11,10 +11,10 @@ Explanation:Heal
 
 Tier1
 Name: "Heart of Water" Water:2 Text: "<small><i>(Add two brown cubes to the 'Water' section of the wheel.)</i></small>"
-Name: "Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:2 Text: "<small><i>(Regain 2 Life)</i></small>"
+Name: "Energize" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:1 Text: "<small><i>(Regain 1 Life)</i></small>" Powerful:1 "<small><i>(Your attacks this turn deal 1 extra damage.)</i></small>"
 
 Tier2
-Name: "Blood Petals" ManaCost:Wood;1 A:2 A:2 Text: "<small><i>(The second attack may target a different enemy.)</i></small>"
+Name: "Blood Petals" ManaCost:Wood;1 Powerful:1 "<small><i>(Your attacks this turn deal 1 extra damage.)</i></small>" A:3
 Name: "Healing Rain" Water:1 Ranged A:1 Heal:1 Text: "<small><i>(Regain 1 Life)</i></small>"
 
 Tier3

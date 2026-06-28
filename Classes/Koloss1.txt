@@ -14,7 +14,7 @@ Name: "Overwork" ManaCost:Life;2 Earth:4 Text: "<small><i>(Add four cubes to the
 Name: "Trample" ManaCost:Opt;Earth;1 A:1 Opt Ranged A:1
 
 Tier2
-Name: "Last Line" ManaCost:Life;3 Shield:3 Text: "<small><i>(Take three damage less from each attack.)</i></small>"
+Name: "Last Line" ManaCost:Life;2 Shield:3 Text: "<small><i>(Take three damage less from each attack.)</i></small>"
 Name: "Guard" Ranged Shield:1 Text: "<small><i>(Take one damage less from each attack.)</i></small>"
 
 Tier3

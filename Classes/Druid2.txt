@@ -12,7 +12,7 @@ Explanation:Poison
 
 Tier1
 Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 Ranged A:3
-Name: "Strike" Ranged A:1
+Name: "Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:2 Text: "<small><i>(Regain 2 Life)</i></small>"
 
 #Name: "Transfusion" Ranged Text: "Choose an X. Loose X Life. X Cannot be more than your current life" Heal:X+2
 
