@@ -31,7 +31,7 @@ Passive: Shield
 
 Rolls:A A:1
 Rolls:B A:1 A:1
-Rolls:C Text: "Monsters facing the same player gain powerful"
+Rolls:C Text: "Adjacent Monsters gain powerful:2"
 
 Hard
 
