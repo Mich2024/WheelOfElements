@@ -14,12 +14,8 @@ Base Cards
 
 Tier1
 #3
-Name: "Carbonize" ManaCost:Fire;2 A:5 Text: "If this attack kills, Fire:2"
-Name: "Fiery veins" ManaCost:Opt;Fire;X Flurry:X+1
-Name: "Consume" ManaCost:Fire;2 Fire:5
+
 
 Tier2
 #5
-Name: "Clad in Flames" ManaCost:Fire;2 A:3 Aoe:Cleave;2
-Name: "Fire up" Flurry:2 Blaze:2 Fire:2
 

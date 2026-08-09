@@ -21,6 +21,8 @@ Tier1
 Name: "Barrage" ManaCost:Fire;1 Flurry:2 Text: "<small><i>(Gain two flurry tokens. You may spend it at any time to perform A:1.)</i></small>"
 Name: "Pocket Sand" Wood:1 Ranged Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
 
+Name: "Fiery veins" ManaCost:Opt;Fire;X Flurry:X+1
+
 Tier2
 #5
 Name: "Hail of arrows" Flurry:2 Text: "Your flurries have Ranged this turn"
