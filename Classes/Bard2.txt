@@ -10,7 +10,7 @@ Explanation:Heal
 Tier1
 Name: "Heal" Ranged Heal:2
 Name: "Outlast" Powerful Text: "At the end of this turn, keep all Powerful stacks"
-
+Name: "Hype" ManaCost:Wood;1 Powerful:3
 
 Tier3
 Name: "Overgrowth" ManaCost:Opt;Wood;2 Heal:4 Opt Flurry:2

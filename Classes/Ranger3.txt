@@ -15,11 +15,5 @@ Base Cards
 
 Tier1
 #3
-Name: "Tangle Tumble" Ranged Disengage Disengage
-Name: "Mulch" ManaCost:Fire;1 Wood:4
-Name: "Shred" ManaCost:Fire;3 Flurry:4
 
-Tier2 
-#5
-Name: "Roids" Powerful A:1 
-Name: "Volley Fire" ManaCost:Fire;4 Ranged A:3 A:3 A:3
+

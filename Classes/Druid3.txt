@@ -7,10 +7,6 @@ Element: Water
 Element: Wood
 
 Tier1
-Name: "Nightshade" ManaCost:Wood;1 Poison:2 A:1
-Name: "Splash" ManaCost:Wood;2 Water:2 Powerful:1 Heal:1
-Name: "Leeching Brambles" ManaCost:Wood;2 A:1 Heal:3
 
-Tier2
-Name: "Wellspring" Water:1 Ranged Heal:2 Powerful:1
-Name: "Flay" ManaCost:Wood;2 Powerful:1 A:2 Poison:2
+
+
