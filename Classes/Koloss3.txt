@@ -8,9 +8,14 @@ Element: Earth
 
 Tier1
 Name: "Heart of Earth"  Earth:2
-Name: "Fight On" Ranged A:1 Blaze:1 Earth:1
 Name: "Bash" A:X Text: "X is equal to your shield"
 
 Tier2
-Name: "Indomitable" ManaCost:Life;2 Shield:1 A:2
+
 Name: "Wall Off" ManaCost:Opt;Earth;2 Ranged Shield:1 Opt Shield:2
+
+
+
+Name: "Fight On" Ranged A:1 Blaze:1 Earth:1
+Name: "Strike Down" ManaCost:Life;3 Blaze:3 A:12
+Name: "Earthwake" Shield:1 Blaze:2 Earth:4

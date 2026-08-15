@@ -7,11 +7,17 @@ Type
 Element: Metal
 Element: Earth
 
+#Explanation:Advantage
+#Explanation:Lifepay
+
 Tier1
 Name: "Heart of Earth" Earth:2
-Name: "Slice" ManaCost:Metal;2 Advantage:2 A:3
-Name: "Dice" ManaCost:Metal;3 Advantage:3 A:3
 
 Tier2
-Name: "Renew" Earth:2 Advantage Advantage
-Name: "Flay" ManaCost:Life;4 A:7 Text: "If this was your second card, repeat this card (including the cost)."
+
+Name: "Blood Petals" ManaCost:Life;3 A:3 A:3 Text: "<small><i>(The second attack may target a different enemy.)</i></small>"
+
+T3
+Name: "Take a Bite" ManaCost:Life;3 A:9
+
+Name: "Bloodguard" ManaCost:Life;3*X Ranged Shield:X Text: "(X is 1 while backlined)"
