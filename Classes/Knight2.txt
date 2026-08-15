@@ -1,22 +1,31 @@
 Passive
-Start of turn 1:<br> - Stun Stun <br>Advantage:2
-#In your first turn, ignore elemental costs.
-#Treat Costs of X as 3 if you are not paying them.
-Life: 3
+Start of turn 1:<br> - play one additional card
+Life: 6
 
 Type
 Element: Metal
 
 Explanation:Advantage
-Explanation:Lifepay
+Explanation:Stun
 
 Tier1
 Name: "Pierce" ManaCost:Opt;Metal;2 Advantage Opt A:4
-Name: "Sharpen" Advantage Metal:1
+Name: "Align" ManaCost:Opt;Metal;4 Advantage:2 Opt Stun A:3
 
-Tier3
-Name: "Clean Strike" Metal:2 A:3
-Name: "Extinguish" ManaCost:Opt;Metal;X Stun A:2X+2
-Name: "Bleeding Edge" ManaCost:Life;2 A:8
+Tier2
+Name: "Parry"  Metal:1 Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>"
+Name: "Dutybound" Advantage Text: "<small><i>(Gain an advantage marker. When attacking, you may reroll one dice per marker.)</i></small>" A:2
+Name: "Prepare" Stun Advantage
 
+
+
+
+
+#In your first turn, ignore elemental costs.
+#Treat Costs of X as 3 if you are not paying them.
+#Start of turn 1:<br> - Stun Stun <br>Advantage:2
+
+#1 Name: "Bloody Strike" ManaCost:Life;3 Advantage A:4
+#3 Name: "Clean Strike" Metal:2 A:3
+#3 Name: "Bleeding Edge" ManaCost:Life;2 A:8
 #Name: "Sword and Dagger" A:X A:X Stun Text: "X is Metal Mana in the Wheel"

@@ -7,6 +7,8 @@ Type
 Element: Fire
 Element: Earth
 
+#Explanation:Blaze
+#Explanation:Shield
 
 Tier1
 Name: "Heart of Fire" Fire:2

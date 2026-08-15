@@ -1,5 +1,4 @@
 Passive
-#If your rightmost Enemy deals damage, he deals 0 damage instead.
 Start of turn 1:<br> - Disengage the leftmost enemy from the player to your right
 Life: 4
 
@@ -7,15 +6,18 @@ Life: 4
 Type
 Element: Earth
 
-Explanation:Blaze
+#Explanation:Shield
+#Explanation:Lifepay
 
 Tier1
 Name: "Stalwart" ManaCost:Opt;Earth;4 A:1 Opt Shield:2
 Name: "Cleave" ManaCost:Opt;Earth;1 A:1 Opt Aoe:Cleave;2
 
-Tier3
-Name: "Sword and Shield" Shield:1 A:1
-Name: "Strike Down" ManaCost:Life;3 Blaze:3 A:12
-Name: "Earthwake" Shield:1 Blaze:2 Earth:4
+Tier2
+Name: "Last Line" ManaCost:Life;2 Shield:3 Text: "<small><i>(Take three damage less from each attack.)</i></small>"
+Name: "Guard" Ranged Shield:1 Text: "<small><i>(Take one damage less from each attack.)</i></small>"
+Name: "Indomitable" ManaCost:Life;2 Shield:1 A:3
+
 
 #Name: "Roar" A:1 Aoe:All
+#If your rightmost Enemy deals damage, he deals 0 damage instead.
