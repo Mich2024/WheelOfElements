@@ -1,21 +1,19 @@
 Passive
-When you Heal another player:<br> - also apply <br>Powerful:1
-Life: 3
+End of each turn:<br> -  Flurry:1
+Life: 2
 
 Type
 Element: Wood
 
-Explanation:Heal
 
 Tier1
-Name: "Heal" Ranged Heal:2
-Name: "Outlast" Powerful Text: "At the end of this turn, keep all Powerful stacks"
-Name: "Hype" ManaCost:Wood;1 Powerful:3
+Name: "Muscle Burst" Ranged Text: "Double the powerful stacks on your target"
+Name: "Screech"  ManaCost:Wood;1 Ranged Disengage Disengage Opt Disengage Disengage
 
-Tier3
-Name: "Overgrowth" ManaCost:Opt;Wood;2 Heal:4 Opt Flurry:2
-Name: "Adrenaline Rush" Ranged Wood:1 Powerful:1 Heal:3
-Name: "Temperance" ManaCost:Opt;Wood;1 Flurry:2 Heal:2 Opt Disengage Disengage
+Tier2
+Name: "Bush Ambush" Wood:1 Disengage Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
+Name: "Sprouting" Wood:2 Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
+Name: "Hype" ManaCost:Wood;X Powerful:2*X Text: "<small><i>(X Can't be 0)</i></small>"
 
 
 

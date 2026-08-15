@@ -20,3 +20,6 @@ Name: "Poisoned Dagger" ManaCost:Water;1 A:3 Poison:2
 
 Tier3
 Name: "Cut Throat" ManaCost:Water;2 Text: "Execute an enemy if it is at or below half life"
+
+
+#Name: "Miasma" ManaCost:Water;2 Text: "Stun all Poisoned targets" AOE:All

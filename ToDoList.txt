@@ -24,6 +24,8 @@ Monster: Vengeful Ghost
 Silverkin Passive
 komplettkartenverzierung
 
+Add more disengage
+
 ##
 Rulebook:
 

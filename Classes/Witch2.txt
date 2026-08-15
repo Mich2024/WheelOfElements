@@ -8,19 +8,16 @@ Life: 4
 Type
 Element: Water
 
-Explanation:Stun
-
 #Power Levels : 3,3,3,5,5
 
 #ManaCost:Opt;Fire;X
 
 Tier1
-#3
-Name: "Poison Fume" Poison:1 Aoe:Cleave;2
-Name: "Fog"  Water:1 Disengage
 
-Tier3
-#8
-Name: "Miasma" ManaCost:Water;2 Text: "Stun all Poisoned targets" AOE:All
-Name: "Sepsis" ManaCost:Opt;Water;5 Poison:6 Opt A:X Text: "X is the amount of poison on the target" 
-Name: "Fated Death" Water:2 Text: "Double the poison on one enemy" 
+Name: "Gaslight"  Water:1 Disengage
+
+Tier2
+Name: "Languish" ManaCost:Opt;Water;2 Poison:4 Opt Poison:4
+Name: "Toxic Shock" Ranged A:X Text: "X is the amount of poison on the target"
+Name: "Greater Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:3 Text: "<small><i>(Regain 3 Life)</i></small>"
+Name: "Toxic Mist" ManaCost:Opt;Water;2 Poison:3 Disengage Opt Heal:3
