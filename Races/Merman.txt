@@ -1,6 +1,6 @@
 Passive
+#Passive rated at 0.5, rest 1 is in dice
 When attacking:<br> - first roll your attack dice, then select a target
-#Falls problematisch, Play with top Card of modifierdeck revealed
 Life: 3
 
 TierCards: Silver
@@ -11,17 +11,9 @@ Modifier Tableau
 #("0,5"); ("1,05"); ("1,6")
 #Size 18 Modifier Tableau
 Rank:1
-Add 2 -1 Add 3 Water Add 1 Merman
-Add 4 -1 Add 1 +6 Add 1 Merman
-Add 4 Poison Add 1 -1 Add 1 Merman
-Add 4 Poison Add 1 -1 Add 1 Merman
+Add 4 -1 Add 2 +4 Add 1 Me
+Add 4 -1 Add 2 +4 Add 2 Me
 
-Rank:2
-Add 4 -1 Add 1 +5 Add 1 Merman
-Add 4 -1 Add 1 +5 Add 1 Merman
-
-Rank:3
-Add 4 -1 Add 1 +6 Add 1 Merman
 
 Type
 Element: Water
@@ -33,12 +25,10 @@ Explanation: Poison
 Base Cards
 Tier1
 Name: "Poison" Poison:2 Text: "<small><i>(Put two posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
-Name: "Polluted Waters" ManaCost:Opt;Water;2 Poison:1 Opt A:1 A:1
 Name: "Heart of Water" Water:2 Text: "<small><i>(Add two brown cubes to the 'Water' section of the wheel.)</i></small>"
 
 Tier2
 Name: "Slickness" Water:1 Text: "<small><i>(Add one brown cube to the 'Water' section of the wheel.)</i></small>" A:2
 Name: "Tidal Grasp" ManaCost:Opt;Water;3 A:1 Opt A:2 AOE:Cleave;2
-
-Tier3
-Name: "Brine Burst" Water:2 Poison:4 Text: "<small><i>(Put four posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
+Name: "Brine Burst" Water:2 Poison:2 Text: "<small><i>(Put four posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
+Name: "Polluted Waters" ManaCost:Opt;Water;1 Poison:2 Disengage Disengage Opt A:1 A:1

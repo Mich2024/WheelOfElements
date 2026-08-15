@@ -14,17 +14,18 @@ ABC enemy that does nothing on its first to actions and deals 6 on C
 
 ############
 AM
-printing
-druid 1,2,3
-Name: "Last Line" ManaCost:Life;2 Shield:3 Text: "<small><i>(Take three damage less from each attack.)</i></small>" Koloss
-Event: Heresy
-Monster: Vengeful Ghost
 
 
 Silverkin Passive
 komplettkartenverzierung
+Add Shorthand of creature name in brackets next to name
+Add Reminder text existence to rulebook
 
 Add more disengage
+Add more X cards
+
+Check dice for advantage balancing
+
 
 ##
 Rulebook:

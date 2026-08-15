@@ -1,25 +1,20 @@
 Passive
-When attacking:<br> - you may activate <br> Advantage a second time on each roll of the ancestry dice
+When using advantage:<br> - you may spend <br> two Advantage <br> to choose the dice result 
 #ensure all Cards silver and up have advantage
 Life: 3
 
+#1.5
 TierCards: Gold
-TierPassive: Bronze
-TierMods: Silver
+#1
+TierPassive: Silver 
+#0
+TierMods: Bronze
 
 Modifier Tableau
 Rank:1
-Add 1 Metal Add 1 +1 Add 1 -1 Add 1 Silverkin
-Add 1 Metal Add 1 +1 Add 2 -1 Add 1 Silverkin
-Add 1 -2 Add 1 -1 Add 1 +1 Add 1 +2 Add 1 +3 Add 1 Silverkin
-Add 1 -2 Add 1 -1 Add 1 +1 Add 1 +2 Add 1 +3 Add 1 Silverkin
+Add 1 -2 Add 1 -1 Add 1 +1 Add 1 +2 Add 1 +3 Add 1 Si
+Add 1 -2 Add 1 -1 Add 1 +1 Add 1 +2 Add 1 +3 Add 2 Si
 
-Rank:2
-Add 1 +2 Add 1 -1 Add 1 Silverkin
-Add 1 +2 Add 1 -1 Add 1 Silverkin
-
-Rank:3
-Add 1 +3 Add 1 -1 Add 1 Silverkin
 
 Type
 Element: Metal

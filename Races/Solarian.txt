@@ -8,17 +8,8 @@ TierMods: Bronze
 
 Modifier Tableau
 Rank:1
-Add 1 Fire Add 2 +1 Add 2 +2 Add 1 Solarian
-Add 3 -1 Add 1 -2 Add 1 Solarian
-Add 2 +1 Add 1 Fire Add 1 Solarian
-Add 2 +1 Add 1 Fire Add 1 Solarian
-
-Rank:2
-Add 1 +1 Add 1 Solarian
-Add 1 +1 Add 1 Solarian
-
-Rank:3
-Add 1 +1 Add 1 Fire Add 1 Solarian
+Add 2 Fire Add 1 So
+Add 2 Fire Add 1 So
 
 
 Type
@@ -27,14 +18,14 @@ Element: Fire
 Explanation: Vulnerable
 
 Tier1
-Name: "Sun's Embrace" ManaCost:Opt;Fire;1 A:1 Opt A:1
-Name: "Heartburn" ManaCost:Opt;Fire;2 Vulnerable Opt A:3
-Name: "Heart of Fire" Fire:2 Text: "<small><i>(Add two brown cubes to the 'Fire' section of the wheel.)</i></small>"
 Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Heart of Fire" Fire:2 Text: "<small><i>(Add two brown cubes to the 'Fire' section of the wheel.)</i></small>"
 
 Tier2
 Name: "Double Strike" A:1 A:1 Text: "<small><i>(The second attack may target a different enemy.)</i></small>"
 Name: "Eternal Flame" ManaCost:Opt;Fire;2 Fire:2 A:1 Opt Aoe:Cleave;3
+Name: "Sun's Embrace" ManaCost:Opt;Fire;2 A:3 Opt A:3
+Name: "Heartburn" ManaCost:Opt;Fire;1 Vulnerable Vulnerable Opt Disengage Disengage
 
 #Add 3 -1 Add 1 +0 Add 3 Fire:1 +0
 #Add 3 +1 Add 2 +2
