@@ -18,14 +18,10 @@ Explanation:Heal
 Tier1
 Name: "Poison" Poison:2 Text: "<small><i>(Put two posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
 Name: "Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:2 Text: "<small><i>(Regain 2 Life)</i></small>"
-Name: "Control" Ranged Disengage Disengage
+Name: "Bedazzle" ManaCost:Opt;Water;2 Ranged Heal:1 Disengage Opt Heal:3
 
-Name: "Poison Fume" Poison:1 Aoe:Cleave;2
-Name: "Leech Poison" Water:1 Text: "Remove any amount of poison from your enemies. Heal that much health"
-Name: "Toxic Blast" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3
 
 
 Tier3
-Name: "Sepsis" ManaCost:Opt;Water;5 Poison:6 Opt A:X Text: "X is the amount of poison on the target" 
-Name: "Fated Death" Water:2 Text: "Double the poison on one enemy" 
-Name: "Toxic Deluge" Poison:2 Aoe:Cleave;3 
+Name: "Toxic Deluge" Poison:2 Aoe:Cleave;3
+Name: "Perpetual Brew" Water:2 Poison:2 Heal:2 Disengage Disengage
