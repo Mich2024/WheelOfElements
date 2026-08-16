@@ -3,26 +3,13 @@ Immunity to Banes <br><small><i>( Vulnerable , Poison and Stun )</i></small>
 Life: 4
 
 TierCards: Gold
-TierPassive: Bronze
-TierMods: Silver
+TierPassive: Silver
+TierMods: Bronze
 
 Modifier Tableau
-#(0,34); (0,84); (1,34);
 Rank:1
-#Size 18 Modifier Tableau
-Add 1 -2 Add 1 -1 Add 1 +1 Add 1 +2 Add 1 Dwarf
-Add 2 Earth Add 1 -1 Add 1 Dwarf
+Add 2 Earth Add 1 Dwarf
 Add 1 +3 Add 1 Dwarf
-Add 1 +3 Add 1 Dwarf
-
-#2; 2
-Rank:2
-Add 2 Earth Add 1 -2 Add 1 Dwarf
-Add 2 Earth Add 1 -2 Add 1 Dwarf
-
-#3
-Rank:3
-Add 2 Earth Add 1 -1 Add 1 Dwarf
 
 Type
 Element:Earth
@@ -34,14 +21,16 @@ Base Cards
 #ManaCost:Opt;earth;1
 
 Tier1
-Name: "Hunker Down" ManaCost:Opt;Earth;2 Disengage Disengage Opt Shield:1
 Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
 Name: "Heart of Earth" Earth:2 Text: "<small><i>(Add two brown cubes to the 'Earth' section of the wheel.)</i></small>"
 
+Tier2
+Name: "Kerfuffle" ManaCost:Opt;Earth;3 A:3 Opt Aoe:Cleave;3
+Name: "Hunker Down" ManaCost:Opt;Earth;1 Shield:1 Text: "<small><i>(Take one damage less from each attack.)</i></small>" Opt Ranged Disengage Disengage
+
 Tier3
-Name: "Kerfuffle" ManaCost:Opt;Earth;2 A:3 Opt Aoe:Cleave;3
-Name: "Oust" Earth:2 Shield:1 Text: "<small><i>(Take one damage less from each attack.)</i></small>"
-Name: "Crossbow" Earth:1 Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:4
+Name: "Block" Shield:2 Text: "<small><i>(Take two damage less from each attack.)</i></small>"
+Name: "Crossbow" Earth:2 Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:5
 
 #Add 6 -1 Add 3 +D6
 #Add 3 Earth:1 +0

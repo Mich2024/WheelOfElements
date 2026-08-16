@@ -2,23 +2,17 @@ Passive
 Cards you play have:<br> - Ranged
 Life: 3
 
+#2
 TierCards: Gold
-TierPassive: Bronze
-TierMods: Silver
+#0.5
+TierPassive: Silver
+#0
+TierMods: Bronze
 
 Modifier Tableau
 Rank:1
-Add 2 +2 Add 2 -2 Add 1 Fae
+Add 3 +2 Add 1 -2 Add 1 Fae
 Add 3 +1 Add 1 -1 Add 1 Fae
-Add 1 +2 Add 2 +1 Add 1 -1 Add 1 Fae
-Add 1 +2 Add 2 +1 Add 1 -1 Add 1 Fae
-
-Rank:2
-Add 1 +1 Add 1 Fae
-Add 1 +1 Add 1 Fae
-
-Rank:3
-Add 2 +1 Add 1 Fae
 
 
 Type
@@ -30,16 +24,17 @@ Explanation:Stun
 Base Cards
 
 Tier1
-#2
 Name: "Fly away" Disengage Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
 Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
-Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+
+Tier2
+Name: "Miséricorde" ManaCost:Opt;Metal;2 A:3 Opt Text: "Deals double damage against stunned units"
+Name: "Dust Cloud" ManaCost:Opt;Metal;2 Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>" Opt A:4 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+
 
 Tier3 
-#6
-Name: "Miséricorde" A:3 Text: "Deals double damage against stunned units"
-Name: "Dust Cloud" Stun Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>"
-Name: "Black Dust" Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>" A:2 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Mischief"   A:3 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>" Disengage Disengage Disengage Disengage
+Name: "Black Dust" Metal:2 Stun Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>"
 
 #Add 3 -1 Add 3 Wood:1 +0
 #Add 2 +0 Add 4 +1
