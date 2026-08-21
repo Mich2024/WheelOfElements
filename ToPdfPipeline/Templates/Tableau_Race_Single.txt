@@ -4,12 +4,8 @@ TEXT = ${Order}, "${Race}", [space_left], 0, [quart_hor], [space_text_28], LEFT,
 FONT = Arial, 12, B, #000000
 ${Passive}
 ${Life}
-image = ${Order}, "..\..\Pictures\Tiers\CardsTier${IntTierCards}.png", [space_left] + [quart_hor] * 3 - 0.9, [space_top]+[third_vert]*2  + [linestrength], 0.8, 0.8, 0
-image = ${Order}, "..\..\Pictures\Tiers\DiceTier${IntTierDice}.png", [space_left] + [quart_hor] * 3 - 1.8, [space_top]+[third_vert]*2  + [linestrength], 0.8, 0.8, 0
+image = ${Order}, "..\..\Pictures\Tiers\CardsTier${IntTierCards}.png", [space_left] + [quart_hor] * 3 - 0.9, [linestrength], 0.8, 0.8, 0
+image = ${Order}, "..\..\Pictures\Tiers\DiceTier${IntTierDice}.png", [space_left] + [quart_hor] * 3 - 1.8, [linestrength], 0.8, 0.8, 0
+image = ${Order}, "..\..\Pictures\Icons\AncestryIcons\${Race}.png", [space_left] + [quart_hor] * 1 , [linestrength], 0.8, 0.8, 0
 
-RECTANGLE = ${Order}, [space_left] + [quart_hor] * 0 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
-RECTANGLE = ${Order}, [space_left] + [quart_hor] * 1 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
-RECTANGLE = ${Order}, [space_left] + [quart_hor] * 3 + [linestrength]/2, [space_top] + [third_vert] * 2 + [linestrength]/2, [quart_hor]- [linestrength], [third_vert]- [linestrength], ${TierPassive}, empty, [linestrength]
-
-LINE = ${Order}, [quart_hor] * 1 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 1 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  #000000, [linestrength]
-LINE = ${Order}, [quart_hor] * 2 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 2 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  #000000, [linestrength]
+RECTANGLE = ${Order}, [space_left] + [quart_hor] * 2 + [linestrength]/2, [space_top] + [third_vert] * 0 + [linestrength]/2, [quart_hor]- [linestrength], [third_vert]- [linestrength], ${TierPassive}, empty, [linestrength]

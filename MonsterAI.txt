@@ -7,8 +7,8 @@ Normal
 Life:20
 Count:3
 
-Rolls:A Adjacent enemies act immediately (again)
-Rolls:B Text: "-"
+Rolls:Metal,Wood Adjacent enemies act immediately (again)
+Rolls:Fire,Earth,Water Text: "-"
 
 Hard
 
@@ -18,6 +18,8 @@ Passive: Can't die as long as a golem is adjacent
 
 Rolls:1,2,3 A:2 A:2
 Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+
+End Of File
 
 ###########################################################################################
 

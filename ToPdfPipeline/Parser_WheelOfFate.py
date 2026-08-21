@@ -117,13 +117,6 @@ def parseTableauFromLines(linesTableau):
     res = tableauRace()
     res.L1R1=linesTableau[1]
     res.L1R2=linesTableau[2]
-    res.L1R3=linesTableau[3]
-    res.L1R4=linesTableau[4]
-
-    res.L2R1=linesTableau[6]
-    res.L2R2=linesTableau[7]
-
-    res.L3R1=linesTableau[9]
 
     return res
 
@@ -422,7 +415,7 @@ def parseStories():
 
     
 
-def parseRacesAndClasses(files_Input):
+def parseAncestriesAndClasses(files_Input):
 
     #card lists. should contain classes from card.py
     actionCards = []
@@ -641,10 +634,10 @@ if __name__ == "__main__":
     
     maxRankToPrint = 5
     flagPrintHardAI = False
-    parseRacesAndClasses(files_Input)
-    parseEvents("../Events.csv")
+    parseAncestriesAndClasses(files_Input)
+    #parseEvents("../Events.csv")
     parseMonsterAI()
-    parseStories()
+    #parseStories()
 
 #Print location: 
 # Z:\home\mich\Documents\NandeckOut\Events.pdf

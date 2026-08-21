@@ -47,7 +47,7 @@ htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3
 
 htmlimage = 1 - [CardCount], \symCatkin, "..\..\Pictures\Icons\AncestryIcons\Catkin.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symCentaur, "..\..\Pictures\Icons\AncestryIcons\Centaur.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symDragonkin, "..\..\Pictures\Icons\AncestryIcons\Dragonkin.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symWyrmkin, "..\..\Pictures\Icons\AncestryIcons\Wyrmkin.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symDwarf, "..\..\Pictures\Icons\AncestryIcons\Dwarf.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symHalfElf, "..\..\Pictures\Icons\AncestryIcons\HalfElf.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symFae, "..\..\Pictures\Icons\AncestryIcons\Fae.png", [size_sym], [size_sym]

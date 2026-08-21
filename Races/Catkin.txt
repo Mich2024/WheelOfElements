@@ -27,7 +27,7 @@ Name: "Evade" Disengage Disengage Text: "<small><i>(Target an enemy, and immedia
 Tier2
 Name: "Rampage" Flurry:2 Text: "<small><i>(Gain two flurry tokens. You may spend it at any time to perform A:1.)</i></small>"
 Name: "Stalk Prey" Wood:1 Ranged Disengage Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
-Name: "Pounce" ManaCost:Opt;Wood;2 Ranged A:3 Opt Furry:2
+Name: "Pounce" ManaCost:Opt;Wood;2 Ranged A:3 Opt Flurry:2
 Name: "Woodland Strike" Wood:2 Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
 
 #Add 4 -1 Add 3 +1

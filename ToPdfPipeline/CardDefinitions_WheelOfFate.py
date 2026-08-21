@@ -674,28 +674,11 @@ class tableauRace:
         self.L1R1 = self.L1R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(0))
         self.L1R2 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L1R2.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
         self.L1R2 = self.L1R2.replace(r"${Order}",str(order)).replace(r"${Hor}",str(1)).replace(r"${Vert}",str(0))
-        self.L1R3 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L1R3.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
-        self.L1R3 = self.L1R3.replace(r"${Order}",str(order)).replace(r"${Hor}",str(2)).replace(r"${Vert}",str(0))
-        self.L1R4 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L1R4.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
-        self.L1R4 = self.L1R4.replace(r"${Order}",str(order)).replace(r"${Hor}",str(3)).replace(r"${Vert}",str(0))
 
-        self.L2R1 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L2R1.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
-        self.L2R1 = self.L2R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(1))
-        self.L2R2 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L2R2.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
-        self.L2R2 = self.L2R2.replace(r"${Order}",str(order)).replace(r"${Hor}",str(1)).replace(r"${Vert}",str(1))
-
-        self.L3R1 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L3R1.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
-        self.L3R1 = self.L3R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(2))
-        
         lines_mods = ""
 
         lines_mods += self.L1R1
         lines_mods += self.L1R2
-        lines_mods += self.L1R3
-        lines_mods += self.L1R4
-        lines_mods += self.L2R1
-        lines_mods += self.L2R2
-        lines_mods += self.L3R1
             
         return lines_mods
     
@@ -720,7 +703,7 @@ class tableauRace:
 
         count_total = 0
 
-        self.mods = [self.L1R1,self.L1R2,self.L1R3,self.L1R4,self.L2R1,self.L2R2,self.L3R1]
+        self.mods = [self.L1R1,self.L1R2]
 
         for line_mod in self.mods:
             words = line_mod.split(" ")
@@ -849,15 +832,8 @@ class statCard:
 
             
             templateEdge = ""
-            if(self.rank == 1):
-                templateEdge = open('Templates/Shingle_Class_Edge_TR.txt', 'r')
-                templateEdge = templateEdge.read()
-            if(self.rank == 2):
-                templateEdge = open('Templates/Shingle_Class_Edge_BR.txt', 'r')
-                templateEdge = templateEdge.read()
-            if(self.rank == 3):
-                templateEdge = open('Templates/Shingle_Class_Edge_BL.txt', 'r')
-                templateEdge = templateEdge.read()
+            templateEdge = open('Templates/Shingle_Class_Edge_TR.txt', 'r')
+            templateEdge = templateEdge.read()
 
             res = templateShingle.replace(r"${Edge}", templateEdge).replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life).strip()).replace(r"${Passive}", passive_new).replace(r"${IntTierPassive}",  str(self.rank))
 
@@ -1074,7 +1050,7 @@ class monsterAICard:
                 p = inflect.engine()
 
                 try: #rolls
-                    dice += r"\symD" + p.number_to_words(int(roll.strip())).capitalize()
+                    dice += r"\symAdd" + roll.strip().capitalize()
                     if(count_dice == 2):
                         #print(start_actions)
                         nanDeckDice += template_monster_line_dice.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(2*count_action_curr + flag_second_row)).replace(r"${PosXAction}", "0")
