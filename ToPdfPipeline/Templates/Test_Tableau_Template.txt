@@ -6,7 +6,7 @@
 
 [space_top] = 1
 [space_left] = 0
-[WidthPage] = 18+[space_left]
+[WidthPage] = 6+[space_left]
 [HeightPage] = 12+[space_top]
 [space_right] = 0
 [space_bottom] = 0
@@ -30,10 +30,10 @@ PAGE=21,29.7,LANDSCAPE,HV
 
 
 [third_vert] = (([HeightPage]-[space_top]-[space_bottom])/2)
-[quart_vert] = (([HeightPage]-[space_top]-[space_bottom])/3)
+[quart_vert] = (([HeightPage]-[space_top]-[space_bottom])/2)
 
-[third_hor] = (([WidthPage]-[space_left]-[space_right])/2)
-[quart_hor] = (([WidthPage]-[space_left]-[space_right])/3)
+[third_hor] = (([WidthPage]-[space_left]-[space_right])/1)
+[quart_hor] = (([WidthPage]-[space_left]-[space_right])/1)
 
 DPI=300
 CARDSIZE=[WidthPage],[HeightPage]
@@ -91,7 +91,7 @@ htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3
 
 htmlimage = 1 - [CardCount], \symCatkin, "..\..\Pictures\Icons\AncestryIcons\Catkin.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symCentaur, "..\..\Pictures\Icons\AncestryIcons\Centaur.png", [size_sym], [size_sym]
-htmlimage = 1 - [CardCount], \symDragonkin, "..\..\Pictures\Icons\AncestryIcons\Dragonkin.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symWyrmkin, "..\..\Pictures\Icons\AncestryIcons\Wyrmkin.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symDwarf, "..\..\Pictures\Icons\AncestryIcons\Dwarf.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symHalfElf, "..\..\Pictures\Icons\AncestryIcons\HalfElf.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symFae, "..\..\Pictures\Icons\AncestryIcons\Fae.png", [size_sym], [size_sym]
@@ -109,59 +109,44 @@ htmlfont=font_center_28,Arial,21,B,#000000,CENTER
 
 
 
-
 FONT = Arial, 28, B, #000000
 TEXT = 1, "Catkin", [space_left], 0, [quart_hor], [space_text_28], LEFT, TOP
 FONT = Arial, 12, B, #000000
 image = 1, "..\..\Pictures\Tiers\PassiveTier1.png", [space_left] + [quart_hor] * 2  + [linestrength] + 0.1, [space_top]+[third_vert]*0  + [linestrength], 0.8, 0.8, 0
-htmltext = 1, "During cleanup:<br> - you decide which enemy rotates", [space_left] + [quart_hor] * 2 + [linestrength], [space_top]+[third_vert]*0+[space_text_28] + [linestrength], [quart_hor] - [linestrength]*2, [third_vert], #FFFFFF,0,T,100,font_18
+htmltext = 1, "During cleanup:<br> - you decide which enemy rotates", [space_left] + [linestrength], [space_top]+[third_vert]*0+[space_text_28] + [linestrength], [quart_hor] - [linestrength]*2, [third_vert], #FFFFFF,0,T,100,font_18
 
-htmltext = 1, "\symLife Starting Life: 3",   [space_left] + [quart_hor] * 2  + [linestrength], [space_top]+[third_vert]*1 - [space_text_18] - [linestrength], [quart_hor], [space_text_18], #FFFFFF,0,T,100,font_18
+htmltext = 1, "\symLife Starting Life: 3", [space_left] + [quart_hor] * 2  + [linestrength], [space_top]+[third_vert]*1 - [space_text_18] - [linestrength], [quart_hor], [space_text_18], #FFFFFF,0,T,100,font_18
 
-image = 1, "..\..\Pictures\Tiers\CardsTier2.png", [space_left] + [quart_hor] * 3 - 0.9, [linestrength], 0.8, 0.8, 0
-image = 1, "..\..\Pictures\Tiers\DiceTier3.png", [space_left] + [quart_hor] * 3 - 1.8, [linestrength], 0.8, 0.8, 0
-image = 1, "..\..\Pictures\Icons\AncestryIcons\Catkin.png", [space_left] + [quart_hor] * 1 , [linestrength], 0.8, 0.8, 0
+image = 1, "..\..\Pictures\Tiers\CardsTier2.png", [space_left] + [quart_hor] - 0.9, [third_vert]*2 - [linestrength] - 0.8, 0.8, 0.8, 0
+image = 1, "..\..\Pictures\Tiers\DiceTier3.png", [space_left] + [quart_hor] - 1.8,[third_vert]*2 - [linestrength] - 0.8, 0.8, 0.8, 0
+image = 1, "..\..\Pictures\Icons\AncestryIcons\Catkin.png", [space_left] + [quart_hor]- 2.7, [third_vert]*2 - [linestrength] - 0.8, 0.8, 0.8, 0
 
+RECTANGLE = 1, [space_left] + [linestrength]/2, [space_top] + [third_vert] * 0 + [linestrength]/2, [quart_hor]- [linestrength], [third_vert]- [linestrength], [col_bronze], empty, [linestrength]
 
-RECTANGLE = 1, [space_left] + [quart_hor] * 2 + [linestrength]/2, [space_top] + [third_vert] * 0 + [linestrength]/2, [quart_hor]- [linestrength], [third_vert]- [linestrength], [col_bronze], empty, [linestrength]
 
 #Global Simmilar stuff
 FONT = Arial, 18, B, #000000
-TEXT = 1-[CardCount], "Passive", [space_left] + [quart_hor] * 2  + [linestrength] + 1 , [space_top]+[third_vert]*0  + [linestrength], [quart_hor]-[linestrength]*2, [space_text_28], LEFT, TOP
-
-RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
-RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 1 + [linestrength]/2, [space_top] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
-
-LINE = 1, [quart_hor] * 1 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 1 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  #000000, [linestrength]
-LINE = 1, [quart_hor] * 2 - [linestrength]/2 - 1, [space_top] + [linestrength]/2, [space_left] + [quart_hor] * 2 - [linestrength]/2, [space_top] + [linestrength]/2 + 1,  #000000, [linestrength]
-
-RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 0 + [linestrength]/2, [space_top] + [third_vert] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
-RECTANGLE = 1-[CardCount], [space_left] + [quart_hor] * 1 + [linestrength]/2, [space_top] + [third_vert] + [linestrength]/2, [quart_hor] - [linestrength], [third_vert] - [linestrength], #000000, empty, [linestrength]
-
-LINE = 1-[CardCount], [quart_hor] * 1 - [linestrength]/2 - 1, [space_top] + [third_vert] + [linestrength]/2, [space_left] + [quart_hor] * 1 - [linestrength]/2, [space_top] + [third_vert] + [linestrength]/2 + 1,  #000000, [linestrength]
-LINE = 1-[CardCount], [quart_hor] * 2 - [linestrength]/2 - 1, [space_top] + [third_vert] + [linestrength]/2, [space_left] + [quart_hor] * 2 - [linestrength]/2, [space_top] + [third_vert] + [linestrength]/2 + 1,  #000000, [linestrength]
-
+TEXT = 1-[CardCount], "Passive", [space_left] + [quart_hor] * 2  + [linestrength] + 1 , [space_top]+[third_vert]*0  + [linestrength], [quart_hor]-[linestrength]*8-[size_tier], [space_text_28], LEFT, TOP
 
 #HP Boxes
 
 FONT = Arial, 18, B, #000000
-htmltext = 1-[CardCount], "\symLife Life Pool",   [space_left] + [quart_hor] * 2 + [linestrength] + 1, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], #FFFFFF,0,T,100,font_28
+htmltext = 1-[CardCount], "\symLife Life Pool",   [space_left] + [linestrength] + 1, [space_top]+[third_vert]*1, [quart_hor], [space_text_28], #FFFFFF,0,T,100,font_28
 FONT = Arial, 18, B, #ffffff , #aa1111
 
-TEXT = 1-[CardCount], 10 , [quart_hor] * 2 + [len_hp_box] * 0 + [linestrength], [space_top]+[third_vert]*1 + [space_hp_box] * 1 + [len_hp_box]*0, [len_hp_box], [len_hp_box], left, center
-TEXT = 1-[CardCount], 20 , [quart_hor] * 2 + [len_hp_box] * 0 + [linestrength], [space_top]+[third_vert]*1 + [space_hp_box] * 1 + [len_hp_box]*1, [len_hp_box], [len_hp_box], left, center
-TEXT = 1-[CardCount], 30 , [quart_hor] * 2 + [len_hp_box] * 0 + [linestrength], [space_top]+[third_vert]*1 + [space_hp_box] * 1 + [len_hp_box]*2, [len_hp_box], [len_hp_box], left, center
-TEXT = 1-[CardCount], 40 , [quart_hor] * 2 + [len_hp_box] * 0 + [linestrength], [space_top]+[third_vert]*1 + [space_hp_box] * 1 + [len_hp_box]*3, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 00 , [len_hp_box] * 0 + [linestrength], [space_top]+[third_vert]*1 + [space_hp_box] * 1 + [len_hp_box]*0, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 10 , [len_hp_box] * 0 + [linestrength], [space_top]+[third_vert]*1 + [space_hp_box] * 1 + [len_hp_box]*1, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 20 , [len_hp_box] * 0 + [linestrength], [space_top]+[third_vert]*1 + [space_hp_box] * 1 + [len_hp_box]*2, [len_hp_box], [len_hp_box], left, center
+TEXT = 1-[CardCount], 30 , [len_hp_box] * 0 + [linestrength], [space_top]+[third_vert]*1 + [space_hp_box] * 1 + [len_hp_box]*3, [len_hp_box], [len_hp_box], left, center
 
-TEXT = 1-[CardCount], 0 , [quart_hor] * 2 + [len_hp_box] * 0 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 1, [len_hp_box], [len_hp_box], right, center
-TEXT = 1-[CardCount], 1 , [quart_hor] * 2 + [len_hp_box] * 1 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 1, [len_hp_box], [len_hp_box], right, center
-TEXT = 1-[CardCount], 2 , [quart_hor] * 2 + [len_hp_box] * 2 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 1, [len_hp_box], [len_hp_box], right, center
-TEXT = 1-[CardCount], 3 , [quart_hor] * 2 + [len_hp_box] * 3 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 1, [len_hp_box], [len_hp_box], right, center
-TEXT = 1-[CardCount], 4 , [quart_hor] * 2 + [len_hp_box] * 4 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 1, [len_hp_box], [len_hp_box], right, center
+TEXT = 1-[CardCount], 0 , [len_hp_box] * 0 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 1, [len_hp_box], [len_hp_box], right, center
+TEXT = 1-[CardCount], 1 , [len_hp_box] * 1 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 1, [len_hp_box], [len_hp_box], right, center
+TEXT = 1-[CardCount], 2 , [len_hp_box] * 2 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 1, [len_hp_box], [len_hp_box], right, center
+TEXT = 1-[CardCount], 3 , [len_hp_box] * 3 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 1, [len_hp_box], [len_hp_box], right, center
+TEXT = 1-[CardCount], 4 , [len_hp_box] * 4 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 1, [len_hp_box], [len_hp_box], right, center
 
-TEXT = 1-[CardCount], 5 , [quart_hor] * 2 + [len_hp_box] * 0 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 2 + [linestrength], [len_hp_box], [len_hp_box], right, center
-TEXT = 1-[CardCount], 6 , [quart_hor] * 2 + [len_hp_box] * 1 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 2 + [linestrength], [len_hp_box], [len_hp_box], right, center
-TEXT = 1-[CardCount], 7 , [quart_hor] * 2 + [len_hp_box] * 2 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 2 + [linestrength], [len_hp_box], [len_hp_box], right, center
-TEXT = 1-[CardCount], 8 , [quart_hor] * 2 + [len_hp_box] * 3 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 2 + [linestrength], [len_hp_box], [len_hp_box], right, center
-TEXT = 1-[CardCount], 9 , [quart_hor] * 2 + [len_hp_box] * 4 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 2 + [linestrength], [len_hp_box], [len_hp_box], right, center
-
+TEXT = 1-[CardCount], 5 , [len_hp_box] * 0 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 2 + [linestrength], [len_hp_box], [len_hp_box], right, center
+TEXT = 1-[CardCount], 6 , [len_hp_box] * 1 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 2 + [linestrength], [len_hp_box], [len_hp_box], right, center
+TEXT = 1-[CardCount], 7 , [len_hp_box] * 2 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 2 + [linestrength], [len_hp_box], [len_hp_box], right, center
+TEXT = 1-[CardCount], 8 , [len_hp_box] * 3 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 2 + [linestrength], [len_hp_box], [len_hp_box], right, center
+TEXT = 1-[CardCount], 9 , [len_hp_box] * 4 + [linestrength]*2 + [space_hp_box], [space_top]+[third_vert]*1 + [space_hp_box] * 2 + [linestrength], [len_hp_box], [len_hp_box], right, center
