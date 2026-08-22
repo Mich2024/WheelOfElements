@@ -298,7 +298,7 @@ def parseMonsterAI():
                 if(startsWith(line,"Rolls")):
                     words = line.split(" ")
                     words = [i for i in words if i != ""]  #remove leftovers from double spaces
-                    assignmentFunction = monCard.assignmentDict[words[0].split(":")[0]]
+                    assignmentFunction = monCard.assignmentDict[words[0].split(":")[1]]
                     while len(words) > 0:
                         if not words[0] == "Text:":
                             #print(words)
@@ -329,9 +329,14 @@ def parseMonsterAI():
             nandeckMonAI += copy.deepcopy(monAIcard).serializeToNandeck(count_order)
             count_order += 1
 
+    template_boilerplate = open('Templates/Utils_Boilerplate.txt', 'r')
+    template_boilerplate = template_boilerplate.read()
+
     template_boilerplate_monster = open('Templates/Monster_Boilerplate.txt', 'r')
     template_boilerplate_monster = template_boilerplate_monster.read()
     template_boilerplate_monster = template_boilerplate_monster.replace(r"${Cards}", nandeckMonAI).replace(r"${CardCount}", str(count_order-1))
+
+    template_boilerplate_monster = template_boilerplate_monster.replace(r"${UtilsBoilerplate}", template_boilerplate)
 
     fileToPrint = open('out/Monsters.txt', 'w+')
     fileToPrint.write(template_boilerplate_monster)
@@ -634,7 +639,7 @@ if __name__ == "__main__":
     
     maxRankToPrint = 5
     flagPrintHardAI = False
-    parseAncestriesAndClasses(files_Input)
+    #parseAncestriesAndClasses(files_Input)
     #parseEvents("../Events.csv")
     parseMonsterAI()
     #parseStories()
