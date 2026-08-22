@@ -52,7 +52,7 @@ ${Races}
 
 #Global Simmilar stuff
 FONT = Arial, 18, B, #000000
-TEXT = 1-[CardCount], "Passive", [space_left] + [quart_hor] * 2  + [linestrength] + 1 , [space_top]+[third_vert]*0  + [linestrength], [quart_hor]-[linestrength]*8-[size_tier], [space_text_28], LEFT, TOP
+TEXT = 1-[CardCount], "Passive", [space_left] + [linestrength] + 1 , [space_top]+[third_vert]*0  + [linestrength], [quart_hor]-[linestrength]*8-[size_tier], [space_text_28], LEFT, TOP
 
 #HP Boxes
 

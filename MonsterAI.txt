@@ -7,8 +7,11 @@ Normal
 Life:20
 Count:3
 
-Rolls:Metal,Wood Adjacent enemies act immediately (again)
-Rolls:Fire,Earth,Water Text: "-"
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 Hard
 
