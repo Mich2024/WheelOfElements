@@ -1,4 +1,9 @@
 #Todays Print
+#Rolls:Wood  Text: ""
+#Rolls:Fire  Text: ""
+#Rolls:Earth Text: ""
+#Rolls:Metal Text: ""
+#Rolls:Water Text: ""
 ###########################################################################################
 Name:Bandit Leader
 
@@ -7,11 +12,11 @@ Normal
 Life:20
 Count:3
 
-Rolls:Fire Text: "-"
+Rolls:Wood  Text: "Adjacent enemies act immediately (again)"
+Rolls:Fire  Text: "-"
 Rolls:Earth Text: "-"
 Rolls:Metal Text: "Adjacent enemies act immediately (again)"
 Rolls:Water Text: "-"
-Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 Hard
 
@@ -34,9 +39,11 @@ Life:20
 Count:1
 Passive: Shield
 
-Rolls:A A:1
-Rolls:B A:1 A:1
-Rolls:C Text: "Adjacent Monsters gain powerful:2"
+Rolls:Wood  A:1
+Rolls:Fire  A:1
+Rolls:Earth A:1 A:1
+Rolls:Metal A:1 A:1
+Rolls:Water Text: "Adjacent Monsters gain powerful:3"
 
 Hard
 
@@ -56,8 +63,11 @@ Life:5
 Count:5
 Passive: Scenariobound
 
-Rolls:1,2,3,4 A:2 A:2
-Rolls:5,6 Text: "Adjacent golems gain powerful"
+Rolls:Wood  A:2 A:2
+Rolls:Fire  Text: "Adjacent golems gain powerful"
+Rolls:Earth A:2 A:2
+Rolls:Metal A:2 A:2
+Rolls:Water Text: "Adjacent golems gain powerful"
 
 Hard
 
@@ -67,32 +77,6 @@ Passive: Can't die as long as a golem is adjacent
 
 Rolls:1,2,3 A:2 A:2
 Rolls:4,5,6 Text: "Adjacent golems gain powerful"
-
-###########################################################################################
-#Duplicate, remove later
-Name:Vampire
-
-Normal
-
-Life:10
-Count:3
-Passive: Sunburn
-
-Rolls:1,2 A:1 H:2
-Rolls:3,4 A:2 H:1
-Rolls:5,6 A:3
-
-
-Hard
-
-Life:5
-Count:2
-Passive: Can't die as long as a golem is adjacent
-
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
-
-End Of File
 
 ###########################################################################################
 Name:Patching Golem
@@ -102,6 +86,11 @@ Normal
 Life:30
 Count:5
 
+Rolls:Wood  A:1 Text: "Move damage from adjacent golems to this one"
+Rolls:Fire  A:1 Text: "Move damage from adjacent golems to this one"
+Rolls:Earth A:1 Text: "Move damage from adjacent golems to this one"
+Rolls:Metal A:1 Text: "Move damage from adjacent golems to this one"
+Rolls:Water A:1 Text: "Move damage from adjacent golems to this one"
 
 Rolls:A A:1 Text: "Move damage from adjacent golems to this one"
 
@@ -122,8 +111,11 @@ Life:20
 Count:3
 Passive: Shield:1
 
-Rolls:1,2,3 A:3
-Rolls:4,5,6 A:1 A:1
+Rolls:Wood  A:3
+Rolls:Fire  A:1 A:1
+Rolls:Earth A:3
+Rolls:Metal A:1 A:1
+Rolls:Water A:1 A:1
 
 Hard
 
@@ -142,9 +134,11 @@ Normal
 Life:20
 Count:4
 
-Rolls:A A:1 A:1
-Rolls:B A:1 A:1 A:1 A:1
-Rolls:C Powerful
+Rolls:Wood  Powerful
+Rolls:Fire  A:1
+Rolls:Earth A:1 A:1
+Rolls:Metal A:1 A:1 A:1
+Rolls:Water A:1 A:1 A:1 A:1
 
 Hard
 
@@ -170,9 +164,11 @@ Life:25
 Count:2
 Passive: Vengeance
 
-Rolls:1,2 A:1
-Rolls:3,4 A:2
-Rolls:5,6 A:1 A:1 
+Rolls:Wood  A:1
+Rolls:Fire  A:1
+Rolls:Earth A:2
+Rolls:Metal A:1 A:1
+Rolls:Water A:2
 
 Hard
 
@@ -190,9 +186,11 @@ Life:20
 Count:4
 Passive: Heretic
 
-Rolls:1,2 A:2 
-Rolls:3,4 A:1
-Rolls:5,6 Text: "Adjacent Cultists take 5 damage"
+Rolls:Wood  A:1
+Rolls:Fire  Text: "Adjacent Cultists take 5 damage"
+Rolls:Earth A:2
+Rolls:Metal A:2
+Rolls:Water Text: "Adjacent Cultists take 5 damage"
 
 Hard
 
@@ -255,8 +253,11 @@ Life:30
 Count:2
 Passive: Sunburn
 
-Rolls:1,2 A:2 Text: " Powerful:1 H:4 "
-Rolls:3,4,5,6 A:1 A:1 H:2
+Rolls:Wood  A:2 Powerful:1 H:4
+Rolls:Fire  Text: "-"
+Rolls:Earth A:1 A:1 H:2
+Rolls:Metal A:2 Powerful:1 H:4
+Rolls:Water A:1 A:1 H:2
 
 Hard
  
@@ -277,9 +278,11 @@ Life:20
 Count:3
 Passive: Sunburn
 
-Rolls:1,2 H:4 Water:1
-Rolls:2,3 A:3 Metal:1
-Rolls:5,6 A:1 A:1
+Rolls:Wood  A:1 A:1
+Rolls:Fire  A:1 A:1
+Rolls:Earth A:2
+Rolls:Metal A:3 Metal:1
+Rolls:Water H:4 Water:1
 
 
 Hard
@@ -300,10 +303,11 @@ Life:10
 Count:3
 Passive: Sunburn
 
-Rolls:1,2 A:1 H:2
-Rolls:3,4 A:2 H:1
-Rolls:5,6 A:3
-
+Rolls:Wood  A:1 H:2
+Rolls:Fire  A:3
+Rolls:Earth A:2 H:1
+Rolls:Metal A:2 H:1
+Rolls:Water A:1 H:2
 
 Hard
 
@@ -322,9 +326,11 @@ Normal
 Life:20
 Count:3
 
-Rolls:1,2 A:1
-Rolls:3,4 A:2
-Rolls:5,6 Text: "Adjacent Enemies get Powerful:1 "
+Rolls:Wood  A:2
+Rolls:Fire  Text: "Adjacent Enemies get Powerful:2"
+Rolls:Earth A:2
+Rolls:Metal A:1
+Rolls:Water A:1
 
 
 Hard
@@ -346,9 +352,11 @@ Count:15
 Passive: Scenariobound
 #Vampires : when adjacent vamp would die, move as maydmg as you can from vamp to this
 
-Rolls:1 A:3
-Rolls:2,3 A:2
-Rolls:4,5,6 A:1
+Rolls:Wood  A:2
+Rolls:Fire  A:3
+Rolls:Earth A:1
+Rolls:Metal A:1
+Rolls:Water A:2
 
 
 Hard
@@ -370,10 +378,11 @@ Normal
 Life:10
 Count:10
 
-Rolls:1 A:3
-Rolls:2,3 A:2
-Rolls:4,5,6 A:1
-
+Rolls:Wood  A:3
+Rolls:Fire  A:1
+Rolls:Earth A:3
+Rolls:Metal A:2
+Rolls:Water A:2
 
 Hard
 
@@ -393,9 +402,11 @@ Normal
 Life:20
 Count:5
 
-Rolls:1,2 A:1
-Rolls:3,4 A:2
-Rolls:5,6 A:3
+Rolls:Wood  A:1
+Rolls:Fire  A:3
+Rolls:Earth A:2
+Rolls:Metal A:3
+Rolls:Water A:1
 
 Hard
 
@@ -415,9 +426,11 @@ Normal
 Life:20
 Count:2
 
-Rolls:A Text: "-"
-Rolls:B Poison:1
-Rolls:C Stun
+Rolls:Wood  A:2
+Rolls:Fire  Text: "-"
+Rolls:Earth Stun
+Rolls:Metal Stun
+Rolls:Water Poison:1
 
 Hard
 
@@ -438,9 +451,11 @@ Life:35
 Count:2
 Passive: Enrage
 
-Rolls:1,2,3,4 A:1
-Rolls:5 Stun
-Rolls:6 A:1 A:1
+Rolls:Wood  A:1
+Rolls:Fire  A:1 A:1
+Rolls:Earth A:1
+Rolls:Metal Stun
+Rolls:Water A:1
 
 Hard
 
@@ -464,10 +479,11 @@ Life:20
 Count:2
 Passive: Disengange after action
 
-Rolls:1,2 A:1 A:1 A:1
-Rolls:3,4 A:4
-Rolls:5 H:6
-Rolls:6 A:2 Discard 2
+Rolls:Wood  A:1 A:1 A:1
+Rolls:Fire  A:2 Text:"Discard 2"
+Rolls:Earth A:4
+Rolls:Metal A:1 A:1 A:1
+Rolls:Water H:6
 
 Hard 
 
@@ -486,6 +502,12 @@ Normal
 Life:30
 Count:4
 Passive: -
+
+Rolls:Wood  A:4
+Rolls:Fire  A:4
+Rolls:Earth A:5
+Rolls:Metal A:5
+Rolls:Water A:3 H:3
 
 Rolls:1,2 A:3 H:3
 Rolls:3 A:4
@@ -509,9 +531,11 @@ Life:20
 Count:3
 Passive: Disengange when damaged
 
-Rolls:1,2 A:3 A:3
-Rolls:3,4 A:6
-Rolls:5,6 H:4
+Rolls:Wood  A:3 A:3
+Rolls:Fire  A:3 A:3
+Rolls:Earth A:6
+Rolls:Metal H:4
+Rolls:Water H:4
 
 Hard
 
@@ -531,9 +555,11 @@ Life:60
 Count:1
 Passive: Enemy to the right disengages instead if possible
 
-Rolls:1,2,3 A:3 A:3
-Rolls:4,5 A:7
-Rolls:6 A:9
+Rolls:Wood  A:3 A:3
+Rolls:Fire  A:9
+Rolls:Earth A:3 A:3
+Rolls:Metal A:7
+Rolls:Water A:7
 
 Hard 
 
@@ -553,9 +579,11 @@ Life:15
 Count:2
 Passive: -
 
-Rolls:1,2,3 Powerful to all enemies in this zone
-Rolls:5,6 H:2 targeting all other enemies in this zone
-Rolls:4 Powerful A:1 A:1
+Rolls:Wood  Text: "Powerful to all enemies in this zone"
+Rolls:Fire  Powerful A:1 A:1
+Rolls:Earth Text: "Powerful to all enemies in this zone"
+Rolls:Metal H:2 Text: "targeting all other enemies in this zone"
+Rolls:Water H:2 Text: "targeting all other enemies in this zone"
 
 Hard 
 
@@ -575,9 +603,11 @@ Life:20
 Count:2
 Passive: -
 
-Rolls:1 Powerful A:4
-Rolls:2,3 A:1 A:1
-Rolls:4,5,6 Vulnearble
+Rolls:Wood  Powerful A:4
+Rolls:Fire  Vulnerable
+Rolls:Earth A:1 A:1
+Rolls:Metal Vulnerable
+Rolls:Water A:1 A:1
 
 Hard 
 
