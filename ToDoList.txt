@@ -14,6 +14,8 @@ ABC enemy that does nothing on its first to actions and deals 6 on C
 
 ############
 AM
+Szenariospiel ins regelwerk
+
 druid 1 no powerful
 
 
