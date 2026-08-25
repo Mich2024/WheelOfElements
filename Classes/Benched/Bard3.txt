@@ -1,0 +1,12 @@
+Passive
+
+Life: 3
+
+Type
+Element: Wood
+
+Tier1
+
+
+Tier2
+

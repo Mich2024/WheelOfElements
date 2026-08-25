@@ -1,0 +1,16 @@
+Passive
+
+End of each turn:<br> - Poison:2 , targeting the enemy with the highst posion
+Life: 3
+
+
+Type
+Element: Water
+
+#ManaCost:Opt;Fire;X
+
+Tier1
+#3
+
+
+

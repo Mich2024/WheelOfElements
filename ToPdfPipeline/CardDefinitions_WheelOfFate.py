@@ -11,12 +11,6 @@ def removeColons(line):
     res = line.replace(":","")
     return res
 
-def texifyMultSign(line):
-    
-    
-    line = line.replace('*',r" $\times $ ")
-    return line
-
 def addNanDeckLinebreaks(text: str):
     res = ""
     last_copy = 0
@@ -241,60 +235,6 @@ dictExplanation = {
 
 }
 
-#converst an action list into tex. Does not add "{}"
-def serializeActionToTex(inputActions):
-    res = ""
-    flagAttackChainStarted = False
-    flagFirstLinebreak = True
-    for action in inputActions:
-            #print(action)
-
-            if isinstance(action, list):
-                flagAttackChainStarted = False
-                if not flagFirstLinebreak:
-                    res += r"\\ "
-                else:
-                    flagFirstLinebreak = False
-                action = action[1:] # remove "Text:"" .split(":")[0]
-                action = action[0].split(" ")
-                for word in action:
-                    #print(word.split(":")[0])
-                    if(word.split(":")[0] in symbolDict):
-                    
-                        res += " " + symbolDict[word.split(":")[0]] + " " + word + " "
-                    else:
-                        res += word + " "
-                    
-            
-            else:
-                # three cases: 
-                # movement: always gets new line, does not start chain
-                # attack & Heal: always gets new line, starts chain
-                # Modifier: if not chain -> gets new line, starts chain
-
-            #TODO check for elemental removes?
-
-                parts = action.split(":")
-                if (parts[0] == "A" or parts[0] == "H" or ( parts[0] in attackModifiers and flagAttackChainStarted == False) ):
-                    if not flagFirstLinebreak:
-                        res += r"\\ "
-                    else:
-                        flagFirstLinebreak = False
-                if (parts[0] == "A" or parts[0] == "H" or parts[0] in attackModifiers):
-                    flagAttackChainStarted = True
-                else:
-                    flagAttackChainStarted = False
-
-                if parts[0] in symbolDict:
-                    res += " " + symbolDict[parts[0]]
-                res += " " + parts[0] 
-                if len(parts) == 2:
-                    res += ":~" + parts[1]
-                    res += " "
-                
-
-    return res
-
 #converst an action list into nandeck String. Does not add "" around the text
 def serializeActionToNanDeck(inputActions):
     res = ''
@@ -338,7 +278,7 @@ def serializeActionToNanDeck(inputActions):
 
 #converst an action list into nandeck String. Does not add "" around the text
 def serializeMonsterActionToNanDeck(inputActions):
-    res = ''
+    res = ""
     for action in inputActions:
             #print(action)
 
@@ -548,63 +488,6 @@ class actionCard:
         template_card = template_card.replace(r"${Rank}",textTier).replace(r"${Col_Rank}",colTier)
         
         return template_card
-
-
-    def serializeToLatex(self):
-
-        #print(self.actions)
-        res = ""
-        
-        if(self.aoe != ""):
-            #%Input: tier/level, name, Type, Energy Cost, Text, aoesym
-            res += r"\aoeCard"
-        else:
-            #%Input: tier/level, name, Type, Energy Cost, Text
-            res += r"\basicCard"
-        res += "{" + self.cardName + "}"
-        res += "{" + self.classname + str(self.rank) + "}"
-        res += "{" + self.cardType + "}"
-
-        #Costs
-        res += "{" 
-
-        if("Exhaust" in self.cardModifiers):
-            res += " " + symbolDict["Exhaust"] + " "
-
-        cost = self.manaCost.split(";")
-        for c in cost:
-            sym = ""
-            if(c in symbolDict):
-                sym += symbolDict[c]
-                res += sym + " "
-            else:
-                res += c + " "
-            
-
-        res += r"}" 
-        
-        res += "{"
-        #print(self.actions)
-        res += serializeActionToTex(self.actions)
-                
-        res += "} {"
-
-        while len(self.cardModifiers) > 0:
-            mod = self.cardModifiers[0]
-
-            res += symbolDict[mod] + " "
-            self.cardModifiers = self.cardModifiers[1:]
-
-
-        res += "}"
-
-
-        if(self.aoe != ""):
-            res += "{" + r"\symAoe{" + removeColons(self.aoe) + "} }"
-        res += "\n"
-        #\symCardTier
-        return res
-    
     
 
 
@@ -616,19 +499,6 @@ class modifierCard:
         self.classname = "Class designation missing"
         self.modifier = "0" 
 
-    def serializeToLatex(self):
-        res = r"\modifierCard"
-        res += "{" + self.modifier + r"}{ \\ "
-        for s in self.specials:
-            if s in symbolDict:
-                res += symbolDict[s] + " "
-            else:
-                res += s + r"\\ "
-        res += r"}"
-
-        res += "{" + self.classname + "}"
-        res += "\n"
-        return res
 
 class tableauRace:
     def __init__(self):
@@ -674,28 +544,11 @@ class tableauRace:
         self.L1R1 = self.L1R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(0))
         self.L1R2 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L1R2.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
         self.L1R2 = self.L1R2.replace(r"${Order}",str(order)).replace(r"${Hor}",str(1)).replace(r"${Vert}",str(0))
-        self.L1R3 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L1R3.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
-        self.L1R3 = self.L1R3.replace(r"${Order}",str(order)).replace(r"${Hor}",str(2)).replace(r"${Vert}",str(0))
-        self.L1R4 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L1R4.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
-        self.L1R4 = self.L1R4.replace(r"${Order}",str(order)).replace(r"${Hor}",str(3)).replace(r"${Vert}",str(0))
 
-        self.L2R1 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L2R1.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
-        self.L2R1 = self.L2R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(1))
-        self.L2R2 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L2R2.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
-        self.L2R2 = self.L2R2.replace(r"${Order}",str(order)).replace(r"${Hor}",str(1)).replace(r"${Vert}",str(1))
-
-        self.L3R1 = template_line_mod.replace(r"${Mod}", '"' + self.symbolify_mod(self.L3R1.split(" ")).replace("Add ", r"<br>Add ").replace("Remove", r"<br>Remove").replace(",","") + '"')
-        self.L3R1 = self.L3R1.replace(r"${Order}",str(order)).replace(r"${Hor}",str(0)).replace(r"${Vert}",str(2))
-        
         lines_mods = ""
 
         lines_mods += self.L1R1
         lines_mods += self.L1R2
-        lines_mods += self.L1R3
-        lines_mods += self.L1R4
-        lines_mods += self.L2R1
-        lines_mods += self.L2R2
-        lines_mods += self.L3R1
             
         return lines_mods
     
@@ -720,7 +573,7 @@ class tableauRace:
 
         count_total = 0
 
-        self.mods = [self.L1R1,self.L1R2,self.L1R3,self.L1R4,self.L2R1,self.L2R2,self.L3R1]
+        self.mods = [self.L1R1,self.L1R2]
 
         for line_mod in self.mods:
             words = line_mod.split(" ")
@@ -790,23 +643,6 @@ class statCard:
         "TierPassive":setTierPassive, 
         "TierMods":setTierMods, 
     }
-    #%Input: name, tier, stats, passive, skills
-    def serializeToLatex(self):
-        res = r"\statusCard"
-        res += "{" + self.name + "}"
-        res += "{" + str(self.rank) + "}"
-        res += "{" 
-        res += symbolDict["Life"] + r"\hspace{0.0cm} Life: " + str(self.life) + r"\\ "
-        res += "}"
-        res += "{" + self.passive + " \\ }"
-        res += "{" + self.modifierUpgrades + r" \\ "
-        #for line in self.explanations:
-        #    res += line + r" \\ "  + dictExplanation[line.split(":")[1]] + r" \\" 
-        for line in self.elements:
-            res += line
-        res += r"} "
-        res += "\n"
-        return res
 
     def serializeToNandeck(self, order):
         passive_new = ""
@@ -849,15 +685,8 @@ class statCard:
 
             
             templateEdge = ""
-            if(self.rank == 1):
-                templateEdge = open('Templates/Shingle_Class_Edge_TR.txt', 'r')
-                templateEdge = templateEdge.read()
-            if(self.rank == 2):
-                templateEdge = open('Templates/Shingle_Class_Edge_BR.txt', 'r')
-                templateEdge = templateEdge.read()
-            if(self.rank == 3):
-                templateEdge = open('Templates/Shingle_Class_Edge_BL.txt', 'r')
-                templateEdge = templateEdge.read()
+            templateEdge = open('Templates/Shingle_Class_Edge_TR.txt', 'r')
+            templateEdge = templateEdge.read()
 
             res = templateShingle.replace(r"${Edge}", templateEdge).replace(r"${Order}", str(order)).replace(r"${Title}",title).replace(r"${Life}", str(self.life).strip()).replace(r"${Passive}", passive_new).replace(r"${IntTierPassive}",  str(self.rank))
 
@@ -907,9 +736,11 @@ class monsterAICard:
         self.life = ""
         self.passive = ""
         self.count = 0
-        self.actions = []
-        self.tempAction = []
-        self.flagAB = False
+        self.actWood = []
+        self.actFire = []
+        self.actEarth = []
+        self.actMetal = []
+        self.actWater = []
         self.flagHardMode = False
 
     def setName(self,n):
@@ -924,12 +755,16 @@ class monsterAICard:
         passive = ' '.join(passive[1:])
         self.passive = passive
 
-    def appendAction(self,n):
-        if("Rolls" in n):
-            if(self.tempAction != []):
-                self.actions.append(self.tempAction[:])
-                self.tempAction = []
-        self.tempAction.append(n)
+    def appendActWood(self,n):
+        self.actWood.append(n)
+    def appendActFire(self,n):
+        self.actFire.append(n)
+    def appendActEarth(self,n):
+        self.actEarth.append(n)
+    def appendActMetal(self,n):
+        self.actMetal.append(n)
+    def appendActWater(self,n):
+        self.actWater.append(n)
 
     def setAB(self, x):
         if x == "AB":
@@ -941,163 +776,40 @@ class monsterAICard:
  
     assignmentDict = {
         "Name":setName, #stat cards start here
-        "Rolls":appendAction,
+        "Wood":appendActWood,
+        "Fire":appendActFire,
+        "Earth":appendActEarth,
+        "Metal":appendActMetal,
+        "Water":appendActWater,
         "AB":setAB,
 
         "Life":setLife,
         "Passive":setPassive,
 
     }
-    #%Input: name, tier, stats, passive, skills
-    def serializeToLatex(self):
-
-        if(self.tempAction != []):
-                self.actions.append(self.tempAction[:])# appends the last temp action to the real list
-
-        res = r"\monsterAICard"
-        res += "{" + self.name
-        if self.flagHardMode == True:
-            res += r" Hardmode"
-        res += "}"
-        #res += "{Hardmode " + str(self.flagHardMode) + "}"
-        #res += "{AB " + str(self.flagAB) + "}"
-
-        #Life: #3 \\
-							#4 \\
-							#5
-
-        #Life: #6 #9\\
-							#7 \\
-							#8
-
-
-        res += "{ Life: "+ self.life
-        
-        if self.passive != "":
-            res += r" \\"
-            res += " Passive: "
-            res += self.passive
-        res += "}"
-
-        res += "{"
-        #make actions into nice boxes
-        #print(self.actions)
-        print(self.actions)
-        for index, action in enumerate(self.actions):
-            #print(action[0])
-            rolls = action[0].split(":")[1]
-            res += rolls + r" "
-            action = action[1:]
-            res += serializeActionToTex(action)
-            res += r"\\"
-                
-            
-        res += "}"
-        
-        res += "\n"
-
-        res = texifyMultSign(res)
-        res = self.count*res
-        return res
-    
     def serializeToNandeck(self,order):
-
-        if(self.tempAction != []):
-                self.actions.append(self.tempAction[:])# appends the last temp action to the real list
-
-        template_monster_line_life = open('Templates/Monster_Line_Life.txt', 'r')
-        template_monster_line_life = template_monster_line_life.read()
-        #life_max = int(self.life)
-        nanDeckLife = template_monster_line_life.replace(r"${Life}", self.life)
-        #print(nanDeckLife)
-        #print(life_max)
-        '''row = 0 #line
-        col = 0
-        while(life_max) > 0:
-            if life_max >= 50:
-                tmp = template_monster_line_life.replace(r"${Color}", "[col_mithril]").replace(r"${Life}", "50")
-                life_max -= 50
-            elif life_max >= 10:
-                tmp = template_monster_line_life.replace(r"${Color}", "[col_gold]").replace(r"${Life}", "10")
-                life_max -= 10
-            elif life_max >= 5:
-                tmp = template_monster_line_life.replace(r"${Color}", "[col_silver]").replace(r"${Life}", "5")
-                life_max -= 5
-            else:
-                print("[Error] unfuck the life total of: " + self.name + " sitting at: " + str(life_max))
-            
-            nanDeckLife += tmp.replace(r"${PosX}", "[x_hp_" + str(col) + "]").replace(r"${PosY}", str(row))
-            row += 1
-            if row > 4:
-                row = 0
-                col = 1'''
-        
-
-        
-
-        #print(self.actions)
-        count_actions = len(self.actions)
-        start_actions = "[start_actions]"
-        if(count_actions < 3):
-            start_actions = "[start_actions] + [space_text_18] * 2"
-        if(count_actions > 3):
-            print("[Error] unfuck the action count of: "  + self.name + " sitting at: " + str(count_actions) )
+       
 
         template_monster_line_passive = open('Templates/Monster_Line_Passive.txt', 'r')
         template_monster_line_passive = template_monster_line_passive.read()
         nanDeckPassive = ""
         if (self.passive != ""):
-            nanDeckPassive = template_monster_line_passive.replace(r"${Passive}", self.passive).replace(r"${StartActions}", start_actions)
-
-        template_monster_line_action = open('Templates/Monster_Line_Action.txt', 'r')
-        template_monster_line_action = template_monster_line_action.read()
-
-        template_monster_line_dice = open('Templates/Monster_Line_Dice.txt', 'r')
-        template_monster_line_dice = template_monster_line_dice.read()
-
-        template_monster_line_box = open('Templates/Monster_Line_Box.txt', 'r')
-        template_monster_line_box = template_monster_line_box.read()
-
-        nanDeckActions = ""
-        count_action_curr = 0
-        
-        for index, action in enumerate(self.actions):
-            nanDeckDice = ""
-            rolls = action[0].split(":")[1]
-            dice = ""
-            count_dice = 0
-            count_dice_remaining = len(rolls.split(","))
-            flag_second_row = 0
-            for roll in rolls.split(","):
-                count_dice += 1
-                count_dice_remaining -= 1
-                p = inflect.engine()
-
-                try: #rolls
-                    dice += r"\symD" + p.number_to_words(int(roll.strip())).capitalize()
-                    if(count_dice == 2):
-                        #print(start_actions)
-                        nanDeckDice += template_monster_line_dice.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(2*count_action_curr + flag_second_row)).replace(r"${PosXAction}", "0")
-                        count_dice = 0
-                        dice = ""
-                        flag_second_row = 1
-                    elif(count_dice_remaining == 0):
-                        nanDeckDice += template_monster_line_dice.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(2*count_action_curr + flag_second_row)).replace(r"${PosXAction}", "0.2")
-                except: #abc
-                    dice += roll.strip()
-                    nanDeckDice += template_monster_line_box.replace(r"${Dice}", dice).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(2*count_action_curr + flag_second_row)+ " + 0.3 ")
-                
-            action = action[1:]
-            html_act = serializeMonsterActionToNanDeck(action)
-            nanDeckActions += template_monster_line_action.replace(r"${Lines_Dice}", nanDeckDice).replace(r"${Action}", html_act ).replace(r"${PosYAction}", start_actions + " + [space_text_18] * " + str(2*count_action_curr) )
-            count_action_curr += 1
+            nanDeckPassive = template_monster_line_passive.replace(r"${Passive}", self.passive)
 
 
         template_monster_single = open('Templates/Monster_Single.txt', 'r')
         template_monster_single = template_monster_single.read()
 
+        #print(self.actWood)
+
+        template_monster_single = template_monster_single.replace(r"${ActWood}", serializeMonsterActionToNanDeck(self.actWood[1:]))
+        template_monster_single = template_monster_single.replace(r"${ActFire}", serializeMonsterActionToNanDeck(self.actFire[1:]))
+        template_monster_single = template_monster_single.replace(r"${ActEarth}", serializeMonsterActionToNanDeck(self.actEarth[1:]))
+        template_monster_single = template_monster_single.replace(r"${ActMetal}", serializeMonsterActionToNanDeck(self.actMetal[1:]))
+        template_monster_single = template_monster_single.replace(r"${ActWater}", serializeMonsterActionToNanDeck(self.actWater[1:]))
+
         
-        res = template_monster_single.replace(r"${LifeBox}", nanDeckLife).replace(r"${Name}", self.name).replace(r"${Passive}", nanDeckPassive).replace(r"${Actions}", nanDeckActions).replace(r"${Order}", str(order))
+        res = template_monster_single.replace(r"${Life}", self.life).replace(r"${Name}", self.name).replace(r"${Passive}", nanDeckPassive).replace(r"${Order}", str(order))
 
         return res
 

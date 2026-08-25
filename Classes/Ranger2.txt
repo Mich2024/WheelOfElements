@@ -7,8 +7,6 @@ Type
 Element: Wood
 Element: Fire
 
-Explanation:Powerful
-
 Base Cards
 
 #Power Levels : 2,2,2,4,4
@@ -16,12 +14,11 @@ Base Cards
 #ManaCost:Opt;Wood;1
 
 Tier1
-#3
-Name: "Hype" ManaCost:Fire;1 Powerful:3
-Name: "Harass" Flurry Text: "Your flurries have Ranged this turn"
+Name: "Fiery veins" ManaCost:Fire;X Flurry:X+1 Text: "<small><i>(X can be 0)</i></small>"
+Name: "Mulch" ManaCost:Fire;1 Wood:3 Disengage
+Name: "Teamwork" Ranged Vulnerable Text: "Your flurries have Ranged this turn"
 
-Tier3
-#8
-Name: "Prey Upon" Ranged Wood:2 Vulnerable:2
-Name: "Execute" Wood:1 Ranged A:4
-Name: "Onsaulght" ManaCost:Fire;1 Powerful Vulnerable Flurry
+Tier2 
+Name: "Fate's call" Ranged Vulnerable:2
+Name: "Hail of arrows" Flurry:2 Text: "Your flurries have Ranged this turn"
+

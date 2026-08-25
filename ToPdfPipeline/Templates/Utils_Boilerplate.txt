@@ -45,6 +45,16 @@ htmlimage = 1 - [CardCount], \symPassiveBronze, "..\..\Pictures\Tiers\PassiveTie
 htmlimage = 1 - [CardCount], \symPassiveSilver, "..\..\Pictures\Tiers\PassiveTier2.png", [size_tier], [size_tier]
 htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3.png", [size_tier], [size_tier]
 
+htmlimage = 1 - [CardCount], \symCatkin, "..\..\Pictures\Icons\AncestryIcons\Catkin.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symCentaur, "..\..\Pictures\Icons\AncestryIcons\Centaur.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symWyrmkin, "..\..\Pictures\Icons\AncestryIcons\Wyrmkin.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDwarf, "..\..\Pictures\Icons\AncestryIcons\Dwarf.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symHalfElf, "..\..\Pictures\Icons\AncestryIcons\HalfElf.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symFae, "..\..\Pictures\Icons\AncestryIcons\Fae.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symHuman, "..\..\Pictures\Icons\AncestryIcons\Human.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symMerman, "..\..\Pictures\Icons\AncestryIcons\Merman.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symSilverkin, "..\..\Pictures\Icons\AncestryIcons\Silverkin.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symSolarian, "..\..\Pictures\Icons\AncestryIcons\Solarian.png", [size_sym], [size_sym]
 
 htmlfont=font_10,Arial,10,B,#000000,LEFT
 htmlfont=font_18,Arial,12,B,#000000,LEFT

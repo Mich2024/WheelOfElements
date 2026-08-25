@@ -1,25 +1,24 @@
 Passive
-On attack against a stunned enemy:<br> - Advantage:1
+On attack against a stunned enemy:<br> - A:1
 Life: 3
 
 Type
 Element: Metal
 Element: Water
 
-Explanation:Stun
-Explanation:Advantage
+#Explanation:Stun
+#Explanation:Poison
 
 Tier1
-Name: "Slice Heel" ManaCost:Water;2 Ranged Stun Stun
 Name: "Poison Shiv" ManaCost:Water;1 A:2 Text: "If the Attack dealt at least 4 Damage, Poison:4"
+Name: "Sepsis" ManaCost:Opt;Water;5 Poison:6 Opt A:X Text: "X is the amount of poison on the target"
 
-Tier3
-Name: "Clean Strike" Metal:2 A:3
-Name: "Slit Tendon" Advantage A:1 Stun
-Name: "Bladestorm" ManaCost:Water;2 A:3 A:3 Text:"for each enemy you kill with this card A:2"
-
-
-
-#Name: "Storm of Steel" Metal:2 A:1 A:1
+Tier2
+Name: "Parry Knife" Poison:1 Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>"
+Name: "Miasma" Text: "Stun all Poisoned targets" AOE:All
+Name: "Toxic Blast" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3
 
 
+
+
+#Name: "Toxic Shock" Ranged A:X Text: "X is the amount of poison on the target"

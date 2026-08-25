@@ -18,3 +18,10 @@ Name: "Superiority" Advantage Advantage
 Tier2
 Name: "Sword and Dagger" ManaCost:Water;3 A:6 A:2
 Name: "Cloak" Stun Advantage
+
+T:3
+Name: "Slit Tendon" Advantage A:1 Stun
+
+
+
+#Name: "Storm of Steel" Metal:2 A:1 A:1

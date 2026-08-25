@@ -1,2 +1,0 @@
-FONT = Arial, 20, B, #ffffff, #aa1111
-TEXT = ${Order}, "${Life}" , [space_left] + [x_hp_0], [space_top] - [space_hp_box], [len_hp_box], [len_hp_box], left, center

@@ -2,24 +2,16 @@ Passive
 When you kill:<br> - redirect leftover damage to an adjacent enemy <br><small><i>(This is not an attack, does not use your ancestry dice, and does not reapply any boons or banes your original attack did)</i></small>
 Life: 3
 
-TierCards: Gold
-TierPassive: Silver
+TierCards: Silver
+TierPassive: Gold
 TierMods: Bronze
 
 Modifier Tableau
 Rank:1
 #Size 18 Modifier Tableau
-Add 3 +1 Add 2 +2 Add 1 Centaur
-Add 2 -1 Add 2 -2 Add 1 Centaur
 Add 1 -1 Add 2 +2 Add 1 Centaur
 Add 1 -1 Add 2 +2 Add 1 Centaur
 
-Rank:2
-Add 3 -1 Add 2 +2 Add 1 Centaur
-Add 3 -1 Add 2 +2 Add 1 Centaur
-
-Rank:3
-Add 2 -1 Add 2 +2 Add 1 Centaur
 
 Type
 Element:Fire
@@ -33,16 +25,14 @@ Base Cards
 
 
 Tier1
-Name: "Bout" A:1 Blaze:1 A:1 Text: "<small><i>(First card ->, randomly discard a card and do the extra actions.)</i></small>"
-Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Bout" Fire:2 Blaze:1 A:1 Text: "<small><i>(First card ->, randomly discard a card and do the extra actions.)</i></small>"
+Name: "Rush" ManaCost:Opt;Fire;1 Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Opt A:1
 
 Tier2
-Name: "Punt" A:2 Disengage Blaze:1 A:1 Text: "<small><i>(First card ->, randomly discard a card and do the extra actions.)</i></small>"
+Name: "Punt" A:2 Disengage Blaze:1 Fire:1 Text: "<small><i>(First card ->, randomly discard a card and do the extra actions.)</i></small>"
 Name: "Bow and Arrow" Ranged A:1 Blaze:3 A:5 Text: "<small><i>(First card ->, randomly discard three cards and do the extra actions.)</i></small>"
-
-Tier3
-Name: "Spear throw" Ranged A:5 Blaze:1 Disengage Text: "<small><i>(First card ->, randomly discard a card and do the extra actions.)</i></small>"
-Name: "Axe strikes" A:2 A:2 Blaze:2 A:2 Text: "<small><i>(First card ->, randomly discard two cards and do the extra actions.)</i></small>"
+Name: "Spear throw" Ranged A:3 Blaze:1 Disengage Text: "<small><i>(First card ->, randomly discard a card and do the extra actions.)</i></small>"
+Name: "Axe strikes" A:1 A:1 Blaze:2 A:2 Text: "<small><i>(First card ->, randomly discard two cards and do the extra actions.)</i></small>"
 
 #Add 8 -1
 #Add 4 +3

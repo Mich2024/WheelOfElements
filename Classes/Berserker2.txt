@@ -7,20 +7,18 @@ Type
 Element: Fire
 Element: Earth
 
-#Explanation: Blaze
-Explanation: Vulnerable
+#Explanation:Blaze
+#Explanation:Shield
 
 Tier1
 Name: "Heart of Fire" Fire:2
 Name: "Brutalize" ManaCost:Earth;4 Ranged A:9
 
-Tier3
-Name: "Behead" ManaCost:Earth;2 A:3 Text: "This attack deals double damage (including ancestry dice, boons & banes)"
-Name: "Faithless Looting" Text: "Draw two cards" Blaze:2 Ranged A:6
 
-#This shit is unprintable, the space is like two times over
-Name: "Feral Instinct" Fire:2 Blaze:2 Text: "\symAddFire Fire: 2 <br>--- \symBlaze Blaze 2 --- <br> Per discarded Card: <br> Br: \symAddFire Fire:1 <br> Silver: \symVulnerable Vulnerable <br> Gold: \symAttack A:3 <br> Dia: Draw your deck"
-
+Tier2
+Name: "Rampage" A:3 Blaze:3 Fire:4 
+Name: "Strike Fear" Shield:1 Blaze:1 Fire:1
+Name: "Rage" Blaze:3 Text:"You may play the discarded cards. <small><i>(You still have to pay their costs)</i></small>"
 
 
 #Name: "Worthy Foe" Vulnerable Text:"Your attacks against a vulnerable enemy deal +2 additional damage this turn."

@@ -1,0 +1,21 @@
+Passive
+On paying X Fire:<br> - A:X
+
+Life: 1
+
+Type
+Element: Fire
+
+Base Cards
+
+#Power Levels : 3,3,3,8,8
+
+#ManaCost:Opt;Fire;1
+
+Tier1
+#3
+
+
+Tier2
+#5
+

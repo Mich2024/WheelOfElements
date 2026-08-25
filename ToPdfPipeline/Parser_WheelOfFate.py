@@ -117,13 +117,6 @@ def parseTableauFromLines(linesTableau):
     res = tableauRace()
     res.L1R1=linesTableau[1]
     res.L1R2=linesTableau[2]
-    res.L1R3=linesTableau[3]
-    res.L1R4=linesTableau[4]
-
-    res.L2R1=linesTableau[6]
-    res.L2R2=linesTableau[7]
-
-    res.L3R1=linesTableau[9]
 
     return res
 
@@ -305,7 +298,7 @@ def parseMonsterAI():
                 if(startsWith(line,"Rolls")):
                     words = line.split(" ")
                     words = [i for i in words if i != ""]  #remove leftovers from double spaces
-                    assignmentFunction = monCard.assignmentDict[words[0].split(":")[0]]
+                    assignmentFunction = monCard.assignmentDict[words[0].split(":")[1]]
                     while len(words) > 0:
                         if not words[0] == "Text:":
                             #print(words)
@@ -336,9 +329,14 @@ def parseMonsterAI():
             nandeckMonAI += copy.deepcopy(monAIcard).serializeToNandeck(count_order)
             count_order += 1
 
+    template_boilerplate = open('Templates/Utils_Boilerplate.txt', 'r')
+    template_boilerplate = template_boilerplate.read()
+
     template_boilerplate_monster = open('Templates/Monster_Boilerplate.txt', 'r')
     template_boilerplate_monster = template_boilerplate_monster.read()
     template_boilerplate_monster = template_boilerplate_monster.replace(r"${Cards}", nandeckMonAI).replace(r"${CardCount}", str(count_order-1))
+
+    template_boilerplate_monster = template_boilerplate_monster.replace(r"${UtilsBoilerplate}", template_boilerplate)
 
     fileToPrint = open('out/Monsters.txt', 'w+')
     fileToPrint.write(template_boilerplate_monster)
@@ -422,7 +420,7 @@ def parseStories():
 
     
 
-def parseRacesAndClasses(files_Input):
+def parseAncestriesAndClasses(files_Input):
 
     #card lists. should contain classes from card.py
     actionCards = []
@@ -606,43 +604,33 @@ if __name__ == "__main__":
     
     files_Input.append(r"../Classes/Witch1.txt")
     files_Input.append(r"../Classes/Witch2.txt")
-    files_Input.append(r"../Classes/Witch3.txt")
 
     files_Input.append(r"../Classes/Assassin1.txt")
     files_Input.append(r"../Classes/Assassin2.txt")
-    files_Input.append(r"../Classes/Assassin3.txt")
 
     files_Input.append(r"../Classes/Berserker1.txt")
     files_Input.append(r"../Classes/Berserker2.txt") #############
-    files_Input.append(r"../Classes/Berserker3.txt")
 
     files_Input.append(r"../Classes/Druid1.txt")
     files_Input.append(r"../Classes/Druid2.txt")
-    files_Input.append(r"../Classes/Druid3.txt")
 
     files_Input.append(r"../Classes/Bard1.txt")
     files_Input.append(r"../Classes/Bard2.txt")
-    files_Input.append(r"../Classes/Bard3.txt")
     
     files_Input.append(r"../Classes/Knight1.txt")
     files_Input.append(r"../Classes/Knight2.txt")
-    files_Input.append(r"../Classes/Knight3.txt")
 
     files_Input.append(r"../Classes/Koloss1.txt")
     files_Input.append(r"../Classes/Koloss2.txt")
-    files_Input.append(r"../Classes/Koloss3.txt")
 
     files_Input.append(r"../Classes/Pyromancer1.txt")
     files_Input.append(r"../Classes/Pyromancer2.txt")
-    files_Input.append(r"../Classes/Pyromancer3.txt")
 
     files_Input.append(r"../Classes/Ranger1.txt")
     files_Input.append(r"../Classes/Ranger2.txt")
-    files_Input.append(r"../Classes/Ranger3.txt")
 
     files_Input.append(r"../Classes/Sangromancer1.txt")
     files_Input.append(r"../Classes/Sangromancer2.txt")
-    files_Input.append(r"../Classes/Sangromancer3.txt")
 
     
 
@@ -651,10 +639,10 @@ if __name__ == "__main__":
     
     maxRankToPrint = 5
     flagPrintHardAI = False
-    parseRacesAndClasses(files_Input)
-    parseEvents("../Events.csv")
+    #parseAncestriesAndClasses(files_Input)
+    #parseEvents("../Events.csv")
     parseMonsterAI()
-    parseStories()
+    #parseStories()
 
 #Print location: 
 # Z:\home\mich\Documents\NandeckOut\Events.pdf

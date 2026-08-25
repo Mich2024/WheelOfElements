@@ -1,0 +1,16 @@
+Passive
+When you empty your hand:<br> - A:1
+Life: 2
+
+Type
+Element: Fire
+Element: Earth
+
+
+Tier1
+
+
+Tier2
+
+
+#Name: "Persistent Rage" Return a card you blazed this turn to your hand.

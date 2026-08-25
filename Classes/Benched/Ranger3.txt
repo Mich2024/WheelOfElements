@@ -1,0 +1,19 @@
+Passive
+Gain a diamond tier Ranger attack dice
+
+Life: 3
+
+Type
+Element: Wood
+Element: Fire
+
+Base Cards
+
+#Power Levels : 2,2,2,6,6
+
+#ManaCost:Opt;Wood;1
+
+Tier1
+#3
+
+

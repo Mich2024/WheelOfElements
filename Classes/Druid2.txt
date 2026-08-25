@@ -2,28 +2,25 @@ Passive
 
 When you Heal:<br> - roll your attack dice and apply their result <small><i>(like when you attack)</i></small>
 #(Does not affect Heal from your Ancestry Dice)
+#When you Heal another player:<br> - also apply <br>Powerful:1
 Life: 3
 
 Type
 Element: Water
 Element: Wood
 
-Explanation:Poison
 
 Tier1
-Name: "Blood Poisoning" ManaCost:Wood;2 Poison:2 Ranged A:3
-Name: "Strike" Ranged A:1
+Name: "Transfusion" Water:2 Ranged Text: "Choose an X. Loose X Life. X Cannot be more than your current life" Heal:X
+Name: "Leeching Brambles" ManaCost:Wood;3 A:3 Heal:3
 
-#Name: "Transfusion" Ranged Text: "Choose an X. Loose X Life. X Cannot be more than your current life" Heal:X+2
+Tier2
+Name: "Blooming Shot" ManaCost:Wood;1 Powerful:1 Text: "<small><i>(Your attacks this turn deal 1 extra damage.)</i></small>" A:3
+Name: "Calming Presence" Water:2 Heal:1 Text: "Also target one player next to you"
+Name: "Life's Breath" ManaCost:Wood;2 Text: "Return a backlined ally back to 4 Life. This may target any player, regardless of usual restrictions"
 
-Tier3
-Name: "Shred" ManaCost:Wood;2 A:9
-Name: "Life's Breath" Text: "Return a backlined ally back to 2 Life. This may target any player, regardless of usual restrictions"
-Name: "Calming Presence" Heal:2 Text: "Also target one player next to you"
-
-
-
+#Name: "Wellspring" Water:1 Ranged Powerful:1 Heal:1
 #Name: "Cleanse" Water:4 Ranged Heal:2 Text: "Remove all debuffs from your target. Lose 2 life"
 
-
-
+#Name: "Adrenaline Rush" Ranged Wood:1 Powerful:1 Heal:3
+#Name: "Shove" ManaCost:Opt;Wood;1 Ranged Disengage Opt Heal:1 Heal:1

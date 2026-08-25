@@ -8,18 +8,8 @@ TierMods: Gold
 
 Modifier Tableau
 Rank:1
-Add 5 +1 Add 1 Thyger
-Add 2 -1 Add 1 Thyger
-Add 3 +1 Add 1 +2 Add 1 -2 Add 1 Wyrmkin
-Add 3 +1 Add 1 +2 Add 1 -2 Add 1 Wyrmkin
-
-
-Rank:2
-Add 1 +1 Add 1 +2 Add 1 -2 Add 1 Wyrmkin
-Add 1 +1 Add 1 +2 Add 1 -2 Add 1 Wyrmkin
-
-Rank:3
-Add 2 +1 Add 1 +2 Add 1 -2 Add 1 Wyrmkin
+Add 5 +1 Add 1 Catkin
+Add 2 -1 Add 3 +1 Add 1 Catkin
 
 
 
@@ -31,16 +21,14 @@ Explanation: Flurry
 
 Base Cards
 Tier1
-Name: "Furry Flurry" Flurry Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
-Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Furry Flurry" ManaCost:Opt;Wood;1 Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>" Opt Flurry:1
 Name: "Evade" Disengage Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
 
 Tier2
 Name: "Rampage" Flurry:2 Text: "<small><i>(Gain two flurry tokens. You may spend it at any time to perform A:1.)</i></small>"
-Name: "Prey Upon" A:2 Text: "Double damage against Enemies below half Life"
-
-Tier3
-Name: "Pounce" Ranged A:4 Text:"Whenever this kills an enemy, gain Flurry"
+Name: "Stalk Prey" Wood:1 Ranged Disengage Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
+Name: "Pounce" ManaCost:Opt;Wood;2 Ranged A:3 Opt Flurry:2
+Name: "Woodland Strike" Wood:2 Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
 
 #Add 4 -1 Add 3 +1
 #Add 4 +2 Add 1 +3

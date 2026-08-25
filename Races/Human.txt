@@ -9,21 +9,11 @@ TierMods: Silver
 
 Modifier Tableau
 Rank:1
-Add 1 +1 Add 1 Human
-Add 1 +1 Add 1 Human
-Add 3 +1 Add 1 Human
-Add 3 +1 Add 1 Human
-
-Rank:2
-Add 1 +1 Add 1 Human
-Add 1 +1 Add 1 Human
-
-Rank:3
-Add 2 +1 Add 1 Human
+Add 4 +1 Add 1 Hu
+Add 2 +1 Add 2 Hu
 
 Type
 Element: Water
-Element: Wood
 
 Explanation: Heal
 
@@ -32,13 +22,13 @@ Base Cards
 
 Tier1
 Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
-Name: "Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:2 Text: "<small><i>(Regain 2 Life)</i></small>"
+Name: "Potion" Water:1 Ranged  Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:1 Text: "<small><i>(Regain 2 Life)</i></small>"
 
-Tier3
-Name: "Greater Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:5 Text: "<small><i>(Regain 5 Life)</i></small>"
-Name: "Fight & Flight" A:1 Heal:2 Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
-Name: "Aid" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" Heal:3 Disengage Disengage
+Tier2
+Name: "Aid" ManaCost:Opt;Water;1 Ranged Text: "<small><i>(You may target players & enemies to the left or right)</i></small>" Heal:3 Text: "<small><i>(Regain 5 Life)</i></small>" Opt Disengage Disengage
+Name: "Healing Rain" Water:1 Ranged A:1 Heal:1 Text: "<small><i>(Regain 1 Life)</i></small>"
+Name: "Fight & Flight" ManaCost:Opt;Water;2 A:3 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>" Opt Heal:3
 
 Tier4
-Name: "Smite" A:10
+Name: "Smite" A:15
 

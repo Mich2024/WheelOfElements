@@ -1,0 +1,12 @@
+Passive
+When you Heal a player below 5 Life:<br> - add +2 Heal
+Life: 3
+
+Type
+Element: Water
+Element: Wood
+
+Tier1
+
+
+

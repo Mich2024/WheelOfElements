@@ -16,16 +16,12 @@ Explanation:Heal
 #ManaCost:Opt;Fire;X
 
 Tier1
-#3
 Name: "Poison" Poison:2 Text: "<small><i>(Put two posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
 Name: "Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:2 Text: "<small><i>(Regain 2 Life)</i></small>"
+Name: "Bedazzle" ManaCost:Opt;Water;2 Ranged Heal:1 Disengage Opt Heal:3
 
-Tier2
-#5
-Name: "Greater Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:3 Text: "<small><i>(Regain 3 Life)</i></small>"
-Name: "Toxic Mist" ManaCost:Opt;Water;2 Poison:3 Disengage Opt Heal:3
 
 
 Tier3
-#8
-Name: "Toxic Deluge" Poison:2 Aoe:Cleave;3 
+Name: "Toxic Deluge" Poison:2 Aoe:Cleave;3
+Name: "Perpetual Brew" Water:2 Poison:2 Heal:2 Disengage Disengage
