@@ -653,42 +653,4 @@ if __name__ == "__main__":
 # Z:\home\mich\Documents\NandeckOut\Tiles.pdf
 
 
-#### Deprecated Classes:
-r"""
-#files_Input.append(r"../Races/Faceless.txt")
-#files_Input.append(r"../Races/Kobolds.txt") # Deprecated
-#files_Input.append(r"../Races/Solarian.txt") # Deprecated
-
-files_Input.append(r"../Classes/Assassin1.txt")
-files_Input.append(r"../Classes/Assassin2.txt")
-files_Input.append(r"../Classes/Assassin3.txt")
-
-files_Input.append(r"../Classes/Cultist1.txt")
-files_Input.append(r"../Classes/Cultist2.txt")
-files_Input.append(r"../Classes/Cultist3.txt")
-
-files_Input.append(r"../Classes/Drunkenmaster1.txt")
-files_Input.append(r"../Classes/Drunkenmaster2.txt")
-#files_Input.append(r"../Classes/Drunkenmaster3.txt")
-
-files_Input.append(r"../Classes/Necromancer1.txt")
-files_Input.append(r"../Classes/Necromancer2.txt")
-#files_Input.append(r"../Classes/Necromancer3.txt")
-
-files_Input.append(r"../Classes/PlagueDoctor1.txt")
-files_Input.append(r"../Classes/PlagueDoctor2.txt")
-files_Input.append(r"../Classes/PlagueDoctor3.txt")
-
-files_Input.append(r"../Classes/Rogue1.txt")
-files_Input.append(r"../Classes/Rogue2.txt")
-files_Input.append(r"../Classes/Rogue3.txt")
-
-
-files_Input.append(r"../Classes/Spearman1.txt")
-files_Input.append(r"../Classes/Spearman2.txt")
-#files_Input.append(r"../Classes/Spearman3.txt")
-
-files_Input.append(r"../Classes/Summoner1.txt")
-files_Input.append(r"../Classes/Summoner2.txt")
 #files_Input.append(r"../Classes/Summoner3.txt")
-"""
