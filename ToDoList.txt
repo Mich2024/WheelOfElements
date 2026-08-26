@@ -12,8 +12,10 @@ life sieht aus wie wasser?
 keyword this Enemy does not move
 ABC enemy that does nothing on its first to actions and deals 6 on C
 
-############
+
 AM
+
+Szenariospiel ins regelwerk
 
 
 Silverkin Passive

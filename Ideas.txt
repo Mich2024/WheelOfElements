@@ -2,11 +2,44 @@ Rougelite elemente? -> random drop unlocks after quest?
 
 Sushi wetttessen im wassergbiet als dps race
 
-
 Loot the Root:
 Placement Boni für alle adjacencies
 4 verschiedene gebiete, vier gebäude und jedes gebäude kann auf zwei dinge platziert werden
 unterschiedliche loot für gebäude/gebiet combo
 
 Flippable tiles, mit katastrophen auf dem rückseite die mit karten getriggert werden können
+
+
+Liniendicke (inklsive buchstaben)
+Farbe
+Sachen berühren sich -> Y tho?
+Titelfont interessanter
+Arial ist auch lame
+
+Limit pro karte mit unterschiedlichen größen -> klein mittel groß
+keine zwei verschieden kleins
+
+Attack Block/Passive Linie dicke, alle andere unten
+passive box floaten lassen
+ale boxen müssen immer bündig sein mit irgendwas
+
+unsere karten sind sehr schwarzeiß, bunt setzt schnell Akzente
+mehr Geometrie zieht mehr mehr aufmerksamkeit
+
+
+Tangenten -> bilder in gleicher richting gehören zusammen
+Alles immer schön in der mitte zentrieren, auch wenn zweizeiliger text existiert.
+Linien dünner innen
+Sublinien dünner als Außenlinien
+Einstellige zahlen nach hinten setzen damit die einzelne zahl an der Einerstelle ist
+
+interne abstände und aüßere abstände bei großem text betrachten
+
+actually ref magic
+hübsch designter kasten
+texturierter rand
+kasten Hintergrund
+mehr ramen auf den ramen
+beulen "( )" auf den wichtigten (tm) Feldern
+komplette karte sagt dir, das es eine rote karte ist
 
