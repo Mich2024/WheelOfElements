@@ -53,21 +53,21 @@ We roughly plan at the start of a hot phase what we can get done in the time fra
 
 ### Coding Guideline
 Since I (A.M.) am working on the python and nanDECK code by myself I lucky don't have to align with others.
-Unfortunately, this doe not relieve me from aligning with myself.
+Unfortunately, this doe not relieve me from aligning with myself. 
 
-I try to keep all functions that do similar stuff also named similar. Example "sliceClassToCardTypes(lines)" and "sliceStatsToCards(lines)". 
+**Function names** - I try to keep all functions that do similar stuff also named similar. Example "sliceClassToCardTypes(lines)" and "sliceStatsToCards(lines)". 
 Both of these functions separate a number of lines int semantic units for further processing.
 
-Variables normally take the form of [Type][Name]. 
+**Variable names** - Variables normally take the form of [Type][Name]. 
 I know that type hints exist in python, but this is a hassle free way of essentially naming structs with boring definitions. 
 For example, "lines" refers to list of Strings and is the main way I handle and iterate over text.
 
-The code is split into a Parser and Card definitions.
+**File contents** - The code is split into a Parser and Card definitions.
 The parser does all of the logic, and the Card definitions exist separately to externalise knowledge about how the result should look like.
 Having the Cards as their own classes helps to keep knowledge about how the cards need to be processed further self-contained and modular. 
 This approach significantly helped when making the switch from LaTeX to nanDECK as our engine to convert code to printable cards.
 
-he code generation itself is strongly aided by templates, which I use in conjunction with simple text replacement.
+**Code generation** - The code generation itself is strongly aided by templates, which I use in conjunction with simple text replacement.
 I started with this approach before templates were native to python and more powerful solutions like jinja are overkill for this project.
 
 ## How to use
