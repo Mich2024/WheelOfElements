@@ -1,5 +1,5 @@
 Passive
-On attack against a stunned enemy:<br> - A:1
+On Attack or Poison against a stunned enemy:<br> - Add +1 to the effect
 Life: 3
 
 Type

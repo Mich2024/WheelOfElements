@@ -1,7 +1,7 @@
 Passive
 Gain a gold tier Ranger attack dice
 
-Life: 3
+Life: 4
 
 Type
 Element: Wood
