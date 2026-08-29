@@ -148,6 +148,19 @@ symbolDict = {
     #Modifier specific
     "Draw":r"\symDraw",
 
+    #Ancestries
+    "Catkin":r"\symCatkin",
+    "Centaur":r"\symCentaur",
+    "Dwarf":r"\symDwarf",
+    "Elf":r"\symElf",
+    "Fae":r"\symFae",
+    "Human":r"\symHuman",
+    "Merman":r"\symMerman",
+    "Silverkin":r"\symSilverkin",
+    "Solarian":r"\symSolarian",
+    "Wyrmkin":r"\symWyrmkin",
+
+
 }
 
 

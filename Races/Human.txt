@@ -9,8 +9,8 @@ TierMods: Silver
 
 Modifier Tableau
 Rank:1
-Add 4 +1 Add 1 Hu
-Add 2 +1 Add 2 Hu
+Add 4 +1 Add 1 Human
+Add 2 +1 Add 1 Human
 
 Type
 Element: Water

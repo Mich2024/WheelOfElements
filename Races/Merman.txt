@@ -11,8 +11,8 @@ Modifier Tableau
 #("0,5"); ("1,05"); ("1,6")
 #Size 18 Modifier Tableau
 Rank:1
-Add 4 -1 Add 2 +4 Add 1 Me
-Add 4 -1 Add 2 +4 Add 2 Me
+Add 4 -1 Add 2 +4 Add 1 Merman
+Add 4 -1 Add 2 +4 Add 1 Merman
 
 
 Type

@@ -8,8 +8,8 @@ TierMods: Bronze
 
 Modifier Tableau
 Rank:1
-Add 2 Fire Add 1 So
-Add 2 Fire Add 1 So
+Add 2 Fire Add 1 Solarian
+Add 2 Fire Add 1 Solarian
 
 
 Type

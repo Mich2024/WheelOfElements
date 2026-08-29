@@ -481,16 +481,18 @@ def parseAncestriesAndClasses(files_Input):
 
     nandeckModifiers = ""
     orderModifiers = 1
-    
-    for i, statusCard in enumerate(statusCards):
-        #print(statusCard.name)
-        if statusCard.tableau != None:
-            #print(statusCard.tableau.L1R1)
-            cardCount ,nanDeckOut = statusCard.serializeModifiersToNandeck(orderModifiers)
-            #print(nanDeckOut)
 
-            nandeckModifiers += nanDeckOut
-            orderModifiers += cardCount
+
+    for j in range(2): #double mods, becasue we have a lot of sace on the paper sheet
+        for i, statusCard in enumerate(statusCards):
+        #print(statusCard.name) 
+            if statusCard.tableau != None:
+                #print(statusCard.tableau.L1R1)
+                cardCount ,nanDeckOut = statusCard.serializeModifiersToNandeck(orderModifiers)
+                #print(nanDeckOut)
+
+                nandeckModifiers += nanDeckOut
+                orderModifiers += cardCount
 
     template_boilerplate = open('Templates/Utils_Boilerplate.txt', 'r')
     template_boilerplate = template_boilerplate.read()
