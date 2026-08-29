@@ -30,5 +30,5 @@ Name: "Heart of Water" Water:2 Text: "<small><i>(Add two brown cubes to the 'Wat
 Tier2
 Name: "Slickness" Water:1 Text: "<small><i>(Add one brown cube to the 'Water' section of the wheel.)</i></small>" A:2
 Name: "Tidal Grasp" ManaCost:Opt;Water;3 A:1 Opt A:2 AOE:Cleave;2
-Name: "Brine Burst" Water:2 Poison:2 Text: "<small><i>(Put four posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
+Name: "Brine Burst" Water:2 Poison:2 Text: "<small><i>(Put two posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
 Name: "Polluted Waters" ManaCost:Opt;Water;1 Poison:2 Disengage Disengage Opt A:1 A:1

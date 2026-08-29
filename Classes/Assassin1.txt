@@ -12,9 +12,9 @@ Explanation:Stun
 Explanation:Poison
 
 Tier1
-Name: "Heart of Water" Water:2
-Name: "Poison Fume" Poison:1 Aoe:Cleave;2
-Name: "Slice Heel" Water:1 Poison:1
+Name: "Heart of Water" Water:2 Text: "<small><i>(Add two brown cubes to the 'Water' section of the wheel.)</i></small>"
+Name: "Poison Fume" Poison:1 Text: "<small><i>(Put one posion markers on each targeted enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>" Aoe:Cleave;2
+#Name: "Slice Heel" Water:1 Text: "<small><i>(Add one brown cube to the 'Water' section of the wheel.)</i></small>" Poison:1 Text: "<small><i>(Put one posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
 
 Tier3
 Name: "Cut Throat" ManaCost:Water;1 Text: "Execute an enemy if it is at or below half life"
@@ -26,6 +26,6 @@ Name: "Bladestorm" ManaCost:Water;2 A:4 A:4 Text:"for each enemy you kill with t
 
 
 #Name: "Miasma" ManaCost:Water;2 Text: "Stun all Poisoned targets" AOE:All
-Name: "Toxic Blast" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3
+#Name: "Toxic Blast" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3
 
 

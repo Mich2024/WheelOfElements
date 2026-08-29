@@ -22,10 +22,10 @@ Base Cards
 
 Tier1
 Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
-Name: "Potion" Water:1 Ranged  Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:1 Text: "<small><i>(Regain 2 Life)</i></small>"
+Name: "Potion" Water:1 Ranged  Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:1 Text: "<small><i>(Regain 1 Life)</i></small>"
 
 Tier2
-Name: "Aid" ManaCost:Opt;Water;1 Ranged Text: "<small><i>(You may target players & enemies to the left or right)</i></small>" Heal:3 Text: "<small><i>(Regain 5 Life)</i></small>" Opt Disengage Disengage
+Name: "Aid" ManaCost:Opt;Water;1 Ranged Text: "<small><i>(You may target players & enemies to the left or right)</i></small>" Heal:3 Opt Disengage Disengage
 Name: "Healing Rain" Water:1 Ranged A:1 Heal:1 Text: "<small><i>(Regain 1 Life)</i></small>"
 Name: "Fight & Flight" ManaCost:Opt;Water;2 A:3 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>" Opt Heal:3
 

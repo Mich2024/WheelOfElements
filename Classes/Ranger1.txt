@@ -18,10 +18,10 @@ Base Cards
 
 Tier1
 Name: "Pocket Sand" Wood:1 Ranged Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
-Name: "Hunters Mark" ManaCost:Fire;1 Flurry:1 Ranged Vulnerable 
-Name: "Shred" ManaCost:Fire;3 Flurry:4 Text: "<small><i>(Gain four flurry tokens. You may spend it at any time to perform A:1.)</i></small>"
+Name: "Hunters Mark" ManaCost:Fire;1 Flurry:1 Ranged Vulnerable Text: "<small><i>(Place a vulnerable marker on an enemy. They an extra damage from attacks and poison.)</i></small>"
+Name: "Shred" ManaCost:Fire;3 Flurry:4 Text: "<small><i>(Gain four flurry tokens. You may spend one at any time to perform A:1.)</i></small>"
 
 
 Tier3
 Name: "Prey Upon" Wood:1 Ranged Vulnerable:3 Disengage
-Name: "Execute" Wood:2 Flurry:3
+Name: "Execute" Wood:2 Flurry:3 Text: "<small><i>(Gain three flurry tokens. You may spend one at any time to perform A:1.)</i></small>"

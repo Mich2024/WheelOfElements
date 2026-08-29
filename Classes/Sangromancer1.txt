@@ -12,8 +12,8 @@ Explanation:Lifepay
 
 Tier1
 Name: "Heart of Earth" Earth:2 Text: "<small><i>(Add two brown cubes to the 'Earth' section of the wheel.)</i></small>"
-Name: "Metal Strike" ManaCost:Metal;2  Ranged Advantage:2 Text: "<small><i>(Gain two advantage markers. When attacking, you may reroll one dice per marker.)</i></small>" A:3
-Name: "Renew" ManaCost:Life;3 Earth:2 Advantage:4
+Name: "Metal Strike" ManaCost:Metal;2  Ranged Advantage:2 Text: "<small><i>(Gain two advantage markers. When attacking, you may spend one marker to reroll a die.)</i></small>" A:3
+Name: "Renew" ManaCost:Life;3 Earth:2 Advantage:4 Text: "<small><i>(Gain four advantage markers. When attacking, you may spend one marker to reroll a die.)</i></small>"
 
 Tier3
 Name: "Wrath" A:X Text: "X is the difference from your current life to your starting life. X cant be more than 11"

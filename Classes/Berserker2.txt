@@ -11,13 +11,13 @@ Element: Earth
 #Explanation:Shield
 
 Tier1
-Name: "Heart of Fire" Fire:2
-Name: "Brutalize" ManaCost:Earth;4 Ranged A:9
+Name: "Heart of Fire" Fire:2 Text: "<small><i>(Add two brown cubes to the 'Fire' section of the wheel.)</i></small>"
+Name: "Brutalize" ManaCost:Earth;4 Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:9 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
 
 
 Tier2
-Name: "Rampage" A:3 Blaze:3 Fire:4 
-Name: "Strike Fear" Shield:1 Blaze:1 Fire:1
+Name: "Rampage" A:3 Blaze:3 Fire:4 Text: "<small><i>(Add four brown cubes to the 'Fire' section of the wheel.)</i></small>"
+Name: "Strike Fear" Shield:1 Blaze:1 Fire:1 Text: "<small><i>(Add one brown cube to the 'Fire' section of the wheel.)</i></small>"
 Name: "Rage" Blaze:3 Text:"You may play the discarded cards. <small><i>(You still have to pay their costs)</i></small>"
 
 

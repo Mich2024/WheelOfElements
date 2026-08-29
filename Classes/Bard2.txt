@@ -11,8 +11,8 @@ Name: "Muscle Burst" Ranged Text: "Double the powerful stacks on your target"
 Name: "Screech"  ManaCost:Wood;1 Ranged Disengage Disengage Opt Disengage Disengage
 
 Tier2
-Name: "Bush Ambush" Wood:1 Disengage Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
-Name: "Sprouting" Wood:2 Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
+Name: "Bush Ambush" Wood:1 Disengage Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend one at any time to perform A:1.)</i></small>"
+Name: "Sprouting" Wood:2 Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend one at any time to perform A:1.)</i></small>"
 Name: "Hype" ManaCost:Wood;X Powerful:2*X Text: "<small><i>(X Can't be 0)</i></small>"
 
 

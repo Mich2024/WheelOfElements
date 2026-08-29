@@ -639,10 +639,10 @@ if __name__ == "__main__":
     
     maxRankToPrint = 5
     flagPrintHardAI = False
-    #parseAncestriesAndClasses(files_Input)
-    #parseEvents("../Events.csv")
+    parseAncestriesAndClasses(files_Input)
+    parseEvents("../Events.csv")
     parseMonsterAI()
-    #parseStories()
+    parseStories()
 
 #Print location: 
 # Z:\home\mich\Documents\NandeckOut\Events.pdf

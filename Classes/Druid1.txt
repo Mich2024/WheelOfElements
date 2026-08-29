@@ -1,6 +1,6 @@
 Passive
 Each turn:<br> -  Heal:1
-Life: 1
+Life: 2
 
 Type
 Element: Water
@@ -10,8 +10,8 @@ Explanation:Powerful
 Explanation:Heal
 
 Tier1
-Name: "Energize" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:1 Text: "<small><i>(Regain 1 Life)</i></small>" Powerful:1 Text: "<small><i>(Your attacks this turn deal 1 extra damage.)</i></small>"
-Name: "Cyclic Stength" ManaCost:Wood;2 Water:2 Powerful:1 Heal:1
+Name: "Energize" Ranged Heal:1 Text: "<small><i>(Regain 1 Life)</i></small>" Powerful:1 Text: "<small><i>(Your attacks, heals and poison are improved by 1 this turn.)</i></small>"
+Name: "Cyclic Stength" ManaCost:Wood;2 Water:2 Powerful:1 Text: "<small><i>(Your attacks, heals and poison are improved by 1 this turn.)</i></small>" Heal:1
 Name: "Heart of Water" Water:2 Text: "<small><i>(Add two brown cubes to the 'Water' section of the wheel.)</i></small>"
 
 #Name: "Heal" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:2 Text: "<small><i>(Regain 2 Life)</i></small>"

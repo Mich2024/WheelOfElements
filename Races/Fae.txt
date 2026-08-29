@@ -29,11 +29,11 @@ Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or ri
 
 Tier2
 Name: "Miséricorde" ManaCost:Opt;Metal;2 A:3 Opt Text: "Deals double damage against stunned units"
-Name: "Dust Cloud" ManaCost:Opt;Metal;2 Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>" Opt A:4 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Dust Cloud" ManaCost:Opt;Metal;2 Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>" Opt A:4
 
 
 Tier3 
-Name: "Mischief"   A:3 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>" Disengage Disengage Disengage Disengage
+Name: "Mischief"   A:3 Disengage Disengage Disengage Disengage
 Name: "Black Dust" Metal:2 Stun Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>"
 
 #Add 3 -1 Add 3 Wood:1 +0
