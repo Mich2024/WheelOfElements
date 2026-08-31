@@ -30,6 +30,117 @@ Rolls:Metal Text: "Adjacent enemies act immediately (again)"
 Rolls:Water Text: "-"
 Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
+###########################################################################################
+
+Name:Bandit Raider
+
+Normal
+
+Life:10
+Count:10
+
+Rolls:Wood  A:3
+Rolls:Fire  A:1
+Rolls:Earth A:3
+Rolls:Metal A:2
+Rolls:Water A:2
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
+
+
+###########################################################################################
+Name:Bandit Skirmisher
+
+Normal
+
+Life:20
+Count:5
+
+Rolls:Wood  A:1
+Rolls:Fire  A:3
+Rolls:Earth A:2
+Rolls:Metal A:3
+Rolls:Water A:1
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
+
+
+###########################################################################################
+Name:Bandit Trapper
+
+Normal
+
+Life:20
+Count:2
+
+Rolls:Wood  A:2
+Rolls:Fire  Text: "-"
+Rolls:Earth Stun
+Rolls:Metal Stun
+Rolls:Water Poison:1
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
+
+
+###########################################################################################
+Name:Bandit Berseker
+
+Normal
+
+Life:35
+Count:2
+Passive: Enrage
+
+Rolls:Wood  A:1
+Rolls:Fire  A:1 A:1
+Rolls:Earth A:1
+Rolls:Metal Stun
+Rolls:Water A:1
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
+
+
+
 End Of File
 
 ###########################################################################################
@@ -423,116 +534,7 @@ Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 
 ###########################################################################################
-Name:Bandit Raider
 
-Normal
-
-Life:10
-Count:10
-
-Rolls:Wood  A:3
-Rolls:Fire  A:1
-Rolls:Earth A:3
-Rolls:Metal A:2
-Rolls:Water A:2
-
-Hard
-
-Life:5
-Count:2
-Passive: Can't die as long as a golem is adjacent
-
-Rolls:Fire Text: "-"
-Rolls:Earth Text: "-"
-Rolls:Metal Text: "Adjacent enemies act immediately (again)"
-Rolls:Water Text: "-"
-Rolls:Wood Text: "Adjacent enemies act immediately (again)"
-
-
-###########################################################################################
-Name:Bandit Skirmisher
-
-Normal
-
-Life:20
-Count:5
-
-Rolls:Wood  A:1
-Rolls:Fire  A:3
-Rolls:Earth A:2
-Rolls:Metal A:3
-Rolls:Water A:1
-
-Hard
-
-Life:5
-Count:2
-Passive: Can't die as long as a golem is adjacent
-
-Rolls:Fire Text: "-"
-Rolls:Earth Text: "-"
-Rolls:Metal Text: "Adjacent enemies act immediately (again)"
-Rolls:Water Text: "-"
-Rolls:Wood Text: "Adjacent enemies act immediately (again)"
-
-
-###########################################################################################
-Name:Bandit Trapper
-
-Normal
-
-Life:20
-Count:2
-
-Rolls:Wood  A:2
-Rolls:Fire  Text: "-"
-Rolls:Earth Stun
-Rolls:Metal Stun
-Rolls:Water Poison:1
-
-Hard
-
-Life:5
-Count:2
-Passive: Can't die as long as a golem is adjacent
-
-Rolls:Fire Text: "-"
-Rolls:Earth Text: "-"
-Rolls:Metal Text: "Adjacent enemies act immediately (again)"
-Rolls:Water Text: "-"
-Rolls:Wood Text: "Adjacent enemies act immediately (again)"
-
-
-###########################################################################################
-Name:Bandit Berseker
-
-Normal
-
-Life:35
-Count:2
-Passive: Enrage
-
-Rolls:Wood  A:1
-Rolls:Fire  A:1 A:1
-Rolls:Earth A:1
-Rolls:Metal Stun
-Rolls:Water A:1
-
-Hard
-
-Life:5
-Count:2
-Passive: Can't die as long as a golem is adjacent
-
-Rolls:Fire Text: "-"
-Rolls:Earth Text: "-"
-Rolls:Metal Text: "Adjacent enemies act immediately (again)"
-Rolls:Water Text: "-"
-Rolls:Wood Text: "Adjacent enemies act immediately (again)"
-
-
-
-End Of File
 
 ###########################################################################################
 Name:Orc Raider
