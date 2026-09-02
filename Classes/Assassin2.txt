@@ -11,14 +11,15 @@ Element: Water
 
 Tier1
 Name: "Poison Shiv" ManaCost:Water;1 A:2 Text: "If the Attack dealt at least 4 Damage, Poison:4"
-Name: "Sepsis" ManaCost:Opt;Water;5 Poison:6 Opt A:X Text: "X is the amount of poison on the target"
+Name: "Poison" Poison:2 Text: "<small><i>(Put two posion markers on an enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>"
 
 Tier2
-Name: "Parry Knife" Poison:1 Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>"
-Name: "Miasma" Text: "Stun all Poisoned targets" AOE:All
-Name: "Toxic Blast" ManaCost:Opt;Water;X Poison:X AOE:Cleave;3
+Name: "Parrying Dagger" Poison:1 Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>"
+Name: "Miasma" Metal:2 Text: "Stun all Poisoned targets" AOE:All
+Name: "Toxic Blast" ManaCost:Opt;Water;X Poison:X Text: "X Can't be 0." AOE:Cleave;3
 
 
 
-
+Name: "Heart of Metal" Metal:2 Text: "<small><i>(Add two brown cubes to the 'Metal' section of the wheel.)</i></small>"
+#Name:  A:X Text: "X is the amount of poison on the target"
 #Name: "Toxic Shock" Ranged A:X Text: "X is the amount of poison on the target"

@@ -12,7 +12,6 @@ Element: Earth
 #Explanation:Lifepay
 
 Tier1
-Name: "Heart of Earth" Earth:2
 Name: "Slice" ManaCost:Metal;2 Advantage:2 Text: "<small><i>(Gain two advantage markers. When attacking, you may spend one marker to reroll a die.)</i></small>" A:3
 Name: "Dice" ManaCost:Metal;3 Advantage:3 Text: "<small><i>(Gain tthree advantage markers. When attacking, you may spend one marker to reroll a die.)</i></small>" A:4
 
@@ -20,6 +19,7 @@ Name: "Dice" ManaCost:Metal;3 Advantage:3 Text: "<small><i>(Gain tthree advantag
 Tier2
 Name: "Earthen Razor" ManaCost:Life;2 Earth:3 Ranged Advantage A:1
 Name: "Flay" ManaCost:Life;4 A:7 Text: "If this was your second card, repeat this card (including the cost)."
+Name: "Terraform" Earth:2 Advantage:2
 
 
 #Name: "Cleanse" Water:4 Ranged Heal:2 Text: "Remove all debuffs from your target. Lose 2 life"

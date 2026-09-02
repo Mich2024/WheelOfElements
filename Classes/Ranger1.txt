@@ -1,5 +1,5 @@
 Passive
-Gain a silver tier Ranger attack dice
+When you roll your ancestry symbol:<br> - treat it as +1 
 
 Life: 3
 

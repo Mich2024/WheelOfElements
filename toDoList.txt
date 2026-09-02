@@ -18,14 +18,10 @@ AM
 
 Szenariospiel ins regelwerk
 
-
-Silverkin Passive
-komplettkartenverzierung
-Add Shorthand of creature name in brackets next to name
+Dice Catkin etc
 Add Reminder text existence to rulebook
-
-Add more disengage
 Add more X cards
+Make X consisten 0 or non 0
 
 Check dice for advantage balancing
 
@@ -45,8 +41,19 @@ go over whole document with vscode to harmonize:
 Both:
 Rename disengage maybe repel
 
-
-
+Reprint
+Assassin 1&2
+Orc
+Elf
+Ranger 1&2 passives
+Witch2
+Name: "Gaslight"  Water:1 Ranged Disengage
+Name: "Fated Death" Text: "Double the poison on one enemy"
+Bandit Raider & Trapper
+Sangro2
+Name: "Terraform" Earth:2 Advantage:2
+Ranger2
+Name: "Fiery veins" ManaCost:Fire;X Flurry:X+2 Text: "<small><i>(X can be 0)</i></small>"
 
 
 Research verlage und schreibe personalisierten pitch

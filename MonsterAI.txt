@@ -41,8 +41,8 @@ Count:10
 
 Rolls:Wood  A:3
 Rolls:Fire  A:1
-Rolls:Earth A:3
-Rolls:Metal A:2
+Rolls:Earth A:2
+Rolls:Metal A:1
 Rolls:Water A:2
 
 Hard
@@ -96,7 +96,7 @@ Count:2
 Rolls:Wood  A:2
 Rolls:Fire  Text: "-"
 Rolls:Earth Stun
-Rolls:Metal Stun
+Rolls:Metal Text: "-"
 Rolls:Water Poison:1
 
 Hard

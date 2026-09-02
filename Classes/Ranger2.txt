@@ -1,5 +1,6 @@
 Passive
-Gain a gold tier Ranger attack dice
+#When you kill:<br> - Flurry:1
+When your attack dice roll your ancestry symbol:<br> - Vulnerable:1
 
 Life: 4
 
@@ -14,11 +15,11 @@ Base Cards
 #ManaCost:Opt;Wood;1
 
 Tier1
-Name: "Fiery veins" ManaCost:Fire;X Flurry:X+1 Text: "<small><i>(X can be 0)</i></small>"
 Name: "Mulch" ManaCost:Fire;1 Wood:3 Disengage
 Name: "Teamwork" Ranged Vulnerable Text: "Your flurries have Ranged this turn"
 
 Tier2 
 Name: "Fate's call" Ranged Vulnerable:2 Text: "<small><i>(Place two vulnerable markers on an enemy. They two extra damage from attacks and poison.)</i></small>"
 Name: "Hail of arrows" Flurry:2 Text: "Your flurries have Ranged this turn"
+Name: "Fiery veins" ManaCost:Fire;X Flurry:X+2 Text: "<small><i>(X can be 0)</i></small>"
 

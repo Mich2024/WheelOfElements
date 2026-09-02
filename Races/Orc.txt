@@ -1,0 +1,54 @@
+Passive
+Each turn:<br> -  Powerful:1<br>Your (singular) attack die has no effect
+
+#Gold + Silver
+Life: 6
+
+#1.75
+TierCards: Gold
+#0.75
+TierPassive: Silver
+#0
+TierMods: Bronze
+
+Modifier Tableau
+Rank:1
+Add 1 Orc
+Add 1 Orc
+
+
+
+Type
+Element: Wood
+
+Explanation:Powerful
+
+Base Cards
+#Power Levels : 2,2,2,4,4,6
+
+#ManaCost:Opt;Fire;1
+
+Tier1
+#3
+Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+
+
+Tier2
+#5
+Name: "Double Strike" A:1 A:1 Text: "<small><i>(The second attack may target a different enemy.)</i></small>"
+Name: "Punt" A:2 Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
+Name: "War Drums" ManaCost:Opt;Wood;1 Wood:2 Powerful:2 Opt Ranged Disengage Disengage
+Name: "Lunge" ManaCost:Opt;Wood;1 Powerful:2 Text: "<small><i>(Your attacks this turn deal 2 extra damage.)</i></small>" Opt A:1 
+
+Tier3
+Name: "Rip and Tear" Powerful:3 A:1
+
+
+#[( (2*3)+(2*2)+(3*1)+(3*-1)+(5*0) )/15]=0,66
+#Add 2 +3 Add 2 +2 Add 3 +1 Add 3 -1 Remove 2 +0 Remove 1 *0
+#[( (3*3)+(2*2)+(3*1)+(2*-1)+(3*0) )/12]=1,16
+#Remove 2 +0 Remove 1 -1 Add 1 +3
+#[( (3*3)+(3*2)+(3*1)+(3*0) )/11]=1,63
+#Remove 2 -1 Add 1 +2
+#[( (4*3)+(3*2)+(3*1)+(1*0) )/10]=2,1
+#Remove 2 +0 Add 1 +3
