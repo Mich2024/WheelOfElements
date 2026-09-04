@@ -18,7 +18,6 @@ AM
 
 Szenariospiel ins regelwerk
 
-Dice Catkin etc
 Add Reminder text existence to rulebook
 Add more X cards
 Make X consisten 0 or non 0
@@ -54,7 +53,11 @@ Sangro2
 Name: "Terraform" Earth:2 Advantage:2
 Ranger2
 Name: "Fiery veins" ManaCost:Fire;X Flurry:X+2 Text: "<small><i>(X can be 0)</i></small>"
-
+Carkin
+Name: "Evade" ManaCost:Opt;Wood;1 Wood:2 Disengage Disengage Opt Flurry:1
+Name: "Bite Down" A:3
+Name: "Furry Flurry" Flurry:2 Text: "<small><i>(Gain two flurry tokens. You may spend it at any time to perform A:1.)</i></small>"
+Dice
 
 Research verlage und schreibe personalisierten pitch
 -> Feuerland Verlagsgesllschaft mbH

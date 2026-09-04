@@ -36,7 +36,7 @@ Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or ri
 Tier2
 #5
 Name: "Double Strike" A:1 A:1 Text: "<small><i>(The second attack may target a different enemy.)</i></small>"
-Name: "Punt" A:2 Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
+Name: "Kick" A:2 Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
 Name: "War Drums" ManaCost:Opt;Wood;1 Wood:2 Powerful:2 Opt Ranged Disengage Disengage
 Name: "Lunge" ManaCost:Opt;Wood;1 Powerful:2 Text: "<small><i>(Your attacks this turn deal 2 extra damage.)</i></small>" Opt A:1 
 

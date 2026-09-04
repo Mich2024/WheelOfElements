@@ -2,14 +2,17 @@ Passive
 During cleanup:<br> - you decide which enemy rotates
 Life: 3
 
-TierCards: Silver
-TierPassive: Bronze
-TierMods: Gold
+#1.5
+TierCards: Gold
+#1
+TierPassive: Silver
+#0
+TierMods: Bronze
 
 Modifier Tableau
 Rank:1
-Add 5 +1 Add 1 Catkin
-Add 2 -1 Add 3 +1 Add 1 Catkin
+Add 5 +2 Add 1 Catkin
+Add 4 -1 Add 1 Catkin
 
 
 
@@ -21,14 +24,15 @@ Explanation: Flurry
 
 Base Cards
 Tier1
-Name: "Furry Flurry" ManaCost:Opt;Wood;1 Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>" Opt Flurry:1
-Name: "Evade" Disengage Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
 
 Tier2
-Name: "Rampage" Flurry:2 Text: "<small><i>(Gain two flurry tokens. You may spend it at any time to perform A:1.)</i></small>"
+Name: "Furry Flurry" Flurry:2 Text: "<small><i>(Gain two flurry tokens. You may spend it at any time to perform A:1.)</i></small>"
 Name: "Stalk Prey" Wood:1 Ranged Disengage Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
 Name: "Pounce" ManaCost:Opt;Wood;2 Ranged A:3 Opt Flurry:2
 Name: "Woodland Strike" Wood:2 Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
+Name: "Evade" ManaCost:Opt;Wood;1 Wood:2 Disengage Disengage Opt Flurry:1
+Name: "Bite Down" A:3 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+
 
 #Add 4 -1 Add 3 +1
 #Add 4 +2 Add 1 +3
