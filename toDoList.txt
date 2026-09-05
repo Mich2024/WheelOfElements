@@ -58,6 +58,8 @@ Name: "Evade" ManaCost:Opt;Wood;1 Wood:2 Disengage Disengage Opt Flurry:1
 Name: "Bite Down" A:3
 Name: "Furry Flurry" Flurry:2 Text: "<small><i>(Gain two flurry tokens. You may spend it at any time to perform A:1.)</i></small>"
 Dice
+Human
+Dice
 
 Research verlage und schreibe personalisierten pitch
 -> Feuerland Verlagsgesllschaft mbH
