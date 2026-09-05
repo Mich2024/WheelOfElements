@@ -1,5 +1,5 @@
 Passive
-Each turn:<br> -  Powerful:1<br>Your (singular) attack die has no effect
+Each turn:<br> -  Powerful:1<br>Your (singular) attack die has no effect<br>Spend an advantage<br> -  gain +1 to an attack heal or poison
 
 #Gold + Silver
 Life: 6
