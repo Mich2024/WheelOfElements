@@ -600,7 +600,7 @@ if __name__ == "__main__":
     files_Input.append(r"../Races/Elf.txt")
     files_Input.append(r"../Races/Human.txt")
     files_Input.append(r"../Races/Merman.txt")
-    files_Input.append(r"../Races/Silverkin.txt")
+    files_Input.append(r"../Races/Orc.txt")
     files_Input.append(r"../Races/Solarian.txt")
     files_Input.append(r"../Races/Wyrmkin.txt")
     
