@@ -41,10 +41,19 @@ Both:
 Rename disengage maybe repel
 
 Reprint
-Assassin 1&2
+Catkin
+Name: "Evade" ManaCost:Opt;Wood;1 Wood:2 Disengage Disengage Opt Flurry:1
+Name: "Bite Down" A:3
+Name: "Furry Flurry" Flurry:2 Text: "<small><i>(Gain two flurry tokens. You may spend it at any time to perform A:1.)</i></small>"
+Dice
+Human
+Dice
 Orc
 Elf
-Ranger 1&2 passives
+
+Assassin 1&2
+Ranger 1&2 
+passives
 Witch2
 Name: "Gaslight"  Water:1 Ranged Disengage
 Name: "Fated Death" Text: "Double the poison on one enemy"
@@ -53,13 +62,7 @@ Sangro2
 Name: "Terraform" Earth:2 Advantage:2
 Ranger2
 Name: "Fiery veins" ManaCost:Fire;X Flurry:X+2 Text: "<small><i>(X can be 0)</i></small>"
-Carkin
-Name: "Evade" ManaCost:Opt;Wood;1 Wood:2 Disengage Disengage Opt Flurry:1
-Name: "Bite Down" A:3
-Name: "Furry Flurry" Flurry:2 Text: "<small><i>(Gain two flurry tokens. You may spend it at any time to perform A:1.)</i></small>"
-Dice
-Human
-Dice
+
 
 Research verlage und schreibe personalisierten pitch
 -> Feuerland Verlagsgesllschaft mbH
