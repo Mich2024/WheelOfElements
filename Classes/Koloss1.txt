@@ -11,10 +11,10 @@ Explanation:Lifepay
 
 Tier1
 Name: "Overwork" ManaCost:Life;2 Earth:4 Text: "<small><i>(Add four cubes to the 'Earth' section of the wheel.)</i></small>"
-Name: "Trample" ManaCost:Opt;Earth;1 A:1 Opt Ranged A:1
-Name: "Control" Ranged Disengage:2
+Name: "Trample" ManaCost:Opt;Earth;1 A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>" Opt Ranged A:1
+Name: "Control" Ranged Disengage Disengage
 
 
 Tier3
 Name: "Shield Slam" Shield:1 A:X+2 Text: "X is equal to your shield"
-Name: "Sword and Shield" Shield:1 A:3
+Name: "Sword and Shield" Shield:1 A:3 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"

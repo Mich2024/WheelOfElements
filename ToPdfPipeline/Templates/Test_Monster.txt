@@ -1,4 +1,4 @@
-[CardCount] = 2
+[CardCount] = 1
 
 [space_text_28] = 1
 [space_text_18] = 0.7
@@ -13,97 +13,135 @@
 [len_hp_box] = 0.8
 [space_hp_box] = 0.9
 [space_action_left] = 0.55*2 + 0.2
+[size_sym] = 0.5
+[size_tier] = 0.5
 
 [col_silver] = #ACACAC
 [col_gold] = #CFB53B
 [col_mithril] = #87B787
 
 [full_hor] = 6.35 - [space_left] - [space_right]
-[x_hp] = 6.35 - [space_left] - [space_right] - [space_hp_box]
-[x_hp_2nd_row] = 6.35 - [space_left] - [space_right] - [space_hp_box] - [space_hp_box]
+[x_hp_0] = 6.35 - [space_left] - [space_right] - [space_hp_box]
+[x_hp_1] = 6.35 - [space_left] - [space_right] - [space_hp_box] - [space_hp_box]
 [full_hor_action] = 6.35 - [space_action_left] - [space_right]
 [full_hor_passive] = [full_hor] - [space_hp_box] - [space_hp_box]
 
+[space_actions] = 1.05
+[start_actions] = 8.89 - [space_actions]*5 + [linestrength]
+
 CARDS=[CardCount]
-BORDER=ROUNDED,#000000,[linestrength]
+BORDER=ROUNDED,#000000,[linestrength]*2
 UNIT=CM
 PAGE=21,29.7,PORTRAIT,HV
 DPI=300
 CARDSIZE=6.35,8.89
 BASERANGE=,ON
 
-htmlimage = 1 - [CardCount], \symAddFire, "..\..\Pictures\Icons\AddFire.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symAddMetal, "..\..\Pictures\Icons\AddMetal.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symAddWater, "..\..\Pictures\Icons\AddWater.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAddFire, "..\..\Pictures\Icons\AddFire.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddEarth, "..\..\Pictures\Icons\AddEarth.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddMetal, "..\..\Pictures\Icons\AddMetal.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddWater, "..\..\Pictures\Icons\AddWater.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symAddWood, "..\..\Pictures\Icons\AddWood.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symLife, "..\..\Pictures\Icons\Life.png", [size_sym], [size_sym]
 
-htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symPoison, "..\..\Pictures\Icons\Poison.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symHeal, "..\..\Pictures\Icons\Heal.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symPowerful, "..\..\Pictures\Icons\Powerful.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symFlurry, "..\..\Pictures\Icons\Flurry.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symVulnerable, "..\..\Pictures\Icons\Vulnerable.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symBlaze, "..\..\Pictures\Icons\Blaze.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symD6, "..\..\Pictures\Icons\D6.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symShield, "..\..\Pictures\Icons\Shield.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAdvantage, "..\..\Pictures\Icons\Advantage.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPoison, "..\..\Pictures\Icons\Poison.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symHeal, "..\..\Pictures\Icons\Heal.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symPowerful, "..\..\Pictures\Icons\Powerful.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symFlurry, "..\..\Pictures\Icons\Flurry.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symVulnerable, "..\..\Pictures\Icons\Vulnerable.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symBlaze, "..\..\Pictures\Icons\Blaze.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symD6, "..\..\Pictures\Icons\D6.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symShield, "..\..\Pictures\Icons\Shield.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symStun, "..\..\Pictures\Icons\Stun.png", [size_sym], [size_sym]
 
-htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symAttack, "..\..\Pictures\Icons\Attack.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symRanged, "..\..\Pictures\Icons\Ranged.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDisengage, "..\..\Pictures\Icons\Disengage.png", [size_sym], [size_sym]
 
-htmlimage = 1 - [CardCount], \symDOne, "..\..\Pictures\Icons\D61.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symDTwo, "..\..\Pictures\Icons\D62.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symDThree, "..\..\Pictures\Icons\D63.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symDFour, "..\..\Pictures\Icons\D64.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symDFive, "..\..\Pictures\Icons\D65.png", 0.55, 0.55
-htmlimage = 1 - [CardCount], \symDSix, "..\..\Pictures\Icons\D66.png", 0.55, 0.55
+htmlimage = 1 - [CardCount], \symDOne, "..\..\Pictures\Icons\D61.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDTwo, "..\..\Pictures\Icons\D62.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDThree, "..\..\Pictures\Icons\D63.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDFour, "..\..\Pictures\Icons\D64.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDFive, "..\..\Pictures\Icons\D65.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDSix, "..\..\Pictures\Icons\D66.png", [size_sym], [size_sym]
 
-htmlfont=font_18,Arial,14,B,#000000,LEFT
+htmlimage = 1 - [CardCount], \symDraw, "..\..\Pictures\Icons\Draw.png", [size_sym], [size_sym]
+#htmlimage = 1 - [CardCount], \symShuffle, "..\..\Pictures\Icons\DShuffle.png", [size_sym], [size_sym]
 
-FONT = Arial, 20, B, #000000, [col_mithril]
-TEXT = 1-[CardCount], 50 , [space_left] + [x_hp], [space_top] + [space_hp_box] * 0, [len_hp_box], [len_hp_box], left, center
-FONT = Arial, 20, B, #000000, [col_gold]
-TEXT = 1-[CardCount], 10 , [space_left] + [x_hp], [space_top] + [space_hp_box] * 1, [len_hp_box], [len_hp_box], left, center
-TEXT = 1-[CardCount], 10 , [space_left] + [x_hp], [space_top] + [space_hp_box] * 2, [len_hp_box], [len_hp_box], left, center
-TEXT = 1-[CardCount], 10 , [space_left] + [x_hp], [space_top] + [space_hp_box] * 3, [len_hp_box], [len_hp_box], left, center
-FONT = Arial, 22, B, #000000, [col_silver]
-TEXT = 1-[CardCount], 5 , [space_left] + [x_hp_2nd_row], [space_top] + [space_hp_box] * 0, [len_hp_box], [len_hp_box], right, center
-#RECTANGLE = 1-[CardCount], [space_left] + [x_hp], [space_top] + [space_hp_box] * 1, [len_hp_box], [len_hp_box], [col_gold], [col_gold], [linestrength]
-#RECTANGLE = 1-[CardCount], [space_left] + [x_hp], [space_top] + [space_hp_box] * 2, [len_hp_box], [len_hp_box], [col_gold], [col_gold], [linestrength]
-#RECTANGLE = 1-[CardCount], [space_left] + [x_hp], [space_top] + [space_hp_box] * 3, [len_hp_box], [len_hp_box], [col_gold], [col_gold], [linestrength]
-#RECTANGLE = 1-[CardCount], [space_left] + [x_hp_2nd_row], [space_top] + [space_hp_box] * 0, [len_hp_box], [len_hp_box], [col_silver], [col_silver], [linestrength]
+htmlimage = 1 - [CardCount], \symCardsBronze, "..\..\Pictures\Tiers\CardsTier1.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symCardsSilver, "..\..\Pictures\Tiers\CardsTier2.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symCardsGold, "..\..\Pictures\Tiers\CardsTier3.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symCardsDia, "..\..\Pictures\Tiers\CardsTier4.png", [size_tier], [size_tier]
 
+htmlimage = 1 - [CardCount], \symDiceBronze, "..\..\Pictures\Tiers\DiceTier1.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symDiceSilver, "..\..\Pictures\Tiers\DiceTier2.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symDiceGold, "..\..\Pictures\Tiers\DiceTier3.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symDiceDia, "..\..\Pictures\Tiers\DiceTier4.png", [size_tier], [size_tier]
 
+htmlimage = 1 - [CardCount], \symPassiveBronze, "..\..\Pictures\Tiers\PassiveTier1.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symPassiveSilver, "..\..\Pictures\Tiers\PassiveTier2.png", [size_tier], [size_tier]
+htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3.png", [size_tier], [size_tier]
 
-#TEXT = 1-[CardCount], [space_left] + [x_hp], [space_top] + [space_hp_box] * 1, [len_hp_box], [len_hp_box], [col_gold], [col_gold], [linestrength]
-#TEXT = 1-[CardCount], [space_left] + [x_hp], [space_top] + [space_hp_box] * 2, [len_hp_box], [len_hp_box], [col_gold], [col_gold], [linestrength]
-#TEXT = 1-[CardCount], [space_left] + [x_hp], [space_top] + [space_hp_box] * 3, [len_hp_box], [len_hp_box], [col_gold], [col_gold], [linestrength]
-#TEXT = 1-[CardCount], [space_left] + [x_hp], [space_top] + [space_hp_box] * 4, [len_hp_box], [len_hp_box], [col_silver], [col_silver], [linestrength]
+htmlimage = 1 - [CardCount], \symCatkin, "..\..\Pictures\Icons\AncestryIcons\Catkin.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symCentaur, "..\..\Pictures\Icons\AncestryIcons\Centaur.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symWyrmkin, "..\..\Pictures\Icons\AncestryIcons\Wyrmkin.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDwarf, "..\..\Pictures\Icons\AncestryIcons\Dwarf.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symHalfElf, "..\..\Pictures\Icons\AncestryIcons\HalfElf.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symFae, "..\..\Pictures\Icons\AncestryIcons\Fae.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symHuman, "..\..\Pictures\Icons\AncestryIcons\Human.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symMerman, "..\..\Pictures\Icons\AncestryIcons\Merman.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symSilverkin, "..\..\Pictures\Icons\AncestryIcons\Silverkin.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symSolarian, "..\..\Pictures\Icons\AncestryIcons\Solarian.png", [size_sym], [size_sym]
+
+htmlfont=font_10,Arial,10,B,#000000,LEFT
+htmlfont=font_18,Arial,12,B,#000000,LEFT
+htmlfont=font_28,Arial,21,B,#000000,LEFT
+
+htmlfont=font_nonBold_10,Arial,10,,#000000,LEFT
+
+#NEWMON
+FONT = Arial, 20, B, #ffffff, #aa1111
+TEXT = 1, "20" , [space_left] + [x_hp_0] + 0.2, [space_top] - 0.2, [len_hp_box], [len_hp_box], left, center
+htmltext = 1, "\symLife",  [space_left] + [x_hp_0] + 0.2, [space_top] - 0.8, [len_hp_box], [len_hp_box],#FFFFFF,0,T,100,font_10
 
 #Name, OptCost
-FONT = Arial, 28, B, #000000, #FFFFFF
-TEXT = 1, "${Name}", [space_left] , 0, [full_hor], [space_text_28], LEFT, TOP
-RECTANGLE = 1-[CardCount], [space_left] ,  4.8 - [space_text_18],[full_hor_passive],[space_text_18] - [linestrength], #000000, empty, [linestrength]
-htmltext=1,"${Passive}",[space_left] ,  4.8 - [space_text_18],[full_hor_passive],[space_text_18] + 0.2,#FFFFFF,0,T,100,font_18
+FONT = Arial, 22, B, #000000, #FFFFFF
+TEXT = 1, "Bandit Leader", [space_left] , 0.1, [full_hor]-1, [space_text_28]*2, LEFT, WORDWRAP
 
-#PicBox
-#FONT = Arial, 28, B, #000000
-#TEXT = 1, "Pics or it didnt happen", [space_left] , [space_text_28] + [space_text_18], [full_hor], 4 - [space_text_28] - [space_text_18], LEFT, WORDWRAP
+RECTANGLE = 1, 0 ,  [start_actions] - [space_text_18] ,6.35,[space_text_18] - [linestrength], #000000, empty, [linestrength]
+htmltext = 1, "Passive: ${Passive}",0.2 ,  [start_actions] - [space_text_18] + [linestrength] * 0.5 ,6.35,[space_text_18] ,#FFFFFF,0,T,100,font_18
 
-#TextBox1
-htmltext = 1, "\symDOne \symDTwo", 0 , 4.8,[space_action_left], 4,#FFFFFF,0,T,100,font_18
-htmltext = 1, "TextBox Is my waif u \symAddFire", [space_action_left] , 4.8,[full_hor_action], 4,#FFFFFF,0,T,100,font_18
-#TextBox2
-htmltext = 1, "\symDThree", 0 , 4.8 + [space_text_18] * 2,[space_action_left], 4,#FFFFFF,0,T,100,font_18
-htmltext = 1, "TextBox Is my waif u \symAddFire", [space_action_left] , 4.8 + [space_text_18] * 2,[full_hor_action], 4,#FFFFFF,0,T,100,font_18
-#TextBox3
-htmltext = 1, "\symDFour \symDFive", 0 , 4.8 + [space_text_18] * 4,[space_action_left], 4,#FFFFFF,0,T,100,font_18
-htmltext = 1, "\symDSix", 0.15 * [space_action_left] , 4.8 + [space_text_18] * 5,[space_action_left], 4,#FFFFFF,0,T,100,font_18
-htmltext = 1, "TextBox Is my waif u \symAddFire", [space_action_left] , 4.8 + [space_text_18] * 4,[full_hor_action], 4,#FFFFFF,0,T,100,font_18
+htmltext = 1, "\symAddWood", 0.2 , [start_actions] + 0.15 + [space_actions] * 0 ,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = 1, "Adjacent enemies act immediately (again)", [space_action_left] , [start_actions] + [space_actions] * 0 ,[full_hor_action], 4,#FFFFFF,0,T,100,font_nonBold_10
+
+htmltext = 1, "\symAddFire", 0.2 , [start_actions] + 0.15 + [space_actions] * 1 ,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = 1, "-", [space_action_left] , [start_actions] + [space_actions] * 1 ,[full_hor_action], 4,#FFFFFF,0,T,100,font_nonBold_10
+
+htmltext = 1, "\symAddEarth", 0.2 , [start_actions] + 0.15 + [space_actions] * 2 ,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = 1, "-", [space_action_left] , [start_actions] + [space_actions] * 2 ,[full_hor_action], 4,#FFFFFF,0,T,100,font_nonBold_10
+
+htmltext = 1, "\symAddMetal", 0.2 , [start_actions] + 0.15 + [space_actions] * 3 ,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = 1, "Adjacent enemies act immediately (again)", [space_action_left] , [start_actions] + [space_actions] * 3 ,[full_hor_action], 4,#FFFFFF,0,T,100,font_nonBold_10
+
+htmltext = 1, "\symAddWater", 0.2 , [start_actions] + 0.15 + [space_actions] * 4 ,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = 1, "-", [space_action_left] , [start_actions] + [space_actions] * 4 ,[full_hor_action], 4,#FFFFFF,0,T,100,font_nonBold_10
 
 
 
 
+
+#Title
+LINE = 1 - [CardCount], 0 , [space_text_28]*2,[full_hor] + [space_right] + [space_left]  ,[space_text_28]*2,#000000, [linestrength]
+LINE = 1 - [CardCount], [full_hor]-1 + [space_left]  ,0,[full_hor]-1 + [space_left]  ,[space_text_28]*2,#000000, [linestrength]
+#LINE = 1 - [CardCount], [full_hor]-1 + [space_left]  ,[start_actions], 6.35 ,[start_actions],#000000, [linestrength]
+
+#Actions
+LINE = 1 - [CardCount], 0 , [start_actions] - [linestrength] + [space_actions] * 0, 6.35 , [start_actions] - [linestrength] + [space_actions] * 0, #000000, [linestrength]
+LINE = 1 - [CardCount], 0 , [start_actions] - [linestrength] + [space_actions] * 1, 6.35 , [start_actions] - [linestrength] + [space_actions] * 1, #000000, [linestrength]
+LINE = 1 - [CardCount], 0 , [start_actions] - [linestrength] + [space_actions] * 2, 6.35 , [start_actions] - [linestrength] + [space_actions] * 2, #000000, [linestrength]
+LINE = 1 - [CardCount], 0 , [start_actions] - [linestrength] + [space_actions] * 3, 6.35 , [start_actions] - [linestrength] + [space_actions] * 3, #000000, [linestrength]
+LINE = 1 - [CardCount], 0 , [start_actions] - [linestrength] + [space_actions] * 4, 6.35 , [start_actions] - [linestrength] + [space_actions] * 4, #000000, [linestrength]
+
+LINE = 1 - [CardCount], [space_action_left] - 0.3 , [start_actions] - [linestrength] + [space_actions] * 0, [space_action_left] - 0.3 , 8.89, #000000, [linestrength]

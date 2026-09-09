@@ -1,6 +1,8 @@
 
 #NEWMON
-${LifeBox}
+FONT = Arial, 20, B, #ffffff, #aa1111
+TEXT = ${Order}, "${Life}" , [space_left] + [x_hp_0] + 0.2, [space_top] - 0.2, [len_hp_box], [len_hp_box], left, center
+htmltext = ${Order}, "\symLife",  [space_left] + [x_hp_0] + 0.2, [space_top] - 0.8, [len_hp_box], [len_hp_box],#FFFFFF,0,T,100,font_10
 
 #Name, OptCost
 FONT = Arial, 22, B, #000000, #FFFFFF
@@ -8,4 +10,18 @@ TEXT = ${Order}, "${Name}", [space_left] , 0, [full_hor]-1, [space_text_28]*2, L
 
 ${Passive}
 
-${Actions}
+htmltext = ${Order}, "\symAddWood", 0.2 , [start_actions] + 0.15 + [space_actions] * 0 ,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = ${Order}, "${ActWood}", [space_action_left] , [start_actions] + [space_actions] * 0 ,[full_hor_action], 4,#FFFFFF,0,T,100,font_nonBold_10
+
+htmltext = ${Order}, "\symAddFire", 0.2 , [start_actions] + 0.15 + [space_actions] * 1 ,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = ${Order}, "${ActFire}", [space_action_left] , [start_actions] + [space_actions] * 1 ,[full_hor_action], 4,#FFFFFF,0,T,100,font_nonBold_10
+
+htmltext = ${Order}, "\symAddEarth", 0.2 , [start_actions] + 0.15 + [space_actions] * 2 ,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = ${Order}, "${ActEarth}", [space_action_left] , [start_actions] + [space_actions] * 2 ,[full_hor_action], 4,#FFFFFF,0,T,100,font_nonBold_10
+
+htmltext = ${Order}, "\symAddMetal", 0.2 , [start_actions] + 0.15 + [space_actions] * 3 ,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = ${Order}, "${ActMetal}", [space_action_left] , [start_actions] + [space_actions] * 3 ,[full_hor_action], 4,#FFFFFF,0,T,100,font_nonBold_10
+
+htmltext = ${Order}, "\symAddWater", 0.2 , [start_actions] + 0.15 + [space_actions] * 4 ,[space_action_left], 4,#FFFFFF,0,T,100,font_18
+htmltext = ${Order}, "${ActWater}", [space_action_left] , [start_actions] + [space_actions] * 4 ,[full_hor_action], 4,#FFFFFF,0,T,100,font_nonBold_10
+

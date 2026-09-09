@@ -11,7 +11,7 @@ Explanation:Stun
 Tier1
 Name: "Heart of Metal" Metal:2 Text: "<small><i>(Add two brown cubes to the 'Metal' section of the wheel.)</i></small>"
 Name: "Stun" ManaCost:Opt;Metal;2 A:1 Opt Ranged Stun
-Name: "Sharpen" Advantage Metal:1
+Name: "Sharpen" Metal:1 Advantage Text: "<small><i>(Gain an advantage marker. When attacking, you may spend one marker to reroll a die.)</i></small>" 
 
 
 Tier3

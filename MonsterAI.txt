@@ -24,8 +24,122 @@ Life:5
 Count:3
 Passive: Can't die as long as a golem is adjacent
 
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
+
+###########################################################################################
+
+Name:Bandit Raider
+
+Normal
+
+Life:10
+Count:10
+
+Rolls:Wood  A:3
+Rolls:Fire  A:1
+Rolls:Earth A:2
+Rolls:Metal A:1
+Rolls:Water A:2
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
+
+
+###########################################################################################
+Name:Bandit Skirmisher
+
+Normal
+
+Life:20
+Count:5
+
+Rolls:Wood  A:1
+Rolls:Fire  A:3
+Rolls:Earth A:2
+Rolls:Metal A:3
+Rolls:Water A:1
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
+
+
+###########################################################################################
+Name:Bandit Trapper
+
+Normal
+
+Life:20
+Count:2
+
+Rolls:Wood  A:2
+Rolls:Fire  Text: "-"
+Rolls:Earth Stun
+Rolls:Metal Text: "-"
+Rolls:Water Poison:1
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
+
+
+###########################################################################################
+Name:Bandit Berseker
+
+Normal
+
+Life:35
+Count:2
+Passive: Enrage
+
+Rolls:Wood  A:1
+Rolls:Fire  A:1 A:1
+Rolls:Earth A:1
+Rolls:Metal Stun
+Rolls:Water A:1
+
+Hard
+
+Life:5
+Count:2
+Passive: Can't die as long as a golem is adjacent
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
+
+
 
 End Of File
 
@@ -51,8 +165,11 @@ Life:5
 Count:2
 Passive: Can't die as long as a golem is adjacent
 
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Metallurge
@@ -75,8 +192,11 @@ Life:5
 Count:2
 Passive: Can't die as long as a golem is adjacent
 
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Patching Golem
@@ -100,7 +220,11 @@ Hard
 Life:40
 Count:2
 
-Rolls:A Text: "Move all damage from other golems in this zone to this unit"
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Colossal Golem
@@ -123,8 +247,11 @@ Life:20
 Count:3
 Passive: Shield:2
 
-Rolls:1,2,3 A:3
-Rolls:4,5,6 A:1 A:1
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Capacitor Golem
@@ -144,8 +271,13 @@ Hard
 
 Life:20
 Count:0
-Rolls:A Flurry Flurry Flurry
-Rolls:B Flurry Flurry Flurry
+
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 
 
@@ -175,7 +307,11 @@ Hard
 Life:20
 Count:5
 
-Rolls:A A:3 
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Preacher
@@ -197,7 +333,11 @@ Hard
 Life:20
 Count:5
 
-Rolls:A A:3 
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 
 ###########################################################################################
@@ -216,7 +356,11 @@ Hard
 Life:20
 Count:5
 
-Rolls:A A:3 
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 
 
@@ -236,7 +380,11 @@ Hard
 Life:20
 Count:5
 
-Rolls:A A:3 
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 
 End Of File
@@ -265,8 +413,11 @@ Life:5
 Count:2
 Passive: Can't die as long as a golem is adjacent
 
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 
 ###########################################################################################
@@ -291,8 +442,11 @@ Life:5
 Count:2
 Passive: Can't die as long as a golem is adjacent
 
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Vampire
@@ -315,8 +469,11 @@ Life:5
 Count:2
 Passive: Can't die as long as a golem is adjacent
 
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Sycophant
@@ -339,8 +496,11 @@ Life:5
 Count:2
 Passive: Can't die as long as a golem is adjacent
 
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Cultist
@@ -365,110 +525,16 @@ Life:5
 Count:2
 Passive: Can't die as long as a golem is adjacent
 
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 
 
 ###########################################################################################
-Name:Bandit Raider
 
-Normal
-
-Life:10
-Count:10
-
-Rolls:Wood  A:3
-Rolls:Fire  A:1
-Rolls:Earth A:3
-Rolls:Metal A:2
-Rolls:Water A:2
-
-Hard
-
-Life:5
-Count:2
-Passive: Can't die as long as a golem is adjacent
-
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
-
-
-###########################################################################################
-Name:Bandit Skirmisher
-
-Normal
-
-Life:20
-Count:5
-
-Rolls:Wood  A:1
-Rolls:Fire  A:3
-Rolls:Earth A:2
-Rolls:Metal A:3
-Rolls:Water A:1
-
-Hard
-
-Life:5
-Count:2
-Passive: Can't die as long as a golem is adjacent
-
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
-
-
-###########################################################################################
-Name:Bandit Trapper
-
-Normal
-
-Life:20
-Count:2
-
-Rolls:Wood  A:2
-Rolls:Fire  Text: "-"
-Rolls:Earth Stun
-Rolls:Metal Stun
-Rolls:Water Poison:1
-
-Hard
-
-Life:5
-Count:2
-Passive: Can't die as long as a golem is adjacent
-
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
-
-
-###########################################################################################
-Name:Bandit Berseker
-
-Normal
-
-Life:35
-Count:2
-Passive: Enrage
-
-Rolls:Wood  A:1
-Rolls:Fire  A:1 A:1
-Rolls:Earth A:1
-Rolls:Metal Stun
-Rolls:Water A:1
-
-Hard
-
-Life:5
-Count:2
-Passive: Can't die as long as a golem is adjacent
-
-Rolls:1,2,3 A:2 A:2
-Rolls:4,5,6 Text: "Adjacent golems gain powerful"
-
-
-
-End Of File
 
 ###########################################################################################
 Name:Orc Raider
@@ -490,9 +556,13 @@ Hard
 Life:5
 Count:0
 Passive: Disengange after action
-Rolls:1,2 M:3 A:3 R:2
-Rolls:3,4 A:2 T:2 R:3
-Rolls:5,6 A:4 Pierce:1 R:3
+
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Orc Warrior
@@ -518,9 +588,12 @@ Hard
 Life:5
 Count:0
 Passive: Disengange after damage
-Rolls:1,2 M:3 A:3 R:2
-Rolls:3,4 A:2 T:2 R:3
-Rolls:5,6 A:4 Pierce:1 R:3
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Orc Archer
@@ -542,9 +615,12 @@ Hard
 Life:5
 Count:0
 Passive: Disengange after damage
-Rolls:1,2 M:3 A:3 R:2
-Rolls:3,4 A:2 T:2 R:3
-Rolls:5,6 A:4 Pierce:1 R:3
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Orc Warboss
@@ -566,9 +642,12 @@ Hard
 Life:5
 Count:0
 Passive: Disengange after damage
-Rolls:1,2 M:3 A:3 R:2
-Rolls:3,4 A:2 T:2 R:3
-Rolls:5,6 A:4 Pierce:1 R:3
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Orc Shaman
@@ -590,9 +669,12 @@ Hard
 Life:5
 Count:0
 Passive: Disengange after damage
-Rolls:1,2 M:3 A:3 R:2
-Rolls:3,4 A:2 T:2 R:3
-Rolls:5,6 A:4 Pierce:1 R:3
+
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 ###########################################################################################
 Name:Orc Warlock
@@ -614,10 +696,12 @@ Hard
 Life:5
 Count:0
 Passive: Disengange after damage
-Rolls:1,2 M:3 A:3 R:2
-Rolls:3,4 A:2 T:2 R:3
-Rolls:5,6 A:4 Pierce:1 R:3
 
+Rolls:Fire Text: "-"
+Rolls:Earth Text: "-"
+Rolls:Metal Text: "Adjacent enemies act immediately (again)"
+Rolls:Water Text: "-"
+Rolls:Wood Text: "Adjacent enemies act immediately (again)"
 
 
 

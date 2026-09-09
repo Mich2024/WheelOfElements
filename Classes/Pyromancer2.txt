@@ -23,7 +23,7 @@ Name: "Flame Jet" ManaCost:Fire;3 Vulnerable:2 A:1 Blaze:3 Aoe:Cleave;2
 
 #Name: "Carbonize" ManaCost:Fire;2 A:5 Text: "If this attack kills, Fire:2"
 
-Tier:2
+Tier2
 Name: "Clad in Flames" ManaCost:Fire;2 Vulnerable A:1 Aoe:Cleave;2
 Name: "Fireball" ManaCost:Fire;X Text: "X can't be 0" A:X Aoe:Cleave;3
 Name: "Scorch" Fire:1 A:2 Blaze:3 Vulnerable Vulnerable

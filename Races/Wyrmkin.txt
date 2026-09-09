@@ -22,6 +22,6 @@ Name: "Overwork" ManaCost:Life;2 Earth:4 Text: "<small><i>(Add two brown cubes t
 
 Tier2
 Name: "Bloody Strike" ManaCost:Life;3 Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:7 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
-Name: "Tail Whip" ManaCost:Opt;Earth;1 A:2 Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>" Opt Disengage Disengage
+Name: "Tail Whip" ManaCost:Opt;Earth;1 A:2 Disengage Opt Disengage Disengage
 Name: "Javelin" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:3 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
 Name: "Bite and Tear" ManaCost:Life;3 Earth:1 Text: "<small><i>(Add one brown cube to the 'Earth' section of the wheel.)</i></small>" A:6

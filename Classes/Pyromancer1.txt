@@ -15,7 +15,7 @@ Tier1
 #3
 Name: "Blazing Heart" Fire:2 Blaze:2 Fire:1 Text: "<small><i>(First card ->, randomly discard two cards and do the extra actions.)</i></small>"
 Name: "Fire Breathing" ManaCost:Fire;3 A:1 Vulnerable Aoe:Cleave;2
-Name: "Soulfire" ManaCost:Fire;1 Blaze:1 Fire:5
+Name: "Soulfire" ManaCost:Fire;1 Blaze:1 Fire:5 Text: "<small><i>(First card ->, randomly discard one card and do the extra actions.)</i></small>"
 
 Tier3
 #8

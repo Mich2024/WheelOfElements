@@ -298,7 +298,7 @@ def parseMonsterAI():
                 if(startsWith(line,"Rolls")):
                     words = line.split(" ")
                     words = [i for i in words if i != ""]  #remove leftovers from double spaces
-                    assignmentFunction = monCard.assignmentDict[words[0].split(":")[0]]
+                    assignmentFunction = monCard.assignmentDict[words[0].split(":")[1]]
                     while len(words) > 0:
                         if not words[0] == "Text:":
                             #print(words)
@@ -329,9 +329,14 @@ def parseMonsterAI():
             nandeckMonAI += copy.deepcopy(monAIcard).serializeToNandeck(count_order)
             count_order += 1
 
+    template_boilerplate = open('Templates/Utils_Boilerplate.txt', 'r')
+    template_boilerplate = template_boilerplate.read()
+
     template_boilerplate_monster = open('Templates/Monster_Boilerplate.txt', 'r')
     template_boilerplate_monster = template_boilerplate_monster.read()
     template_boilerplate_monster = template_boilerplate_monster.replace(r"${Cards}", nandeckMonAI).replace(r"${CardCount}", str(count_order-1))
+
+    template_boilerplate_monster = template_boilerplate_monster.replace(r"${UtilsBoilerplate}", template_boilerplate)
 
     fileToPrint = open('out/Monsters.txt', 'w+')
     fileToPrint.write(template_boilerplate_monster)
@@ -476,16 +481,18 @@ def parseAncestriesAndClasses(files_Input):
 
     nandeckModifiers = ""
     orderModifiers = 1
-    
-    for i, statusCard in enumerate(statusCards):
-        #print(statusCard.name)
-        if statusCard.tableau != None:
-            #print(statusCard.tableau.L1R1)
-            cardCount ,nanDeckOut = statusCard.serializeModifiersToNandeck(orderModifiers)
-            #print(nanDeckOut)
 
-            nandeckModifiers += nanDeckOut
-            orderModifiers += cardCount
+
+    for j in range(2): #double mods, becasue we have a lot of sace on the paper sheet
+        for i, statusCard in enumerate(statusCards):
+        #print(statusCard.name) 
+            if statusCard.tableau != None:
+                #print(statusCard.tableau.L1R1)
+                cardCount ,nanDeckOut = statusCard.serializeModifiersToNandeck(orderModifiers)
+                #print(nanDeckOut)
+
+                nandeckModifiers += nanDeckOut
+                orderModifiers += cardCount
 
     template_boilerplate = open('Templates/Utils_Boilerplate.txt', 'r')
     template_boilerplate = template_boilerplate.read()
@@ -590,10 +597,10 @@ if __name__ == "__main__":
     files_Input.append(r"../Races/Centaur.txt")
     files_Input.append(r"../Races/Dwarf.txt")
     files_Input.append(r"../Races/Fae.txt")
-    files_Input.append(r"../Races/Halfelf.txt")
+    files_Input.append(r"../Races/Elf.txt")
     files_Input.append(r"../Races/Human.txt")
     files_Input.append(r"../Races/Merman.txt")
-    files_Input.append(r"../Races/Silverkin.txt")
+    files_Input.append(r"../Races/Orc.txt")
     files_Input.append(r"../Races/Solarian.txt")
     files_Input.append(r"../Races/Wyrmkin.txt")
     
@@ -635,9 +642,9 @@ if __name__ == "__main__":
     maxRankToPrint = 5
     flagPrintHardAI = False
     parseAncestriesAndClasses(files_Input)
-    #parseEvents("../Events.csv")
+    parseEvents("../Events.csv")
     parseMonsterAI()
-    #parseStories()
+    parseStories()
 
 #Print location: 
 # Z:\home\mich\Documents\NandeckOut\Events.pdf
@@ -648,42 +655,4 @@ if __name__ == "__main__":
 # Z:\home\mich\Documents\NandeckOut\Tiles.pdf
 
 
-#### Deprecated Classes:
-r"""
-#files_Input.append(r"../Races/Faceless.txt")
-#files_Input.append(r"../Races/Kobolds.txt") # Deprecated
-#files_Input.append(r"../Races/Solarian.txt") # Deprecated
-
-files_Input.append(r"../Classes/Assassin1.txt")
-files_Input.append(r"../Classes/Assassin2.txt")
-files_Input.append(r"../Classes/Assassin3.txt")
-
-files_Input.append(r"../Classes/Cultist1.txt")
-files_Input.append(r"../Classes/Cultist2.txt")
-files_Input.append(r"../Classes/Cultist3.txt")
-
-files_Input.append(r"../Classes/Drunkenmaster1.txt")
-files_Input.append(r"../Classes/Drunkenmaster2.txt")
-#files_Input.append(r"../Classes/Drunkenmaster3.txt")
-
-files_Input.append(r"../Classes/Necromancer1.txt")
-files_Input.append(r"../Classes/Necromancer2.txt")
-#files_Input.append(r"../Classes/Necromancer3.txt")
-
-files_Input.append(r"../Classes/PlagueDoctor1.txt")
-files_Input.append(r"../Classes/PlagueDoctor2.txt")
-files_Input.append(r"../Classes/PlagueDoctor3.txt")
-
-files_Input.append(r"../Classes/Rogue1.txt")
-files_Input.append(r"../Classes/Rogue2.txt")
-files_Input.append(r"../Classes/Rogue3.txt")
-
-
-files_Input.append(r"../Classes/Spearman1.txt")
-files_Input.append(r"../Classes/Spearman2.txt")
-#files_Input.append(r"../Classes/Spearman3.txt")
-
-files_Input.append(r"../Classes/Summoner1.txt")
-files_Input.append(r"../Classes/Summoner2.txt")
 #files_Input.append(r"../Classes/Summoner3.txt")
-"""

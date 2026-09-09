@@ -9,3 +9,4 @@ image = ${Order}, "..\..\Pictures\Tiers\DiceTier${IntTierDice}.png", [space_left
 image = ${Order}, "..\..\Pictures\Icons\AncestryIcons\${Race}.png", [space_left] + [quart_hor] - 2.7, [third_vert]*2 - [linestrength] - 0.8, 0.8, 0.8, 0
 
 RECTANGLE = ${Order}, [space_left] + [linestrength]/2, [space_top] + [third_vert] * 0 + [linestrength]/2, [quart_hor]- [linestrength], [third_vert]- [linestrength], ${TierPassive}, empty, [linestrength]
+LINE = ${Order}, [space_left] + [linestrength]/2, [space_top] + [linestrength]/2 + 5, [space_left] + [linestrength]/2 + [quart_hor] , [space_top] + [linestrength]/2 + 5, ${TierPassive}, [linestrength]

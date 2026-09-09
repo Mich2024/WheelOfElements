@@ -14,8 +14,8 @@ Name: "Align" ManaCost:Opt;Metal;4 Advantage:2 Opt Stun A:3
 
 Tier2
 Name: "Parry"  Metal:1 Stun Text: "<small><i>(A stunned enemy skips their turn.)</i></small>"
-Name: "Dutybound" Advantage Text: "<small><i>(Gain an advantage marker. When attacking, you may reroll one dice per marker.)</i></small>" A:2
-Name: "Prepare" Stun Advantage
+Name: "Dutybound" Advantage Text: "<small><i>(Gain an advantage marker. When attacking, you may spend one marker to reroll a die.)</i></small>" A:2
+Name: "Prepare" Stun Advantage Text: "<small><i>(Gain an advantage marker. When attacking, you may spend one marker to reroll a die.)</i></small>" 
 
 
 

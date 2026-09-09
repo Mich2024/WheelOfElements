@@ -1,2 +1,0 @@
-htmltext = ${Order}, "${Dice}", 0.2 , ${PosYAction},[space_action_left], 4,#FFFFFF,0,T,100,font_18
-RECTANGLE = ${Order}, 0.2, ${PosYAction}, 0.5, 0.5, #000000, empty, [linestrength]

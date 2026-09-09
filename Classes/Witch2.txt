@@ -15,12 +15,11 @@ Element: Water
 Tier1
 
 Name: "Leech Poison" Water:1 Text: "Remove any amount of poison from your enemies. Heal that much health"
-Name: "Gaslight"  Water:1 Disengage
+Name: "Fated Death" Text: "Double the poison on one enemy"
 
 Tier2
 Name: "Girlboss" ManaCost:Opt;Water;2 Poison:4 Opt Poison:4
 Name: "Gatekeep" Ranged Text: "<small><i>(You may target players to the left or right)</i></small>" Heal:3 Text: "<small><i>(Regain 3 Life)</i></small>"
-Name: "Fated Death" Water:2 Text: "Double the poison on one enemy"
-
+Name: "Gaslight"  Water:2 Ranged Disengage Disengage
 
 

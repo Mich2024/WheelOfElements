@@ -10,12 +10,12 @@ Explanation:Flurry
 
 Tier1
 Name: "Inspire" ManaCost:Opt;Wood;3 Powerful:2 Opt Text: "Also target both players next to you"
-Name: "Vengeance" Ranged Powerful:2 Text: "<small><i>(Your attacks this turn deal 2 extra damage.)</i></small>" 
+Name: "Vengeance" Ranged Powerful:2 Text: "<small><i>(Your attacks, heals and poison are improved by 2 this turn.)</i></small>" 
 Name: "Outlast" ManaCost:Opt;Wood;3 Powerful Text: "At the end of this turn, keep all Powerful stacks" Opt Flurry:2
 
 
 
 Tier3
-Name: "Roar" Disengage:1 Wood:2 Powerful:3
-Name: "Normal Punches" Wood:2 Flurry:3
+Name: "Roar" Disengage:1 Wood:2 Powerful:3 Text: "<small><i>(Your attacks, heals and poison are improved by 3 this turn.)</i></small>" 
+Name: "Staccato" Wood:2 Flurry:3 Text: "<small><i>(Gain three flurry tokens. You may spend one at any time to perform A:1.)</i></small>"
 

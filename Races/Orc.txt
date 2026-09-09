@@ -1,20 +1,20 @@
 Passive
-Gain an extra attack dice.
-#Gold + Silver
-Life: 3
+Each turn:<br> -  Powerful:1<br><small><i>(Your singular attack die has no effect)</i></small><br>Spend an Advantage:<br> -  gain +1 to an Attack , Heal or Poison
 
-#1
-TierCards: Silver
+#Gold + Silver
+Life: 6
+
+#1.75
+TierCards: Gold
+#0.75
+TierPassive: Silver
 #0
-TierPassive: Bronze
-#1.5
-TierMods: Gold
+TierMods: Bronze
 
 Modifier Tableau
 Rank:1
-Add 1 -1 Add 2 +2 Add 1 HalfElf
-Add 1 -1 Add 2 +2 Add 1 HalfElf
-Add 1 -1 Add 2 +2 Add 1 HalfElf
+Add 1 Orc
+Add 1 Orc
 
 
 
@@ -31,15 +31,17 @@ Base Cards
 Tier1
 #3
 Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
-Name: "Hype" Wood:1 Text: "<small><i>(Add one brown cube to the 'Wood' section of the wheel.)</i></small>" Powerful Text: "<small><i>(Your attacks this turn deal 1 extra damage.)</i></small>" 
 
 
 Tier2
 #5
 Name: "Double Strike" A:1 A:1 Text: "<small><i>(The second attack may target a different enemy.)</i></small>"
-Name: "Riposte" A:2 Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
-Name: "Flourish" ManaCost:Opt;Wood;3 Wood:2 Disengage Disengage Opt Powerful:2 A:1
+Name: "Kick" A:2 Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
+Name: "War Drums" ManaCost:Opt;Wood;1 Wood:2 Powerful:2 Opt Ranged Disengage Disengage
 Name: "Lunge" ManaCost:Opt;Wood;1 Powerful:2 Text: "<small><i>(Your attacks this turn deal 2 extra damage.)</i></small>" Opt A:1 
+
+Tier3
+Name: "Rip and Tear" Powerful:3 A:1
 
 
 #[( (2*3)+(2*2)+(3*1)+(3*-1)+(5*0) )/15]=0,66

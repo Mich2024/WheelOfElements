@@ -23,5 +23,5 @@ Name: "Bedazzle" ManaCost:Opt;Water;2 Ranged Heal:1 Disengage Opt Heal:3
 
 
 Tier3
-Name: "Toxic Deluge" Poison:2 Aoe:Cleave;3
+Name: "Toxic Deluge" Poison:2 Text: "<small><i>(Put two posion markers on each targeted enemy. During Cleanup, each enemy takes damage equal to their poison markers)</i></small>" Aoe:Cleave;3
 Name: "Perpetual Brew" Water:2 Poison:2 Heal:2 Disengage Disengage

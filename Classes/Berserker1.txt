@@ -21,7 +21,7 @@ Name: "Taunt" ManaCost:Earth;2 Ranged Disengage Disengage Shield:1
 
 Tier3
 Name: "Faithless Looting" Text: "Draw two cards" Blaze:2 Ranged A:6
-#This shit is unprintable, the space is like two times over
+#This will be a custom card
 Name: "Feral Instinct" Fire:2 Blaze:2 Text: "\symAddFire Fire: 2 <br>--- \symBlaze Blaze 2 --- <br> Per discarded Card: <br> Br: \symAddFire Fire:1 <br> Silver: \symShield Shield <br> Gold: \symAttack A:3 <br> Dia: Draw your deck"
 
 

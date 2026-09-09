@@ -8,6 +8,8 @@
 [vert_half] = 1.4/2
 [mod_y] = [vert_half] - [space_text_28]/2 + 0.05
 [full_hor] = 1.4
+[size_sym] = 0.9
+[size_tier] = 0.9
 
 CARDS=[CardCount]
 BORDER=NONE,#000000,0.2
