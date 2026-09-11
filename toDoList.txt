@@ -16,6 +16,7 @@ extinguish 0 metal
 
 AM
 
+Update all links
 Szenariospiel ins regelwerk
 
 Add Reminder text existence to rulebook
@@ -44,6 +45,15 @@ Reprint
 
 Merfolk
 Name: "Polluted Waters" ManaCost:Opt;Water;1 Poison:2 Disengage Disengage Opt A:1
+Wyrmikin
+passive
+Ranger2
+passive
+Solarian
+pssive
+Name: "Sun's Embrace" ManaCost:Opt;Fire;3 Vulnerable:4 Opt A:1
+Name: "Heartburn" Fire:2 Vulnerable:1 Vulnerable:1 Disengage Disengage
+
 
 
 

@@ -1,9 +1,12 @@
 Passive
-When an enemy rotates or is disengaged to you:<br> -  Vulnerable:1 , targeting that enemy
+When you generate an Element:<br> - you may choose to generate any other element instead<br><small><i>(Also works with multiple elements)</i></small>
 Life: 4
 
-TierCards: Silver
-TierPassive: Gold
+#2
+TierCards: Gold
+#0.5
+TierPassive: Silver
+#0
 TierMods: Bronze
 
 Modifier Tableau
@@ -24,8 +27,10 @@ Name: "Heart of Fire" Fire:2 Text: "<small><i>(Add two brown cubes to the 'Fire'
 Tier2
 Name: "Double Strike" A:1 A:1 Text: "<small><i>(The second attack may target a different enemy.)</i></small>"
 Name: "Eternal Flame" ManaCost:Opt;Fire;2 Fire:2 A:1 Opt Aoe:Cleave;3
-Name: "Sun's Embrace" ManaCost:Opt;Fire;2 A:3 Opt A:3
-Name: "Heartburn" ManaCost:Opt;Fire;1 Vulnerable Vulnerable Opt Disengage Disengage
+
+Tier3
+Name: "Sun's Embrace" ManaCost:Opt;Fire;3 Vulnerable:4 Opt A:1
+Name: "Heartburn" Fire:2 Vulnerable:1 Vulnerable:1 Disengage Disengage
 
 #Add 3 -1 Add 1 +0 Add 3 Fire:1 +0
 #Add 3 +1 Add 2 +2
