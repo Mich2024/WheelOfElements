@@ -76,7 +76,7 @@ If you actually take the time to look at this stuff, please write me any feedbac
 
 ### Books
 The rulebook is written in LaTeX, and can be compiled like any normal LaTeX document. You may need to download some extra packages
-Currently the rulebook is lagging behind the actual game files, and we plan to update this in two weeks.
+Currently the rulebook is lagging behind the actual game files, the update is ongoing, and the scope keeps growing due to our simmilarly growing ability to make a better book.
 
 ### ToPdfPipeline
 In this step we go from our domain specific language to code that can pe processed into pictures.
