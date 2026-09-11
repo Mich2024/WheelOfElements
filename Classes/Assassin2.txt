@@ -20,6 +20,6 @@ Name: "Toxic Blast" ManaCost:Opt;Water;X Poison:X Text: "X Can't be 0." AOE:Clea
 
 
 
-Name: "Heart of Metal" Metal:2 Text: "<small><i>(Add two brown cubes to the 'Metal' section of the wheel.)</i></small>"
+#Name: "Heart of Metal" Metal:2 Text: "<small><i>(Add two brown cubes to the 'Metal' section of the wheel.)</i></small>"
 #Name:  A:X Text: "X is the amount of poison on the target"
 #Name: "Toxic Shock" Ranged A:X Text: "X is the amount of poison on the target"
