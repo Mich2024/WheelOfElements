@@ -1,5 +1,5 @@
 Passive
-When you roll your ancestry symbol:<br> - treat it as +1 
+When your attack dice roll your ancestry symbol:<br> - treat it as +1 
 
 Life: 3
 

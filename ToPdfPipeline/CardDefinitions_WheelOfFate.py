@@ -159,6 +159,7 @@ symbolDict = {
     "Silverkin":r"\symSilverkin",
     "Solarian":r"\symSolarian",
     "Wyrmkin":r"\symWyrmkin",
+    "Orc":r"\symOrc",
 
 
 }

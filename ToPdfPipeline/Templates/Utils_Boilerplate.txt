@@ -55,6 +55,7 @@ htmlimage = 1 - [CardCount], \symHuman, "..\..\Pictures\Icons\AncestryIcons\Huma
 htmlimage = 1 - [CardCount], \symMerman, "..\..\Pictures\Icons\AncestryIcons\Merman.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symSilverkin, "..\..\Pictures\Icons\AncestryIcons\Silverkin.png", [size_sym], [size_sym]
 htmlimage = 1 - [CardCount], \symSolarian, "..\..\Pictures\Icons\AncestryIcons\Solarian.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symOrc, "..\..\Pictures\Icons\AncestryIcons\Orc.png", [size_sym], [size_sym]
 
 htmlfont=font_10,Arial,10,B,#000000,LEFT
 htmlfont=font_18,Arial,12,B,#000000,LEFT
