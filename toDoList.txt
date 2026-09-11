@@ -53,7 +53,8 @@ Solarian
 pssive
 Name: "Sun's Embrace" ManaCost:Opt;Fire;3 Vulnerable:4 Opt A:1
 Name: "Heartburn" Fire:2 Vulnerable:1 Vulnerable:1 Disengage Disengage
-
+Berserker 1
+Custom Feral instinct
 
 
 

@@ -81,52 +81,27 @@ htmlfont=font_12_right_Dia,Arial,12,B,#87B787,RIGHT
 
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
-TEXT = 1, "Feral Instinct", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 1, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+TEXT = 1-2, "Feral Instinct", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 1-2, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 1, "\symAddFire Fire: 2 <br>--- \symBlaze Blaze 2 --- <br> Per discarded Card: <br> Br: \symAddFire Fire:1 <br> Silver: \symShield Shield <br> Gold: \symAttack A:3 <br> Dia: Draw your deck", [linestrength] * 2 , 3,[full_hor] + 0.6, 5,#FFFFFF,0,T,100,font_18
+htmltext = 1-2, "\symAddFire Fire: 2 <br>--- \symBlaze Blaze 2 --- <br> Per discarded Card: <br> Br: \symAddFire Fire:1 <br> Silver: \symShield Shield <br> Gold: \symAttack A:3 <br> Dia: Draw your deck", [linestrength] * 2 , 3,[full_hor] + 0.6, 5,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
-TEXT = 1, "Berserker 2", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+TEXT = 1-2, "Berserker 1", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
-htmltext = 1, "Gold \symCardsGold", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Gold
+htmltext = 1-2, "Gold \symCardsGold", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Gold
 
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
-TEXT = 2-5, "Turn Order", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 2-5, "Reminder", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+TEXT = 3-7, "Turn Order", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
+htmltext = 3-7, "Reminder", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
 
-htmltext = 2-5, "1. Draw cards until hand is full (4) <br>2. Player Turn<br>&emsp;Start of turn effects<br>&emsp;Play two cards<br>3. Enemy Turn<br>4. Boons&Banes<br>5. Rotate", [linestrength] * 2 , 2,[full_hor] + 0.6, 6,#FFFFFF,0,T,100,font_18
-
-FONT = Arial, 12, B, #000000
-TEXT = 2-5, "Confused Player", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
-
-htmltext = 2-5, "Dia \symCardsDia", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Dia
-
-#Name, OptCost ########################################
-FONT = Arial, 18, B, #000000
-TEXT = 6, "Sun's Embrace", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 6, "Cost: Opt \symAddFire 3 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
-
-htmltext = 6, "\symVulnerable Vulnerable: 4 <br>------ Opt Paid ------ <br> \symAttack A: 1", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
+htmltext = 3-7, "1. Draw cards until hand is full (4) <br>2. Player Turn<br>&emsp;Start of turn effects<br>&emsp;Play two cards<br>3. Enemy Turn<br>4. Boons&Banes<br>5. Rotate", [linestrength] * 2 , 2,[full_hor] + 0.6, 6,#FFFFFF,0,T,100,font_18
 
 FONT = Arial, 12, B, #000000
-TEXT = 6, "Solarian", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
+TEXT = 3-7, "Confused Player", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
 
-htmltext = 6, "Gold \symCardsGold", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Gold
-
-
-#Name, OptCost ########################################
-FONT = Arial, 18, B, #000000
-TEXT = 7, "Heartburn", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 7, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
-
-htmltext = 7, "\symAddFire Fire: 2 <br> \symVulnerable Vulnerable: 1 <br> \symVulnerable Vulnerable: 1 <br> \symDisengage Disengage<br> \symDisengage Disengage", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
-
-FONT = Arial, 12, B, #000000
-TEXT = 7, "Solarian", 0.2 , 8, 6.35-2, [space_text_18], LEFT, WORDWRAP
-
-htmltext = 7, "Gold \symCardsGold", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Gold
+htmltext = 3-7, "Dia \symCardsDia", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,0,T,100,font_12_right_Dia
 
 
 
