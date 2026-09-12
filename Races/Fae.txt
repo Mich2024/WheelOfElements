@@ -25,7 +25,7 @@ Base Cards
 
 Tier1
 Name: "Fly away" Disengage Disengage Text: "<small><i>(Target an enemy, and immediately rotate it to the next player.)</i></small>"
-Name: "Strike" Ranged Text: "<small><i>(You may target enemies to the left or right)</i></small>" A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Aerial Strike" ManaCost:Opt;Metal;1 A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>" Opt A:1
 
 Tier2
 Name: "Miséricorde" ManaCost:Opt;Metal;2 A:3 Opt Text: "Deals double damage against stunned units"

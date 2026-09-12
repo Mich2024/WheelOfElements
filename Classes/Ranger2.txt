@@ -19,7 +19,7 @@ Name: "Mulch" ManaCost:Fire;1 Wood:3 Disengage
 Name: "Teamwork" Ranged Vulnerable Text: "Your flurries have Ranged this turn"
 
 Tier2 
-Name: "Fate's call" Ranged Vulnerable:2 Text: "<small><i>(Place two vulnerable markers on an enemy. They two extra damage from attacks and poison.)</i></small>"
+Name: "Fate's call" Ranged Vulnerable:2 Text: "<small><i>(Place two vulnerable markers on an enemy. They take two extra damage from attacks and poison.)</i></small>"
 Name: "Hail of arrows" Flurry:2 Text: "Your flurries have Ranged this turn"
-Name: "Fiery veins" ManaCost:Fire;X Flurry:X+2 Text: "<small><i>(X can be 0)</i></small>"
+Name: "Fiery veins" ManaCost:Fire;X Flurry:X Text: "<small><i>(X can be 0)</i></small>"
 

@@ -1,6 +1,6 @@
 Passive
-Improved max life <small><i>(+5, already included)</i></small>
-Life: 8
+Improved max life <small><i>(+7, already included)</i></small>
+Life: 10
 
 
 Type
@@ -13,7 +13,7 @@ Element: Earth
 
 Tier1
 Name: "Slice" ManaCost:Metal;2 Advantage:2 Text: "<small><i>(Gain two advantage markers. When attacking, you may spend one marker to reroll a die.)</i></small>" A:3
-Name: "Dice" ManaCost:Metal;3 Advantage:3 Text: "<small><i>(Gain tthree advantage markers. When attacking, you may spend one marker to reroll a die.)</i></small>" A:4
+Name: "Dice" ManaCost:Metal;3 Advantage:3 Text: "<small><i>(Gain three advantage markers. When attacking, you may spend one marker to reroll a die.)</i></small>" A:4
 
 
 Tier2

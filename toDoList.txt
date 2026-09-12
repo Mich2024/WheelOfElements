@@ -1,28 +1,20 @@
-https://spielematerial.de/
-Whenever:
-Events
-X-Cost decision talk
-
-ABC Enemies vs A:1 verwirrung
 ############
 AV
-assassin 2 passive rework
 life sieht aus wie wasser?
 
 keyword this Enemy does not move
-ABC enemy that does nothing on its first to actions and deals 6 on C
 
 extinguish 0 metal
 
 AM
 
-Update all links
-Szenariospiel ins regelwerk
 
 Add Reminder text existence to rulebook
 Add more X cards
 Make X consisten 0 or non 0
+check if vulnerable text is formatted properly
 
+Low Prio:
 Check dice for advantage balancing
 
 
@@ -31,11 +23,8 @@ Rulebook:
 
 clarify stun and multiattacks
 setup pic
-
-go over whole document with vscode to harmonize:
-    Sybols (attack and other)
-    Capitalization
-
+Szenariospiel ins regelwerk
+Update all links
 
 ############
 Both:
@@ -45,18 +34,37 @@ Reprint
 
 Merfolk
 Name: "Polluted Waters" ManaCost:Opt;Water;1 Poison:2 Disengage Disengage Opt A:1
+Name: "Tidal Grasp" ManaCost:Opt;Water;2 A:3 Opt AOE:Cleave;2
 Wyrmikin
 passive
-Ranger2
-passive
 Solarian
-pssive
-Name: "Sun's Embrace" ManaCost:Opt;Fire;3 Vulnerable:4 Opt A:1
-Name: "Heartburn" Fire:2 Vulnerable:1 Vulnerable:1 Disengage Disengage
+passive
+Fae
+Name: "Aerial Strike" ManaCost:Opt;Metal;1 A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>" Opt A:1
+Catkin
+dice & card strength label
+passive
+Name: "Chomp" A:3 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
+Name: "Claw" Wood:2 Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
+
 Berserker 1
 Custom Feral instinct
+Ranger 1
+Name: "Premediate" Wood:4 Flurry:2 Text: "<small><i>(Gain three flurry tokens. You may spend one at any time to perform A:1.)</i></small>"
+Ranger 2
+passive
+Name: "Fiery veins" ManaCost:Fire;X Flurry:X Text: "<small><i>(X can be 0)</i></small>"
+Koloss 1
+Name: "Control" ManaCost:Opt;Earth;2 Ranged Disengage Disengage Opt Shield:1
+Name: "Shield Slam" Earth:2 Shield:1 A:X Text: "X is equal to your shield"
+Koloss 2
+passive
+Sangro 2
+passive
+Name: "Dice" ManaCost:Metal;3 Advantage:3 Text: "<small><i>(Gain three advantage markers. When attacking, you may spend one marker to reroll a die.)</i></small>" A:4
 
-
+Events:
+Iron mine
 
 Research verlage und schreibe personalisierten pitch
 -> Feuerland Verlagsgesllschaft mbH
@@ -109,96 +117,6 @@ X SpielStart
 -> Squink
 X Steinbock-Brettspiele
 -> Wonderbow Games
-
-
-############
-Advice:
-
-############
-rulebook:
-FAQ
-
-dice:
-silverkin Gold
-
-recheck passives for:
-races:all
-
-classes:
-Name: "Sword and Dagger" ManaCost:Water;3 A:6 A:2
-
-##################
-# Notes Tutorium #
-##################
-
-sprecherin: rita modl
-
-Halber Tisch:
-	-> Tishdecke mitbringen
-
-Prototyp muss gut spielbar sein 
-
-bilderklau 
-	-> ja
-
-Auf schachtel muss name und adresse sein,
-Anleitung in Box
-Auf Anleitung muss Name und adresse sein
-
-Ablauf:
-Ankunft Einlass
-	-> check website for deets
-	-> stunde zeit für Aufbau
-	
-
-Freie Platzwahl
-	-> eine person am Tisch, andere Person kann rumgehen
-Tischnummer 
-	-> auf Tafel vorne name und Tischnummer eintragen
-
-Keine Termine, höflich Fragen ist max
-Redaktionsbriefkasten für gezielte werbung
-	-> located neben tafel
-
-verlage googeln und auf geziete verlage aimen
-
-Spiel muss box haben!!
-
-Verläge browsen wie in einer messe
-
-wenn sich leute bei uns setzen
-	-> Spiel pitchen, Zielgruppe, für wie viele Spieler, was ist die kernemchanik
-		-> Pitchen üben
-		-> ischaufsteller machen/ banner
-		-> dont fuck with others
-		-> englishe und deutsche pitches mitbringen
-	-> demozug bereit haben
-	
-prep for depression 
-	-> ask why??
-	-> visitenkarte anfragen
-	-> feedback looten was zeug hält
-	-> überarbeitetes Spiel repitchen
-
-messe nürnberg auschecken
-verlag über erinerung und kontak anschreiben für spielbar
-
-Verlag will prototyp testen -> 
-	-> check wer haben will und kommunizier den verschieden verlägen wer es alles bekommt
-	-> im nachgang schiken ist fine
-	-> zwei drei monate später checken ob der verlag den Prototyp schon getestet wurde
-	-> für exklusives testen über monate geld verlangen? dreistellige verlägen
-		-> exklusivität bis ende des tages abwarten?
-	
-Falls vertrag ja
-	-> beitrigtt zur SAZ für vertragsverhandlung
-	-> empfohlen mind %6 mit staffelung - 7-8% ideal
-	-> vlt weniger bei riesiger ami verlag
-	
-Spiel Schützen 
-	-> nicht aktiv schützbar
-	-> webseite des spielearchivar: spielidee einschickbar gegen geld
-	-> Urheberrecht reicht eigentlich
 
 
 

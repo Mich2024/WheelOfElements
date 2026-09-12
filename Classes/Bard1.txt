@@ -16,6 +16,6 @@ Name: "Outlast" ManaCost:Opt;Wood;3 Powerful Text: "At the end of this turn, kee
 
 
 Tier3
-Name: "Roar" Disengage:1 Wood:2 Powerful:3 Text: "<small><i>(Your attacks, heals and poison are improved by 3 this turn.)</i></small>" 
+Name: "Roar" Disengage Wood:2 Powerful:3 Text: "<small><i>(Your attacks, heals and poison are improved by 3 this turn.)</i></small>" 
 Name: "Staccato" Wood:2 Flurry:3 Text: "<small><i>(Gain three flurry tokens. You may spend one at any time to perform A:1.)</i></small>"
 
