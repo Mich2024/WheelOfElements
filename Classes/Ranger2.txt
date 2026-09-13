@@ -2,7 +2,7 @@ Passive
 #When you kill:<br> - Flurry:1
 When your attack dice roll your ancestry symbol:<br> - Vulnerable:1<br><small><i>(Before the attack occurs.)</i></small>
 
-Life: 4
+Life: 3
 
 Type
 Element: Wood

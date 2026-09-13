@@ -1,6 +1,6 @@
 Passive
 When you generate an Element:<br> - you may choose to generate any other element instead<br><small><i>(Also works with multiple elements)</i></small>
-Life: 4
+Life: 3
 
 #2
 TierCards: Gold
