@@ -1,5 +1,5 @@
 Passive
-During cleanup:<br> - you decide which enemy rotates
+When rotating:<br> - you decide which enemy rotates<br><small><i>(Instead of always the leftmost one)</i></small>
 Life: 3
 
 #1.5
