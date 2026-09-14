@@ -43,11 +43,11 @@ Life:20
 Count:3
 Passive: Sunburn
 
-Rolls:Wood  A:1 A:1
-Rolls:Fire  A:1 A:1
-Rolls:Earth A:2
-Rolls:Metal A:3 Metal:1
-Rolls:Water H:4 Water:1
+Rolls:Wood  A:2 A:2
+Rolls:Fire  Text: "-"
+Rolls:Earth A:2 A:2
+Rolls:Metal H:6 Metal:1
+Rolls:Water A:5 Water:1
 
 
 Hard
@@ -71,11 +71,11 @@ Life:10
 Count:3
 Passive: Sunburn
 
-Rolls:Wood  A:1 H:2
-Rolls:Fire  A:3
-Rolls:Earth A:2 H:1
-Rolls:Metal A:2 H:1
-Rolls:Water A:1 H:2
+Rolls:Wood  A:2 H:2
+Rolls:Fire  Text: "-"
+Rolls:Earth A:3 H:1
+Rolls:Metal A:3 H:1
+Rolls:Water A:2 H:2
 
 Hard
 
@@ -101,7 +101,7 @@ Rolls:Wood  A:2
 Rolls:Fire  Text: "Adjacent Enemies get Powerful:2"
 Rolls:Earth A:2
 Rolls:Metal A:1
-Rolls:Water A:1
+Rolls:Water Text: "Adjacent Enemies get Powerful:2"
 
 
 Hard
@@ -325,8 +325,8 @@ Count:5
 Passive: Scenariobound
 
 Rolls:Wood  A:2 A:2
-Rolls:Fire  Text: "Adjacent golems gain powerful"
-Rolls:Earth A:2 A:2
+Rolls:Fire  A:2 A:2
+Rolls:Earth Text: "Adjacent golems gain powerful"
 Rolls:Metal A:2 A:2
 Rolls:Water Text: "Adjacent golems gain powerful"
 
@@ -406,10 +406,10 @@ Life:20
 Count:4
 
 Rolls:Wood  Powerful
-Rolls:Fire  A:1
-Rolls:Earth A:1 A:1
+Rolls:Fire  A:1 A:1 A:1
+Rolls:Earth Text: "-"
 Rolls:Metal A:1 A:1 A:1
-Rolls:Water A:1 A:1 A:1 A:1
+Rolls:Water Text: "-"
 
 Hard
 
@@ -436,7 +436,7 @@ Name:Black Knight
 
 Normal
 
-Life:25
+Life:35
 Count:2
 Passive: Vengeance
 
@@ -493,7 +493,11 @@ Life:20
 Count:4
 Passive: Heretic
 
-Rolls:A A:3
+Rolls:Fire A:3
+Rolls:Earth A:3
+Rolls:Metal A:3
+Rolls:Water A:3
+Rolls:Wood A:3
 
 Hard
 
@@ -517,7 +521,11 @@ Life:40
 Count:2
 Passive: Heretic
 
-Rolls:A Powerful A:2
+Rolls:Fire Powerful:1 A:2
+Rolls:Earth Powerful:1 A:2
+Rolls:Metal Powerful:1 A:2
+Rolls:Water Powerful:1 A:2
+Rolls:Wood Powerful:1 A:2
 
 Hard
 
