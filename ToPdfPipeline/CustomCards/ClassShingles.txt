@@ -1,4 +1,3 @@
-[CardCount] = 3
 [space_top] = 1
 [space_left] = 0
 [WidthPage] = 24+[space_left]
@@ -22,7 +21,7 @@
 
 [third_hor] = ((([WidthPage]-[space_left]-[space_right])/3)-0.25)
 [quart_hor] = 5.5
-
+[CardCount] = 3
 
 CARDS=[CardCount]
 BORDER=RECTANGLE,#000000,[linestrength]*2
@@ -79,6 +78,17 @@ htmlimage = 1 - [CardCount], \symPassiveBronze, "..\..\Pictures\Tiers\PassiveTie
 htmlimage = 1 - [CardCount], \symPassiveSilver, "..\..\Pictures\Tiers\PassiveTier2.png", [size_tier], [size_tier]
 htmlimage = 1 - [CardCount], \symPassiveGold, "..\..\Pictures\Tiers\PassiveTier3.png", [size_tier], [size_tier]
 
+htmlimage = 1 - [CardCount], \symCatkin, "..\..\Pictures\Icons\AncestryIcons\Catkin.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symCentaur, "..\..\Pictures\Icons\AncestryIcons\Centaur.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symWyrmkin, "..\..\Pictures\Icons\AncestryIcons\Wyrmkin.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symDwarf, "..\..\Pictures\Icons\AncestryIcons\Dwarf.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symElf, "..\..\Pictures\Icons\AncestryIcons\Elf.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symFae, "..\..\Pictures\Icons\AncestryIcons\Fae.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symHuman, "..\..\Pictures\Icons\AncestryIcons\Human.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symMerman, "..\..\Pictures\Icons\AncestryIcons\Merman.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symSilverkin, "..\..\Pictures\Icons\AncestryIcons\Silverkin.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symSolarian, "..\..\Pictures\Icons\AncestryIcons\Solarian.png", [size_sym], [size_sym]
+htmlimage = 1 - [CardCount], \symOrc, "..\..\Pictures\Icons\AncestryIcons\Orc.png", [size_sym], [size_sym]
 
 htmlfont=font_10,Arial,10,B,#000000,LEFT
 htmlfont=font_18,Arial,12,B,#000000,LEFT
@@ -94,44 +104,36 @@ BASERANGE=,ON
 RECTANGLE = 1-[CardCount], 0, 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
 
 
-
 FONT = "Noto Sans Mono", 14, B, #000000
-TEXT = 1, "Bard 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+TEXT = 1, "Koloss 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
 FONT = "Noto Sans Mono", 12, B, #000000
 image = 1, "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
 htmltext = 1, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
 FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = 1, "When you  \symHeal Heal another player:<br> - also apply <br>Powerful:1",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
-htmltext = 1, "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
-LINE = 1, [quart_hor] - [linestrength] - 1, [third_vert] - [linestrength],  [quart_hor] - [linestrength], [third_vert] - [linestrength] - 1,  [col_bronze], [linestrength]
-
-
+htmltext = 1, "Start of turn 1:<br> -  \symDisengage Disengage the leftmost enemy from the player to your right",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 1, "\symSmallLife Starting life: 8",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 1, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
 
 FONT = "Noto Sans Mono", 14, B, #000000
-TEXT = 2, "Koloss 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+TEXT = 2, "Ranger 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
 FONT = "Noto Sans Mono", 12, B, #000000
-image = 2, "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+image = 2, "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
 htmltext = 2, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
 FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = 2, "When your rightmost Enemy damages you:<br> - lose 1 life instead of the original damage",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
-htmltext = 2, "\symSmallLife Starting life: 2",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+htmltext = 2, "When your attack dice roll your ancestry symbol:<br> -  \symVulnerable Vulnerable:1<br><small><i>(Before the attack occurs.)</i></small>",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 2, "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
 LINE = 2, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
 
 
 FONT = "Noto Sans Mono", 14, B, #000000
-TEXT = 3, "Koloss 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+TEXT = 3, "Sangromancer 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
 FONT = "Noto Sans Mono", 12, B, #000000
-image = 3, "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+image = 3, "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
 htmltext = 3, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
 FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = 3, "When your rightmost Enemy damages you:<br> - lose 1 life instead of the original damage",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength] - [radius], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
-htmltext = 3, "\symSmallLife Starting life: 2",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+htmltext = 3, "Improved max life <small><i>(+7, already included)</i></small>",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 3, "\symSmallLife Starting life: 10",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
 LINE = 3, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
-
-
-
-
-
 
 
 
@@ -142,5 +144,5 @@ RECTANGLE = 1-[CardCount],  0, [third_vert] - [space_text_18] - [linestrength], 
 #RECTANGLE = 1-[CardCount],  0, [space_text_28] + [linestrength]*2, 2.5, [space_text_18], #000000, empty, [linestrength]
 #TitleSeparator
 LINE = 1-[CardCount],  0, [space_text_28] + [linestrength]*2, [quart_hor], [space_text_28] + [linestrength]*2, #000000, [linestrength]
-CIRCLE = 1-[CardCount], [quart_hor] - [radius], [third_vert]/2 - [radius] , [radius]  * 2, [radius]  * 2, #000000 ,#ffffff ,[linestrength]
+#CIRCLE = 1-[CardCount], [quart_hor] - [radius], [third_vert]/2 - [radius] , [radius]  * 2, [radius]  * 2, #000000 ,#ffffff ,[linestrength]
 
