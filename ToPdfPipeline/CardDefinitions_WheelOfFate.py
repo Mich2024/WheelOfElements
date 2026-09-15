@@ -303,7 +303,7 @@ def serializeMonsterActionToNanDeck(inputActions):
                     #print(word.split(":")[0])
                     if(word.split(":")[0] in symbolDict):
                     
-                        res += " " + symbolDict[word.split(":")[0]] + " " + word + " "
+                        res += " " + symbolDict[word.split(":")[0]] + " "
                     else:
                         res += word + " "
                     
@@ -319,7 +319,6 @@ def serializeMonsterActionToNanDeck(inputActions):
                     parts = action.split(":")
                     if parts[0] in symbolDict:
                         res += " " + symbolDict[parts[0]]
-                    res += " " + parts[0] 
                     if len(parts) == 2:
                         res += ": " + parts[1]
                         res += " "
