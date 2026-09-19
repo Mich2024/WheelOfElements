@@ -1,21 +1,35 @@
 ############
 AV
 life sieht aus wie wasser?
+pfeile auf wheel
+rad durchmesser -3 cm / auf größe von box anpassen
+Loch in mitte von tableau
+Kacheln mit runden ecken an 4 seiten
+dual side poison
+
+poison 5 bild, zu verwirrend
 
 keyword this Enemy does not move
 
-extinguish 0 metal
 
 AM
 
-
 Add Reminder text existence to rulebook
-Add more X cards
-Make X consisten 0 or non 0
-check if vulnerable text is formatted properly
+AOE element gen clarification
+AOE clarification that everything is an aoe now (except elements)
+
+Buff assassin 2
+correct assassin  with aoes 2
+
+ranged better placement on card?
+
+Stop reading text in storybook
+Enemy keyword cheatsheet in storybook
 
 Low Prio:
 Check dice for advantage balancing
+Add more X cards
+Make X consistent 0 or non 0
 
 
 ##
@@ -31,6 +45,10 @@ Both:
 Rename disengage maybe repel
 
 Reprint
+Witch 1
+
+Name: "Toxic Deluge" Poison:2 Aoe:Cleave;3
+
 
 Merfolk
 Name: "Polluted Waters" ManaCost:Opt;Water;1 Poison:2 Disengage Disengage Opt A:1

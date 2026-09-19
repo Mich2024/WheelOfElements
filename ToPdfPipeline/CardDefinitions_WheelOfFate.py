@@ -145,9 +145,6 @@ symbolDict = {
     "Silence":r"\symSilence",
     "Poison":r"\symPoison",
 
-    #Modifier specific
-    "Draw":r"\symDraw",
-
     #Ancestries
     "Catkin":r"\symCatkin",
     "Centaur":r"\symCentaur",
@@ -509,7 +506,7 @@ class actionCard:
 
 class modifierCard:
     def __init__(self):
-        self.specials = [] # should be a list of stirngs like, wound, draw, target...
+        self.specials = [] # should be a list of stirngs like, wound, target...
         self.classname = "Class designation missing"
         self.modifier = "0" 
 
@@ -538,10 +535,6 @@ class tableauRace:
             if(word.split(":")[0] in symbolDict):
             
                 line_mod += " " + symbolDict[word.split(":")[0]]
-
-            elif(word.split(":")[0].lower() == "draw"):
-                print(word)
-                line_mod += " " + r"\symDraw" + " " + word + " "
             else:
                 line_mod += word + " "
 

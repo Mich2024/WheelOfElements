@@ -1,4 +1,4 @@
-[CardCount] = 23
+[CardCount] = 8
 
 [col_bronze] = #CD7F32
 [col_silver] = #ACACAC
@@ -82,7 +82,7 @@ htmlfont=font_12_right_Dia,Arial,12,B,#87B787,RIGHT
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
 TEXT = 1-2, "Feral Instinct", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 1-2, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+htmltext = 1-2, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],[space_text_18] + 0.2,#FFFFFF,0,T,100,font_18
 
 htmltext = 1-2, "\symAddFire Fire: 2 <br>--- \symBlaze Blaze 2 --- <br> Per discarded Card: <br> Br: \symAddFire Fire:1 <br> Silver: \symShield Shield <br> Gold: \symAttack A:3 <br> Dia: Draw your deck", [linestrength] * 2 , 3,[full_hor] + 0.6, 5,#FFFFFF,0,T,100,font_18
 
@@ -94,7 +94,7 @@ htmltext = 1-2, "Gold \symCardsGold", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFF
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
 TEXT = 3-7, "Turn Order", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 3-7, "Reminder", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+htmltext = 3-7, "Reminder", [linestrength] * 2 , [space_text_28],[full_hor],[space_text_18] + 0.2,#FFFFFF,0,T,100,font_18
 
 htmltext = 3-7, "1. Draw cards until 4 <br>2. Player Turn<br>&emsp;&nbsp;- Start of turn effects<br>&emsp;&nbsp;- Play two cards<br>3. Enemy Turn<br>4. Boons&Banes<br>5. Rotate", [linestrength] * 2 , 2,[full_hor] + 0.6, 6,#FFFFFF,0,T,100,font_18
 
@@ -106,7 +106,8 @@ htmltext = 3-7, "Dia \symCardsDia", 6.35-2.6 , 8, 2.4, [space_text_18], #FFFFFF,
 #Name, OptCost ########################################
 FONT = Arial, 18, B, #000000
 TEXT = 8, "Polluted Waters", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
-htmltext = 8, "Cost: Opt \symAddWater 1 ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+htmltext = 8, "Cost: Opt \symAddWater 1 ", [linestrength] * 2 , [space_text_28],[full_hor],[space_text_18] + 0.2,#FFFFFF,0,T,100,font_18
+
 
 htmltext = 8, "\symPoison Poison: 2 <br> \symDisengage Disengage<br> \symDisengage Disengage<br>------ Opt Paid ------ <br> \symAttack A: 1", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
 
@@ -159,6 +160,8 @@ htmltext = 11, "Silver \symCardsSilver", 6.35-2.6 , 8, 2.4, [space_text_18], #FF
 FONT = Arial, 18, B, #000000
 TEXT = 12, "Claw", [linestrength] , 0.1, [full_hor] + [space_text_18], [space_text_28], CENTER, TOP
 htmltext = 12, "Cost:  - ", [linestrength] * 2 , [space_text_28],[full_hor],"[space_text_18] + 0.2",#FFFFFF,0,T,100,font_18
+
+
 
 htmltext = 12, "\symAddWood Wood: 2 <br> \symFlurry Flurry: 1 <br><small><i>(Gain a flurry token. You may spend it at any time to perform  \symAttack A:1.)</i></small>", [linestrength] * 2 , 4,[full_hor] + 0.6, 4,#FFFFFF,0,T,100,font_18
 

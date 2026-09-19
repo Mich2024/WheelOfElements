@@ -4,9 +4,9 @@
 Name: Bandit Hunt
 Encounter:1
 Bandit Skirmisher, Bandit Raider, Bandit Raider,
+Bandit Skirmisher, Bandit Raider,
 Bandit Skirmisher, Bandit Raider, Bandit Raider,
-Bandit Skirmisher, Bandit Raider, Bandit Raider,
-Bandit Skirmisher, Bandit Raider, Bandit Raider,
+Bandit Skirmisher, Bandit Raider,
 Bandit Skirmisher, Bandit Raider, Bandit Raider,
 
 Encounter:2
