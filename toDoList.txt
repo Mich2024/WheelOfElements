@@ -11,6 +11,8 @@ keyword this Enemy does not move
 
 AM
 
+rebalance element aoes
+
 Buff assassin 2
 correct assassin  with aoes 2
 
@@ -21,14 +23,13 @@ Enemy keyword cheatsheet in storybook
 
 Rulebook:
 
+redo setup pics
+add player markers for element pool to setup
+
 clarify stun and multiattacks
-setup pic
 Szenariospiel ins regelwerk
 Update all links
 
-Add Reminder text existence to rulebook
-AOE element gen clarification
-AOE clarification that everything is an aoe now (except elements)
 
 Low Prio:
 Check dice for advantage balancing

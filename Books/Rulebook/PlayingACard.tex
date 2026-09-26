@@ -6,8 +6,8 @@ As a deckbuilding game, the action deck will continue to evolve during gameplay.
 Your first action deck is composed of exactly 16 action cards from your ancestry (6 cards), and your two classes (5 cards each). 
 
 \begin{figure}[ht]
-	\begin{minipage}[t][11.1cm][t]{0.5\textwidth}
-		\begin{minipage}[t][6.4cm][t]{0.9\textwidth}
+	\begin{minipage}[t][12.1cm][t]{0.5\textwidth}
+		\begin{minipage}[t][8.4cm][t]{0.9\textwidth}
 			\textbf{Action Cards}
 			\begin{itemize}
 				\item \textbf{Name} - Name of the card
@@ -15,6 +15,7 @@ Your first action deck is composed of exactly 16 action cards from your ancestry
 				\item\textbf{Actions} - What the card does once played \textit{(See "Playing a Card", page \pageref{Section_PlayingACard})}
 				\item\textbf{Class/Ancestry} - From where you obtained the card
 				\item\textbf{Tier} - Strength of a card. The tiers are split into bronze, silver and gold. 
+				\item\textbf{Reminder Text} - Explanations for how to perform the actions printed on the card. The reminder text does not change the functionality of a card.
 				
 			\end{itemize}
 			\begin{tcolorbox}[colframe=red, colback=white]
@@ -41,10 +42,10 @@ Your first action deck is composed of exactly 16 action cards from your ancestry
 	\end{minipage}	
 \end{figure}
 %Remember: Reading the card explains the card. Except when it doesn't. In that case, check the FAQ.
-\begin{tcolorbox}[colframe=red, colback=white]
-	Important - By default, your action deck will always contain 16 cards. When a new card is added in between a fight, you must choose an old one to remove.
-\end{tcolorbox}
+
 %\includegraphics[width=0.8\textwidth]{../ExplanationPics/TwoBoards.jpg} 
+
+\newpage
 
 \subsection{Playing a Card}
 \label{Section_PlayingACard}
@@ -52,8 +53,8 @@ Your first action deck is composed of exactly 16 action cards from your ancestry
 
 \textbf{Pay} - Cards either have \textbf{no} cost, an \textbf{optional} cost or a \textbf{mandatory} cost. To pay an element cost, move the stated amount of element markers from the corresponding field on the wheel back into the stash. If the cost is a mandatory element cost, you may not play it without paying the element cost. Costs are paid  \textbf{before any action} from the card can be taken.
 
-\begin{tcolorbox}[colframe=black, colback=white]
-	Important - When playing a card, you execute all effects from top to bottom, going line by line. All effects \textbf{must} be used if possible. While you are executing a card, you must finish before another player can interact with the targets you are dealing with.
+\begin{tcolorbox}[colframe=red, colback=white]
+	Important - When playing a card, you execute all effects from top to bottom, going line by line. \textbf{All effects must be used} if possible. While you are executing a card, you must finish before another player can interact with the targets you are dealing with.
 \end{tcolorbox}
 
 
@@ -63,7 +64,7 @@ Your first action deck is composed of exactly 16 action cards from your ancestry
 
 \textbf{Lifepay \symLife} - Some cards have a \textbf{life cost} instead of an element cost. To pay life, subtract the required amount from your life total \textbf{before playing the card}. If you are backlined, you may still play those cards, and you don't have to pay.
 
-\textbf{Boons \& Banes} - To apply a boon or bane, choose a target, then put the listed number of boons or banes on the target. \textit{(See "Boons \& Banes", page \pageref{Section_BoonsBanes})}
+\textbf{Boons \& Banes} - To apply a boon or bane, choose a target, then put the listed number of boons or banes on the target. \textit{(See "Boons \& Banes", on handout)}
 
 \textbf{Text} - Quite a few cards have text with longer instructions. Simply follow the instruction when playing the card. Those cards are usually very unique in what they do.
 
@@ -81,9 +82,10 @@ When played as the second card in a turn, the blaze action does nothing -- no ca
 \end{tcolorbox}
 
 
-
+\newpage
 
 \subsection{The Attack Dice}
+\label{Section_AncestryDice}
 These dice modify the results of your \symAttack attacks.
 Every time you pick a class, you will get an additional attack dice. You always use all dice at once.
 The attack dice can have four effects. Some sides are blank and have no effect. Each die also has one side with the initials of the ancestry it belongs to.
@@ -108,13 +110,12 @@ The attack dice can have four effects. Some sides are blank and have no effect. 
 		\end{minipage}
 	\end{minipage}
 	\begin{minipage}[t][4.5cm][t]{0.5\textwidth}
-		
+		\centering
 		\includegraphics[width=0.9\linewidth, valign=t]{../ExplanationPics/Dice.drawio.png}		
 	\end{minipage}	
 \end{figure}
 
 
-\label{Section_AncestryDice}
 
 The attack dice act as a source of random chance. Fighting is a risky business, and sometimes an attack may take an unexpected turn.
 You usually start with two attack dice.
@@ -128,7 +129,7 @@ Afterwards, apply this damage to the targeted enemy. You cannot deal less than 0
 
 \begin{tcolorbox}[colframe=red, colback=white]
 	%If you have played table top RPGs before, you may know the concept from rolling a 20 sided dice to determine the outcome of an action.
-	Important - Only attacks use the ancestry dice by default, nothing else.
+	Important - Only attacks use the attack dice by default, nothing else.
 \end{tcolorbox}
 
 
@@ -186,7 +187,9 @@ After having rolled your dice but before applying any effect from them, includin
 
 \textbf{AOE} - \textbf{A}rea \textbf{O}f \textbf{E}ffect cards may target  \textbf{enemies} that are \textbf{adjacent} to one another (\textit{See below}), in the pattern shown on the emblem. Enemies facing  \textbf{different players} are  \textbf{never} considered as adjacent to each other, and AOEs may not flow over to another player.
 
-\textbf{Repeat} - When you target multiple enemies like this, the attack and banes of the card are repeated for each enemy. You roll ancestry dice only once, and apply the result to each enemy. if you generate elements with the ancestry dice, they are multiplied by your number of targets.
+\textbf{Repeat} - When you target multiple enemies like this, the attack and banes of the card are repeated for each enemy. You roll \textbf{ancestry dice once}, and apply the \textbf{result to each enemy}. If you generate elements with the ancestry dice, they are multiplied by your number of targets.
+
+\textbf{Full card} - When a card has an AOE symbol, use the AOE for \textbf{all actions}. If the card lets you generate elements, generate one for each valid target, if the card lets you apply banes, apply them to each target.
 
 \textbf{Ranged} - When your AOE is ranged, you may play the full AOE on another person's board.
 
