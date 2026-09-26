@@ -1,6 +1,6 @@
 Passive
-Start of turn 1:<br> - Disengage the leftmost enemy from the player to your right
-Life: 8
+Start of turn 1:<br> - Disengage the two leftmost enemies from the player to your right<br> - Shield:2
+Life: 3
 
 
 Type

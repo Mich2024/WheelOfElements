@@ -46,8 +46,11 @@ Rename disengage maybe repel
 
 Reprint
 Witch 1
-
 Name: "Toxic Deluge" Poison:2 Aoe:Cleave;3
+Koloss2
+Passive
+Pyro1
+Name: "Soulfire" ManaCost:Fire;1 Blaze:2 Fire:5 Text: "<small><i>(First card ->, randomly discard two cards and do the extra actions.)</i></small>"
 
 
 Merfolk
