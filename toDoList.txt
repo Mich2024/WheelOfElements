@@ -28,6 +28,8 @@ redo setup pics
 add player markers for element pool to setup //halfdone
 fix element placement instructions
 
+icons for playtime and player count
+
 clarify stun and multiattacks
 Szenariospiel ins regelwerk
 Update all links

@@ -75,8 +75,8 @@ I started with this approach before templates were native to python and more pow
 If you actually take the time to look at this stuff, please write me any feedback you may have at ainfomail@arcor.de
 
 ### Books
-The rulebook is written in LaTeX, and can be compiled like any normal LaTeX document. You may need to download some extra packages
-Currently the rulebook is lagging behind the actual game files, the update is ongoing, and the scope keeps growing due to our simmilarly growing ability to make a better book.
+The rulebook is written in LaTeX, and can be compiled like any normal LaTeX document. You may need to download some extra packages.
+There is a storybook for the games encounters which is still somewhat ugly, and there is a handout which looks good and is part of the rulebook.
 
 ### ToPdfPipeline
 In this step we go from our domain specific language to code that can pe processed into pictures.
