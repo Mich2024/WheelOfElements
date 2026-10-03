@@ -13,6 +13,7 @@ AM
 
 rebalance element aoes
 
+Rework druid 2 and witch2
 Buff assassin 2
 correct assassin  with aoes 2
 
@@ -24,7 +25,8 @@ Enemy keyword cheatsheet in storybook
 Rulebook:
 
 redo setup pics
-add player markers for element pool to setup
+add player markers for element pool to setup //halfdone
+fix element placement instructions
 
 clarify stun and multiattacks
 Szenariospiel ins regelwerk
