@@ -123,7 +123,7 @@ Normal
 
 Life:10
 Count:15
-Passive: Scenariobound
+Passive: Scenario bound
 #Vampires : when adjacent vamp would die, move as maydmg as you can from vamp to this
 
 Rolls:Wood  A:2
