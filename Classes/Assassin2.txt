@@ -1,5 +1,5 @@
 Passive
-On Attack or Poison against a stunned enemy:<br> - Add +1 to the effect
+On Attack or Poison against a stunned enemy:<br> - Add +3 to the effect<br><small><i>(AOE effects get a stacking bonus per target)</i></small>
 Life: 3
 
 Type

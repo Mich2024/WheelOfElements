@@ -1,6 +1,6 @@
 Passive
 
-When you Poison:<br> - roll your attack dice and apply their result <small><i>(like when you attack)</i></small>
+When you Poison:<br> - roll your attack dice and apply their result to the poison amount.<small><i>(like when you attack)</i></small>
 
 Life: 4
 

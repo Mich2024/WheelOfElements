@@ -4,7 +4,6 @@ We will first go over the structure and content of the repo, then we will procee
 
 ## Structure & Contents
 
-
 | Folder | Content | Attribution |
 |----------|:-------------:|------:|
 | Books | This folder contains the working version of the rulebook and the storybook. The beginner guide and handout are currently unfinished. All books are written in LaTeX. | A.M. & A.V. |

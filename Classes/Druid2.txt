@@ -1,6 +1,6 @@
 Passive
 
-When you Heal:<br> - roll your attack dice and apply their result <small><i>(like when you attack)</i></small>
+When you take damage:<br> - Water:1 <br><small><i>(does not work with Lifepay)</i></small>
 #(Does not affect Heal from your Ancestry Dice)
 #When you Heal another player:<br> - also apply <br>Powerful:1
 Life: 3

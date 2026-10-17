@@ -11,16 +11,11 @@ keyword this Enemy does not move
 
 AM
 
-rebalance element aoes
-
-Rework druid 2 and witch2
-Buff assassin 2
-correct assassin  with aoes 2
-
-ranged better placement on card?
+print turn order reminders, and emntio them in the rules
+Banners on cardboxes
 
 Stop reading text in storybook
-Enemy keyword cheatsheet in storybook
+Associate kewods with units in storybook
 
 Rulebook:
 
@@ -28,31 +23,44 @@ redo setup pics
 add player markers for element pool to setup //halfdone
 fix element placement instructions
 
-icons for playtime and player count
-
 clarify stun and multiattacks
 Szenariospiel ins regelwerk
 Update all links
 
 
 Low Prio:
-Check dice for advantage balancing
 Add more X cards
 Make X consistent 0 or non 0
+rework witch 2 and druid 2
+ranged better placement on card?
+
+assassin2 idea: remove one card fromyour deck
+
+druid idead: element on damage taken
 
 ############
 Both:
 Rename disengage maybe repel
 
+Solarian:
+Name: "Eternal Flame" ManaCost:Opt;Fire;2 Fire:1 A:1 Opt Aoe:Cleave;3
+
 Reprint
 Witch 1
-Name: "Toxic Deluge" Poison:2 Aoe:Cleave;3
+Name: "Toxic Deluge" Poison:2 Aoe:Cleave;
+Witch 2
+Passive
 Koloss2
 Passive
 Pyro1
 Name: "Soulfire" ManaCost:Fire;1 Blaze:2 Fire:5 Text: "<small><i>(First card ->, randomly discard two cards and do the extra actions.)</i></small>"
+Assassin 2
+Passive
+Druid 2
+Passive
 
 
+>>> Possibly done <<<
 Merfolk
 Name: "Polluted Waters" ManaCost:Opt;Water;1 Poison:2 Disengage Disengage Opt A:1
 Name: "Tidal Grasp" ManaCost:Opt;Water;2 A:3 Opt AOE:Cleave;2

@@ -26,7 +26,7 @@ Name: "Heart of Fire" Fire:2 Text: "<small><i>(Add two brown cubes to the 'Fire'
 
 Tier2
 Name: "Double Strike" A:1 A:1 Text: "<small><i>(The second attack may target a different enemy.)</i></small>"
-Name: "Eternal Flame" ManaCost:Opt;Fire;2 Fire:2 A:1 Opt Aoe:Cleave;3
+Name: "Eternal Flame" ManaCost:Opt;Fire;2 Fire:1 A:1 Opt Aoe:Cleave;3
 
 Tier3
 Name: "Sun's Embrace" ManaCost:Opt;Fire;3 Vulnerable:4 Opt A:1
