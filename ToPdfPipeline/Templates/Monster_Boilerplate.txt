@@ -13,8 +13,8 @@
 [len_hp_box] = 0.8
 [space_hp_box] = 0.9
 [space_action_left] = 0.55*2 + 0.2
-[size_sym] = 0.5
-[size_tier] = 0.5
+[size_sym] = 0.4
+[size_tier] = 0.4
 
 [col_silver] = #ACACAC
 [col_gold] = #CFB53B
