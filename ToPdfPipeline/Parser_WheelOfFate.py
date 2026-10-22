@@ -602,35 +602,35 @@ if __name__ == "__main__":
     
     
 
-    #files_Input.append(r"../Classes/Assassin1.txt")
-    #files_Input.append(r"../Classes/Assassin2.txt")
+    files_Input.append(r"../Classes/Assassin1.txt")
+    files_Input.append(r"../Classes/Assassin2.txt")
 
-    #files_Input.append(r"../Classes/Bard1.txt")
-    #files_Input.append(r"../Classes/Bard2.txt")
+    files_Input.append(r"../Classes/Bard1.txt")
+    files_Input.append(r"../Classes/Bard2.txt")
 
     files_Input.append(r"../Classes/Berserker1.txt")
-    #files_Input.append(r"../Classes/Berserker2.txt") #############
+    files_Input.append(r"../Classes/Berserker2.txt") #############
 
-    #files_Input.append(r"../Classes/Druid1.txt")
-    #files_Input.append(r"../Classes/Druid2.txt")
+    files_Input.append(r"../Classes/Druid1.txt")
+    files_Input.append(r"../Classes/Druid2.txt")
 
-    #files_Input.append(r"../Classes/Knight1.txt")
-    #files_Input.append(r"../Classes/Knight2.txt")
+    files_Input.append(r"../Classes/Knight1.txt")
+    files_Input.append(r"../Classes/Knight2.txt")
 
     files_Input.append(r"../Classes/Koloss1.txt")
     files_Input.append(r"../Classes/Koloss2.txt")
 
-    #files_Input.append(r"../Classes/Pyromancer1.txt")
-    #files_Input.append(r"../Classes/Pyromancer2.txt")
+    files_Input.append(r"../Classes/Pyromancer1.txt")
+    files_Input.append(r"../Classes/Pyromancer2.txt")
 
     files_Input.append(r"../Classes/Ranger1.txt")
     files_Input.append(r"../Classes/Ranger2.txt")
 
-    #files_Input.append(r"../Classes/Sangromancer1.txt")
+    files_Input.append(r"../Classes/Sangromancer1.txt")
     files_Input.append(r"../Classes/Sangromancer2.txt")
 
-    #files_Input.append(r"../Classes/Witch1.txt")
-    #files_Input.append(r"../Classes/Witch2.txt")
+    files_Input.append(r"../Classes/Witch1.txt")
+    files_Input.append(r"../Classes/Witch2.txt")
 
     
 

@@ -11,22 +11,17 @@ keyword this Enemy does not move
 
 AM
 
-print turn order reminders
+mention turn order reminders
 Banners on cardboxes
-
-Stop reading text in storybook
-Associate kewods with units in storybook
+Check unit amounts for 5 player
 
 Rulebook:
 
 redo setup pics
 add player markers for element pool to setup //halfdone
-fix element placement instructions
 
 clarify stun and multiattacks
 Szenariospiel ins regelwerk
-Update all links
-
 
 Low Prio:
 Add more X cards
