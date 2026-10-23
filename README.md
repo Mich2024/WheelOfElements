@@ -1,6 +1,16 @@
 # This readme is mostly for prospective employers
 
-We will first go over the structure and content of the repo, then we will proceed with the reasoning behind the key decisions for our workflow, and further down we will explain how to use it.
+```mermaid
+flowchart LR
+	Races["Races/*.txt"] --> Parser["Parser_WheelOfFate.py"]
+	Classes["Classes/*.txt"] --> Parser
+	Parser --> Output["ToPdfPipeline/out/*.txt<br/>(nanDECK files)"]
+	Output --> NanDeck["nanDECK"]
+	NanDeck --> PDFs["Printable PDF decks"]
+```
+
+This repository contains a pipeline for converting our self-defined domain specific languange to print-ready pictures used in the rapid protoyping of our boardgame.
+There is also a rulebook and a storybook to go along wiht the game.
 
 ## Structure & Contents
 

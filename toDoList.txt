@@ -37,55 +37,39 @@ druid idead: element on damage taken
 Both:
 Rename disengage maybe repel
 
+
+Passives:
+Witch 2
+Koloss2
+Assassin 1
+Assassin 2
+Druid 2
+Bard 1
+Bard 2
+Sangro 1
+Ranger 2
+Zerker 2
+
+
+Elf 2
+
 Solarian:
 Name: "Eternal Flame" ManaCost:Opt;Fire;2 Fire:1 A:1 Opt Aoe:Cleave;3
-
 Reprint
+Cards:
 Witch 1
 Name: "Toxic Deluge" Poison:2 Aoe:Cleave;
-Witch 2
-Passive
-Koloss2
-Passive
+Assassin 2
+Name: "Poison Shiv" ManaCost:Water;1 A:2 Text: "If the Attack dealt at least 4 Damage :" Poison:4
 Pyro1
 Name: "Soulfire" ManaCost:Fire;1 Blaze:2 Fire:5 Text: "<small><i>(First card ->, randomly discard two cards and do the extra actions.)</i></small>"
-Assassin 2
-Passive
-Druid 2
-Passive
-
-
->>> Possibly done <<<
-Merfolk
-Name: "Polluted Waters" ManaCost:Opt;Water;1 Poison:2 Disengage Disengage Opt A:1
-Name: "Tidal Grasp" ManaCost:Opt;Water;2 A:3 Opt AOE:Cleave;2
-Wyrmikin
-passive
-Solarian
-passive
-Fae
-Name: "Aerial Strike" ManaCost:Opt;Metal;1 A:1 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>" Opt A:1
-Catkin
-dice & card strength label
-passive
-Name: "Chomp" A:3 Text: "<small><i>(Choose an enemy, roll your attack dice and apply the damage.)</i></small>"
-Name: "Claw" Wood:2 Flurry:1 Text: "<small><i>(Gain a flurry token. You may spend it at any time to perform A:1.)</i></small>"
-
-Berserker 1
-Custom Feral instinct
-Ranger 1
-Name: "Premediate" Wood:4 Flurry:2 Text: "<small><i>(Gain three flurry tokens. You may spend one at any time to perform A:1.)</i></small>"
+Name: "Mortal Flame" ManaCost:Fire;1 Blaze:2 Fire:5 Text: "<small><i>(First card ->, randomly discard two cards and do the extra actions.)</i></small>"
 Ranger 2
-passive
-Name: "Fiery veins" ManaCost:Fire;X Flurry:X Text: "<small><i>(X can be 0)</i></small>"
-Koloss 1
-Name: "Control" ManaCost:Opt;Earth;2 Ranged Disengage Disengage Opt Shield:1
-Name: "Shield Slam" Earth:2 Shield:1 A:X Text: "X is equal to your shield"
-Koloss 2
-passive
-Sangro 2
-passive
-Name: "Dice" ManaCost:Metal;3 Advantage:3 Text: "<small><i>(Gain three advantage markers. When attacking, you may spend one marker to reroll a die.)</i></small>" A:4
+Name: "Premediate" Wood:4 Flurry:2 Text: "<small><i>(Gain two flurry tokens. You may spend one at any time to perform A:1.)</i></small>"
+Bard 1
+Name: "Outlast" ManaCost:Opt;Wood;3 Powerful:1 Text: "At the end of this turn, keep all Powerful stacks" Opt Flurry:2
+ranger 1
+Name: "Shred"
 
 Events:
 Iron mine

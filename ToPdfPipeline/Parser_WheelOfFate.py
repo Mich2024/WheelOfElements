@@ -589,16 +589,16 @@ if __name__ == "__main__":
     ### INPUT OF PROPER RACES AND CLASSES
     files_Input = []    
     
-    files_Input.append(r"../Races/Catkin.txt")
+    #files_Input.append(r"../Races/Catkin.txt")
     #files_Input.append(r"../Races/Centaur.txt")
     #files_Input.append(r"../Races/Dwarf.txt")
-    files_Input.append(r"../Races/Fae.txt")
-    #files_Input.append(r"../Races/Elf.txt")
+    #files_Input.append(r"../Races/Fae.txt")
+    files_Input.append(r"../Races/Elf.txt")
     #files_Input.append(r"../Races/Human.txt")
-    files_Input.append(r"../Races/Merman.txt")
+    #files_Input.append(r"../Races/Merman.txt")
     #files_Input.append(r"../Races/Orc.txt")
     files_Input.append(r"../Races/Solarian.txt")
-    files_Input.append(r"../Races/Wyrmkin.txt")
+    #files_Input.append(r"../Races/Wyrmkin.txt")
     
     
 
@@ -608,28 +608,28 @@ if __name__ == "__main__":
     files_Input.append(r"../Classes/Bard1.txt")
     files_Input.append(r"../Classes/Bard2.txt")
 
-    files_Input.append(r"../Classes/Berserker1.txt")
+    #files_Input.append(r"../Classes/Berserker1.txt")
     files_Input.append(r"../Classes/Berserker2.txt") #############
 
-    files_Input.append(r"../Classes/Druid1.txt")
+    #files_Input.append(r"../Classes/Druid1.txt")
     files_Input.append(r"../Classes/Druid2.txt")
 
-    files_Input.append(r"../Classes/Knight1.txt")
-    files_Input.append(r"../Classes/Knight2.txt")
+    #files_Input.append(r"../Classes/Knight1.txt")
+    #files_Input.append(r"../Classes/Knight2.txt")
 
-    files_Input.append(r"../Classes/Koloss1.txt")
+    #files_Input.append(r"../Classes/Koloss1.txt")
     files_Input.append(r"../Classes/Koloss2.txt")
 
-    files_Input.append(r"../Classes/Pyromancer1.txt")
-    files_Input.append(r"../Classes/Pyromancer2.txt")
+    #files_Input.append(r"../Classes/Pyromancer1.txt")
+    #files_Input.append(r"../Classes/Pyromancer2.txt")
 
-    files_Input.append(r"../Classes/Ranger1.txt")
-    files_Input.append(r"../Classes/Ranger2.txt")
+    #files_Input.append(r"../Classes/Ranger1.txt")
+    #files_Input.append(r"../Classes/Ranger2.txt")
 
     files_Input.append(r"../Classes/Sangromancer1.txt")
-    files_Input.append(r"../Classes/Sangromancer2.txt")
+    #files_Input.append(r"../Classes/Sangromancer2.txt")
 
-    files_Input.append(r"../Classes/Witch1.txt")
+    #files_Input.append(r"../Classes/Witch1.txt")
     files_Input.append(r"../Classes/Witch2.txt")
 
     

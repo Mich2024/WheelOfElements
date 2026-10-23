@@ -21,7 +21,7 @@
 
 [third_hor] = ((([WidthPage]-[space_left]-[space_right])/3)-0.25)
 [quart_hor] = 5.5
-[CardCount] = 3
+[CardCount] = 12
 
 CARDS=[CardCount]
 BORDER=RECTANGLE,#000000,[linestrength]*2
@@ -103,37 +103,136 @@ BASERANGE=,ON
 
 RECTANGLE = 1-[CardCount], 0, 0, [quart_hor], [third_vert], #000000, empty, [linestrength]
 
-
 FONT = "Noto Sans Mono", 14, B, #000000
-TEXT = 1, "Koloss 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+TEXT = 1, "Assassin 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
 FONT = "Noto Sans Mono", 12, B, #000000
-image = 1, "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+image = 1, "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
 htmltext = 1, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
 FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = 1, "Start of turn 1:<br> -  \symDisengage Disengage the leftmost enemy from the player to your right",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
-htmltext = 1, "\symSmallLife Starting life: 8",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+htmltext = 1, "Your handsize is increased by 1 (to 5) and decksize is decreased by 1 (to 15). <small><i>(Assassin 1 only grants 4 Cards )</i></small>",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 1, "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
 LINE = 1, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
 
+
 FONT = "Noto Sans Mono", 14, B, #000000
-TEXT = 2, "Ranger 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+TEXT = 2, "Assassin 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
 FONT = "Noto Sans Mono", 12, B, #000000
-image = 2, "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+image = 2, "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
 htmltext = 2, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
 FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = 2, "When your attack dice roll your ancestry symbol:<br> -  \symVulnerable Vulnerable:1<br><small><i>(Before the attack occurs.)</i></small>",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 2, "Your handsize is increased by 1 (to 5) and decksize is decreased by 1 (to 15). <small><i>(Assassin 1 only grants 4 Cards )</i></small>",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
 htmltext = 2, "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
 LINE = 2, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
 
 
 FONT = "Noto Sans Mono", 14, B, #000000
-TEXT = 3, "Sangromancer 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+TEXT = 3, "Assassin 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
 FONT = "Noto Sans Mono", 12, B, #000000
 image = 3, "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
 htmltext = 3, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
 FONT = "Noto Sans Mono", 9, B, #000000
-htmltext = 3, "Improved max life <small><i>(+7, already included)</i></small>",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
-htmltext = 3, "\symSmallLife Starting life: 10",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+htmltext = 3, "On  \symAttack Attack or  \symPoison Poison against a stunned enemy:<br> - Add +3 to the effect<br><small><i>(AOE effects get a stacking bonus per target)</i></small>",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 3, "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
 LINE = 3, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
+
+
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 4, "Bard 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+image = 4, "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 4, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+FONT = "Noto Sans Mono", 9, B, #000000
+htmltext = 4, "Start of turn 1:<br> -   \symAddWood Wood:2",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 4, "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 4, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
+
+
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 5, "Bard 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+image = 5, "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 5, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+FONT = "Noto Sans Mono", 9, B, #000000
+htmltext = 5, "Start of turn 1:<br> -   \symAddWood Wood:2",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 5, "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 5, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
+
+
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 6, "Bard 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+image = 6, "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 6, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+FONT = "Noto Sans Mono", 9, B, #000000
+htmltext = 6, "End of each turn:<br> -   \symFlurry Flurry:1",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 6, "\symSmallLife Starting life: 2",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 6, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
+
+
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 7, "Berserker 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+image = 7, "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 7, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+FONT = "Noto Sans Mono", 9, B, #000000
+htmltext = 7, "Second card:<br> - Your blaze effects also trigger <small><i>(mandatory)</i></small>",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 7, "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 7, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
+
+
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 8, "Druid 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+image = 8, "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 8, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+FONT = "Noto Sans Mono", 9, B, #000000
+htmltext = 8, "When you take damage:<br> -  \symAddWater Water:1 <br><small><i>(does not work with Lifepay)</i></small>",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 8, "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 8, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
+
+
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 9, "Koloss 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+image = 9, "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 9, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+FONT = "Noto Sans Mono", 9, B, #000000
+htmltext = 9, "Start of turn 1:<br> -  \symDisengage Disengage the two leftmost enemies from the player to your right<br> -  \symShield Shield:2",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 9, "\symSmallLife Starting life: 3",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 9, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
+
+
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 10, "Sangromancer 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+image = 10, "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 10, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+FONT = "Noto Sans Mono", 9, B, #000000
+htmltext = 10, "Improved max life <small><i>(+3, already included)</i></small>",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 10, "\symSmallLife Starting life: 6",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 10, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
+
+
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 11, "Sangromancer 1",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+image = 11, "..\..\Pictures\Tiers\PassiveTier1.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 11, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+FONT = "Noto Sans Mono", 9, B, #000000
+htmltext = 11, "Improved max life <small><i>(+3, already included)</i></small>",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 11, "\symSmallLife Starting life: 6",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 11, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
+
+
+FONT = "Noto Sans Mono", 14, B, #000000
+TEXT = 12, "Witch 2",   [linestrength]*2, [linestrength], [quart_hor] - 4 * [linestrength], [space_text_28], LEFT, TOP
+FONT = "Noto Sans Mono", 12, B, #000000
+image = 12, "..\..\Pictures\Tiers\PassiveTier2.png", [linestrength]*2, [space_text_28] + [linestrength]*2 + 0.1, [size_tier], [size_tier], 0
+htmltext = 12, "Passive:",   [linestrength]*3 + [size_tier], [space_text_28] + [linestrength]*2 + 0.2 , [quart_hor] - 4 * [linestrength], [space_text_18], #FFFFFF,0,T,100,font_18
+FONT = "Noto Sans Mono", 9, B, #000000
+htmltext = 12, "When you  \symPoison Poison:<br> - roll your attack dice and apply their result to the poison amount.<small><i>(like when you attack)</i></small>",   [linestrength]*2, [linestrength]*2 + [space_text_28] + [space_text_18], [quart_hor] - 4 * [linestrength], [third_vert] - 2 * [linestrength] - [space_text_28] - [space_text_18] ,#FFFFFF,0,T,100,font_10
+htmltext = 12, "\symSmallLife Starting life: 4",   [linestrength]*2+1, [third_vert] - [linestrength] - [space_text_18] + 0.2, [quart_hor] - 2 * [linestrength] - 2, [space_text_18]-0.2, #FFFFFF,0,T,100,font_10
+LINE = 12, [quart_hor] - [linestrength] - 1, [linestrength], [quart_hor] - [linestrength], [linestrength] + 1,  [col_gold], [linestrength]
 
 
 

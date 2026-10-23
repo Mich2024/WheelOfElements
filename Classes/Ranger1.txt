@@ -24,4 +24,4 @@ Name: "Shred" ManaCost:Fire;3 Flurry:4 Text: "<small><i>(Gain four flurry tokens
 
 Tier3
 Name: "Prey Upon" Wood:1 Ranged Vulnerable:3 Disengage
-Name: "Premediate" Wood:4 Flurry:2 Text: "<small><i>(Gain three flurry tokens. You may spend one at any time to perform A:1.)</i></small>"
+Name: "Premediate" Wood:4 Flurry:2 Text: "<small><i>(Gain two flurry tokens. You may spend one at any time to perform A:1.)</i></small>"
